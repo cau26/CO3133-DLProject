@@ -16,8 +16,8 @@
 
 | No. | Full Name | Student ID | Role / Contribution | GitHub Profile |
 |-----|-----------|------------|----------------------|-----------------|
-| 1 | Nguyễn Hữu Cầu | 2352129 | _[vai trò]_ | _[link GitHub]_ |
-| 2 | Trần Gia Lâm | 2352670 | _[vai trò]_ | _[link GitHub]_ |
+| 1 | Nguyễn Hữu Cầu | 2352129 | _[vai trò]_ | [cau26](https://github.com/cau26) |
+| 2 | Trần Gia Lâm | 2352670 | _[vai trò]_ | [n1velo](https://github.com/n1velo) |
 | 3 | _[Họ tên]_ | _[MSSV]_ | _[vai trò]_ | _[link GitHub]_ |
 
 - **Code repository:** https://github.com/cau26/CO3133-DLProject
