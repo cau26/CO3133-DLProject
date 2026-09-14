@@ -1,7 +1,7 @@
 # Assignment 3 – Multimodal Deep Learning
 ### Multimodal Deep Learning: Representation, Fusion, and Evaluation
 
-**Group:** 
+**Group:** 2129-2670
 **Members:** Nguyễn Hữu Cầu (2352129), Trần Gia Lâm (2352670)
 **Instructor:** Lê Thành Sách
 **Course:** CO3133 – Deep Learning and Its Applications, Semester-261

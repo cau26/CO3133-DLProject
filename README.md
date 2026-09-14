@@ -12,7 +12,7 @@
 - **Instructor:** Lê Thành Sách
 
 ## Group Information
-- **Group name / ID:** 
+- **Group name / ID:** 2129-2670
 
 | No. | Full Name | Student ID | Role / Contribution | GitHub Profile |
 |-----|-----------|------------|----------------------|-----------------|
