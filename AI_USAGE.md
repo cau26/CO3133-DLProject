@@ -1,6 +1,6 @@
 # AI Usage Disclosure Log
 ## CO3133 – Deep Learning and Its Applications, Semester-261
-**Group:** 2129-2670
+**Group:** G-M10
 
 This file logs all generative AI tool usage across Assignments 1–3, following the course's academic integrity policy.
 
