@@ -15,9 +15,9 @@
 - **Group name / ID:** G-M10
 
 | No. | Full Name | Student ID | Role / Contribution | GitHub Profile |
-|-----|-----------|------------|----------------------|-----------------|
-| 1 | Nguyễn Hữu Cầu | 2352129 | _Leader_ | [cau26](https://github.com/cau26) |
-| 2 | Trần Gia Lâm | 2352670 | _Member_ | [n1velo](https://github.com/n1velo) |
+|-----|----------------|---------|----------|-------------------------------------|
+|  1  | Trần Gia Lâm   | 2352670 | _Leader_ | [n1velo](https://github.com/n1velo) |
+|  2  | Nguyễn Hữu Cầu | 2352129 | _Member_ | [cau26](https://github.com/cau26)   |
 
 - **Code repository:** https://github.com/cau26/CO3133-DLProject
 
