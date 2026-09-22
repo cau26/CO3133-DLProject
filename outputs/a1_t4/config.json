@@ -1,0 +1,16 @@
+{
+  "group": "G-M10",
+  "members": [
+    "Trần Gia Lâm (2352670)",
+    "Nguyễn Hữu Cầu (2352129)"
+  ],
+  "seed": 42,
+  "validation_size": 6000,
+  "batch_size": 128,
+  "epochs": 10,
+  "learning_rate": 0.001,
+  "hidden_size": 256,
+  "num_workers": 0,
+  "cpu_threads": 4,
+  "device": "cuda"
+}

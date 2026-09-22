@@ -1,0 +1,45 @@
+{
+  "performed_by": "ChatGPT/Codex assistant; not recorded as student verification",
+  "scope": "Audit completed earlier in this conversation: original Colab checkpoint inference on CPU; no retraining",
+  "input_zip_sha256": "e9d5ef8520964d300ffda99b9af157b446c1f81d7afec0da4b35409898273b16",
+  "input_notebook_sha256": "a8bbe25059ee2131c2f1ebe1aa1d39983d7309de6698ec22d5a535dbb4162211",
+  "run": {
+    "source_sha256": "60f66b45930a48b305abd941d400125bcbe313626fcac45a8ce60d9e23e28c5c",
+    "split_sha256": "0289c4940126abe338a376ea49eb866788d57cd67fa3ca17fe80139abb8c8fba",
+    "models": {
+      "linear": {
+        "accuracy": 0.8661666666666666,
+        "macro_f1": 0.8643841131343203,
+        "correct": 5197,
+        "incorrect": 803,
+        "best_epoch": 9,
+        "all_metadata_and_saved_predictions_match": true,
+        "checkpoint_cpu_recheck": {
+          "device": "cpu",
+          "samples": 6000,
+          "different_predictions": 0,
+          "loss": 0.39797080771128335,
+          "loss_abs_diff": 9.934107481068821e-09
+        }
+      },
+      "mlp": {
+        "accuracy": 0.893,
+        "macro_f1": 0.8924059778539799,
+        "correct": 5358,
+        "incorrect": 642,
+        "best_epoch": 9,
+        "all_metadata_and_saved_predictions_match": true,
+        "checkpoint_cpu_recheck": {
+          "device": "cpu",
+          "samples": 6000,
+          "different_predictions": 0,
+          "loss": 0.2931597695350647,
+          "loss_abs_diff": 8.344650304081824e-09
+        }
+      }
+    }
+  },
+  "notebook_metrics_and_histories_match": true,
+  "source_archive_commit": "5d7430a2c5b344ab3bb8af81e7bac7e99f9ab01b",
+  "original_training_git_commit": null
+}
