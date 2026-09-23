@@ -1,4 +1,4 @@
-# Install the matching CPU wheels first; see START_HERE.md.
+# Versions used for A1; see README.md for the Colab T4 setup and CUDA check.
 torch==2.8.0
 torchvision==0.23.0
 numpy==2.3.5

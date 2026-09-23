@@ -2,42 +2,44 @@
 
 **Foundations of Deep Learning Pipelines and Architectures**
 
-**Trường:** Trường Đại học Bách khoa, ĐHQG-HCM
+**University:** Ho Chi Minh City University of Technology, VNU-HCM
 
-**Khoa:** Khoa Khoa học và Kỹ thuật Máy tính
+**Faculty:** Faculty of Computer Science and Engineering
 
-**Môn học:** Deep Learning and Its Applications - CO3133, học kỳ 261
+**Course:** Deep Learning and Its Applications - CO3133, Semester 261
 
-**Giảng viên:** Lê Thành Sách
+**Instructor:** Lê Thành Sách
 
-**Nhóm:** G-M10 (2 thành viên, đã xin phép theo xác nhận của leader)
+**Group:** G-M10
 
-| Thành viên | MSSV | Vai trò đã xác nhận |
-|---|---|---|
-| Trần Gia Lâm | 2352670 | Leader; thực hiện lần chạy Google Colab được cung cấp |
-| Nguyễn Hữu Cầu | 2352129 | Phụ trách EDA và MLP |
+| Member | Student ID | Role | Responsibility |
+|---|---|---|---|
+| Trần Gia Lâm | 2352670 | Leader | Ran the Google Colab Tesla T4 experiments; performed result and error analysis; verified the experimental outputs; integrated and prepared the report |
+| Nguyễn Hữu Cầu | 2352129 | Member | Developed and reviewed the EDA and MLP components |
 
-**Phạm vi:** Bản nháp M1 gồm EDA, Dataset/DataLoader, train-validation loop, Linear và MLP trên Fashion-MNIST. Các kết quả chính lấy từ lần chạy Google Colab Tesla T4 trong thư mục outputs/a1_t4.
+**Scope:** This M1 draft covers EDA, Dataset/DataLoader setup, the training and validation loop, and two Fashion-MNIST baselines: a Linear Classifier and an MLP.
 
-**Tình trạng bản thảo:** Nội dung đã được biên tập và đối chiếu kỹ thuật với file kết quả. Nhóm còn cần xác nhận việc rà soát nội dung cuối cùng và yêu cầu nộp riêng trên LMS; xem [bảng đối chiếu M1](DRAFT1_CHECKLIST.md).
+**Results:** Both models were trained for 10 epochs on a Google Colab Tesla T4 and evaluated on the same 6,000 validation images. The reported results come from `outputs/a1_t4/`. The test set has not been evaluated.
 
-**Tài liệu đi kèm:** [Bản HTML](G-M10_A1_Draft.html), [bản PDF](G-M10_A1_Draft.pdf), [bản ghi Colab](notebooks/A1_Colab_Run.ipynb), [nguồn gốc và kiểm chứng](COLAB_RUN.md), [AI usage](AI_USAGE.md).
+**Supporting files:** [PDF report](G-M10_A1_Draft.pdf), [Colab notebook](notebooks/A1_Colab_Run.ipynb), [run provenance](COLAB_RUN.md), and [AI Usage Disclosure](AI_USAGE.md).
 
-## Phần 1. Bài toán và dữ liệu
+## Part 1. Problem and Data
 
-### 1.1. Phát biểu bài toán
+### 1.1. Problem statement
 
-Với một ảnh xám của một sản phẩm thời trang, mô hình dự đoán một trong 10 lớp Fashion-MNIST. Đơn vị dự đoán là một ảnh; đầu vào có kích thước 1 x 28 x 28 và nhãn là một số nguyên từ 0 đến 9. Mô hình trả về 10 logits; lớp dự đoán là vị trí có logit lớn nhất.
+Given a grayscale image of a fashion item, the model predicts one of the 10 Fashion-MNIST classes. Each input has shape (1, 28, 28), and its label is an integer from 0 to 9. The model produces 10 logits; the class with the largest logit is the prediction.
 
-Mục tiêu của thí nghiệm là xây dựng pipeline có thể chạy lại và kiểm tra liệu MLP một lớp ẩn có cải thiện kết quả validation so với bộ phân loại tuyến tính khi giữ cố định dữ liệu và quy trình huấn luyện. Đây là benchmark học thuật; kết quả hiện tại chưa kiểm chứng khả năng nhận diện ảnh sản phẩm thực tế.
+We want to build a reproducible pipeline and test whether an MLP with one hidden layer performs better than a linear classifier under the same data split and training protocol. This is a benchmark experiment. Performance on real product photographs has not been tested.
 
-### 1.2. Nguồn dữ liệu và cách chia tập
+### 1.2. Data source and split
 
-Fashion-MNIST do Zalando Research công bố, với giấy phép MIT [1]. Bộ dữ liệu có 60.000 ảnh train chính thức và 10.000 ảnh test chính thức; ảnh kích thước 28 x 28, một kênh. Mã nguồn dùng torchvision.datasets.FashionMNIST và tải dữ liệu IDX nén gzip từ bản HTTPS của tác giả; torchvision kiểm tra MD5 khi tải.
+Fashion-MNIST is published by Zalando Research under the MIT license [1]. It contains 60,000 official training images and 10,000 official test images. Each image is 28 x 28 pixels with one channel. Our code uses torchvision.datasets.FashionMNIST and downloads the gzip-compressed IDX files from the authors' HTTPS endpoint. Torchvision checks the expected MD5 checksums when downloading them.
 
-Tập train chính thức được chia bằng train_test_split với stratify theo nhãn, validation_size = 6.000 và seed = 42. Cả hai mô hình dùng cùng 54.000 chỉ số train và 6.000 chỉ số validation. Test chính thức giữ độc lập: chỉ đếm phân bố lớp phục vụ EDA, chưa đánh giá mô hình hay chọn siêu tham số bằng test.
+The images and 10 class labels are used as released. We do not relabel the data. The four MD5 checksums in data_summary.json identify the dataset files; the run does not record a separate release version. The four compressed files total 30,878,645 bytes (about 30.88 MB), or 54,950,048 bytes (about 54.95 MB) after decompression. These sizes refer to the verified dataset files, excluding the Colab environment, libraries and model checkpoints.
 
-| Lớp | Train | Validation | Test chính thức |
+We split the official training set with train_test_split, stratify by class label, set validation_size to 6,000 and use seed 42. Both models use the same 54,000 training indices and 6,000 validation indices. The official test set is reserved. Its class counts are included in EDA, but it is not used for model evaluation or hyperparameter selection.
+
+| Class | Training | Validation | Official test |
 |---|---|---|---|
 | T-shirt/top | 5,400 | 600 | 1,000 |
 | Trouser | 5,400 | 600 | 1,000 |
@@ -50,118 +52,123 @@ Tập train chính thức được chia bằng train_test_split với stratify t
 | Bag | 5,400 | 600 | 1,000 |
 | Ankle boot | 5,400 | 600 | 1,000 |
 
-**Tổng:** 54.000 train, 6.000 validation và 10.000 test. Các chỉ số được lưu tại [split_indices.npz](outputs/a1_t4/split_indices.npz). Mã nguồn kiểm tra train/validation không trùng chỉ số và hợp lại bao phủ đủ 60.000 ảnh train chính thức. Chưa thực hiện kiểm tra trùng lặp theo nội dung ảnh; kiểm tra chỉ số không chứng minh rằng không có ảnh giống nhau giữa hai tập.
+**Total:** 54,000 training, 6,000 validation and 10,000 test images. The indices are saved in [split_indices.npz](outputs/a1_t4/split_indices.npz). The code checks that the training and validation indices do not overlap and together cover all 60,000 official training samples. Image-content duplicates have not been checked, so disjoint indices alone do not rule out visually identical images across the two subsets.
 
-Thông tin nguồn, checksum dự kiến và fingerprint của split nằm trong [data_summary.json](outputs/a1_t4/data_summary.json).
+The data source, expected checksums and split fingerprint are recorded in [data_summary.json](outputs/a1_t4/data_summary.json).
 
-### 1.3. EDA và các khó khăn quan sát được
+### 1.3. Exploratory data analysis
 
-![Hình 1. Phân bố lớp trong các tập dữ liệu](outputs/a1_t4/eda/class_distribution.png)
+![Figure 1. Class distribution across the dataset splits](outputs/a1_t4/eda/class_distribution.png)
 
-Các lớp cân bằng về số lượng trong cả train và validation; tỷ lệ lớp lớn nhất/nhỏ nhất trong train bằng 1,0. Baseline này không áp dụng class weighting, oversampling hay undersampling. Cân bằng số lượng không có nghĩa là các lớp có độ khó như nhau.
+Training and validation are balanced by class. The largest-to-smallest training class ratio is 1.0, so these baselines use no class weighting, oversampling or undersampling. Equal class counts do not imply equal classification difficulty.
 
-![Hình 2. Hai ảnh training đầu tiên được chọn cho mỗi lớp](outputs/a1_t4/eda/samples.png)
+![Figure 2. The first two training images selected for each class](outputs/a1_t4/eda/samples.png)
 
-Những nhóm áo như T-shirt/top, Shirt, Pullover và Coat có thể có đường bao và chiều dài tay gần nhau. Ảnh xám 28 x 28 thể hiện hạn chế các chi tiết cổ áo, nếp gấp và bề mặt vải. Đây là giả thuyết về khó khăn của dữ liệu, được đối chiếu với thống kê nhầm lẫn trong Phần 3; chưa phải kết luận về cơ chế ra quyết định của mô hình.
+T-shirt/top, Shirt, Pullover and Coat can share similar outlines and sleeve lengths. At 28 x 28 pixels, grayscale images retain limited detail about collars, folds and fabric texture. These similarities may help explain some of the confusion patterns in Part 3. They are visual observations, rather than evidence of which features the models actually use.
 
-### 1.4. Tiền xử lý, Dataset và DataLoader
+### 1.4. Preprocessing, Dataset and DataLoader
 
-ToTensor chuyển ảnh từ uint8 trong [0,255] sang float32 trong [0,1]. Không chuẩn hóa thêm theo mean/std, không augmentation và không sử dụng đặc trưng pretrained trong thí nghiệm này.
+ToTensor converts uint8 pixel values in [0, 255] to float32 values in [0, 1]. We apply no additional mean/std normalization, data augmentation or pretrained feature extraction.
 
-Nhóm sử dụng Dataset FashionMNIST của torchvision, Subset để áp dụng các chỉ số chia tập, và DataLoader của PyTorch để tạo batch. Mã điều phối việc chia tập và tạo loader nằm trong a1/data.py; đây không phải một lớp Dataset do nhóm tự viết từ đầu.
+All 60,000 official training images are retained when creating the training and validation subsets. There is no extra sample filtering, label correction or dataset-specific cleaning rule. Images remain 28 x 28. Both the one-epoch pipeline check and the main experiment use Fashion-MNIST; MNIST and CIFAR-10 were not used in this draft.
 
-Batch được kiểm tra có ảnh shape (128, 1, 28, 28), nhãn shape (128,), dtype ảnh float32, dtype nhãn int64 và khoảng pixel [0,1]. Train loader dùng shuffle với generator seed 42; validation loader không shuffle. Cấu hình dùng num_workers = 0; không bỏ batch cuối.
+We use torchvision's FashionMNIST Dataset, Subset for the saved indices, and PyTorch's DataLoader for batching. The split and loader setup is in a1/data.py. The underlying Dataset is provided by torchvision.
 
-![Hình 3. Một batch training sau ToTensor](outputs/a1_t4/eda/batch_preview.png)
+The inspected batch has image shape (128, 1, 28, 28), label shape (128,), float32 images, int64 labels and pixel values in [0, 1]. The training loader shuffles with a generator seeded at 42. The validation loader does not shuffle. We use num_workers = 0 and keep the final, smaller batch.
 
-## Phần 2. Phương pháp và thiết kế thí nghiệm
+![Figure 3. A training batch after ToTensor](outputs/a1_t4/eda/batch_preview.png)
 
-### 2.1. Pipeline và mô hình
+## Part 2. Methodology and Experimental Design
 
-![Hình 4. Pipeline theo mã nguồn của lần chạy T4](assets/assignment1/pipeline.png)
+### 2.1. Pipeline and model architectures
 
-Sơ đồ được dựng từ mã nguồn để mô tả quy trình; các kết quả đo vẫn lấy từ outputs/a1_t4. Tập test không tham gia vòng huấn luyện và chọn checkpoint trong sơ đồ.
+![Figure 4. Pipeline used by the Linear and MLP baselines](assets/assignment1/pipeline.png)
 
-| Mô hình | Kiến trúc | Tham số |
+The diagram describes the implementation. All measured results come from `outputs/a1_t4/`. The test set is outside the training and checkpoint-selection process.
+
+| Model | Architecture | Parameters |
 |---|---|---|
-| Linear | Flatten -> Linear(784,10) -> logits | 7.850 |
-| MLP | Flatten -> Linear(784,256) -> ReLU -> Linear(256,10) -> logits | 203.530 |
+| Linear | Flatten -> Linear(784, 10) -> logits | 7,850 |
+| MLP | Flatten -> Linear(784, 256) -> ReLU -> Linear(256, 10) -> logits | 203,530 |
 
-Số tham số Linear là 784 x 10 + 10 = 7.850. Với MLP, số tham số là (784 x 256 + 256) + (256 x 10 + 10) = 203.530.
+The Linear model has 784 x 10 + 10 = 7,850 parameters. The MLP has (784 x 256 + 256) + (256 x 10 + 10) = 203,530 parameters.
 
-Linear tạo ranh giới phân loại tuyến tính trên vector pixel. MLP có lớp ẩn và ReLU để biểu diễn các quan hệ phi tuyến. Cả hai dùng ảnh đã làm phẳng, không có cơ chế tích chập và chia sẻ trọng số cục bộ như CNN; làm phẳng không xóa các giá trị pixel, nhưng kiến trúc không áp đặt trực tiếp cấu trúc lân cận 2D.
+The Linear model learns linear decision boundaries over flattened pixels. The MLP adds a hidden layer and ReLU to represent nonlinear relationships. Both models use flattened images. Unlike a CNN, neither architecture directly imposes local spatial connections or convolutional weight sharing. Flattening preserves the pixel values, but these architectures do not explicitly model the 2D neighborhood structure.
 
-Mô hình trả về logits và đưa trực tiếp vào CrossEntropyLoss; không áp dụng Softmax trước loss. Khi dự đoán, lấy argmax của logits.
+ReLU applies max(0, z) to each element: negative values become zero and positive values pass through. This activation introduces nonlinearity between the two Linear layers. Without an intervening nonlinear operation, two stacked Linear layers are equivalent to one affine transformation. The current experiment uses no dropout or weight decay.
 
-### 2.2. Huấn luyện, validation và checkpoint
+Both models return logits directly to CrossEntropyLoss, with no Softmax before the loss. Predictions use the argmax of the logits.
 
-| Thiết lập | Giá trị |
+### 2.2. Training, validation and checkpoint selection
+
+| Setting | Value |
 |---|---|
-| Dataset chính | Fashion-MNIST |
-| Seed / split | 42; stratified 54.000 train / 6.000 validation |
-| Batch / epochs | 128 / 10 |
+| Dataset | Fashion-MNIST |
+| Seed / split | 42; stratified 54,000 training / 6,000 validation |
+| Batch size / epochs | 128 / 10 |
 | Optimizer / learning rate | Adam / 0.001 |
 | Loss | CrossEntropyLoss |
-| Hidden size của MLP | 256 |
-| Thiết bị | Google Colab, Tesla T4, CUDA |
-| CPU ghi trong metadata | Intel Xeon @ 2.00 GHz; 2 logical CPUs |
-| Luồng PyTorch / workers | 4 / 0 |
+| MLP hidden size | 256 |
+| Hardware | Google Colab, Tesla T4, CUDA |
+| PyTorch CPU threads / loader workers | 4 / 0 |
 | Python / torch / torchvision | 3.13.15 / 2.8.0+cu128 / 0.23.0 |
 | numpy / scikit-learn / matplotlib | 2.3.5 / 1.8.0 / 3.10.8 |
-| Scheduler / dropout / weight decay | Không dùng |
-| Early stopping / mixed precision | Không dùng |
-| Chọn checkpoint | Validation loss thấp nhất; giữ lần xuất hiện trước nếu bằng nhau |
+| Scheduler / dropout / weight decay | Not used |
+| Early stopping / mixed precision | Not used |
+| Checkpoint rule | Lowest validation loss; keep the earlier checkpoint if losses are equal |
 
-Mỗi epoch training đặt mô hình vào chế độ train, xóa gradient, tính logits và loss, chạy backward rồi optimizer.step. Loss epoch là trung bình có trọng số theo số mẫu, bao gồm batch cuối ngắn hơn. Gradient chỉ được tính trong training.
+The notebook prints the GPU name and PyTorch version; each model's metrics.json records the full environment. The models run on the T4 through CUDA. CPU threads control only PyTorch's CPU work.
 
-Validation chạy sau mỗi epoch với chế độ eval và tắt tính gradient; không cập nhật tham số. Khi validation loss giảm, chương trình lưu best.pt. Sau đủ 10 epoch, chương trình nạp lại best.pt để tính toàn bộ kết quả trong bảng so sánh, xuất dự đoán và vẽ confusion matrix/ví dụ.
+Each training epoch uses train mode: clear gradients, compute logits and loss, run backpropagation, then call optimizer.step. Epoch loss is weighted by batch size, including the smaller final batch. Gradients are calculated only during training.
 
-Hai mô hình dùng chung a1/train.py. Trước mỗi mô hình, chương trình đặt lại seed và tạo train loader với generator mới có cùng seed để giữ thứ tự mẫu có thể so sánh. Code đặt seed cho Python, NumPy và PyTorch, đồng thời tắt cuDNN benchmark; không cam kết kết quả giống từng bit giữa các phần cứng hoặc phiên bản khác nhau.
+Validation runs after every epoch in eval mode, without gradient tracking or parameter updates. When validation loss improves, the code saves best.pt. After 10 epochs, it reloads the checkpoint to calculate metrics, save predictions, and plot confusion matrices and examples.
 
-Các lớp, autograd, optimizer và loss dùng PyTorch; Dataset và ToTensor dùng torchvision; split và metrics dùng scikit-learn; biểu đồ dùng matplotlib. ChatGPT hỗ trợ soạn mã điều phối và phần báo cáo; phạm vi hỗ trợ được khai báo ở mục AI Usage và AI_USAGE.md.
+Both models use a1/train.py. Before each model, the code resets the seed and recreates the training loader with a seeded generator to keep sample order comparable. It seeds Python, NumPy and PyTorch and disables cuDNN benchmarking. Bitwise agreement across hardware or library versions is not guaranteed.
 
-### 2.3. Giả thuyết, yếu tố kiểm soát và thước đo
+PyTorch provides layers, autograd, the optimizer and loss. Torchvision supplies the Dataset and ToTensor. Scikit-learn handles splitting and metrics; matplotlib creates plots. The repository connects these components into one pipeline.
 
-Giả thuyết: với cấu hình hiện tại, MLP một lớp ẩn đạt accuracy và macro-F1 validation cao hơn Linear. Yếu tố thay đổi là kiến trúc. Dữ liệu, split, seed, tiền xử lý, optimizer, learning rate, loss, batch size, số epoch và môi trường T4 được giữ cố định.
+### 2.3. Hypothesis, controlled variables and metrics
 
-Hai mô hình có số tham số khác nhau khoảng 25,9 lần. Vì vậy, thí nghiệm chưa cô lập riêng tác động của ReLU hoặc tính phi tuyến. Mới dùng một seed và một cấu hình; chưa tìm kiếm siêu tham số hay tính độ biến thiên qua nhiều lần chạy.
+Our hypothesis is that an MLP with one hidden layer will achieve higher validation accuracy and macro-F1 than the Linear model under this setup. The architecture changes, while the dataset, split, seed, preprocessing, optimizer, learning rate, loss, batch size, epoch budget and T4 environment stay fixed.
 
-Accuracy là tỷ lệ dự đoán đúng trên 6.000 mẫu. Macro-F1 là trung bình F1 của 10 lớp với trọng số bằng nhau; báo cáo dùng thang 0-1. Confusion matrix có hàng là nhãn thật, cột là dự đoán. Tỷ lệ của một cặp nhầm là số ảnh nhầm chia 600 ảnh của lớp thật, không phải tỷ lệ trên toàn bộ các lỗi.
+We compare both metrics at the checkpoints selected by validation loss. Parameter counts and timings show the cost of any improvement. The MLP has about 25.9 times as many parameters, so the experiment cannot separate the effect of nonlinearity from the effect of model capacity. We used one seed and one configuration, without hyperparameter search or repeated runs.
 
-## Phần 3. Kết quả triển khai và thảo luận
+Accuracy is the fraction of correct predictions among the 6,000 validation samples. Macro-F1 averages the F1 scores of all 10 classes with equal weight and is reported on a 0-1 scale. Confusion-matrix rows represent true labels and columns represent predictions. A confusion rate is the number of errors for a class pair divided by the 600 images of the true class.
 
-### 3.1. Kết quả tại checkpoint được chọn
+## Part 3. Results and Discussion
 
-| Mô hình | Val loss | Val accuracy | Val macro-F1 | Tham số | Epoch chọn |
+### 3.1. Results at the selected checkpoints
+
+| Model | Val loss | Val accuracy | Val macro-F1 | Parameters | Selected epoch |
 |---|---|---|---|---|---|
 | LINEAR | 0.3980 | 86.62% | 0.8644 | 7,850 | 9 |
 | MLP | 0.2932 | 89.30% | 0.8924 | 203,530 | 9 |
 
-Nguồn: [comparison.csv](outputs/a1_t4/comparison.csv), [Linear metrics](outputs/a1_t4/linear/metrics.json) và [MLP metrics](outputs/a1_t4/mlp/metrics.json). Toàn bộ số trong mỗi hàng lấy từ cùng checkpoint đã chọn bằng validation loss.
+Sources: [comparison.csv](outputs/a1_t4/comparison.csv), [Linear metrics](outputs/a1_t4/linear/metrics.json) and [MLP metrics](outputs/a1_t4/mlp/metrics.json). Each row uses the same selected checkpoint for all reported metrics.
 
-Linear dự đoán đúng 5.197/6.000 ảnh, sai 803 ảnh. MLP dự đoán đúng 5.358/6.000 ảnh, sai 642 ảnh. MLP tăng khoảng 2,68 điểm phần trăm accuracy và 0,0280 macro-F1 trong lần chạy này, đồng thời có nhiều hơn khoảng 25,9 lần số tham số. Đây là so sánh quan sát trên một seed; chưa có kiểm định ý nghĩa thống kê.
+Linear correctly classifies 5,197 of the 6,000 images and makes 803 errors. MLP correctly classifies 5,358 images and makes 642 errors. In this run, MLP improves accuracy by about 2.68 percentage points and macro-F1 by 0.0280, with about 25.9 times as many parameters. These are observations from one seed; statistical significance has not been tested.
 
-### 3.2. Diễn biến huấn luyện
+### 3.2. Learning curves
 
-![Hình 5. Learning curves của Linear qua 10 epoch](outputs/a1_t4/linear/curves.png)
+![Figure 5. Linear learning curves over 10 epochs](outputs/a1_t4/linear/curves.png)
 
-Linear giảm validation loss từ 0,5446 ở epoch 1 xuống 0,3980 ở epoch 9. Ở epoch 10, train loss tiếp tục giảm nhưng validation loss tăng nhẹ lên 0,3998, accuracy giảm từ 86,62% xuống 86,33%. Theo quy tắc đã đặt, checkpoint được chọn ở epoch 9. Một lần tăng nhẹ cuối quá trình chưa đủ để kết luận overfitting nghiêm trọng hoặc đã hội tụ hoàn toàn.
+Linear's validation loss falls from 0.5446 at epoch 1 to 0.3980 at epoch 9. At epoch 10, training loss continues to fall, but validation loss rises slightly to 0.3998 and accuracy drops from 86.62% to 86.33%. The checkpoint rule therefore selects epoch 9. This small final increase is not enough to establish severe overfitting or full convergence.
 
-![Hình 6. Learning curves của MLP qua 10 epoch](outputs/a1_t4/mlp/curves.png)
+![Figure 6. MLP learning curves over 10 epochs](outputs/a1_t4/mlp/curves.png)
 
-Train loss của MLP giảm từ 0,5754 xuống 0,2563. Validation loss có dao động ở các epoch 4, 7-8 và 10, đạt giá trị thấp nhất 0,2932 ở epoch 9. Sang epoch 10, train loss giảm còn validation loss tăng lên 0,3020. Khoảng cách train/validation và sự dao động cuối lượt chạy gợi ý cần theo dõi khả năng tổng quát hóa; chưa đủ bằng chứng để kết luận overfitting nghiêm trọng.
+MLP's training loss falls from 0.5754 to 0.2563. Validation loss fluctuates at epochs 4, 7-8 and 10, reaching its lowest value of 0.2932 at epoch 9. At epoch 10, training loss falls further while validation loss rises to 0.3020. The gap and fluctuations suggest that generalization should be monitored in longer runs, but the present evidence does not establish severe overfitting.
 
-Macro-F1 của MLP ở epoch 10 tăng nhẹ so với epoch 9, nhưng tiêu chí chọn checkpoint là loss, nên báo cáo vẫn dùng checkpoint epoch 9 cho mọi metric. Nhóm chọn ngân sách 10 epoch cho baseline M1; chưa khảo sát ngân sách dài hơn để khẳng định đây là lựa chọn tối ưu.
+MLP's macro-F1 is slightly higher at epoch 10 than at epoch 9. We still report epoch 9 because checkpoint selection is based on validation loss. Ten epochs were the baseline budget for M1; we have not tested whether a longer budget would be better.
 
-Train metrics được tích lũy trong lúc trọng số thay đổi theo batch; validation metrics được tính với trọng số cố định cuối epoch. Vì vậy, so sánh trực tiếp hai đường cần xét khác biệt cách đo này. Chi tiết đủ 10 epoch nằm trong [Linear history](outputs/a1_t4/linear/history.csv) và [MLP history](outputs/a1_t4/mlp/history.csv).
+Training metrics are accumulated while weights change between batches. Validation metrics use the fixed weights at the end of each epoch. This difference matters when comparing the curves. The full logs are in [Linear history](outputs/a1_t4/linear/history.csv) and [MLP history](outputs/a1_t4/mlp/history.csv).
 
-### 3.3. Confusion matrix và lỗi định lượng
+### 3.3. Confusion matrices and class-level errors
 
-![Hình 7. Confusion matrix validation của Linear](outputs/a1_t4/linear/confusion_matrix.png)
+![Figure 7. Linear confusion matrix on the validation set](outputs/a1_t4/linear/confusion_matrix.png)
 
-Năm cặp nhầm có số ảnh lớn nhất của Linear:
+The five most frequent Linear confusions are:
 
-| Nhãn thật | Dự đoán | Số ảnh | Tỷ lệ trong lớp thật |
+| True class | Predicted class | Images | Rate within true class |
 |---|---|---|---|
 | Shirt | T-shirt/top | 97 | 16.17% |
 | Pullover | Coat | 82 | 13.67% |
@@ -169,11 +176,11 @@ Năm cặp nhầm có số ảnh lớn nhất của Linear:
 | Shirt | Pullover | 71 | 11.83% |
 | Coat | Pullover | 58 | 9.67% |
 
-![Hình 8. Confusion matrix validation của MLP](outputs/a1_t4/mlp/confusion_matrix.png)
+![Figure 8. MLP confusion matrix on the validation set](outputs/a1_t4/mlp/confusion_matrix.png)
 
-Năm cặp nhầm có số ảnh lớn nhất của MLP:
+The five most frequent MLP confusions are:
 
-| Nhãn thật | Dự đoán | Số ảnh | Tỷ lệ trong lớp thật |
+| True class | Predicted class | Images | Rate within true class |
 |---|---|---|---|
 | Pullover | Coat | 76 | 12.67% |
 | Shirt | T-shirt/top | 69 | 11.50% |
@@ -181,11 +188,11 @@ Năm cặp nhầm có số ảnh lớn nhất của MLP:
 | Shirt | Coat | 46 | 7.67% |
 | Shirt | Pullover | 44 | 7.33% |
 
-MLP giảm các lỗi Shirt -> T-shirt/top từ 97 xuống 69, Shirt -> Coat từ 73 xuống 46, Shirt -> Pullover từ 71 xuống 44 và Pullover -> Coat từ 82 xuống 76. Tuy vậy, Pullover -> Coat vẫn là cặp nhầm phổ biến nhất của MLP.
+MLP reduces Shirt -> T-shirt/top errors from 97 to 69, Shirt -> Coat from 73 to 46, Shirt -> Pullover from 71 to 44, and Pullover -> Coat from 82 to 76. Pullover -> Coat nevertheless remains MLP's largest confusion pair.
 
-Bảng sau tổng hợp lại toàn bộ dự đoán theo lớp thật. Recall của một lớp là số ảnh được dự đoán đúng của lớp đó chia 600.
+The following table summarizes all predictions by true class. Recall is the number of correct predictions for that class divided by 600.
 
-| Lớp thật (600 ảnh/lớp) | Linear: số sai | MLP: số sai | Linear: recall | MLP: recall |
+| True class (600 images each) | Linear errors | MLP errors | Linear recall | MLP recall |
 |---|---|---|---|---|
 | T-shirt/top | 67 | 82 | 88.83% | 86.33% |
 | Trouser | 20 | 9 | 96.67% | 98.50% |
@@ -198,92 +205,90 @@ Bảng sau tổng hợp lại toàn bộ dự đoán theo lớp thật. Recall c
 | Bag | 30 | 18 | 95.00% | 97.00% |
 | Ankle boot | 32 | 22 | 94.67% | 96.33% |
 
-Shirt là lớp có nhiều lỗi nhất ở cả hai mô hình, giảm từ 262 lỗi (43,67% lớp thật) xuống 183 lỗi (30,50%). Với T-shirt/top, số lỗi tăng từ 67 lên 82; vì thế, sự cải thiện tổng thể của MLP không đồng nghĩa mọi lớp đều được cải thiện. Các số theo lớp được tính từ hai file validation_predictions.csv, không suy ra từ vài ảnh minh họa.
+Shirt has the most errors for both models, falling from 262 errors (43.67% of the class) to 183 (30.50%). T-shirt/top becomes slightly worse, with errors rising from 67 to 82. MLP's overall improvement therefore does not extend to every class. These counts come from the complete validation_predictions.csv files.
 
-### 3.4. Phân tích ảnh đúng và sai
+### 3.4. Correct and incorrect predictions
 
-![Hình 9. Năm ví dụ đúng đầu tiên và năm ví dụ sai đầu tiên của Linear](outputs/a1_t4/linear/examples.png)
+![Figure 9. Linear: the first five correct and first five incorrect validation predictions](outputs/a1_t4/linear/examples.png)
 
-![Hình 10. Năm ví dụ đúng đầu tiên và năm ví dụ sai đầu tiên của MLP](outputs/a1_t4/mlp/examples.png)
+![Figure 10. MLP: the first five correct and first five incorrect validation predictions](outputs/a1_t4/mlp/examples.png)
 
-Hàng trên của mỗi hình là 5 dự đoán đúng đầu tiên; hàng dưới là 5 dự đoán sai đầu tiên theo thứ tự validation. Đây không phải mẫu chọn ngẫu nhiên hay toàn bộ các lỗi. Hai hình chọn ảnh độc lập cho mỗi mô hình, nên các cột không mặc định là cùng một ảnh.
+The top row of each figure shows the first five correct predictions; the bottom row shows the first five errors in validation order. These examples are selected separately for each model. They are not random samples, and matching columns do not necessarily show the same image.
 
-**Trường hợp A - ảnh có chỉ số train chính thức 18, nhãn Shirt.** Ảnh nằm ở hàng dưới, cột 1 của Linear và hàng trên, cột 2 của MLP. Ảnh áo xám tay dài có dáng tổng thể gần Pullover; chi tiết ở cổ và phần thân áo khá nhỏ. Linear dự đoán Pullover, còn MLP dự đoán đúng Shirt. Đây là bằng chứng trên một ảnh rằng hai mô hình xử lý khác nhau; chưa đủ để xác định MLP đã học chi tiết thị giác nào.
+**Case A - original training index 18, true label Shirt.** This image appears in the bottom-left position for Linear and in the second position of the top row for MLP. The gray, long-sleeved garment has an outline similar to a pullover, while the collar and body details are small. Linear predicts Pullover; MLP correctly predicts Shirt. The example shows that the two models handle this image differently, but it does not identify the features MLP used.
 
-**Trường hợp B - chỉ số 164, nhãn Shirt.** Linear và MLP đều dự đoán T-shirt/top. Ảnh có thân áo tối và tay ngắn; các chi tiết phân biệt cổ áo và thân áo không rõ ở độ phân giải nhỏ. Dáng áo gần với áo thun là một giả thuyết giải thích sự nhầm lẫn. Trường hợp này tương ứng với cặp lỗi phổ biến Shirt -> T-shirt/top trong thống kê.
+**Case B - index 164, true label Shirt.** Both models predict T-shirt/top. The image has a dark body and short sleeves, with limited collar and torso detail at this resolution. Its T-shirt-like outline is a possible explanation for the error. It also belongs to the frequent Shirt -> T-shirt/top confusion pair.
 
-**Trường hợp C - chỉ số 169, nhãn T-shirt/top.** Cả hai mô hình dự đoán Coat. Áo có tay dài và dáng khá rộng, có thể làm hình dáng gần lớp Coat. Đây là nhận xét định tính từ ảnh, không chứng minh nhãn gốc sai và không chứng minh đặc trưng nào quyết định dự đoán.
+**Case C - index 169, true label T-shirt/top.** Both models predict Coat. The long sleeves and wide outline may make it resemble a coat. This is a visual interpretation of the example; it does not show that the original label is wrong or establish which features caused the prediction.
 
-Những hướng cần thử ở giai đoạn tiếp theo gồm kiến trúc CNN để khai thác lân cận 2D và các cấu hình regularization/augmentation được kiểm soát. Hiệu quả của các thay đổi này chưa được đo trong M1.
+A useful next step is to test a CNN that models local 2D structure, alongside controlled regularization or augmentation experiments. Their effects have not been measured in M1.
 
-### 3.5. Chi phí tính toán và phạm vi phép đo
+### 3.5. Computational cost and timing scope
 
-| Mô hình | Train (s) | Validation (s) | Fit wall (s) | Forward/batch (ms) | Forward/ảnh (ms) |
+| Model | Training (s) | Validation (s) | Fit wall (s) | Forward / batch (ms) | Forward / image (ms) |
 |---|---|---|---|---|---|
 | LINEAR | 64.62 | 7.05 | 71.68 | 0.039946 | 0.000312 |
 | MLP | 64.04 | 6.97 | 71.03 | 0.137489 | 0.001074 |
 
-Train time cộng thời gian vòng lặp training qua 10 epoch, gồm nạp batch, truyền dữ liệu, forward, loss, backward, cập nhật tham số và thu metric. Số này loại trừ validation, ghi history/checkpoint, vẽ hình và sinh báo cáo. Validation time được đo riêng.
+Training time sums the training loops across 10 epochs. It includes batch loading, data transfer, forward passes, loss calculation, backpropagation, parameter updates and metric collection. It excludes validation, history/checkpoint writing, plotting and report generation. Validation time is measured separately.
 
-Fit wall time đo vòng lặp 10 epoch, gồm training, validation và phần việc lưu log/checkpoint nằm trong vòng lặp; không bao gồm tải dữ liệu/EDA ban đầu hay đánh giá checkpoint và vẽ hình sau vòng lặp. Do đó, đây cũng chưa phải thời gian chạy toàn bộ notebook.
+Fit wall time covers the 10-epoch loop, including training, validation, logging and checkpoint writes. It excludes the initial data download and EDA, as well as final checkpoint evaluation and plotting. It therefore does not measure the entire notebook run.
 
-Inference đo forward của mô hình ở chế độ eval/inference_mode với đầu vào đã nằm trên GPU. Phép đo dùng batch 128, warm-up 10 lượt, đo 50 lượt và đồng bộ CUDA trước/sau đoạn đo. Forward/ảnh là forward/batch chia 128; không phải độ trễ phục vụ một yêu cầu đơn ảnh và không gồm DataLoader hay truyền dữ liệu.
+Inference timing measures model forward passes in eval/inference_mode, with inputs already on the GPU. It uses batch size 128, 10 warm-up iterations and 50 timed iterations, with CUDA synchronization around the timed section. Forward time per image is the batch time divided by 128. It excludes the DataLoader and data transfer and should not be treated as the latency of a single-image request.
 
-Trong phép đo này, thời gian train của hai mô hình gần nhau; forward/ảnh của MLP cao hơn khoảng 3,44 lần. DataLoader, truyền dữ liệu và chi phí thực thi có thể ảnh hưởng mạnh khi mô hình nhỏ, nhưng chưa có profiling để xác định thành phần chi phối. Không kết luận độ phức tạp tính toán tương đương từ một lần đo train time.
+Training times are close in this run, while MLP's forward time per image is about 3.44 times higher. Data loading, transfers and execution overhead can matter when models are small, but we have not profiled these components. Similar training times alone do not establish similar computational complexity.
 
-### 3.6. Vấn đề triển khai và kiểm chứng
+### 3.6. Implementation issues
 
-Notebook có một ô đọc sai khóa parameter_count và validation nên in None; ô sau chuyển sang các khóa đúng parameters, loss, accuracy và macro_f1. Đây là lỗi hiển thị phần tổng hợp, không thay đổi quá trình training hay checkpoint.
+One notebook cell reads the wrong metric keys, parameter_count and validation, and prints None. The next cell uses the correct keys: parameters, loss, accuracy and macro_f1. This was a display issue in the summary cell; it did not affect training or the saved checkpoints.
 
-Log cài đặt có cảnh báo numba 0.61.2 không tương thích numpy 2.3.5. Pipeline hiện tại không dùng numba và các lệnh training sau đó hoàn thành. Tài liệu cung cấp chưa ghi nhận cách giải quyết xung đột này cho toàn bộ môi trường Colab; không coi cảnh báo đã được sửa.
+The installation log also reports a compatibility warning between numba 0.61.2 and numpy 2.3.5. The pipeline does not use numba, and training completes afterward. The supplied run does not document a full resolution of that environment conflict.
 
-Trợ lý AI đã đối chiếu log notebook với history/metrics, tính lại accuracy và macro-F1 từ CSV, kiểm tra chỉ số chia tập và fingerprint source. Trợ lý cũng nạp hai checkpoint T4 trên CPU: 6.000 dự đoán của mỗi mô hình khớp CSV; chênh lệch loss do phép tính số thực dưới 0,00000001. Đây là kiểm chứng của trợ lý; không thay thế việc các thành viên đọc, hiểu và rà soát nội dung trước khi nộp. Chi tiết ở [verification](verification/colab_review.json).
+### 3.7. Reproduction and provenance
 
-### 3.7. Tái lập kết quả và nguồn gốc
+The original Colab run used a source ZIP. [Commit 5d7430a](https://github.com/cau26/CO3133-DLProject/tree/5d7430a2c5b344ab3bb8af81e7bac7e99f9ab01b) archives the source files whose checksums match that run. It was created after training; the original git_commit field remains null. [COLAB_RUN.md](COLAB_RUN.md) explains the source fingerprint and the later documentation changes.
 
-Lần chạy gốc sử dụng bộ starter ZIP, không chạy trong một Git checkout. Vì vậy, trường git_commit trong metrics gốc là null. Các file kết quả gốc được giữ nguyên, cùng mã băm source. Một commit được tạo sau lần chạy để lưu đúng mã nguồn dùng cho Colab:
+To repeat the experiment on a Tesla T4 in Colab, select a T4 GPU runtime, then clone the repository and install the pinned dependencies as described in [README](README.md). Before training, check the device in a Python cell:
 
-~~~text
-5d7430a2c5b344ab3bb8af81e7bac7e99f9ab01b
+~~~python
+import torch
+assert torch.cuda.is_available(), "CUDA is unavailable; select a GPU runtime."
+print(torch.__version__)
+print(torch.cuda.get_device_name(0))
 ~~~
 
-Commit này là mốc lưu trữ mã nguồn để đối chiếu, không phải commit được ghi nhận lúc training. [COLAB_RUN.md](COLAB_RUN.md) giải thích quan hệ giữa notebook, checkpoint, split, source hash và commit lưu trữ.
+For a hardware-matched rerun, the device name should identify a Tesla T4. T4 is the GPU model; cuda is the PyTorch device used to execute on it. From the repository directory in Colab, run these cells in order:
 
-Từ thư mục gốc repo, cài dependencies:
-
-~~~bash
-python -m pip install -r requirements-a1.txt
+~~~python
+!python run_a1.py --stage all --device cuda --out outputs/a1_t4_rerun
 ~~~
 
-Chạy lại trên môi trường có CUDA và ghi vào thư mục mới:
-
-~~~bash
-python run_a1.py --stage all --device cuda --out outputs/a1_t4_rerun
-python run_a1.py --stage evaluate --out outputs/a1_t4_rerun
+~~~python
+!python run_a1.py --stage evaluate --device cuda --out outputs/a1_t4_rerun
 ~~~
 
-Chương trình chủ động từ chối ghi đè thư mục đã có kết quả training hoàn thành. Cấu hình chính xác của lần chạy đã báo cáo nằm ở [outputs/a1_t4/config.json](outputs/a1_t4/config.json); configs/a1.json là cấu hình mặc định và lệnh Colab đã ghi đè device thành cuda.
+In a terminal, use the same commands without the leading exclamation mark. The all stage runs EDA, trains both models and writes results. The evaluate stage reloads the checkpoints and evaluates them on validation. Use a new output directory for every rerun so that the original T4 evidence stays intact.
 
-Checkpoint: [Linear best.pt](outputs/a1_t4/linear/best.pt), [MLP best.pt](outputs/a1_t4/mlp/best.pt). Source và hướng dẫn CPU/Colab nằm trong [README](README.md). Thời gian chạy phụ thuộc môi trường; kết quả train lại có thể khác do khác biệt phần cứng, thư viện hoặc nguồn bất định.
+The recorded configuration is in [outputs/a1_t4/config.json](outputs/a1_t4/config.json). The default configs/a1.json selects CPU; --device cuda overrides that setting. The documentation, `a1/report.py`, and the explanatory pipeline diagram were updated after the original run. The model, data, EDA, and training implementations remain unchanged from the archived source. The model, data and training code still match the archived source.
 
-### 3.8. Giới hạn, kết luận và công việc tiếp theo
+Checkpoints: [Linear best.pt](outputs/a1_t4/linear/best.pt) and [MLP best.pt](outputs/a1_t4/mlp/best.pt). Runtime and results may vary with hardware, software versions and nondeterminism.
 
-M1 đã có bằng chứng thực thi các thành phần tối thiểu: EDA, Dataset/DataLoader, train-validation loop, Linear và MLP. Trong cùng thiết lập T4 đã báo cáo, MLP có accuracy và macro-F1 validation cao hơn Linear, đồng thời có nhiều tham số và chi phí forward cao hơn.
+### 3.8. Conclusions, limitations and next steps
 
-Các giới hạn gồm một seed, một cấu hình, số tham số hai mô hình không khớp, chưa tìm kiếm siêu tham số, chưa đánh giá test, chưa kiểm tra trùng nội dung ảnh và chưa kiểm chứng trên dữ liệu ngoài Fashion-MNIST. Chưa thực hiện MNIST debugging hay CIFAR-10 extension trong các file được cung cấp.
+M1 includes a working EDA stage, Dataset/DataLoader setup, a training and validation loop, and runnable Linear and MLP baselines. Under the reported T4 setup, MLP achieves higher validation accuracy and macro-F1, with more parameters and a higher forward-pass cost.
 
-Giai đoạn Final sẽ bổ sung CNN tự thiết kế, LSTM hoặc GRU, Transformer; hoàn thiện thí nghiệm và phân tích, đánh giá test sau khi chốt lựa chọn bằng validation, rồi hoàn thiện slides và video theo yêu cầu Assignment 1. Những phần này là kế hoạch, chưa có kết quả thực nghiệm trong bản M1.
+The current evidence is limited to one seed and one configuration. Model sizes are not matched, hyperparameters have not been searched, and the test set has not been evaluated. Image-content duplicates and generalization beyond Fashion-MNIST have not been checked. MNIST debugging and the CIFAR-10 extension were not run.
+
+For the final milestone, we plan to add a custom CNN, an LSTM or GRU, and a Transformer. We will extend the comparisons and analysis, evaluate the test set after making validation-based choices, and prepare the final report, slides and video. These are planned tasks, not completed experiments.
 
 ### AI Usage Disclosure
 
-Trần Gia Lâm sử dụng ChatGPT để hỗ trợ đọc handbook, tổ chức công việc, tạo mã khởi đầu, hướng dẫn chạy, kiểm tra kết quả và biên tập báo cáo. Lâm xác nhận đã chạy lại bộ mã trên Google Colab; notebook và outputs/a1_t4 là bằng chứng của lần chạy được cung cấp. Các nhận xét mới trong bản biên tập được trợ lý đối chiếu với source, log, CSV, checkpoint và ảnh.
+The team used AI to develop ideas, review source code and improve the report. The reported experiments were run on Google Colab with an NVIDIA Tesla T4. Tools, scope and verification are documented in [AI_USAGE.md](AI_USAGE.md).
 
-Mã model ChatGPT cụ thể không được ghi nhận. Nguyễn Hữu Cầu phụ trách EDA và MLP theo xác nhận của leader. Việc thành viên đã rà soát từng phần của bản báo cáo cuối cùng còn cần nhóm xác nhận. Log công cụ, prompt, phạm vi ảnh hưởng, chỉnh sửa và trách nhiệm kiểm chứng được ghi trong [AI_USAGE.md](AI_USAGE.md). Các ô chưa xác nhận không được diễn giải là công việc đã hoàn thành.
+### References
 
-### Tài liệu tham khảo
-
-1. [Zalando Research, Fashion-MNIST: mô tả, định dạng dữ liệu và giấy phép](https://github.com/zalandoresearch/fashion-mnist).
-2. [PyTorch, Quickstart tutorial: Dataset/DataLoader, mô hình và vòng lặp tối ưu](https://docs.pytorch.org/tutorials/beginner/basics/quickstart_tutorial.html).
-3. Course Project Handbook CO3133, Semester-261, revision 14 September 2026; mục 3, 4.2, 5, 7.1, 7.4 và Part II.
-4. [Bản ghi Colab gốc của lần chạy được cung cấp](notebooks/A1_Colab_Run.ipynb).
-5. [Mã nguồn đúng fingerprint của lần chạy Colab](https://github.com/cau26/CO3133-DLProject/tree/5d7430a2c5b344ab3bb8af81e7bac7e99f9ab01b) và [các file kết quả](outputs/a1_t4/comparison.csv).
+1. [Zalando Research, Fashion-MNIST: dataset description, format and license](https://github.com/zalandoresearch/fashion-mnist).
+2. [PyTorch Quickstart: Dataset/DataLoader, models and the optimization loop](https://docs.pytorch.org/tutorials/beginner/basics/quickstart_tutorial.html).
+3. Course Project Handbook CO3133, Semester 261, revision 14 September 2026; Sections 3, 4.2, 5, 7.1, 7.4 and Part II.
+4. [Original Colab notebook supplied for this run](notebooks/A1_Colab_Run.ipynb).
+5. [Archived source matching the Colab fingerprint](https://github.com/cau26/CO3133-DLProject/tree/5d7430a2c5b344ab3bb8af81e7bac7e99f9ab01b) and [saved experiment results](outputs/a1_t4/comparison.csv).

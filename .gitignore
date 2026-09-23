@@ -223,3 +223,13 @@ __marimo__/
 /outputs/smoke*/
 /outputs/*_rerun*/
 /outputs/eda_check/
+
+# LaTeX build files
+/reports/assignment1/*.aux
+/reports/assignment1/*.log
+/reports/assignment1/*.out
+/reports/assignment1/*.toc
+/reports/assignment1/*.fls
+/reports/assignment1/*.fdb_latexmk
+/reports/assignment1/*.synctex.gz
+/reports/assignment1/main.pdf

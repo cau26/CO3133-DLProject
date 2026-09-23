@@ -1,3 +1,0 @@
-# Optional: regenerate the edited report PDF.
--r requirements-a1.txt
-reportlab==4.4.9

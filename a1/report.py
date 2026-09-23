@@ -31,80 +31,80 @@ def create_report(output_dir):
         "# Assignment 1 - M1 Draft\n",
         f"**Group:** {cfg['group']}  \n**Course:** CO3133, Semester-261  \n**Instructor:** Lê Thành Sách\n",
         "**Members:** " + "; ".join(cfg.get("members", [])) + "\n",
-        "> Bản nháp được tạo từ lần chạy code thực tế. Nhóm cần đọc, kiểm chứng và bổ sung phân tích trước khi nộp. Các số dưới đây là validation; chưa phải test.\n",
+        "> This summary is generated from saved experiment results. Review the figures and expand the analysis before submission. All metrics below are validation results; the test set has not been evaluated.\n",
         "## Part 1 - Problem and Data Description\n",
-        "Bài toán: từ một ảnh xám của một sản phẩm thời trang, dự đoán một trong 10 lớp. "
-        "Đơn vị dự đoán là một ảnh; đầu vào có kích thước 1 × 28 × 28, đầu ra là 10 logits. "
-        "Đây là bài toán phân loại đa lớp, đơn nhãn.\n",
-        "Dữ liệu: [Fashion-MNIST](https://github.com/zalandoresearch/fashion-mnist), do Zalando Research công bố, giấy phép MIT. "
-        "Ảnh và nhãn được tải dưới dạng IDX nén gzip; torchvision kiểm tra MD5 khi tải. "
-        "Bản dữ liệu dùng trong lần chạy được nhận diện qua nguồn tải và checksum chuẩn của torchvision.\n",
-        f"Chia tập: {data['train']:,} train, {data['validation']:,} validation, {data['test']:,} test. "
-        f"Tách stratified từ 60.000 ảnh train chính thức, seed {cfg['seed']}; giữ test chính thức độc lập. "
-        "Chỉ số train/validation không trùng nhau và được lưu trong `split_indices.npz`. "
-        "Chưa kiểm tra trùng lặp theo nội dung ảnh; kiểm tra chỉ số không thay thế kiểm tra đó.\n",
-        "![Phân bố lớp](eda/class_distribution.png)\n\n![Ảnh mẫu](eda/samples.png)\n",
-        "Xem số lượng chính xác trong [class_counts.csv](eda/class_counts.csv). "
-        "Các lớp cân bằng về số mẫu trong cách chia này. Ảnh có độ phân giải thấp và chỉ có một kênh; "
-        "kết quả trên benchmark này chưa chứng minh khả năng tổng quát hóa sang ảnh sản phẩm thực tế.\n",
-        "Tiền xử lý: `ToTensor()` chuyển uint8 [0,255] thành float32 [0,1]. "
-        "Không augmentation, không chuẩn hóa theo mean/std trong cấu hình baseline này. "
-        "Dùng Dataset có sẵn của torchvision, Subset để chia tập và DataLoader để tạo batch.\n",
-        "![Batch sau tiền xử lý](eda/batch_preview.png)\n",
+        "The task is to classify a grayscale fashion image into one of 10 classes. "
+        "Each input has shape 1 x 28 x 28, and each model returns 10 logits. "
+        "This is single-label, multiclass classification.\n",
+        "We use [Fashion-MNIST](https://github.com/zalandoresearch/fashion-mnist), "
+        "published by Zalando Research under the MIT license. Images and labels are downloaded "
+        "as gzip-compressed IDX files. Torchvision checks their MD5 checksums. "
+        "The download source and expected checksums identify the dataset files used in this run.\n",
+        f"The split contains {data['train']:,} training, {data['validation']:,} validation and {data['test']:,} test images. "
+        f"We stratify the 60,000 official training images by class with seed {cfg['seed']} and reserve the official test set. "
+        "Training and validation indices are disjoint and saved in `split_indices.npz`. "
+        "Image-content duplicates have not been checked; disjoint indices do not rule them out.\n",
+        "![Class distribution](eda/class_distribution.png)\n\n![Sample images](eda/samples.png)\n",
+        "Exact counts are saved in [class_counts.csv](eda/class_counts.csv). "
+        "The classes have equal sample counts in each split. Images have low resolution and one channel. "
+        "Results on this benchmark do not establish performance on real product photographs.\n",
+        "`ToTensor()` converts uint8 values in [0, 255] to float32 values in [0, 1]. "
+        "These baselines use no data augmentation or additional mean/std normalization. "
+        "We use torchvision's Dataset, Subset for splitting and DataLoader for batching.\n",
+        "![Training batch after preprocessing](eda/batch_preview.png)\n",
         "## Part 2 - Methodology\n",
-        "Pipeline: ảnh/nhãn → ToTensor → split và DataLoader → Linear hoặc MLP → "
-        "CrossEntropyLoss → Adam cập nhật trọng số → validation → chọn checkpoint → argmax và đánh giá.\n",
+        "Pipeline: images and labels → ToTensor → split and DataLoader → Linear or MLP → "
+        "CrossEntropyLoss → Adam updates → validation → checkpoint selection → argmax and evaluation.\n",
         f"- Linear: Flatten → Linear(784,10).\n- MLP: Flatten → Linear(784,{cfg['hidden_size']}) → ReLU → Linear({cfg['hidden_size']},10).\n",
-        "Linear dùng phép biến đổi tuyến tính trực tiếp trên pixel đã làm phẳng. "
-        "MLP thêm hidden layer và ReLU để học quan hệ phi tuyến. Cả hai không có cơ chế tích chập "
-        "để khai thác trực tiếp cấu trúc không gian cục bộ. Không áp dụng Softmax trước CrossEntropyLoss.\n",
+        "Linear applies one affine transformation to flattened pixels. "
+        "MLP adds a hidden layer and ReLU to learn nonlinear relationships. "
+        "Neither model uses convolution to represent local spatial structure. "
+        "Both return logits directly to CrossEntropyLoss, without applying Softmax first.\n",
         f"Adam, learning rate {cfg['learning_rate']}, batch size {cfg['batch_size']}, "
         f"{cfg['epochs']} epochs, seed {cfg['seed']}, {cfg['cpu_threads']} CPU threads, "
-        f"device {cfg['device']}. Không scheduler, dropout, weight decay, early stopping hoặc mixed precision. "
-        "Lưu checkpoint có validation loss thấp nhất; nếu bằng nhau, giữ checkpoint xuất hiện trước.\n",
-        "Thiết kế thí nghiệm: kiểm tra giả thuyết thêm hidden layer phi tuyến cải thiện phân loại. "
-        "Yếu tố thay đổi là kiến trúc; dữ liệu, split, tiền xử lý, loss, optimizer, learning rate, "
-        "batch size và số epoch được giữ cố định. Số tham số không được khớp bằng nhau, nên chưa thể "
-        "quy toàn bộ chênh lệch cho tính phi tuyến. Cấu hình này là điểm khởi đầu, chưa được tìm kiếm siêu tham số.\n",
-        "Code nhóm cần hiểu và kiểm chứng: mô hình, train/validation loop, chọn checkpoint, EDA và tổng hợp kết quả. "
-        "Thư viện: PyTorch cho layers/autograd/optimizer/loss, torchvision cho dữ liệu và ToTensor, "
-        "scikit-learn cho split/metrics, matplotlib cho biểu đồ. AI hỗ trợ soạn code; xem AI disclosure.\n",
+        f"device {cfg['device']}. We use no scheduler, dropout, weight decay, early stopping or mixed precision. "
+        "The checkpoint with the lowest validation loss is saved; ties keep the earlier checkpoint.\n",
+        "The experiment tests whether a nonlinear hidden layer improves classification. "
+        "The architecture changes, while data, split, preprocessing, loss, optimizer, learning rate, "
+        "batch size and epoch budget stay fixed. Parameter counts are not matched, so any improvement "
+        "cannot be attributed to nonlinearity alone. This is a baseline configuration, without hyperparameter search.\n",
+        "The repository implements the models, training and validation loop, checkpoint selection, EDA and result summary. "
+        "PyTorch supplies layers, autograd, optimizers and loss functions; torchvision supplies the data and ToTensor; "
+        "scikit-learn handles the split and metrics; matplotlib creates the plots.\n",
         "## Part 3 - Implementation Results\n", comparison + "\n",
-        f"MLP trừ Linear: {delta:+.2f} điểm phần trăm validation accuracy trong lần chạy này. "
-        "Cần đọc thêm macro-F1, số tham số và thời gian để đánh giá sự đánh đổi. "
-        "Đây là một seed; chưa có mean/std nhiều lần chạy hoặc kết luận về ý nghĩa thống kê.\n",
-        "Training time trong bảng gồm nạp batch, forward/backward, cập nhật và thu metric; "
-        "không gồm validation. Inference là thời gian forward thuần, input đã ở device, "
-        f"batch {cfg['batch_size']}, warm-up 10 batch, đo 50 batch; ms/image là giá trị chia trung bình theo batch. "
-        "Không diễn giải nó thành độ trễ một yêu cầu đơn ảnh hoặc thời gian toàn pipeline.\n",
+        f"MLP minus Linear: {delta:+.2f} percentage points in validation accuracy for this run. "
+        "Macro-F1, parameter count and timing provide the rest of the comparison. "
+        "This is one seed; we do not report repeated-run mean/std or statistical significance.\n",
+        "Training time includes batch loading, forward and backward passes, updates and metric collection, "
+        "but excludes validation. Inference timing covers only model forward passes with inputs already on the device: "
+        f"batch size {cfg['batch_size']}, 10 warm-up iterations and 50 timed iterations. "
+        "Time per image is the batch time divided by batch size, not single-request or end-to-end latency.\n",
     ]
     for r in results:
         name = r["model"]
         parts += [f"### {name.upper()}\n",
                   f"![Curves]({name}/curves.png)\n\n![Confusion matrix]({name}/confusion_matrix.png)\n\n![Examples]({name}/examples.png)\n",
-                  "Các cặp nhầm nhiều nhất trên validation (số liệu thực tế):\n"]
-        parts += [f"- {e['true_class']} → {e['predicted_class']}: {e['count']} ảnh "
-                  f"({e['rate_within_true_class']:.1%} số ảnh của lớp thật).\n" for e in r["top_errors"]]
-        parts += [f"Máy chạy: {r['environment']['cpu']}; device {r['environment']['device']}. "
-                  f"Xem cấu hình, phiên bản, fingerprint code, thời gian và checkpoint trong [{name}/metrics.json]({name}/metrics.json).\n"]
+                  "The most frequent validation confusions are:\n"]
+        parts += [f"- {e['true_class']} → {e['predicted_class']}: {e['count']} images "
+                  f"({e['rate_within_true_class']:.1%} of the true class).\n" for e in r["top_errors"]]
+        parts += [f"Hardware: {r['environment']['cpu']}; device {r['environment']['device']}. "
+                  f"Settings, versions, source fingerprint, timings and checkpoint details are in [{name}/metrics.json]({name}/metrics.json).\n"]
     parts += [
-        "### Phân tích cần nhóm bổ sung\n",
-        "1. Đọc hai learning curves: từ epoch nào validation dừng cải thiện trong khi train tiếp tục cải thiện?\n"
-        "2. Chọn ít nhất hai ảnh dự đoán sai, mô tả chi tiết nhìn thấy và đưa ra giả thuyết nguyên nhân.\n"
-        "3. Giải thích accuracy, macro-F1 và trade-off tốc độ/số tham số của hai mô hình.\n"
-        "4. Ghi lỗi triển khai thực sự gặp và cách sửa; nếu không có, ghi rõ.\n",
-        "### Giới hạn và kế hoạch Final\n",
-        "Draft mới có Linear và MLP, một seed và một cấu hình. Test chưa được đánh giá. "
-        "Tiếp theo triển khai CNN tự thiết kế, LSTM hoặc GRU, Transformer; mở rộng so sánh, "
-        "phân tích biểu diễn/inductive bias và kiểm tra test sau khi chốt lựa chọn bằng validation. "
-        "Hoàn thiện báo cáo, slides, video và các liên kết theo handbook.\n",
+        "### Analysis to add to the full report\n",
+        "1. Read both learning curves. Does validation stop improving while training loss keeps falling?\n"
+        "2. Discuss at least two incorrect predictions. Describe visible details and possible causes.\n"
+        "3. Explain the accuracy, macro-F1, speed and parameter-count trade-offs.\n"
+        "4. Describe implementation issues that actually occurred and how they were handled.\n",
+        "### Limitations and final-submission plan\n",
+        "This draft covers Linear and MLP with one seed and one configuration. The test set has not been evaluated. "
+        "Next steps are a custom CNN, an LSTM or GRU, and a Transformer, followed by a broader comparison "
+        "of representations and inductive biases. Evaluate the test set after making model choices on validation. "
+        "Complete the report, slides, video and links required by the handbook.\n",
         "### AI Usage Disclosure\n",
-        "ChatGPT hỗ trợ tạo code, cấu trúc báo cáo và hướng dẫn. Bản báo cáo này lấy số từ metric thật; "
-        "các nhận xét mang tính giả thuyết cần nhóm kiểm chứng. Nhóm phải điền người sử dụng, "
-        "prompt, thời điểm, phần bị ảnh hưởng, cách kiểm chứng và người chịu trách nhiệm vào AI_USAGE.md. "
-        "Chưa xác nhận kiểm chứng bởi thành viên nhóm tại thời điểm sinh tự động.\n",
-        "### Tài liệu tham khảo\n",
-        "- Course Project Handbook CO3133, revision 14 September 2026, mục 3, 5, 7.4 và Part II.\n"
+        "The team used AI to develop ideas, review source code and improve the report. "
+        "Tools, scope and verification are documented in the repository's AI_USAGE.md.\n",
+        "### References\n",
+        "- Course Project Handbook CO3133, revision 14 September 2026, Sections 3, 5, 7.4 and Part II.\n"
         "- [Fashion-MNIST dataset](https://github.com/zalandoresearch/fashion-mnist).\n"
         "- [PyTorch Quickstart](https://docs.pytorch.org/tutorials/beginner/basics/quickstart_tutorial.html).\n",
     ]
