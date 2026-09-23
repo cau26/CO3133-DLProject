@@ -53,8 +53,6 @@ In a new Colab notebook, select a T4 GPU runtime and run:
 
 If the repository directory already exists, reuse it or choose a new clone directory. If Colab requests a restart after installation, restart and repeat the directory and GPU-check cells.
 
-[Commit 5d7430a](https://github.com/cau26/CO3133-DLProject/tree/5d7430a2c5b344ab3bb8af81e7bac7e99f9ab01b) archives the exact source used for the recorded run. Later changes update documentation and reporting artifacts. The model, data and training code is unchanged.
-
 ### 2. Check the GPU
 
 ```python
