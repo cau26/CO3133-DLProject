@@ -1,88 +1,101 @@
 # CO3133 - Deep Learning and Its Applications
 
-## Thông tin môn học và nhóm
+## Course and team
 
-**Trường:** Ho Chi Minh City University of Technology, VNU-HCM
+**University:** Ho Chi Minh City University of Technology, VNU-HCM  
+**Faculty:** Faculty of Computer Science and Engineering  
+**Course:** Deep Learning and Its Applications - CO3133, Semester 261  
+**Instructor:** Lê Thành Sách  
+**Group:** G-M10
 
-**Khoa:** Faculty of Computer Science and Engineering
+| Member | Student ID | Role | Responsibility | GitHub |
+|---|---|---|---|---|
+| Trần Gia Lâm | 2352670 | Leader |  Ran the Google Colab Tesla T4 experiments; performed result and error analysis; verified the experimental outputs; integrated and prepared the report | [n1velo](https://github.com/n1velo) |
+| Nguyễn Hữu Cầu | 2352129 | Member | Developed and reviewed the EDA and MLP components | [cau26](https://github.com/cau26) |
 
-**Môn học:** Deep Learning and Its Applications - CO3133, Semester-261
+**Repository:** [cau26/CO3133-DLProject](https://github.com/cau26/CO3133-DLProject)
 
-**Giảng viên:** Lê Thành Sách
-
-**Nhóm:** G-M10 (2 thành viên, đã xin phép theo xác nhận của leader)
-
-| Thành viên | MSSV | Vai trò đã xác nhận | Việc được giao | GitHub |
-|---|---|---|---|
-| Trần Gia Lâm | 2352670 | Leader | Chạy thí nghiệm Colab được cung cấp | [n1velo](https://github.com/n1velo) |
-| Nguyễn Hữu Cầu | 2352129 | Membber | Phụ trách EDA và MLP | [cau26](https://github.com/cau26) |
-
-**Repository:** [https://github.com/cau26/CO3133-DLProject](https://github.com/cau26/CO3133-DLProject)
-
-## Các assignment
+## Assignments
 
 - [Assignment 1 - M1 Draft](assignment1.md)
 - [Assignment 2](assignment2.md)
 - [Assignment 3](assignment3.md)
 
-## Assignment 1: bản nháp hiện tại
+## Assignment 1: current draft
 
-- [Báo cáo HTML](G-M10_A1_Draft.html) và [báo cáo PDF](G-M10_A1_Draft.pdf)
-- [Bảng kết quả](outputs/a1_t4/comparison.csv)
-- [Notebook Colab gốc](notebooks/A1_Colab_Run.ipynb)
-- [Nguồn gốc và kiểm chứng](COLAB_RUN.md)
-- [Yêu cầu M1 và thông tin còn cần xác nhận](DRAFT1_CHECKLIST.md)
-- [Mã nguồn](https://github.com/cau26/CO3133-DLProject/tree/main/a1)
+- [Assignment 1 - M1 Draft](assignment1.md)
+- [PDF report](G-M10_A1_Draft.pdf)
+- [Result table](outputs/a1_t4/comparison.csv)
+- [Original Colab notebook](notebooks/A1_Colab_Run.ipynb)
+- [Run provenance and verification](COLAB_RUN.md)
+- [AI Usage Disclosure](AI_USAGE.md)
 
-Kết quả validation T4: Linear accuracy 86,62%, macro-F1 0,8644; MLP accuracy 89,30%, macro-F1 0,8924. Cả hai chọn checkpoint epoch 9 theo validation loss. Test chưa được đánh giá.
+| Model | Validation accuracy | Validation macro-F1 | Selected epoch |
+|---|---|---|---|
+| Linear | 86.62% | 0.8644 | 9 |
+| MLP | 89.30% | 0.8924 | 9 |
 
-## Cài đặt và chạy lại
+Both checkpoints were selected by lowest validation loss. The test set has not been evaluated.
 
-Dùng Python 3.12 hoặc môi trường Colab tương thích. Bản ghi gốc dùng Python 3.13.15, torch 2.8.0+cu128 và Tesla T4; xem metadata gốc trong metrics.json. Python 3.12 là lựa chọn đã dùng để kiểm tra CPU trong môi trường trợ lý, không phải phiên bản của Colab gốc.
+## Run on Google Colab with a Tesla T4
 
-~~~bash
-python -m pip install -r requirements-a1.txt
-~~~
+The recorded experiment used a Tesla T4, CUDA, Python 3.13.15 and PyTorch 2.8.0+cu128. The original notebook used a source ZIP. The instructions below use the repository checkout. Colab's available Python version can change over time.
 
-Trên Colab, chọn runtime có GPU và kiểm tra CUDA trước khi chạy. Notebook đính kèm là bản ghi gốc dùng starter ZIP; để tái lập từ repo, clone repo hoặc lấy source của commit đã ghi trong COLAB_RUN.md rồi chạy từ thư mục gốc.
+### 1. Prepare the source and dependencies
 
-### Chạy trên CUDA
+In a new Colab notebook, select a T4 GPU runtime and run:
 
-~~~bash
-python run_a1.py --stage all --device cuda --out outputs/a1_t4_rerun
-python run_a1.py --stage evaluate --out outputs/a1_t4_rerun
-~~~
+```python
+!git clone https://github.com/cau26/CO3133-DLProject.git
+%cd /content/CO3133-DLProject
+%pip install -r requirements-a1.txt
+```
 
-### Chạy trên CPU
+If the repository directory already exists, reuse it or choose a new clone directory. If Colab requests a restart after installation, restart and repeat the directory and GPU-check cells.
 
-~~~bash
-python run_a1.py --stage all --device cpu --out outputs/a1_cpu_rerun
-python run_a1.py --stage evaluate --out outputs/a1_cpu_rerun
-~~~
+[Commit 5d7430a](https://github.com/cau26/CO3133-DLProject/tree/5d7430a2c5b344ab3bb8af81e7bac7e99f9ab01b) archives the exact source used for the recorded run. Later changes update documentation and reporting artifacts. The model, data and training code is unchanged.
 
-Dữ liệu được tự tải vào data/. Một thư mục output mới được dùng cho mỗi lượt chạy để tránh ghi đè kết quả. Khi thư mục rerun đã có kết quả, dùng tên mới cho lần tiếp theo. Lệnh evaluate đọc cấu hình trong thư mục output, nên hai lệnh evaluate ở trên giữ đúng thiết bị của lượt chạy tương ứng.
+### 2. Check the GPU
 
-### Chỉ chạy EDA hoặc tạo lại báo cáo tự động
+```python
+import torch
+print("PyTorch:", torch.__version__)
+assert torch.cuda.is_available(), "CUDA is unavailable; select a GPU runtime."
+print("GPU:", torch.cuda.get_device_name(0))
+```
 
-~~~bash
-python run_a1.py --stage eda --device cpu --out outputs/eda_check
-python run_a1.py --stage report --out outputs/a1_t4
-~~~
+Check that the device name identifies a Tesla T4 if you want to repeat the experiment on the same GPU model. Record any different device as part of the new run.
 
-Lệnh report tạo lại draft_report.md tự động trong thư mục output; bản đã biên tập nằm ở assignment1.md. Cấu hình mặc định ở configs/a1.json; cấu hình lượt T4 đã báo cáo ở outputs/a1_t4/config.json.
+### 3. Train and evaluate
 
-## Checkpoint và file kết quả
+```python
+!python run_a1.py --stage all --device cuda --out outputs/a1_t4_rerun
+```
 
-- [Linear checkpoint](outputs/a1_t4/linear/best.pt), [metrics](outputs/a1_t4/linear/metrics.json), [history](outputs/a1_t4/linear/history.csv)
-- [MLP checkpoint](outputs/a1_t4/mlp/best.pt), [metrics](outputs/a1_t4/mlp/metrics.json), [history](outputs/a1_t4/mlp/history.csv)
-- [Split indices](outputs/a1_t4/split_indices.npz), [data summary](outputs/a1_t4/data_summary.json)
+After training finishes, run:
 
-Các file T4 gốc được giữ nguyên. Không sử dụng số liệu reference_cpu hay smoke_t4 trong bảng kết quả chính.
+```python
+!python run_a1.py --stage evaluate --device cuda --out outputs/a1_t4_rerun
+```
+
+Fashion-MNIST is downloaded automatically into `data/`. The first command runs EDA, trains Linear and MLP, and saves their results. The second reloads the checkpoints for validation evaluation. The M1 pipeline does not evaluate the test set.
+
+Use a fresh output directory for each rerun. Keep `outputs/a1_t4/` as the evidence for the recorded experiment. If `outputs/a1_t4_rerun/` already contains a run, change the directory name in both commands. In a regular terminal, remove the leading `!`.
+
+The recorded T4 configuration is in [outputs/a1_t4/config.json](outputs/a1_t4/config.json). The default `configs/a1.json` selects CPU, so the commands explicitly pass `--device cuda`. The original notebook includes a numba/numpy compatibility warning; this pipeline does not use numba.
+
+## Checkpoints and experiment files
+
+- Linear: [checkpoint](outputs/a1_t4/linear/best.pt), [metrics](outputs/a1_t4/linear/metrics.json), [history](outputs/a1_t4/linear/history.csv), [predictions](outputs/a1_t4/linear/validation_predictions.csv)
+- MLP: [checkpoint](outputs/a1_t4/mlp/best.pt), [metrics](outputs/a1_t4/mlp/metrics.json), [history](outputs/a1_t4/mlp/history.csv), [predictions](outputs/a1_t4/mlp/validation_predictions.csv)
+- Shared: [split indices](outputs/a1_t4/split_indices.npz), [data summary](outputs/a1_t4/data_summary.json), [configuration](outputs/a1_t4/config.json)
+
+Metrics, checkpoints, predictions, plots and the original notebook retain their recorded contents. The generated `outputs/a1_t4/draft_report.md` has been translated into English. Its numbers still come from the recorded run. See [COLAB_RUN.md](COLAB_RUN.md) for details.
 
 ## AI Usage Disclosure
 
-ChatGPT hỗ trợ tìm hiểu yêu cầu, soạn mã khởi đầu, hướng dẫn chạy, kiểm chứng kết quả và biên tập báo cáo. Trần Gia Lâm xác nhận đã chạy lại bộ mã trên Colab. Cầu phụ trách EDA và MLP theo xác nhận của leader. Việc rà soát nội dung cuối cùng còn cần nhóm xác nhận. Chi tiết công cụ, prompt, phần bị ảnh hưởng và các bước kiểm chứng nằm trong [AI_USAGE.md](AI_USAGE.md).
+The team used AI to develop ideas, review source code and improve the report. Tools, scope and verification are documented in [AI_USAGE.md](AI_USAGE.md).
 
-## Tình trạng M1
+## Milestone status
 
-Đã có bằng chứng thực thi phần kỹ thuật tối thiểu. Bộ file cần được nhóm rà soát, công bố lên repo/Pages và nộp theo thông báo M1 trên LMS. Xem DRAFT1_CHECKLIST.md để xử lý các mục đăng ký, rà soát cuối cùng và nộp bài chưa được xác nhận.
+M1 has a working EDA stage, Dataset/DataLoader setup, training and validation loop, and Linear/MLP baselines with T4 results. A custom CNN, LSTM/GRU and Transformer are planned for the final milestone. Publishing this folder does not submit it to the LMS; follow the current M1 submission instructions there.
