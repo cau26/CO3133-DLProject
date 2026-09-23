@@ -12,10 +12,10 @@
 
 **Nhóm:** G-M10 (2 thành viên, đã xin phép theo xác nhận của leader)
 
-| Thành viên | MSSV | Vai trò đã xác nhận | GitHub |
+| Thành viên | MSSV | Vai trò đã xác nhận | Việc được giao | GitHub |
 |---|---|---|---|
-| Trần Gia Lâm | 2352670 | Leader; chạy thí nghiệm Colab được cung cấp | [n1velo](https://github.com/n1velo) |
-| Nguyễn Hữu Cầu | 2352129 | Phụ trách EDA và MLP | [cau26](https://github.com/cau26) |
+| Trần Gia Lâm | 2352670 | Leader | Chạy thí nghiệm Colab được cung cấp | [n1velo](https://github.com/n1velo) |
+| Nguyễn Hữu Cầu | 2352129 | Membber | Phụ trách EDA và MLP | [cau26](https://github.com/cau26) |
 
 **Repository:** [https://github.com/cau26/CO3133-DLProject](https://github.com/cau26/CO3133-DLProject)
 
