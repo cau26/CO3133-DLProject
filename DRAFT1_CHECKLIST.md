@@ -29,7 +29,7 @@ M1 chấp nhận báo cáo một phần và repo đang hoàn thiện (mục 7.7)
 | Tái lập (mục 4.2) | Source, requirements, config, commands, checkpoints | Đưa toàn bộ file cần thiết lên repo |
 | Truy vết code theo commit | Commit lưu đúng source hash; COLAB_RUN.md | Push commit và giữ lịch sử khi merge |
 | Trang chung và Assignment 1 | README.md, assignment1.md | Chưa công bố bản mới; kiểm tra link sau push |
-| AI ở landing/page/report/log (mục 5) | Đã soạn tóm tắt và bổ sung AI_USAGE.md | Xác nhận đóng góp và rà soát thực tế |
+| AI ở landing/page/report/log (mục 5) | Đã soạn tóm tắt và bổ sung AI_USAGE.md | Xác nhận rà soát thực tế |
 | Link A2/A3 | Giữ các trang hiện có | Cập nhật khi có tài liệu thực tế |
 | Nộp M1 (mục 7.1/7.4) | Có bản nháp và gói repo | Cần thông báo/ảnh màn hình yêu cầu LMS |
 
@@ -41,13 +41,13 @@ Gửi ảnh màn hình hoặc chép nguyên văn thông báo/ô nộp M1: nội 
 
 ### B. Nhóm và đăng ký
 
-Handbook mục 1.1 yêu cầu nhóm 3-4 người, nhưng thông tin hiện có chỉ gồm Lâm và Cầu. Gửi thông tin thành viên còn lại (họ tên, MSSV, GitHub, vai trò) nếu có; nếu nhóm được phép 2 người, cung cấp xác nhận của giảng viên. Không thêm tên giả hoặc giả định đã được ngoại lệ.
+Leader đã xác nhận nhóm được phép làm 2 người: Trần Gia Lâm và Nguyễn Hữu Cầu. Mục số lượng thành viên đã được giải đáp; không cần bổ sung thành viên để hoàn thiện bản này.
 
 Xác nhận G-M10 đã được điền thống nhất ở GroupRegistration và link landing page đã được điền ở GroupLink. Nếu có ảnh xác nhận, chỉ cần phần của nhóm.
 
 ### C. Đóng góp, sử dụng AI và kiểm chứng
 
-Đã xác nhận: Lâm là leader, đã thực hiện lần chạy Colab được cung cấp. Còn cần biết Cầu đã trực tiếp làm phần nào trong M1; Lâm/Cầu đã đọc, sửa và kiểm chứng phần code hoặc báo cáo nào. Phân công dự kiến trong hội thoại không được ghi thành công việc đã hoàn thành.
+Đã xác nhận: Lâm là leader, đã thực hiện lần chạy Colab được cung cấp; Cầu phụ trách EDA và MLP. Còn cần nhóm rà soát bản cuối và xác nhận các phần code/báo cáo đã đọc, sửa và kiểm chứng. Phạm vi phụ trách không được diễn giải thành việc tự viết toàn bộ mã hoặc đã hoàn tất mọi bước kiểm chứng.
 
 Nếu nhóm đã dùng thêm công cụ AI, prompt hoặc lần sửa code chưa có trong tài liệu này, gửi nội dung tương ứng. Log Claude có sẵn được giữ nguyên theo repo; nhóm cần kiểm tra lại tên công cụ/model nếu ghi chưa chính xác.
 

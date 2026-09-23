@@ -10,12 +10,12 @@
 
 **Giảng viên:** Lê Thành Sách
 
-**Nhóm:** G-M10
+**Nhóm:** G-M10 (2 thành viên, đã xin phép theo xác nhận của leader)
 
 | Thành viên | MSSV | Vai trò đã xác nhận | GitHub |
 |---|---|---|---|
 | Trần Gia Lâm | 2352670 | Leader; chạy thí nghiệm Colab được cung cấp | [n1velo](https://github.com/n1velo) |
-| Nguyễn Hữu Cầu | 2352129 | Thành viên; đóng góp M1 cần xác nhận | [cau26](https://github.com/cau26) |
+| Nguyễn Hữu Cầu | 2352129 | Phụ trách EDA và MLP | [cau26](https://github.com/cau26) |
 
 **Repository:** [https://github.com/cau26/CO3133-DLProject](https://github.com/cau26/CO3133-DLProject)
 
@@ -81,8 +81,8 @@ Các file T4 gốc được giữ nguyên. Không sử dụng số liệu refere
 
 ## AI Usage Disclosure
 
-ChatGPT hỗ trợ tìm hiểu yêu cầu, soạn mã khởi đầu, hướng dẫn chạy, kiểm chứng kết quả và biên tập báo cáo. Trần Gia Lâm xác nhận đã chạy lại bộ mã trên Colab. Việc rà soát nội dung cuối cùng và đóng góp M1 thực tế của các thành viên còn cần xác nhận. Chi tiết công cụ, prompt, phần bị ảnh hưởng và các bước kiểm chứng nằm trong [AI_USAGE.md](AI_USAGE.md).
+ChatGPT hỗ trợ tìm hiểu yêu cầu, soạn mã khởi đầu, hướng dẫn chạy, kiểm chứng kết quả và biên tập báo cáo. Trần Gia Lâm xác nhận đã chạy lại bộ mã trên Colab. Cầu phụ trách EDA và MLP theo xác nhận của leader. Việc rà soát nội dung cuối cùng còn cần nhóm xác nhận. Chi tiết công cụ, prompt, phần bị ảnh hưởng và các bước kiểm chứng nằm trong [AI_USAGE.md](AI_USAGE.md).
 
 ## Tình trạng M1
 
-Đã có bằng chứng thực thi phần kỹ thuật tối thiểu. Bộ file cần được nhóm rà soát, công bố lên repo/Pages và nộp theo thông báo M1 trên LMS. Xem DRAFT1_CHECKLIST.md để xử lý các mục nhóm/đăng ký, phân công và nộp bài chưa được xác nhận.
+Đã có bằng chứng thực thi phần kỹ thuật tối thiểu. Bộ file cần được nhóm rà soát, công bố lên repo/Pages và nộp theo thông báo M1 trên LMS. Xem DRAFT1_CHECKLIST.md để xử lý các mục đăng ký, rà soát cuối cùng và nộp bài chưa được xác nhận.

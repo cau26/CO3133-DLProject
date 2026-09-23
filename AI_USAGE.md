@@ -56,12 +56,12 @@ This file logs all generative AI tool usage across Assignments 1–3, following 
 - **Edits by AI:** Gom ba phần báo cáo; sửa bảng và đường dẫn hình; phân biệt train/validation/fit wall time; thêm phân tích các ảnh có chỉ số 18, 164, 169; tính số lỗi/recall theo lớp từ CSV; làm rõ giới hạn một seed, tiêu chí checkpoint và nguồn gốc Git.
 - **Verification by AI:** Đối chiếu 20 epoch và JSON giữa notebook/ZIP; kiểm tra source hash và split; tính lại accuracy/macro-F1 từ 6.000 dự đoán; nạp hai checkpoint T4 trên CPU với 0 dự đoán khác CSV. Xem verification/colab_review.json.
 - **Provenance:** Source được lưu vào một commit sau lượt Colab; không thay git_commit = null trong metrics gốc. Không dùng số liệu tham khảo CPU làm số liệu thực nghiệm của nhóm.
-- **Student review:** Chờ Lâm/Cầu xác nhận các phần thực sự đã đọc, sửa và kiểm chứng. Đóng góp M1 của Cầu chưa được suy ra từ phân công dự kiến.
+- **Student review:** Leader đã xác nhận Cầu phụ trách EDA và MLP. Chờ Lâm/Cầu xác nhận các phần thực sự đã đọc, sửa và kiểm chứng; thông tin phụ trách không được diễn giải thành việc tự viết toàn bộ mã hoặc đã hoàn thành mọi bước kiểm chứng.
 - **Final review responsibility:** Lâm điều phối việc xác nhận bản nộp; việc rà soát cuối cùng chưa được ghi là hoàn thành.
 - **Verification sources:** Handbook; các file gốc trong outputs/a1_t4; notebook Colab; source archive commit trong COLAB_RUN.md; tài liệu PyTorch và Fashion-MNIST.
 
 ## Thông tin còn cần nhóm xác nhận
 
-1. Cầu đã trực tiếp làm phần nào của M1; Lâm/Cầu đã kiểm chứng những mục cụ thể nào.
+1. Lâm/Cầu đã kiểm chứng những mục cụ thể nào và đã rà soát bản báo cáo cuối cùng hay chưa.
 2. Các chỉnh sửa hoặc lần sử dụng công cụ AI khác chưa có trong log này.
 3. Tên công cụ/model trong Entry #1 hiện có cần được nhóm đối chiếu; entry đó được giữ theo repo, không được trợ lý xác minh độc lập.

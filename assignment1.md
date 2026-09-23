@@ -10,16 +10,16 @@
 
 **Giảng viên:** Lê Thành Sách
 
-**Nhóm:** G-M10
+**Nhóm:** G-M10 (2 thành viên, đã xin phép theo xác nhận của leader)
 
 | Thành viên | MSSV | Vai trò đã xác nhận |
 |---|---|---|
 | Trần Gia Lâm | 2352670 | Leader; thực hiện lần chạy Google Colab được cung cấp |
-| Nguyễn Hữu Cầu | 2352129 | Thành viên; đóng góp thực tế ở M1 cần nhóm xác nhận |
+| Nguyễn Hữu Cầu | 2352129 | Phụ trách EDA và MLP |
 
 **Phạm vi:** Bản nháp M1 gồm EDA, Dataset/DataLoader, train-validation loop, Linear và MLP trên Fashion-MNIST. Các kết quả chính lấy từ lần chạy Google Colab Tesla T4 trong thư mục outputs/a1_t4.
 
-**Tình trạng bản thảo:** Nội dung đã được biên tập và đối chiếu kỹ thuật với file kết quả. Nhóm còn cần xác nhận phân công thực tế, việc rà soát nội dung cuối cùng và yêu cầu nộp riêng trên LMS; xem [bảng đối chiếu M1](DRAFT1_CHECKLIST.md).
+**Tình trạng bản thảo:** Nội dung đã được biên tập và đối chiếu kỹ thuật với file kết quả. Nhóm còn cần xác nhận việc rà soát nội dung cuối cùng và yêu cầu nộp riêng trên LMS; xem [bảng đối chiếu M1](DRAFT1_CHECKLIST.md).
 
 **Tài liệu đi kèm:** [Bản HTML](G-M10_A1_Draft.html), [bản PDF](G-M10_A1_Draft.pdf), [bản ghi Colab](notebooks/A1_Colab_Run.ipynb), [nguồn gốc và kiểm chứng](COLAB_RUN.md), [AI usage](AI_USAGE.md).
 
@@ -278,7 +278,7 @@ Giai đoạn Final sẽ bổ sung CNN tự thiết kế, LSTM hoặc GRU, Transf
 
 Trần Gia Lâm sử dụng ChatGPT để hỗ trợ đọc handbook, tổ chức công việc, tạo mã khởi đầu, hướng dẫn chạy, kiểm tra kết quả và biên tập báo cáo. Lâm xác nhận đã chạy lại bộ mã trên Google Colab; notebook và outputs/a1_t4 là bằng chứng của lần chạy được cung cấp. Các nhận xét mới trong bản biên tập được trợ lý đối chiếu với source, log, CSV, checkpoint và ảnh.
 
-Mã model ChatGPT cụ thể không được ghi nhận. Việc thành viên đã rà soát từng phần của bản báo cáo cuối cùng và đóng góp M1 thực tế của Nguyễn Hữu Cầu còn cần nhóm xác nhận. Log công cụ, prompt, phạm vi ảnh hưởng, chỉnh sửa và trách nhiệm kiểm chứng được ghi trong [AI_USAGE.md](AI_USAGE.md). Các ô chưa xác nhận không được diễn giải là công việc đã hoàn thành.
+Mã model ChatGPT cụ thể không được ghi nhận. Nguyễn Hữu Cầu phụ trách EDA và MLP theo xác nhận của leader. Việc thành viên đã rà soát từng phần của bản báo cáo cuối cùng còn cần nhóm xác nhận. Log công cụ, prompt, phạm vi ảnh hưởng, chỉnh sửa và trách nhiệm kiểm chứng được ghi trong [AI_USAGE.md](AI_USAGE.md). Các ô chưa xác nhận không được diễn giải là công việc đã hoàn thành.
 
 ### Tài liệu tham khảo
 
