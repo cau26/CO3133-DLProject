@@ -1,0 +1,16 @@
+{
+  "images_shape": [
+    128,
+    1,
+    28,
+    28
+  ],
+  "labels_shape": [
+    128
+  ],
+  "images_dtype": "torch.float32",
+  "labels_dtype": "torch.int64",
+  "pixel_min": 0.0,
+  "pixel_max": 1.0,
+  "train_class_max_min_ratio": 1.0
+}

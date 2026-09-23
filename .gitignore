@@ -216,3 +216,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+# Local datasets and disposable reruns
+/data/
+/outputs/smoke*/
+/outputs/*_rerun*/
+/outputs/eda_check/

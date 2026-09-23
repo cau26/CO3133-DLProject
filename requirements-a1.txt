@@ -1,0 +1,7 @@
+# Install the matching CPU wheels first; see START_HERE.md.
+torch==2.8.0
+torchvision==0.23.0
+numpy==2.3.5
+matplotlib==3.10.8
+scikit-learn==1.8.0
+Markdown==3.7
