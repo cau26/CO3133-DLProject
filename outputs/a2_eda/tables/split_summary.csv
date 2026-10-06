@@ -1,0 +1,4 @@
+split,images,objects_all,objects_difficult,objects_non_difficult,objects_usable_non_difficult,objects_per_image_mean,objects_per_image_median,objects_per_image_max
+trainval,5011,15662,3054,12608,12608,3.125523847535422,2.0,42
+train,4009,12690,2499,10191,10191,3.1653778997256174,2.0,42
+val,1002,2972,555,2417,2417,2.9660678642714573,2.0,37

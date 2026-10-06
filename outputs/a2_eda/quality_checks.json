@@ -1,0 +1,20 @@
+{
+  "automated_checks": {
+    "expected_trainval_image_count": true,
+    "train_images_at_least_3000": true,
+    "train_usable_non_difficult_objects_at_least_5000": true,
+    "train_classes_at_least_5": true,
+    "all_20_classes_in_train": true,
+    "all_20_classes_in_validation": true,
+    "no_image_id_overlap": true,
+    "no_exact_pixel_duplicate_overlap": true,
+    "no_annotation_issues": true
+  },
+  "near_duplicate_check_performed": true,
+  "near_duplicate_candidates": 3,
+  "cross_split_near_duplicate_candidates": 0,
+  "manual_image_and_annotation_review": "pending",
+  "near_duplicate_manual_review": "pending",
+  "train_test_overlap_check": "not performed; official test set is not downloaded",
+  "instructor_approval": "not recorded"
+}

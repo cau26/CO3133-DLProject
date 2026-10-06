@@ -1,0 +1,57 @@
+{
+  "run_id": "20261006T174647_307482Z",
+  "dataset": "PASCAL VOC 2007",
+  "release": "VOCtrainval_06-Nov-2007.tar",
+  "data_scope": "official trainval only",
+  "split_method": "pixel-duplicate-grouped random split with Python random.Random(seed)",
+  "seed": 42,
+  "target_train_images": 4009,
+  "actual_train_images": 4009,
+  "actual_validation_images": 1002,
+  "official_test_status": "untouched; no results or overlap audit in this run",
+  "split_summary": [
+    {
+      "split": "trainval",
+      "images": 5011,
+      "objects_all": 15662,
+      "objects_difficult": 3054,
+      "objects_non_difficult": 12608,
+      "objects_usable_non_difficult": 12608,
+      "objects_per_image_mean": 3.125523847535422,
+      "objects_per_image_median": 2.0,
+      "objects_per_image_max": 42
+    },
+    {
+      "split": "train",
+      "images": 4009,
+      "objects_all": 12690,
+      "objects_difficult": 2499,
+      "objects_non_difficult": 10191,
+      "objects_usable_non_difficult": 10191,
+      "objects_per_image_mean": 3.1653778997256174,
+      "objects_per_image_median": 2.0,
+      "objects_per_image_max": 42
+    },
+    {
+      "split": "val",
+      "images": 1002,
+      "objects_all": 2972,
+      "objects_difficult": 555,
+      "objects_non_difficult": 2417,
+      "objects_usable_non_difficult": 2417,
+      "objects_per_image_mean": 2.9660678642714573,
+      "objects_per_image_median": 2.0,
+      "objects_per_image_max": 37
+    }
+  ],
+  "valid_box_relative_area_median": 0.066336,
+  "valid_box_relative_area_p10": 0.005568,
+  "valid_box_relative_area_p90": 0.5100920587570621,
+  "truncated_objects": 8144,
+  "annotation_issue_count": 0,
+  "exact_duplicate_groups": 3,
+  "near_duplicate_candidate_count": 3,
+  "manual_review": "pending",
+  "instructor_approval": "not recorded",
+  "model_results": "not applicable: this is an EDA-only run"
+}
