@@ -1,4 +1,0 @@
-image_id_a,image_id_b,dhash_distance,split_a,split_b,cross_split,manual_decision
-000863,008364,3,train,train,False,not reviewed
-002765,003183,3,train,train,False,not reviewed
-001436,002765,4,train,train,False,not reviewed
