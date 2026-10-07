@@ -1,0 +1,57 @@
+{
+  "run_id": "20261006T225426_686818Z",
+  "dataset": "PASCAL VOC 2007",
+  "release": "VOCtrainval_06-Nov-2007.tar",
+  "data_scope": "official trainval only",
+  "split_method": "Multi-Label Iterative Group Stratified Split (using iterative-stratification)",
+  "seed": 42,
+  "target_train_images": 4009,
+  "actual_train_images": 4013,
+  "actual_validation_images": 998,
+  "official_test_status": "untouched; no results or overlap audit in this run",
+  "split_summary": [
+    {
+      "split": "trainval",
+      "images": 5011,
+      "objects_all": 15662,
+      "objects_difficult": 3054,
+      "objects_non_difficult": 12608,
+      "objects_usable_non_difficult": 12608,
+      "objects_per_image_mean": 3.125523847535422,
+      "objects_per_image_median": 2.0,
+      "objects_per_image_max": 42
+    },
+    {
+      "split": "train",
+      "images": 4013,
+      "objects_all": 12449,
+      "objects_difficult": 2435,
+      "objects_non_difficult": 10014,
+      "objects_usable_non_difficult": 10014,
+      "objects_per_image_mean": 3.102167954149016,
+      "objects_per_image_median": 2.0,
+      "objects_per_image_max": 42
+    },
+    {
+      "split": "val",
+      "images": 998,
+      "objects_all": 3213,
+      "objects_difficult": 619,
+      "objects_non_difficult": 2594,
+      "objects_usable_non_difficult": 2594,
+      "objects_per_image_mean": 3.219438877755511,
+      "objects_per_image_median": 2.0,
+      "objects_per_image_max": 37
+    }
+  ],
+  "valid_box_relative_area_median": 0.066336,
+  "valid_box_relative_area_p10": 0.005568,
+  "valid_box_relative_area_p90": 0.5100920587570621,
+  "truncated_objects": 8144,
+  "annotation_issue_count": 0,
+  "exact_duplicate_groups": 3,
+  "near_duplicate_candidate_count": 3,
+  "manual_review": "reviewed",
+  "instructor_approval": "not recorded",
+  "model_results": "not applicable: this is an EDA-only run"
+}
