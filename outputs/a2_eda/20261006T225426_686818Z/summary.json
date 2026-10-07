@@ -51,7 +51,7 @@
   "annotation_issue_count": 0,
   "exact_duplicate_groups": 3,
   "near_duplicate_candidate_count": 3,
-  "manual_review": "pending",
+  "manual_review": "reviewed",
   "instructor_approval": "not recorded",
   "model_results": "not applicable: this is an EDA-only run"
 }
