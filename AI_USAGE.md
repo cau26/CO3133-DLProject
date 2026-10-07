@@ -10,7 +10,7 @@ The team used AI to develop ideas, review source code and improve the report. AI
 
 | Item | Record |
 |---|---|
-| Tool / user | ChatGPT / Trần Gia Lâm |
+| Tool / user | ChatGPT,Claude / Trần Gia Lâm |
 | Role of AI | Help interpret the requirements, review the experimental design, check implementation consistency and edit the technical report. |
 | Scope | Review the EDA, Dataset/DataLoader, training and validation pipeline; check the Linear Classifier and MLP implementation; review the experimental setup; compare metrics, learning curves, confusion matrices and prediction examples; improve the presentation of results. |
 | Experiment review | Check that both baselines use the same split, seed, preprocessing and training protocol. Review checkpoint selection and the interpretation of accuracy, macro-F1, parameter counts, training time and inference time. |
