@@ -23,7 +23,7 @@ Course projects by Group G-M10, Semester 261, at Ho Chi Minh City University of 
 
 ## Assignment 2 - M1 Dataset Proposal
 
-- [Proposal PDF](G-M10_A2_Proposal.pdf)
+- [Proposal PDF](outputs/a2_eda/20261006T225426_686818Z/G-M10_A2_Proposal.pdf)
 - [EDA notebook](notebooks/A2_EDA_VOC2007.ipynb)
 - [Recorded EDA run](outputs/a2_eda/20261006T225426_686818Z/)
 - [EDA observations and duplicate review](outputs/a2_eda/20261006T225426_686818Z/EDA_NOTES_TO_COMPLETE.md)
