@@ -21,7 +21,7 @@
 - [Assignment 2](assignment2.md)
 - [Assignment 3](assignment3.md)
 
-## Assignment 1: current draft
+## Assignment 1: draft
 
 - [Assignment 1 - M1 Draft](assignment1.md)
 - [PDF report](G-M10_A1_Draft.pdf)
