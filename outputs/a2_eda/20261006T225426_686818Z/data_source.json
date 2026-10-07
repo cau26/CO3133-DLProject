@@ -1,0 +1,16 @@
+{
+  "dataset": "PASCAL VOC 2007",
+  "release": "VOCtrainval_06-Nov-2007.tar",
+  "url": "https://thor.robots.ox.ac.uk/pascal/VOC/voc2007/VOCtrainval_06-Nov-2007.tar",
+  "archive_bytes": 460032000,
+  "md5": "c52e279531787c972589f7e41ab4ae64",
+  "sha256": "7d8cd951101b0957ddfd7a530bdc8a94f06121cfc1e511bb5937e973020c7508",
+  "reference_urls": {
+    "dataset": "https://www.robots.ox.ac.uk/~vgg/projects/pascal/VOC/voc2007/",
+    "published_statistics": "https://www.robots.ox.ac.uk/~vgg/projects/pascal/VOC/voc2007/dbstats.html",
+    "annotation_and_evaluation": "https://www.robots.ox.ac.uk/~vgg/projects/pascal/VOC/voc2007/htmldoc/index.html",
+    "archive_and_checksum": "https://docs.pytorch.org/vision/stable/_modules/torchvision/datasets/voc.html"
+  },
+  "license_note": "Use the publisher's Database Rights statement and applicable image terms. No blanket MIT or CC-BY license is asserted for this dataset.",
+  "test_set_downloaded_by_this_notebook": false
+}
