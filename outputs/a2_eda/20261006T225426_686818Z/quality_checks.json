@@ -13,8 +13,8 @@
   "near_duplicate_check_performed": true,
   "near_duplicate_candidates": 3,
   "cross_split_near_duplicate_candidates": 1,
-  "manual_image_and_annotation_review": "pending",
-  "near_duplicate_manual_review": "pending",
+  "manual_image_and_annotation_review": "reviewed",
+  "near_duplicate_manual_review": "reviewed",
   "train_test_overlap_check": "not performed; official test set is not downloaded",
   "instructor_approval": "not recorded"
 }
