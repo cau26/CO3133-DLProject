@@ -1,0 +1,78 @@
+{
+  "group": "G-M10",
+  "members": [
+    "Trần Gia Lâm (2352670)",
+    "Nguyễn Hữu Cầu (2352129)"
+  ],
+  "seed": 42,
+  "dataset": "PASCAL VOC 2007",
+  "archive_name": "VOCtrainval_06-Nov-2007.tar",
+  "archive_url": "https://thor.robots.ox.ac.uk/pascal/VOC/voc2007/VOCtrainval_06-Nov-2007.tar",
+  "archive_md5": "c52e279531787c972589f7e41ab4ae64",
+  "num_classes": 21,
+  "iou_threshold": 0.5,
+  "score_threshold": 0.05,
+  "nms_threshold": 0.5,
+  "max_detections_per_image": 100,
+  "pilot_batches": 200,
+  "num_workers": 2,
+  "cpu_threads": 4,
+  "use_amp": true,
+  "device": "cuda",
+  "models": {
+    "ssdlite320": {
+      "architecture": "ssdlite320_mobilenet_v3_large",
+      "init_weights": "MobileNet_V3_Large_Weights.IMAGENET1K_V1 backbone + fresh 21-class heads",
+      "freeze_backbone": false,
+      "min_size": 320,
+      "max_size": 320,
+      "batch_size": 8,
+      "epochs": 20,
+      "optimizer": "SGD",
+      "learning_rate": 0.01,
+      "momentum": 0.9,
+      "weight_decay": 0.0005,
+      "lr_milestones": [
+        12,
+        16
+      ],
+      "lr_gamma": 0.1
+    },
+    "fasterrcnn_frozen": {
+      "architecture": "fasterrcnn_resnet50_fpn",
+      "init_weights": "FasterRCNN_ResNet50_FPN_Weights.COCO_V1 + fresh 21-class FastRCNNPredictor",
+      "freeze_backbone": true,
+      "min_size": 640,
+      "max_size": 1000,
+      "batch_size": 2,
+      "epochs": 12,
+      "optimizer": "SGD",
+      "learning_rate": 0.005,
+      "momentum": 0.9,
+      "weight_decay": 0.0005,
+      "lr_milestones": [
+        8,
+        11
+      ],
+      "lr_gamma": 0.1
+    },
+    "fasterrcnn_finetune": {
+      "architecture": "fasterrcnn_resnet50_fpn",
+      "init_weights": "FasterRCNN_ResNet50_FPN_Weights.COCO_V1 + fresh 21-class FastRCNNPredictor",
+      "freeze_backbone": false,
+      "min_size": 640,
+      "max_size": 1000,
+      "batch_size": 2,
+      "epochs": 12,
+      "optimizer": "SGD",
+      "learning_rate": 0.005,
+      "momentum": 0.9,
+      "weight_decay": 0.0005,
+      "lr_milestones": [
+        8,
+        11
+      ],
+      "lr_gamma": 0.1
+    }
+  }
+}

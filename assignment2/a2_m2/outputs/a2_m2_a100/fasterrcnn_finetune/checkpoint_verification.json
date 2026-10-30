@@ -1,0 +1,8 @@
+{
+  "model": "fasterrcnn_finetune",
+  "recomputed_map50": 0.7507074340210955,
+  "saved_map50": 0.7507074340210955,
+  "matches_saved": true,
+  "device": "cuda",
+  "split_sha256": "c60294fe4e914b27399ff065c9e246dcd3428440307c97cebf2febe139c2bd6c"
+}

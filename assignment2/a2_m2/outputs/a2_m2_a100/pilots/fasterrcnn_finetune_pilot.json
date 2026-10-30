@@ -1,0 +1,37 @@
+{
+  "model": "fasterrcnn_finetune",
+  "pilot_batches": 200,
+  "batch_size": 2,
+  "steps_per_full_epoch": 2007,
+  "measured_t_step_seconds": 0.08497647223000059,
+  "measured_t_val_seconds": 20.713028826000027,
+  "pilot_train_loss": 0.645021104849875,
+  "pilot_val_map50": 0.3581166670523506,
+  "peak_gpu_memory_mb": 3325.89794921875,
+  "amp_enabled_and_stable": true,
+  "planned_epochs": 12,
+  "estimated_full_run_seconds": 2295.1297030993346,
+  "estimated_full_run_minutes": 38.25216171832224,
+  "formula": "T_run = E * (ceil(N_train / B) * t_step + t_val)",
+  "environment": {
+    "recorded_at_utc": "2026-10-29T03:34:44.560842+00:00",
+    "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "cpu": "Intel(R) Xeon(R) CPU @ 2.20GHz",
+    "logical_cpu_count": 12,
+    "torch_threads": 4,
+    "device": "cuda",
+    "gpu": "NVIDIA A100-SXM4-40GB",
+    "gpu_total_memory_gb": 39.49,
+    "cuda_version": "13.0",
+    "versions": {
+      "torch": "2.11.0+cu130",
+      "torchvision": "0.26.0+cu130",
+      "numpy": "2.1.3",
+      "pandas": "2.2.3",
+      "matplotlib": "3.10.0",
+      "Pillow": "11.3.0",
+      "scikit-learn": "1.6.1"
+    }
+  }
+}
