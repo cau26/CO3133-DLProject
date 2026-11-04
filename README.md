@@ -30,6 +30,7 @@ Course projects by Group G-M10, Semester 261, at Ho Chi Minh City University of 
 - [Vietnamese presentation script](assignment1/a1_m2/docs/a1_submission/VIDEO_SCRIPT_REVIEWED_20261104_VI.md)
 - [A1 team contributions](assignment1/a1_m2/docs/a1_submission/CONTRIBUTIONS.md)
 - [Matched A100 notebook](assignment1/a1_m2/notebooks/CO3133_Confirmatory_A100.ipynb)
+- [Presentation video (YouTube)](https://youtu.be/m3I-ePEPrRI) (Title: `CO3133-Semester-261 - Group G-M10 - Assignment 1`)
 
 The final study compares Linear, MLP, CNN, GRU and Transformer. The original official-test scores and the later checkpoint-selected validation results are reported separately. A matched follow-up adds 30 training runs and 90 checkpoint evaluations. The RGB extension retains both the earlier assessment and the prospectively locked 2,766-crop audit, including negative and uncertain findings.
 
