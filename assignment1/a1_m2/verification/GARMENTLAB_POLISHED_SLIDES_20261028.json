@@ -1,0 +1,208 @@
+{
+  "status": "PASS_VALIDATED_AND_VISUALLY_REVIEWED",
+  "changed_parts": [
+    "ppt/slides/slide19.xml",
+    "ppt/slides/slide20.xml",
+    "ppt/notesSlides/notesSlide1.xml",
+    "ppt/notesSlides/notesSlide2.xml",
+    "ppt/notesSlides/notesSlide3.xml",
+    "ppt/notesSlides/notesSlide4.xml",
+    "ppt/notesSlides/notesSlide5.xml",
+    "ppt/notesSlides/notesSlide6.xml",
+    "ppt/notesSlides/notesSlide7.xml",
+    "ppt/notesSlides/notesSlide8.xml",
+    "ppt/notesSlides/notesSlide9.xml",
+    "ppt/notesSlides/notesSlide10.xml",
+    "ppt/notesSlides/notesSlide11.xml",
+    "ppt/notesSlides/notesSlide12.xml",
+    "ppt/notesSlides/notesSlide13.xml",
+    "ppt/notesSlides/notesSlide14.xml",
+    "ppt/notesSlides/notesSlide15.xml",
+    "ppt/notesSlides/notesSlide16.xml",
+    "ppt/notesSlides/notesSlide17.xml",
+    "ppt/notesSlides/notesSlide18.xml",
+    "ppt/notesSlides/notesSlide19.xml",
+    "ppt/notesSlides/notesSlide20.xml",
+    "ppt/notesSlides/notesSlide21.xml",
+    "ppt/notesSlides/notesSlide22.xml"
+  ],
+  "unchanged_parts": 140,
+  "original_first18_slide_xml_unchanged": true,
+  "measured_tables_and_charts_unchanged": true,
+  "source_sha256": "d9c04f9d7a944b0d166bac7c5470389a07782f08a4b954f1c44563812e6b20f9",
+  "script_sha256": "cd04527ffb906f4f833aa92aeebe169a6a9dada0dd3baf550bd121ef35aaf1f4",
+  "pptx_sha256": "cf78a92dad9554cdc632d377aecefb3ce2396839bca74d7d1287c20d634a5cb4",
+  "pdf_sha256": "9ef63ee805a00597068c64e9a23f44c35699e0efc516291c090a367c5b51e9bd",
+  "slide_count": 22,
+  "visual_review_changed_slides": [
+    19,
+    20,
+    21,
+    22
+  ],
+  "all22_speaker_notes_from_clean_script": true,
+  "script_hash_normalization": "script_sha256 hashes UTF-8 text after universal newline decoding (CRLF/CR normalized to LF). script_file_sha256 hashes the actual file bytes.",
+  "script_file_sha256": "a87fda70d9102b57dd6bd7b5249527a16e03d4d8356467cca706a889a65aab71",
+  "notes_script_alignment": {
+    "status": "PASS_ALL_22_NOTES_MATCH_CURRENT_SCRIPT",
+    "comparison": "Slide order follows presentation relationships. Spoken body before the appended Evidence paragraph matches the corresponding script section after removing Markdown bold/backticks and collapsing whitespace. Appended citations are checked separately.",
+    "slides_checked": 22,
+    "pptx_modified_by_alignment_check": false,
+    "results": [
+      {
+        "slide": 1,
+        "notes_part": "ppt/notesSlides/notesSlide1.xml",
+        "normalized_body_matches_script": true,
+        "appended_citations_match": true,
+        "normalized_spoken_body_sha256": "6d062f47cd1b9342e68e3cc02a2d13a686326acb1c2a0a55658d18932432f9c1"
+      },
+      {
+        "slide": 2,
+        "notes_part": "ppt/notesSlides/notesSlide2.xml",
+        "normalized_body_matches_script": true,
+        "appended_citations_match": true,
+        "normalized_spoken_body_sha256": "16f18588923a2cc4b3bb157cf882ffc3ea163a8e10367e5042683679eb4a7fad"
+      },
+      {
+        "slide": 3,
+        "notes_part": "ppt/notesSlides/notesSlide3.xml",
+        "normalized_body_matches_script": true,
+        "appended_citations_match": true,
+        "normalized_spoken_body_sha256": "37dde96604366e9ffe06afd2e97e292158d485f6cf01b8b5f39fae57bafcbbc3"
+      },
+      {
+        "slide": 4,
+        "notes_part": "ppt/notesSlides/notesSlide4.xml",
+        "normalized_body_matches_script": true,
+        "appended_citations_match": true,
+        "normalized_spoken_body_sha256": "b7602e1627792887c220802bc99ca40309944638e6d11c52defc811c95680018"
+      },
+      {
+        "slide": 5,
+        "notes_part": "ppt/notesSlides/notesSlide5.xml",
+        "normalized_body_matches_script": true,
+        "appended_citations_match": true,
+        "normalized_spoken_body_sha256": "23bd7b64341ff003f8c13b496d9229dbbf223554bfaa5bfce3b6d9fdf7769371"
+      },
+      {
+        "slide": 6,
+        "notes_part": "ppt/notesSlides/notesSlide6.xml",
+        "normalized_body_matches_script": true,
+        "appended_citations_match": true,
+        "normalized_spoken_body_sha256": "3bd433aae830f602330c1933ba061b0c16be3b7897ca67b0ffc9b81c4a894e68"
+      },
+      {
+        "slide": 7,
+        "notes_part": "ppt/notesSlides/notesSlide7.xml",
+        "normalized_body_matches_script": true,
+        "appended_citations_match": true,
+        "normalized_spoken_body_sha256": "ad7aa19d6161f44827dde88841ef37a496b9baad4d1a52ba37567eb0ee5693d6"
+      },
+      {
+        "slide": 8,
+        "notes_part": "ppt/notesSlides/notesSlide8.xml",
+        "normalized_body_matches_script": true,
+        "appended_citations_match": true,
+        "normalized_spoken_body_sha256": "b0c0c9d74e8f79581bb0feb0d1132330edd95fd00ed8906200e90c9592d3db48"
+      },
+      {
+        "slide": 9,
+        "notes_part": "ppt/notesSlides/notesSlide9.xml",
+        "normalized_body_matches_script": true,
+        "appended_citations_match": true,
+        "normalized_spoken_body_sha256": "99ac709e64d1713cdf08b41dc36cadabf22d7b7957c512b1ab41e3d06f0f6d46"
+      },
+      {
+        "slide": 10,
+        "notes_part": "ppt/notesSlides/notesSlide10.xml",
+        "normalized_body_matches_script": true,
+        "appended_citations_match": true,
+        "normalized_spoken_body_sha256": "23300ffdf61b8f8038a7ec870447b8abca750ec953fc0576daa38cc4f4b711ba"
+      },
+      {
+        "slide": 11,
+        "notes_part": "ppt/notesSlides/notesSlide11.xml",
+        "normalized_body_matches_script": true,
+        "appended_citations_match": true,
+        "normalized_spoken_body_sha256": "9311b7ab5d003e5c7d8dd2dc9bb9c4442963a395631fa64323e0915767d9963e"
+      },
+      {
+        "slide": 12,
+        "notes_part": "ppt/notesSlides/notesSlide12.xml",
+        "normalized_body_matches_script": true,
+        "appended_citations_match": true,
+        "normalized_spoken_body_sha256": "8021060fa24711e9f72c7a387fa3bb37b5be9d52c8764beeae716d3ba238f19c"
+      },
+      {
+        "slide": 13,
+        "notes_part": "ppt/notesSlides/notesSlide13.xml",
+        "normalized_body_matches_script": true,
+        "appended_citations_match": true,
+        "normalized_spoken_body_sha256": "1ccde7bf7e105c16b68dbf3a1c16ac68e6e2926548edbc0b1d3cc2821eb69b32"
+      },
+      {
+        "slide": 14,
+        "notes_part": "ppt/notesSlides/notesSlide14.xml",
+        "normalized_body_matches_script": true,
+        "appended_citations_match": true,
+        "normalized_spoken_body_sha256": "53ca1d3330012a3f8890781bf779f74d7338e6cca599b77a9e2013d4eec1836c"
+      },
+      {
+        "slide": 15,
+        "notes_part": "ppt/notesSlides/notesSlide15.xml",
+        "normalized_body_matches_script": true,
+        "appended_citations_match": true,
+        "normalized_spoken_body_sha256": "b71139f3259d908a3b867cdafd92e85c71a06e542c79815058f348dcb9d32b5a"
+      },
+      {
+        "slide": 16,
+        "notes_part": "ppt/notesSlides/notesSlide16.xml",
+        "normalized_body_matches_script": true,
+        "appended_citations_match": true,
+        "normalized_spoken_body_sha256": "7cdfeab3966a035dd6c7fff5100f2bc2286795fccac174e9ea9dc8cf5a06fea9"
+      },
+      {
+        "slide": 17,
+        "notes_part": "ppt/notesSlides/notesSlide17.xml",
+        "normalized_body_matches_script": true,
+        "appended_citations_match": true,
+        "normalized_spoken_body_sha256": "0fc347a178a945fb065dd70c04bbb136dac13397a5940784249bc0bb7d6adba4"
+      },
+      {
+        "slide": 18,
+        "notes_part": "ppt/notesSlides/notesSlide18.xml",
+        "normalized_body_matches_script": true,
+        "appended_citations_match": true,
+        "normalized_spoken_body_sha256": "6332f425f2f2589b0c5fd400ea337a9f994ab4c4880cf648ec4f08f40d1149b9"
+      },
+      {
+        "slide": 19,
+        "notes_part": "ppt/notesSlides/notesSlide19.xml",
+        "normalized_body_matches_script": true,
+        "appended_citations_match": true,
+        "normalized_spoken_body_sha256": "7e4a341694865cf655dc2379f56a4e9dedf63eae8a9f250e30c7a24d69977376"
+      },
+      {
+        "slide": 20,
+        "notes_part": "ppt/notesSlides/notesSlide20.xml",
+        "normalized_body_matches_script": true,
+        "appended_citations_match": true,
+        "normalized_spoken_body_sha256": "2385d9037a5969e958bed743cffc2e9bfedde423c87553d4133d9ef0030772f0"
+      },
+      {
+        "slide": 21,
+        "notes_part": "ppt/notesSlides/notesSlide21.xml",
+        "normalized_body_matches_script": true,
+        "appended_citations_match": true,
+        "normalized_spoken_body_sha256": "2e67264e93373098a267940215172fc3ee81661b5835978ef31fae677b7432a2"
+      },
+      {
+        "slide": 22,
+        "notes_part": "ppt/notesSlides/notesSlide22.xml",
+        "normalized_body_matches_script": true,
+        "appended_citations_match": true,
+        "normalized_spoken_body_sha256": "fc88c97b06939a3478e1f19ec22fcd3e8a3581642cb6842a058c68c7fb2c6054"
+      }
+    ]
+  }
+}

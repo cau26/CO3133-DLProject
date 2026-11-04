@@ -1,0 +1,159 @@
+{
+  "model": "mlp",
+  "evaluation_split": "validation",
+  "n_eval": 6000,
+  "loss": 0.293159777879715,
+  "accuracy": 0.893,
+  "macro_f1": 0.8924059778539799,
+  "parameters": 203530,
+  "best_epoch": 9,
+  "checkpoint_rule": "lowest validation loss; first if tied",
+  "checkpoint": "best.pt",
+  "epochs_completed": 10,
+  "train_seconds": 64.0400725799999,
+  "validation_seconds": 6.968467085000043,
+  "fit_wall_seconds": 71.03061075199992,
+  "train_time_scope": "training loop including data loading, metric collection and updates",
+  "inference": {
+    "batch_size": 128,
+    "warmup_batches": 10,
+    "measured_batches": 50,
+    "batch_ms": 0.13748869999972158,
+    "per_image_ms_amortized": 0.0010741304687478248,
+    "scope": "model forward only; input already on device; excludes DataLoader and transfers"
+  },
+  "top_errors": [
+    {
+      "true_label": 2,
+      "true_class": "Pullover",
+      "predicted_label": 4,
+      "predicted_class": "Coat",
+      "count": 76,
+      "rate_within_true_class": 0.12666666666666668
+    },
+    {
+      "true_label": 6,
+      "true_class": "Shirt",
+      "predicted_label": 0,
+      "predicted_class": "T-shirt/top",
+      "count": 69,
+      "rate_within_true_class": 0.115
+    },
+    {
+      "true_label": 0,
+      "true_class": "T-shirt/top",
+      "predicted_label": 6,
+      "predicted_class": "Shirt",
+      "count": 59,
+      "rate_within_true_class": 0.09833333333333333
+    },
+    {
+      "true_label": 6,
+      "true_class": "Shirt",
+      "predicted_label": 4,
+      "predicted_class": "Coat",
+      "count": 46,
+      "rate_within_true_class": 0.07666666666666666
+    },
+    {
+      "true_label": 6,
+      "true_class": "Shirt",
+      "predicted_label": 2,
+      "predicted_class": "Pullover",
+      "count": 44,
+      "rate_within_true_class": 0.07333333333333333
+    }
+  ],
+  "config": {
+    "group": "G-M10",
+    "members": [
+      "Trần Gia Lâm (2352670)",
+      "Nguyễn Hữu Cầu (2352129)"
+    ],
+    "seed": 42,
+    "validation_size": 6000,
+    "batch_size": 128,
+    "epochs": 10,
+    "learning_rate": 0.001,
+    "hidden_size": 256,
+    "num_workers": 0,
+    "cpu_threads": 4,
+    "device": "cuda"
+  },
+  "data": {
+    "dataset": "Fashion-MNIST",
+    "source": "https://github.com/zalandoresearch/fashion-mnist",
+    "license": "MIT",
+    "official_train": 60000,
+    "train": 54000,
+    "archive_md5_expected": {
+      "train-images-idx3-ubyte.gz": "8d4fb7e6c68d591d4c3dfef9ec88bf0d",
+      "train-labels-idx1-ubyte.gz": "25c81989df183df01b3e8a0aad5dffbe",
+      "t10k-images-idx3-ubyte.gz": "bef4ecab320f06d8554ea6380940ec79",
+      "t10k-labels-idx1-ubyte.gz": "bb300cfdad3c16e7a12a480ee83cd310"
+    },
+    "validation": 6000,
+    "test": 10000,
+    "seed": 42,
+    "stratified": true,
+    "split_sha256": "0289c4940126abe338a376ea49eb866788d57cd67fa3ca17fe80139abb8c8fba",
+    "input_shape": [
+      1,
+      28,
+      28
+    ],
+    "classes": [
+      "T-shirt/top",
+      "Trouser",
+      "Pullover",
+      "Dress",
+      "Coat",
+      "Sandal",
+      "Shirt",
+      "Sneaker",
+      "Bag",
+      "Ankle boot"
+    ],
+    "preprocessing": "ToTensor: float32 [0,1]; no augmentation in this baseline",
+    "split_unit": "individual image; official test partition retained",
+    "leakage_checks": "train/validation IDs disjoint; complete coverage of official train",
+    "test_usage": "descriptive class counts only; no model selection or test evaluation",
+    "duplicate_audit": "not performed; split-ID checks do not prove absence of duplicate images"
+  },
+  "environment": {
+    "recorded_at_utc": "2026-09-22T16:52:45.367547+00:00",
+    "python": "3.13.15 (main, Aug  6 2026, 11:06:22) [GCC 13.3.0]",
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+    "cpu": "Intel(R) Xeon(R) CPU @ 2.00GHz",
+    "logical_cpu_count": 2,
+    "torch_threads": 4,
+    "device": "cuda",
+    "gpu": "Tesla T4",
+    "versions": {
+      "torch": "2.8.0",
+      "torchvision": "0.23.0",
+      "numpy": "2.3.5",
+      "matplotlib": "3.10.8",
+      "scikit-learn": "1.8.0"
+    }
+  },
+  "source": {
+    "git_commit": null,
+    "working_tree_dirty": null,
+    "source_sha256": "60f66b45930a48b305abd941d400125bcbe313626fcac45a8ce60d9e23e28c5c",
+    "files_sha256": {
+      "export_html.py": "fb9d9de6bf0f597fe3f8e87d5404ea30b723da838fae435ef809959bbdf4344d",
+      "run_a1.py": "042d36a24faddc8bf5a8286ae484fdd1d5635dacc8db086c418ecb847b3db67f",
+      "a1/__init__.py": "78dca9bddf50b00fa1531912e55e5c64d7d1049fc564e3178ec09f3fc494c430",
+      "a1/common.py": "2e7ccc6a7e74b4e291ad0e813e902064fa95ca536b84ac64ee8fb614e833ba69",
+      "a1/data.py": "fe421e587f968b401a67cf8405ffad4f1d52a9c31d1c88a9a6aba97ac6af0263",
+      "a1/eda.py": "b402321ca511952ba00023cd661540c4f7ede67d3cc26b55e864e7e29482292b",
+      "a1/linear.py": "f1bd49738aa7dcccd5ee76904087db2ba317d50333ffb52ba4259ccf4d49fdc9",
+      "a1/mlp.py": "049a7b36c03b238887c1638fa63933c2b30650e2398744afffc4f94f1a35f42e",
+      "a1/report.py": "4d02dde5511f6e899e2a1f871437b8a687ab6047e13c7aea506715c5441fc142",
+      "a1/train.py": "6454a6eb6f2efd598e247f1e2804a3b53666854ccde914651452243d2df6d77a"
+    }
+  },
+  "test_evaluated": false,
+  "human_review_status": "Pending: group must inspect code, rerun and verify before submission"
+}

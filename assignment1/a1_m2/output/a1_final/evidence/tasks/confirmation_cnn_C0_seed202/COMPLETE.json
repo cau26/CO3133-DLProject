@@ -1,0 +1,49 @@
+{
+  "status": "COMPLETE",
+  "task_sha256": "b350ae1adb3b9957593c03ececc23422bc0b47cd0500ebb1f110139ee37ad5ab",
+  "binding_sha256": "1d0aa917e240243c1629063a65cf1c341ebd6a13c7e4ff8dbec6a5356326b9d8",
+  "metrics": {
+    "task_id": "confirmation_cnn_C0_seed202",
+    "family": "cnn",
+    "phase": "confirmation",
+    "seed": 202,
+    "parameters": 93962,
+    "selection_rule": "max_macro_f1_then_min_ce_then_earliest_epoch",
+    "best_f1_epoch": 49,
+    "best_f1_metrics": {
+      "loss": 0.20717061848594814,
+      "accuracy": 0.9281481481481482,
+      "macro_f1": 0.9282620296227806,
+      "n_examples": 5400
+    },
+    "best_ce_epoch": 49,
+    "best_ce_metrics": {
+      "loss": 0.20717061848594814,
+      "accuracy": 0.9281481481481482,
+      "macro_f1": 0.9282620296227806,
+      "n_examples": 5400
+    },
+    "epochs_completed": 60,
+    "optimizer_updates": 22800,
+    "n_train": 48600,
+    "n_validation": 5400,
+    "fit_wall_seconds": 433.9006347190116,
+    "fit_timer_scope": "completed epochs: train + validation + in-memory checkpoint selection; excludes setup, transaction writes, finalization, discarded crash work",
+    "training_loop_seconds": 396.39244297201367,
+    "validation_seconds": 37.40566209499957,
+    "scope": "validation_only_exploratory_no_official_test",
+    "task_sha256": "b350ae1adb3b9957593c03ececc23422bc0b47cd0500ebb1f110139ee37ad5ab",
+    "binding_sha256": "1d0aa917e240243c1629063a65cf1c341ebd6a13c7e4ff8dbec6a5356326b9d8",
+    "finalization_seconds_before_metrics_write": 0.7342745869973442
+  },
+  "artifacts_sha256": {
+    "TASK.json": "4003c3c432289e40542910c69a5fd98ca25249933908b2b998f8f5a9d478ee71",
+    "history.csv": "9b5115057acfe3aa153090ca9b6aaa3bc1f8c0cb33d27d39b208ef108c166a22",
+    "predictions.csv": "468723c12ca90776469e361c643a947bf99f6cdd4da5d998a5dd13cf1600e8b9",
+    "metrics.json": "35875645dbef15496e995ef95e8a120d936ae9291e092aaae1bcbf05a60d5213",
+    "best_f1.pt": "dd96257b17f1003c67353f3262e9494583dc6a1a324cf97448a1cf531d82288d",
+    "best_ce.pt": "dd96257b17f1003c67353f3262e9494583dc6a1a324cf97448a1cf531d82288d",
+    "COMMIT.json": "9d8745c2d4213a875ab575efe455d2eff239f602228c15a43430be63dff408bd",
+    "state-0060-db79ece21f714d83bfbd9c212d9ef668.pt": "d002851a68c7ce552f0a7d522707a96d3068dd2b38055b98afb0d2dfc979851c"
+  }
+}

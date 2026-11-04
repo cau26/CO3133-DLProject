@@ -1,0 +1,8 @@
+{
+  "active_process_seconds": 5380.475383962,
+  "budget_seconds": 10800,
+  "stop_by_utc": "2026-10-28T12:30:00+00:00",
+  "stage": "frozen_evaluation",
+  "updated_utc": "2026-10-28T10:03:43.414316+00:00",
+  "scope": "Cumulative controller process time including preparation/training/finalization. Idle GPU allocation outside the process and abrupt tail after last heartbeat are not counted."
+}

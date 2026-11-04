@@ -1,0 +1,5 @@
+title: G-M10 · CO3133 Deep Learning
+description: Five PyTorch architectures for Fashion-MNIST, with reproducible experiments and measured analysis.
+markdown: kramdown
+exclude:
+  - assignment1-final.md

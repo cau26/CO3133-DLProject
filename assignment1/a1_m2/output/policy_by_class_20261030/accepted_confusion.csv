@@ -1,0 +1,7 @@
+true_label,shirt_blouse,top_tshirt_sweatshirt,jacket,pants,skirt,dress
+shirt_blouse,22,4,5,0,0,2
+top_tshirt_sweatshirt,2,406,6,0,0,17
+jacket,0,6,76,0,0,0
+pants,0,0,0,360,0,1
+skirt,0,2,0,2,100,2
+dress,0,10,1,0,1,481

@@ -1,0 +1,357 @@
+{
+  "status": "FAILED_CANDIDATE_NOT_READY",
+  "ready_for_local_service": false,
+  "original_release_id": "g_m10_garmentlab_controlled_v2-C4-seed314",
+  "created_utc": "2026-10-28T11:19:32.034231+00:00",
+  "no_training_performed": true,
+  "original_study_metrics_unchanged": true,
+  "calibration_unchanged": {
+    "status": "fitted",
+    "temperature": 5.345757234366385,
+    "review_threshold": 0.88,
+    "fit_split_sha256": "4f385288d00ba04b51d8debf84442eaba16639e5bfb6fb4491fc281dcfe3800a",
+    "threshold_selection_split_sha256": "12e9132cb83a296099df5bdc6f09615fa13eb8fdc7c91ac71367a44e52cffa11",
+    "policy": {
+      "version": "disjoint_component_representative_bonferroni_v2",
+      "mode": "confidence_threshold",
+      "target_accuracy": 0.95,
+      "bound_eligible": true,
+      "family_error_probability": 0.05,
+      "target_bound_satisfied_under_assumptions": true,
+      "unconditional_accuracy_guarantee": false,
+      "target_population": "equally weighted metadata-selected representative of an independent source/duplicate component",
+      "partition_sha256": "385c0e7768032d44b4e985f8d4f5ebc0772afa0dcce57376bc273c395934c17d",
+      "threshold_grid_sha256": "6e7cf29829ec0f572e3d603a963affa9629c450310b4657bd843e531b24ca2a0"
+    }
+  },
+  "variants": [
+    {
+      "variant": "ORT_ENABLE_ALL",
+      "export_settings": {
+        "dynamo": true,
+        "optimize": false,
+        "opset_version": 18,
+        "external_data": false,
+        "providers": [
+          "CPUExecutionProvider"
+        ],
+        "intra_op_num_threads": 1,
+        "inter_op_num_threads": 1,
+        "graph_optimization_level": "ORT_ENABLE_ALL"
+      },
+      "status": "fail",
+      "checks": {
+        "full327_batch1_vs_archived": {
+          "status": "fail",
+          "samples": 327,
+          "maximum_absolute_error": 0.0001354217529296875,
+          "max_abs_tolerance": 0.0001,
+          "top1_disagreements": 0,
+          "review_decision_disagreements": 0,
+          "maximum_probability_error": 7.639024602379418e-06
+        },
+        "full327_batch1_vs_local": {
+          "status": "fail",
+          "samples": 327,
+          "maximum_absolute_error": 0.0001373291015625,
+          "max_abs_tolerance": 0.0001,
+          "top1_disagreements": 0,
+          "review_decision_disagreements": 0,
+          "maximum_probability_error": 7.65756432308251e-06
+        },
+        "batch3_vs_local": {
+          "status": "pass",
+          "samples": 3,
+          "maximum_absolute_error": 8.32676887512207e-05,
+          "max_abs_tolerance": 0.0001,
+          "top1_disagreements": 0,
+          "review_decision_disagreements": 0,
+          "maximum_probability_error": 2.747025671934189e-06
+        },
+        "batch3_vs_archived": {
+          "status": "pass",
+          "samples": 3,
+          "maximum_absolute_error": 8.678436279296875e-05,
+          "max_abs_tolerance": 0.0001,
+          "top1_disagreements": 0,
+          "review_decision_disagreements": 0,
+          "maximum_probability_error": 3.0581950836161553e-06
+        },
+        "batch64_vs_local": {
+          "status": "pass",
+          "samples": 64,
+          "maximum_absolute_error": 9.918212890625e-05,
+          "max_abs_tolerance": 0.0001,
+          "top1_disagreements": 0,
+          "review_decision_disagreements": 0,
+          "maximum_probability_error": 4.57856950797364e-06
+        },
+        "batch64_vs_archived": {
+          "status": "pass",
+          "samples": 64,
+          "maximum_absolute_error": 9.72747802734375e-05,
+          "max_abs_tolerance": 0.0001,
+          "top1_disagreements": 0,
+          "review_decision_disagreements": 0,
+          "maximum_probability_error": 5.5868811569270704e-06
+        },
+        "batch128_vs_local": {
+          "status": "fail",
+          "samples": 128,
+          "maximum_absolute_error": 0.0001125335693359375,
+          "max_abs_tolerance": 0.0001,
+          "top1_disagreements": 0,
+          "review_decision_disagreements": 0,
+          "maximum_probability_error": 6.991379144116738e-06
+        },
+        "batch128_vs_archived": {
+          "status": "fail",
+          "samples": 128,
+          "maximum_absolute_error": 0.0001354217529296875,
+          "max_abs_tolerance": 0.0001,
+          "top1_disagreements": 0,
+          "review_decision_disagreements": 0,
+          "maximum_probability_error": 7.639024602379418e-06
+        }
+      }
+    },
+    {
+      "variant": "ORT_DISABLE_ALL",
+      "export_settings": {
+        "dynamo": true,
+        "optimize": false,
+        "opset_version": 18,
+        "external_data": false,
+        "providers": [
+          "CPUExecutionProvider"
+        ],
+        "intra_op_num_threads": 1,
+        "inter_op_num_threads": 1,
+        "graph_optimization_level": "ORT_DISABLE_ALL"
+      },
+      "status": "fail",
+      "checks": {
+        "full327_batch1_vs_archived": {
+          "status": "fail",
+          "samples": 327,
+          "maximum_absolute_error": 0.00012969970703125,
+          "max_abs_tolerance": 0.0001,
+          "top1_disagreements": 0,
+          "review_decision_disagreements": 0,
+          "maximum_probability_error": 7.678010435108185e-06
+        },
+        "full327_batch1_vs_local": {
+          "status": "fail",
+          "samples": 327,
+          "maximum_absolute_error": 0.0001316070556640625,
+          "max_abs_tolerance": 0.0001,
+          "top1_disagreements": 0,
+          "review_decision_disagreements": 0,
+          "maximum_probability_error": 7.730945204953432e-06
+        },
+        "batch3_vs_local": {
+          "status": "pass",
+          "samples": 3,
+          "maximum_absolute_error": 7.808208465576172e-05,
+          "max_abs_tolerance": 0.0001,
+          "top1_disagreements": 0,
+          "review_decision_disagreements": 0,
+          "maximum_probability_error": 2.0781483559551006e-06
+        },
+        "batch3_vs_archived": {
+          "status": "pass",
+          "samples": 3,
+          "maximum_absolute_error": 8.159875869750977e-05,
+          "max_abs_tolerance": 0.0001,
+          "top1_disagreements": 0,
+          "review_decision_disagreements": 0,
+          "maximum_probability_error": 2.389317767637067e-06
+        },
+        "batch64_vs_local": {
+          "status": "pass",
+          "samples": 64,
+          "maximum_absolute_error": 9.5367431640625e-05,
+          "max_abs_tolerance": 0.0001,
+          "top1_disagreements": 0,
+          "review_decision_disagreements": 0,
+          "maximum_probability_error": 4.607092074726538e-06
+        },
+        "batch64_vs_archived": {
+          "status": "pass",
+          "samples": 64,
+          "maximum_absolute_error": 9.34600830078125e-05,
+          "max_abs_tolerance": 0.0001,
+          "top1_disagreements": 0,
+          "review_decision_disagreements": 0,
+          "maximum_probability_error": 5.615403723679968e-06
+        },
+        "batch128_vs_local": {
+          "status": "fail",
+          "samples": 128,
+          "maximum_absolute_error": 0.00011444091796875,
+          "max_abs_tolerance": 0.0001,
+          "top1_disagreements": 0,
+          "review_decision_disagreements": 0,
+          "maximum_probability_error": 7.0303649768455045e-06
+        },
+        "batch128_vs_archived": {
+          "status": "fail",
+          "samples": 128,
+          "maximum_absolute_error": 0.00012969970703125,
+          "max_abs_tolerance": 0.0001,
+          "top1_disagreements": 0,
+          "review_decision_disagreements": 0,
+          "maximum_probability_error": 7.678010435108185e-06
+        }
+      }
+    },
+    {
+      "variant": "ORT_ENABLE_BASIC",
+      "export_settings": {
+        "dynamo": true,
+        "optimize": false,
+        "opset_version": 18,
+        "external_data": false,
+        "providers": [
+          "CPUExecutionProvider"
+        ],
+        "intra_op_num_threads": 1,
+        "inter_op_num_threads": 1,
+        "graph_optimization_level": "ORT_ENABLE_BASIC"
+      },
+      "status": "fail",
+      "checks": {
+        "full327_batch1_vs_archived": {
+          "status": "fail",
+          "samples": 327,
+          "maximum_absolute_error": 0.00012969970703125,
+          "max_abs_tolerance": 0.0001,
+          "top1_disagreements": 0,
+          "review_decision_disagreements": 0,
+          "maximum_probability_error": 7.678010435108185e-06
+        },
+        "full327_batch1_vs_local": {
+          "status": "fail",
+          "samples": 327,
+          "maximum_absolute_error": 0.0001316070556640625,
+          "max_abs_tolerance": 0.0001,
+          "top1_disagreements": 0,
+          "review_decision_disagreements": 0,
+          "maximum_probability_error": 7.730945204953432e-06
+        },
+        "batch3_vs_local": {
+          "status": "pass",
+          "samples": 3,
+          "maximum_absolute_error": 7.808208465576172e-05,
+          "max_abs_tolerance": 0.0001,
+          "top1_disagreements": 0,
+          "review_decision_disagreements": 0,
+          "maximum_probability_error": 2.0781483559551006e-06
+        },
+        "batch3_vs_archived": {
+          "status": "pass",
+          "samples": 3,
+          "maximum_absolute_error": 8.159875869750977e-05,
+          "max_abs_tolerance": 0.0001,
+          "top1_disagreements": 0,
+          "review_decision_disagreements": 0,
+          "maximum_probability_error": 2.389317767637067e-06
+        },
+        "batch64_vs_local": {
+          "status": "pass",
+          "samples": 64,
+          "maximum_absolute_error": 9.5367431640625e-05,
+          "max_abs_tolerance": 0.0001,
+          "top1_disagreements": 0,
+          "review_decision_disagreements": 0,
+          "maximum_probability_error": 4.607092074726538e-06
+        },
+        "batch64_vs_archived": {
+          "status": "pass",
+          "samples": 64,
+          "maximum_absolute_error": 9.34600830078125e-05,
+          "max_abs_tolerance": 0.0001,
+          "top1_disagreements": 0,
+          "review_decision_disagreements": 0,
+          "maximum_probability_error": 5.615403723679968e-06
+        },
+        "batch128_vs_local": {
+          "status": "fail",
+          "samples": 128,
+          "maximum_absolute_error": 0.00011444091796875,
+          "max_abs_tolerance": 0.0001,
+          "top1_disagreements": 0,
+          "review_decision_disagreements": 0,
+          "maximum_probability_error": 7.0303649768455045e-06
+        },
+        "batch128_vs_archived": {
+          "status": "fail",
+          "samples": 128,
+          "maximum_absolute_error": 0.00012969970703125,
+          "max_abs_tolerance": 0.0001,
+          "top1_disagreements": 0,
+          "review_decision_disagreements": 0,
+          "maximum_probability_error": 7.678010435108185e-06
+        }
+      }
+    }
+  ],
+  "local_backend": {
+    "schema": 1,
+    "policy_id": "garmentlab_training_fp32_deterministic_v1",
+    "backend_source_sha256": "a39d06b05aba5388197ca47486c95877e603ef2ef816bd7315b1676eb9c24443",
+    "device": null,
+    "flags": {
+      "deterministic_algorithms": true,
+      "deterministic_warn_only": false,
+      "cudnn_benchmark": false,
+      "cudnn_deterministic": false,
+      "cuda_matmul_allow_tf32": false,
+      "cudnn_allow_tf32": false,
+      "float32_matmul_precision": "highest",
+      "default_dtype": "torch.float32",
+      "cuda_autocast_enabled": false,
+      "mkldnn_enabled": true
+    },
+    "runtime": {
+      "python": "3.12.10",
+      "torch": "2.10.0+cpu",
+      "torchvision": "0.25.0+cpu",
+      "numpy": "2.4.2",
+      "cuda": "None",
+      "cudnn": null,
+      "cuda_available": false,
+      "gpu": null,
+      "gpu_capability": null,
+      "cpu_threads": 1,
+      "cpu_interop_threads": 24
+    }
+  },
+  "original_export_manifest_sha256": "3d13c7a012f97b67a6ad147bf29e9441e8a71166b8249f57934358078e4b1f1b",
+  "original_payload_count": 273,
+  "scope": "Additive CPU export and numerical/serving validation; all original return artifacts preserved. No quality or model/threshold choice is changed.",
+  "original_return_payloads_reverified_unchanged": true,
+  "source_sha256": "04b8954676a709de25f0d9458cee12184ac408fa4ab0ff00a09b6a5d421abe7c",
+  "artifacts": [
+    {
+      "path": "controlled_variants/cpu_optimize_false.onnx",
+      "sha256": "a5eb19beea36dcc9181e9862204fc4fd83e8c1522d0c1f3def877676b49aea2b",
+      "bytes": 7045610
+    },
+    {
+      "path": "controlled_variants/ORT_DISABLE_ALL.json",
+      "sha256": "cb981c4541c6a84f5e9db51d212b1d9ec095227df7e2d1ca26d9aabeede9ac02",
+      "bytes": 2859
+    },
+    {
+      "path": "controlled_variants/ORT_ENABLE_ALL.json",
+      "sha256": "54966117ed62ce970d003a97260bdad9f9faa2dabc39c510b5d4df1dcbfccf6a",
+      "bytes": 2856
+    },
+    {
+      "path": "controlled_variants/ORT_ENABLE_BASIC.json",
+      "sha256": "007c64e038a1e0ab770cc9b455b1402c153aa455133b6bcec838de4d6c9276ca",
+      "bytes": 2861
+    }
+  ]
+}

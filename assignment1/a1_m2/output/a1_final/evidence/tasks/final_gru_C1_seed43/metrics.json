@@ -1,0 +1,43 @@
+{
+  "task_id": "final_gru_C1_seed43",
+  "family": "gru",
+  "phase": "final",
+  "seed": 43,
+  "parameters": 61962,
+  "selection_rule": "max_macro_f1_then_min_ce_then_earliest_epoch",
+  "best_f1_epoch": 28,
+  "best_f1_metrics": {
+    "loss": 0.2592315109806732,
+    "accuracy": 0.9175,
+    "macro_f1": 0.9176211791239627,
+    "n_examples": 6000
+  },
+  "best_ce_epoch": 22,
+  "best_ce_metrics": {
+    "loss": 0.2503378202646394,
+    "accuracy": 0.9116666666666666,
+    "macro_f1": 0.9114224939220401,
+    "n_examples": 6000
+  },
+  "epochs_completed": 60,
+  "optimizer_updates": 25320,
+  "n_train": 54000,
+  "n_validation": 6000,
+  "fit_wall_seconds": 478.3330905930088,
+  "fit_timer_scope": "completed epochs: train + validation + in-memory checkpoint selection; excludes setup, transaction writes, finalization, discarded crash work",
+  "training_loop_seconds": 436.91490400999464,
+  "validation_seconds": 41.346513550986856,
+  "scope": "validation_only_exploratory_no_official_test",
+  "task_sha256": "860347ce3c72bffb462ce02c2510c5a13dbcfd8d34248cf5cb152f780cbb55a9",
+  "binding_sha256": "65d40d1d89e8b65cb0e09522183c65a33e8b79fe6a46a9c973fd0738becfc9fe",
+  "inference": {
+    "batch_size": 128,
+    "warmup_batches": 10,
+    "measured_batches": 50,
+    "batch_ms": 0.4771475800225744,
+    "per_image_ms_amortized": 0.0037277154689263625,
+    "scope": "model forward only; input already on device; excludes DataLoader and transfers",
+    "interpretation": "batch-amortized model-forward milliseconds; not single-request service latency"
+  },
+  "finalization_seconds_before_metrics_write": 0.8626613830019778
+}

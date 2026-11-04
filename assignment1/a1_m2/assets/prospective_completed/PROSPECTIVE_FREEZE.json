@@ -1,0 +1,369 @@
+{
+  "schema": "garmentlab_prospective_freeze_v1",
+  "protocol": {
+    "schema": "garmentlab_prospective_license_cohort_v1",
+    "candidate_license_ids": [
+      3,
+      5
+    ],
+    "historical_license_ids": [
+      0,
+      1,
+      6
+    ],
+    "source_group_cap": 2000,
+    "sampling_seed": 20261029,
+    "near_duplicate_distance": 2,
+    "minimum_components_per_class": 15,
+    "bootstrap_replicates": 2000,
+    "bootstrap_seed": 20261030,
+    "primary_comparison": "C4 minus C0, mean of three paired fixed-seed Macro-F1 scores",
+    "sampling_rule": "SHA256(seed:source_group_id), cap before target-category annotation filtering; no replacement",
+    "use": "Noncommercial research only; no photograph redistribution",
+    "scope": "Project-unused same-source license-cohort shift, not external-data or IID test evidence"
+  },
+  "inputs": {
+    "train_metadata": {
+      "sha256": "f6af94fb8712bd8170a49c857e842e1227e6806c4f33f32340db0c849133e006",
+      "bytes": 542193045
+    },
+    "train_archive": {
+      "sha256": "d896792104a4c35efa7859a18cf605fddae779f5c2372e87e08d7b45949244e2",
+      "bytes": 3344364592
+    },
+    "assessment_metadata": {
+      "sha256": "f831f415edad12d52acde8b138fe7ebd1592b57bf0dcd6a3b63ba8cabd208223",
+      "bytes": 14533475
+    },
+    "assessment_archive": {
+      "sha256": "44eb1685364b6ed6bda4595fe0dc07a252e9b923112b97b24ff4d440751a2acc",
+      "bytes": 236499034
+    },
+    "historical_index": {
+      "sha256": "cacb96a7d87529dce147a7e73237eec410ba29ed437b0d464cfca57fc9509637",
+      "bytes": 18794474
+    },
+    "duplicate_audit": {
+      "sha256": "6f6c5db69ab279325f3c38fcd0564236ef871822e2073fcfb8f410020d26000e",
+      "bytes": 98987
+    },
+    "preview_credits_0": {
+      "sha256": "b6bdd8ff0b463be8cb72222902e9f23d057a1d38d81870135b991425cfdd4bcf",
+      "bytes": 4435
+    },
+    "preview_credits_1": {
+      "sha256": "6ddad4f3cab1c5814bd6c44ee7dbd7503d3ea431832ecbffaac1e68b41947952",
+      "bytes": 4444
+    },
+    "preview_credits_2": {
+      "sha256": "5c2f9e200fd04fb1cda8af1382707bbb4dbf00a13c27c77b08f821487c40d81d",
+      "bytes": 2189
+    },
+    "preview_credits_3": {
+      "sha256": "2559c5f529a9039fe7d0c8bd548c3cda5e1f81b7ab6a5264d526211cc2bdec43",
+      "bytes": 2188
+    },
+    "historical_readiness": {
+      "sha256": "1f8c4ac24b7f71966658749a708f8eed2aed8d492d077628fcc395d802a0422f",
+      "bytes": 109130
+    }
+  },
+  "models": [
+    {
+      "task_id": "final_C0_seed2718",
+      "candidate_id": "C0",
+      "seed": 2718,
+      "checkpoint": "tasks/final_C0_seed2718/best.pt",
+      "weights_sha256": "6525e7da6a84eb02a6ab7e9f5a6255b17711bc7aec55da69e9353265152b924f",
+      "task": {
+        "task_id": "final_C0_seed2718",
+        "candidate_id": "C0",
+        "phase": "final",
+        "recipe": "finetune",
+        "seed": 2718,
+        "epochs": 18,
+        "labels": [
+          "shirt_blouse",
+          "top_tshirt_sweatshirt",
+          "jacket",
+          "pants",
+          "skirt",
+          "dress"
+        ],
+        "architecture": "mobilenet_v3_small",
+        "candidate": {
+          "id": "C0",
+          "name": "original_anchor",
+          "head_lr": 0.001,
+          "backbone_lr": 0.0003,
+          "weight_decay": 0.0001,
+          "head_dropout": 0.2,
+          "label_smoothing": 0.0,
+          "photo_brightness": 0.0,
+          "photo_contrast": 0.0
+        }
+      },
+      "committed_files": {
+        "best.pt": "6525e7da6a84eb02a6ab7e9f5a6255b17711bc7aec55da69e9353265152b924f",
+        "task.json": "65cb0dc3bc08f7933ac284bfeff386430318a669c6a3d14bc6e3480a25582452",
+        "history.json": "aa722f3c1f36aa0e1f5005d44e5e86324300aec716fcd5b8f0021cd3737e0cc8"
+      },
+      "complete_sha256": "cd4ff3b97386c306b469c2997ac23e7ded02104b8958b7601c91db13d48da68f"
+    },
+    {
+      "task_id": "final_C0_seed314",
+      "candidate_id": "C0",
+      "seed": 314,
+      "checkpoint": "tasks/final_C0_seed314/best.pt",
+      "weights_sha256": "b16d0beca0f47069d7fc1fa95022f404850445a4315a0aa4eabb6bdb25d41d12",
+      "task": {
+        "task_id": "final_C0_seed314",
+        "candidate_id": "C0",
+        "phase": "final",
+        "recipe": "finetune",
+        "seed": 314,
+        "epochs": 18,
+        "labels": [
+          "shirt_blouse",
+          "top_tshirt_sweatshirt",
+          "jacket",
+          "pants",
+          "skirt",
+          "dress"
+        ],
+        "architecture": "mobilenet_v3_small",
+        "candidate": {
+          "id": "C0",
+          "name": "original_anchor",
+          "head_lr": 0.001,
+          "backbone_lr": 0.0003,
+          "weight_decay": 0.0001,
+          "head_dropout": 0.2,
+          "label_smoothing": 0.0,
+          "photo_brightness": 0.0,
+          "photo_contrast": 0.0
+        }
+      },
+      "committed_files": {
+        "best.pt": "b16d0beca0f47069d7fc1fa95022f404850445a4315a0aa4eabb6bdb25d41d12",
+        "task.json": "f3d38743e86d2de6eaef3f4e3df5042536eaedc4b46c19511be31e9142c3b334",
+        "history.json": "594ed8ea81a8b532d0c4f40b0fa9720c67267987e24d30d4b91cb3bf2a58c738"
+      },
+      "complete_sha256": "189aa8cb8d1433feb6ca400fdad6cc34ab2ee4a8355531edc0311acb2f72f0e9"
+    },
+    {
+      "task_id": "final_C0_seed5772",
+      "candidate_id": "C0",
+      "seed": 5772,
+      "checkpoint": "tasks/final_C0_seed5772/best.pt",
+      "weights_sha256": "1517f6dce07d443fdc03bd45fbbade85dc2cea7a2a105f42838f284409852b8c",
+      "task": {
+        "task_id": "final_C0_seed5772",
+        "candidate_id": "C0",
+        "phase": "final",
+        "recipe": "finetune",
+        "seed": 5772,
+        "epochs": 18,
+        "labels": [
+          "shirt_blouse",
+          "top_tshirt_sweatshirt",
+          "jacket",
+          "pants",
+          "skirt",
+          "dress"
+        ],
+        "architecture": "mobilenet_v3_small",
+        "candidate": {
+          "id": "C0",
+          "name": "original_anchor",
+          "head_lr": 0.001,
+          "backbone_lr": 0.0003,
+          "weight_decay": 0.0001,
+          "head_dropout": 0.2,
+          "label_smoothing": 0.0,
+          "photo_brightness": 0.0,
+          "photo_contrast": 0.0
+        }
+      },
+      "committed_files": {
+        "best.pt": "1517f6dce07d443fdc03bd45fbbade85dc2cea7a2a105f42838f284409852b8c",
+        "task.json": "bd75b16cea57f506884f1e6efae11c30ed39b0d86897519ca583d9e4923c45c4",
+        "history.json": "cd1336c245bac599ad8b8c8aa0e0f36ff92941a5967021f45d6d95ca126bca58"
+      },
+      "complete_sha256": "2b32709180470ee3bfe9bdf7ee6a9713e0653415f8029d4a9c295974dcfe954e"
+    },
+    {
+      "task_id": "final_C4_seed2718",
+      "candidate_id": "C4",
+      "seed": 2718,
+      "checkpoint": "tasks/final_C4_seed2718/best.pt",
+      "weights_sha256": "50fe2fb5e5a8831947ce17e5e177c3e8e0a82c6570bcf30eb8fd7ecd19710bec",
+      "task": {
+        "task_id": "final_C4_seed2718",
+        "candidate_id": "C4",
+        "phase": "final",
+        "recipe": "finetune",
+        "seed": 2718,
+        "epochs": 18,
+        "labels": [
+          "shirt_blouse",
+          "top_tshirt_sweatshirt",
+          "jacket",
+          "pants",
+          "skirt",
+          "dress"
+        ],
+        "architecture": "mobilenet_v3_small",
+        "candidate": {
+          "id": "C4",
+          "name": "stronger_dropout",
+          "head_lr": 0.001,
+          "backbone_lr": 0.0003,
+          "weight_decay": 0.0001,
+          "head_dropout": 0.4,
+          "label_smoothing": 0.0,
+          "photo_brightness": 0.0,
+          "photo_contrast": 0.0
+        }
+      },
+      "committed_files": {
+        "best.pt": "50fe2fb5e5a8831947ce17e5e177c3e8e0a82c6570bcf30eb8fd7ecd19710bec",
+        "task.json": "c5726c7bb3aa747173efd25c0c3a1708e25e9d5d68250b850c1ad700d46dd095",
+        "history.json": "fa366f25fb1981804cc1e01fe9d372655b5991186772f1df46adba76e3e45352"
+      },
+      "complete_sha256": "60be9f3e5696f7a1b34e62ea4111eb395fea333a09d2b82b2a6c1ded016fc2db"
+    },
+    {
+      "task_id": "final_C4_seed314",
+      "candidate_id": "C4",
+      "seed": 314,
+      "checkpoint": "tasks/final_C4_seed314/best.pt",
+      "weights_sha256": "74b618510179bb905a725b6620b63beb7d8a796bb034e754d4ca593e890d6b05",
+      "task": {
+        "task_id": "final_C4_seed314",
+        "candidate_id": "C4",
+        "phase": "final",
+        "recipe": "finetune",
+        "seed": 314,
+        "epochs": 18,
+        "labels": [
+          "shirt_blouse",
+          "top_tshirt_sweatshirt",
+          "jacket",
+          "pants",
+          "skirt",
+          "dress"
+        ],
+        "architecture": "mobilenet_v3_small",
+        "candidate": {
+          "id": "C4",
+          "name": "stronger_dropout",
+          "head_lr": 0.001,
+          "backbone_lr": 0.0003,
+          "weight_decay": 0.0001,
+          "head_dropout": 0.4,
+          "label_smoothing": 0.0,
+          "photo_brightness": 0.0,
+          "photo_contrast": 0.0
+        }
+      },
+      "committed_files": {
+        "best.pt": "74b618510179bb905a725b6620b63beb7d8a796bb034e754d4ca593e890d6b05",
+        "task.json": "72561501f2b1e548c56a499102df82bfab3acc2778710d0429bd59349682670a",
+        "history.json": "a820f916b0a03435de52193d7055c266f5e81f657a61f85ef1f117e35d34dc15"
+      },
+      "complete_sha256": "33870636fe09ed460d5a93d5c158dd48a86800ddab16daf13c5f4933a7c22425"
+    },
+    {
+      "task_id": "final_C4_seed5772",
+      "candidate_id": "C4",
+      "seed": 5772,
+      "checkpoint": "tasks/final_C4_seed5772/best.pt",
+      "weights_sha256": "75128837360c92de33689b16bcde38265ae6d6634859558e9219c37ebf82b5c5",
+      "task": {
+        "task_id": "final_C4_seed5772",
+        "candidate_id": "C4",
+        "phase": "final",
+        "recipe": "finetune",
+        "seed": 5772,
+        "epochs": 18,
+        "labels": [
+          "shirt_blouse",
+          "top_tshirt_sweatshirt",
+          "jacket",
+          "pants",
+          "skirt",
+          "dress"
+        ],
+        "architecture": "mobilenet_v3_small",
+        "candidate": {
+          "id": "C4",
+          "name": "stronger_dropout",
+          "head_lr": 0.001,
+          "backbone_lr": 0.0003,
+          "weight_decay": 0.0001,
+          "head_dropout": 0.4,
+          "label_smoothing": 0.0,
+          "photo_brightness": 0.0,
+          "photo_contrast": 0.0
+        }
+      },
+      "committed_files": {
+        "best.pt": "75128837360c92de33689b16bcde38265ae6d6634859558e9219c37ebf82b5c5",
+        "task.json": "a89b4e5de79f7471ff247559c6498380f5475fab5a6a2295c9bd6513e7a383af",
+        "history.json": "22018ad2a77ce2681e6145370524aed371251f303d9e0ee6050f7a53516d6880"
+      },
+      "complete_sha256": "f755387c080fbf21e1b70c7d7da6183e5ff97d8b1d22de4da8ccccb4b884fd26"
+    }
+  ],
+  "study_files": {
+    "FINAL_SELECTION.json": "4ba4d6a5ccd3d881b89fea97a83eb281f153b0db3a1073d1c5fe342116f30d97",
+    "study_v2_manifest.json": "de1776965e16fa98f8b732bc8eec6770636e07954224e3c14a84877702d90c2b",
+    "study_v2_state.json": "e216388e0d1ce49af20ada0a7616ff6e546ad80e23625772bf683d2fa4343c75"
+  },
+  "source_sha256": {
+    "garmentlab/prospective.py": "64cbec076f9e4d09c36e4df2bbac30b0e15112e19451ee94c2b74ca3e02644a5",
+    "garmentlab/images.py": "3632672b8db33fc6e02a4158d72ba1f32ccab4c3c7dd788eec9e18acb40fea75",
+    "garmentlab/data.py": "1ecede748a319f92a47b63c52b99c121348047c52522572046051fd60f0dd497",
+    "garmentlab/training.py": "b46c52fd58cfbf737b148b6244aa6622baf42454df1a8195f6d79ebd78e92c6d",
+    "garmentlab/evaluate.py": "754b146f23ee0a8bbcedc5d0f2b8939c01cd128a8939a149535518f8b84f4e1b",
+    "garmentlab/evaluate_v2.py": "a5d5892808de0f98a54462f59af2a48e67e7eaab05541b839b9497b0d8177ed4",
+    "garmentlab/uncertainty_v2.py": "5572cc377c3fffc0dce46f4a2e53a4ddd49d73237cf1179d7d62a3eb4307d923",
+    "garmentlab/probabilities.py": "91ccab49f48fe4bb4dbf8dab2bd9121dcdf10fcab072a07969535fef3f72e7c4",
+    "garmentlab/calibration_v2.py": "1944f7931d6a3cb356f944717c5b7db482f5696e89341102f58fb46f198a460e",
+    "garmentlab/backend.py": "a39d06b05aba5388197ca47486c95877e603ef2ef816bd7315b1676eb9c24443",
+    "a1/cnn.py": "7789a03b6cce9801f2824d58ad8886b5488023a3184ef248b457de1d89d6fff2"
+  },
+  "policies": {
+    "C4": {
+      "file_sha256": "6ea88269e5c70cd02862bcab108461ce1a7ece82f39641aa48a3b67c11f000b0",
+      "calibration": {
+        "status": "fitted",
+        "temperature": 5.345757234366385,
+        "review_threshold": 0.88,
+        "fit_split_sha256": "4f385288d00ba04b51d8debf84442eaba16639e5bfb6fb4491fc281dcfe3800a",
+        "threshold_selection_split_sha256": "12e9132cb83a296099df5bdc6f09615fa13eb8fdc7c91ac71367a44e52cffa11",
+        "policy": {
+          "version": "disjoint_component_representative_bonferroni_v2",
+          "mode": "confidence_threshold",
+          "target_accuracy": 0.95,
+          "bound_eligible": true,
+          "family_error_probability": 0.05,
+          "target_bound_satisfied_under_assumptions": true,
+          "unconditional_accuracy_guarantee": false,
+          "target_population": "equally weighted metadata-selected representative of an independent source/duplicate component",
+          "partition_sha256": "385c0e7768032d44b4e985f8d4f5ebc0772afa0dcce57376bc273c395934c17d",
+          "threshold_grid_sha256": "6e7cf29829ec0f572e3d603a963affa9629c450310b4657bd843e531b24ca2a0"
+        }
+      },
+      "deployment_seed": 314
+    }
+  },
+  "exposure_attestation": {
+    "recorded_exposure_inventory_complete": true,
+    "basis": "Available prepared indices, duplicate records, raw metadata/license inventory and four recorded pixel-preview lists were checked. No recorded license3/5 image or model-output exposure was found; unrecorded browsing and ImageNet pretraining exposure cannot be certified."
+  },
+  "smoke_only": false,
+  "limitations": "Unused relative to recorded project image exposure; all metadata licenses were previously inventoried. Foundation pretraining and unrecorded views cannot be excluded. Same-source license shift is not an IID or external test.",
+  "frozen_utc": "2026-10-29T00:20:28.350759+00:00"
+}

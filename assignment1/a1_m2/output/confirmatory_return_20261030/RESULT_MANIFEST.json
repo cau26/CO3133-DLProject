@@ -1,0 +1,2983 @@
+{
+  "status": "COMPLETE",
+  "files": [
+    {
+      "path": "BUNDLE_CLOCK.json",
+      "bytes": 249,
+      "sha256": "6dff2ebc6c9e6b66ee654e7df011b055b92e2529f8f71937931b7665ff1dc3c8"
+    },
+    {
+      "path": "BUNDLE_MANIFEST.json",
+      "bytes": 954,
+      "sha256": "5d7815b861963d165fe85c456b4fdc8e43f1d043f751f876c9959b1fab1eeb8a"
+    },
+    {
+      "path": "FASHION_CONSOLE.log",
+      "bytes": 110929,
+      "sha256": "6369ce380e6d5943d9d8066a03dba19e0d865b2bdbef399fbbe6fd0603211c6d"
+    },
+    {
+      "path": "NOTEBOOK_CONSOLE.log",
+      "bytes": 41203,
+      "sha256": "8a6a1931e2958ec57aa1a3068b2b8d27cf6dc2899ff8f464f001ea14010b9cc3"
+    },
+    {
+      "path": "RESULT_STATUS.json",
+      "bytes": 1248,
+      "sha256": "a01bb583157f759f0c3dc4100cd744e7a4cd7ed28240a386e7533eef9b8f0892"
+    },
+    {
+      "path": "fashion_confirmation/EVALUATION_LOCK.json",
+      "bytes": 30704,
+      "sha256": "8cecd9ccd3d4a474c1a8e725743e3b8b26dd3116ea48e076078ae52ba5e3f100"
+    },
+    {
+      "path": "fashion_confirmation/PREPARATION_BINDING.json",
+      "bytes": 18537,
+      "sha256": "748ee28f4e4730f783ede9cc35e95762cdf25b4a503d8690882b8ac354bfb58f"
+    },
+    {
+      "path": "fashion_confirmation/STUDY_COMPLETE.json",
+      "bytes": 3290,
+      "sha256": "ad9f8bdc95bd9636e242b21035aa25bbf6ac1415ccf6e3b27e4fe41f2774e3c7"
+    },
+    {
+      "path": "fashion_confirmation/analysis/summary.json",
+      "bytes": 27922,
+      "sha256": "af5197c3d74dda57b35a55cb4762a8e7a8ddcb38d9e76464ece089e6c34f88bd"
+    },
+    {
+      "path": "fashion_confirmation/clock.json",
+      "bytes": 185,
+      "sha256": "96be35018c2a74fbb37f76d41eefdeeea6e598e8fcbca13ee9e9d14aa1ce6d85"
+    },
+    {
+      "path": "fashion_confirmation/confirmation_manifest.json",
+      "bytes": 18740,
+      "sha256": "a708a3773db5acd84837a37bdf0d797cf862004847ec5ed2b147da1b6babbf87"
+    },
+    {
+      "path": "fashion_confirmation/smoke_checks.json",
+      "bytes": 1247,
+      "sha256": "a986db72ed254eb62c9a6e652c4d956e77a1c139a24c2bb2a4e0015489ab95d9"
+    },
+    {
+      "path": "fashion_confirmation/split_ids.npz",
+      "bytes": 91736,
+      "sha256": "cbc2d0fe6e635c171782407510d86e0a7b9745104fcdc4afc180a2b47ead76f4"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_C0_seed1009/TRAJECTORY_COMPLETE.json",
+      "bytes": 2645,
+      "sha256": "01ab48f1e515a3220f55ed72bd2c15b8fecd87bbdcfc2f532e18136a9d4f5aa3"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_C0_seed1009/cells.json",
+      "bytes": 1511,
+      "sha256": "8d491d7e26bd17938af5e183f118a8db5883033b6a71bdd23cd346996a3b034b"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_C0_seed1009/engine/COMMIT.json",
+      "bytes": 337,
+      "sha256": "e65f60a8a390762705f17c34443652cb6334dfda574e77880ab664a83e2f1fac"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_C0_seed1009/engine/COMMIT.previous.json",
+      "bytes": 337,
+      "sha256": "bef77c9e10093346ec33709404245c7af1289e66baa6c12c233df8957ee5089d"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_C0_seed1009/engine/COMPLETE.json",
+      "bytes": 2287,
+      "sha256": "dce3b79abe77a99f17536f904527213a125b90962b8b160a87dd9e103c1f86c3"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_C0_seed1009/engine/TASK.json",
+      "bytes": 1637,
+      "sha256": "4db6bfcbba8ca1e3093363db0c896674178f5186790afcbd80501c8a98d110fd"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_C0_seed1009/engine/best_ce.pt",
+      "bytes": 380493,
+      "sha256": "8c58429d58eacbc24273cc213459c8ca02128885a8af4c0306e01bd02ffd6f11"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_C0_seed1009/engine/best_f1.pt",
+      "bytes": 380493,
+      "sha256": "3f9f1ef99a65e138a7c8a46c3921b766525e87f37473e528025b93314b14cf4e"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_C0_seed1009/engine/history.csv",
+      "bytes": 14322,
+      "sha256": "313f6d5171a6d9111249de1dedf3d85f8e00280e5fbbbf42fef05ba5579a154a"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_C0_seed1009/engine/metrics.json",
+      "bytes": 1247,
+      "sha256": "aa73a123e3c25514906403042aac6e0329f6ea038f8670220ea73f8ae71194f5"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_C0_seed1009/engine/predictions.csv",
+      "bytes": 186205,
+      "sha256": "7c7be3d34aa48afe01cdda2d9c1ec33dcf33af029580384d8cb8aee5ca374b42"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_C0_seed1009/engine/state-0059-0c10d8d7add0406892d89829bf1dce65.pt",
+      "bytes": 1938823,
+      "sha256": "ba1965ad31703f9d5e257a9fb300550f24ee99f191cdc0f5b1239a098055f70a"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_C0_seed1009/engine/state-0060-5408df5fed5446e9ad8a5425e2cffee3.pt",
+      "bytes": 1939143,
+      "sha256": "3e722048e9667357c91a13432c008001bb10ce4b453d5ced26483370d3f851a0"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_C0_seed1009/final_epoch.pt",
+      "bytes": 380493,
+      "sha256": "e0c4b393d0ecfb8ff3529b902160d86eaf249a61d5d49e78263949356d216604"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_C0_seed1009/predictions_ce.csv",
+      "bytes": 184514,
+      "sha256": "26ca2e74b744284fccd2156c3e044bb8e410a808a406dab8e5d0b0f528e80c19"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_C0_seed1009/predictions_f1.csv",
+      "bytes": 186205,
+      "sha256": "7c7be3d34aa48afe01cdda2d9c1ec33dcf33af029580384d8cb8aee5ca374b42"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_C0_seed1009/predictions_final.csv",
+      "bytes": 181684,
+      "sha256": "ec7bf8215bbea38699697d31f68f2c00bd66b9c6d6c5a543b8a938ffdf8447f3"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_C0_seed2027/TRAJECTORY_COMPLETE.json",
+      "bytes": 2645,
+      "sha256": "845e6d54474d0682524483b65994e25406792e17f8e9aca40fa2712a5374ae97"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_C0_seed2027/cells.json",
+      "bytes": 1511,
+      "sha256": "a5c3bf3e14fc4e0e85082aa4d0c31a5165ec86d4de2aa07c4bddc50f4672c9d0"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_C0_seed2027/engine/COMMIT.json",
+      "bytes": 337,
+      "sha256": "43ed12c78b8c9945aee6fe45c7f2d7af4beee43bb6d2db9533338425cf115e2d"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_C0_seed2027/engine/COMMIT.previous.json",
+      "bytes": 337,
+      "sha256": "d48b04b89bd850f3f19a03bab7293405a4135ddf331862a3e3dea221e38e55ed"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_C0_seed2027/engine/COMPLETE.json",
+      "bytes": 2288,
+      "sha256": "a6063f227aa5cc7d0389a47f484395feead144fa58bf628700cceac30c46c49d"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_C0_seed2027/engine/TASK.json",
+      "bytes": 1637,
+      "sha256": "0fc258f001dce4c71748e62756642edb2b46885d3c85ac0f83349e8516b2f905"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_C0_seed2027/engine/best_ce.pt",
+      "bytes": 380493,
+      "sha256": "12880a1885d84a0c39ae5a59d9259eaac641dadf02bb6f387ec3d64ee38f83e8"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_C0_seed2027/engine/best_f1.pt",
+      "bytes": 380493,
+      "sha256": "241e9fee85ff3d4da5b741ccbea9d3e8bd3d85af5084b6f19dda374584dfb1eb"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_C0_seed2027/engine/history.csv",
+      "bytes": 14411,
+      "sha256": "043b5148ab0cb82e7a9ea11224ba6cfc55d4d048c399cda0e5c2acc36dfcb39d"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_C0_seed2027/engine/metrics.json",
+      "bytes": 1248,
+      "sha256": "c22f386ef200debdf73124533d4d936ddf2a21525386a4a9dbcee5b8abd3e2d8"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_C0_seed2027/engine/predictions.csv",
+      "bytes": 180151,
+      "sha256": "7f638ffb55c4782c56a01c83f69e981a8419f21bec46da2dbaa5155ea575c6dd"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_C0_seed2027/engine/state-0059-b4b565485f6e42518e33a38f539f28f1.pt",
+      "bytes": 1938823,
+      "sha256": "3795e2191ccf6836aa12302214a73445e8dbd0264c972a3d6e70e5b025428352"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_C0_seed2027/engine/state-0060-833f25784e3f4dcbb8ac76d9ca05b3b4.pt",
+      "bytes": 1939143,
+      "sha256": "f275bf39469ec16f430b271607d4d75700d5e6f540371e91924c7d3f0cd70c09"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_C0_seed2027/final_epoch.pt",
+      "bytes": 380493,
+      "sha256": "ef7c5ee36e8812fc1166788685c08e05dc4b0939a5a2b9ed38c59e9ba14bc7b3"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_C0_seed2027/predictions_ce.csv",
+      "bytes": 181717,
+      "sha256": "1715f98c94205b340530fe052f6fe7da05ecafd10338b453b3511f6c4588a1a0"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_C0_seed2027/predictions_f1.csv",
+      "bytes": 180151,
+      "sha256": "7f638ffb55c4782c56a01c83f69e981a8419f21bec46da2dbaa5155ea575c6dd"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_C0_seed2027/predictions_final.csv",
+      "bytes": 182317,
+      "sha256": "49a949fdb1f926062e26689a617f6836fcebfc18c2f62be1e1c5aaf7f18bec35"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_C0_seed3037/TRAJECTORY_COMPLETE.json",
+      "bytes": 2645,
+      "sha256": "ee234c761f3047327615c504e7d8bbc9c4359539a36948f07f9882a7c71a425e"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_C0_seed3037/cells.json",
+      "bytes": 1511,
+      "sha256": "9161cc6d1b660d21f9a0768a3dcb49f381dd5b847d4b2aee00c7643d785e626d"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_C0_seed3037/engine/COMMIT.json",
+      "bytes": 337,
+      "sha256": "4600e0d00be46394bfb6fb48607918e02d3fcc789932c2f61ac1015c2d8947dc"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_C0_seed3037/engine/COMMIT.previous.json",
+      "bytes": 337,
+      "sha256": "fce786e86f3a8c9c62da734739b554f4d5bafd612728e0b6597f001fa461fb6d"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_C0_seed3037/engine/COMPLETE.json",
+      "bytes": 2292,
+      "sha256": "286a8164c4d58078a75637edfd92f83881ac4666bcc7b020dd24f439ee83727b"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_C0_seed3037/engine/TASK.json",
+      "bytes": 1637,
+      "sha256": "22b5d3e3899523e06c5f47632688f1649b236ba781a7efe2c41b92f06208711e"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_C0_seed3037/engine/best_ce.pt",
+      "bytes": 380493,
+      "sha256": "b328ce6d4bcd02bb99ed51a84114533c091efbfd9cf528db6305d6f0e382f27b"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_C0_seed3037/engine/best_f1.pt",
+      "bytes": 380493,
+      "sha256": "b328ce6d4bcd02bb99ed51a84114533c091efbfd9cf528db6305d6f0e382f27b"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_C0_seed3037/engine/history.csv",
+      "bytes": 14350,
+      "sha256": "09f17aa4865811db222cb58197e7fa62e729cde46b37c534aba8971cd974f3d9"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_C0_seed3037/engine/metrics.json",
+      "bytes": 1252,
+      "sha256": "df77cc41e3884b9c3cee9cb9e38d60ca7ab2bc5235a05deefeee95b86c4d4f7e"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_C0_seed3037/engine/predictions.csv",
+      "bytes": 188068,
+      "sha256": "93f951d6577643f7946adc54a7cac2fd7e880e6b6cea4d849db1a4efc27d2d2d"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_C0_seed3037/engine/state-0059-a0fb2ad1a04e45578b1a4793e1e3ca71.pt",
+      "bytes": 1938823,
+      "sha256": "812e3827f3ae55061a99c3b07a9df1e332bff7da6eedef56ecb531460c6899f9"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_C0_seed3037/engine/state-0060-a5c84d3353fe4288809f77fbfb240982.pt",
+      "bytes": 1939143,
+      "sha256": "ded4e17239ddf54fc27b56a8a08e51cba19b3674c03275c8230ce316cb6835b4"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_C0_seed3037/final_epoch.pt",
+      "bytes": 380493,
+      "sha256": "ce0757266f55be9c4ad8aaebe7da8a7a82948a84b965754d14961884cf891680"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_C0_seed3037/predictions_ce.csv",
+      "bytes": 188068,
+      "sha256": "93f951d6577643f7946adc54a7cac2fd7e880e6b6cea4d849db1a4efc27d2d2d"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_C0_seed3037/predictions_f1.csv",
+      "bytes": 188068,
+      "sha256": "93f951d6577643f7946adc54a7cac2fd7e880e6b6cea4d849db1a4efc27d2d2d"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_C0_seed3037/predictions_final.csv",
+      "bytes": 181760,
+      "sha256": "d04527eaaec76ab1fa92674f2f53409755d950ef952cccaae3f08d4545c65dbc"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_selected_seed1009/TRAJECTORY_COMPLETE.json",
+      "bytes": 2667,
+      "sha256": "e03c1f136ae2e66433ab566ee78d1fbe10f83110afaf827b63df794c59d6b61f"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_selected_seed1009/cells.json",
+      "bytes": 1533,
+      "sha256": "c7690da1f47ddd4080c990b58ef08c1b58a659cbf24f0bac2e59acd1b46f4d6a"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_selected_seed1009/engine/COMMIT.json",
+      "bytes": 337,
+      "sha256": "600395900b246c6b4a81fe195feeb8d5409496fcb3c7fa5edd05ea98e084d8e2"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_selected_seed1009/engine/COMMIT.previous.json",
+      "bytes": 337,
+      "sha256": "01d0ec03d155049aa486b84a9c55a0aa5d203a0d5014e118855331370be93c15"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_selected_seed1009/engine/COMPLETE.json",
+      "bytes": 2282,
+      "sha256": "05dc9096717ed932fa563cf60bcee3c290077ae5ca80f1aa20238169a34ebbcb"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_selected_seed1009/engine/TASK.json",
+      "bytes": 1665,
+      "sha256": "325d36307c871c86eacb8e295aa72650667ef6797fd5c6c1f3d37a241a26a41d"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_selected_seed1009/engine/best_ce.pt",
+      "bytes": 380557,
+      "sha256": "fcc51816345444877f730fa8848dddf12207007d5594cd29c5d3f13324095f4c"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_selected_seed1009/engine/best_f1.pt",
+      "bytes": 380557,
+      "sha256": "ac51101c33cb081e69b7b12382f721d183afd50dc75aa8c8fa8bab5bef1ad99c"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_selected_seed1009/engine/history.csv",
+      "bytes": 16332,
+      "sha256": "2be4344464faed49e8fd62be7ea66a5c41e21c365070a220ba97691bbbabbecb"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_selected_seed1009/engine/metrics.json",
+      "bytes": 1242,
+      "sha256": "40ee60022fdc8dd9ecffa29ee246ec4f337b43500428eba32ee4b3e1828461b5"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_selected_seed1009/engine/predictions.csv",
+      "bytes": 170302,
+      "sha256": "c6d7e8e9d266ab86c908a9740cfdbadd55893411f8fe344172b6655574db2240"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_selected_seed1009/engine/state-0059-fa1e38b5b9ab4ac88113ac0f0c3af25f.pt",
+      "bytes": 1938823,
+      "sha256": "28a87b48ae00d5fc965310cb5a3e7f972569a262ea3fd82a5781300671dc6bc8"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_selected_seed1009/engine/state-0060-5f9b630ade2b4cabb614ba48e0d51dee.pt",
+      "bytes": 1939143,
+      "sha256": "6a38e4d1b14c7b018340e239fdc4f0ad28756b6c0597c976156d7af4020ba8ab"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_selected_seed1009/final_epoch.pt",
+      "bytes": 380493,
+      "sha256": "5b486a438ac0151ae09480cb532b3d6a497dab82197139ef537e703476e94bfd"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_selected_seed1009/predictions_ce.csv",
+      "bytes": 178443,
+      "sha256": "be3414333f8db2b06c5969fa1059b2b1177c8bb3a5bd24c875fd6bb83c83c83e"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_selected_seed1009/predictions_f1.csv",
+      "bytes": 170302,
+      "sha256": "c6d7e8e9d266ab86c908a9740cfdbadd55893411f8fe344172b6655574db2240"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_selected_seed1009/predictions_final.csv",
+      "bytes": 170302,
+      "sha256": "c6d7e8e9d266ab86c908a9740cfdbadd55893411f8fe344172b6655574db2240"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_selected_seed2027/TRAJECTORY_COMPLETE.json",
+      "bytes": 2644,
+      "sha256": "bf85b02f1f04c72d3ae2a2c8a6f267cfbbb98bc590acf0905e1dd76f1c5bda58"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_selected_seed2027/cells.json",
+      "bytes": 1510,
+      "sha256": "af7552d525fd3a15bf9322f6d3795519db042205aa21d9b611c0add9c6baa3db"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_selected_seed2027/engine/COMMIT.json",
+      "bytes": 337,
+      "sha256": "dc28cfa23309889fd7465700b9b41deb00b739daa2a83995b2a0b1612a202428"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_selected_seed2027/engine/COMMIT.previous.json",
+      "bytes": 337,
+      "sha256": "073da4b3af6e8b20a84fb3bbcc949f5251133efbfb4eb178f92adccfc51b85d9"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_selected_seed2027/engine/COMPLETE.json",
+      "bytes": 2270,
+      "sha256": "d73d604254a5d28239319dc997fe9c49d0494a50fdaae39276cd1277fe35753f"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_selected_seed2027/engine/TASK.json",
+      "bytes": 1665,
+      "sha256": "266075a5e93e177588e19e935b056f3b38985c4d25fbf346a000f5089c431732"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_selected_seed2027/engine/best_ce.pt",
+      "bytes": 380557,
+      "sha256": "de0140e771cad21dc9310cfc093855aefd1f25b757905e6b7c48049e696dce17"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_selected_seed2027/engine/best_f1.pt",
+      "bytes": 380557,
+      "sha256": "aa98a4df832165437250d675648505710da1990c9671d020cf3c9db76ed7bb00"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_selected_seed2027/engine/history.csv",
+      "bytes": 16343,
+      "sha256": "cd7efdb72c1a1f84dd62cacd2f641675ceef43d7948371b53f25ede51b7c9249"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_selected_seed2027/engine/metrics.json",
+      "bytes": 1230,
+      "sha256": "8b520c08b793de70245ba2fad5099da525c53d16734f9ce54fee4ec31ffa8a66"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_selected_seed2027/engine/predictions.csv",
+      "bytes": 175844,
+      "sha256": "4483d8ee92fb65eb5f1d1a392e03a7343ced25a819667deb01ca0cae0161669f"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_selected_seed2027/engine/state-0059-b431515214f0426c8611f2efdbf56b55.pt",
+      "bytes": 1938823,
+      "sha256": "19841b24018262b4039f49d313c57ec200aa5155e34cbfc1b8df988ef0c8f3bc"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_selected_seed2027/engine/state-0060-ca5c04df46194a2bab434f04ee40ad68.pt",
+      "bytes": 1939143,
+      "sha256": "0f1c6eabb504832810b52cfa63a93cca57ac7acb35427d8df3ca2659b48801e9"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_selected_seed2027/final_epoch.pt",
+      "bytes": 380493,
+      "sha256": "e00ffe77148e75efbeb937e8e0ad02efa336f5a73465c9572cf9609e7bc42d9e"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_selected_seed2027/predictions_ce.csv",
+      "bytes": 177045,
+      "sha256": "700454458deb9965ffabc3baa0c19e17bcca94d10a4df0aeecc5b28aa1f6a283"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_selected_seed2027/predictions_f1.csv",
+      "bytes": 175844,
+      "sha256": "4483d8ee92fb65eb5f1d1a392e03a7343ced25a819667deb01ca0cae0161669f"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_selected_seed2027/predictions_final.csv",
+      "bytes": 175238,
+      "sha256": "c93fc7b2b1a206e1bcb92b041f5dd2a6d290f6a56361a8ea30baf4c39a50dd3c"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_selected_seed3037/TRAJECTORY_COMPLETE.json",
+      "bytes": 2667,
+      "sha256": "858ebfd8448828020ccb4f1a3ce076d80c3941bec074038e483d525754629093"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_selected_seed3037/cells.json",
+      "bytes": 1533,
+      "sha256": "016c7ca8cbd5ce5fbcabd7df70d551d4d9bd7ecb45e08dd14e8a2f3455877adb"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_selected_seed3037/engine/COMMIT.json",
+      "bytes": 337,
+      "sha256": "bfb6e6448c21cdd852ffd2f1c792077cf0d2d69cb943e83a08317d2213ec36cf"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_selected_seed3037/engine/COMMIT.previous.json",
+      "bytes": 337,
+      "sha256": "b88097cb7cfd7391ff4e4908810876a5ea47b51ab550d58e9bdbd9b6497cb083"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_selected_seed3037/engine/COMPLETE.json",
+      "bytes": 2296,
+      "sha256": "978060cbe073f123158811fece373f422889faa0049be1c29d691b085c42462b"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_selected_seed3037/engine/TASK.json",
+      "bytes": 1665,
+      "sha256": "f6bc2e9d24665377f8bc891ff21c685e7e31ebb94ab2a88cf3259ea119200b25"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_selected_seed3037/engine/best_ce.pt",
+      "bytes": 380557,
+      "sha256": "0a9d9276658e578e7b1c9ff66d0d4b2e6c02ad53da6acc601829d67b10652a98"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_selected_seed3037/engine/best_f1.pt",
+      "bytes": 380557,
+      "sha256": "66754b6f4d22364966527db56908d504a18436ab858fc0059eeef5e548ea663f"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_selected_seed3037/engine/history.csv",
+      "bytes": 16299,
+      "sha256": "e577971efc1fecf82b0e837eed1b77fe4131fd2f8f06dfeeac8df4653147c540"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_selected_seed3037/engine/metrics.json",
+      "bytes": 1256,
+      "sha256": "79dcff882a18d66a48952ca5ad842a9514de2f7cdef20856b778f776dfabde3c"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_selected_seed3037/engine/predictions.csv",
+      "bytes": 179681,
+      "sha256": "590db8515abc8367345d4d22b0f8edefb6d0a4f515494b100644fa917499d2ed"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_selected_seed3037/engine/state-0059-d72d36cfd5554ac0b1a3b48960ed324c.pt",
+      "bytes": 1938887,
+      "sha256": "86952eb477d46563ff8139cd8ed9e45a031d0113916cf72934e27604212e6ac2"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_selected_seed3037/engine/state-0060-75102bef9a714b5dbbe1f42a3a14abb1.pt",
+      "bytes": 1939207,
+      "sha256": "6f8a9fb50b27cad465e9852fc20bdeea2428028e303d8c198b0f15504ffe9c0f"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_selected_seed3037/final_epoch.pt",
+      "bytes": 380493,
+      "sha256": "1e9e49fea415c0ba9524471b06252c8ebc3e1b2f803972e312baa24de96e8b32"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_selected_seed3037/predictions_ce.csv",
+      "bytes": 183169,
+      "sha256": "ad76143d071506fe1690d5c42caff71113cf6ae2381becb7033fd930b053c296"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_selected_seed3037/predictions_f1.csv",
+      "bytes": 179681,
+      "sha256": "590db8515abc8367345d4d22b0f8edefb6d0a4f515494b100644fa917499d2ed"
+    },
+    {
+      "path": "fashion_confirmation/tasks/cnn_selected_seed3037/predictions_final.csv",
+      "bytes": 174622,
+      "sha256": "70b905dc49beecf6922edaa09f55e5b82d1012020a4c7174f97471fdd73dbfcf"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_C0_seed1009/TRAJECTORY_COMPLETE.json",
+      "bytes": 2644,
+      "sha256": "40738d673aca9d983917973a03c99da3eb686f44bdf8c42cd6b1106fadb440ef"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_C0_seed1009/cells.json",
+      "bytes": 1510,
+      "sha256": "a410d63eb5fc4f2d9ebf9708871b8025fa37098e247dfbad9b49ff45b5ae8f9e"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_C0_seed1009/engine/COMMIT.json",
+      "bytes": 337,
+      "sha256": "814ba7928cb82c8d11e86bb057af1bc0b855ced0bb919661893f186a022547f5"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_C0_seed1009/engine/COMMIT.previous.json",
+      "bytes": 337,
+      "sha256": "42b2cab0af02c105140d2eb8b25e3f5b71b7c7aa078c3611e3b59d830aa1feb3"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_C0_seed1009/engine/COMPLETE.json",
+      "bytes": 2287,
+      "sha256": "86639efa683bf8c8a214aeba821619ec45b0408cf13f4185e2353981a8671622"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_C0_seed1009/engine/TASK.json",
+      "bytes": 1656,
+      "sha256": "521f6440f61112d24bfe50a0fac7290cb6e8ec5af72fbd2377aba9d9417f84e7"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_C0_seed1009/engine/best_ce.pt",
+      "bytes": 252117,
+      "sha256": "79435deab3ca2bc1f992ef956002a559da107d15c635be1b1464345ae82c1bd6"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_C0_seed1009/engine/best_f1.pt",
+      "bytes": 252117,
+      "sha256": "87e6f58ae8ffd16e9aaddb090c111e7726991903b910d22b207e2a93e1fc8708"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_C0_seed1009/engine/history.csv",
+      "bytes": 14411,
+      "sha256": "32f53329d7f5a84a6d79cdd8e732da28c9182918bdcd30a6e38bbc30051a0cba"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_C0_seed1009/engine/metrics.json",
+      "bytes": 1247,
+      "sha256": "f1b29f6e86433702dac5dffd1d797355ba12c63396caa38d9be03957013a8e34"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_C0_seed1009/engine/predictions.csv",
+      "bytes": 192387,
+      "sha256": "5893ca7cda85a9ed3c5cbe4be92ae8406ad2519c580e3edf60b08dd257815a32"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_C0_seed1009/engine/state-0059-3efbb4ef26da4f9db5f9474805e2ceb9.pt",
+      "bytes": 1295147,
+      "sha256": "74b059824eef590bce94c0fc100af6676e79df763196d639917d0d0489064822"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_C0_seed1009/engine/state-0060-0943ea5a24804438b307c1f4e1a7bc5e.pt",
+      "bytes": 1295467,
+      "sha256": "7cf95cd33cf12a1b0e490b6a408362aa8a470d050ad45dec06765a297e1aff63"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_C0_seed1009/final_epoch.pt",
+      "bytes": 252117,
+      "sha256": "5cfc402bef603d29f62eb76a69fe44ff7ada0cc078ac327706cbbaca8d82cb8c"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_C0_seed1009/predictions_ce.csv",
+      "bytes": 190969,
+      "sha256": "9065e1ad7e3e526cdf38971fa7d9c6f48fe3dc6ee36eb60e3fa2010b27feb946"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_C0_seed1009/predictions_f1.csv",
+      "bytes": 192387,
+      "sha256": "5893ca7cda85a9ed3c5cbe4be92ae8406ad2519c580e3edf60b08dd257815a32"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_C0_seed1009/predictions_final.csv",
+      "bytes": 176925,
+      "sha256": "2911d67072457a2454dbc3de5cac6926eff1fa547459328ea4bca6552771f75d"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_C0_seed2027/TRAJECTORY_COMPLETE.json",
+      "bytes": 2631,
+      "sha256": "91f5b589cbf8f002ad2f093c848cbe80d28412e4122aadf9f5ad7b7ba588f7e2"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_C0_seed2027/cells.json",
+      "bytes": 1497,
+      "sha256": "8cd25cabf39602ae4c524ff63d6db245c477b3fdc1affe501f17261836026c62"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_C0_seed2027/engine/COMMIT.json",
+      "bytes": 337,
+      "sha256": "dddc5b0ca3097912f1971810cb1a40be191270199829ce723830b32b6ea66180"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_C0_seed2027/engine/COMMIT.previous.json",
+      "bytes": 337,
+      "sha256": "dce961b56bfd533248d82e8ab9c6c25ffbb096777e56185f77e9ed474bfbc315"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_C0_seed2027/engine/COMPLETE.json",
+      "bytes": 2277,
+      "sha256": "edf8085038b3043170364ff197568657b76ac9eab6fdac5647c139c253d55e08"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_C0_seed2027/engine/TASK.json",
+      "bytes": 1656,
+      "sha256": "7fcb2a5f09b045eca85534b6804acfdcea4a3eb50307ea07c58f6b85af8f7845"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_C0_seed2027/engine/best_ce.pt",
+      "bytes": 252117,
+      "sha256": "5f20f9dd7b4bb0f68a451b2af7f2e166511600a930f14906cf67f1225fbccc85"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_C0_seed2027/engine/best_f1.pt",
+      "bytes": 252117,
+      "sha256": "c95915e978a09fb609de67329c3904db47cd2f2445f78025c62b41719ec660ea"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_C0_seed2027/engine/history.csv",
+      "bytes": 14445,
+      "sha256": "81c2c3a8db79e3675c694bd99198a1f2e1c84cbba2c45733a1da958dd625740c"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_C0_seed2027/engine/metrics.json",
+      "bytes": 1237,
+      "sha256": "2434602531f2b54377ed853923182d2603278110e0da8264cdcf9fdda1d35711"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_C0_seed2027/engine/predictions.csv",
+      "bytes": 191391,
+      "sha256": "ca5fdd317024d82f97eec28b53ebd5918bd85c618acab91a449be11c504baf29"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_C0_seed2027/engine/state-0059-4ce53bb531824a4a972e608df3b89ab8.pt",
+      "bytes": 1295083,
+      "sha256": "5451363d4362f7a03feaa9504b77c32a4001b7d3f2014bb3a398d6aabff1a1a1"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_C0_seed2027/engine/state-0060-a45a7db5ce914c28a4f1454614c111d1.pt",
+      "bytes": 1295467,
+      "sha256": "a044c087fa4f566ec62b9e0f08c970d8939c960728cd172d7d0882ee9c3158f7"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_C0_seed2027/final_epoch.pt",
+      "bytes": 252117,
+      "sha256": "dfe88e45852a982db31b7869ca2b7e975f6190331d510b22fe8a7861bd6e25b1"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_C0_seed2027/predictions_ce.csv",
+      "bytes": 190489,
+      "sha256": "295c98524b3cc250efc0fc868fa19d5f1bcc82fb9927a1b63d146f86b1bf5076"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_C0_seed2027/predictions_f1.csv",
+      "bytes": 191391,
+      "sha256": "ca5fdd317024d82f97eec28b53ebd5918bd85c618acab91a449be11c504baf29"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_C0_seed2027/predictions_final.csv",
+      "bytes": 177840,
+      "sha256": "321e8f43219e8256636fcd5a0745d49a4be44060b4e791647ec7c4f24c95bfc6"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_C0_seed3037/TRAJECTORY_COMPLETE.json",
+      "bytes": 2645,
+      "sha256": "f82d3ad6cd10a24c4755331e18173cb1d8410bb4df94e8fd29a29b945a640f47"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_C0_seed3037/cells.json",
+      "bytes": 1511,
+      "sha256": "515bf841fe146f9259dd9dbc3dd44232726293822fb1e75cf0d1d486375bdb97"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_C0_seed3037/engine/COMMIT.json",
+      "bytes": 337,
+      "sha256": "6862f97020790de456f401799dcf451123116122cd8711aae0580b276332b0e2"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_C0_seed3037/engine/COMMIT.previous.json",
+      "bytes": 337,
+      "sha256": "dd5a66bb1e0e07a013fa7a2b3b79770d00a3e364dab6f3bf0cd10eabb77d22f4"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_C0_seed3037/engine/COMPLETE.json",
+      "bytes": 2288,
+      "sha256": "5387b5a4c2d38c728bb7d9fe66ec46a8af78beac5b52561215e48a36a4da4cfb"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_C0_seed3037/engine/TASK.json",
+      "bytes": 1656,
+      "sha256": "b14e97b1ae82811168d5237cca082968bf03aeb52cf1b4096342b25eb5f47d48"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_C0_seed3037/engine/best_ce.pt",
+      "bytes": 252117,
+      "sha256": "3fd4088769cb5342eb80adb775a8ce9f98eaea94ff19c6f349986fc9fcf4e515"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_C0_seed3037/engine/best_f1.pt",
+      "bytes": 252117,
+      "sha256": "26f944898cc166f096300919df075929aa17436adfb3f148dfd574da182a1013"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_C0_seed3037/engine/history.csv",
+      "bytes": 14460,
+      "sha256": "cd7ff807a720414ef3e3243eb2fd847962594cf89c443b3cbabc276b579ab0fc"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_C0_seed3037/engine/metrics.json",
+      "bytes": 1248,
+      "sha256": "5ce70515e3f3fb43a221b9e9ba9e05332dc995695d31d6c3fc6ce117e934fffc"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_C0_seed3037/engine/predictions.csv",
+      "bytes": 191816,
+      "sha256": "3ddcc3875667ca043d8395d3c39b926c13639ec3f355711a6bc4f9c3ae6c8476"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_C0_seed3037/engine/state-0059-b3c2024a1d0245ca97d10d744960bb1f.pt",
+      "bytes": 1295147,
+      "sha256": "701fab06c0096f51e68c2a0eac69b9c7b03ed90a3dfef111d5f1b8f0b06e8705"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_C0_seed3037/engine/state-0060-37ac4cb69be74697b0d796dec5bf32e2.pt",
+      "bytes": 1295467,
+      "sha256": "07ac2147efd7e47599b9ba4b5ec812a31b383cc10a940256405e770d1e1aaa02"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_C0_seed3037/final_epoch.pt",
+      "bytes": 252117,
+      "sha256": "e5fef74b48ecba6b57ae3cf4b449a6122da3330019dcb0627a6a38d2fde6ec18"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_C0_seed3037/predictions_ce.csv",
+      "bytes": 190550,
+      "sha256": "7a002a74c7337623536e552e03617e6756146b581311e9bcb6333d990c4427a0"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_C0_seed3037/predictions_f1.csv",
+      "bytes": 191816,
+      "sha256": "3ddcc3875667ca043d8395d3c39b926c13639ec3f355711a6bc4f9c3ae6c8476"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_C0_seed3037/predictions_final.csv",
+      "bytes": 178990,
+      "sha256": "3fb023bccc1fed1c9bd0178c6364dd0a9418d610b1b6d9eafc6020617129d476"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_selected_seed1009/TRAJECTORY_COMPLETE.json",
+      "bytes": 2668,
+      "sha256": "9235e887ffeb9e7b18d730d93c51ffc1f345757503c5e4a8228413251434e42c"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_selected_seed1009/cells.json",
+      "bytes": 1534,
+      "sha256": "0ad23ab9417418ee891b34b7f38e61d9814ceb6839a1bd0b4f8e92fa6218c02c"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_selected_seed1009/engine/COMMIT.json",
+      "bytes": 337,
+      "sha256": "c0adae0de7f597adbc755dd6b4d8e5e8f4cd21c6a8b81aa989db315889be7e4d"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_selected_seed1009/engine/COMMIT.previous.json",
+      "bytes": 337,
+      "sha256": "366bc60994697cbe78a0dcfcc5050f526d41cb4b1fdd53007bca6fec8c30301f"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_selected_seed1009/engine/COMPLETE.json",
+      "bytes": 2281,
+      "sha256": "10de4a21eae01ef09762e2b4967e35e13590afc4b8fd1779a11aff0537007a89"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_selected_seed1009/engine/TASK.json",
+      "bytes": 1666,
+      "sha256": "57f247d64a789ab317cb0ef6875b582c0491a88449a06fac35cda85d7a8cedeb"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_selected_seed1009/engine/best_ce.pt",
+      "bytes": 252181,
+      "sha256": "d6e1704b47f18d80c6e6fd720a28ec4df7de19c4afebf5c4a875b56b97016aeb"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_selected_seed1009/engine/best_f1.pt",
+      "bytes": 252181,
+      "sha256": "3e95b74a7692a453cbea83beae6edaa3eb9998723faed5da6cda2a6ac7d77bb2"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_selected_seed1009/engine/history.csv",
+      "bytes": 16348,
+      "sha256": "4369b04e68d70fcf7c6d25705587c7827906f93715bf41dc3787430920937c38"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_selected_seed1009/engine/metrics.json",
+      "bytes": 1241,
+      "sha256": "be19171c1c3a90717c1ec37b7592993a62a390090391c2d2510f9926b904cfed"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_selected_seed1009/engine/predictions.csv",
+      "bytes": 191935,
+      "sha256": "ae4a31eeaeb4d19006770beff4dcb36ec0779d1cf2c1c09bbc9b99c7674526ef"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_selected_seed1009/engine/state-0059-d2c66807bd0a4a05a34fe64dc898a6a3.pt",
+      "bytes": 1295083,
+      "sha256": "17735bcca6b807019139029bae32dfd0510116fbf9c79882a579f57b5be0e9a6"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_selected_seed1009/engine/state-0060-69e047e4f5e34623ba08255ab52235ce.pt",
+      "bytes": 1295467,
+      "sha256": "280828fc37787f16361b114b734f13057e669005abe7ec07185b3c734e44b1c2"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_selected_seed1009/final_epoch.pt",
+      "bytes": 252117,
+      "sha256": "05b8af65e4d4ff44a917c839f83fb7fbad16a8018aaa79c7c31991b51eca0532"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_selected_seed1009/predictions_ce.csv",
+      "bytes": 191044,
+      "sha256": "3b9a600298713aac30a11884d6f76b33944d7a952395545a6b51e6bd8e36fd15"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_selected_seed1009/predictions_f1.csv",
+      "bytes": 191935,
+      "sha256": "ae4a31eeaeb4d19006770beff4dcb36ec0779d1cf2c1c09bbc9b99c7674526ef"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_selected_seed1009/predictions_final.csv",
+      "bytes": 192488,
+      "sha256": "f9f1aa53021063f845b7a6c6fbeecbad10931cded123866a9820448c0c7c60ca"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_selected_seed2027/TRAJECTORY_COMPLETE.json",
+      "bytes": 2643,
+      "sha256": "da8b9d6436281449f7e9cded43c8bcaf8340507706b4f2cbea35f610d834cbc7"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_selected_seed2027/cells.json",
+      "bytes": 1509,
+      "sha256": "7b3b56a3af1f9977f97f973d02c0482d1d90a54399655fe77041ed9f14b1f96c"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_selected_seed2027/engine/COMMIT.json",
+      "bytes": 337,
+      "sha256": "61e9b10c0fff10cb10ae32d7a8230b2bfa4cae7fccfd5a9f357686380005449d"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_selected_seed2027/engine/COMMIT.previous.json",
+      "bytes": 337,
+      "sha256": "05197e3b77da6107eb1482faa6deb2365f3b190375e44322fbc10a95275f6241"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_selected_seed2027/engine/COMPLETE.json",
+      "bytes": 2270,
+      "sha256": "5499bf2a499ba09812d957bb44340e381973394a2af445f08c2985e4f266841b"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_selected_seed2027/engine/TASK.json",
+      "bytes": 1666,
+      "sha256": "9d249956977d8417e83e2dfdd482532917dab954c7a2575e4b9b3682b1d5f8f5"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_selected_seed2027/engine/best_ce.pt",
+      "bytes": 252181,
+      "sha256": "fbdca2723d18ab91cf7e2415a56a18c4cb986329b53663ba1f31311c895f4f02"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_selected_seed2027/engine/best_f1.pt",
+      "bytes": 252181,
+      "sha256": "93f916c358bd9325d58dac3034d2838245dcb1f6797fe1b46d735d6424cfeef8"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_selected_seed2027/engine/history.csv",
+      "bytes": 16205,
+      "sha256": "6791fb5b244094a0bdf27fad96361f1331e882e928fea2d202cdd3ed3e2ff1c3"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_selected_seed2027/engine/metrics.json",
+      "bytes": 1230,
+      "sha256": "09fde90da72e1da2983afab8aa214b5941cd3147cecabcf8d2e9e1cf0c6092cd"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_selected_seed2027/engine/predictions.csv",
+      "bytes": 191629,
+      "sha256": "363bbcf597c8f67433d43321f648a264f5c37f2af4fdf805b04165fe9ad8a3bb"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_selected_seed2027/engine/state-0059-614d8d2a524446269822a1e9d0f1efe4.pt",
+      "bytes": 1295083,
+      "sha256": "57e741963e0b106ca55b512aa1fa2094f618ff5c18e7c5c9e1f0e805df5f532f"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_selected_seed2027/engine/state-0060-fd56af9a5c324524a9baf2dc225a1721.pt",
+      "bytes": 1295467,
+      "sha256": "bb78625d37ea14ae0fd302fcaa8d14880c2889179be95b800353e9c33f70889e"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_selected_seed2027/final_epoch.pt",
+      "bytes": 252117,
+      "sha256": "afa76503eb59f57ae228466628e06c79310e55db6e3243491de677aa7f3f8fb4"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_selected_seed2027/predictions_ce.csv",
+      "bytes": 190814,
+      "sha256": "f4882bd186303688b2e056d6c7297349cd849471ef43ee703ab0c25a9970a06e"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_selected_seed2027/predictions_f1.csv",
+      "bytes": 191629,
+      "sha256": "363bbcf597c8f67433d43321f648a264f5c37f2af4fdf805b04165fe9ad8a3bb"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_selected_seed2027/predictions_final.csv",
+      "bytes": 189562,
+      "sha256": "5aee602b42bd31934aa02d70fb070d35125faaef129fd0d759418aa2f898141d"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_selected_seed3037/TRAJECTORY_COMPLETE.json",
+      "bytes": 2667,
+      "sha256": "a0fd2a156489b0363887684bcbc77930a96b157eb6dea607b4db6dec9501fcc2"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_selected_seed3037/cells.json",
+      "bytes": 1533,
+      "sha256": "5f758f74b1e2680f3b4a455987e3ef9a4c2ac376ab63a9258f26b0e0f1bee65d"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_selected_seed3037/engine/COMMIT.json",
+      "bytes": 337,
+      "sha256": "150008d8e9a3cf45163ab4513f7e2f694b4a748d63ebf97a3315e72048b7a7ba"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_selected_seed3037/engine/COMMIT.previous.json",
+      "bytes": 337,
+      "sha256": "bae4785e4802eb55e159ca2597eac0f8aaa59920ea73f927a0d534efb03fd5ea"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_selected_seed3037/engine/COMPLETE.json",
+      "bytes": 2280,
+      "sha256": "b541783a737ed699318955322be4b22fedd8d908b4da11b7a256d60489d9dd9c"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_selected_seed3037/engine/TASK.json",
+      "bytes": 1666,
+      "sha256": "a7c3fb5d97ca3a082eeca7dabe71a9d7948a7c36905fd7b8a14d25cf3351f038"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_selected_seed3037/engine/best_ce.pt",
+      "bytes": 252181,
+      "sha256": "01c0709d341e25e8b6f6c0f3dc2da02438eb1dba496f9f647873bbe7c0e03609"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_selected_seed3037/engine/best_f1.pt",
+      "bytes": 252181,
+      "sha256": "33714bbdab04bee6d001d3921a3756158e0db0ae51adcde181e8f6588607898d"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_selected_seed3037/engine/history.csv",
+      "bytes": 16269,
+      "sha256": "f55da2bbe2dda54d3f390e9f84aff90d56556e1fb43a0f775f1f598431c9bb4e"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_selected_seed3037/engine/metrics.json",
+      "bytes": 1240,
+      "sha256": "8b65af4a046154a431ac8169b08523554617459463379008cf4d53adcabc255d"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_selected_seed3037/engine/predictions.csv",
+      "bytes": 191745,
+      "sha256": "e0129158dc565d1f4107121adeb0d30761b3a2b01c4cf5069ba1f4499c634524"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_selected_seed3037/engine/state-0059-1440844357b84e9481cc2d8c4012f05f.pt",
+      "bytes": 1295147,
+      "sha256": "ee3e34b03a87990701dd43d6705f69f6ac04d9d576cc0f48e5f673193cc41446"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_selected_seed3037/engine/state-0060-c40e60f9ddc94987950417f79c1ebefb.pt",
+      "bytes": 1295467,
+      "sha256": "e7c052abc46ed0d00450361fae5ac0e97f71650fdb7863636f00bd1b30d827e4"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_selected_seed3037/final_epoch.pt",
+      "bytes": 252117,
+      "sha256": "be5aad14f51018cc1010228043407d84f60cf8cd9ede90d4b6fab68e3fb7bf0d"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_selected_seed3037/predictions_ce.csv",
+      "bytes": 190005,
+      "sha256": "4736d4ed7db2e5b3dc6078ad5ee9b2095d770a89a672d5bf836a567a16282676"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_selected_seed3037/predictions_f1.csv",
+      "bytes": 191745,
+      "sha256": "e0129158dc565d1f4107121adeb0d30761b3a2b01c4cf5069ba1f4499c634524"
+    },
+    {
+      "path": "fashion_confirmation/tasks/gru_selected_seed3037/predictions_final.csv",
+      "bytes": 193142,
+      "sha256": "ea1b7514b088360fe458cda343094d49b46209ce6e3ecbf940f3e9a28bfd2c30"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_C0_seed1009/TRAJECTORY_COMPLETE.json",
+      "bytes": 2637,
+      "sha256": "baf00071ad152b83326f1c48e4c4909cbcdcc884ef2a18a34bb62c1252e3c02b"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_C0_seed1009/cells.json",
+      "bytes": 1503,
+      "sha256": "5aba8b7ee0584309ecdca3b428ce36d45e2dcf666335893f677ca29e00ee1985"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_C0_seed1009/engine/COMMIT.json",
+      "bytes": 337,
+      "sha256": "d05e691f59eae862b32f76f941c17195d048ece4b30af6bcc50d71cd018d146f"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_C0_seed1009/engine/COMMIT.previous.json",
+      "bytes": 337,
+      "sha256": "97219e26a2779884dff0458194f26fbb88c3e2515ae8c2b77427107a0a383346"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_C0_seed1009/engine/COMPLETE.json",
+      "bytes": 2270,
+      "sha256": "515058a7d2cd5683f6992b13dc119d206f7183e9142ed1bc9b6de1099d2f35b7"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_C0_seed1009/engine/TASK.json",
+      "bytes": 1548,
+      "sha256": "916e23441eece604d8f281275d37f03420c3691fb49d0a7a8b1872902df6e163"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_C0_seed1009/engine/best_ce.pt",
+      "bytes": 34789,
+      "sha256": "fb6f1c6b935f65fc0b07d81ff066e5cff34c4948b85dbd172e95e9d9e4b2f57e"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_C0_seed1009/engine/best_f1.pt",
+      "bytes": 34789,
+      "sha256": "77155811e8f22c4ddea29f7391a4229470d580a80184a92b2e687093a4bbb4d3"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_C0_seed1009/engine/history.csv",
+      "bytes": 14568,
+      "sha256": "c2da54cd800f3435d63e0489128e6f0f2cf7f8b94dafbb16cda962e8ad68e363"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_C0_seed1009/engine/metrics.json",
+      "bytes": 1230,
+      "sha256": "feddc8b4719f753cefec6849bb96c55ae97dac27c2143c663cc91a99b03afcd5"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_C0_seed1009/engine/predictions.csv",
+      "bytes": 187013,
+      "sha256": "4b546ea3ce01edf152a248cd6d7a3e01cf82df65f7473b71630deaec915b21b8"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_C0_seed1009/engine/state-0059-3d2f930ec8c442baad52a9880b57af58.pt",
+      "bytes": 205939,
+      "sha256": "ea4f4afc8e9ec08408cffe6f3ec9466bc79004e815485c4eb5cc6ee5cda67b2b"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_C0_seed1009/engine/state-0060-bc44459478d3407aa6b6b4cd2ae970dd.pt",
+      "bytes": 206259,
+      "sha256": "7af75779a263f74620631564e33f6d2647d36c0c5c652c6859f7d5cb8ffe7489"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_C0_seed1009/final_epoch.pt",
+      "bytes": 34789,
+      "sha256": "e50a6291ac6cf7de6c0544dde59789f92f36041c65cdca3ab4ebd039f7f710e5"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_C0_seed1009/predictions_ce.csv",
+      "bytes": 186959,
+      "sha256": "3b1b47e4ad4b1794937c55277b69787f38136f16e7b495364a4b48179124f456"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_C0_seed1009/predictions_f1.csv",
+      "bytes": 187013,
+      "sha256": "4b546ea3ce01edf152a248cd6d7a3e01cf82df65f7473b71630deaec915b21b8"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_C0_seed1009/predictions_final.csv",
+      "bytes": 187311,
+      "sha256": "ab3b6e1b2de84aed514e588a14fa44a4bd01ba2402a314d056f91ed2677020f6"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_C0_seed2027/TRAJECTORY_COMPLETE.json",
+      "bytes": 2662,
+      "sha256": "3adb6b97e4d415c75be8ad3dfaed32742069f3efb5657d5392bbddc66cefa031"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_C0_seed2027/cells.json",
+      "bytes": 1528,
+      "sha256": "d3023a10ead30f62190348c1015d30ecaac074ef96c2a6864dc6521af79fd826"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_C0_seed2027/engine/COMMIT.json",
+      "bytes": 337,
+      "sha256": "2c585c04e66ddffb8436f6fbac1bd28b8873871acfb0734c1e8d902151b4c1cc"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_C0_seed2027/engine/COMMIT.previous.json",
+      "bytes": 337,
+      "sha256": "a527213f9d68c37902c221b207b0964c9fe74b26cb3fa342e85f971992ad1e7f"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_C0_seed2027/engine/COMPLETE.json",
+      "bytes": 2295,
+      "sha256": "2aa0590187e3cf83a68879f748a973f51ed3116aba1d9c4e1cb261db2132309e"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_C0_seed2027/engine/TASK.json",
+      "bytes": 1548,
+      "sha256": "3af696b1264933c214246e0ecb1d1920a658d4db264477ec0359d1c6f140f3bc"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_C0_seed2027/engine/best_ce.pt",
+      "bytes": 34789,
+      "sha256": "c8e203772fac6fd8cb64cef34b12fe3a0187d33d247841607bd819885152837b"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_C0_seed2027/engine/best_f1.pt",
+      "bytes": 34789,
+      "sha256": "fa2aa2debd02a5e366210f0c064a789a36f83c80bb57e72ecfce7a6303696f12"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_C0_seed2027/engine/history.csv",
+      "bytes": 14497,
+      "sha256": "060ead70b51f39a4ed55aebd748b58baf82a37c9e786e86e6f5a9942b366cfeb"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_C0_seed2027/engine/metrics.json",
+      "bytes": 1255,
+      "sha256": "75a18c49493a093c0fb37a92e7563e9ed7442b38bc45926120bcc15cfcc79524"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_C0_seed2027/engine/predictions.csv",
+      "bytes": 186952,
+      "sha256": "0fd4f14914f175e467164bb7b30f9d46cbbc19c8b57cdc6306f247bf7ca6f081"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_C0_seed2027/engine/state-0059-4409a5fbe4804e20820116c558871f48.pt",
+      "bytes": 205939,
+      "sha256": "6013e82db9e24ffd790ad8b3848934b172dd7e09ab077584dc8c38e0faef2c53"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_C0_seed2027/engine/state-0060-230ceb6754b248769b638a7fbf3deaae.pt",
+      "bytes": 206259,
+      "sha256": "1caf1ae33385120fb24ea4e1b97d80b10c6a400ede99131ac083c04141e37211"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_C0_seed2027/final_epoch.pt",
+      "bytes": 34789,
+      "sha256": "e8a2320a85e95bcac2f29cf2607de69be6ad844fd73513f6b237cbec7e458351"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_C0_seed2027/predictions_ce.csv",
+      "bytes": 186615,
+      "sha256": "5edbb32b1d223bcadfe1305b1c8f4e8c95e29b778cbca17df8560405808a1564"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_C0_seed2027/predictions_f1.csv",
+      "bytes": 186952,
+      "sha256": "0fd4f14914f175e467164bb7b30f9d46cbbc19c8b57cdc6306f247bf7ca6f081"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_C0_seed2027/predictions_final.csv",
+      "bytes": 187100,
+      "sha256": "6b8dfcd22417e6d7136db4e556484fb55eaa90f2d97604b813221f22255fa806"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_C0_seed3037/TRAJECTORY_COMPLETE.json",
+      "bytes": 2627,
+      "sha256": "9ca289ce2c02d42899dfe1317cc1d7b2935946147574f9ee736a249c95f6ad5a"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_C0_seed3037/cells.json",
+      "bytes": 1493,
+      "sha256": "95c35c169d827f403ed737e2bd44cc129ef1948cea337b03184c845f361beede"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_C0_seed3037/engine/COMMIT.json",
+      "bytes": 337,
+      "sha256": "23d9c6c83fff20c3544fbfc807c24caba0bd3d75da49327ecde4faf28d17d1e0"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_C0_seed3037/engine/COMMIT.previous.json",
+      "bytes": 337,
+      "sha256": "ee6516c0c68762a50f798487ba193eac54af07d888543fbcbe9bda9bff0ec723"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_C0_seed3037/engine/COMPLETE.json",
+      "bytes": 2270,
+      "sha256": "f7537975fbe5800ab4d526d898c19d0d94b50f1be8f5278178e09d470840841b"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_C0_seed3037/engine/TASK.json",
+      "bytes": 1548,
+      "sha256": "00bcc1cd42625a78689db52532952a5386b83e05616bd4146f0af8835b01523b"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_C0_seed3037/engine/best_ce.pt",
+      "bytes": 34789,
+      "sha256": "970fe6f6ca3c0c589d02841f64e53855043cea436e530caa731252c04e764516"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_C0_seed3037/engine/best_f1.pt",
+      "bytes": 34789,
+      "sha256": "386964f6826ca0df91971d29d87b9c26466af70d414a5f726e21d95c89d105d5"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_C0_seed3037/engine/history.csv",
+      "bytes": 14408,
+      "sha256": "7acfb6dede48b0b1506fdaaa5f41342182e123069e3072e7fbd83c57b20a433c"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_C0_seed3037/engine/metrics.json",
+      "bytes": 1230,
+      "sha256": "85805f27c9c0526a24f63db72cc05a6680bd9e54856bd500b970794a934afa9f"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_C0_seed3037/engine/predictions.csv",
+      "bytes": 186649,
+      "sha256": "1ed91618475791b1bb2309b60a88d1457e3e4006b01c4d777382f21a19ad9e6b"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_C0_seed3037/engine/state-0059-935254db82a04960b98be264f8c79f18.pt",
+      "bytes": 206003,
+      "sha256": "57d27dab43f8b8eabb3b751bff07c10a6cda3ea2d3a3e9b78ffbd8252f3a2d1a"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_C0_seed3037/engine/state-0060-2368e1e5ec7141baadc89036e7ca7f4d.pt",
+      "bytes": 206323,
+      "sha256": "cb4b631b25c434b2327fc8c29893cb55cb6c7d39720504ccf91376121ed0cd1d"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_C0_seed3037/final_epoch.pt",
+      "bytes": 34789,
+      "sha256": "8589f22694342b319285189ddf74b01f5f369e5ed05f89ca87aa2b895d090cf3"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_C0_seed3037/predictions_ce.csv",
+      "bytes": 187112,
+      "sha256": "cfc03894733726fd8db7f8feb085c36d686b4fba15327f35820034a59db6242e"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_C0_seed3037/predictions_f1.csv",
+      "bytes": 186649,
+      "sha256": "1ed91618475791b1bb2309b60a88d1457e3e4006b01c4d777382f21a19ad9e6b"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_C0_seed3037/predictions_final.csv",
+      "bytes": 187302,
+      "sha256": "676c7103fc9117629777e7d345d5f08ca9bba5b9ccade5eed5f729b0b43897c6"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_selected_seed1009/TRAJECTORY_COMPLETE.json",
+      "bytes": 2698,
+      "sha256": "2a24d41590f36d44e56c616a4482195084e7c922ecc3d6e5b36eb168074079f0"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_selected_seed1009/cells.json",
+      "bytes": 1564,
+      "sha256": "e09091f1ae8d6ca6b6dfa7830e031e1d5fa8e12370c493e8213be68ddeb32669"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_selected_seed1009/engine/COMMIT.json",
+      "bytes": 337,
+      "sha256": "38c2773d1e97ff1697c41e506715bf4c7436ac3648b9bc3ae75acce289732469"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_selected_seed1009/engine/COMMIT.previous.json",
+      "bytes": 337,
+      "sha256": "3bac98f4af76fa20862f5c959cc7731f60f454b31162687adc87b367a7b2c2d4"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_selected_seed1009/engine/COMPLETE.json",
+      "bytes": 2300,
+      "sha256": "4178ade5096a18ff45cdbdf4081350c8f2388cf48d3dada6bbe2b0b5abb65cc4"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_selected_seed1009/engine/TASK.json",
+      "bytes": 1558,
+      "sha256": "809d8dd2d4f8ea258c36e34207ace4eb160eeea9cbda3ab83c0b85b1ca86826d"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_selected_seed1009/engine/best_ce.pt",
+      "bytes": 34789,
+      "sha256": "83103cd8dca05c57785876f8a8d0de2a41d4aaa290cd683e1f10d329e57d35d0"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_selected_seed1009/engine/best_f1.pt",
+      "bytes": 34789,
+      "sha256": "5bac999a9e35c8a865e4130fe057be742c1a480931a1f363df3f732f066460c2"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_selected_seed1009/engine/history.csv",
+      "bytes": 16357,
+      "sha256": "23c6c0c6a2505d0d145a8432bd953aa9be77043e5768b1a6e7909e0179efaa46"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_selected_seed1009/engine/metrics.json",
+      "bytes": 1260,
+      "sha256": "9c207057bb1e209d5db7c18705a77faf855e03078cbf3859ccde3c4fc4073234"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_selected_seed1009/engine/predictions.csv",
+      "bytes": 186525,
+      "sha256": "097ffb3a75240fe5596ab203682ee9528be850422feb7aaa3d820a3e12262b2a"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_selected_seed1009/engine/state-0059-9a3f44f4993f4d88b899ddafe176bfd6.pt",
+      "bytes": 205939,
+      "sha256": "11064b09e8e10a6ac0705cb62b825937ec58e2aea4e3beee4c51413dd4ff2d13"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_selected_seed1009/engine/state-0060-1fd519846ae54c06b951b44f670aa703.pt",
+      "bytes": 206259,
+      "sha256": "7756630c2d596e7aeb0797efc59d555a4eee8de0026f969d3550f111bb689921"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_selected_seed1009/final_epoch.pt",
+      "bytes": 34789,
+      "sha256": "eea277bef8f4ffe3b998e99477d66caf2bb39c475201d2052ed483c91b3630c3"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_selected_seed1009/predictions_ce.csv",
+      "bytes": 186724,
+      "sha256": "32c433eaeb324d3e4e4480a4d32e99f33c4d7598d97cdf0c33aced7bd9f64c2f"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_selected_seed1009/predictions_f1.csv",
+      "bytes": 186525,
+      "sha256": "097ffb3a75240fe5596ab203682ee9528be850422feb7aaa3d820a3e12262b2a"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_selected_seed1009/predictions_final.csv",
+      "bytes": 186736,
+      "sha256": "7cc561790d3e1f07a2a7c61583f224aab809104daf709eca65120caff1a29bd4"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_selected_seed2027/TRAJECTORY_COMPLETE.json",
+      "bytes": 2671,
+      "sha256": "4a9daa2334e0a814163bef9834fcd0f07d5c706874cfb5fa95e6cedfec26a19d"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_selected_seed2027/cells.json",
+      "bytes": 1537,
+      "sha256": "4e6a28bcccab7d62aa76b9451118f6d12bc4e7f2087a35766905e3e4a8fcd50d"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_selected_seed2027/engine/COMMIT.json",
+      "bytes": 337,
+      "sha256": "bbce24f041aaaa537cf2b436fce283b1c8ea067f6e8152a4a47807ae6e50f174"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_selected_seed2027/engine/COMMIT.previous.json",
+      "bytes": 337,
+      "sha256": "9cc30102440250d90658b44f7892daa5c052f53ada6ce6708ae3108fcbb42bdf"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_selected_seed2027/engine/COMPLETE.json",
+      "bytes": 2285,
+      "sha256": "12a545cbd3438bef538d3fee6d8385e1e4bfcc2ff94d940b9087275a702d2e60"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_selected_seed2027/engine/TASK.json",
+      "bytes": 1558,
+      "sha256": "831f21d860828a9cbb595bfa9ad2c19e6c3fc884b496bfd088edb2bfacc801c3"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_selected_seed2027/engine/best_ce.pt",
+      "bytes": 34789,
+      "sha256": "51ed27a06fc3b2801d39ab34110ece9c7a850d7f2f85a79a033b39464c735950"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_selected_seed2027/engine/best_f1.pt",
+      "bytes": 34789,
+      "sha256": "245db540aa1a010916ef6c4d84bca42faef2f43b92aa20209d32553509f15eaa"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_selected_seed2027/engine/history.csv",
+      "bytes": 16364,
+      "sha256": "dffe4beab1826a6fb39498b2aa150550c93d2bda4ab6851a1414e5bf40141321"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_selected_seed2027/engine/metrics.json",
+      "bytes": 1245,
+      "sha256": "cf700151bd7b52282973a50ed8c86040e5c8e85fc210b18489fa1debdfbd83ce"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_selected_seed2027/engine/predictions.csv",
+      "bytes": 186483,
+      "sha256": "dcfcac7f140b299a3559b6f8010764e8dab7428eb5d7e80b2f2a7d0e4e98c6e9"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_selected_seed2027/engine/state-0059-7dad1de1cc8f4fcdb9438781ef10bc6a.pt",
+      "bytes": 205939,
+      "sha256": "b8c1a7a9f177d82f94403357ba5c9f834052767543ce281fc466fd7d585ca061"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_selected_seed2027/engine/state-0060-b4ede22abf4d445c89cde8af8779d79f.pt",
+      "bytes": 206259,
+      "sha256": "8c2261dd1673c8abb54fe314e519556a6518563ed0c61438c063e166d7e9357b"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_selected_seed2027/final_epoch.pt",
+      "bytes": 34789,
+      "sha256": "030ec13d80698aa793073833efa7582d0357956b7e9c1e2d43469da49b6ea33f"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_selected_seed2027/predictions_ce.csv",
+      "bytes": 186729,
+      "sha256": "f3ed77c7699a792216dc2283be1ae4ad7361bf3350689802f44b3370305721a0"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_selected_seed2027/predictions_f1.csv",
+      "bytes": 186483,
+      "sha256": "dcfcac7f140b299a3559b6f8010764e8dab7428eb5d7e80b2f2a7d0e4e98c6e9"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_selected_seed2027/predictions_final.csv",
+      "bytes": 186706,
+      "sha256": "6b5fbeec0d6ea867cc86b93d699799502f4125cdfbda99af0674cafc3565526f"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_selected_seed3037/TRAJECTORY_COMPLETE.json",
+      "bytes": 2697,
+      "sha256": "5d915e62523bbc24564ba1b98224d112330083fb7adf31337d831bb8ad593dfa"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_selected_seed3037/cells.json",
+      "bytes": 1563,
+      "sha256": "650ebeab5d472a8ade831e9ce353d132794789fe775f6c1c98957d8869f58220"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_selected_seed3037/engine/COMMIT.json",
+      "bytes": 337,
+      "sha256": "1fcf6eead50ee6f79b68f5be6e2f74e7aba489dca7739405416435c7aeb57778"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_selected_seed3037/engine/COMMIT.previous.json",
+      "bytes": 337,
+      "sha256": "cd3f9317d3fdc8f72f7071fcb93f73787aafab9a0b7e99889306120a8472062a"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_selected_seed3037/engine/COMPLETE.json",
+      "bytes": 2299,
+      "sha256": "2c01c92d4d73707b03a84fa5377c4c977b1071236e8b4e76fb8cbc45b3f6fc6a"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_selected_seed3037/engine/TASK.json",
+      "bytes": 1558,
+      "sha256": "1a418e696bb643512a5fca30b8ede3380aa2cb256ab06a0344a2cc0d7eb09875"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_selected_seed3037/engine/best_ce.pt",
+      "bytes": 34789,
+      "sha256": "c8d0a793db4a3c26a38e23f71f33239f353130ba22f5b84a9299ef77fed79b43"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_selected_seed3037/engine/best_f1.pt",
+      "bytes": 34789,
+      "sha256": "e684f847cfaab622d82383f36e3d4a6f4c03928c86a84b3fc6f6afa025066f1f"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_selected_seed3037/engine/history.csv",
+      "bytes": 16215,
+      "sha256": "5d10d985d51f6de7268e509e62af93a11f786db36c4d54998d40df3c6b53a9b2"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_selected_seed3037/engine/metrics.json",
+      "bytes": 1259,
+      "sha256": "1e2b657db5b49f18d991e6cd617439eb76b6e24eed873a261609e70d2cbaab58"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_selected_seed3037/engine/predictions.csv",
+      "bytes": 186560,
+      "sha256": "1c583f70a26c3ccb8e78201a97eb9519e2db7ac8e8dbcb2ccadc997a32b0875b"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_selected_seed3037/engine/state-0059-a710836927484335a566114ce6f684ff.pt",
+      "bytes": 206003,
+      "sha256": "73d71c428f6b384daac71dffb3ea2ac9003d0099622bedd1ab312c8dcd44b503"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_selected_seed3037/engine/state-0060-522099d788ad4a4790e498d76eb226c5.pt",
+      "bytes": 206323,
+      "sha256": "a0c507873677b4b22699edc4aadc474e8b392b626a5bb4db2fb4c77fa5306538"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_selected_seed3037/final_epoch.pt",
+      "bytes": 34789,
+      "sha256": "f632255f52c2f4deddabeed69fc4912e7cf21fc86234ec9339ba05896f870324"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_selected_seed3037/predictions_ce.csv",
+      "bytes": 186643,
+      "sha256": "003677221a6b7c4a64bc9d98e6ff36f241d77231c1c118b1457fd1d1b34768e1"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_selected_seed3037/predictions_f1.csv",
+      "bytes": 186560,
+      "sha256": "1c583f70a26c3ccb8e78201a97eb9519e2db7ac8e8dbcb2ccadc997a32b0875b"
+    },
+    {
+      "path": "fashion_confirmation/tasks/linear_selected_seed3037/predictions_final.csv",
+      "bytes": 186714,
+      "sha256": "e3aa8dea768589c47965fc2e02f93a13aa896ba75797bbbf86454a438507b906"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_C0_seed1009/TRAJECTORY_COMPLETE.json",
+      "bytes": 2629,
+      "sha256": "fc466c54f534bd134c274937c21612ac9d62625bbcc5ea4b56b13847333c7070"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_C0_seed1009/cells.json",
+      "bytes": 1495,
+      "sha256": "aa889e27854e1fadc97843dbbd2243432037b2dacca544f44f1e0f885e2d6984"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_C0_seed1009/engine/COMMIT.json",
+      "bytes": 337,
+      "sha256": "01a74c443394174b5970b7565e26aaaaf7c09f070d00e3679e5f71b541854191"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_C0_seed1009/engine/COMMIT.previous.json",
+      "bytes": 337,
+      "sha256": "ca060dd4483b9015b868c003980e30c383406b6ca8297c2eca883c77c48d7827"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_C0_seed1009/engine/COMPLETE.json",
+      "bytes": 2290,
+      "sha256": "286453be3e0af80ea8a7e4aa57a30af3a25a87d25d56a3820c9a57ac71ba20b0"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_C0_seed1009/engine/TASK.json",
+      "bytes": 1542,
+      "sha256": "fd9dacb3b35f37235e89d8aa44b3ee700ad47d584f1b4e09504c492f5891ee82"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_C0_seed1009/engine/best_ce.pt",
+      "bytes": 817885,
+      "sha256": "2dfb89b15182723b0487d9d43b01d1cb24897c69937762b9ccd8e3197bdb8a5b"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_C0_seed1009/engine/best_f1.pt",
+      "bytes": 817885,
+      "sha256": "e018266024778eaf3239b0160585eb2977b998e7dfcd411c8b1a4ba2bfa8701b"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_C0_seed1009/engine/history.csv",
+      "bytes": 14474,
+      "sha256": "a17164b9d9359a72d97bbd773ab59ee70f676330be41df1e254a0c39d3b89423"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_C0_seed1009/engine/metrics.json",
+      "bytes": 1250,
+      "sha256": "60d7c97d0e5fc020ff39ca771c6ea7c63ec0ab62d0f3282c8ce1791cd4bc2008"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_C0_seed1009/engine/predictions.csv",
+      "bytes": 162774,
+      "sha256": "ec602cffc38990c5ae06ded3232ef0be2e5deec4e975ecd9137b2934af965ffa"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_C0_seed1009/engine/state-0059-a453a54a49414b31b06cc4072ea8270e.pt",
+      "bytes": 4123023,
+      "sha256": "172a058d9a43316e5a8dac0a062b3b57fb9a7a3a3d9dffa69772f4a0ace64d3d"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_C0_seed1009/engine/state-0060-999e193b31f34ed9870a7312dd704539.pt",
+      "bytes": 4123343,
+      "sha256": "141b584eaac75edfd6731724a2c3a6dbb741cbbd9a7a58dcf9834057aeb4ce5a"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_C0_seed1009/final_epoch.pt",
+      "bytes": 817885,
+      "sha256": "f7fa288eb542b46e6c70ed268b2bfa2adc3340a131f7cbbcea898df1a02cbbb5"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_C0_seed1009/predictions_ce.csv",
+      "bytes": 185522,
+      "sha256": "2f8978ce87f2267aeff2092e3a80f122d2fde4e2c4564ad92b635d48603716f3"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_C0_seed1009/predictions_f1.csv",
+      "bytes": 162774,
+      "sha256": "ec602cffc38990c5ae06ded3232ef0be2e5deec4e975ecd9137b2934af965ffa"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_C0_seed1009/predictions_final.csv",
+      "bytes": 157059,
+      "sha256": "cfae0aecd17d54da095d4a88dd033e94bfb2cb344e6a8990871a1302b4c24c72"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_C0_seed2027/TRAJECTORY_COMPLETE.json",
+      "bytes": 2618,
+      "sha256": "b82a52df216231c15069c33451745128ffd56ace66888dce0f05f60259073a40"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_C0_seed2027/cells.json",
+      "bytes": 1484,
+      "sha256": "258f9bebbb52a2b3e580c92d0ede841fb633376ef771719eadb52b310c627468"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_C0_seed2027/engine/COMMIT.json",
+      "bytes": 337,
+      "sha256": "af8e9f5358c3ef0c81a47bb9257d8854729c399c6275f88a09a1e4097a7f93fb"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_C0_seed2027/engine/COMMIT.previous.json",
+      "bytes": 337,
+      "sha256": "4898c8561f454c5ca00cca055d11dbc9692ce39a0f83a41eadea5f5e5bfbe9a2"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_C0_seed2027/engine/COMPLETE.json",
+      "bytes": 2265,
+      "sha256": "1b1c6a17ca25d3ba4be96f741745d373ceaa4b25f0a15424342bb133a2c7922d"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_C0_seed2027/engine/TASK.json",
+      "bytes": 1542,
+      "sha256": "abc141c485478914ebe2c6bca10a9d0829fd58c6b198f677c31f0a80d06e76b1"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_C0_seed2027/engine/best_ce.pt",
+      "bytes": 817885,
+      "sha256": "5a0a9deec3122e5258f57a31fdfc32c8cfa5b16cce1d2e96848e30b9e8a9d14b"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_C0_seed2027/engine/best_f1.pt",
+      "bytes": 817885,
+      "sha256": "45586a3f65e5255e7f353aa08e54babba9600196313fe1005b39a3c7d063edcf"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_C0_seed2027/engine/history.csv",
+      "bytes": 14501,
+      "sha256": "b4aa018443b798d8617c6a5bb0bd8fa0d0055bd59e9bc550b60b904d91f4e7f0"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_C0_seed2027/engine/metrics.json",
+      "bytes": 1225,
+      "sha256": "620035f64b0332e81911dbce59ef47418c4820962584c0a8bda06abd00e9dd3b"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_C0_seed2027/engine/predictions.csv",
+      "bytes": 169842,
+      "sha256": "976aff4e5cc846b2559ca24838cb3e0892483d59d83db6514730a5ef95d17ec2"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_C0_seed2027/engine/state-0059-338c9b55b9a24195bb9c7b805cb3ee35.pt",
+      "bytes": 4122959,
+      "sha256": "92be2879c0409d7240d524b65d6323e97289127b06e0becd617b2ee48d32a285"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_C0_seed2027/engine/state-0060-7c0339c7425940b69042bbe654ab6ced.pt",
+      "bytes": 4123343,
+      "sha256": "feb0861c8a6556e8c5b1ddd1a65656a893a27bcd93487d57177ac3ffaab3d632"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_C0_seed2027/final_epoch.pt",
+      "bytes": 817885,
+      "sha256": "43f3d15c62fbce10d70f3cc9fea62e8056fb74dfdd6716d2efacc7ae0086c6be"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_C0_seed2027/predictions_ce.csv",
+      "bytes": 185915,
+      "sha256": "191cb5d6f6462af20f978f88208d72711d9fe4b3d5c7c7938063668e159a5e8f"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_C0_seed2027/predictions_f1.csv",
+      "bytes": 169842,
+      "sha256": "976aff4e5cc846b2559ca24838cb3e0892483d59d83db6514730a5ef95d17ec2"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_C0_seed2027/predictions_final.csv",
+      "bytes": 159644,
+      "sha256": "fbfd0696ff0166ac0db1d8ed2f017910968925e945b54c02e140dfc8e5e566ca"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_C0_seed3037/TRAJECTORY_COMPLETE.json",
+      "bytes": 2631,
+      "sha256": "55a1031ccf3207236b6f7673bc3df7927f10957bf5db0318416f657aed9b8109"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_C0_seed3037/cells.json",
+      "bytes": 1497,
+      "sha256": "b9efddcd819c95f0aaf538d3f175d45872831f61c2255a65e770518b60f241ee"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_C0_seed3037/engine/COMMIT.json",
+      "bytes": 337,
+      "sha256": "d2fa14a812c58adbb6c0e63b834aef45a587b927509d4e5064a9e7e808b96e89"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_C0_seed3037/engine/COMMIT.previous.json",
+      "bytes": 337,
+      "sha256": "d1812028a2c596fd3dabb87feb64e63d5d591ff0432970151f606806287302bc"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_C0_seed3037/engine/COMPLETE.json",
+      "bytes": 2276,
+      "sha256": "10caac69f12dd632d1d3f0d48dfe1c64bd3ee51a0fbb8b7cb7d4f18e60fda542"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_C0_seed3037/engine/TASK.json",
+      "bytes": 1542,
+      "sha256": "890faf183a786cb81d7f580dac6fd28154c9574db6ea8f0144603495b823bc06"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_C0_seed3037/engine/best_ce.pt",
+      "bytes": 817885,
+      "sha256": "31f9a75798d6bdb9986eb2431826d8f9da985ccc33f2eafeaece684d3035810f"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_C0_seed3037/engine/best_f1.pt",
+      "bytes": 817885,
+      "sha256": "17c7613fe3017b3dcac364df0f315fbc67ba783f5fc2efbed4c64f189a8272c6"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_C0_seed3037/engine/history.csv",
+      "bytes": 14457,
+      "sha256": "315d48c691337f9f7587e40a758d69d671dc86ad5187610cfaa0aec3ff35199a"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_C0_seed3037/engine/metrics.json",
+      "bytes": 1236,
+      "sha256": "57a90a571a2465c0cc3c861d5ac1211e45e0b5fb19b44389572760ebb743cbc2"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_C0_seed3037/engine/predictions.csv",
+      "bytes": 166471,
+      "sha256": "37d5157e46b37ec317ec6b7e19adff5f69f8ebdf0a51ed8b56b534ce8daf2ec8"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_C0_seed3037/engine/state-0059-8233ab389f9d482386bdf4a35b3fd880.pt",
+      "bytes": 4123023,
+      "sha256": "8f289686bd9b971b3af696851cae6f9f67bb9381ea29315c50e7548f08d39483"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_C0_seed3037/engine/state-0060-2c5e6b731ecf4d30b5668def36bfa0cf.pt",
+      "bytes": 4123343,
+      "sha256": "4af72cbcf4975f775c9f7cfa5b13d6c575df6fe55f07f1e603ecefef799f9671"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_C0_seed3037/final_epoch.pt",
+      "bytes": 817885,
+      "sha256": "5a1601d442879b213c0f734ee42b57302c1f03a8523c63139805b7a0fecc392f"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_C0_seed3037/predictions_ce.csv",
+      "bytes": 178607,
+      "sha256": "8032d90eaf8861ce82d57fb7ade640d92cc687da505db320f35c18c61aa74c6c"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_C0_seed3037/predictions_f1.csv",
+      "bytes": 166471,
+      "sha256": "37d5157e46b37ec317ec6b7e19adff5f69f8ebdf0a51ed8b56b534ce8daf2ec8"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_C0_seed3037/predictions_final.csv",
+      "bytes": 156837,
+      "sha256": "e8eaafa95c8b8630f531b27f8826dcc392aafc5112a02e80fd74454281f1efab"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_selected_seed1009/TRAJECTORY_COMPLETE.json",
+      "bytes": 2642,
+      "sha256": "5727ff1682cc7112d1a32dfe17cf716e0930bddd27d48a81000b2134d18c5b84"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_selected_seed1009/cells.json",
+      "bytes": 1508,
+      "sha256": "35836f2301ec13c3fe0d1004e68ce54860c11a69efe54d2d37754ffe7a98e796"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_selected_seed1009/engine/COMMIT.json",
+      "bytes": 337,
+      "sha256": "d4b70afb1b731d7585f515f89150a30ccbcad8dbd574eba238a370648d2b16cc"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_selected_seed1009/engine/COMMIT.previous.json",
+      "bytes": 337,
+      "sha256": "98542ddc88b07998239ea741be99a2f62999e7d074ceed65fff8143db1fb4584"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_selected_seed1009/engine/COMPLETE.json",
+      "bytes": 2272,
+      "sha256": "f1527f70782b6b9404381c3b1d0d385063fa97bd561038d2c1a6254537a17bed"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_selected_seed1009/engine/TASK.json",
+      "bytes": 1570,
+      "sha256": "b9489b1217aac7a2270afa7f5a988d517492c18d3e62efe758d54995a97f4ec6"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_selected_seed1009/engine/best_ce.pt",
+      "bytes": 817949,
+      "sha256": "753f65b11fc12a56e82f679422b344e7526abee9544bc03612cbb31235cbded7"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_selected_seed1009/engine/best_f1.pt",
+      "bytes": 817949,
+      "sha256": "b3f9017df3595655d7f52d5ec54702850d78ff36d3d7e30785e562d30401781c"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_selected_seed1009/engine/history.csv",
+      "bytes": 16259,
+      "sha256": "b4b31f7f53d791d6a4a0a497055669a2bfb84964c7c2e0f4ad7c5a0b316a3842"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_selected_seed1009/engine/metrics.json",
+      "bytes": 1232,
+      "sha256": "753639290d7c3838c890bc7f7f97cb1c38a807a51555aa9e51bf4a0ba3ece9a2"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_selected_seed1009/engine/predictions.csv",
+      "bytes": 174988,
+      "sha256": "dd72b499d99e82c46fc189bcb7e6919cf1c17bb378bc6eecdb0d6b90fb8e6930"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_selected_seed1009/engine/state-0059-b9d441db996147949051cd74f9a5448d.pt",
+      "bytes": 4122959,
+      "sha256": "c0fd5812ff776534b655ee1fc0bea78f3932e54a81ca96591a45dc3e5b54133a"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_selected_seed1009/engine/state-0060-a8c7336fed3f44c381d3134201c0b96e.pt",
+      "bytes": 4123343,
+      "sha256": "0c6d905ff87053617e1dbd18b0decac8267852dffe400bd55eb7e4ac22e48600"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_selected_seed1009/final_epoch.pt",
+      "bytes": 817885,
+      "sha256": "475ec83d12893a0f79434e65f7d4129628429e844699fff402e6dbfbed653309"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_selected_seed1009/predictions_ce.csv",
+      "bytes": 179347,
+      "sha256": "06633596b6816ec2da74e2e5005b48412302b9452ca354925cd0d863f50ec630"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_selected_seed1009/predictions_f1.csv",
+      "bytes": 174988,
+      "sha256": "dd72b499d99e82c46fc189bcb7e6919cf1c17bb378bc6eecdb0d6b90fb8e6930"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_selected_seed1009/predictions_final.csv",
+      "bytes": 174921,
+      "sha256": "f7bcea142f68eb36c8280b118463ef8e6568752ea33b888da362b66ced7d4c1e"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_selected_seed2027/TRAJECTORY_COMPLETE.json",
+      "bytes": 2654,
+      "sha256": "4f8a5530e16da3350bf354d240107f06338d04ece3bc5cc7d7a342241ef75dea"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_selected_seed2027/cells.json",
+      "bytes": 1520,
+      "sha256": "12434b6920edb42af722aea0c4dc0a3882ff2712b8af7a6ee3ccad480465443b"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_selected_seed2027/engine/COMMIT.json",
+      "bytes": 337,
+      "sha256": "eb9912f8c95a18edca49458c0fb15b23038dd3a30c324f11582ebcd43706a0f0"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_selected_seed2027/engine/COMMIT.previous.json",
+      "bytes": 337,
+      "sha256": "ddef8e84ad729ce32e933e99d781a251f33cebd20369c19c7386bb84ba0ff440"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_selected_seed2027/engine/COMPLETE.json",
+      "bytes": 2283,
+      "sha256": "6a67013f377a40070e55465c18dc396fc58812001e863701022db1dd04d7dde0"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_selected_seed2027/engine/TASK.json",
+      "bytes": 1570,
+      "sha256": "d1a936d909caf0176b006218db3e67cac8ecdf2e1ae6991ace2a612458f913a4"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_selected_seed2027/engine/best_ce.pt",
+      "bytes": 817949,
+      "sha256": "b26fc2ef671a7de92538172c7db6c0c9577390d4b0701bea015db077d00d1e6a"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_selected_seed2027/engine/best_f1.pt",
+      "bytes": 817949,
+      "sha256": "578afa67ebafd1e244437ce852587d75336f1e457c44a323145509e683981c64"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_selected_seed2027/engine/history.csv",
+      "bytes": 16334,
+      "sha256": "ec24aa1880fc8109542f9a8520f252dc85c312d60c35e4359390bc3b5b182ebd"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_selected_seed2027/engine/metrics.json",
+      "bytes": 1243,
+      "sha256": "d97c715673e3df179ac8c991c273ae7394ac12d4829916f5eb9fe1cb50274381"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_selected_seed2027/engine/predictions.csv",
+      "bytes": 176496,
+      "sha256": "8943cadb97d3f4afeb2157f1b45499e13f76f271664f6bfe1c09c75330c5309f"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_selected_seed2027/engine/state-0059-787e1331803c46699daf7c628b991b75.pt",
+      "bytes": 4122959,
+      "sha256": "f38593e730ce71f007a2d69209336aea1b85538b47346694b33de4d854fbc33f"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_selected_seed2027/engine/state-0060-316ddcbe45994962a7dc8fc86f483cc5.pt",
+      "bytes": 4123343,
+      "sha256": "32a0add56dcf82c04e01ea3c6196359267e2a458e8230441b73d0ba60f6e702e"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_selected_seed2027/final_epoch.pt",
+      "bytes": 817885,
+      "sha256": "6d058f381063261c93d48020ecafab7f411b8f809432a0fd9bce72c58f9cd336"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_selected_seed2027/predictions_ce.csv",
+      "bytes": 177364,
+      "sha256": "4e0b74825b9dc4f8593e657a5f427860a4f48c62447e69deace2e5f3c146d196"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_selected_seed2027/predictions_f1.csv",
+      "bytes": 176496,
+      "sha256": "8943cadb97d3f4afeb2157f1b45499e13f76f271664f6bfe1c09c75330c5309f"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_selected_seed2027/predictions_final.csv",
+      "bytes": 175656,
+      "sha256": "36aae5c4a37da768e7b8a9cfa910ed5121a57593f1cdd58c0a370a0eaef6a651"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_selected_seed3037/TRAJECTORY_COMPLETE.json",
+      "bytes": 2681,
+      "sha256": "5a98c5c80738c410d908a22cc88e7f2e921f20a75904142ca17002af887f4993"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_selected_seed3037/cells.json",
+      "bytes": 1547,
+      "sha256": "391d0e1e8c8fda2a106fd1292a39be04513713db44433cc0f02afd6eeca7bb14"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_selected_seed3037/engine/COMMIT.json",
+      "bytes": 337,
+      "sha256": "9dbbe31a249034b1b89d9783b36595fd4837d66e679bf2eab1730cfc280c3d37"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_selected_seed3037/engine/COMMIT.previous.json",
+      "bytes": 337,
+      "sha256": "464ca8224dee08d83b728a704ef03444b06fef45326bff6a6f2bc7e70d3c57f4"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_selected_seed3037/engine/COMPLETE.json",
+      "bytes": 2299,
+      "sha256": "7c6e31ec7c44c146a109338ec551f4b9ed9f4023d74df6c4bd023ad5604441c3"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_selected_seed3037/engine/TASK.json",
+      "bytes": 1570,
+      "sha256": "78fd04d7c26cba4094acf5e4c9b065caf7f35670039d1f8338d78d91a0b64e57"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_selected_seed3037/engine/best_ce.pt",
+      "bytes": 817949,
+      "sha256": "6fe7c2ca4edc5d980f2470d6b733d4d6f027dd0bbef757a34306eaeb0af8cfd0"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_selected_seed3037/engine/best_f1.pt",
+      "bytes": 817949,
+      "sha256": "538f5542602d22124fba5ebb9394fef2384788933e4b006b2711833d979c53fc"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_selected_seed3037/engine/history.csv",
+      "bytes": 16417,
+      "sha256": "aca48e1a7e75d2da549e65a8e52b3f32f070dfd82c49dd96b9faeccd1ad52eb6"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_selected_seed3037/engine/metrics.json",
+      "bytes": 1259,
+      "sha256": "7f5c2ade94d88133fd22ff2f73cd1490d2db462e38a0224b58447fbd527b9ea8"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_selected_seed3037/engine/predictions.csv",
+      "bytes": 174603,
+      "sha256": "43fb330e7b355a415de72738896586090c6204122f9b2bbc025527b6d63c3cd7"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_selected_seed3037/engine/state-0059-37a813cbe09d4d38bd10c6294ff5cc73.pt",
+      "bytes": 4123023,
+      "sha256": "2e94762d330c09dd0a415c91ef04658eeec5155ef34b56aa542a1def1602a2c2"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_selected_seed3037/engine/state-0060-19b20ef86f364cb7a2243d17fdd637ab.pt",
+      "bytes": 4123343,
+      "sha256": "48f7974b398e80f23acdd8807aeb3a4f0af49c175c3f9c86e3da1bd0eded42c6"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_selected_seed3037/final_epoch.pt",
+      "bytes": 817885,
+      "sha256": "21de45d56ff836d5cb96101bd9fdc874caa8b061971c24f985fa7ff52387973b"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_selected_seed3037/predictions_ce.csv",
+      "bytes": 177176,
+      "sha256": "3cb55a7e28e9c2c41f3a92ddc13d1aa41ef62a677ae349cb659a00523c868f6f"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_selected_seed3037/predictions_f1.csv",
+      "bytes": 174603,
+      "sha256": "43fb330e7b355a415de72738896586090c6204122f9b2bbc025527b6d63c3cd7"
+    },
+    {
+      "path": "fashion_confirmation/tasks/mlp_selected_seed3037/predictions_final.csv",
+      "bytes": 174310,
+      "sha256": "35571200d720faf365f84dff3efd79f29671dbbcad0315d7471e7b7fb1239993"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_C0_seed1009/TRAJECTORY_COMPLETE.json",
+      "bytes": 2668,
+      "sha256": "dee7d23a012f2abfb4c05f2f62e13608f7a6a1914b4e083947e3555a43286d66"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_C0_seed1009/cells.json",
+      "bytes": 1534,
+      "sha256": "e4374744eab38acb09cab330699417cdb4cc34fdb2e660f834269bbbec2a2b3f"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_C0_seed1009/engine/COMMIT.json",
+      "bytes": 337,
+      "sha256": "997f0a9b0bc001f5466f89f7d41c5f4b40178d7e50c51119b906dfac182a4647"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_C0_seed1009/engine/COMMIT.previous.json",
+      "bytes": 337,
+      "sha256": "1280683bfaf12e0e22df15c8b0bc54cdf76c9e971d2d9efd1654e941b8d96973"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_C0_seed1009/engine/COMPLETE.json",
+      "bytes": 2281,
+      "sha256": "9f5a4d14844aab454b3caa8304080045ae540d54fd16ee01206891983bfb5723"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_C0_seed1009/engine/TASK.json",
+      "bytes": 1747,
+      "sha256": "b31dee6c22c0c918060252678a76f59c23cd4d2e80d5fad3d83b349f14606872"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_C0_seed1009/engine/best_ce.pt",
+      "bytes": 1111174,
+      "sha256": "d004c484549ca3702cbefcd41d1d0cd4d0c57edfd721cc17bb746b04e570d8a8"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_C0_seed1009/engine/best_f1.pt",
+      "bytes": 1111174,
+      "sha256": "4364224628c4ec0eed3f04fa94b20ef3cf736247dc3cf75a67029b55ba78871a"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_C0_seed1009/engine/history.csv",
+      "bytes": 14580,
+      "sha256": "8e4f01d8eeed24b4dadc639608c6ca6802535a6f1850dd09537afb7b97b46bf3"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_C0_seed1009/engine/metrics.json",
+      "bytes": 1241,
+      "sha256": "06fdedf889139b3ea624f7cbbf1db35efef0fef5567b84860bd5b4089823da77"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_C0_seed1009/engine/predictions.csv",
+      "bytes": 184046,
+      "sha256": "76dcba4ea2ae7724e457b1d6c8627bc80048d26669cae5f0479fd96abb81b23a"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_C0_seed1009/engine/state-0059-fc235a564e1744218e15696ebbbbc749.pt",
+      "bytes": 5600579,
+      "sha256": "b3af934dac1f388d1ad886d321bc989e523801d7154ed0f8e156fad2d8b511ca"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_C0_seed1009/engine/state-0060-7208dbe46a854fdeb3487400d7d38a34.pt",
+      "bytes": 5600899,
+      "sha256": "01cc4528ccd765ab52094d8dcf90ef2d295a9881b3d9d0322c7130ab471002d1"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_C0_seed1009/final_epoch.pt",
+      "bytes": 1111110,
+      "sha256": "614a2946756a9a3dbc19aa4b7ab8f4f746964436eae05014c3c8d6d6f2ba3fc7"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_C0_seed1009/predictions_ce.csv",
+      "bytes": 191313,
+      "sha256": "561a2c200aefe5ceab2d488c9a3d8a2e5f007aa50e8fb35d782b85dfd17cc068"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_C0_seed1009/predictions_f1.csv",
+      "bytes": 184046,
+      "sha256": "76dcba4ea2ae7724e457b1d6c8627bc80048d26669cae5f0479fd96abb81b23a"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_C0_seed1009/predictions_final.csv",
+      "bytes": 179141,
+      "sha256": "92aeb7035a2e76fb2e55afd99c802e4580dd61ecd4ce04bb079f9fd95dfbacb6"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_C0_seed2027/TRAJECTORY_COMPLETE.json",
+      "bytes": 2677,
+      "sha256": "733a0a3424812268f041ebdc01a1b1b58d83feab407703844e552b6efe9f0186"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_C0_seed2027/cells.json",
+      "bytes": 1543,
+      "sha256": "6b6d187efb907216899e1caa610a61dff414ce5c452d0748eabd1cad4900b5af"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_C0_seed2027/engine/COMMIT.json",
+      "bytes": 337,
+      "sha256": "068109493606d32e53db57db932e3deee17ce6dd3151b1e804c00b007a14dac1"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_C0_seed2027/engine/COMMIT.previous.json",
+      "bytes": 337,
+      "sha256": "ea6209bd77769a81cc2be779e5432bcd37f55954930a701c78cb272f8325d074"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_C0_seed2027/engine/COMPLETE.json",
+      "bytes": 2303,
+      "sha256": "162d125402456b8bcf02ea721e29e1f6e2e01e01f0f24825fe6aff17154f2da1"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_C0_seed2027/engine/TASK.json",
+      "bytes": 1747,
+      "sha256": "9fa43d955d5d144fcfa18d03b9f6b4670aad1692d0aa9b5e3c0b10fe099f3f45"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_C0_seed2027/engine/best_ce.pt",
+      "bytes": 1111174,
+      "sha256": "2b8a45a956c8cecfbef62a2952d170ab4d2cd8bdfe86a8190df4121d5f4b5ea3"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_C0_seed2027/engine/best_f1.pt",
+      "bytes": 1111174,
+      "sha256": "78d37fb16b50068b67f3c3e0da4d6907ffe1739bb904fce9594bb7ef65a793a1"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_C0_seed2027/engine/history.csv",
+      "bytes": 14581,
+      "sha256": "5c4f8d57a88d7eb7eb31a4b24d402bb60a0691eb28b9a7428d7442eb5e416eff"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_C0_seed2027/engine/metrics.json",
+      "bytes": 1263,
+      "sha256": "7fa6ad9bf1fecd9740215bb2001c4ca1cb01cd8e1e64220395f4940b9cee7e73"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_C0_seed2027/engine/predictions.csv",
+      "bytes": 186055,
+      "sha256": "84d9a231bae7c862821b131fdc1e445ce69aaafe66d175bfbdf11fc6367c043c"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_C0_seed2027/engine/state-0059-f927d77675bc4498a2fc835763149ca8.pt",
+      "bytes": 5600579,
+      "sha256": "b870e2269d2d488931a2a4d98a81d3f69ce0711b1595e085997bf28c2422a036"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_C0_seed2027/engine/state-0060-55cd7100c58b4cbdbf155867873f4c11.pt",
+      "bytes": 5600899,
+      "sha256": "48b1f9ba65169fbe7567459d3ff2c2cb62a113711247479eb14c4457f9c05307"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_C0_seed2027/final_epoch.pt",
+      "bytes": 1111110,
+      "sha256": "f70b528a24b9824a35cfdf28544c548e6c91424285f129d5d5a13e18b3fba76f"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_C0_seed2027/predictions_ce.csv",
+      "bytes": 190778,
+      "sha256": "70d84f98cf12e226ecce83abd3575a0b957d1c35e879fca7fdc69a7981096e71"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_C0_seed2027/predictions_f1.csv",
+      "bytes": 186055,
+      "sha256": "84d9a231bae7c862821b131fdc1e445ce69aaafe66d175bfbdf11fc6367c043c"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_C0_seed2027/predictions_final.csv",
+      "bytes": 180502,
+      "sha256": "2fd2e02145051b8b30b5cb4186fe83d8359efe6bcab4b8769270888251becbea"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_C0_seed3037/TRAJECTORY_COMPLETE.json",
+      "bytes": 2670,
+      "sha256": "3a475a76fc6b0497c30b3ab2bc7e8bc707108e5a98a6ff08f027702f8f80f76c"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_C0_seed3037/cells.json",
+      "bytes": 1536,
+      "sha256": "4141ceac872da1286dcfd5276676350d9b0b8d8beded8a8f71b0b50512160779"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_C0_seed3037/engine/COMMIT.json",
+      "bytes": 337,
+      "sha256": "f49bf55e7057dde6cbd283370de7311816a0d0b6049add1c32d8c5f00149df75"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_C0_seed3037/engine/COMMIT.previous.json",
+      "bytes": 337,
+      "sha256": "137db32bd9621d6390e34a9cc68e453b383644937dbd417187053e3cc4a8ca57"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_C0_seed3037/engine/COMPLETE.json",
+      "bytes": 2295,
+      "sha256": "06ce565ae66e27bb51c6073a787b454d848494be14e83846e4c93a9faaeba82a"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_C0_seed3037/engine/TASK.json",
+      "bytes": 1747,
+      "sha256": "bc798ef05c623a99aa97cd7d5249b72027162d74a4899883ea15e67f4e134042"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_C0_seed3037/engine/best_ce.pt",
+      "bytes": 1111174,
+      "sha256": "9d819af91f45f0d573a68875565fd45b153957df00b267994ad4236d228ac76e"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_C0_seed3037/engine/best_f1.pt",
+      "bytes": 1111174,
+      "sha256": "ca98f69f733ed1015baa19abc81d299d9e6af0eba6f59c4ad8ccab290dd673d6"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_C0_seed3037/engine/history.csv",
+      "bytes": 14464,
+      "sha256": "723c6ac46944a325ca56d19c53011da8ed59b03000e59f06f8b1feec87893616"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_C0_seed3037/engine/metrics.json",
+      "bytes": 1255,
+      "sha256": "6833cd3b34c9fc6ee2436c81b58a8683eae9d96b649a259564462a1df4a96baa"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_C0_seed3037/engine/predictions.csv",
+      "bytes": 191813,
+      "sha256": "e2524b66507fb7b5ba9ba6dde22fb25a6e81ecbc0c6a3abf1bad966176a6d276"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_C0_seed3037/engine/state-0059-33cf60721c264836a3afb1fc54c12566.pt",
+      "bytes": 5600643,
+      "sha256": "1b9167305ead2c1c29f7b047cccd5d1f798a89cee9b879bfd573eb30e343e18c"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_C0_seed3037/engine/state-0060-3f0664ec8e6944eb85692593991b1f8e.pt",
+      "bytes": 5600963,
+      "sha256": "359b11992af27cb4058c1a61f14ed0a9a0d98032d9947b9d9a76893f0542932e"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_C0_seed3037/final_epoch.pt",
+      "bytes": 1111110,
+      "sha256": "550832ed123740d25bf1cbc922ddea929bf67a60a9bb6e5f8e81599048db5cd5"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_C0_seed3037/predictions_ce.csv",
+      "bytes": 190012,
+      "sha256": "2bdbefb15a3b2af81cba97303433147625a4118b63dcd44f58b9072d26edf940"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_C0_seed3037/predictions_f1.csv",
+      "bytes": 191813,
+      "sha256": "e2524b66507fb7b5ba9ba6dde22fb25a6e81ecbc0c6a3abf1bad966176a6d276"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_C0_seed3037/predictions_final.csv",
+      "bytes": 180804,
+      "sha256": "b8046d297fff2d51e1ab0ec2711cf52c02c360bbbb3ebd78bec9a1c5c6792cc5"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_selected_seed1009/TRAJECTORY_COMPLETE.json",
+      "bytes": 2714,
+      "sha256": "6044d8a365f18d111f657c18a8465a6ef3516bf4b169b16ec9cea5ba327d1530"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_selected_seed1009/cells.json",
+      "bytes": 1580,
+      "sha256": "168449f20e061ffd673647f0dcde1d80b7d671fe6c4c062d4712ae4d0b1bc065"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_selected_seed1009/engine/COMMIT.json",
+      "bytes": 337,
+      "sha256": "aa9100b4a14ab1a8e4ffe398b4760ceb40912193b67b7e6abe0de9152a1e8ec2"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_selected_seed1009/engine/COMMIT.previous.json",
+      "bytes": 337,
+      "sha256": "604a4733ce5a9c1c9e25bcfb50399b7664f9fdce0d914580dc74c56f55806c30"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_selected_seed1009/engine/COMPLETE.json",
+      "bytes": 2310,
+      "sha256": "cfeed2c59b8c27dd03fb5ef0d24da6fd1986a3e9ed63a9796034ee1452019073"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_selected_seed1009/engine/TASK.json",
+      "bytes": 1764,
+      "sha256": "85e3926da502b71d6e5b85534a0c5dab5a499fe6adc6fd568d708605a71cb352"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_selected_seed1009/engine/best_ce.pt",
+      "bytes": 1111174,
+      "sha256": "7e6f7bb3e746f308769fff57f476cfacf311a93823c9c694b29cea8422846634"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_selected_seed1009/engine/best_f1.pt",
+      "bytes": 1111174,
+      "sha256": "9f9b8817d20bd27a358dcc15c808760da9b34841ba5670e9761d41536bb2b8e7"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_selected_seed1009/engine/history.csv",
+      "bytes": 16198,
+      "sha256": "8967b1c96fb43c7d05eeba6a494bc1e9a080a8c0588cf3ad116cdb180b3147bb"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_selected_seed1009/engine/metrics.json",
+      "bytes": 1270,
+      "sha256": "5b0cc31c5b3b8c97bab4d978e3f5fce86a01be6027779d6d6043029d59e8b2a7"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_selected_seed1009/engine/predictions.csv",
+      "bytes": 191601,
+      "sha256": "3512fa263ecc6f62275b44d269be67f2636f896fd6c20b369615070a676b2820"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_selected_seed1009/engine/state-0059-f8951b14cb774e31a84643e6d6ea4709.pt",
+      "bytes": 5600579,
+      "sha256": "8ed8eb08d49071301318ff5d858bc656045e3f40692026248016ca6e045573f5"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_selected_seed1009/engine/state-0060-8e2f4dbe18ff4e0199d746cae5727c3d.pt",
+      "bytes": 5600899,
+      "sha256": "5f566c49fcb542d1425a05b81cae41430504d1eaf349b8bd4b3d1e2fe9953d49"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_selected_seed1009/final_epoch.pt",
+      "bytes": 1111174,
+      "sha256": "2f33d6cf5691ca0a93945b8e8890057903dbe283e15e24d9062fec5f2d96d0f0"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_selected_seed1009/predictions_ce.csv",
+      "bytes": 191011,
+      "sha256": "f63431aa32095661bf5f248b574cac5a36d07ec0724b16a91a8b199c51803929"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_selected_seed1009/predictions_f1.csv",
+      "bytes": 191601,
+      "sha256": "3512fa263ecc6f62275b44d269be67f2636f896fd6c20b369615070a676b2820"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_selected_seed1009/predictions_final.csv",
+      "bytes": 190285,
+      "sha256": "c72bf9d789c7917e5e08f7eaa0f4439474fa3abe89df72b62b327afc2482e7a7"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_selected_seed2027/TRAJECTORY_COMPLETE.json",
+      "bytes": 2713,
+      "sha256": "7521c39f9e7ddacbf6736579d069a947d7ccc274e864a6225d998779a8c1b1d5"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_selected_seed2027/cells.json",
+      "bytes": 1579,
+      "sha256": "6ce8084a987159b715e7e65b767140c3af0d3b3356e0c20f2c6b87f891ca803d"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_selected_seed2027/engine/COMMIT.json",
+      "bytes": 337,
+      "sha256": "c4875201aa707d4686971d8302685a4fdab058463fb2d40dcf48e106c3d99935"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_selected_seed2027/engine/COMMIT.previous.json",
+      "bytes": 337,
+      "sha256": "61979f12c307c4df898f85721e8df165101459d9f7c0c68d3cfaf568d1f505c7"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_selected_seed2027/engine/COMPLETE.json",
+      "bytes": 2309,
+      "sha256": "c4a94a1f5ab23a98af31c344d6647e7168fa22dce4bca4ca3b97f25580d96632"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_selected_seed2027/engine/TASK.json",
+      "bytes": 1764,
+      "sha256": "c125a4e1573e99305c9e90bcf8c2fb4e61fc6cfc50b3de956f6f7ac51824288e"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_selected_seed2027/engine/best_ce.pt",
+      "bytes": 1111174,
+      "sha256": "9010d1315cd69e735a864e8feaba96310c3a62313cf6d86320e71408047f3eec"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_selected_seed2027/engine/best_f1.pt",
+      "bytes": 1111174,
+      "sha256": "e8436d6084bb8513dc5782458b8c9e7dea52f8a0383702d110665a83bf869953"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_selected_seed2027/engine/history.csv",
+      "bytes": 16227,
+      "sha256": "9042138dbb3d6ae295fd301534a61376ad0a7414029bed1e817aa7447ee630ec"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_selected_seed2027/engine/metrics.json",
+      "bytes": 1269,
+      "sha256": "bcaf7ce1434f3f574cb2499c74ae7dfd09e713c844f3405dce9399dd4b7b561b"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_selected_seed2027/engine/predictions.csv",
+      "bytes": 187127,
+      "sha256": "667474ea6939f3229266c17739da779b25312ed92969dcd652b21e1e84b648fe"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_selected_seed2027/engine/state-0059-4de789a00b2d44e8bdf9c55f0ff7a24c.pt",
+      "bytes": 5600579,
+      "sha256": "427185a45bddf2ba791b2418457f94fe69892501e79867f0514d2ab9d8f8fdae"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_selected_seed2027/engine/state-0060-b0f781ee621f41d08aa0ad1d130f8494.pt",
+      "bytes": 5600899,
+      "sha256": "237bd964292b92cceafb1446bcc832ea93f1ab18ea63f73e1fec74402fff0eac"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_selected_seed2027/final_epoch.pt",
+      "bytes": 1111174,
+      "sha256": "c86c0167b3ec09fe57c540f78be61a233e7dffb25d5637d3a815066b93e45286"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_selected_seed2027/predictions_ce.csv",
+      "bytes": 190790,
+      "sha256": "9197349aae69cdcde2b9cb4af1db39fc25a466742ab5b5d2e922f0f045b02403"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_selected_seed2027/predictions_f1.csv",
+      "bytes": 187127,
+      "sha256": "667474ea6939f3229266c17739da779b25312ed92969dcd652b21e1e84b648fe"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_selected_seed2027/predictions_final.csv",
+      "bytes": 186504,
+      "sha256": "e262a89be91415a3d87a681033a92661e0e057a34c075df05fb67ea640744200"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_selected_seed3037/TRAJECTORY_COMPLETE.json",
+      "bytes": 2727,
+      "sha256": "110a8ea97e7820b122fb0b5aa479c52da9849b9226b124662472e9bdfa11e299"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_selected_seed3037/cells.json",
+      "bytes": 1593,
+      "sha256": "a5aa5d41c0025bbdc127b2c58a81e2890a6ef5da1999675cfd2feeea6fb21a38"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_selected_seed3037/engine/COMMIT.json",
+      "bytes": 337,
+      "sha256": "560fdcd78d965a698b9493e1f97569c50dba010630ff9d9a35d7f1d8a344894e"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_selected_seed3037/engine/COMMIT.previous.json",
+      "bytes": 337,
+      "sha256": "807c7b34453b8f2ee6c3aa188b4140c85c653d9bbb3481bc06fd74511bf6efd9"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_selected_seed3037/engine/COMPLETE.json",
+      "bytes": 2310,
+      "sha256": "d09cb594e44d794593a238fa905218576cd7caa89b10bd7420d825faaea83f5a"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_selected_seed3037/engine/TASK.json",
+      "bytes": 1764,
+      "sha256": "ad993790d8290380f01e0d8972f567e9e9b6f40d2529f07dfa5292b737cd7bba"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_selected_seed3037/engine/best_ce.pt",
+      "bytes": 1111174,
+      "sha256": "32482989667f84dedc205d648d83ce9dc4d25d64bef9cd1206e6fc7290b0c4d8"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_selected_seed3037/engine/best_f1.pt",
+      "bytes": 1111174,
+      "sha256": "d723a58a07e7c0f3db87fae18c6fd53f0cc508fbc56dc81185c3aec7d86b2ba9"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_selected_seed3037/engine/history.csv",
+      "bytes": 16205,
+      "sha256": "c055ab1e39e13943ab0d83d969e6e0615ff4b7a63d9e8e9cabd0ad1f7966b65e"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_selected_seed3037/engine/metrics.json",
+      "bytes": 1270,
+      "sha256": "6f8ce1ce6c93c8a271d217e29d9af3e2fab6da1d3604a8dd1a9ccbeb17ba8db7"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_selected_seed3037/engine/predictions.csv",
+      "bytes": 190124,
+      "sha256": "4e5f610278e2a76758a443b9a948410d5ad8f7445f971b63927fc80723d56c2f"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_selected_seed3037/engine/state-0059-2856947d97804f818655087f18796b6b.pt",
+      "bytes": 5600643,
+      "sha256": "29a603abd9640abad6c61410e02088bf6a2d18db91cacf22d3ea7aecc85f3d67"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_selected_seed3037/engine/state-0060-b6b1ea30311040e9b8cced2bc94a6e47.pt",
+      "bytes": 5600963,
+      "sha256": "d107a7fef17815f0733771f053ab54315a10616a78d10a2ca91cd4200dba66f2"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_selected_seed3037/final_epoch.pt",
+      "bytes": 1111174,
+      "sha256": "3af2829bd9a30e275d47704305025f711804a82e53d8d5cad10dfa17ad9e5858"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_selected_seed3037/predictions_ce.csv",
+      "bytes": 190642,
+      "sha256": "5cf60dd0df6e2a21443e3cdc0eb24d7007a354d7445334b06c2903ec370a6211"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_selected_seed3037/predictions_f1.csv",
+      "bytes": 190124,
+      "sha256": "4e5f610278e2a76758a443b9a948410d5ad8f7445f971b63927fc80723d56c2f"
+    },
+    {
+      "path": "fashion_confirmation/tasks/transformer_selected_seed3037/predictions_final.csv",
+      "bytes": 190124,
+      "sha256": "4e5f610278e2a76758a443b9a948410d5ad8f7445f971b63927fc80723d56c2f"
+    },
+    {
+      "path": "rgb_prospective/BLINDED_COHORT_SELECTION.json",
+      "bytes": 170565,
+      "sha256": "068ced18f0643eb2d704af2f22cf2c1df410fad918a634627ebab44b7b36ebd3"
+    },
+    {
+      "path": "rgb_prospective/BLINDED_DUPLICATE_AUDIT.json",
+      "bytes": 9833018,
+      "sha256": "826b4558e19a11e97586cc1f4378b6e1eb86537880a197d82fe25119a759abe0"
+    },
+    {
+      "path": "rgb_prospective/PROSPECTIVE_COMPLETE.json",
+      "bytes": 3389,
+      "sha256": "1806138f634d60f731700a358faae0abcc2df10f3719a7d1666cfd33831e3b7d"
+    },
+    {
+      "path": "rgb_prospective/PROSPECTIVE_FREEZE.json",
+      "bytes": 14293,
+      "sha256": "82745fb359508780117f5248298414ba38363716e2e0b454250d629009bd97e0"
+    },
+    {
+      "path": "rgb_prospective/PROSPECTIVE_RESULTS.json",
+      "bytes": 47392,
+      "sha256": "9b51c6a5b9628cad9b27ac8df5d0fab0b7df429858a12bfe187feccc09851d1a"
+    },
+    {
+      "path": "rgb_prospective/evaluation/INFERENCE_INPUTS.json",
+      "bytes": 1188,
+      "sha256": "72c3e370120e63860789432375258ac64c296564312250f509fbbf24cc1dcd62"
+    },
+    {
+      "path": "rgb_prospective/evaluation/final_C0_seed2718/LOGITS_RECEIPT.json",
+      "bytes": 280,
+      "sha256": "4eee55746ef6eae611d3101546c1e77e7a7152cec3ce818a03eba3f6ccc1a8bc"
+    },
+    {
+      "path": "rgb_prospective/evaluation/final_C0_seed2718/logits.npz",
+      "bytes": 61645,
+      "sha256": "aa8b00c593a85f5608fdcf5401bac59d33728e057805fc8225ab134b97e13726"
+    },
+    {
+      "path": "rgb_prospective/evaluation/final_C0_seed2718/metrics.json",
+      "bytes": 5085,
+      "sha256": "4c66846a087ff293ecf0d77914d30d4d89d62e978b972e8d27d7fb87808b1887"
+    },
+    {
+      "path": "rgb_prospective/evaluation/final_C0_seed314/LOGITS_RECEIPT.json",
+      "bytes": 280,
+      "sha256": "d79cdac3283255aca9a149e6a208d1bf7c9c14b15f234c5cbbdb7797009ad046"
+    },
+    {
+      "path": "rgb_prospective/evaluation/final_C0_seed314/logits.npz",
+      "bytes": 61191,
+      "sha256": "2b185964f5eb1fdcffa2e6788537794b4e61d897a311c73c442bd41b7285e5d5"
+    },
+    {
+      "path": "rgb_prospective/evaluation/final_C0_seed314/metrics.json",
+      "bytes": 5024,
+      "sha256": "2b09c6dad9453ad6536e8bb45b65421550bd907b9006e4cbd53dd09527940ffe"
+    },
+    {
+      "path": "rgb_prospective/evaluation/final_C0_seed5772/LOGITS_RECEIPT.json",
+      "bytes": 280,
+      "sha256": "682e4776ec37f02094b6a7cba54196cf67aaff2bb0779bc8fa86dd4e106fb569"
+    },
+    {
+      "path": "rgb_prospective/evaluation/final_C0_seed5772/logits.npz",
+      "bytes": 61234,
+      "sha256": "6b36e00bb4ff65b23c0580f1190322d723b0824e52be7a3f468acfff3c8d8f87"
+    },
+    {
+      "path": "rgb_prospective/evaluation/final_C0_seed5772/metrics.json",
+      "bytes": 5057,
+      "sha256": "8c7b6ea2cae3b82b0ba026048877f6ab78b82d9c9608287bc829d75744d9616b"
+    },
+    {
+      "path": "rgb_prospective/evaluation/final_C4_seed2718/LOGITS_RECEIPT.json",
+      "bytes": 280,
+      "sha256": "886a65da5beac11a7f133a3671310d8dd249e6076237d4aaf92d9e7c5fe5c720"
+    },
+    {
+      "path": "rgb_prospective/evaluation/final_C4_seed2718/logits.npz",
+      "bytes": 61478,
+      "sha256": "3777bca53b5114fb1db33403b955a815b8b89b4897f56d9e3ed4e55729013878"
+    },
+    {
+      "path": "rgb_prospective/evaluation/final_C4_seed2718/metrics.json",
+      "bytes": 5044,
+      "sha256": "d90e114a30e06c907083557d1ba27fffa95539ae0d08b70a0afcc18a2fe2f2d6"
+    },
+    {
+      "path": "rgb_prospective/evaluation/final_C4_seed314/LOGITS_RECEIPT.json",
+      "bytes": 280,
+      "sha256": "db913308c88f86fce8708e0954609c8220366cc70004ab4072103b6699031c0f"
+    },
+    {
+      "path": "rgb_prospective/evaluation/final_C4_seed314/logits.npz",
+      "bytes": 61300,
+      "sha256": "fff0204286aaf2071b8e728e88fc8cd0d91ea46ea57094650a4acdba6baa7e91"
+    },
+    {
+      "path": "rgb_prospective/evaluation/final_C4_seed314/metrics.json",
+      "bytes": 10491,
+      "sha256": "c82b6ed08352b67fa0e28f8ab1f47939c3b2d10afc25a133f4c0377fc7421d09"
+    },
+    {
+      "path": "rgb_prospective/evaluation/final_C4_seed5772/LOGITS_RECEIPT.json",
+      "bytes": 280,
+      "sha256": "4645e09141ffe0b3281ba08e1c2e67809dc6fd85a842a3a088ee90d2823bf288"
+    },
+    {
+      "path": "rgb_prospective/evaluation/final_C4_seed5772/logits.npz",
+      "bytes": 61383,
+      "sha256": "bdf35f978f7de4df5c99d05adc98675f3d3a9e51666f54cdb74100c17f70062e"
+    },
+    {
+      "path": "rgb_prospective/evaluation/final_C4_seed5772/metrics.json",
+      "bytes": 5032,
+      "sha256": "29c1e975a8fbb710c72665ccc4b93f040b4dc4e19d14e62a90ef3aceb23c30f0"
+    },
+    {
+      "path": "rgb_prospective/prepared/COHORT_READY.json",
+      "bytes": 1164,
+      "sha256": "65810b9ebb8b12b793566f42b478be6e5fe5ebddca29f268045911c7ab5466ef"
+    },
+    {
+      "path": "rgb_prospective/prepared/index_manifest.json",
+      "bytes": 3069894,
+      "sha256": "d3b0b6ec4ada4c2498dfc073fd2e23db14a8f8a9dd6b2bb9ada0d40940ea968a"
+    },
+    {
+      "path": "rgb_prospective/prepared/labels.npy",
+      "bytes": 22256,
+      "sha256": "6fc5a19ae0e730839e50b8576c690268db5625b03e6eb654ee50b61f929fa657"
+    },
+    {
+      "path": "source_snapshot/a1/__init__.py",
+      "bytes": 70,
+      "sha256": "4468bf604669f95131749c81f2aa209399ac0b81cccc2be55d450c542ae84b5f"
+    },
+    {
+      "path": "source_snapshot/a1/cnn.py",
+      "bytes": 917,
+      "sha256": "7789a03b6cce9801f2824d58ad8886b5488023a3184ef248b457de1d89d6fff2"
+    },
+    {
+      "path": "source_snapshot/a1/common.py",
+      "bytes": 4601,
+      "sha256": "ff1ba0080d972f30299f2f4a9a47b2c81964684aec956892e22dd96ee0758775"
+    },
+    {
+      "path": "source_snapshot/a1/data.py",
+      "bytes": 7669,
+      "sha256": "ec6189a43e1d7f51f660d0951c4dfe81187088dd07ee7b05930d409003741e15"
+    },
+    {
+      "path": "source_snapshot/a1/eda.py",
+      "bytes": 3208,
+      "sha256": "1cea5c7149e7464f4405a2525d4ec6623f84bd7ae7aae314ed9d59a231890a42"
+    },
+    {
+      "path": "source_snapshot/a1/finalize.py",
+      "bytes": 8614,
+      "sha256": "ddb6eab97cd44c5b55000e10326ecb7ea0f18f7c975116a3b5d498de0c649c4f"
+    },
+    {
+      "path": "source_snapshot/a1/gru.py",
+      "bytes": 1502,
+      "sha256": "eabdb5a6a1b8c5a03ca0bd4f34794cf3f5f10b3f1d4a1dc5668d2f8ec3dcd7dd"
+    },
+    {
+      "path": "source_snapshot/a1/linear.py",
+      "bytes": 326,
+      "sha256": "334f39827326e9fd46ddb9045788aa0a2a5d4bc398598aa8eb90c4f33587d309"
+    },
+    {
+      "path": "source_snapshot/a1/mlp.py",
+      "bytes": 397,
+      "sha256": "f320ff6348b2ded97fddef870b1aca99a00eee7631d66d13bf77b201a34f67c1"
+    },
+    {
+      "path": "source_snapshot/a1/report.py",
+      "bytes": 2943,
+      "sha256": "e03489f6429014be921160f9f2f09765837346fab81c9f6dbf753d3c7f6c208c"
+    },
+    {
+      "path": "source_snapshot/a1/study.py",
+      "bytes": 19269,
+      "sha256": "79c362ffe96bf0b669d502c16fd31c74b6d540bcfc39086630c779fc4bfe119a"
+    },
+    {
+      "path": "source_snapshot/a1/train.py",
+      "bytes": 33972,
+      "sha256": "50e85f5d2f0693b848d091adf165eeb01188d0c70d6beb1aa818e334f5393997"
+    },
+    {
+      "path": "source_snapshot/a1/transformer.py",
+      "bytes": 2369,
+      "sha256": "8e30f028dccf670caaee5bdc82cf0fb46262fc3fe243309d91d7f65dabc2fd80"
+    },
+    {
+      "path": "source_snapshot/a1confirm/__init__.py",
+      "bytes": 243,
+      "sha256": "0ada11a6c06c460a5ac030aa3018bac7895ed04769f9658532018592354c0f97"
+    },
+    {
+      "path": "source_snapshot/a1confirm/__main__.py",
+      "bytes": 1978,
+      "sha256": "46d2dfc02414d59ad672f7b53a768c8ab9b74964dafe07ec4d5a4d09cf0fc2a3"
+    },
+    {
+      "path": "source_snapshot/a1confirm/study.py",
+      "bytes": 32148,
+      "sha256": "e2b158014893a34b53ed54e358c68deca75c379272327120a46d86fac10ddb3c"
+    },
+    {
+      "path": "source_snapshot/a1opt/__init__.py",
+      "bytes": 89,
+      "sha256": "2e107be41d1fbb23997258b446716969a8662dc24ce009390a9504a0bc7fcebe"
+    },
+    {
+      "path": "source_snapshot/a1opt/engine.py",
+      "bytes": 21564,
+      "sha256": "1959cb1189b33aad244dabbd233229bb5cd460c7de903fb40fb18571d872fab6"
+    },
+    {
+      "path": "source_snapshot/a1opt/models.py",
+      "bytes": 5202,
+      "sha256": "e2509f0354e468b7e288cf2a41f903b115ccbeb97ebb38e83ea6e2d470a5281e"
+    },
+    {
+      "path": "source_snapshot/a1opt/recipes.py",
+      "bytes": 11815,
+      "sha256": "70c847ae2b3c478a15af0b767d1fc6ad67fa362bfcb9321330d3c44a33ffd909"
+    },
+    {
+      "path": "source_snapshot/a1opt/storage.py",
+      "bytes": 4314,
+      "sha256": "e589164d9e61650674bb11dd2c60642b76623cdf83e827988af93a3647759bec"
+    },
+    {
+      "path": "source_snapshot/a1opt/study.py",
+      "bytes": 37562,
+      "sha256": "4b07a893bd6bdf3d9b2ce27f031e315fb0bf228a0c44c475d6b73591a50a6db0"
+    },
+    {
+      "path": "source_snapshot/garmentlab/__init__.py",
+      "bytes": 108,
+      "sha256": "7a1cf56e2f4cd7912fd14a8ca9743d3f943fad0df7a3021e5c2e970709248899"
+    },
+    {
+      "path": "source_snapshot/garmentlab/api.py",
+      "bytes": 11061,
+      "sha256": "e125a3fad803a6d8504ec6d4bfb9727078f7b694f35e0b2df06c9b86c388d16e"
+    },
+    {
+      "path": "source_snapshot/garmentlab/backend.py",
+      "bytes": 3026,
+      "sha256": "a39d06b05aba5388197ca47486c95877e603ef2ef816bd7315b1676eb9c24443"
+    },
+    {
+      "path": "source_snapshot/garmentlab/calibration_v2.py",
+      "bytes": 19905,
+      "sha256": "1944f7931d6a3cb356f944717c5b7db482f5696e89341102f58fb46f198a460e"
+    },
+    {
+      "path": "source_snapshot/garmentlab/data.py",
+      "bytes": 25787,
+      "sha256": "1ecede748a319f92a47b63c52b99c121348047c52522572046051fd60f0dd497"
+    },
+    {
+      "path": "source_snapshot/garmentlab/evaluate.py",
+      "bytes": 48372,
+      "sha256": "754b146f23ee0a8bbcedc5d0f2b8939c01cd128a8939a149535518f8b84f4e1b"
+    },
+    {
+      "path": "source_snapshot/garmentlab/evaluate_v2.py",
+      "bytes": 24174,
+      "sha256": "a5d5892808de0f98a54462f59af2a48e67e7eaab05541b839b9497b0d8177ed4"
+    },
+    {
+      "path": "source_snapshot/garmentlab/images.py",
+      "bytes": 32503,
+      "sha256": "3632672b8db33fc6e02a4158d72ba1f32ccab4c3c7dd788eec9e18acb40fea75"
+    },
+    {
+      "path": "source_snapshot/garmentlab/inference.py",
+      "bytes": 9664,
+      "sha256": "24a768f17f1a921cf6120bda760d698876e56d3bcd124563ce0a4d5c20484d31"
+    },
+    {
+      "path": "source_snapshot/garmentlab/probabilities.py",
+      "bytes": 1084,
+      "sha256": "91ccab49f48fe4bb4dbf8dab2bd9121dcdf10fcab072a07969535fef3f72e7c4"
+    },
+    {
+      "path": "source_snapshot/garmentlab/prospective.py",
+      "bytes": 40314,
+      "sha256": "64cbec076f9e4d09c36e4df2bbac30b0e15112e19451ee94c2b74ca3e02644a5"
+    },
+    {
+      "path": "source_snapshot/garmentlab/recovery.py",
+      "bytes": 24917,
+      "sha256": "f57857f65cbc15d02909c75e589b4e1dab39503dbd8f14eaf5a1de845ffd52eb"
+    },
+    {
+      "path": "source_snapshot/garmentlab/release.py",
+      "bytes": 15386,
+      "sha256": "4118112fe8eb733058e2843bfd3e1b37cb23c0330e4bfad97e574fce165ec094"
+    },
+    {
+      "path": "source_snapshot/garmentlab/runtime.py",
+      "bytes": 7931,
+      "sha256": "7c7b244d44db9a48aca372365d343535bd096bffbf4b2b9bf151f3c04c2efdd6"
+    },
+    {
+      "path": "source_snapshot/garmentlab/study_v2.py",
+      "bytes": 29425,
+      "sha256": "107310ec9d363899945dae27c6cf89b625a4e4fbd0bfecfad603d30a7847f00d"
+    },
+    {
+      "path": "source_snapshot/garmentlab/training.py",
+      "bytes": 31489,
+      "sha256": "b46c52fd58cfbf737b148b6244aa6622baf42454df1a8195f6d79ebd78e92c6d"
+    },
+    {
+      "path": "source_snapshot/garmentlab/uncertainty_v2.py",
+      "bytes": 4520,
+      "sha256": "5572cc377c3fffc0dce46f4a2e53a4ddd49d73237cf1179d7d62a3eb4307d923"
+    }
+  ],
+  "photographs_exported": false,
+  "source_package_identity": {
+    "schema": "co3133_confirmatory_bundle_v1",
+    "controller_sha256": "61709cf22a735de6b49d4f322df88c4039f842bc93259252e6cc569fae726cd8",
+    "source_package_manifest_sha256": "d4e8ec8e773b1c5581662a7b1c2105328ab88916daa61472e9023a23a3fd1be1",
+    "fashion": {
+      "trajectories": 30,
+      "fresh_seeds": [
+        1009,
+        2027,
+        3037
+      ],
+      "epochs": 60,
+      "recipe_factor": [
+        "C0",
+        "selected"
+      ],
+      "checkpoint_factor": [
+        "ce",
+        "f1"
+      ],
+      "primary": "CNN selected minus C0 at fixed final epoch",
+      "scope": "Previously used Fashion-MNIST validation; no new blind-test claim"
+    },
+    "rgb": {
+      "models": "Six fixed C0/C4 models",
+      "cohort": "Project-unused Fashionpedia training-source license IDs3/5",
+      "source_group_cap": 2000,
+      "scope": "Prospectively locked same-source license-cohort shift; not external/IID"
+    },
+    "max_controller_seconds": 18000,
+    "new_rgb_training_or_calibration": false
+  }
+}

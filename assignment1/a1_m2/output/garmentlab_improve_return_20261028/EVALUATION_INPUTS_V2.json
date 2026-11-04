@@ -1,0 +1,29 @@
+{
+  "schema": "garmentlab_finalization_inputs_v2",
+  "study_binding": "de1776965e16fa98f8b732bc8eec6770636e07954224e3c14a84877702d90c2b",
+  "final_selection_sha256": "4ba4d6a5ccd3d881b89fea97a83eb281f153b0db3a1073d1c5fe342116f30d97",
+  "prepared_bindings": {
+    "images_uint8.npy": "c9ba2ec047594062ab38d7d7d0e5376363c61c86ebf8eb24992f0479c3204b27",
+    "labels.npy": "7bd6f836c34ca005b69a962564845b78f6e054de0c44a51db2bda37bf50a3d61",
+    "roles.npy": "65227362fe6541996c2a5938126040c0b36249c24e5b1c751ac54fe458137d23",
+    "index_manifest.json": "cacb96a7d87529dce147a7e73237eec410ba29ed437b0d464cfca57fc9509637",
+    "DATA_READINESS.json": "1f8c4ac24b7f71966658749a708f8eed2aed8d492d077628fcc395d802a0422f"
+  },
+  "config_sha256": "999fb025978461879af0f856f4b573150724c56de35530de0065b2aba8268783",
+  "backend_sha256": "e5b7d5fbc01b7356ebb10a7b592c8510c606c250331734e1001682acf0851ef6",
+  "source_sha256": {
+    "evaluate_v2.py": "a5d5892808de0f98a54462f59af2a48e67e7eaab05541b839b9497b0d8177ed4",
+    "evaluate.py": "754b146f23ee0a8bbcedc5d0f2b8939c01cd128a8939a149535518f8b84f4e1b",
+    "calibration_v2.py": "1944f7931d6a3cb356f944717c5b7db482f5696e89341102f58fb46f198a460e",
+    "uncertainty_v2.py": "5572cc377c3fffc0dce46f4a2e53a4ddd49d73237cf1179d7d62a3eb4307d923",
+    "probabilities.py": "91ccab49f48fe4bb4dbf8dab2bd9121dcdf10fcab072a07969535fef3f72e7c4",
+    "inference.py": "24a768f17f1a921cf6120bda760d698876e56d3bcd124563ce0a4d5c20484d31",
+    "release.py": "4118112fe8eb733058e2843bfd3e1b37cb23c0330e4bfad97e574fce165ec094",
+    "api.py": "e125a3fad803a6d8504ec6d4bfb9727078f7b694f35e0b2df06c9b86c388d16e",
+    "training.py": "b46c52fd58cfbf737b148b6244aa6622baf42454df1a8195f6d79ebd78e92c6d",
+    "study_v2.py": "107310ec9d363899945dae27c6cf89b625a4e4fbd0bfecfad603d30a7847f00d",
+    "reexport_garmentlab.py": "29cfceb5d91def5dec607b9ae92a6f1e505ca14d42aa9dfc69315f9c4557381a"
+  },
+  "smoke_only": false,
+  "assessment_scope": "POST_TEST_EXPLORATORY_REGRESSION"
+}

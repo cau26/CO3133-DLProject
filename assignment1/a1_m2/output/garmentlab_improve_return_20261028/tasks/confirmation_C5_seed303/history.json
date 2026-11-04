@@ -1,0 +1,2234 @@
+[
+  {
+    "epoch": 1,
+    "train": {
+      "loss": 0.6795222344251588,
+      "accuracy": 0.7488970854125986,
+      "macro_f1": 0.6751184837400523,
+      "confusion": [
+        [
+          540,
+          320,
+          253,
+          40,
+          19,
+          112
+        ],
+        [
+          160,
+          2612,
+          118,
+          123,
+          77,
+          369
+        ],
+        [
+          182,
+          178,
+          801,
+          27,
+          8,
+          112
+        ],
+        [
+          7,
+          124,
+          7,
+          2064,
+          55,
+          141
+        ],
+        [
+          7,
+          169,
+          3,
+          97,
+          341,
+          156
+        ],
+        [
+          48,
+          386,
+          40,
+          85,
+          49,
+          3997
+        ]
+      ],
+      "examples": 13827,
+      "objective_loss": 0.6795222344251588,
+      "loss_definition": "Unsmoothed CE; objective_loss separately records the training regularization objective"
+    },
+    "selection": {
+      "loss": 0.513488909787011,
+      "accuracy": 0.8215451577801959,
+      "macro_f1": 0.7727008544075978,
+      "confusion": [
+        [
+          119,
+          38,
+          11,
+          1,
+          2,
+          9
+        ],
+        [
+          29,
+          376,
+          3,
+          14,
+          11,
+          28
+        ],
+        [
+          35,
+          28,
+          102,
+          5,
+          0,
+          13
+        ],
+        [
+          0,
+          4,
+          0,
+          295,
+          3,
+          7
+        ],
+        [
+          0,
+          9,
+          0,
+          10,
+          70,
+          18
+        ],
+        [
+          8,
+          27,
+          2,
+          6,
+          7,
+          548
+        ]
+      ],
+      "examples": 1838,
+      "objective_loss": 0.513488909787011,
+      "loss_definition": "Unsmoothed CE; objective_loss separately records the training regularization objective"
+    },
+    "lr": [
+      0.0003,
+      0.001
+    ],
+    "wall_seconds": 12.831199290000768
+  },
+  {
+    "epoch": 2,
+    "train": {
+      "loss": 0.4225424458192602,
+      "accuracy": 0.8476169812685326,
+      "macro_f1": 0.803100958493283,
+      "confusion": [
+        [
+          796,
+          222,
+          205,
+          16,
+          6,
+          39
+        ],
+        [
+          128,
+          2931,
+          85,
+          41,
+          55,
+          219
+        ],
+        [
+          138,
+          135,
+          967,
+          14,
+          7,
+          47
+        ],
+        [
+          5,
+          49,
+          5,
+          2262,
+          47,
+          30
+        ],
+        [
+          1,
+          75,
+          3,
+          61,
+          545,
+          88
+        ],
+        [
+          28,
+          250,
+          29,
+          20,
+          59,
+          4219
+        ]
+      ],
+      "examples": 13827,
+      "objective_loss": 0.4225424458192602,
+      "loss_definition": "Unsmoothed CE; objective_loss separately records the training regularization objective"
+    },
+    "selection": {
+      "loss": 0.4716461212967114,
+      "accuracy": 0.838411316648531,
+      "macro_f1": 0.802293716107955,
+      "confusion": [
+        [
+          125,
+          38,
+          9,
+          1,
+          1,
+          6
+        ],
+        [
+          20,
+          420,
+          6,
+          2,
+          2,
+          11
+        ],
+        [
+          25,
+          37,
+          113,
+          1,
+          0,
+          7
+        ],
+        [
+          2,
+          13,
+          0,
+          283,
+          5,
+          6
+        ],
+        [
+          0,
+          18,
+          1,
+          6,
+          70,
+          12
+        ],
+        [
+          4,
+          55,
+          4,
+          3,
+          2,
+          530
+        ]
+      ],
+      "examples": 1838,
+      "objective_loss": 0.4716461212967114,
+      "loss_definition": "Unsmoothed CE; objective_loss separately records the training regularization objective"
+    },
+    "lr": [
+      0.00029783510480423965,
+      0.000992783682680799
+    ],
+    "wall_seconds": 12.72279621799953
+  },
+  {
+    "epoch": 3,
+    "train": {
+      "loss": 0.3298434042091948,
+      "accuracy": 0.8787155565198524,
+      "macro_f1": 0.8455394537171838,
+      "confusion": [
+        [
+          900,
+          187,
+          151,
+          8,
+          5,
+          33
+        ],
+        [
+          119,
+          3039,
+          86,
+          35,
+          34,
+          146
+        ],
+        [
+          118,
+          114,
+          1028,
+          6,
+          9,
+          33
+        ],
+        [
+          1,
+          38,
+          2,
+          2293,
+          36,
+          28
+        ],
+        [
+          1,
+          46,
+          2,
+          49,
+          609,
+          66
+        ],
+        [
+          25,
+          203,
+          31,
+          22,
+          43,
+          4281
+        ]
+      ],
+      "examples": 13827,
+      "objective_loss": 0.3298434042091948,
+      "loss_definition": "Unsmoothed CE; objective_loss separately records the training regularization objective"
+    },
+    "selection": {
+      "loss": 0.4721491272612936,
+      "accuracy": 0.838411316648531,
+      "macro_f1": 0.794089996348314,
+      "confusion": [
+        [
+          91,
+          38,
+          35,
+          0,
+          3,
+          13
+        ],
+        [
+          8,
+          364,
+          27,
+          8,
+          7,
+          47
+        ],
+        [
+          3,
+          21,
+          143,
+          2,
+          2,
+          12
+        ],
+        [
+          0,
+          3,
+          1,
+          292,
+          5,
+          8
+        ],
+        [
+          0,
+          7,
+          0,
+          7,
+          76,
+          17
+        ],
+        [
+          0,
+          9,
+          8,
+          2,
+          4,
+          575
+        ]
+      ],
+      "examples": 1838,
+      "objective_loss": 0.4721491272612936,
+      "loss_definition": "Unsmoothed CE; objective_loss separately records the training regularization objective"
+    },
+    "lr": [
+      0.0002914061984619919,
+      0.0009713539948733066
+    ],
+    "wall_seconds": 12.78743639500044
+  },
+  {
+    "epoch": 4,
+    "train": {
+      "loss": 0.25044332376450307,
+      "accuracy": 0.9085123309466985,
+      "macro_f1": 0.885125784989389,
+      "confusion": [
+        [
+          987,
+          144,
+          125,
+          6,
+          1,
+          21
+        ],
+        [
+          100,
+          3122,
+          65,
+          21,
+          20,
+          131
+        ],
+        [
+          91,
+          95,
+          1086,
+          4,
+          7,
+          25
+        ],
+        [
+          5,
+          27,
+          1,
+          2321,
+          29,
+          15
+        ],
+        [
+          0,
+          30,
+          0,
+          40,
+          668,
+          35
+        ],
+        [
+          18,
+          148,
+          17,
+          18,
+          26,
+          4378
+        ]
+      ],
+      "examples": 13827,
+      "objective_loss": 0.25044332376450307,
+      "loss_definition": "Unsmoothed CE; objective_loss separately records the training regularization objective"
+    },
+    "selection": {
+      "loss": 0.4641548774739215,
+      "accuracy": 0.8454842219804135,
+      "macro_f1": 0.8042950919929185,
+      "confusion": [
+        [
+          117,
+          40,
+          12,
+          0,
+          3,
+          8
+        ],
+        [
+          14,
+          405,
+          9,
+          5,
+          11,
+          17
+        ],
+        [
+          33,
+          24,
+          116,
+          2,
+          2,
+          6
+        ],
+        [
+          0,
+          3,
+          0,
+          290,
+          12,
+          4
+        ],
+        [
+          0,
+          5,
+          0,
+          7,
+          89,
+          6
+        ],
+        [
+          4,
+          35,
+          6,
+          5,
+          11,
+          537
+        ]
+      ],
+      "examples": 1838,
+      "objective_loss": 0.4641548774739215,
+      "loss_definition": "Unsmoothed CE; objective_loss separately records the training regularization objective"
+    },
+    "lr": [
+      0.0002809086200392825,
+      0.0009363620667976085
+    ],
+    "wall_seconds": 12.796967459999905
+  },
+  {
+    "epoch": 5,
+    "train": {
+      "loss": 0.18738864180771025,
+      "accuracy": 0.9343313806320966,
+      "macro_f1": 0.9157381369315618,
+      "confusion": [
+        [
+          1054,
+          116,
+          96,
+          4,
+          2,
+          12
+        ],
+        [
+          86,
+          3210,
+          55,
+          17,
+          13,
+          78
+        ],
+        [
+          70,
+          65,
+          1149,
+          4,
+          4,
+          16
+        ],
+        [
+          1,
+          11,
+          3,
+          2350,
+          27,
+          6
+        ],
+        [
+          1,
+          19,
+          2,
+          22,
+          704,
+          25
+        ],
+        [
+          12,
+          97,
+          9,
+          13,
+          22,
+          4452
+        ]
+      ],
+      "examples": 13827,
+      "objective_loss": 0.18738864180771025,
+      "loss_definition": "Unsmoothed CE; objective_loss separately records the training regularization objective"
+    },
+    "selection": {
+      "loss": 0.5181079837002095,
+      "accuracy": 0.8541893362350381,
+      "macro_f1": 0.813953216343756,
+      "confusion": [
+        [
+          109,
+          44,
+          11,
+          2,
+          2,
+          12
+        ],
+        [
+          13,
+          396,
+          6,
+          10,
+          6,
+          30
+        ],
+        [
+          21,
+          22,
+          122,
+          3,
+          1,
+          14
+        ],
+        [
+          1,
+          1,
+          0,
+          298,
+          5,
+          4
+        ],
+        [
+          0,
+          5,
+          0,
+          12,
+          81,
+          9
+        ],
+        [
+          1,
+          17,
+          3,
+          7,
+          6,
+          564
+        ]
+      ],
+      "examples": 1838,
+      "objective_loss": 0.5181079837002095,
+      "loss_definition": "Unsmoothed CE; objective_loss separately records the training regularization objective"
+    },
+    "lr": [
+      0.0002666613331444543,
+      0.0008888711104815145
+    ],
+    "wall_seconds": 12.847333088999221
+  },
+  {
+    "epoch": 6,
+    "train": {
+      "loss": 0.13917112693814554,
+      "accuracy": 0.9498806682577565,
+      "macro_f1": 0.9354954499589548,
+      "confusion": [
+        [
+          1113,
+          81,
+          78,
+          4,
+          0,
+          8
+        ],
+        [
+          55,
+          3274,
+          47,
+          4,
+          9,
+          70
+        ],
+        [
+          66,
+          57,
+          1173,
+          1,
+          1,
+          10
+        ],
+        [
+          1,
+          7,
+          4,
+          2368,
+          15,
+          3
+        ],
+        [
+          0,
+          11,
+          1,
+          24,
+          720,
+          17
+        ],
+        [
+          10,
+          72,
+          13,
+          5,
+          19,
+          4486
+        ]
+      ],
+      "examples": 13827,
+      "objective_loss": 0.13917112693814554,
+      "loss_definition": "Unsmoothed CE; objective_loss separately records the training regularization objective"
+    },
+    "selection": {
+      "loss": 0.47612917901577184,
+      "accuracy": 0.8607181719260065,
+      "macro_f1": 0.8276876943313235,
+      "confusion": [
+        [
+          123,
+          31,
+          16,
+          1,
+          2,
+          7
+        ],
+        [
+          20,
+          397,
+          17,
+          4,
+          3,
+          20
+        ],
+        [
+          7,
+          24,
+          140,
+          3,
+          0,
+          9
+        ],
+        [
+          1,
+          3,
+          0,
+          289,
+          7,
+          9
+        ],
+        [
+          1,
+          7,
+          0,
+          9,
+          76,
+          14
+        ],
+        [
+          7,
+          25,
+          3,
+          4,
+          2,
+          557
+        ]
+      ],
+      "examples": 1838,
+      "objective_loss": 0.47612917901577184,
+      "loss_definition": "Unsmoothed CE; objective_loss separately records the training regularization objective"
+    },
+    "lr": [
+      0.0002490972343803318,
+      0.0008303241146011062
+    ],
+    "wall_seconds": 12.766922443000112
+  },
+  {
+    "epoch": 7,
+    "train": {
+      "loss": 0.09686681497881139,
+      "accuracy": 0.9647067332031533,
+      "macro_f1": 0.9536792103606963,
+      "confusion": [
+        [
+          1176,
+          51,
+          50,
+          2,
+          0,
+          5
+        ],
+        [
+          41,
+          3321,
+          36,
+          9,
+          9,
+          43
+        ],
+        [
+          46,
+          34,
+          1212,
+          3,
+          3,
+          10
+        ],
+        [
+          1,
+          5,
+          0,
+          2372,
+          18,
+          2
+        ],
+        [
+          0,
+          13,
+          0,
+          16,
+          730,
+          14
+        ],
+        [
+          5,
+          45,
+          10,
+          4,
+          13,
+          4528
+        ]
+      ],
+      "examples": 13827,
+      "objective_loss": 0.09686681497881139,
+      "loss_definition": "Unsmoothed CE; objective_loss separately records the training regularization objective"
+    },
+    "selection": {
+      "loss": 0.557923146443476,
+      "accuracy": 0.8601741022850925,
+      "macro_f1": 0.8269751092166074,
+      "confusion": [
+        [
+          120,
+          33,
+          16,
+          1,
+          2,
+          8
+        ],
+        [
+          16,
+          407,
+          17,
+          2,
+          5,
+          14
+        ],
+        [
+          9,
+          21,
+          142,
+          2,
+          2,
+          7
+        ],
+        [
+          3,
+          3,
+          1,
+          294,
+          5,
+          3
+        ],
+        [
+          2,
+          5,
+          0,
+          7,
+          81,
+          12
+        ],
+        [
+          5,
+          35,
+          9,
+          3,
+          9,
+          537
+        ]
+      ],
+      "examples": 1838,
+      "objective_loss": 0.557923146443476,
+      "loss_definition": "Unsmoothed CE; objective_loss separately records the training regularization objective"
+    },
+    "lr": [
+      0.00022874999999999998,
+      0.0007624999999999999
+    ],
+    "wall_seconds": 12.78785649800011
+  },
+  {
+    "epoch": 8,
+    "train": {
+      "loss": 0.06825065211509936,
+      "accuracy": 0.9746872061907862,
+      "macro_f1": 0.9688707105123463,
+      "confusion": [
+        [
+          1206,
+          39,
+          35,
+          0,
+          1,
+          3
+        ],
+        [
+          31,
+          3354,
+          17,
+          6,
+          6,
+          45
+        ],
+        [
+          32,
+          27,
+          1240,
+          0,
+          2,
+          7
+        ],
+        [
+          0,
+          2,
+          2,
+          2380,
+          6,
+          8
+        ],
+        [
+          0,
+          4,
+          0,
+          12,
+          750,
+          7
+        ],
+        [
+          5,
+          41,
+          4,
+          3,
+          5,
+          4547
+        ]
+      ],
+      "examples": 13827,
+      "objective_loss": 0.06825065211509936,
+      "loss_definition": "Unsmoothed CE; objective_loss separately records the training regularization objective"
+    },
+    "selection": {
+      "loss": 0.6092073880744058,
+      "accuracy": 0.8569096844396082,
+      "macro_f1": 0.823032750815229,
+      "confusion": [
+        [
+          120,
+          37,
+          16,
+          0,
+          3,
+          4
+        ],
+        [
+          19,
+          411,
+          13,
+          3,
+          2,
+          13
+        ],
+        [
+          11,
+          26,
+          138,
+          1,
+          2,
+          5
+        ],
+        [
+          3,
+          5,
+          4,
+          284,
+          10,
+          3
+        ],
+        [
+          2,
+          8,
+          1,
+          5,
+          83,
+          8
+        ],
+        [
+          5,
+          37,
+          8,
+          2,
+          7,
+          539
+        ]
+      ],
+      "examples": 1838,
+      "objective_loss": 0.6092073880744058,
+      "loss_definition": "Unsmoothed CE; objective_loss separately records the training regularization objective"
+    },
+    "lr": [
+      0.00020623787042390782,
+      0.0006874595680796927
+    ],
+    "wall_seconds": 12.925882252999145
+  },
+  {
+    "epoch": 9,
+    "train": {
+      "loss": 0.046623245953353716,
+      "accuracy": 0.9827873002097346,
+      "macro_f1": 0.9764707893615278,
+      "confusion": [
+        [
+          1225,
+          26,
+          29,
+          1,
+          0,
+          3
+        ],
+        [
+          20,
+          3403,
+          18,
+          2,
+          4,
+          12
+        ],
+        [
+          33,
+          13,
+          1253,
+          2,
+          3,
+          4
+        ],
+        [
+          0,
+          3,
+          0,
+          2387,
+          6,
+          2
+        ],
+        [
+          0,
+          2,
+          0,
+          7,
+          756,
+          8
+        ],
+        [
+          3,
+          23,
+          1,
+          2,
+          11,
+          4565
+        ]
+      ],
+      "examples": 13827,
+      "objective_loss": 0.046623245953353716,
+      "loss_definition": "Unsmoothed CE; objective_loss separately records the training regularization objective"
+    },
+    "selection": {
+      "loss": 0.6911784130613744,
+      "accuracy": 0.8590859630032645,
+      "macro_f1": 0.8251075529056785,
+      "confusion": [
+        [
+          117,
+          34,
+          18,
+          1,
+          2,
+          8
+        ],
+        [
+          18,
+          392,
+          16,
+          6,
+          4,
+          25
+        ],
+        [
+          12,
+          21,
+          138,
+          2,
+          2,
+          8
+        ],
+        [
+          2,
+          3,
+          0,
+          298,
+          2,
+          4
+        ],
+        [
+          1,
+          6,
+          0,
+          10,
+          77,
+          13
+        ],
+        [
+          1,
+          29,
+          4,
+          4,
+          3,
+          557
+        ]
+      ],
+      "examples": 1838,
+      "objective_loss": 0.6911784130613744,
+      "loss_definition": "Unsmoothed CE; objective_loss separately records the training regularization objective"
+    },
+    "lr": [
+      0.0001822448653175376,
+      0.000607482884391792
+    ],
+    "wall_seconds": 12.777537087000383
+  },
+  {
+    "epoch": 10,
+    "train": {
+      "loss": 0.03810530962039777,
+      "accuracy": 0.985752513198814,
+      "macro_f1": 0.9814166626768185,
+      "confusion": [
+        [
+          1229,
+          24,
+          27,
+          0,
+          1,
+          3
+        ],
+        [
+          21,
+          3404,
+          13,
+          2,
+          3,
+          16
+        ],
+        [
+          18,
+          13,
+          1275,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          6,
+          1,
+          2384,
+          5,
+          2
+        ],
+        [
+          1,
+          3,
+          0,
+          6,
+          758,
+          5
+        ],
+        [
+          3,
+          18,
+          3,
+          0,
+          1,
+          4580
+        ]
+      ],
+      "examples": 13827,
+      "objective_loss": 0.03810530962039777,
+      "loss_definition": "Unsmoothed CE; objective_loss separately records the training regularization objective"
+    },
+    "selection": {
+      "loss": 0.7029764904874712,
+      "accuracy": 0.8634385201305768,
+      "macro_f1": 0.8349838376689113,
+      "confusion": [
+        [
+          126,
+          28,
+          17,
+          0,
+          3,
+          6
+        ],
+        [
+          26,
+          389,
+          26,
+          3,
+          3,
+          14
+        ],
+        [
+          11,
+          16,
+          149,
+          1,
+          2,
+          4
+        ],
+        [
+          3,
+          2,
+          3,
+          297,
+          4,
+          0
+        ],
+        [
+          1,
+          5,
+          1,
+          7,
+          86,
+          7
+        ],
+        [
+          6,
+          35,
+          8,
+          2,
+          7,
+          540
+        ]
+      ],
+      "examples": 1838,
+      "objective_loss": 0.7029764904874712,
+      "loss_definition": "Unsmoothed CE; objective_loss separately records the training regularization objective"
+    },
+    "lr": [
+      0.00015749999999999998,
+      0.0005250000000000001
+    ],
+    "wall_seconds": 12.793866818999959
+  },
+  {
+    "epoch": 11,
+    "train": {
+      "loss": 0.023334115300671397,
+      "accuracy": 0.9919722282490779,
+      "macro_f1": 0.9890008177989489,
+      "confusion": [
+        [
+          1258,
+          11,
+          14,
+          0,
+          0,
+          1
+        ],
+        [
+          7,
+          3428,
+          10,
+          2,
+          3,
+          9
+        ],
+        [
+          16,
+          6,
+          1282,
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          1,
+          0,
+          2392,
+          4,
+          1
+        ],
+        [
+          0,
+          3,
+          0,
+          1,
+          765,
+          4
+        ],
+        [
+          3,
+          4,
+          1,
+          2,
+          4,
+          4591
+        ]
+      ],
+      "examples": 13827,
+      "objective_loss": 0.023334115300671397,
+      "loss_definition": "Unsmoothed CE; objective_loss separately records the training regularization objective"
+    },
+    "selection": {
+      "loss": 0.7929340635017939,
+      "accuracy": 0.8732317736670294,
+      "macro_f1": 0.844772881589955,
+      "confusion": [
+        [
+          122,
+          32,
+          16,
+          2,
+          2,
+          6
+        ],
+        [
+          22,
+          402,
+          10,
+          5,
+          5,
+          17
+        ],
+        [
+          8,
+          19,
+          144,
+          2,
+          1,
+          9
+        ],
+        [
+          2,
+          2,
+          1,
+          298,
+          4,
+          2
+        ],
+        [
+          1,
+          5,
+          0,
+          7,
+          88,
+          6
+        ],
+        [
+          7,
+          24,
+          5,
+          5,
+          6,
+          551
+        ]
+      ],
+      "examples": 1838,
+      "objective_loss": 0.7929340635017939,
+      "loss_definition": "Unsmoothed CE; objective_loss separately records the training regularization objective"
+    },
+    "lr": [
+      0.0001327551346824624,
+      0.0004425171156082081
+    ],
+    "wall_seconds": 12.759085419000257
+  },
+  {
+    "epoch": 12,
+    "train": {
+      "loss": 0.01526594799287285,
+      "accuracy": 0.9952990525782889,
+      "macro_f1": 0.9940665314345005,
+      "confusion": [
+        [
+          1270,
+          2,
+          10,
+          0,
+          1,
+          1
+        ],
+        [
+          4,
+          3439,
+          4,
+          0,
+          1,
+          11
+        ],
+        [
+          8,
+          6,
+          1294,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          2396,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          770,
+          1
+        ],
+        [
+          1,
+          6,
+          4,
+          1,
+          0,
+          4593
+        ]
+      ],
+      "examples": 13827,
+      "objective_loss": 0.01526594799287285,
+      "loss_definition": "Unsmoothed CE; objective_loss separately records the training regularization objective"
+    },
+    "selection": {
+      "loss": 0.9645467144361128,
+      "accuracy": 0.8634385201305768,
+      "macro_f1": 0.831613493264313,
+      "confusion": [
+        [
+          120,
+          34,
+          18,
+          2,
+          2,
+          4
+        ],
+        [
+          17,
+          413,
+          14,
+          5,
+          2,
+          10
+        ],
+        [
+          9,
+          21,
+          144,
+          3,
+          1,
+          5
+        ],
+        [
+          1,
+          6,
+          3,
+          292,
+          4,
+          3
+        ],
+        [
+          2,
+          10,
+          2,
+          7,
+          77,
+          9
+        ],
+        [
+          7,
+          40,
+          7,
+          2,
+          1,
+          541
+        ]
+      ],
+      "examples": 1838,
+      "objective_loss": 0.9645467144361128,
+      "loss_definition": "Unsmoothed CE; objective_loss separately records the training regularization objective"
+    },
+    "lr": [
+      0.00010876212957609223,
+      0.0003625404319203075
+    ],
+    "wall_seconds": 12.795691086999796
+  },
+  {
+    "epoch": 13,
+    "train": {
+      "loss": 0.010569813699467783,
+      "accuracy": 0.9961669197946048,
+      "macro_f1": 0.9950822742278028,
+      "confusion": [
+        [
+          1271,
+          4,
+          8,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          3447,
+          6,
+          0,
+          0,
+          5
+        ],
+        [
+          6,
+          0,
+          1300,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          2396,
+          1,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          1,
+          767,
+          3
+        ],
+        [
+          0,
+          9,
+          0,
+          2,
+          1,
+          4593
+        ]
+      ],
+      "examples": 13827,
+      "objective_loss": 0.010569813699467783,
+      "loss_definition": "Unsmoothed CE; objective_loss separately records the training regularization objective"
+    },
+    "selection": {
+      "loss": 0.8905555387316383,
+      "accuracy": 0.8650707290533188,
+      "macro_f1": 0.834549979184954,
+      "confusion": [
+        [
+          131,
+          28,
+          10,
+          1,
+          2,
+          8
+        ],
+        [
+          31,
+          394,
+          12,
+          4,
+          5,
+          15
+        ],
+        [
+          20,
+          20,
+          130,
+          2,
+          2,
+          9
+        ],
+        [
+          3,
+          1,
+          0,
+          296,
+          4,
+          5
+        ],
+        [
+          1,
+          4,
+          1,
+          6,
+          86,
+          9
+        ],
+        [
+          9,
+          26,
+          4,
+          3,
+          3,
+          553
+        ]
+      ],
+      "examples": 1838,
+      "objective_loss": 0.8905555387316383,
+      "loss_definition": "Unsmoothed CE; objective_loss separately records the training regularization objective"
+    },
+    "lr": [
+      8.625000000000002e-05,
+      0.0002875000000000001
+    ],
+    "wall_seconds": 13.080227997999827
+  },
+  {
+    "epoch": 14,
+    "train": {
+      "loss": 0.0059055245152509995,
+      "accuracy": 0.9980472987632892,
+      "macro_f1": 0.9973651652406464,
+      "confusion": [
+        [
+          1278,
+          2,
+          3,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          3455,
+          2,
+          1,
+          0,
+          0
+        ],
+        [
+          4,
+          4,
+          1300,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          2398,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          771,
+          2
+        ],
+        [
+          0,
+          4,
+          0,
+          0,
+          3,
+          4598
+        ]
+      ],
+      "examples": 13827,
+      "objective_loss": 0.0059055245152509995,
+      "loss_definition": "Unsmoothed CE; objective_loss separately records the training regularization objective"
+    },
+    "selection": {
+      "loss": 0.9778881113858685,
+      "accuracy": 0.8656147986942329,
+      "macro_f1": 0.8341601535311091,
+      "confusion": [
+        [
+          129,
+          30,
+          10,
+          1,
+          2,
+          8
+        ],
+        [
+          23,
+          399,
+          15,
+          3,
+          1,
+          20
+        ],
+        [
+          13,
+          18,
+          142,
+          2,
+          0,
+          8
+        ],
+        [
+          3,
+          5,
+          1,
+          292,
+          4,
+          4
+        ],
+        [
+          2,
+          13,
+          1,
+          6,
+          73,
+          12
+        ],
+        [
+          6,
+          28,
+          5,
+          2,
+          1,
+          556
+        ]
+      ],
+      "examples": 1838,
+      "objective_loss": 0.9778881113858685,
+      "loss_definition": "Unsmoothed CE; objective_loss separately records the training regularization objective"
+    },
+    "lr": [
+      6.590276561966813e-05,
+      0.00021967588539889384
+    ],
+    "wall_seconds": 12.914673745000073
+  },
+  {
+    "epoch": 15,
+    "train": {
+      "loss": 0.0023283979509051626,
+      "accuracy": 0.9996383886598684,
+      "macro_f1": 0.9993687429767887,
+      "confusion": [
+        [
+          1283,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          3458,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1307,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          2397,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          772,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          4605
+        ]
+      ],
+      "examples": 13827,
+      "objective_loss": 0.0023283979509051626,
+      "loss_definition": "Unsmoothed CE; objective_loss separately records the training regularization objective"
+    },
+    "selection": {
+      "loss": 1.0536172888743345,
+      "accuracy": 0.8737758433079434,
+      "macro_f1": 0.84556686014988,
+      "confusion": [
+        [
+          122,
+          32,
+          14,
+          2,
+          2,
+          8
+        ],
+        [
+          17,
+          410,
+          13,
+          3,
+          2,
+          16
+        ],
+        [
+          10,
+          20,
+          141,
+          2,
+          2,
+          8
+        ],
+        [
+          2,
+          3,
+          0,
+          295,
+          4,
+          5
+        ],
+        [
+          2,
+          5,
+          0,
+          6,
+          84,
+          10
+        ],
+        [
+          4,
+          31,
+          5,
+          2,
+          2,
+          554
+        ]
+      ],
+      "examples": 1838,
+      "objective_loss": 1.0536172888743345,
+      "loss_definition": "Unsmoothed CE; objective_loss separately records the training regularization objective"
+    },
+    "lr": [
+      4.833866685554564e-05,
+      0.00016112888951848547
+    ],
+    "wall_seconds": 12.804395500999817
+  },
+  {
+    "epoch": 16,
+    "train": {
+      "loss": 0.0018421924661772495,
+      "accuracy": 0.9994937441238158,
+      "macro_f1": 0.9993832118033562,
+      "confusion": [
+        [
+          1283,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          3457,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1306,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          2397,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          773,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          4604
+        ]
+      ],
+      "examples": 13827,
+      "objective_loss": 0.0018421924661772495,
+      "loss_definition": "Unsmoothed CE; objective_loss separately records the training regularization objective"
+    },
+    "selection": {
+      "loss": 1.0658425189335794,
+      "accuracy": 0.8721436343852013,
+      "macro_f1": 0.8422194581312498,
+      "confusion": [
+        [
+          123,
+          32,
+          13,
+          1,
+          3,
+          8
+        ],
+        [
+          14,
+          410,
+          10,
+          3,
+          6,
+          18
+        ],
+        [
+          11,
+          22,
+          137,
+          2,
+          2,
+          9
+        ],
+        [
+          0,
+          5,
+          0,
+          291,
+          8,
+          5
+        ],
+        [
+          1,
+          5,
+          0,
+          5,
+          86,
+          10
+        ],
+        [
+          2,
+          30,
+          5,
+          2,
+          3,
+          556
+        ]
+      ],
+      "examples": 1838,
+      "objective_loss": 1.0658425189335794,
+      "loss_definition": "Unsmoothed CE; objective_loss separately records the training regularization objective"
+    },
+    "lr": [
+      3.4091379960717514e-05,
+      0.00011363793320239173
+    ],
+    "wall_seconds": 12.844865805999689
+  },
+  {
+    "epoch": 17,
+    "train": {
+      "loss": 0.001520796788828362,
+      "accuracy": 0.9995660663918421,
+      "macro_f1": 0.9994420515246999,
+      "confusion": [
+        [
+          1283,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          3457,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          1306,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          2398,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          773,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          4604
+        ]
+      ],
+      "examples": 13827,
+      "objective_loss": 0.001520796788828362,
+      "loss_definition": "Unsmoothed CE; objective_loss separately records the training regularization objective"
+    },
+    "selection": {
+      "loss": 1.0730049156130852,
+      "accuracy": 0.8732317736670294,
+      "macro_f1": 0.8451208827169056,
+      "confusion": [
+        [
+          125,
+          31,
+          12,
+          2,
+          2,
+          8
+        ],
+        [
+          19,
+          405,
+          11,
+          3,
+          3,
+          20
+        ],
+        [
+          12,
+          20,
+          138,
+          2,
+          2,
+          9
+        ],
+        [
+          1,
+          4,
+          0,
+          294,
+          5,
+          5
+        ],
+        [
+          1,
+          5,
+          0,
+          6,
+          84,
+          11
+        ],
+        [
+          4,
+          27,
+          5,
+          2,
+          1,
+          559
+        ]
+      ],
+      "examples": 1838,
+      "objective_loss": 1.0730049156130852,
+      "loss_definition": "Unsmoothed CE; objective_loss separately records the training regularization objective"
+    },
+    "lr": [
+      2.3593801538008064e-05,
+      7.864600512669355e-05
+    ],
+    "wall_seconds": 12.879395850999572
+  },
+  {
+    "epoch": 18,
+    "train": {
+      "loss": 0.001008422746926823,
+      "accuracy": 0.9999276777319737,
+      "macro_f1": 0.9999109851077129,
+      "confusion": [
+        [
+          1283,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          3459,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1308,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          2398,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          773,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          4605
+        ]
+      ],
+      "examples": 13827,
+      "objective_loss": 0.001008422746926823,
+      "loss_definition": "Unsmoothed CE; objective_loss separately records the training regularization objective"
+    },
+    "selection": {
+      "loss": 1.0632632208726611,
+      "accuracy": 0.8699673558215452,
+      "macro_f1": 0.8402469513309591,
+      "confusion": [
+        [
+          125,
+          29,
+          14,
+          2,
+          2,
+          8
+        ],
+        [
+          20,
+          399,
+          14,
+          4,
+          4,
+          20
+        ],
+        [
+          12,
+          19,
+          140,
+          2,
+          2,
+          8
+        ],
+        [
+          2,
+          2,
+          0,
+          295,
+          5,
+          5
+        ],
+        [
+          1,
+          4,
+          1,
+          7,
+          84,
+          10
+        ],
+        [
+          5,
+          27,
+          5,
+          2,
+          3,
+          556
+        ]
+      ],
+      "examples": 1838,
+      "objective_loss": 1.0632632208726611,
+      "loss_definition": "Unsmoothed CE; objective_loss separately records the training regularization objective"
+    },
+    "lr": [
+      1.7164895195760358e-05,
+      5.72163173192012e-05
+    ],
+    "wall_seconds": 12.81928706599956
+  }
+]

@@ -1,0 +1,1716 @@
+{
+  "schema": "garmentlab_prospective_results_v1",
+  "status": "PROSPECTIVE_AUDIT_COMPLETE",
+  "smoke_only": false,
+  "inference_inputs_sha256": "72c3e370120e63860789432375258ac64c296564312250f509fbbf24cc1dcd62",
+  "cohort": {
+    "crops": 2766,
+    "components": 1826,
+    "class_support": {
+      "shirt_blouse": {
+        "crops": 182,
+        "components": 175
+      },
+      "top_tshirt_sweatshirt": {
+        "crops": 856,
+        "components": 811
+      },
+      "jacket": {
+        "crops": 300,
+        "components": 279
+      },
+      "pants": {
+        "crops": 476,
+        "components": 461
+      },
+      "skirt": {
+        "crops": 257,
+        "components": 253
+      },
+      "dress": {
+        "crops": 695,
+        "components": 684
+      }
+    }
+  },
+  "primary": {
+    "definition": "C4 minus C0, mean of three paired fixed-seed Macro-F1 scores",
+    "mean_macro_f1": {
+      "C0": 0.7744938426376088,
+      "C4": 0.7815398188183215
+    },
+    "paired_mean_macro_f1_delta": 0.007045976180712676,
+    "uncertainty": {
+      "method": "paired source/duplicate-component percentile bootstrap",
+      "replicates": 2000,
+      "seed": 20261030,
+      "crops": 2766,
+      "resampling_components": 1826,
+      "fixed_training_seeds": [
+        314,
+        2718,
+        5772
+      ],
+      "selected_candidate": "C4",
+      "anchor_macro_f1_interval": [
+        0.7572265308575841,
+        0.7898246775404995
+      ],
+      "selected_macro_f1_interval": [
+        0.7652237786303431,
+        0.7973075175384297
+      ],
+      "paired_mean_macro_f1_delta_interval": [
+        -0.000360016466329463,
+        0.015124302054412876
+      ],
+      "group_assignment_sha256": "71f91127c1bec661a3f1d9b920233e3df411de762dace2eed9759571d15389b6",
+      "scope": "Prospectively locked project-unused same-source license-cohort audit. Conditional component-sampling intervals for six fixed models; no seed-population, IID/external-data, multiplicity-adjusted or deployment guarantee."
+    }
+  },
+  "models": [
+    {
+      "task_id": "final_C0_seed2718",
+      "candidate_id": "C0",
+      "seed": 2718,
+      "raw": {
+        "samples": 2766,
+        "accuracy": 0.8062183658712943,
+        "macro_f1": 0.7643491714956223,
+        "loss": 0.9984302736429297,
+        "nll": 0.9984302736429297,
+        "brier_score": 0.3221341079138551,
+        "brier_definition": "mean sum of squared K-class probability errors, not divided by K",
+        "ece": 0.13567394495303786,
+        "ece_bins": 15,
+        "reliability_bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.06666666666666667,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.06666666666666667,
+            "upper": 0.13333333333333333,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.13333333333333333,
+            "upper": 0.2,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.26666666666666666,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.26666666666666666,
+            "upper": 0.3333333333333333,
+            "count": 1,
+            "confidence": 0.3322226358570842,
+            "accuracy": 0.0
+          },
+          {
+            "lower": 0.3333333333333333,
+            "upper": 0.4,
+            "count": 11,
+            "confidence": 0.37214103576083973,
+            "accuracy": 0.18181818181818182
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.4666666666666667,
+            "count": 13,
+            "confidence": 0.4320109591758268,
+            "accuracy": 0.15384615384615385
+          },
+          {
+            "lower": 0.4666666666666667,
+            "upper": 0.5333333333333333,
+            "count": 36,
+            "confidence": 0.5054773508425261,
+            "accuracy": 0.3055555555555556
+          },
+          {
+            "lower": 0.5333333333333333,
+            "upper": 0.6,
+            "count": 74,
+            "confidence": 0.5685110347440793,
+            "accuracy": 0.47297297297297297
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.6666666666666666,
+            "count": 44,
+            "confidence": 0.6385282314830338,
+            "accuracy": 0.3409090909090909
+          },
+          {
+            "lower": 0.6666666666666666,
+            "upper": 0.7333333333333333,
+            "count": 63,
+            "confidence": 0.7019715496666153,
+            "accuracy": 0.5555555555555556
+          },
+          {
+            "lower": 0.7333333333333333,
+            "upper": 0.8,
+            "count": 82,
+            "confidence": 0.7669090670046721,
+            "accuracy": 0.45121951219512196
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.8666666666666667,
+            "count": 100,
+            "confidence": 0.8373540865472942,
+            "accuracy": 0.57
+          },
+          {
+            "lower": 0.8666666666666667,
+            "upper": 0.9333333333333333,
+            "count": 141,
+            "confidence": 0.9048954075276902,
+            "accuracy": 0.6170212765957447
+          },
+          {
+            "lower": 0.9333333333333333,
+            "upper": 1.0,
+            "count": 2201,
+            "confidence": 0.994290576835725,
+            "accuracy": 0.8855065879145843
+          }
+        ],
+        "confusion": [
+          [
+            89,
+            38,
+            44,
+            0,
+            0,
+            11
+          ],
+          [
+            35,
+            670,
+            70,
+            8,
+            11,
+            62
+          ],
+          [
+            14,
+            19,
+            253,
+            2,
+            2,
+            10
+          ],
+          [
+            1,
+            10,
+            6,
+            435,
+            12,
+            12
+          ],
+          [
+            3,
+            26,
+            5,
+            24,
+            173,
+            26
+          ],
+          [
+            7,
+            43,
+            23,
+            5,
+            7,
+            610
+          ]
+        ],
+        "per_class": [
+          {
+            "index": 0,
+            "label": "shirt_blouse",
+            "precision": 0.5973154362416108,
+            "recall": 0.489010989010989,
+            "f1": 0.5377643504531723,
+            "support": 182
+          },
+          {
+            "index": 1,
+            "label": "top_tshirt_sweatshirt",
+            "precision": 0.8312655086848635,
+            "recall": 0.7827102803738317,
+            "f1": 0.806257521058965,
+            "support": 856
+          },
+          {
+            "index": 2,
+            "label": "jacket",
+            "precision": 0.6309226932668329,
+            "recall": 0.8433333333333334,
+            "f1": 0.7218259629101283,
+            "support": 300
+          },
+          {
+            "index": 3,
+            "label": "pants",
+            "precision": 0.9177215189873418,
+            "recall": 0.9138655462184874,
+            "f1": 0.9157894736842105,
+            "support": 476
+          },
+          {
+            "index": 4,
+            "label": "skirt",
+            "precision": 0.8439024390243902,
+            "recall": 0.6731517509727627,
+            "f1": 0.7489177489177489,
+            "support": 257
+          },
+          {
+            "index": 5,
+            "label": "dress",
+            "precision": 0.8344733242134063,
+            "recall": 0.8776978417266187,
+            "f1": 0.855539971949509,
+            "support": 695
+          }
+        ]
+      }
+    },
+    {
+      "task_id": "final_C0_seed314",
+      "candidate_id": "C0",
+      "seed": 314,
+      "raw": {
+        "samples": 2766,
+        "accuracy": 0.8091106290672451,
+        "macro_f1": 0.7736271611709756,
+        "loss": 1.4705027125420778,
+        "nll": 1.4705027125420778,
+        "brier_score": 0.33364291780944405,
+        "brier_definition": "mean sum of squared K-class probability errors, not divided by K",
+        "ece": 0.1568088145536733,
+        "ece_bins": 15,
+        "reliability_bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.06666666666666667,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.06666666666666667,
+            "upper": 0.13333333333333333,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.13333333333333333,
+            "upper": 0.2,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.26666666666666666,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.26666666666666666,
+            "upper": 0.3333333333333333,
+            "count": 1,
+            "confidence": 0.30243716284367006,
+            "accuracy": 0.0
+          },
+          {
+            "lower": 0.3333333333333333,
+            "upper": 0.4,
+            "count": 1,
+            "confidence": 0.35498174782637676,
+            "accuracy": 1.0
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.4666666666666667,
+            "count": 5,
+            "confidence": 0.45263218053390214,
+            "accuracy": 0.2
+          },
+          {
+            "lower": 0.4666666666666667,
+            "upper": 0.5333333333333333,
+            "count": 29,
+            "confidence": 0.5032893832381617,
+            "accuracy": 0.20689655172413793
+          },
+          {
+            "lower": 0.5333333333333333,
+            "upper": 0.6,
+            "count": 32,
+            "confidence": 0.5634748563410891,
+            "accuracy": 0.3125
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.6666666666666666,
+            "count": 34,
+            "confidence": 0.631472726490644,
+            "accuracy": 0.38235294117647056
+          },
+          {
+            "lower": 0.6666666666666666,
+            "upper": 0.7333333333333333,
+            "count": 41,
+            "confidence": 0.6970242985603905,
+            "accuracy": 0.4634146341463415
+          },
+          {
+            "lower": 0.7333333333333333,
+            "upper": 0.8,
+            "count": 41,
+            "confidence": 0.7630985682414059,
+            "accuracy": 0.4146341463414634
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.8666666666666667,
+            "count": 75,
+            "confidence": 0.8360062147247563,
+            "accuracy": 0.4
+          },
+          {
+            "lower": 0.8666666666666667,
+            "upper": 0.9333333333333333,
+            "count": 90,
+            "confidence": 0.9048391247944362,
+            "accuracy": 0.4777777777777778
+          },
+          {
+            "lower": 0.9333333333333333,
+            "upper": 1.0,
+            "count": 2417,
+            "confidence": 0.9968658997292265,
+            "accuracy": 0.868018204385602
+          }
+        ],
+        "confusion": [
+          [
+            104,
+            40,
+            24,
+            3,
+            0,
+            11
+          ],
+          [
+            36,
+            705,
+            41,
+            16,
+            11,
+            47
+          ],
+          [
+            27,
+            46,
+            211,
+            7,
+            2,
+            7
+          ],
+          [
+            1,
+            7,
+            3,
+            442,
+            15,
+            8
+          ],
+          [
+            1,
+            20,
+            1,
+            25,
+            197,
+            13
+          ],
+          [
+            11,
+            66,
+            17,
+            7,
+            15,
+            579
+          ]
+        ],
+        "per_class": [
+          {
+            "index": 0,
+            "label": "shirt_blouse",
+            "precision": 0.5777777777777777,
+            "recall": 0.5714285714285714,
+            "f1": 0.574585635359116,
+            "support": 182
+          },
+          {
+            "index": 1,
+            "label": "top_tshirt_sweatshirt",
+            "precision": 0.7975113122171946,
+            "recall": 0.8235981308411215,
+            "f1": 0.8103448275862069,
+            "support": 856
+          },
+          {
+            "index": 2,
+            "label": "jacket",
+            "precision": 0.7104377104377104,
+            "recall": 0.7033333333333334,
+            "f1": 0.7068676716917923,
+            "support": 300
+          },
+          {
+            "index": 3,
+            "label": "pants",
+            "precision": 0.884,
+            "recall": 0.9285714285714286,
+            "f1": 0.9057377049180327,
+            "support": 476
+          },
+          {
+            "index": 4,
+            "label": "skirt",
+            "precision": 0.8208333333333333,
+            "recall": 0.7665369649805448,
+            "f1": 0.7927565392354124,
+            "support": 257
+          },
+          {
+            "index": 5,
+            "label": "dress",
+            "precision": 0.8706766917293233,
+            "recall": 0.8330935251798561,
+            "f1": 0.851470588235294,
+            "support": 695
+          }
+        ]
+      }
+    },
+    {
+      "task_id": "final_C0_seed5772",
+      "candidate_id": "C0",
+      "seed": 5772,
+      "raw": {
+        "samples": 2766,
+        "accuracy": 0.8199566160520607,
+        "macro_f1": 0.7855051952462286,
+        "loss": 1.4627793203097612,
+        "nll": 1.4627793203097612,
+        "brier_score": 0.3168083192173596,
+        "brier_definition": "mean sum of squared K-class probability errors, not divided by K",
+        "ece": 0.14386528355761652,
+        "ece_bins": 15,
+        "reliability_bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.06666666666666667,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.06666666666666667,
+            "upper": 0.13333333333333333,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.13333333333333333,
+            "upper": 0.2,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.26666666666666666,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.26666666666666666,
+            "upper": 0.3333333333333333,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.3333333333333333,
+            "upper": 0.4,
+            "count": 2,
+            "confidence": 0.3708987162588909,
+            "accuracy": 0.0
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.4666666666666667,
+            "count": 12,
+            "confidence": 0.44467590997570744,
+            "accuracy": 0.16666666666666666
+          },
+          {
+            "lower": 0.4666666666666667,
+            "upper": 0.5333333333333333,
+            "count": 31,
+            "confidence": 0.5072027095963808,
+            "accuracy": 0.3548387096774194
+          },
+          {
+            "lower": 0.5333333333333333,
+            "upper": 0.6,
+            "count": 36,
+            "confidence": 0.56853004548082,
+            "accuracy": 0.4444444444444444
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.6666666666666666,
+            "count": 27,
+            "confidence": 0.6332909291448443,
+            "accuracy": 0.5185185185185185
+          },
+          {
+            "lower": 0.6666666666666666,
+            "upper": 0.7333333333333333,
+            "count": 49,
+            "confidence": 0.705395053173828,
+            "accuracy": 0.5102040816326531
+          },
+          {
+            "lower": 0.7333333333333333,
+            "upper": 0.8,
+            "count": 45,
+            "confidence": 0.7698892672082778,
+            "accuracy": 0.37777777777777777
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.8666666666666667,
+            "count": 63,
+            "confidence": 0.8369281246689871,
+            "accuracy": 0.49206349206349204
+          },
+          {
+            "lower": 0.8666666666666667,
+            "upper": 0.9333333333333333,
+            "count": 92,
+            "confidence": 0.9061445852405504,
+            "accuracy": 0.5869565217391305
+          },
+          {
+            "lower": 0.9333333333333333,
+            "upper": 1.0,
+            "count": 2409,
+            "confidence": 0.996788334130455,
+            "accuracy": 0.8709007887090079
+          }
+        ],
+        "confusion": [
+          [
+            108,
+            37,
+            22,
+            2,
+            0,
+            13
+          ],
+          [
+            43,
+            685,
+            44,
+            15,
+            12,
+            57
+          ],
+          [
+            30,
+            32,
+            220,
+            8,
+            1,
+            9
+          ],
+          [
+            0,
+            6,
+            0,
+            437,
+            21,
+            12
+          ],
+          [
+            1,
+            11,
+            1,
+            20,
+            205,
+            19
+          ],
+          [
+            10,
+            43,
+            12,
+            7,
+            10,
+            613
+          ]
+        ],
+        "per_class": [
+          {
+            "index": 0,
+            "label": "shirt_blouse",
+            "precision": 0.5625,
+            "recall": 0.5934065934065934,
+            "f1": 0.5775401069518715,
+            "support": 182
+          },
+          {
+            "index": 1,
+            "label": "top_tshirt_sweatshirt",
+            "precision": 0.8415233415233415,
+            "recall": 0.8002336448598131,
+            "f1": 0.8203592814371257,
+            "support": 856
+          },
+          {
+            "index": 2,
+            "label": "jacket",
+            "precision": 0.7357859531772575,
+            "recall": 0.7333333333333333,
+            "f1": 0.7345575959933222,
+            "support": 300
+          },
+          {
+            "index": 3,
+            "label": "pants",
+            "precision": 0.8936605316973415,
+            "recall": 0.9180672268907563,
+            "f1": 0.9056994818652849,
+            "support": 476
+          },
+          {
+            "index": 4,
+            "label": "skirt",
+            "precision": 0.8232931726907631,
+            "recall": 0.7976653696498055,
+            "f1": 0.8102766798418973,
+            "support": 257
+          },
+          {
+            "index": 5,
+            "label": "dress",
+            "precision": 0.8478561549100968,
+            "recall": 0.8820143884892087,
+            "f1": 0.8645980253878702,
+            "support": 695
+          }
+        ]
+      }
+    },
+    {
+      "task_id": "final_C4_seed2718",
+      "candidate_id": "C4",
+      "seed": 2718,
+      "raw": {
+        "samples": 2766,
+        "accuracy": 0.8145336225596529,
+        "macro_f1": 0.7783937715149493,
+        "loss": 1.3828371964390158,
+        "nll": 1.3828371964390158,
+        "brier_score": 0.3245325720667803,
+        "brier_definition": "mean sum of squared K-class probability errors, not divided by K",
+        "ece": 0.1486618405251176,
+        "ece_bins": 15,
+        "reliability_bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.06666666666666667,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.06666666666666667,
+            "upper": 0.13333333333333333,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.13333333333333333,
+            "upper": 0.2,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.26666666666666666,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.26666666666666666,
+            "upper": 0.3333333333333333,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.3333333333333333,
+            "upper": 0.4,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.4666666666666667,
+            "count": 9,
+            "confidence": 0.44424185930023463,
+            "accuracy": 0.2222222222222222
+          },
+          {
+            "lower": 0.4666666666666667,
+            "upper": 0.5333333333333333,
+            "count": 31,
+            "confidence": 0.5061160542822859,
+            "accuracy": 0.2903225806451613
+          },
+          {
+            "lower": 0.5333333333333333,
+            "upper": 0.6,
+            "count": 32,
+            "confidence": 0.5681528374770864,
+            "accuracy": 0.46875
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.6666666666666666,
+            "count": 33,
+            "confidence": 0.6360228176315875,
+            "accuracy": 0.42424242424242425
+          },
+          {
+            "lower": 0.6666666666666666,
+            "upper": 0.7333333333333333,
+            "count": 42,
+            "confidence": 0.7030814559292764,
+            "accuracy": 0.42857142857142855
+          },
+          {
+            "lower": 0.7333333333333333,
+            "upper": 0.8,
+            "count": 53,
+            "confidence": 0.7705626288687261,
+            "accuracy": 0.4339622641509434
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.8666666666666667,
+            "count": 70,
+            "confidence": 0.8368926816413834,
+            "accuracy": 0.42857142857142855
+          },
+          {
+            "lower": 0.8666666666666667,
+            "upper": 0.9333333333333333,
+            "count": 119,
+            "confidence": 0.9002000945864453,
+            "accuracy": 0.5126050420168067
+          },
+          {
+            "lower": 0.9333333333333333,
+            "upper": 1.0,
+            "count": 2377,
+            "confidence": 0.9967461898380973,
+            "accuracy": 0.8754732856541859
+          }
+        ],
+        "confusion": [
+          [
+            98,
+            50,
+            26,
+            0,
+            0,
+            8
+          ],
+          [
+            28,
+            703,
+            50,
+            10,
+            15,
+            50
+          ],
+          [
+            22,
+            41,
+            226,
+            3,
+            1,
+            7
+          ],
+          [
+            0,
+            12,
+            3,
+            443,
+            7,
+            11
+          ],
+          [
+            1,
+            20,
+            4,
+            20,
+            190,
+            22
+          ],
+          [
+            13,
+            54,
+            15,
+            7,
+            13,
+            593
+          ]
+        ],
+        "per_class": [
+          {
+            "index": 0,
+            "label": "shirt_blouse",
+            "precision": 0.6049382716049383,
+            "recall": 0.5384615384615384,
+            "f1": 0.5697674418604651,
+            "support": 182
+          },
+          {
+            "index": 1,
+            "label": "top_tshirt_sweatshirt",
+            "precision": 0.7988636363636363,
+            "recall": 0.8212616822429907,
+            "f1": 0.8099078341013825,
+            "support": 856
+          },
+          {
+            "index": 2,
+            "label": "jacket",
+            "precision": 0.6975308641975309,
+            "recall": 0.7533333333333333,
+            "f1": 0.7243589743589743,
+            "support": 300
+          },
+          {
+            "index": 3,
+            "label": "pants",
+            "precision": 0.917184265010352,
+            "recall": 0.930672268907563,
+            "f1": 0.9238790406673619,
+            "support": 476
+          },
+          {
+            "index": 4,
+            "label": "skirt",
+            "precision": 0.8407079646017699,
+            "recall": 0.7392996108949417,
+            "f1": 0.7867494824016563,
+            "support": 257
+          },
+          {
+            "index": 5,
+            "label": "dress",
+            "precision": 0.8581765557163531,
+            "recall": 0.8532374100719424,
+            "f1": 0.8556998556998557,
+            "support": 695
+          }
+        ]
+      }
+    },
+    {
+      "task_id": "final_C4_seed314",
+      "candidate_id": "C4",
+      "seed": 314,
+      "raw": {
+        "samples": 2766,
+        "accuracy": 0.8210412147505423,
+        "macro_f1": 0.7839140545302046,
+        "loss": 1.5926174793336443,
+        "nll": 1.5926174793336443,
+        "brier_score": 0.3237841457203869,
+        "brier_definition": "mean sum of squared K-class probability errors, not divided by K",
+        "ece": 0.14870445005842134,
+        "ece_bins": 15,
+        "reliability_bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.06666666666666667,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.06666666666666667,
+            "upper": 0.13333333333333333,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.13333333333333333,
+            "upper": 0.2,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.26666666666666666,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.26666666666666666,
+            "upper": 0.3333333333333333,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.3333333333333333,
+            "upper": 0.4,
+            "count": 1,
+            "confidence": 0.35514479464124293,
+            "accuracy": 0.0
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.4666666666666667,
+            "count": 4,
+            "confidence": 0.450898379440204,
+            "accuracy": 0.0
+          },
+          {
+            "lower": 0.4666666666666667,
+            "upper": 0.5333333333333333,
+            "count": 27,
+            "confidence": 0.5121536679198948,
+            "accuracy": 0.5555555555555556
+          },
+          {
+            "lower": 0.5333333333333333,
+            "upper": 0.6,
+            "count": 29,
+            "confidence": 0.5629352876387204,
+            "accuracy": 0.41379310344827586
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.6666666666666666,
+            "count": 34,
+            "confidence": 0.6379627989397273,
+            "accuracy": 0.47058823529411764
+          },
+          {
+            "lower": 0.6666666666666666,
+            "upper": 0.7333333333333333,
+            "count": 37,
+            "confidence": 0.7087973808322697,
+            "accuracy": 0.3783783783783784
+          },
+          {
+            "lower": 0.7333333333333333,
+            "upper": 0.8,
+            "count": 47,
+            "confidence": 0.7697743750800452,
+            "accuracy": 0.425531914893617
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.8666666666666667,
+            "count": 56,
+            "confidence": 0.8337644899273468,
+            "accuracy": 0.4642857142857143
+          },
+          {
+            "lower": 0.8666666666666667,
+            "upper": 0.9333333333333333,
+            "count": 74,
+            "confidence": 0.9034274190711679,
+            "accuracy": 0.47297297297297297
+          },
+          {
+            "lower": 0.9333333333333333,
+            "upper": 1.0,
+            "count": 2457,
+            "confidence": 0.997159430977127,
+            "accuracy": 0.8681318681318682
+          }
+        ],
+        "confusion": [
+          [
+            105,
+            44,
+            22,
+            3,
+            0,
+            8
+          ],
+          [
+            36,
+            707,
+            32,
+            9,
+            15,
+            57
+          ],
+          [
+            29,
+            32,
+            218,
+            3,
+            4,
+            14
+          ],
+          [
+            2,
+            7,
+            1,
+            440,
+            13,
+            13
+          ],
+          [
+            2,
+            19,
+            2,
+            21,
+            195,
+            18
+          ],
+          [
+            9,
+            47,
+            9,
+            8,
+            16,
+            606
+          ]
+        ],
+        "per_class": [
+          {
+            "index": 0,
+            "label": "shirt_blouse",
+            "precision": 0.5737704918032787,
+            "recall": 0.5769230769230769,
+            "f1": 0.5753424657534246,
+            "support": 182
+          },
+          {
+            "index": 1,
+            "label": "top_tshirt_sweatshirt",
+            "precision": 0.8259345794392523,
+            "recall": 0.8259345794392523,
+            "f1": 0.8259345794392523,
+            "support": 856
+          },
+          {
+            "index": 2,
+            "label": "jacket",
+            "precision": 0.7676056338028169,
+            "recall": 0.7266666666666667,
+            "f1": 0.7465753424657535,
+            "support": 300
+          },
+          {
+            "index": 3,
+            "label": "pants",
+            "precision": 0.9090909090909091,
+            "recall": 0.9243697478991597,
+            "f1": 0.9166666666666667,
+            "support": 476
+          },
+          {
+            "index": 4,
+            "label": "skirt",
+            "precision": 0.8024691358024691,
+            "recall": 0.7587548638132295,
+            "f1": 0.78,
+            "support": 257
+          },
+          {
+            "index": 5,
+            "label": "dress",
+            "precision": 0.8463687150837989,
+            "recall": 0.8719424460431655,
+            "f1": 0.8589652728561304,
+            "support": 695
+          }
+        ]
+      },
+      "frozen_policy": {
+        "policy_mode": "confidence_threshold",
+        "threshold": 0.88,
+        "samples": 2766,
+        "accepted_count": 1506,
+        "accepted_correct": 1445,
+        "coverage": 0.544468546637744,
+        "accepted_accuracy": 0.9594953519256308,
+        "scope": "Descriptive fixed-policy coverage/accuracy on the new license cohort; calibration-population bound does not transfer across this shift."
+      },
+      "calibrated": {
+        "samples": 2766,
+        "accuracy": 0.8210412147505423,
+        "macro_f1": 0.7839140545302046,
+        "loss": 0.5283971323391337,
+        "nll": 0.5283971323391337,
+        "brier_score": 0.2628226542224475,
+        "brier_definition": "mean sum of squared K-class probability errors, not divided by K",
+        "ece": 0.020552456583540303,
+        "ece_bins": 15,
+        "reliability_bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.06666666666666667,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.06666666666666667,
+            "upper": 0.13333333333333333,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.13333333333333333,
+            "upper": 0.2,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.26666666666666666,
+            "count": 5,
+            "confidence": 0.25622189194012596,
+            "accuracy": 0.4
+          },
+          {
+            "lower": 0.26666666666666666,
+            "upper": 0.3333333333333333,
+            "count": 30,
+            "confidence": 0.3072350369574583,
+            "accuracy": 0.23333333333333334
+          },
+          {
+            "lower": 0.3333333333333333,
+            "upper": 0.4,
+            "count": 86,
+            "confidence": 0.3703034377422605,
+            "accuracy": 0.3953488372093023
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.4666666666666667,
+            "count": 113,
+            "confidence": 0.4405116173770897,
+            "accuracy": 0.48672566371681414
+          },
+          {
+            "lower": 0.4666666666666667,
+            "upper": 0.5333333333333333,
+            "count": 131,
+            "confidence": 0.501922797396918,
+            "accuracy": 0.5038167938931297
+          },
+          {
+            "lower": 0.5333333333333333,
+            "upper": 0.6,
+            "count": 152,
+            "confidence": 0.5649990784258757,
+            "accuracy": 0.631578947368421
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.6666666666666666,
+            "count": 138,
+            "confidence": 0.6326559575952906,
+            "accuracy": 0.6739130434782609
+          },
+          {
+            "lower": 0.6666666666666666,
+            "upper": 0.7333333333333333,
+            "count": 162,
+            "confidence": 0.6989122965493113,
+            "accuracy": 0.7098765432098766
+          },
+          {
+            "lower": 0.7333333333333333,
+            "upper": 0.8,
+            "count": 180,
+            "confidence": 0.7685010198420945,
+            "accuracy": 0.7388888888888889
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.8666666666666667,
+            "count": 209,
+            "confidence": 0.8331247030118426,
+            "accuracy": 0.8421052631578947
+          },
+          {
+            "lower": 0.8666666666666667,
+            "upper": 0.9333333333333333,
+            "count": 306,
+            "confidence": 0.9025796635804496,
+            "accuracy": 0.9117647058823529
+          },
+          {
+            "lower": 0.9333333333333333,
+            "upper": 1.0,
+            "count": 1254,
+            "confidence": 0.983796155225581,
+            "accuracy": 0.9688995215311005
+          }
+        ],
+        "confusion": [
+          [
+            105,
+            44,
+            22,
+            3,
+            0,
+            8
+          ],
+          [
+            36,
+            707,
+            32,
+            9,
+            15,
+            57
+          ],
+          [
+            29,
+            32,
+            218,
+            3,
+            4,
+            14
+          ],
+          [
+            2,
+            7,
+            1,
+            440,
+            13,
+            13
+          ],
+          [
+            2,
+            19,
+            2,
+            21,
+            195,
+            18
+          ],
+          [
+            9,
+            47,
+            9,
+            8,
+            16,
+            606
+          ]
+        ],
+        "per_class": [
+          {
+            "index": 0,
+            "label": "shirt_blouse",
+            "precision": 0.5737704918032787,
+            "recall": 0.5769230769230769,
+            "f1": 0.5753424657534246,
+            "support": 182
+          },
+          {
+            "index": 1,
+            "label": "top_tshirt_sweatshirt",
+            "precision": 0.8259345794392523,
+            "recall": 0.8259345794392523,
+            "f1": 0.8259345794392523,
+            "support": 856
+          },
+          {
+            "index": 2,
+            "label": "jacket",
+            "precision": 0.7676056338028169,
+            "recall": 0.7266666666666667,
+            "f1": 0.7465753424657535,
+            "support": 300
+          },
+          {
+            "index": 3,
+            "label": "pants",
+            "precision": 0.9090909090909091,
+            "recall": 0.9243697478991597,
+            "f1": 0.9166666666666667,
+            "support": 476
+          },
+          {
+            "index": 4,
+            "label": "skirt",
+            "precision": 0.8024691358024691,
+            "recall": 0.7587548638132295,
+            "f1": 0.78,
+            "support": 257
+          },
+          {
+            "index": 5,
+            "label": "dress",
+            "precision": 0.8463687150837989,
+            "recall": 0.8719424460431655,
+            "f1": 0.8589652728561304,
+            "support": 695
+          }
+        ]
+      }
+    },
+    {
+      "task_id": "final_C4_seed5772",
+      "candidate_id": "C4",
+      "seed": 5772,
+      "raw": {
+        "samples": 2766,
+        "accuracy": 0.82176428054953,
+        "macro_f1": 0.7823116304098107,
+        "loss": 1.2899901042477961,
+        "nll": 1.2899901042477961,
+        "brier_score": 0.31103815761352505,
+        "brier_definition": "mean sum of squared K-class probability errors, not divided by K",
+        "ece": 0.139406910335511,
+        "ece_bins": 15,
+        "reliability_bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.06666666666666667,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.06666666666666667,
+            "upper": 0.13333333333333333,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.13333333333333333,
+            "upper": 0.2,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.26666666666666666,
+            "count": 0,
+            "confidence": null,
+            "accuracy": null
+          },
+          {
+            "lower": 0.26666666666666666,
+            "upper": 0.3333333333333333,
+            "count": 1,
+            "confidence": 0.3301218366653605,
+            "accuracy": 0.0
+          },
+          {
+            "lower": 0.3333333333333333,
+            "upper": 0.4,
+            "count": 1,
+            "confidence": 0.36330642815451647,
+            "accuracy": 0.0
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.4666666666666667,
+            "count": 5,
+            "confidence": 0.4280336989085982,
+            "accuracy": 0.0
+          },
+          {
+            "lower": 0.4666666666666667,
+            "upper": 0.5333333333333333,
+            "count": 31,
+            "confidence": 0.5076577030770653,
+            "accuracy": 0.41935483870967744
+          },
+          {
+            "lower": 0.5333333333333333,
+            "upper": 0.6,
+            "count": 41,
+            "confidence": 0.5637178633124962,
+            "accuracy": 0.34146341463414637
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.6666666666666666,
+            "count": 37,
+            "confidence": 0.632262330049881,
+            "accuracy": 0.4594594594594595
+          },
+          {
+            "lower": 0.6666666666666666,
+            "upper": 0.7333333333333333,
+            "count": 44,
+            "confidence": 0.706529053731306,
+            "accuracy": 0.45454545454545453
+          },
+          {
+            "lower": 0.7333333333333333,
+            "upper": 0.8,
+            "count": 59,
+            "confidence": 0.7648600441953851,
+            "accuracy": 0.5423728813559322
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.8666666666666667,
+            "count": 68,
+            "confidence": 0.8366083146036816,
+            "accuracy": 0.6764705882352942
+          },
+          {
+            "lower": 0.8666666666666667,
+            "upper": 0.9333333333333333,
+            "count": 100,
+            "confidence": 0.9020897478229736,
+            "accuracy": 0.56
+          },
+          {
+            "lower": 0.9333333333333333,
+            "upper": 1.0,
+            "count": 2379,
+            "confidence": 0.996305182294477,
+            "accuracy": 0.8722152164775115
+          }
+        ],
+        "confusion": [
+          [
+            97,
+            39,
+            32,
+            0,
+            0,
+            14
+          ],
+          [
+            36,
+            696,
+            40,
+            10,
+            10,
+            64
+          ],
+          [
+            26,
+            33,
+            228,
+            3,
+            2,
+            8
+          ],
+          [
+            1,
+            7,
+            2,
+            435,
+            16,
+            15
+          ],
+          [
+            1,
+            16,
+            1,
+            18,
+            192,
+            29
+          ],
+          [
+            8,
+            37,
+            7,
+            9,
+            9,
+            625
+          ]
+        ],
+        "per_class": [
+          {
+            "index": 0,
+            "label": "shirt_blouse",
+            "precision": 0.5739644970414202,
+            "recall": 0.532967032967033,
+            "f1": 0.5527065527065528,
+            "support": 182
+          },
+          {
+            "index": 1,
+            "label": "top_tshirt_sweatshirt",
+            "precision": 0.8405797101449275,
+            "recall": 0.8130841121495327,
+            "f1": 0.8266033254156769,
+            "support": 856
+          },
+          {
+            "index": 2,
+            "label": "jacket",
+            "precision": 0.7354838709677419,
+            "recall": 0.76,
+            "f1": 0.7475409836065573,
+            "support": 300
+          },
+          {
+            "index": 3,
+            "label": "pants",
+            "precision": 0.9157894736842105,
+            "recall": 0.9138655462184874,
+            "f1": 0.9148264984227128,
+            "support": 476
+          },
+          {
+            "index": 4,
+            "label": "skirt",
+            "precision": 0.8384279475982532,
+            "recall": 0.7470817120622568,
+            "f1": 0.7901234567901234,
+            "support": 257
+          },
+          {
+            "index": 5,
+            "label": "dress",
+            "precision": 0.8278145695364238,
+            "recall": 0.8992805755395683,
+            "f1": 0.8620689655172414,
+            "support": 695
+          }
+        ]
+      }
+    }
+  ],
+  "scope": "Project-unused same-source license-cohort shift, not external-data or IID test evidence",
+  "limitations": "Unused relative to recorded project image exposure; all metadata licenses were previously inventoried. Foundation pretraining and unrecorded views cannot be excluded. Same-source license shift is not an IID or external test.",
+  "photographs_redistributed": false,
+  "payloads": [
+    {
+      "path": "evaluation/final_C0_seed2718/metrics.json",
+      "sha256": "4c66846a087ff293ecf0d77914d30d4d89d62e978b972e8d27d7fb87808b1887"
+    },
+    {
+      "path": "evaluation/final_C0_seed2718/logits.npz",
+      "sha256": "aa8b00c593a85f5608fdcf5401bac59d33728e057805fc8225ab134b97e13726"
+    },
+    {
+      "path": "evaluation/final_C0_seed2718/LOGITS_RECEIPT.json",
+      "sha256": "4eee55746ef6eae611d3101546c1e77e7a7152cec3ce818a03eba3f6ccc1a8bc"
+    },
+    {
+      "path": "evaluation/final_C0_seed314/metrics.json",
+      "sha256": "2b09c6dad9453ad6536e8bb45b65421550bd907b9006e4cbd53dd09527940ffe"
+    },
+    {
+      "path": "evaluation/final_C0_seed314/logits.npz",
+      "sha256": "2b185964f5eb1fdcffa2e6788537794b4e61d897a311c73c442bd41b7285e5d5"
+    },
+    {
+      "path": "evaluation/final_C0_seed314/LOGITS_RECEIPT.json",
+      "sha256": "d79cdac3283255aca9a149e6a208d1bf7c9c14b15f234c5cbbdb7797009ad046"
+    },
+    {
+      "path": "evaluation/final_C0_seed5772/metrics.json",
+      "sha256": "8c7b6ea2cae3b82b0ba026048877f6ab78b82d9c9608287bc829d75744d9616b"
+    },
+    {
+      "path": "evaluation/final_C0_seed5772/logits.npz",
+      "sha256": "6b36e00bb4ff65b23c0580f1190322d723b0824e52be7a3f468acfff3c8d8f87"
+    },
+    {
+      "path": "evaluation/final_C0_seed5772/LOGITS_RECEIPT.json",
+      "sha256": "682e4776ec37f02094b6a7cba54196cf67aaff2bb0779bc8fa86dd4e106fb569"
+    },
+    {
+      "path": "evaluation/final_C4_seed2718/metrics.json",
+      "sha256": "d90e114a30e06c907083557d1ba27fffa95539ae0d08b70a0afcc18a2fe2f2d6"
+    },
+    {
+      "path": "evaluation/final_C4_seed2718/logits.npz",
+      "sha256": "3777bca53b5114fb1db33403b955a815b8b89b4897f56d9e3ed4e55729013878"
+    },
+    {
+      "path": "evaluation/final_C4_seed2718/LOGITS_RECEIPT.json",
+      "sha256": "886a65da5beac11a7f133a3671310d8dd249e6076237d4aaf92d9e7c5fe5c720"
+    },
+    {
+      "path": "evaluation/final_C4_seed314/metrics.json",
+      "sha256": "c82b6ed08352b67fa0e28f8ab1f47939c3b2d10afc25a133f4c0377fc7421d09"
+    },
+    {
+      "path": "evaluation/final_C4_seed314/logits.npz",
+      "sha256": "fff0204286aaf2071b8e728e88fc8cd0d91ea46ea57094650a4acdba6baa7e91"
+    },
+    {
+      "path": "evaluation/final_C4_seed314/LOGITS_RECEIPT.json",
+      "sha256": "db913308c88f86fce8708e0954609c8220366cc70004ab4072103b6699031c0f"
+    },
+    {
+      "path": "evaluation/final_C4_seed5772/metrics.json",
+      "sha256": "29c1e975a8fbb710c72665ccc4b93f040b4dc4e19d14e62a90ef3aceb23c30f0"
+    },
+    {
+      "path": "evaluation/final_C4_seed5772/logits.npz",
+      "sha256": "bdf35f978f7de4df5c99d05adc98675f3d3a9e51666f54cdb74100c17f70062e"
+    },
+    {
+      "path": "evaluation/final_C4_seed5772/LOGITS_RECEIPT.json",
+      "sha256": "4645e09141ffe0b3281ba08e1c2e67809dc6fd85a842a3a088ee90d2823bf288"
+    }
+  ]
+}

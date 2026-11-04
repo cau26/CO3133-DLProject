@@ -1,0 +1,66 @@
+{
+  "status": "COMPLETE",
+  "task_sha256": "fc97f18866af4af8175e971561556ffa183323034a803081cae809fd5a5105e4",
+  "binding_sha256": "c0c6e9a2050508ef9296524564ba0058c43f3cd2b99b0ae25d19627c7d31e60f",
+  "same_training_trajectory_for_all_policies": true,
+  "cells": [
+    {
+      "task_id": "gru_selected_seed2027",
+      "family": "gru",
+      "seed": 2027,
+      "arm": "selected",
+      "candidate_id": "C1",
+      "policy": "ce",
+      "checkpoint_epoch": 23,
+      "checkpoint": "engine/best_ce.pt",
+      "checkpoint_sha256": "fbdca2723d18ab91cf7e2415a56a18c4cb986329b53663ba1f31311c895f4f02",
+      "loss": 0.25167122645334433,
+      "accuracy": 0.915,
+      "macro_f1": 0.9147764981593897,
+      "n_examples": 6000,
+      "evaluation_scope": "previously_seen_old_validation_exploratory"
+    },
+    {
+      "task_id": "gru_selected_seed2027",
+      "family": "gru",
+      "seed": 2027,
+      "arm": "selected",
+      "candidate_id": "C1",
+      "policy": "f1",
+      "checkpoint_epoch": 28,
+      "checkpoint": "engine/best_f1.pt",
+      "checkpoint_sha256": "93f916c358bd9325d58dac3034d2838245dcb1f6797fe1b46d735d6424cfeef8",
+      "loss": 0.2551403386031141,
+      "accuracy": 0.9155,
+      "macro_f1": 0.9152587533056057,
+      "n_examples": 6000,
+      "evaluation_scope": "previously_seen_old_validation_exploratory"
+    },
+    {
+      "task_id": "gru_selected_seed2027",
+      "family": "gru",
+      "seed": 2027,
+      "arm": "selected",
+      "candidate_id": "C1",
+      "policy": "final",
+      "checkpoint_epoch": 60,
+      "checkpoint": "final_epoch.pt",
+      "checkpoint_sha256": "afa76503eb59f57ae228466628e06c79310e55db6e3243491de677aa7f3f8fb4",
+      "loss": 0.32661014596051774,
+      "accuracy": 0.9095,
+      "macro_f1": 0.909361549009948,
+      "n_examples": 6000,
+      "evaluation_scope": "previously_seen_old_validation_exploratory"
+    }
+  ],
+  "artifacts_sha256": {
+    "engine/COMPLETE.json": "5499bf2a499ba09812d957bb44340e381973394a2af445f08c2985e4f266841b",
+    "engine/best_ce.pt": "fbdca2723d18ab91cf7e2415a56a18c4cb986329b53663ba1f31311c895f4f02",
+    "engine/best_f1.pt": "93f916c358bd9325d58dac3034d2838245dcb1f6797fe1b46d735d6424cfeef8",
+    "final_epoch.pt": "afa76503eb59f57ae228466628e06c79310e55db6e3243491de677aa7f3f8fb4",
+    "cells.json": "7b3b56a3af1f9977f97f973d02c0482d1d90a54399655fe77041ed9f14b1f96c",
+    "predictions_ce.csv": "f4882bd186303688b2e056d6c7297349cd849471ef43ee703ab0c25a9970a06e",
+    "predictions_f1.csv": "363bbcf597c8f67433d43321f648a264f5c37f2af4fdf805b04165fe9ad8a3bb",
+    "predictions_final.csv": "5aee602b42bd31934aa02d70fb070d35125faaef129fd0d759418aa2f898141d"
+  }
+}

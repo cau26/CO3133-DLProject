@@ -1,0 +1,115 @@
+{
+  "status": "PASS_GENERATED_DATA_AND_VISUAL_QA",
+  "publication_data_sha256": "7b48e8f7ff15c92fadeef4caf773612eaa05084b3db231cb04d329a06b014cce",
+  "outputs_sha256": {
+    "output/a1_final/data/publication_data.json": "7b48e8f7ff15c92fadeef4caf773612eaa05084b3db231cb04d329a06b014cce",
+    "output/a1_final/figures/final_f1_seeds.png": "df8d3e83335f0f50113c99615f7f72d0c1d3f23677892666422ed2d600adfbf6",
+    "output/a1_final/figures/discovery_confirmation.png": "08dbb01330098f0a3b318177c6dd01396c2dd2efa2fd537683f50feb520f1773",
+    "output/a1_final/figures/paired_confirmation_deltas.png": "ccd10b94753b543e1b65a8ead10b154de838f82d016e16b90cab055f571635c5",
+    "output/a1_final/figures/learning_curves.png": "264ae70a3cd5e5270e6868066021ad94199a8bd4ffdbd55af90ed15ebe1d70e0",
+    "output/a1_final/figures/cnn_seed42_confusion.png": "8dfd6e0c3bc3c00b5d463765788f6ca4488871ca27123cc62fbffe92cd1ece31",
+    "output/a1_final/figures/cnn_seed42_examples.png": "fd31220f619bafa0e4699908b0615f47eff0fc428a8b8c3ad27252c62c15e87b",
+    "output/a1_final/figures/accuracy_cost.png": "7c4e84ceb456d908f08938a4cd97db43b2a7682335c15d12ab20b6dd5a1cd57e",
+    "output/a1_final/figures/dataset_overview.png": "6356f67579818f22bbc44bcfd4604ed5644008219a44785f83bb1154e9cc2874"
+  },
+  "input_sha256": {
+    "verification\\OPT3_INDEPENDENT_STATISTICS_1d2d83edf1dc.json": "30fd882e9e1c86e3ff01db210944a846f1cd7d5ddaf678105ec1dd692bce674b",
+    "OPT3 ZIP:study_manifest.json": "e65da9b2e40b36fe13942f34323ca248f3846b06e85946c00126cce4dc2a30fc",
+    "OPT3 ZIP:selection.json": "8b0b49d751372ec94fb1ca617a8bf21f6ada1068cca9937deea9ef9b95737557",
+    "OPT3 ZIP:run_environment.json": "886fde7c58ab5c12834b17e561cd9b2538bc7a9fd5ab21a46078727a59f64bb2",
+    "OPT3 ZIP:clock.json": "8bb6ffd77e2bec5ebc1f3626f451b4bc7acd4b2238f7f9987ccf911c9e1fd04d",
+    "OPT3 ZIP:attempts.json": "87362aeaff987846faa4d1555c1ca5caf5f350ef4af00790d2e90be714444f05",
+    "OPT3 ZIP:split_ids.npz": "f2cdd9a66602ad7112b15b5f21c0c1196503f1d62aad1c00841025612aeb90cc",
+    "OPT3 ZIP:tasks/final_cnn_C5_seed42/metrics.json": "8c610ea038084c05da899a26fc796a2d13fceb7f3314cff79aa2127f4ae4dada",
+    "OPT3 ZIP:tasks/final_cnn_C5_seed42/history.csv": "90d58e1e34bdfc97545a6b6d1429ec49ab0afa9a4f1838e0c38651ffc59236e3",
+    "OPT3 ZIP:tasks/final_cnn_C5_seed43/metrics.json": "b5e66376f174c768dbf9c88bd08290ef9f55e3a0fe719b0af73a2fd9b9e2749a",
+    "OPT3 ZIP:tasks/final_cnn_C5_seed43/history.csv": "b627f3cbc98a59109a100ecb27b2299405476d8227021d6db1bb985129b1c9f5",
+    "OPT3 ZIP:tasks/final_cnn_C5_seed44/metrics.json": "0f257d20bd675d7816f00e5b0ff1401612b32a1b49f837862bd57a4c4bed3749",
+    "OPT3 ZIP:tasks/final_cnn_C5_seed44/history.csv": "f7dc268e377b706290bce6b7a60076f20cfee16d8712d65d58a027c1869525c3",
+    "OPT3 ZIP:tasks/final_gru_C1_seed42/metrics.json": "87a0526cfffaafeb3d74871cf7b69dc568f06146188cdbf8bdb50853bf1b18ac",
+    "OPT3 ZIP:tasks/final_gru_C1_seed42/history.csv": "11bf08f6427f2f72407714a365821b54e1d9082c4c9ac7c06a2d6b901de8a68f",
+    "OPT3 ZIP:tasks/final_gru_C1_seed43/metrics.json": "f4b6a271b0d3838144d0c61010a452e406d6e3865caa2e351af00a3ed192226f",
+    "OPT3 ZIP:tasks/final_gru_C1_seed43/history.csv": "a90b403bd27ff1a7d5f643eb0e690228327e38a1fe20d62d9dfd1b0b426cc99a",
+    "OPT3 ZIP:tasks/final_gru_C1_seed44/metrics.json": "b03293f53638f4d63078fd40d3e50b3623a6614489315189b4eca4a2fb93abbf",
+    "OPT3 ZIP:tasks/final_gru_C1_seed44/history.csv": "647574ee0053569f7e105efb9423af7858872673ec1b89970f46a44122b98d17",
+    "OPT3 ZIP:tasks/final_linear_C1_seed42/metrics.json": "440d56b522da033868236e438897ba6077319e392dc9990a6da41019d7c16303",
+    "OPT3 ZIP:tasks/final_linear_C1_seed42/history.csv": "ade8cbc2a5cdf8bcd598f8526b19608db753ea0c780fb0524d2d11845a1917eb",
+    "OPT3 ZIP:tasks/final_linear_C1_seed43/metrics.json": "9c37b9ba2bb5139335e50a97b26957086529ca7a3f379650497289eba535a7b0",
+    "OPT3 ZIP:tasks/final_linear_C1_seed43/history.csv": "df55475815f4f4ec18aeffc7f31e60e564d162b02c74b68264512d8c89638fc6",
+    "OPT3 ZIP:tasks/final_linear_C1_seed44/metrics.json": "e79652f0d03d0a13e7d3389e32d023b5bc4b8ceb557cb0cb881a65ea3e251bce",
+    "OPT3 ZIP:tasks/final_linear_C1_seed44/history.csv": "23f5e3d32ad2b4c347082d89f471ed2de35c30ceb091e6d9982147a879432e06",
+    "OPT3 ZIP:tasks/final_mlp_C7_seed42/metrics.json": "6993291c075450e1056b68807973ef943032e95f6c0b0bd1018727fc196db153",
+    "OPT3 ZIP:tasks/final_mlp_C7_seed42/history.csv": "144ffc4e9985972e2e6527b1569291e7c01371f754786e48d46009acafe77d3d",
+    "OPT3 ZIP:tasks/final_mlp_C7_seed43/metrics.json": "027227901fe84165f7863be79493eae3bf8d93d8427abef8159d88cb20366b12",
+    "OPT3 ZIP:tasks/final_mlp_C7_seed43/history.csv": "76ec4ea505254246f3d786893d11e3029255d2f2931d8dbf443bdc6f27b5e854",
+    "OPT3 ZIP:tasks/final_mlp_C7_seed44/metrics.json": "ed5e7e04553e15198d106c08fa829d2ae7cf7e19f4ed4c29dfb51fb1661bd673",
+    "OPT3 ZIP:tasks/final_mlp_C7_seed44/history.csv": "caf1b7383ae434d3ef7efcab5e2ba67e1084c7fca62a815a229fddc43e613387",
+    "OPT3 ZIP:tasks/final_transformer_C1_seed42/metrics.json": "cbf5e19f5ca7fff775dbe82b740a1d463b73a971dcf714f53d4ab2d5eb52165f",
+    "OPT3 ZIP:tasks/final_transformer_C1_seed42/history.csv": "e5d77f19c381ab4f74617ea51ea9bcfb8878c2055c984807556997c4f129dc55",
+    "OPT3 ZIP:tasks/final_transformer_C1_seed43/metrics.json": "6b05c25eb69ad46440568f125fdfad5309addda23f455bf5338b6d145e28890c",
+    "OPT3 ZIP:tasks/final_transformer_C1_seed43/history.csv": "829ea6874d2d5f51a6d2b65b8b606a7842620f729f21b046ae5410fe2fb77133",
+    "OPT3 ZIP:tasks/final_transformer_C1_seed44/metrics.json": "75913140399c311f4f8853b72e503a1283691b98f44f6880d14f41b840d0a1af",
+    "OPT3 ZIP:tasks/final_transformer_C1_seed44/history.csv": "80a0291c19cbd813d83b97e72ed1e5900a918f885985a573ee34efa302ab5d85",
+    "OPT3 ZIP:tasks/final_cnn_C5_seed42/predictions.csv": "c0013fac2e8661a1912ce4e4ed9600e9974ad460f09e8bbb12233f5ad02ab14f",
+    "outputs\\a1_m2_final_returned_867c74469240\\final_test\\linear\\metrics.json": "8b349e78df2d4d6884a0bb6e14f2fdfb4831c0f9f062cedecd4878c85c2e593d",
+    "outputs\\a1_m2_final_returned_867c74469240\\final_test\\mlp\\metrics.json": "d802b53d1c9975c03b372a3ce9ad68881b22ee60c6497daf134a480bab091236",
+    "outputs\\a1_m2_final_returned_867c74469240\\final_test\\cnn\\metrics.json": "76a565eb8063d3b8651d95538a591f6b440dc74d8eb8d754ac0114dffa6771cc",
+    "outputs\\a1_m2_final_returned_867c74469240\\final_test\\gru\\metrics.json": "969d75305e3d7b7fb0366c178281fdd24392649b0964611c4ba5c136d6a8024d",
+    "outputs\\a1_m2_final_returned_867c74469240\\final_test\\transformer\\metrics.json": "0aa6da76ccd46aa3363b7de1d7f4d198ad0da4c37faa3a79cc38c1b1d9d16b0d",
+    "data\\FashionMNIST\\raw\\train-labels-idx1-ubyte": "bad3541b69d912435c50bb6ba87bec294ff4f6a2e1246121d8633921760443d9",
+    "data\\FashionMNIST\\raw\\train-images-idx3-ubyte": "c59f468a2f672dc815687fe0f83887768d799fd8a3f3276145d20f83aa44d888"
+  },
+  "no_new_training": true,
+  "no_new_inference": true,
+  "visual_qa": [
+    {
+      "figure": "final_f1_seeds",
+      "width": 2305,
+      "height": 1114,
+      "visual_review": "PASS: actual data, readable labels, no clipping or text overlap"
+    },
+    {
+      "figure": "discovery_confirmation",
+      "width": 2635,
+      "height": 1510,
+      "visual_review": "PASS: actual data, readable labels, no clipping or text overlap"
+    },
+    {
+      "figure": "paired_confirmation_deltas",
+      "width": 2255,
+      "height": 1033,
+      "visual_review": "PASS: actual data, readable labels, no clipping or text overlap"
+    },
+    {
+      "figure": "learning_curves",
+      "width": 2635,
+      "height": 1510,
+      "visual_review": "PASS: actual data, readable labels, no clipping or text overlap"
+    },
+    {
+      "figure": "cnn_seed42_confusion",
+      "width": 1730,
+      "height": 1587,
+      "visual_review": "PASS: actual data, readable labels, no clipping or text overlap"
+    },
+    {
+      "figure": "cnn_seed42_examples",
+      "width": 2802,
+      "height": 1185,
+      "visual_review": "PASS: actual data, readable labels, no clipping or text overlap"
+    },
+    {
+      "figure": "accuracy_cost",
+      "width": 2442,
+      "height": 1125,
+      "visual_review": "PASS: actual data, readable labels, no clipping or text overlap"
+    },
+    {
+      "figure": "dataset_overview",
+      "width": 2223,
+      "height": 1151,
+      "visual_review": "PASS: actual data, readable labels, no clipping or text overlap"
+    }
+  ],
+  "review_scope": "All eight PNGs visually inspected; initial label/legend overlaps corrected and re-rendered; no raw artifact/model execution"
+}

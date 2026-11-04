@@ -1,0 +1,9 @@
+{
+  "reference_run": "adaae7c7221445ad9be48fc13d6a18dd",
+  "original_training_source_commit": "caa22313198b91cd4bd6aeb86a8604b8dfb2ddac",
+  "source_result_zip_sha256": "867c7446924058ac63a2a90c8739e2c1c2a79a68564e62b732b7cd59aac7f0f3",
+  "split_file_sha256": "cbc2d0fe6e635c171782407510d86e0a7b9745104fcdc4afc180a2b47ead76f4",
+  "logical_split_sha256": "0289c4940126abe338a376ea49eb866788d57cd67fa3ca17fe80139abb8c8fba",
+  "training_dataset_sha256": "1f243a60b4b748a44c48b9a6f6907be2a08bee3e4e226f0e86fbde8e147b745a",
+  "scope": "Copied original split IDs only; no historical model weights or scores used to initialize new trials"
+}

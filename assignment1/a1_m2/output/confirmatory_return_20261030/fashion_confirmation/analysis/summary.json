@@ -1,0 +1,915 @@
+{
+  "cells": [
+    {
+      "family": "linear",
+      "arm": "C0",
+      "policy": "ce",
+      "n_seeds": 3,
+      "macro_f1_mean": 0.8650369738003638,
+      "macro_f1_sample_sd": 0.0009072185759961449,
+      "accuracy_mean": 0.8659444444444445,
+      "accuracy_sample_sd": 0.001387777332977438,
+      "loss_mean": 0.37828031118454847,
+      "loss_sample_sd": 0.000627661356407406
+    },
+    {
+      "family": "linear",
+      "arm": "C0",
+      "policy": "f1",
+      "n_seeds": 3,
+      "macro_f1_mean": 0.8683039616436691,
+      "macro_f1_sample_sd": 0.00043222497248342407,
+      "accuracy_mean": 0.8677777777777778,
+      "accuracy_sample_sd": 0.0006309898162000636,
+      "loss_mean": 0.3825839375067898,
+      "loss_sample_sd": 0.001611718024222557
+    },
+    {
+      "family": "linear",
+      "arm": "C0",
+      "policy": "final",
+      "n_seeds": 3,
+      "macro_f1_mean": 0.862804013305396,
+      "macro_f1_sample_sd": 0.0021140973478395264,
+      "accuracy_mean": 0.8640555555555556,
+      "accuracy_sample_sd": 0.0028398617598071434,
+      "loss_mean": 0.3879888764553836,
+      "loss_sample_sd": 0.00458386626539837
+    },
+    {
+      "family": "linear",
+      "arm": "selected",
+      "policy": "ce",
+      "n_seeds": 3,
+      "macro_f1_mean": 0.8648108345520611,
+      "macro_f1_sample_sd": 0.000849267341843538,
+      "accuracy_mean": 0.8657222222222222,
+      "accuracy_sample_sd": 0.000787635937708744,
+      "loss_mean": 0.3767480276662322,
+      "loss_sample_sd": 8.963158419639296e-05
+    },
+    {
+      "family": "linear",
+      "arm": "selected",
+      "policy": "f1",
+      "n_seeds": 3,
+      "macro_f1_mean": 0.8680649490437726,
+      "macro_f1_sample_sd": 0.00010083587365324697,
+      "accuracy_mean": 0.8689444444444444,
+      "accuracy_sample_sd": 0.00034694433324431725,
+      "loss_mean": 0.3813290687961545,
+      "loss_sample_sd": 0.0009774124055199982
+    },
+    {
+      "family": "linear",
+      "arm": "selected",
+      "policy": "final",
+      "n_seeds": 3,
+      "macro_f1_mean": 0.8661842723696501,
+      "macro_f1_sample_sd": 0.0009424193158991505,
+      "accuracy_mean": 0.8668888888888888,
+      "accuracy_sample_sd": 0.00050917507721732,
+      "loss_mean": 0.3773861136898734,
+      "loss_sample_sd": 0.0002689097168682779
+    },
+    {
+      "family": "mlp",
+      "arm": "C0",
+      "policy": "ce",
+      "n_seeds": 3,
+      "macro_f1_mean": 0.9020022062157824,
+      "macro_f1_sample_sd": 0.002244781058224662,
+      "accuracy_mean": 0.9025,
+      "accuracy_sample_sd": 0.0017638342073764302,
+      "loss_mean": 0.2745669644759924,
+      "loss_sample_sd": 0.002120703516523267
+    },
+    {
+      "family": "mlp",
+      "arm": "C0",
+      "policy": "f1",
+      "n_seeds": 3,
+      "macro_f1_mean": 0.9086649816039981,
+      "macro_f1_sample_sd": 0.0014082437173782497,
+      "accuracy_mean": 0.9087777777777778,
+      "accuracy_sample_sd": 0.0015485955405295936,
+      "loss_mean": 0.32176758464333205,
+      "loss_sample_sd": 0.0193091282390485
+    },
+    {
+      "family": "mlp",
+      "arm": "C0",
+      "policy": "final",
+      "n_seeds": 3,
+      "macro_f1_mean": 0.9021762375517536,
+      "macro_f1_sample_sd": 0.002359553866532954,
+      "accuracy_mean": 0.9021666666666667,
+      "accuracy_sample_sd": 0.0024551533104427256,
+      "loss_mean": 0.4055306689820549,
+      "loss_sample_sd": 0.0005547270633415934
+    },
+    {
+      "family": "mlp",
+      "arm": "selected",
+      "policy": "ce",
+      "n_seeds": 3,
+      "macro_f1_mean": 0.9102132418025919,
+      "macro_f1_sample_sd": 0.0036856051471750493,
+      "accuracy_mean": 0.9105555555555556,
+      "accuracy_sample_sd": 0.0034251250315107578,
+      "loss_mean": 0.2606414037215225,
+      "loss_sample_sd": 0.001097771379412415
+    },
+    {
+      "family": "mlp",
+      "arm": "selected",
+      "policy": "f1",
+      "n_seeds": 3,
+      "macro_f1_mean": 0.9136018815703191,
+      "macro_f1_sample_sd": 0.0019182445406380332,
+      "accuracy_mean": 0.9137222222222222,
+      "accuracy_sample_sd": 0.0019743728493241343,
+      "loss_mean": 0.2642897533353893,
+      "loss_sample_sd": 0.0027127481102119924
+    },
+    {
+      "family": "mlp",
+      "arm": "selected",
+      "policy": "final",
+      "n_seeds": 3,
+      "macro_f1_mean": 0.9110856406422978,
+      "macro_f1_sample_sd": 0.002060258925269118,
+      "accuracy_mean": 0.9112777777777777,
+      "accuracy_sample_sd": 0.0019743728493240706,
+      "loss_mean": 0.2645438738300535,
+      "loss_sample_sd": 0.0005851270780543725
+    },
+    {
+      "family": "cnn",
+      "arm": "C0",
+      "policy": "ce",
+      "n_seeds": 3,
+      "macro_f1_mean": 0.9287651038613096,
+      "macro_f1_sample_sd": 0.0018678432134833995,
+      "accuracy_mean": 0.9285555555555556,
+      "accuracy_sample_sd": 0.0016694421334796732,
+      "loss_mean": 0.1941845583306793,
+      "loss_sample_sd": 0.0012291821003067006
+    },
+    {
+      "family": "cnn",
+      "arm": "C0",
+      "policy": "f1",
+      "n_seeds": 3,
+      "macro_f1_mean": 0.9299069135076685,
+      "macro_f1_sample_sd": 0.0006189523196626923,
+      "accuracy_mean": 0.9298888888888889,
+      "accuracy_sample_sd": 0.0004811252243246992,
+      "loss_mean": 0.19540183296533387,
+      "loss_sample_sd": 0.0014881629358058906
+    },
+    {
+      "family": "cnn",
+      "arm": "C0",
+      "policy": "final",
+      "n_seeds": 3,
+      "macro_f1_mean": 0.9282321443313867,
+      "macro_f1_sample_sd": 0.0008733783644082974,
+      "accuracy_mean": 0.9283333333333333,
+      "accuracy_sample_sd": 0.0008660254037844714,
+      "loss_mean": 0.19903275186493014,
+      "loss_sample_sd": 0.0013485425243863808
+    },
+    {
+      "family": "cnn",
+      "arm": "selected",
+      "policy": "ce",
+      "n_seeds": 3,
+      "macro_f1_mean": 0.9294004841121103,
+      "macro_f1_sample_sd": 0.0004695406921124704,
+      "accuracy_mean": 0.9294444444444444,
+      "accuracy_sample_sd": 0.0008221471437193853,
+      "loss_mean": 0.19376444874995005,
+      "loss_sample_sd": 0.0032709343589930645
+    },
+    {
+      "family": "cnn",
+      "arm": "selected",
+      "policy": "f1",
+      "n_seeds": 3,
+      "macro_f1_mean": 0.931258017202628,
+      "macro_f1_sample_sd": 0.0007872895752595425,
+      "accuracy_mean": 0.9313888888888889,
+      "accuracy_sample_sd": 0.0008221471437193853,
+      "loss_mean": 0.19816507340363718,
+      "loss_sample_sd": 0.0037889401195407347
+    },
+    {
+      "family": "cnn",
+      "arm": "selected",
+      "policy": "final",
+      "n_seeds": 3,
+      "macro_f1_mean": 0.9291443991375612,
+      "macro_f1_sample_sd": 0.0027305735516590015,
+      "accuracy_mean": 0.9292777777777778,
+      "accuracy_sample_sd": 0.002926570486903548,
+      "loss_mean": 0.20135589703089504,
+      "loss_sample_sd": 0.004844301093530831
+    },
+    {
+      "family": "gru",
+      "arm": "C0",
+      "policy": "ce",
+      "n_seeds": 3,
+      "macro_f1_mean": 0.9096216312148618,
+      "macro_f1_sample_sd": 0.0015372900752167623,
+      "accuracy_mean": 0.9098333333333334,
+      "accuracy_sample_sd": 0.0015898986690282364,
+      "loss_mean": 0.25598581757547206,
+      "loss_sample_sd": 0.001998929142280265
+    },
+    {
+      "family": "gru",
+      "arm": "C0",
+      "policy": "f1",
+      "n_seeds": 3,
+      "macro_f1_mean": 0.9129356742632941,
+      "macro_f1_sample_sd": 0.0017957059097004912,
+      "accuracy_mean": 0.9131666666666667,
+      "accuracy_sample_sd": 0.001755942292142151,
+      "loss_mean": 0.27620722880732385,
+      "loss_sample_sd": 0.006959128209395517
+    },
+    {
+      "family": "gru",
+      "arm": "C0",
+      "policy": "final",
+      "n_seeds": 3,
+      "macro_f1_mean": 0.9029308825763184,
+      "macro_f1_sample_sd": 0.0029791272942143684,
+      "accuracy_mean": 0.9030555555555556,
+      "accuracy_sample_sd": 0.0028349668493718146,
+      "loss_mean": 0.4326755007936293,
+      "loss_sample_sd": 0.011708433416065697
+    },
+    {
+      "family": "gru",
+      "arm": "selected",
+      "policy": "ce",
+      "n_seeds": 3,
+      "macro_f1_mean": 0.9095866578354246,
+      "macro_f1_sample_sd": 0.0049954186160326205,
+      "accuracy_mean": 0.9097222222222222,
+      "accuracy_sample_sd": 0.005250220453925259,
+      "loss_mean": 0.2554426583031707,
+      "loss_sample_sd": 0.003270266282003402
+    },
+    {
+      "family": "gru",
+      "arm": "selected",
+      "policy": "f1",
+      "n_seeds": 3,
+      "macro_f1_mean": 0.9127795685948389,
+      "macro_f1_sample_sd": 0.002192668062245224,
+      "accuracy_mean": 0.9128888888888889,
+      "accuracy_sample_sd": 0.0023353166174426075,
+      "loss_mean": 0.2662290880816187,
+      "loss_sample_sd": 0.010088601212518915
+    },
+    {
+      "family": "gru",
+      "arm": "selected",
+      "policy": "final",
+      "n_seeds": 3,
+      "macro_f1_mean": 0.9061513444661266,
+      "macro_f1_sample_sd": 0.002784827106866197,
+      "accuracy_mean": 0.9062222222222223,
+      "accuracy_sample_sd": 0.002849626356273792,
+      "loss_mean": 0.3316084795930277,
+      "loss_sample_sd": 0.004446443177176746
+    },
+    {
+      "family": "transformer",
+      "arm": "C0",
+      "policy": "ce",
+      "n_seeds": 3,
+      "macro_f1_mean": 0.9063003805321557,
+      "macro_f1_sample_sd": 0.001354231559797641,
+      "accuracy_mean": 0.9062777777777777,
+      "accuracy_sample_sd": 0.0015485955405296155,
+      "loss_mean": 0.26125980115178,
+      "loss_sample_sd": 0.0037171044871920425
+    },
+    {
+      "family": "transformer",
+      "arm": "C0",
+      "policy": "f1",
+      "n_seeds": 3,
+      "macro_f1_mean": 0.910215297665431,
+      "macro_f1_sample_sd": 0.0017187890445241867,
+      "accuracy_mean": 0.9105555555555556,
+      "accuracy_sample_sd": 0.0020971762320196497,
+      "loss_mean": 0.3010199486373901,
+      "loss_sample_sd": 0.029385030474258063
+    },
+    {
+      "family": "transformer",
+      "arm": "C0",
+      "policy": "final",
+      "n_seeds": 3,
+      "macro_f1_mean": 0.9022792970822315,
+      "macro_f1_sample_sd": 0.00296517995824607,
+      "accuracy_mean": 0.9026111111111111,
+      "accuracy_sample_sd": 0.003006166501881935,
+      "loss_mean": 0.36795496066894107,
+      "loss_sample_sd": 0.022539588199965772
+    },
+    {
+      "family": "transformer",
+      "arm": "selected",
+      "policy": "ce",
+      "n_seeds": 3,
+      "macro_f1_mean": 0.9059235401427657,
+      "macro_f1_sample_sd": 0.0019124467162672854,
+      "accuracy_mean": 0.9057777777777778,
+      "accuracy_sample_sd": 0.0021430335024428732,
+      "loss_mean": 0.26128442686194064,
+      "loss_sample_sd": 0.007425051302553347
+    },
+    {
+      "family": "transformer",
+      "arm": "selected",
+      "policy": "f1",
+      "n_seeds": 3,
+      "macro_f1_mean": 0.9132597714385865,
+      "macro_f1_sample_sd": 0.0012474910575189168,
+      "accuracy_mean": 0.9135000000000001,
+      "accuracy_sample_sd": 0.0011547005383792525,
+      "loss_mean": 0.3093560076014986,
+      "loss_sample_sd": 0.039094979620337623
+    },
+    {
+      "family": "transformer",
+      "arm": "selected",
+      "policy": "final",
+      "n_seeds": 3,
+      "macro_f1_mean": 0.9117434142730678,
+      "macro_f1_sample_sd": 0.0008682069756215375,
+      "accuracy_mean": 0.9119444444444444,
+      "accuracy_sample_sd": 0.0009179284245476935,
+      "loss_mean": 0.33847694291049346,
+      "loss_sample_sd": 0.009572969325308217
+    }
+  ],
+  "paired_contrasts": [
+    {
+      "family": "linear",
+      "contrast": "recipe_fixed_final_primary",
+      "seeds": [
+        1009,
+        2027,
+        3037
+      ],
+      "n_paired_seeds": 3,
+      "macro_f1_delta_per_seed": [
+        0.003901574691130505,
+        0.00447732058185113,
+        0.0017618819197808833
+      ],
+      "macro_f1_delta_mean": 0.0033802590642541728,
+      "macro_f1_delta_sample_sd": 0.0014308141979256287,
+      "interpretation": "paired exploratory old-validation difference; not an independent generalization estimate"
+    },
+    {
+      "family": "linear",
+      "contrast": "recipe_at_ce",
+      "seeds": [
+        1009,
+        2027,
+        3037
+      ],
+      "n_paired_seeds": 3,
+      "macro_f1_delta_per_seed": [
+        -0.002175983524777436,
+        0.000384655250429633,
+        0.0011129105294397368
+      ],
+      "macro_f1_delta_mean": -0.0002261392483026888,
+      "macro_f1_delta_sample_sd": 0.0017274282806320844,
+      "interpretation": "paired exploratory old-validation difference; not an independent generalization estimate"
+    },
+    {
+      "family": "linear",
+      "contrast": "recipe_at_f1",
+      "seeds": [
+        1009,
+        2027,
+        3037
+      ],
+      "n_paired_seeds": 3,
+      "macro_f1_delta_per_seed": [
+        -0.0008243888155586854,
+        5.866170666379844e-05,
+        4.868930920554071e-05
+      ],
+      "macro_f1_delta_mean": -0.00023901259989644874,
+      "macro_f1_delta_sample_sd": 0.0005069751942403567,
+      "interpretation": "paired exploratory old-validation difference; not an independent generalization estimate"
+    },
+    {
+      "family": "linear",
+      "contrast": "selector_within_C0",
+      "seeds": [
+        1009,
+        2027,
+        3037
+      ],
+      "n_paired_seeds": 3,
+      "macro_f1_delta_per_seed": [
+        0.0027146672858805454,
+        0.0035684148589438802,
+        0.003517881385091348
+      ],
+      "macro_f1_delta_mean": 0.003266987843305258,
+      "macro_f1_delta_sample_sd": 0.0004789905078499573,
+      "interpretation": "paired exploratory old-validation difference; not an independent generalization estimate"
+    },
+    {
+      "family": "linear",
+      "contrast": "selector_within_selected",
+      "seeds": [
+        1009,
+        2027,
+        3037
+      ],
+      "n_paired_seeds": 3,
+      "macro_f1_delta_per_seed": [
+        0.004066261995099296,
+        0.0032424213151780457,
+        0.002453660164857152
+      ],
+      "macro_f1_delta_mean": 0.003254114491711498,
+      "macro_f1_delta_sample_sd": 0.0008063645041221495,
+      "interpretation": "paired exploratory old-validation difference; not an independent generalization estimate"
+    },
+    {
+      "family": "linear",
+      "contrast": "recipe_selector_interaction",
+      "seeds": [
+        1009,
+        2027,
+        3037
+      ],
+      "n_paired_seeds": 3,
+      "macro_f1_delta_per_seed": [
+        0.0013515947092187508,
+        -0.00032599354376583456,
+        -0.001064221220234196
+      ],
+      "macro_f1_delta_mean": -1.2873351593759944e-05,
+      "macro_f1_delta_sample_sd": 0.0012379720684688564,
+      "interpretation": "paired exploratory old-validation difference; not an independent generalization estimate"
+    },
+    {
+      "family": "mlp",
+      "contrast": "recipe_fixed_final_primary",
+      "seeds": [
+        1009,
+        2027,
+        3037
+      ],
+      "n_paired_seeds": 3,
+      "macro_f1_delta_per_seed": [
+        0.008959322045592799,
+        0.01003339187031338,
+        0.007735495355726485
+      ],
+      "macro_f1_delta_mean": 0.008909403090544221,
+      "macro_f1_delta_sample_sd": 0.0011497612902218034,
+      "interpretation": "paired exploratory old-validation difference; not an independent generalization estimate"
+    },
+    {
+      "family": "mlp",
+      "contrast": "recipe_at_ce",
+      "seeds": [
+        1009,
+        2027,
+        3037
+      ],
+      "n_paired_seeds": 3,
+      "macro_f1_delta_per_seed": [
+        0.0029978094098483954,
+        0.014260087237475405,
+        0.007375210113104491
+      ],
+      "macro_f1_delta_mean": 0.008211035586809431,
+      "macro_f1_delta_sample_sd": 0.005677471147750141,
+      "interpretation": "paired exploratory old-validation difference; not an independent generalization estimate"
+    },
+    {
+      "family": "mlp",
+      "contrast": "recipe_at_f1",
+      "seeds": [
+        1009,
+        2027,
+        3037
+      ],
+      "n_paired_seeds": 3,
+      "macro_f1_delta_per_seed": [
+        0.004226046402305617,
+        0.005501526813843305,
+        0.005083126682814076
+      ],
+      "macro_f1_delta_mean": 0.004936899966321,
+      "macro_f1_delta_sample_sd": 0.0006501917098182256,
+      "interpretation": "paired exploratory old-validation difference; not an independent generalization estimate"
+    },
+    {
+      "family": "mlp",
+      "contrast": "selector_within_C0",
+      "seeds": [
+        1009,
+        2027,
+        3037
+      ],
+      "n_paired_seeds": 3,
+      "macro_f1_delta_per_seed": [
+        0.004632290280241591,
+        0.010875061174777323,
+        0.0044809747096280494
+      ],
+      "macro_f1_delta_mean": 0.006662775388215654,
+      "macro_f1_delta_sample_sd": 0.003648730979563938,
+      "interpretation": "paired exploratory old-validation difference; not an independent generalization estimate"
+    },
+    {
+      "family": "mlp",
+      "contrast": "selector_within_selected",
+      "seeds": [
+        1009,
+        2027,
+        3037
+      ],
+      "n_paired_seeds": 3,
+      "macro_f1_delta_per_seed": [
+        0.005860527272698812,
+        0.0021165007511452227,
+        0.0021888912793376347
+      ],
+      "macro_f1_delta_mean": 0.003388639767727223,
+      "macro_f1_delta_sample_sd": 0.002141023347623513,
+      "interpretation": "paired exploratory old-validation difference; not an independent generalization estimate"
+    },
+    {
+      "family": "mlp",
+      "contrast": "recipe_selector_interaction",
+      "seeds": [
+        1009,
+        2027,
+        3037
+      ],
+      "n_paired_seeds": 3,
+      "macro_f1_delta_per_seed": [
+        0.0012282369924572212,
+        -0.0087585604236321,
+        -0.0022920834302904147
+      ],
+      "macro_f1_delta_mean": -0.003274135620488431,
+      "macro_f1_delta_sample_sd": 0.005065308533120824,
+      "interpretation": "paired exploratory old-validation difference; not an independent generalization estimate"
+    },
+    {
+      "family": "cnn",
+      "contrast": "recipe_fixed_final_primary",
+      "seeds": [
+        1009,
+        2027,
+        3037
+      ],
+      "n_paired_seeds": 3,
+      "macro_f1_delta_per_seed": [
+        0.004893745744198652,
+        -0.0017383302636039266,
+        -0.0004186510620710626
+      ],
+      "macro_f1_delta_mean": 0.0009122548061745542,
+      "macro_f1_delta_sample_sd": 0.0035106396662026723,
+      "interpretation": "paired exploratory old-validation difference; not an independent generalization estimate"
+    },
+    {
+      "family": "cnn",
+      "contrast": "recipe_at_ce",
+      "seeds": [
+        1009,
+        2027,
+        3037
+      ],
+      "n_paired_seeds": 3,
+      "macro_f1_delta_per_seed": [
+        0.0010776854246755674,
+        0.002168674460310216,
+        -0.001340219132583531
+      ],
+      "macro_f1_delta_mean": 0.0006353802508007508,
+      "macro_f1_delta_sample_sd": 0.0017957753093552715,
+      "interpretation": "paired exploratory old-validation difference; not an independent generalization estimate"
+    },
+    {
+      "family": "cnn",
+      "contrast": "recipe_at_f1",
+      "seeds": [
+        1009,
+        2027,
+        3037
+      ],
+      "n_paired_seeds": 3,
+      "macro_f1_delta_per_seed": [
+        0.00275930515282119,
+        0.0008805889565980385,
+        0.0004134169754592687
+      ],
+      "macro_f1_delta_mean": 0.001351103694959499,
+      "macro_f1_delta_sample_sd": 0.0012417068593001828,
+      "interpretation": "paired exploratory old-validation difference; not an independent generalization estimate"
+    },
+    {
+      "family": "cnn",
+      "contrast": "selector_within_C0",
+      "seeds": [
+        1009,
+        2027,
+        3037
+      ],
+      "n_paired_seeds": 3,
+      "macro_f1_delta_per_seed": [
+        0.0005326068672139028,
+        0.0028928220718630326,
+        0.0
+      ],
+      "macro_f1_delta_mean": 0.0011418096463589784,
+      "macro_f1_delta_sample_sd": 0.0015396268718274064,
+      "interpretation": "paired exploratory old-validation difference; not an independent generalization estimate"
+    },
+    {
+      "family": "cnn",
+      "contrast": "selector_within_selected",
+      "seeds": [
+        1009,
+        2027,
+        3037
+      ],
+      "n_paired_seeds": 3,
+      "macro_f1_delta_per_seed": [
+        0.0022142265953595253,
+        0.0016047365681508552,
+        0.0017536361080427998
+      ],
+      "macro_f1_delta_mean": 0.0018575330905177267,
+      "macro_f1_delta_sample_sd": 0.000317750626344391,
+      "interpretation": "paired exploratory old-validation difference; not an independent generalization estimate"
+    },
+    {
+      "family": "cnn",
+      "contrast": "recipe_selector_interaction",
+      "seeds": [
+        1009,
+        2027,
+        3037
+      ],
+      "n_paired_seeds": 3,
+      "macro_f1_delta_per_seed": [
+        0.0016816197281456224,
+        -0.0012880855037121774,
+        0.0017536361080427998
+      ],
+      "macro_f1_delta_mean": 0.0007157234441587482,
+      "macro_f1_delta_sample_sd": 0.0017357229947255592,
+      "interpretation": "paired exploratory old-validation difference; not an independent generalization estimate"
+    },
+    {
+      "family": "gru",
+      "contrast": "recipe_fixed_final_primary",
+      "seeds": [
+        1009,
+        2027,
+        3037
+      ],
+      "n_paired_seeds": 3,
+      "macro_f1_delta_per_seed": [
+        -0.001008894183709419,
+        0.006076349943122672,
+        0.004593929910011285
+      ],
+      "macro_f1_delta_mean": 0.0032204618898081794,
+      "macro_f1_delta_sample_sd": 0.0037369749646060835,
+      "interpretation": "paired exploratory old-validation difference; not an independent generalization estimate"
+    },
+    {
+      "family": "gru",
+      "contrast": "recipe_at_ce",
+      "seeds": [
+        1009,
+        2027,
+        3037
+      ],
+      "n_paired_seeds": 3,
+      "macro_f1_delta_per_seed": [
+        -0.0018150448188031243,
+        0.00485517249399281,
+        -0.003145047813501556
+      ],
+      "macro_f1_delta_mean": -3.49733794372901e-05,
+      "macro_f1_delta_sample_sd": 0.0042868837153631515,
+      "interpretation": "paired exploratory old-validation difference; not an independent generalization estimate"
+    },
+    {
+      "family": "gru",
+      "contrast": "recipe_at_f1",
+      "seeds": [
+        1009,
+        2027,
+        3037
+      ],
+      "n_paired_seeds": 3,
+      "macro_f1_delta_per_seed": [
+        5.516153214757402e-06,
+        0.0022173930024010913,
+        -0.002691226160981497
+      ],
+      "macro_f1_delta_mean": -0.0001561056684552161,
+      "macro_f1_delta_sample_sd": 0.0024582975272964083,
+      "interpretation": "paired exploratory old-validation difference; not an independent generalization estimate"
+    },
+    {
+      "family": "gru",
+      "contrast": "selector_within_C0",
+      "seeds": [
+        1009,
+        2027,
+        3037
+      ],
+      "n_paired_seeds": 3,
+      "macro_f1_delta_per_seed": [
+        0.00010245325002300465,
+        0.003120034637807745,
+        0.006719641257466047
+      ],
+      "macro_f1_delta_mean": 0.0033140430484322656,
+      "macro_f1_delta_sample_sd": 0.0033128573360479614,
+      "interpretation": "paired exploratory old-validation difference; not an independent generalization estimate"
+    },
+    {
+      "family": "gru",
+      "contrast": "selector_within_selected",
+      "seeds": [
+        1009,
+        2027,
+        3037
+      ],
+      "n_paired_seeds": 3,
+      "macro_f1_delta_per_seed": [
+        0.0019230142220408863,
+        0.0004822551462160263,
+        0.007173462909986106
+      ],
+      "macro_f1_delta_mean": 0.0031929107594143393,
+      "macro_f1_delta_sample_sd": 0.003521724470512857,
+      "interpretation": "paired exploratory old-validation difference; not an independent generalization estimate"
+    },
+    {
+      "family": "gru",
+      "contrast": "recipe_selector_interaction",
+      "seeds": [
+        1009,
+        2027,
+        3037
+      ],
+      "n_paired_seeds": 3,
+      "macro_f1_delta_per_seed": [
+        0.0018205609720178817,
+        -0.0026377794915917185,
+        0.0004538216525200589
+      ],
+      "macro_f1_delta_mean": -0.00012113228901792598,
+      "macro_f1_delta_sample_sd": 0.002284103532796229,
+      "interpretation": "paired exploratory old-validation difference; not an independent generalization estimate"
+    },
+    {
+      "family": "transformer",
+      "contrast": "recipe_fixed_final_primary",
+      "seeds": [
+        1009,
+        2027,
+        3037
+      ],
+      "n_paired_seeds": 3,
+      "macro_f1_delta_per_seed": [
+        0.008883576013236194,
+        0.012167773828242634,
+        0.007341001731029806
+      ],
+      "macro_f1_delta_mean": 0.00946411719083621,
+      "macro_f1_delta_sample_sd": 0.002465198422799875,
+      "interpretation": "paired exploratory old-validation difference; not an independent generalization estimate"
+    },
+    {
+      "family": "transformer",
+      "contrast": "recipe_at_ce",
+      "seeds": [
+        1009,
+        2027,
+        3037
+      ],
+      "n_paired_seeds": 3,
+      "macro_f1_delta_per_seed": [
+        -4.915530677696012e-05,
+        -0.003735346415430385,
+        0.0026539805540372052
+      ],
+      "macro_f1_delta_mean": -0.00037684038939004666,
+      "macro_f1_delta_sample_sd": 0.003207243039701986,
+      "interpretation": "paired exploratory old-validation difference; not an independent generalization estimate"
+    },
+    {
+      "family": "transformer",
+      "contrast": "recipe_at_f1",
+      "seeds": [
+        1009,
+        2027,
+        3037
+      ],
+      "n_paired_seeds": 3,
+      "macro_f1_delta_per_seed": [
+        0.0003951322021231718,
+        0.006103683373334889,
+        0.0026346057440085335
+      ],
+      "macro_f1_delta_mean": 0.0030444737731555316,
+      "macro_f1_delta_sample_sd": 0.002876261978605791,
+      "interpretation": "paired exploratory old-validation difference; not an independent generalization estimate"
+    },
+    {
+      "family": "transformer",
+      "contrast": "selector_within_C0",
+      "seeds": [
+        1009,
+        2027,
+        3037
+      ],
+      "n_paired_seeds": 3,
+      "macro_f1_delta_per_seed": [
+        0.0054960390656096925,
+        0.001054681588197437,
+        0.005194030746018652
+      ],
+      "macro_f1_delta_mean": 0.00391491713327526,
+      "macro_f1_delta_sample_sd": 0.0024816351033684477,
+      "interpretation": "paired exploratory old-validation difference; not an independent generalization estimate"
+    },
+    {
+      "family": "transformer",
+      "contrast": "selector_within_selected",
+      "seeds": [
+        1009,
+        2027,
+        3037
+      ],
+      "n_paired_seeds": 3,
+      "macro_f1_delta_per_seed": [
+        0.005940326574509824,
+        0.010893711376962711,
+        0.00517465593598998
+      ],
+      "macro_f1_delta_mean": 0.007336231295820839,
+      "macro_f1_delta_sample_sd": 0.003104562976888009,
+      "interpretation": "paired exploratory old-validation difference; not an independent generalization estimate"
+    },
+    {
+      "family": "transformer",
+      "contrast": "recipe_selector_interaction",
+      "seeds": [
+        1009,
+        2027,
+        3037
+      ],
+      "n_paired_seeds": 3,
+      "macro_f1_delta_per_seed": [
+        0.0004442875089001319,
+        0.009839029788765274,
+        -1.9374810028671696e-05
+      ],
+      "macro_f1_delta_mean": 0.003421314162545578,
+      "macro_f1_delta_sample_sd": 0.005562737732516873,
+      "interpretation": "paired exploratory old-validation difference; not an independent generalization estimate"
+    }
+  ],
+  "limitations": [
+    "Previously inspected old validation selects CE/F1 checkpoints; its metrics are exploratory.",
+    "Fresh training seeds do not create fresh images or undo historical evaluation exposure.",
+    "The official test partition is not loaded and is not a new blind benchmark.",
+    "The paired factor design isolates combined recipe changes from checkpoint selection, not individual hyperparameters.",
+    "Across-seed sample SD is conditional on one fixed split, not a population confidence interval.",
+    "A genuinely independent image benchmark requires an externally collected, prospectively locked audit set."
+  ],
+  "official_test_evaluated": false
+}

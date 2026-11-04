@@ -1,0 +1,81 @@
+{
+  "status": "PASS_GENERATED_DATA_AND_VISUAL_QA",
+  "no_training": true,
+  "no_inference": true,
+  "source_prediction_hashes": {
+    "tasks/final_linear_C1_seed42/predictions.csv": "20e798ccb3ca447ad6fb5b8062da3e3de93ca9fc44c457a4362f8c6868881619",
+    "tasks/final_mlp_C7_seed42/predictions.csv": "7c450e18c73c1f59f4de9b23e8782f0a9252f763a90ed462c06319014d58d93d",
+    "tasks/final_gru_C1_seed42/predictions.csv": "f82212a0f7e7ce6a0181f1f92649d225937d90192a4284cdfba4382df0f62e00",
+    "tasks/final_transformer_C1_seed42/predictions.csv": "68f3f0b404f5502624d5c25870086e7cfbb8fb8443e77bbbfef3840619760d90"
+  },
+  "outputs_sha256": {
+    "output/a1_final/figures/linear_seed42_confusion.png": "c326487f78e5672c5dfba848c0f123ce3d9750c7276e842cb8b408c7241e096c",
+    "output/a1_final/figures/linear_seed42_examples.png": "1b9bce725332f9af60c071c30886cb424ba251a3ff8dcf30bb1afe30b4a9d692",
+    "output/a1_final/figures/mlp_seed42_confusion.png": "c5a0508afc5c7abd970a49ef5c4f61e2dadd48a719a991850d1fcb7db14c8a40",
+    "output/a1_final/figures/mlp_seed42_examples.png": "4018c48516370e096974c6f60802e7d299246f71df04f8b5d9be3e69a60fb364",
+    "output/a1_final/figures/gru_seed42_confusion.png": "3fbc5f0c92ac4b9b3eb8d0f0b212a0ae01aa5bc01bf4f9d3f39c5b29aa007766",
+    "output/a1_final/figures/gru_seed42_examples.png": "5794b814f98a883ff1cdede273d4976cc361ad9e4fce5abfe4a2342f6a07f31c",
+    "output/a1_final/figures/transformer_seed42_confusion.png": "a46b3c4deecd9e636d8c5048f75278f57d1a9f9e8da19dd388390b9e00981660",
+    "output/a1_final/figures/transformer_seed42_examples.png": "08ab3292055de711e236305d37b69384ff4bfd9bf169cf0a4c2af4f60fa28527",
+    "output/latex/G-M10_A1_Final/model_evidence.tex": "c4ca6ecbbc55a297f8b379ca46024912f098ad283c77a3c1bbace0561eb73660"
+  },
+  "models": [
+    {
+      "model": "linear",
+      "task_id": "final_linear_C1_seed42",
+      "correct_ids": [
+        17,
+        18,
+        27
+      ],
+      "error_ids": [
+        14842,
+        43940,
+        36089
+      ]
+    },
+    {
+      "model": "mlp",
+      "task_id": "final_mlp_C7_seed42",
+      "correct_ids": [
+        17,
+        18,
+        27
+      ],
+      "error_ids": [
+        42018,
+        36089,
+        54405
+      ]
+    },
+    {
+      "model": "gru",
+      "task_id": "final_gru_C1_seed42",
+      "correct_ids": [
+        17,
+        18,
+        27
+      ],
+      "error_ids": [
+        25814,
+        36089,
+        42018
+      ]
+    },
+    {
+      "model": "transformer",
+      "task_id": "final_transformer_C1_seed42",
+      "correct_ids": [
+        17,
+        18,
+        27
+      ],
+      "error_ids": [
+        12741,
+        42018,
+        59560
+      ]
+    }
+  ],
+  "visual_review": "All eight generated figures and their final four report pages inspected; no clipping or overlap."
+}

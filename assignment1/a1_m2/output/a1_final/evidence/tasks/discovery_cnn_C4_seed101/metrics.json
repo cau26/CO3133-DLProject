@@ -1,0 +1,34 @@
+{
+  "task_id": "discovery_cnn_C4_seed101",
+  "family": "cnn",
+  "phase": "discovery",
+  "seed": 101,
+  "parameters": 93962,
+  "selection_rule": "max_macro_f1_then_min_ce_then_earliest_epoch",
+  "best_f1_epoch": 51,
+  "best_f1_metrics": {
+    "loss": 0.23597268261054194,
+    "accuracy": 0.9162962962962963,
+    "macro_f1": 0.9165646730310097,
+    "n_examples": 5400
+  },
+  "best_ce_epoch": 60,
+  "best_ce_metrics": {
+    "loss": 0.2321543225681533,
+    "accuracy": 0.9157407407407407,
+    "macro_f1": 0.9154752528499387,
+    "n_examples": 5400
+  },
+  "epochs_completed": 60,
+  "optimizer_updates": 22800,
+  "n_train": 48600,
+  "n_validation": 5400,
+  "fit_wall_seconds": 445.8761788019947,
+  "fit_timer_scope": "completed epochs: train + validation + in-memory checkpoint selection; excludes setup, transaction writes, finalization, discarded crash work",
+  "training_loop_seconds": 407.8387167500032,
+  "validation_seconds": 37.932211749998714,
+  "scope": "validation_only_exploratory_no_official_test",
+  "task_sha256": "4fa8f10c0e134667d2b7eb4aa2d36080d74156c3ddd6e3f014c8c414d8b4f866",
+  "binding_sha256": "d0bbf90620ddda2f0e6cea749ce4e0d2e8ad07b410f5ceca6651b6347e79722c",
+  "finalization_seconds_before_metrics_write": 0.7494114319997607
+}

@@ -1,0 +1,32 @@
+{
+  "schema": "co3133_confirmatory_bundle_v1",
+  "controller_sha256": "61709cf22a735de6b49d4f322df88c4039f842bc93259252e6cc569fae726cd8",
+  "source_package_manifest_sha256": "d4e8ec8e773b1c5581662a7b1c2105328ab88916daa61472e9023a23a3fd1be1",
+  "fashion": {
+    "trajectories": 30,
+    "fresh_seeds": [
+      1009,
+      2027,
+      3037
+    ],
+    "epochs": 60,
+    "recipe_factor": [
+      "C0",
+      "selected"
+    ],
+    "checkpoint_factor": [
+      "ce",
+      "f1"
+    ],
+    "primary": "CNN selected minus C0 at fixed final epoch",
+    "scope": "Previously used Fashion-MNIST validation; no new blind-test claim"
+  },
+  "rgb": {
+    "models": "Six fixed C0/C4 models",
+    "cohort": "Project-unused Fashionpedia training-source license IDs3/5",
+    "source_group_cap": 2000,
+    "scope": "Prospectively locked same-source license-cohort shift; not external/IID"
+  },
+  "max_controller_seconds": 18000,
+  "new_rgb_training_or_calibration": false
+}

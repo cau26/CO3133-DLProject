@@ -1,0 +1,2978 @@
+{
+  "status": "PASS_INDEPENDENT_NUMERIC_AUDIT",
+  "input_zip": "C:\\Users\\ADMIN\\Downloads\\g_m10_garmentlab_recovery_run01_results.zip",
+  "method": "Read archived NumPy arrays with allow_pickle=False; independently compute confusion/F1/NLL/Brier/15-bin ECE, temperature optimum via inverse-temperature convex derivative bisection, brute-force tied threshold coverage, aggregate sample SD, ONNX cached-output error. Never execute archived Python.",
+  "checks": [
+    {
+      "name": "record_array_indices",
+      "pass": true
+    },
+    {
+      "name": "no_source_overlap:fit:selection",
+      "pass": true
+    },
+    {
+      "name": "no_source_overlap:calibration:fit",
+      "pass": true
+    },
+    {
+      "name": "no_source_overlap:calibration:selection",
+      "pass": true
+    },
+    {
+      "name": "no_source_overlap:assessment:fit",
+      "pass": true
+    },
+    {
+      "name": "no_source_overlap:assessment:selection",
+      "pass": true
+    },
+    {
+      "name": "no_source_overlap:assessment:calibration",
+      "pass": true
+    },
+    {
+      "name": "evaluation/frozen_seed314/selection/metrics.json:samples",
+      "pass": true
+    },
+    {
+      "name": "evaluation/frozen_seed314/selection/metrics.json:accuracy",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/frozen_seed314/selection/metrics.json:macro_f1",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/frozen_seed314/selection/metrics.json:nll",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/frozen_seed314/selection/metrics.json:brier_score",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/frozen_seed314/selection/metrics.json:ece",
+      "pass": true,
+      "absolute_difference": 6.938893903907228e-18
+    },
+    {
+      "name": "evaluation/frozen_seed314/selection/metrics.json:confusion",
+      "pass": true
+    },
+    {
+      "name": "evaluation/frozen_seed314/selection:indices_match_role",
+      "pass": true
+    },
+    {
+      "name": "evaluation/frozen_seed314/selection:targets_match_manifest",
+      "pass": true
+    },
+    {
+      "name": "summary:frozen:314:selection:accuracy",
+      "pass": true
+    },
+    {
+      "name": "summary:frozen:314:selection:macro_f1",
+      "pass": true
+    },
+    {
+      "name": "summary:frozen:314:selection:nll",
+      "pass": true
+    },
+    {
+      "name": "summary:frozen:314:selection:brier_score",
+      "pass": true
+    },
+    {
+      "name": "summary:frozen:314:selection:ece",
+      "pass": true
+    },
+    {
+      "name": "evaluation/frozen_seed314/assessment/metrics.json:samples",
+      "pass": true
+    },
+    {
+      "name": "evaluation/frozen_seed314/assessment/metrics.json:accuracy",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/frozen_seed314/assessment/metrics.json:macro_f1",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/frozen_seed314/assessment/metrics.json:nll",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/frozen_seed314/assessment/metrics.json:brier_score",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/frozen_seed314/assessment/metrics.json:ece",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/frozen_seed314/assessment/metrics.json:confusion",
+      "pass": true
+    },
+    {
+      "name": "evaluation/frozen_seed314/assessment:indices_match_role",
+      "pass": true
+    },
+    {
+      "name": "evaluation/frozen_seed314/assessment:targets_match_manifest",
+      "pass": true
+    },
+    {
+      "name": "evaluation/frozen_seed314/assessment/probabilities.npz:independent_softmax",
+      "pass": true,
+      "maximum_absolute_difference": 1.1102230246251565e-16
+    },
+    {
+      "name": "summary:frozen:314:assessment:accuracy",
+      "pass": true
+    },
+    {
+      "name": "summary:frozen:314:assessment:macro_f1",
+      "pass": true
+    },
+    {
+      "name": "summary:frozen:314:assessment:nll",
+      "pass": true
+    },
+    {
+      "name": "summary:frozen:314:assessment:brier_score",
+      "pass": true
+    },
+    {
+      "name": "summary:frozen:314:assessment:ece",
+      "pass": true
+    },
+    {
+      "name": "evaluation/frozen_seed2718/selection/metrics.json:samples",
+      "pass": true
+    },
+    {
+      "name": "evaluation/frozen_seed2718/selection/metrics.json:accuracy",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/frozen_seed2718/selection/metrics.json:macro_f1",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/frozen_seed2718/selection/metrics.json:nll",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/frozen_seed2718/selection/metrics.json:brier_score",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/frozen_seed2718/selection/metrics.json:ece",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/frozen_seed2718/selection/metrics.json:confusion",
+      "pass": true
+    },
+    {
+      "name": "evaluation/frozen_seed2718/selection:indices_match_role",
+      "pass": true
+    },
+    {
+      "name": "evaluation/frozen_seed2718/selection:targets_match_manifest",
+      "pass": true
+    },
+    {
+      "name": "summary:frozen:2718:selection:accuracy",
+      "pass": true
+    },
+    {
+      "name": "summary:frozen:2718:selection:macro_f1",
+      "pass": true
+    },
+    {
+      "name": "summary:frozen:2718:selection:nll",
+      "pass": true
+    },
+    {
+      "name": "summary:frozen:2718:selection:brier_score",
+      "pass": true
+    },
+    {
+      "name": "summary:frozen:2718:selection:ece",
+      "pass": true
+    },
+    {
+      "name": "evaluation/frozen_seed2718/assessment/metrics.json:samples",
+      "pass": true
+    },
+    {
+      "name": "evaluation/frozen_seed2718/assessment/metrics.json:accuracy",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/frozen_seed2718/assessment/metrics.json:macro_f1",
+      "pass": true,
+      "absolute_difference": 2.220446049250313e-16
+    },
+    {
+      "name": "evaluation/frozen_seed2718/assessment/metrics.json:nll",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/frozen_seed2718/assessment/metrics.json:brier_score",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/frozen_seed2718/assessment/metrics.json:ece",
+      "pass": true,
+      "absolute_difference": 1.3877787807814457e-17
+    },
+    {
+      "name": "evaluation/frozen_seed2718/assessment/metrics.json:confusion",
+      "pass": true
+    },
+    {
+      "name": "evaluation/frozen_seed2718/assessment:indices_match_role",
+      "pass": true
+    },
+    {
+      "name": "evaluation/frozen_seed2718/assessment:targets_match_manifest",
+      "pass": true
+    },
+    {
+      "name": "evaluation/frozen_seed2718/assessment/probabilities.npz:independent_softmax",
+      "pass": true,
+      "maximum_absolute_difference": 1.1102230246251565e-16
+    },
+    {
+      "name": "summary:frozen:2718:assessment:accuracy",
+      "pass": true
+    },
+    {
+      "name": "summary:frozen:2718:assessment:macro_f1",
+      "pass": true
+    },
+    {
+      "name": "summary:frozen:2718:assessment:nll",
+      "pass": true
+    },
+    {
+      "name": "summary:frozen:2718:assessment:brier_score",
+      "pass": true
+    },
+    {
+      "name": "summary:frozen:2718:assessment:ece",
+      "pass": true
+    },
+    {
+      "name": "evaluation/frozen_seed5772/selection/metrics.json:samples",
+      "pass": true
+    },
+    {
+      "name": "evaluation/frozen_seed5772/selection/metrics.json:accuracy",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/frozen_seed5772/selection/metrics.json:macro_f1",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/frozen_seed5772/selection/metrics.json:nll",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/frozen_seed5772/selection/metrics.json:brier_score",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/frozen_seed5772/selection/metrics.json:ece",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/frozen_seed5772/selection/metrics.json:confusion",
+      "pass": true
+    },
+    {
+      "name": "evaluation/frozen_seed5772/selection:indices_match_role",
+      "pass": true
+    },
+    {
+      "name": "evaluation/frozen_seed5772/selection:targets_match_manifest",
+      "pass": true
+    },
+    {
+      "name": "summary:frozen:5772:selection:accuracy",
+      "pass": true
+    },
+    {
+      "name": "summary:frozen:5772:selection:macro_f1",
+      "pass": true
+    },
+    {
+      "name": "summary:frozen:5772:selection:nll",
+      "pass": true
+    },
+    {
+      "name": "summary:frozen:5772:selection:brier_score",
+      "pass": true
+    },
+    {
+      "name": "summary:frozen:5772:selection:ece",
+      "pass": true
+    },
+    {
+      "name": "evaluation/frozen_seed5772/assessment/metrics.json:samples",
+      "pass": true
+    },
+    {
+      "name": "evaluation/frozen_seed5772/assessment/metrics.json:accuracy",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/frozen_seed5772/assessment/metrics.json:macro_f1",
+      "pass": true,
+      "absolute_difference": 1.1102230246251565e-16
+    },
+    {
+      "name": "evaluation/frozen_seed5772/assessment/metrics.json:nll",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/frozen_seed5772/assessment/metrics.json:brier_score",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/frozen_seed5772/assessment/metrics.json:ece",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/frozen_seed5772/assessment/metrics.json:confusion",
+      "pass": true
+    },
+    {
+      "name": "evaluation/frozen_seed5772/assessment:indices_match_role",
+      "pass": true
+    },
+    {
+      "name": "evaluation/frozen_seed5772/assessment:targets_match_manifest",
+      "pass": true
+    },
+    {
+      "name": "evaluation/frozen_seed5772/assessment/probabilities.npz:independent_softmax",
+      "pass": true,
+      "maximum_absolute_difference": 1.1102230246251565e-16
+    },
+    {
+      "name": "summary:frozen:5772:assessment:accuracy",
+      "pass": true
+    },
+    {
+      "name": "summary:frozen:5772:assessment:macro_f1",
+      "pass": true
+    },
+    {
+      "name": "summary:frozen:5772:assessment:nll",
+      "pass": true
+    },
+    {
+      "name": "summary:frozen:5772:assessment:brier_score",
+      "pass": true
+    },
+    {
+      "name": "summary:frozen:5772:assessment:ece",
+      "pass": true
+    },
+    {
+      "name": "evaluation/finetune_seed314/selection/metrics.json:samples",
+      "pass": true
+    },
+    {
+      "name": "evaluation/finetune_seed314/selection/metrics.json:accuracy",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/finetune_seed314/selection/metrics.json:macro_f1",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/finetune_seed314/selection/metrics.json:nll",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/finetune_seed314/selection/metrics.json:brier_score",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/finetune_seed314/selection/metrics.json:ece",
+      "pass": true,
+      "absolute_difference": 9.71445146547012e-17
+    },
+    {
+      "name": "evaluation/finetune_seed314/selection/metrics.json:confusion",
+      "pass": true
+    },
+    {
+      "name": "evaluation/finetune_seed314/selection:indices_match_role",
+      "pass": true
+    },
+    {
+      "name": "evaluation/finetune_seed314/selection:targets_match_manifest",
+      "pass": true
+    },
+    {
+      "name": "summary:finetune:314:selection:accuracy",
+      "pass": true
+    },
+    {
+      "name": "summary:finetune:314:selection:macro_f1",
+      "pass": true
+    },
+    {
+      "name": "summary:finetune:314:selection:nll",
+      "pass": true
+    },
+    {
+      "name": "summary:finetune:314:selection:brier_score",
+      "pass": true
+    },
+    {
+      "name": "summary:finetune:314:selection:ece",
+      "pass": true
+    },
+    {
+      "name": "evaluation/finetune_seed314/assessment/metrics.json:samples",
+      "pass": true
+    },
+    {
+      "name": "evaluation/finetune_seed314/assessment/metrics.json:accuracy",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/finetune_seed314/assessment/metrics.json:macro_f1",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/finetune_seed314/assessment/metrics.json:nll",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/finetune_seed314/assessment/metrics.json:brier_score",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/finetune_seed314/assessment/metrics.json:ece",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/finetune_seed314/assessment/metrics.json:confusion",
+      "pass": true
+    },
+    {
+      "name": "evaluation/finetune_seed314/assessment:indices_match_role",
+      "pass": true
+    },
+    {
+      "name": "evaluation/finetune_seed314/assessment:targets_match_manifest",
+      "pass": true
+    },
+    {
+      "name": "evaluation/finetune_seed314/assessment/probabilities.npz:independent_softmax",
+      "pass": true,
+      "maximum_absolute_difference": 1.1102230246251565e-16
+    },
+    {
+      "name": "summary:finetune:314:assessment:accuracy",
+      "pass": true
+    },
+    {
+      "name": "summary:finetune:314:assessment:macro_f1",
+      "pass": true
+    },
+    {
+      "name": "summary:finetune:314:assessment:nll",
+      "pass": true
+    },
+    {
+      "name": "summary:finetune:314:assessment:brier_score",
+      "pass": true
+    },
+    {
+      "name": "summary:finetune:314:assessment:ece",
+      "pass": true
+    },
+    {
+      "name": "evaluation/finetune_seed2718/selection/metrics.json:samples",
+      "pass": true
+    },
+    {
+      "name": "evaluation/finetune_seed2718/selection/metrics.json:accuracy",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/finetune_seed2718/selection/metrics.json:macro_f1",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/finetune_seed2718/selection/metrics.json:nll",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/finetune_seed2718/selection/metrics.json:brier_score",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/finetune_seed2718/selection/metrics.json:ece",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/finetune_seed2718/selection/metrics.json:confusion",
+      "pass": true
+    },
+    {
+      "name": "evaluation/finetune_seed2718/selection:indices_match_role",
+      "pass": true
+    },
+    {
+      "name": "evaluation/finetune_seed2718/selection:targets_match_manifest",
+      "pass": true
+    },
+    {
+      "name": "summary:finetune:2718:selection:accuracy",
+      "pass": true
+    },
+    {
+      "name": "summary:finetune:2718:selection:macro_f1",
+      "pass": true
+    },
+    {
+      "name": "summary:finetune:2718:selection:nll",
+      "pass": true
+    },
+    {
+      "name": "summary:finetune:2718:selection:brier_score",
+      "pass": true
+    },
+    {
+      "name": "summary:finetune:2718:selection:ece",
+      "pass": true
+    },
+    {
+      "name": "evaluation/finetune_seed2718/assessment/metrics.json:samples",
+      "pass": true
+    },
+    {
+      "name": "evaluation/finetune_seed2718/assessment/metrics.json:accuracy",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/finetune_seed2718/assessment/metrics.json:macro_f1",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/finetune_seed2718/assessment/metrics.json:nll",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/finetune_seed2718/assessment/metrics.json:brier_score",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/finetune_seed2718/assessment/metrics.json:ece",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/finetune_seed2718/assessment/metrics.json:confusion",
+      "pass": true
+    },
+    {
+      "name": "evaluation/finetune_seed2718/assessment:indices_match_role",
+      "pass": true
+    },
+    {
+      "name": "evaluation/finetune_seed2718/assessment:targets_match_manifest",
+      "pass": true
+    },
+    {
+      "name": "evaluation/finetune_seed2718/assessment/probabilities.npz:independent_softmax",
+      "pass": true,
+      "maximum_absolute_difference": 1.1102230246251565e-16
+    },
+    {
+      "name": "summary:finetune:2718:assessment:accuracy",
+      "pass": true
+    },
+    {
+      "name": "summary:finetune:2718:assessment:macro_f1",
+      "pass": true
+    },
+    {
+      "name": "summary:finetune:2718:assessment:nll",
+      "pass": true
+    },
+    {
+      "name": "summary:finetune:2718:assessment:brier_score",
+      "pass": true
+    },
+    {
+      "name": "summary:finetune:2718:assessment:ece",
+      "pass": true
+    },
+    {
+      "name": "evaluation/finetune_seed5772/selection/metrics.json:samples",
+      "pass": true
+    },
+    {
+      "name": "evaluation/finetune_seed5772/selection/metrics.json:accuracy",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/finetune_seed5772/selection/metrics.json:macro_f1",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/finetune_seed5772/selection/metrics.json:nll",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/finetune_seed5772/selection/metrics.json:brier_score",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/finetune_seed5772/selection/metrics.json:ece",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/finetune_seed5772/selection/metrics.json:confusion",
+      "pass": true
+    },
+    {
+      "name": "evaluation/finetune_seed5772/selection:indices_match_role",
+      "pass": true
+    },
+    {
+      "name": "evaluation/finetune_seed5772/selection:targets_match_manifest",
+      "pass": true
+    },
+    {
+      "name": "summary:finetune:5772:selection:accuracy",
+      "pass": true
+    },
+    {
+      "name": "summary:finetune:5772:selection:macro_f1",
+      "pass": true
+    },
+    {
+      "name": "summary:finetune:5772:selection:nll",
+      "pass": true
+    },
+    {
+      "name": "summary:finetune:5772:selection:brier_score",
+      "pass": true
+    },
+    {
+      "name": "summary:finetune:5772:selection:ece",
+      "pass": true
+    },
+    {
+      "name": "evaluation/finetune_seed5772/assessment/metrics.json:samples",
+      "pass": true
+    },
+    {
+      "name": "evaluation/finetune_seed5772/assessment/metrics.json:accuracy",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/finetune_seed5772/assessment/metrics.json:macro_f1",
+      "pass": true,
+      "absolute_difference": 1.1102230246251565e-16
+    },
+    {
+      "name": "evaluation/finetune_seed5772/assessment/metrics.json:nll",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/finetune_seed5772/assessment/metrics.json:brier_score",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/finetune_seed5772/assessment/metrics.json:ece",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/finetune_seed5772/assessment/metrics.json:confusion",
+      "pass": true
+    },
+    {
+      "name": "evaluation/finetune_seed5772/assessment:indices_match_role",
+      "pass": true
+    },
+    {
+      "name": "evaluation/finetune_seed5772/assessment:targets_match_manifest",
+      "pass": true
+    },
+    {
+      "name": "evaluation/finetune_seed5772/assessment/probabilities.npz:independent_softmax",
+      "pass": true,
+      "maximum_absolute_difference": 1.1102230246251565e-16
+    },
+    {
+      "name": "summary:finetune:5772:assessment:accuracy",
+      "pass": true
+    },
+    {
+      "name": "summary:finetune:5772:assessment:macro_f1",
+      "pass": true
+    },
+    {
+      "name": "summary:finetune:5772:assessment:nll",
+      "pass": true
+    },
+    {
+      "name": "summary:finetune:5772:assessment:brier_score",
+      "pass": true
+    },
+    {
+      "name": "summary:finetune:5772:assessment:ece",
+      "pass": true
+    },
+    {
+      "name": "calibrated_assessment:samples",
+      "pass": true
+    },
+    {
+      "name": "calibrated_assessment:accuracy",
+      "pass": true
+    },
+    {
+      "name": "calibrated_assessment:macro_f1",
+      "pass": true
+    },
+    {
+      "name": "calibrated_assessment:nll",
+      "pass": true
+    },
+    {
+      "name": "calibrated_assessment:brier_score",
+      "pass": true
+    },
+    {
+      "name": "calibrated_assessment:ece",
+      "pass": true
+    },
+    {
+      "name": "calibrated_assessment:confusion",
+      "pass": true
+    },
+    {
+      "name": "calibrated_probability_values",
+      "pass": true
+    },
+    {
+      "name": "assessment_acceptance_count",
+      "pass": true
+    },
+    {
+      "name": "assessment_accepted_accuracy",
+      "pass": true
+    },
+    {
+      "name": "evaluation/corruptions/noise_severity1/metrics.json:samples",
+      "pass": true
+    },
+    {
+      "name": "evaluation/corruptions/noise_severity1/metrics.json:accuracy",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/corruptions/noise_severity1/metrics.json:macro_f1",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/corruptions/noise_severity1/metrics.json:nll",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/corruptions/noise_severity1/metrics.json:brier_score",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/corruptions/noise_severity1/metrics.json:ece",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/corruptions/noise_severity1/metrics.json:confusion",
+      "pass": true
+    },
+    {
+      "name": "evaluation/corruptions/noise_severity1:indices_match_role",
+      "pass": true
+    },
+    {
+      "name": "evaluation/corruptions/noise_severity1:targets_match_manifest",
+      "pass": true
+    },
+    {
+      "name": "evaluation/corruptions/noise_severity1/probabilities.npz:independent_softmax",
+      "pass": true,
+      "maximum_absolute_difference": 1.1102230246251565e-16
+    },
+    {
+      "name": "evaluation/corruptions/noise_severity1:f1_delta",
+      "pass": true
+    },
+    {
+      "name": "evaluation/corruptions/noise_severity2/metrics.json:samples",
+      "pass": true
+    },
+    {
+      "name": "evaluation/corruptions/noise_severity2/metrics.json:accuracy",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/corruptions/noise_severity2/metrics.json:macro_f1",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/corruptions/noise_severity2/metrics.json:nll",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/corruptions/noise_severity2/metrics.json:brier_score",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/corruptions/noise_severity2/metrics.json:ece",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/corruptions/noise_severity2/metrics.json:confusion",
+      "pass": true
+    },
+    {
+      "name": "evaluation/corruptions/noise_severity2:indices_match_role",
+      "pass": true
+    },
+    {
+      "name": "evaluation/corruptions/noise_severity2:targets_match_manifest",
+      "pass": true
+    },
+    {
+      "name": "evaluation/corruptions/noise_severity2/probabilities.npz:independent_softmax",
+      "pass": true,
+      "maximum_absolute_difference": 1.1102230246251565e-16
+    },
+    {
+      "name": "evaluation/corruptions/noise_severity2:f1_delta",
+      "pass": true
+    },
+    {
+      "name": "evaluation/corruptions/noise_severity3/metrics.json:samples",
+      "pass": true
+    },
+    {
+      "name": "evaluation/corruptions/noise_severity3/metrics.json:accuracy",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/corruptions/noise_severity3/metrics.json:macro_f1",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/corruptions/noise_severity3/metrics.json:nll",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/corruptions/noise_severity3/metrics.json:brier_score",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/corruptions/noise_severity3/metrics.json:ece",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/corruptions/noise_severity3/metrics.json:confusion",
+      "pass": true
+    },
+    {
+      "name": "evaluation/corruptions/noise_severity3:indices_match_role",
+      "pass": true
+    },
+    {
+      "name": "evaluation/corruptions/noise_severity3:targets_match_manifest",
+      "pass": true
+    },
+    {
+      "name": "evaluation/corruptions/noise_severity3/probabilities.npz:independent_softmax",
+      "pass": true,
+      "maximum_absolute_difference": 2.220446049250313e-16
+    },
+    {
+      "name": "evaluation/corruptions/noise_severity3:f1_delta",
+      "pass": true
+    },
+    {
+      "name": "evaluation/corruptions/blur_severity1/metrics.json:samples",
+      "pass": true
+    },
+    {
+      "name": "evaluation/corruptions/blur_severity1/metrics.json:accuracy",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/corruptions/blur_severity1/metrics.json:macro_f1",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/corruptions/blur_severity1/metrics.json:nll",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/corruptions/blur_severity1/metrics.json:brier_score",
+      "pass": true,
+      "absolute_difference": 5.551115123125783e-17
+    },
+    {
+      "name": "evaluation/corruptions/blur_severity1/metrics.json:ece",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/corruptions/blur_severity1/metrics.json:confusion",
+      "pass": true
+    },
+    {
+      "name": "evaluation/corruptions/blur_severity1:indices_match_role",
+      "pass": true
+    },
+    {
+      "name": "evaluation/corruptions/blur_severity1:targets_match_manifest",
+      "pass": true
+    },
+    {
+      "name": "evaluation/corruptions/blur_severity1/probabilities.npz:independent_softmax",
+      "pass": true,
+      "maximum_absolute_difference": 1.1102230246251565e-16
+    },
+    {
+      "name": "evaluation/corruptions/blur_severity1:f1_delta",
+      "pass": true
+    },
+    {
+      "name": "evaluation/corruptions/blur_severity2/metrics.json:samples",
+      "pass": true
+    },
+    {
+      "name": "evaluation/corruptions/blur_severity2/metrics.json:accuracy",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/corruptions/blur_severity2/metrics.json:macro_f1",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/corruptions/blur_severity2/metrics.json:nll",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/corruptions/blur_severity2/metrics.json:brier_score",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/corruptions/blur_severity2/metrics.json:ece",
+      "pass": true,
+      "absolute_difference": 4.163336342344337e-17
+    },
+    {
+      "name": "evaluation/corruptions/blur_severity2/metrics.json:confusion",
+      "pass": true
+    },
+    {
+      "name": "evaluation/corruptions/blur_severity2:indices_match_role",
+      "pass": true
+    },
+    {
+      "name": "evaluation/corruptions/blur_severity2:targets_match_manifest",
+      "pass": true
+    },
+    {
+      "name": "evaluation/corruptions/blur_severity2/probabilities.npz:independent_softmax",
+      "pass": true,
+      "maximum_absolute_difference": 1.1102230246251565e-16
+    },
+    {
+      "name": "evaluation/corruptions/blur_severity2:f1_delta",
+      "pass": true
+    },
+    {
+      "name": "evaluation/corruptions/blur_severity3/metrics.json:samples",
+      "pass": true
+    },
+    {
+      "name": "evaluation/corruptions/blur_severity3/metrics.json:accuracy",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/corruptions/blur_severity3/metrics.json:macro_f1",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/corruptions/blur_severity3/metrics.json:nll",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/corruptions/blur_severity3/metrics.json:brier_score",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/corruptions/blur_severity3/metrics.json:ece",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/corruptions/blur_severity3/metrics.json:confusion",
+      "pass": true
+    },
+    {
+      "name": "evaluation/corruptions/blur_severity3:indices_match_role",
+      "pass": true
+    },
+    {
+      "name": "evaluation/corruptions/blur_severity3:targets_match_manifest",
+      "pass": true
+    },
+    {
+      "name": "evaluation/corruptions/blur_severity3/probabilities.npz:independent_softmax",
+      "pass": true,
+      "maximum_absolute_difference": 2.220446049250313e-16
+    },
+    {
+      "name": "evaluation/corruptions/blur_severity3:f1_delta",
+      "pass": true
+    },
+    {
+      "name": "evaluation/corruptions/translation_severity1/metrics.json:samples",
+      "pass": true
+    },
+    {
+      "name": "evaluation/corruptions/translation_severity1/metrics.json:accuracy",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/corruptions/translation_severity1/metrics.json:macro_f1",
+      "pass": true,
+      "absolute_difference": 1.1102230246251565e-16
+    },
+    {
+      "name": "evaluation/corruptions/translation_severity1/metrics.json:nll",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/corruptions/translation_severity1/metrics.json:brier_score",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/corruptions/translation_severity1/metrics.json:ece",
+      "pass": true,
+      "absolute_difference": 1.3877787807814457e-17
+    },
+    {
+      "name": "evaluation/corruptions/translation_severity1/metrics.json:confusion",
+      "pass": true
+    },
+    {
+      "name": "evaluation/corruptions/translation_severity1:indices_match_role",
+      "pass": true
+    },
+    {
+      "name": "evaluation/corruptions/translation_severity1:targets_match_manifest",
+      "pass": true
+    },
+    {
+      "name": "evaluation/corruptions/translation_severity1/probabilities.npz:independent_softmax",
+      "pass": true,
+      "maximum_absolute_difference": 1.1102230246251565e-16
+    },
+    {
+      "name": "evaluation/corruptions/translation_severity1:f1_delta",
+      "pass": true
+    },
+    {
+      "name": "evaluation/corruptions/translation_severity2/metrics.json:samples",
+      "pass": true
+    },
+    {
+      "name": "evaluation/corruptions/translation_severity2/metrics.json:accuracy",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/corruptions/translation_severity2/metrics.json:macro_f1",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/corruptions/translation_severity2/metrics.json:nll",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/corruptions/translation_severity2/metrics.json:brier_score",
+      "pass": true,
+      "absolute_difference": 5.551115123125783e-17
+    },
+    {
+      "name": "evaluation/corruptions/translation_severity2/metrics.json:ece",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/corruptions/translation_severity2/metrics.json:confusion",
+      "pass": true
+    },
+    {
+      "name": "evaluation/corruptions/translation_severity2:indices_match_role",
+      "pass": true
+    },
+    {
+      "name": "evaluation/corruptions/translation_severity2:targets_match_manifest",
+      "pass": true
+    },
+    {
+      "name": "evaluation/corruptions/translation_severity2/probabilities.npz:independent_softmax",
+      "pass": true,
+      "maximum_absolute_difference": 2.220446049250313e-16
+    },
+    {
+      "name": "evaluation/corruptions/translation_severity2:f1_delta",
+      "pass": true
+    },
+    {
+      "name": "evaluation/corruptions/translation_severity3/metrics.json:samples",
+      "pass": true
+    },
+    {
+      "name": "evaluation/corruptions/translation_severity3/metrics.json:accuracy",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/corruptions/translation_severity3/metrics.json:macro_f1",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/corruptions/translation_severity3/metrics.json:nll",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/corruptions/translation_severity3/metrics.json:brier_score",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/corruptions/translation_severity3/metrics.json:ece",
+      "pass": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "name": "evaluation/corruptions/translation_severity3/metrics.json:confusion",
+      "pass": true
+    },
+    {
+      "name": "evaluation/corruptions/translation_severity3:indices_match_role",
+      "pass": true
+    },
+    {
+      "name": "evaluation/corruptions/translation_severity3:targets_match_manifest",
+      "pass": true
+    },
+    {
+      "name": "evaluation/corruptions/translation_severity3/probabilities.npz:independent_softmax",
+      "pass": true,
+      "maximum_absolute_difference": 2.220446049250313e-16
+    },
+    {
+      "name": "evaluation/corruptions/translation_severity3:f1_delta",
+      "pass": true
+    },
+    {
+      "name": "calibration_indices",
+      "pass": true
+    },
+    {
+      "name": "calibration_targets",
+      "pass": true
+    },
+    {
+      "name": "temperature_independent_convex_optimum",
+      "pass": true,
+      "independent_temperature": 4.9225049236776295,
+      "recorded_temperature": 4.922505009541147,
+      "nll_difference": -5.551115123125783e-17
+    },
+    {
+      "name": "threshold_bruteforce_maximum_coverage",
+      "pass": true,
+      "independent": [
+        1395,
+        0.7829140803109288,
+        1326
+      ]
+    },
+    {
+      "name": "calibration_same_partition_truthful",
+      "pass": true
+    },
+    {
+      "name": "recipe_mean:frozen:selection:accuracy",
+      "pass": true
+    },
+    {
+      "name": "recipe_sd:frozen:selection:accuracy",
+      "pass": true
+    },
+    {
+      "name": "recipe_mean:frozen:selection:macro_f1",
+      "pass": true
+    },
+    {
+      "name": "recipe_sd:frozen:selection:macro_f1",
+      "pass": true
+    },
+    {
+      "name": "recipe_mean:frozen:selection:loss",
+      "pass": true
+    },
+    {
+      "name": "recipe_sd:frozen:selection:loss",
+      "pass": true
+    },
+    {
+      "name": "recipe_mean:frozen:assessment:accuracy",
+      "pass": true
+    },
+    {
+      "name": "recipe_sd:frozen:assessment:accuracy",
+      "pass": true
+    },
+    {
+      "name": "recipe_mean:frozen:assessment:macro_f1",
+      "pass": true
+    },
+    {
+      "name": "recipe_sd:frozen:assessment:macro_f1",
+      "pass": true
+    },
+    {
+      "name": "recipe_mean:frozen:assessment:loss",
+      "pass": true
+    },
+    {
+      "name": "recipe_sd:frozen:assessment:loss",
+      "pass": true
+    },
+    {
+      "name": "recipe_mean:finetune:selection:accuracy",
+      "pass": true
+    },
+    {
+      "name": "recipe_sd:finetune:selection:accuracy",
+      "pass": true
+    },
+    {
+      "name": "recipe_mean:finetune:selection:macro_f1",
+      "pass": true
+    },
+    {
+      "name": "recipe_sd:finetune:selection:macro_f1",
+      "pass": true
+    },
+    {
+      "name": "recipe_mean:finetune:selection:loss",
+      "pass": true
+    },
+    {
+      "name": "recipe_sd:finetune:selection:loss",
+      "pass": true
+    },
+    {
+      "name": "recipe_mean:finetune:assessment:accuracy",
+      "pass": true
+    },
+    {
+      "name": "recipe_sd:finetune:assessment:accuracy",
+      "pass": true
+    },
+    {
+      "name": "recipe_mean:finetune:assessment:macro_f1",
+      "pass": true
+    },
+    {
+      "name": "recipe_sd:finetune:assessment:macro_f1",
+      "pass": true
+    },
+    {
+      "name": "recipe_mean:finetune:assessment:loss",
+      "pass": true
+    },
+    {
+      "name": "recipe_sd:finetune:assessment:loss",
+      "pass": true
+    },
+    {
+      "name": "selection_chosen_by_recipe_mean",
+      "pass": true
+    },
+    {
+      "name": "deployment_fixed_seed314",
+      "pass": true
+    },
+    {
+      "name": "selection_freeze_sha_matches_receipt",
+      "pass": true
+    },
+    {
+      "name": "parity_max_error",
+      "pass": true
+    },
+    {
+      "name": "parity_disagreement",
+      "pass": true
+    },
+    {
+      "name": "parity_fail_is_correct",
+      "pass": true
+    },
+    {
+      "name": "candidate_not_serving",
+      "pass": true
+    }
+  ],
+  "check_count": 326,
+  "failed_check_count": 0,
+  "results": {
+    "partition_samples": {
+      "fit": 13827,
+      "selection": 1838,
+      "calibration": 1835,
+      "assessment": 327
+    },
+    "partition_source_groups": {
+      "fit": 9610,
+      "selection": 1274,
+      "calibration": 1302,
+      "assessment": 221
+    },
+    "evaluation/frozen_seed314/selection": {
+      "samples": 1838,
+      "accuracy": 0.8079434167573449,
+      "macro_f1": 0.7657013005109579,
+      "nll": 0.5658628315964334,
+      "brier_score": 0.28089549819370024,
+      "ece": 0.02245434025770614,
+      "confusion": [
+        [
+          105,
+          42,
+          20,
+          3,
+          0,
+          10
+        ],
+        [
+          15,
+          371,
+          18,
+          10,
+          6,
+          41
+        ],
+        [
+          16,
+          26,
+          123,
+          6,
+          0,
+          12
+        ],
+        [
+          0,
+          15,
+          0,
+          281,
+          4,
+          9
+        ],
+        [
+          0,
+          15,
+          1,
+          5,
+          64,
+          22
+        ],
+        [
+          7,
+          30,
+          10,
+          7,
+          3,
+          541
+        ]
+      ]
+    },
+    "evaluation/frozen_seed314/assessment": {
+      "samples": 327,
+      "accuracy": 0.7431192660550459,
+      "macro_f1": 0.6717165104196483,
+      "nll": 0.7275222527298751,
+      "brier_score": 0.35787016952339523,
+      "ece": 0.05426848690159,
+      "confusion": [
+        [
+          9,
+          8,
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          73,
+          1,
+          1,
+          2,
+          16
+        ],
+        [
+          3,
+          6,
+          12,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          4,
+          0,
+          40,
+          1,
+          4
+        ],
+        [
+          0,
+          7,
+          0,
+          3,
+          9,
+          14
+        ],
+        [
+          1,
+          9,
+          1,
+          1,
+          0,
+          100
+        ]
+      ]
+    },
+    "evaluation/frozen_seed2718/selection": {
+      "samples": 1838,
+      "accuracy": 0.8041349292709467,
+      "macro_f1": 0.7602901442630561,
+      "nll": 0.572451336950678,
+      "brier_score": 0.28378927894211203,
+      "ece": 0.02276002193271967,
+      "confusion": [
+        [
+          116,
+          35,
+          17,
+          3,
+          0,
+          9
+        ],
+        [
+          22,
+          357,
+          20,
+          12,
+          8,
+          42
+        ],
+        [
+          22,
+          26,
+          117,
+          6,
+          0,
+          12
+        ],
+        [
+          2,
+          12,
+          1,
+          281,
+          3,
+          10
+        ],
+        [
+          0,
+          15,
+          1,
+          7,
+          64,
+          20
+        ],
+        [
+          9,
+          22,
+          10,
+          9,
+          5,
+          543
+        ]
+      ]
+    },
+    "evaluation/frozen_seed2718/assessment": {
+      "samples": 327,
+      "accuracy": 0.746177370030581,
+      "macro_f1": 0.6827454891783996,
+      "nll": 0.7172847604103954,
+      "brier_score": 0.35342879425200335,
+      "ece": 0.046016344665357936,
+      "confusion": [
+        [
+          9,
+          8,
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          2,
+          69,
+          3,
+          1,
+          2,
+          16
+        ],
+        [
+          3,
+          5,
+          13,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          4,
+          0,
+          40,
+          1,
+          4
+        ],
+        [
+          0,
+          6,
+          0,
+          2,
+          12,
+          13
+        ],
+        [
+          1,
+          8,
+          1,
+          1,
+          0,
+          101
+        ]
+      ]
+    },
+    "evaluation/frozen_seed5772/selection": {
+      "samples": 1838,
+      "accuracy": 0.8057671381936888,
+      "macro_f1": 0.7606155982997308,
+      "nll": 0.5679918039289723,
+      "brier_score": 0.2811530711916019,
+      "ece": 0.025116796375170388,
+      "confusion": [
+        [
+          105,
+          39,
+          22,
+          2,
+          0,
+          12
+        ],
+        [
+          15,
+          371,
+          20,
+          12,
+          5,
+          38
+        ],
+        [
+          17,
+          25,
+          123,
+          6,
+          0,
+          12
+        ],
+        [
+          1,
+          15,
+          0,
+          279,
+          2,
+          12
+        ],
+        [
+          0,
+          17,
+          1,
+          5,
+          61,
+          23
+        ],
+        [
+          7,
+          26,
+          11,
+          8,
+          4,
+          542
+        ]
+      ]
+    },
+    "evaluation/frozen_seed5772/assessment": {
+      "samples": 327,
+      "accuracy": 0.7431192660550459,
+      "macro_f1": 0.6764932019604869,
+      "nll": 0.7230351374463613,
+      "brier_score": 0.35551574265017566,
+      "ece": 0.04001242465173839,
+      "confusion": [
+        [
+          9,
+          8,
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          2,
+          72,
+          1,
+          1,
+          3,
+          14
+        ],
+        [
+          3,
+          4,
+          14,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          4,
+          0,
+          40,
+          1,
+          4
+        ],
+        [
+          0,
+          7,
+          0,
+          3,
+          9,
+          14
+        ],
+        [
+          1,
+          10,
+          1,
+          1,
+          0,
+          99
+        ]
+      ]
+    },
+    "evaluation/finetune_seed314/selection": {
+      "samples": 1838,
+      "accuracy": 0.8748639825897715,
+      "macro_f1": 0.8492401092220255,
+      "nll": 1.1022727116465314,
+      "brier_score": 0.22267908549127094,
+      "ece": 0.10075692628544325,
+      "confusion": [
+        [
+          126,
+          31,
+          14,
+          2,
+          2,
+          5
+        ],
+        [
+          12,
+          419,
+          11,
+          4,
+          4,
+          11
+        ],
+        [
+          8,
+          19,
+          145,
+          2,
+          1,
+          8
+        ],
+        [
+          0,
+          5,
+          1,
+          295,
+          6,
+          2
+        ],
+        [
+          0,
+          4,
+          0,
+          9,
+          86,
+          8
+        ],
+        [
+          3,
+          41,
+          8,
+          2,
+          7,
+          537
+        ]
+      ]
+    },
+    "evaluation/finetune_seed314/assessment": {
+      "samples": 327,
+      "accuracy": 0.8379204892966361,
+      "macro_f1": 0.7898881195217564,
+      "nll": 1.3571455276249236,
+      "brier_score": 0.2898888611445793,
+      "ece": 0.13388186167037547,
+      "confusion": [
+        [
+          9,
+          9,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          81,
+          3,
+          1,
+          1,
+          6
+        ],
+        [
+          2,
+          3,
+          16,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          44,
+          2,
+          2
+        ],
+        [
+          0,
+          2,
+          0,
+          2,
+          23,
+          6
+        ],
+        [
+          1,
+          8,
+          0,
+          1,
+          1,
+          101
+        ]
+      ]
+    },
+    "evaluation/finetune_seed2718/selection": {
+      "samples": 1838,
+      "accuracy": 0.8705114254624592,
+      "macro_f1": 0.8380507426467623,
+      "nll": 0.6805136579027198,
+      "brier_score": 0.21414316298682304,
+      "ece": 0.09207619107604786,
+      "confusion": [
+        [
+          118,
+          31,
+          22,
+          1,
+          2,
+          6
+        ],
+        [
+          10,
+          402,
+          21,
+          5,
+          3,
+          20
+        ],
+        [
+          7,
+          16,
+          155,
+          2,
+          0,
+          3
+        ],
+        [
+          1,
+          4,
+          1,
+          295,
+          3,
+          5
+        ],
+        [
+          0,
+          9,
+          2,
+          4,
+          75,
+          17
+        ],
+        [
+          1,
+          26,
+          10,
+          2,
+          4,
+          555
+        ]
+      ]
+    },
+    "evaluation/finetune_seed2718/assessment": {
+      "samples": 327,
+      "accuracy": 0.7951070336391437,
+      "macro_f1": 0.7600471066794007,
+      "nll": 0.9869820909353882,
+      "brier_score": 0.32501766389289694,
+      "ece": 0.14688672240230496,
+      "confusion": [
+        [
+          10,
+          7,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          74,
+          6,
+          2,
+          0,
+          10
+        ],
+        [
+          0,
+          1,
+          20,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          42,
+          3,
+          3
+        ],
+        [
+          0,
+          4,
+          0,
+          3,
+          16,
+          10
+        ],
+        [
+          1,
+          12,
+          0,
+          0,
+          1,
+          98
+        ]
+      ]
+    },
+    "evaluation/finetune_seed5772/selection": {
+      "samples": 1838,
+      "accuracy": 0.8710554951033732,
+      "macro_f1": 0.8400450651343233,
+      "nll": 1.0688819218188699,
+      "brier_score": 0.23200800096239538,
+      "ece": 0.10488272337757464,
+      "confusion": [
+        [
+          127,
+          30,
+          15,
+          1,
+          2,
+          5
+        ],
+        [
+          28,
+          397,
+          15,
+          5,
+          2,
+          14
+        ],
+        [
+          15,
+          18,
+          140,
+          3,
+          0,
+          7
+        ],
+        [
+          1,
+          4,
+          0,
+          299,
+          2,
+          3
+        ],
+        [
+          0,
+          5,
+          0,
+          9,
+          82,
+          11
+        ],
+        [
+          2,
+          25,
+          5,
+          3,
+          7,
+          556
+        ]
+      ]
+    },
+    "evaluation/finetune_seed5772/assessment": {
+      "samples": 327,
+      "accuracy": 0.8287461773700305,
+      "macro_f1": 0.7742317276750562,
+      "nll": 1.2868130336260675,
+      "brier_score": 0.2979522362255818,
+      "ece": 0.14158633448723298,
+      "confusion": [
+        [
+          10,
+          8,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          4,
+          75,
+          4,
+          1,
+          1,
+          8
+        ],
+        [
+          2,
+          4,
+          15,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          44,
+          2,
+          2
+        ],
+        [
+          0,
+          2,
+          0,
+          3,
+          23,
+          5
+        ],
+        [
+          1,
+          4,
+          1,
+          1,
+          1,
+          104
+        ]
+      ]
+    },
+    "calibrated_assessment": {
+      "samples": 327,
+      "accuracy": 0.8379204892966361,
+      "macro_f1": 0.7898881195217564,
+      "nll": 0.4843388191193448,
+      "brier_score": 0.24866472181070456,
+      "ece": 0.062334841012008604,
+      "confusion": [
+        [
+          9,
+          9,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          81,
+          3,
+          1,
+          1,
+          6
+        ],
+        [
+          2,
+          3,
+          16,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          44,
+          2,
+          2
+        ],
+        [
+          0,
+          2,
+          0,
+          2,
+          23,
+          6
+        ],
+        [
+          1,
+          8,
+          0,
+          1,
+          1,
+          101
+        ]
+      ],
+      "acceptance": {
+        "threshold": 0.7829140803109288,
+        "accepted_count": 228,
+        "samples": 327,
+        "coverage": 0.6972477064220184,
+        "accepted_accuracy": 0.9254385964912281,
+        "accepted_accuracy_wilson_95": [
+          0.883849399749447,
+          0.9529293238956598
+        ],
+        "scope": "Frozen calibration threshold evaluated descriptively; no threshold adjustment on this split."
+      },
+      "accepted_correct": 211
+    },
+    "evaluation/corruptions/noise_severity1": {
+      "samples": 327,
+      "accuracy": 0.8042813455657493,
+      "macro_f1": 0.7490254819952024,
+      "nll": 0.5770757607095744,
+      "brier_score": 0.28731100946636634,
+      "ece": 0.049783264556616254,
+      "confusion": [
+        [
+          8,
+          8,
+          0,
+          2,
+          0,
+          1
+        ],
+        [
+          1,
+          72,
+          1,
+          1,
+          2,
+          16
+        ],
+        [
+          3,
+          5,
+          13,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          44,
+          2,
+          2
+        ],
+        [
+          0,
+          1,
+          0,
+          4,
+          24,
+          4
+        ],
+        [
+          1,
+          4,
+          1,
+          3,
+          1,
+          102
+        ]
+      ]
+    },
+    "evaluation/corruptions/noise_severity2": {
+      "samples": 327,
+      "accuracy": 0.7339449541284404,
+      "macro_f1": 0.6588417549201863,
+      "nll": 0.7552937281612748,
+      "brier_score": 0.3685577849469962,
+      "ece": 0.05923635447016039,
+      "confusion": [
+        [
+          5,
+          10,
+          1,
+          3,
+          0,
+          0
+        ],
+        [
+          1,
+          70,
+          0,
+          3,
+          3,
+          16
+        ],
+        [
+          5,
+          5,
+          11,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          43,
+          4,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          7,
+          23,
+          3
+        ],
+        [
+          0,
+          10,
+          1,
+          6,
+          7,
+          88
+        ]
+      ]
+    },
+    "evaluation/corruptions/noise_severity3": {
+      "samples": 327,
+      "accuracy": 0.6330275229357798,
+      "macro_f1": 0.5511622891878204,
+      "nll": 0.966949208201906,
+      "brier_score": 0.4851606560778833,
+      "ece": 0.09142296855210237,
+      "confusion": [
+        [
+          4,
+          10,
+          1,
+          3,
+          0,
+          1
+        ],
+        [
+          2,
+          58,
+          0,
+          4,
+          13,
+          16
+        ],
+        [
+          3,
+          10,
+          7,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          38,
+          7,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          7,
+          24,
+          2
+        ],
+        [
+          0,
+          10,
+          2,
+          11,
+          13,
+          76
+        ]
+      ]
+    },
+    "evaluation/corruptions/blur_severity1": {
+      "samples": 327,
+      "accuracy": 0.8379204892966361,
+      "macro_f1": 0.7929658128089616,
+      "nll": 0.49762653217708736,
+      "brier_score": 0.25689758438647564,
+      "ece": 0.059220166074370015,
+      "confusion": [
+        [
+          9,
+          9,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          85,
+          1,
+          1,
+          1,
+          4
+        ],
+        [
+          2,
+          3,
+          16,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          44,
+          2,
+          2
+        ],
+        [
+          0,
+          2,
+          0,
+          3,
+          24,
+          4
+        ],
+        [
+          0,
+          11,
+          2,
+          1,
+          2,
+          96
+        ]
+      ]
+    },
+    "evaluation/corruptions/blur_severity2": {
+      "samples": 327,
+      "accuracy": 0.7339449541284404,
+      "macro_f1": 0.6952244397782135,
+      "nll": 0.6468522092608384,
+      "brier_score": 0.34169866171363106,
+      "ece": 0.07884681083837171,
+      "confusion": [
+        [
+          10,
+          9,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          83,
+          2,
+          1,
+          1,
+          4
+        ],
+        [
+          4,
+          5,
+          12,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          40,
+          4,
+          3
+        ],
+        [
+          0,
+          5,
+          0,
+          5,
+          19,
+          4
+        ],
+        [
+          1,
+          29,
+          2,
+          2,
+          2,
+          76
+        ]
+      ]
+    },
+    "evaluation/corruptions/blur_severity3": {
+      "samples": 327,
+      "accuracy": 0.6391437308868502,
+      "macro_f1": 0.5868552372080841,
+      "nll": 0.9757271993970107,
+      "brier_score": 0.5082764052080205,
+      "ece": 0.11402370065434381,
+      "confusion": [
+        [
+          7,
+          12,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          89,
+          0,
+          1,
+          0,
+          2
+        ],
+        [
+          5,
+          9,
+          7,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          8,
+          0,
+          37,
+          2,
+          2
+        ],
+        [
+          1,
+          13,
+          0,
+          4,
+          14,
+          1
+        ],
+        [
+          4,
+          51,
+          1,
+          0,
+          1,
+          55
+        ]
+      ]
+    },
+    "evaluation/corruptions/translation_severity1": {
+      "samples": 327,
+      "accuracy": 0.8348623853211009,
+      "macro_f1": 0.7849463687825756,
+      "nll": 0.5174388979170701,
+      "brier_score": 0.25997926067127586,
+      "ece": 0.057271143241568706,
+      "confusion": [
+        [
+          9,
+          9,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          2,
+          82,
+          2,
+          1,
+          1,
+          5
+        ],
+        [
+          2,
+          5,
+          14,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          44,
+          3,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          4,
+          25,
+          3
+        ],
+        [
+          0,
+          12,
+          0,
+          0,
+          1,
+          99
+        ]
+      ]
+    },
+    "evaluation/corruptions/translation_severity2": {
+      "samples": 327,
+      "accuracy": 0.8256880733944955,
+      "macro_f1": 0.7677613463401135,
+      "nll": 0.530452339050786,
+      "brier_score": 0.26475018668460704,
+      "ece": 0.0546876798144252,
+      "confusion": [
+        [
+          8,
+          10,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          2,
+          79,
+          4,
+          1,
+          1,
+          6
+        ],
+        [
+          3,
+          4,
+          14,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          45,
+          3,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          3,
+          26,
+          3
+        ],
+        [
+          0,
+          12,
+          1,
+          0,
+          1,
+          98
+        ]
+      ]
+    },
+    "evaluation/corruptions/translation_severity3": {
+      "samples": 327,
+      "accuracy": 0.8195718654434251,
+      "macro_f1": 0.7617983104080372,
+      "nll": 0.5381583412480722,
+      "brier_score": 0.27162180113476014,
+      "ece": 0.043851471280415895,
+      "confusion": [
+        [
+          9,
+          9,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          81,
+          3,
+          1,
+          1,
+          5
+        ],
+        [
+          2,
+          5,
+          14,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          45,
+          2,
+          1
+        ],
+        [
+          0,
+          4,
+          0,
+          5,
+          21,
+          3
+        ],
+        [
+          0,
+          11,
+          1,
+          2,
+          0,
+          98
+        ]
+      ]
+    },
+    "calibration": {
+      "fit": {
+        "temperature": 4.922505009541147,
+        "nll_before": 1.0382705134383117,
+        "nll_after": 0.3701937557012617,
+        "bounds": [
+          0.05,
+          20.0
+        ],
+        "samples": 1835,
+        "method": "deterministic bounded golden-section log-temperature search, with T=1 guard",
+        "scope": "Fitted and described on calibration data only; in-sample NLL is not test calibration quality."
+      },
+      "threshold": {
+        "eligible": true,
+        "review_threshold": 0.7829140803109288,
+        "accepted_count": 1395,
+        "samples": 1835,
+        "coverage": 0.7602179836512262,
+        "accepted_accuracy": 0.9505376344086022,
+        "accepted_correct": 1326,
+        "accepted_accuracy_wilson_95": [
+          0.9378704040813688,
+          0.9607303573371018
+        ],
+        "target_accuracy": 0.95,
+        "minimum_accepted": 30,
+        "policy": "accept confidence >= threshold; maximize calibration coverage; keep confidence ties",
+        "scope": "Threshold chosen on calibration data; empirical target and interval are not a future accuracy guarantee."
+      },
+      "binding": {
+        "status": "fitted",
+        "temperature": 4.922505009541147,
+        "review_threshold": 0.7829140803109288,
+        "fit_split_sha256": "b0ec5ae6fb7b8b568199e9fbe09cbbac82fef3296647ff163e8a39da5020c757",
+        "threshold_selection_split_sha256": "b0ec5ae6fb7b8b568199e9fbe09cbbac82fef3296647ff163e8a39da5020c757"
+      },
+      "same_calibration_partition_used_for_temperature_and_threshold": true
+    },
+    "temperature_independent": 4.9225049236776295,
+    "recipe_summary": {
+      "frozen": {
+        "selection": {
+          "accuracy": {
+            "mean": 0.8059484947406602,
+            "sample_sd": 0.0019107097847030805,
+            "seeds": [
+              314,
+              2718,
+              5772
+            ]
+          },
+          "macro_f1": {
+            "mean": 0.7622023476912482,
+            "sample_sd": 0.003034548270898383,
+            "seeds": [
+              314,
+              2718,
+              5772
+            ]
+          },
+          "loss": {
+            "mean": 0.5687686574920279,
+            "sample_sd": 0.0033622502575732733,
+            "seeds": [
+              314,
+              2718,
+              5772
+            ]
+          }
+        },
+        "assessment": {
+          "accuracy": {
+            "mean": 0.744138634046891,
+            "sample_sd": 0.0017655971534851049,
+            "seeds": [
+              314,
+              2718,
+              5772
+            ]
+          },
+          "macro_f1": {
+            "mean": 0.6769850671861781,
+            "sample_sd": 0.005530916891929309,
+            "seeds": [
+              314,
+              2718,
+              5772
+            ]
+          },
+          "loss": {
+            "mean": 0.7226140501955439,
+            "sample_sd": 0.0051317197996824234,
+            "seeds": [
+              314,
+              2718,
+              5772
+            ]
+          }
+        }
+      },
+      "finetune": {
+        "selection": {
+          "accuracy": {
+            "mean": 0.8721436343852013,
+            "sample_sd": 0.0023715445829927584,
+            "seeds": [
+              314,
+              2718,
+              5772
+            ]
+          },
+          "macro_f1": {
+            "mean": 0.8424453056677037,
+            "sample_sd": 0.005968362175041517,
+            "seeds": [
+              314,
+              2718,
+              5772
+            ]
+          },
+          "loss": {
+            "mean": 0.9505560971227069,
+            "sample_sd": 0.23445879264006958,
+            "seeds": [
+              314,
+              2718,
+              5772
+            ]
+          }
+        },
+        "assessment": {
+          "accuracy": {
+            "mean": 0.8205912334352701,
+            "sample_sd": 0.02254163546125993,
+            "seeds": [
+              314,
+              2718,
+              5772
+            ]
+          },
+          "macro_f1": {
+            "mean": 0.7747223179587377,
+            "sample_sd": 0.01492655422340475,
+            "seeds": [
+              314,
+              2718,
+              5772
+            ]
+          },
+          "loss": {
+            "mean": 1.2103135507287932,
+            "sample_sd": 0.19658171488751108,
+            "seeds": [
+              314,
+              2718,
+              5772
+            ]
+          }
+        }
+      }
+    },
+    "paired_f1_improvements": {
+      "selection": [
+        0.08353880871106767,
+        0.07776059838370619,
+        0.07942946683459251
+      ],
+      "assessment": [
+        0.11817160910210811,
+        0.07730161750100129,
+        0.09773852571456931
+      ]
+    },
+    "parity_error_by_batch": {
+      "1": 5.53131103515625e-05,
+      "3": 8.487701416015625e-05,
+      "64": 0.0001544952392578125
+    },
+    "parity_gate": {
+      "status": "fail",
+      "scope": "CPU FP32 tensor-logit parity after choices frozen; no assessment-driven model selection.",
+      "max_abs_tolerance": 0.0001,
+      "maximum_absolute_error": 0.0001544952392578125,
+      "top1_disagreements": 0,
+      "batch_sizes": [
+        1,
+        3,
+        64
+      ],
+      "distinct_assessment_cases": 64,
+      "model_sha256": "c7a40608a5c3a7bec732fa60a3c5873f48ec81f6721e55b64bc49762c2ae0960",
+      "declared_batch_range": [
+        1,
+        128
+      ],
+      "tested_batch_range_is_only_the_recorded_sizes": true
+    },
+    "status": "COMPLETE_CANDIDATE_NOT_READY",
+    "gates": {
+      "data": "pass",
+      "quality": "pass",
+      "calibration": "pass",
+      "parity": "fail"
+    },
+    "calibration_assessment_before_after": {
+      "accuracy": {
+        "raw": 0.8379204892966361,
+        "calibrated": 0.8379204892966361
+      },
+      "macro_f1": {
+        "raw": 0.7898881195217564,
+        "calibrated": 0.7898881195217564
+      },
+      "nll": {
+        "raw": 1.3571455276249236,
+        "calibrated": 0.4843388191193448
+      },
+      "brier_score": {
+        "raw": 0.2898888611445793,
+        "calibrated": 0.24866472181070456
+      },
+      "ece": {
+        "raw": 0.13388186167037547,
+        "calibrated": 0.062334841012008604
+      }
+    }
+  },
+  "limitations": [
+    "Logits and predictions are independently recomputed numerically; no GPU/model forward rerun in this audit.",
+    "Calibration temperature and threshold use the same partition; empirical calibration95% accuracy does not guarantee future accuracy.",
+    "Assessment327crops come from fewer source groups; small rare-class supports and source dependence limit precision.",
+    "Assessment has now been inspected; further tuning needs a new untouched evaluation set or explicit exploratory labeling.",
+    "No human/legal/production certification is inferred from automated checks."
+  ]
+}

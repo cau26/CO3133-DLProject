@@ -1,0 +1,34 @@
+{
+  "task_id": "gru_C0_seed2027",
+  "family": "gru",
+  "phase": "matched_confirmation",
+  "seed": 2027,
+  "parameters": 61962,
+  "selection_rule": "max_macro_f1_then_min_ce_then_earliest_epoch",
+  "best_f1_epoch": 32,
+  "best_f1_metrics": {
+    "loss": 0.26880321900068954,
+    "accuracy": 0.9133333333333333,
+    "macro_f1": 0.9130413603032046,
+    "n_examples": 6000
+  },
+  "best_ce_epoch": 20,
+  "best_ce_metrics": {
+    "loss": 0.2543199879675686,
+    "accuracy": 0.91,
+    "macro_f1": 0.9099213256653969,
+    "n_examples": 6000
+  },
+  "epochs_completed": 60,
+  "optimizer_updates": 25320,
+  "n_train": 54000,
+  "n_validation": 6000,
+  "fit_wall_seconds": 476.52471191499717,
+  "fit_timer_scope": "completed epochs: train + validation + in-memory checkpoint selection; excludes setup, transaction writes, finalization, discarded crash work",
+  "training_loop_seconds": 435.80910158599727,
+  "validation_seconds": 40.645010768006614,
+  "scope": "validation_only_exploratory_no_official_test",
+  "task_sha256": "d6a20faf15b8f901bc5e6440d096a95751cc201570c6267c597e2307712732f6",
+  "binding_sha256": "c0c6e9a2050508ef9296524564ba0058c43f3cd2b99b0ae25d19627c7d31e60f",
+  "finalization_seconds_before_metrics_write": 0.8370095020000008
+}

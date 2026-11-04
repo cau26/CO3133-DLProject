@@ -1,0 +1,15 @@
+{
+  "exported_at_utc": "2026-10-20T16:02:42.649998+00:00",
+  "run_id": "a1_m2_a100_20261020_run01",
+  "source_commit": "caa22313198b91cd4bd6aeb86a8604b8dfb2ddac",
+  "actual_gpu": "NVIDIA A100-SXM4-40GB",
+  "completed_models": [
+    "linear",
+    "mlp",
+    "cnn",
+    "gru",
+    "transformer"
+  ],
+  "test_completion_must_be_checked_from_test_artifacts": true,
+  "human_review_status": "Pending team review of measured outputs"
+}

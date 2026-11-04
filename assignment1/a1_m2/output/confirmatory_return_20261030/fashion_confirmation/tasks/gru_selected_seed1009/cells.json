@@ -1,0 +1,50 @@
+[
+  {
+    "task_id": "gru_selected_seed1009",
+    "family": "gru",
+    "seed": 1009,
+    "arm": "selected",
+    "candidate_id": "C1",
+    "policy": "ce",
+    "checkpoint_epoch": 25,
+    "checkpoint": "engine/best_ce.pt",
+    "checkpoint_sha256": "d6e1704b47f18d80c6e6fd720a28ec4df7de19c4afebf5c4a875b56b97016aeb",
+    "loss": 0.2571644599004767,
+    "accuracy": 0.9096666666666666,
+    "macro_f1": 0.9091719613335776,
+    "n_examples": 6000,
+    "evaluation_scope": "previously_seen_old_validation_exploratory"
+  },
+  {
+    "task_id": "gru_selected_seed1009",
+    "family": "gru",
+    "seed": 1009,
+    "arm": "selected",
+    "candidate_id": "C1",
+    "policy": "f1",
+    "checkpoint_epoch": 34,
+    "checkpoint": "engine/best_f1.pt",
+    "checkpoint_sha256": "3e95b74a7692a453cbea83beae6edaa3eb9998723faed5da6cda2a6ac7d77bb2",
+    "loss": 0.27486532321187523,
+    "accuracy": 0.911,
+    "macro_f1": 0.9110949755556185,
+    "n_examples": 6000,
+    "evaluation_scope": "previously_seen_old_validation_exploratory"
+  },
+  {
+    "task_id": "gru_selected_seed1009",
+    "family": "gru",
+    "seed": 1009,
+    "arm": "selected",
+    "candidate_id": "C1",
+    "policy": "final",
+    "checkpoint_epoch": 60,
+    "checkpoint": "final_epoch.pt",
+    "checkpoint_sha256": "05b8af65e4d4ff44a917c839f83fb7fbad16a8018aaa79c7c31991b51eca0532",
+    "loss": 0.33309110688646454,
+    "accuracy": 0.9048333333333334,
+    "macro_f1": 0.9047081128378103,
+    "n_examples": 6000,
+    "evaluation_scope": "previously_seen_old_validation_exploratory"
+  }
+]

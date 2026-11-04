@@ -1,0 +1,50 @@
+[
+  {
+    "task_id": "mlp_C0_seed1009",
+    "family": "mlp",
+    "seed": 1009,
+    "arm": "C0",
+    "candidate_id": "C0",
+    "policy": "ce",
+    "checkpoint_epoch": 15,
+    "checkpoint": "engine/best_ce.pt",
+    "checkpoint_sha256": "2dfb89b15182723b0487d9d43b01d1cb24897c69937762b9ccd8e3197bdb8a5b",
+    "loss": 0.2721411045308105,
+    "accuracy": 0.9038333333333334,
+    "macro_f1": 0.9033376730677822,
+    "n_examples": 6000,
+    "evaluation_scope": "previously_seen_old_validation_exploratory"
+  },
+  {
+    "task_id": "mlp_C0_seed1009",
+    "family": "mlp",
+    "seed": 1009,
+    "arm": "C0",
+    "candidate_id": "C0",
+    "policy": "f1",
+    "checkpoint_epoch": 45,
+    "checkpoint": "engine/best_f1.pt",
+    "checkpoint_sha256": "e018266024778eaf3239b0160585eb2977b998e7dfcd411c8b1a4ba2bfa8701b",
+    "loss": 0.3409257945199022,
+    "accuracy": 0.9083333333333333,
+    "macro_f1": 0.9079699633480238,
+    "n_examples": 6000,
+    "evaluation_scope": "previously_seen_old_validation_exploratory"
+  },
+  {
+    "task_id": "mlp_C0_seed1009",
+    "family": "mlp",
+    "seed": 1009,
+    "arm": "C0",
+    "candidate_id": "C0",
+    "policy": "final",
+    "checkpoint_epoch": 60,
+    "checkpoint": "final_epoch.pt",
+    "checkpoint_sha256": "f7fa288eb542b46e6c70ed268b2bfa2adc3340a131f7cbbcea898df1a02cbbb5",
+    "loss": 0.40602583355387983,
+    "accuracy": 0.9,
+    "macro_f1": 0.8997490022507793,
+    "n_examples": 6000,
+    "evaluation_scope": "previously_seen_old_validation_exploratory"
+  }
+]

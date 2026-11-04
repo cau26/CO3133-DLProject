@@ -1,0 +1,57 @@
+{
+  "format_version": 1,
+  "release_id": "g_m10_garmentlab_controlled_v2-C4-seed314",
+  "domain": "garment_crop_rgb",
+  "architecture": "mobilenet_v3_small",
+  "status": "ready",
+  "labels": [
+    "shirt_blouse",
+    "top_tshirt_sweatshirt",
+    "jacket",
+    "pants",
+    "skirt",
+    "dress"
+  ],
+  "preprocessing": {
+    "version": "garment_rgb_letterbox_v1",
+    "height": 224,
+    "width": 224,
+    "channels": 3,
+    "mode": "RGB",
+    "resize": "letterbox_bilinear",
+    "fill": [
+      0,
+      0,
+      0
+    ],
+    "normalization": "imagenet_v1"
+  },
+  "weights": {
+    "file": "weights.pt",
+    "sha256": "74b618510179bb905a725b6620b63beb7d8a796bb034e754d4ca593e890d6b05"
+  },
+  "calibration": {
+    "status": "fitted",
+    "temperature": 5.345757234366385,
+    "review_threshold": 0.88,
+    "fit_split_sha256": "4f385288d00ba04b51d8debf84442eaba16639e5bfb6fb4491fc281dcfe3800a",
+    "threshold_selection_split_sha256": "12e9132cb83a296099df5bdc6f09615fa13eb8fdc7c91ac71367a44e52cffa11",
+    "policy": {
+      "version": "disjoint_component_representative_bonferroni_v2",
+      "mode": "confidence_threshold",
+      "target_accuracy": 0.95,
+      "bound_eligible": true,
+      "family_error_probability": 0.05,
+      "target_bound_satisfied_under_assumptions": true,
+      "unconditional_accuracy_guarantee": false,
+      "target_population": "equally weighted metadata-selected representative of an independent source/duplicate component",
+      "partition_sha256": "385c0e7768032d44b4e985f8d4f5ebc0772afa0dcce57376bc273c395934c17d",
+      "threshold_grid_sha256": "6e7cf29829ec0f572e3d603a963affa9629c450310b4657bd843e531b24ca2a0"
+    }
+  },
+  "evaluation_receipt": {
+    "file": "evaluation_receipt.json",
+    "sha256": "1e311d29806a5012695e35f04105cc4eab440d5446979847fd9a36fa4996d9f4"
+  },
+  "scope": "One selected six-class garment crop. Local technical readiness is separate from statistical risk eligibility and production validation."
+}

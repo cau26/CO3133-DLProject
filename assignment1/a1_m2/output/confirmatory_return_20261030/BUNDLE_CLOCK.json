@@ -1,0 +1,5 @@
+{
+  "active_seconds": 15383.686280499998,
+  "budget_seconds": 18000,
+  "scope": "Cumulative controller time including preparation/inference/training; setup excluded. Abrupt uncommitted tail may be unrecorded; graceful epoch shutdown can overrun."
+}

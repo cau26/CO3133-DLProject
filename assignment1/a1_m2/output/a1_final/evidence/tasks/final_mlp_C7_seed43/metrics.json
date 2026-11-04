@@ -1,0 +1,43 @@
+{
+  "task_id": "final_mlp_C7_seed43",
+  "family": "mlp",
+  "phase": "final",
+  "seed": 43,
+  "parameters": 203530,
+  "selection_rule": "max_macro_f1_then_min_ce_then_earliest_epoch",
+  "best_f1_epoch": 47,
+  "best_f1_metrics": {
+    "loss": 0.2644077552580907,
+    "accuracy": 0.9125,
+    "macro_f1": 0.912762522448876,
+    "n_examples": 6000
+  },
+  "best_ce_epoch": 28,
+  "best_ce_metrics": {
+    "loss": 0.26102261740748084,
+    "accuracy": 0.9081666666666667,
+    "macro_f1": 0.9083535307393552,
+    "n_examples": 6000
+  },
+  "epochs_completed": 60,
+  "optimizer_updates": 25320,
+  "n_train": 54000,
+  "n_validation": 6000,
+  "fit_wall_seconds": 461.7636451609942,
+  "fit_timer_scope": "completed epochs: train + validation + in-memory checkpoint selection; excludes setup, transaction writes, finalization, discarded crash work",
+  "training_loop_seconds": 420.5799183080235,
+  "validation_seconds": 41.09349557499445,
+  "scope": "validation_only_exploratory_no_official_test",
+  "task_sha256": "d44ffb63c91eb46df7cb653ca8a89870301ca52695aa246ff81f61b0e874e1ca",
+  "binding_sha256": "aa959dbb6cfb8c9d7d13322dbd3d6a122535958265efd14b81073bf5697a0476",
+  "inference": {
+    "batch_size": 128,
+    "warmup_batches": 10,
+    "measured_batches": 50,
+    "batch_ms": 0.4704399799811654,
+    "per_image_ms_amortized": 0.0036753123436028545,
+    "scope": "model forward only; input already on device; excludes DataLoader and transfers",
+    "interpretation": "batch-amortized model-forward milliseconds; not single-request service latency"
+  },
+  "finalization_seconds_before_metrics_write": 0.8693807659983577
+}

@@ -1,0 +1,46 @@
+{
+  "task": {
+    "task_id": "discovery_transformer_C1_seed101",
+    "family": "transformer",
+    "config": {
+      "group": "G-M10",
+      "members": [
+        "Trần Gia Lâm (2352670)",
+        "Nguyễn Hữu Cầu (2352129)"
+      ],
+      "batch_size": 128,
+      "epochs": 60,
+      "learning_rate": 0.0005,
+      "optimizer": "adamw",
+      "weight_decay": 0.0001,
+      "hidden_size": 256,
+      "num_workers": 0,
+      "cpu_threads": 4,
+      "gradient_clip": 1.0,
+      "inference_warmup_batches": 10,
+      "inference_measured_batches": 50,
+      "patch_size": 4,
+      "d_model": 128,
+      "nhead": 4,
+      "transformer_layers": 2,
+      "dim_feedforward": 256,
+      "dropout": 0.1,
+      "head_dropout": 0.0,
+      "encoder_init": "legacy",
+      "use_position_embedding": true,
+      "schedule": "warmup_cosine",
+      "min_lr_ratio": 0.05,
+      "warmup_epochs": 5
+    },
+    "seed": 101,
+    "phase": "discovery",
+    "epochs": 60,
+    "candidate_id": "C1"
+  },
+  "binding": {
+    "study_manifest_sha256": "8ee891e30ad411818f664db31e74f923cf3730a355d4d9687e7234e0f80eee46",
+    "task_sha256": "3c0a768b93122c3181f805f88106d3bb6ca0d709092b32dce6ffdc7588ee4fa2",
+    "split_sha256": "f2cdd9a66602ad7112b15b5f21c0c1196503f1d62aad1c00841025612aeb90cc",
+    "environment_sha256": "e827ae948b912c9d781a5c1859c0d94d879320af7c4669768c989dc8252c5eaa"
+  }
+}

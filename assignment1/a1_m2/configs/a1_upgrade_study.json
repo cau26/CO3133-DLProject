@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "study_id": "g_m10_a1_upgrade_v1",
+  "study_type": "post_test_exploratory_validation_only",
+  "official_test_already_seen": true,
+  "base_config": "configs/a1_final.json",
+  "reference_run": "outputs/a1_m2_final_returned_867c74469240",
+  "reference_run_id": "adaae7c7221445ad9be48fc13d6a18dd",
+  "reference_freeze_sha256": "a3629a402b58ab0df84e94fb14b534b0b1f5c83fa3a27cc83ac0d83c2b8a04f5",
+  "reference_artifact_manifest_sha256": "a9944bceec7334ae3a6ed177099c8dfdd26f1a03ad29571e54a5be4cc1e0c864",
+  "expected_split_sha256": "0289c4940126abe338a376ea49eb866788d57cd67fa3ca17fe80139abb8c8fba",
+  "expected_dataset_sha256": "1f243a60b4b748a44c48b9a6f6907be2a08bee3e4e226f0e86fbde8e147b745a",
+  "split_seed": 42,
+  "training_seeds": [42, 43, 44],
+  "epochs": 60,
+  "evaluation_budgets": [20, 60],
+  "baseline_models": ["linear", "mlp", "cnn", "gru", "transformer"],
+  "ablations": [
+    {"id": "cnn_no_dropout", "model": "cnn", "overrides": {"dropout": 0.0}},
+    {"id": "gru_columns", "model": "gru", "overrides": {"sequence_axis": "columns"}},
+    {"id": "transformer_no_position", "model": "transformer", "overrides": {"use_position_embedding": false}}
+  ]
+}

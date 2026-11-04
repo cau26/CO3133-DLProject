@@ -10,23 +10,35 @@ Course projects by Group G-M10, Semester 261, at Ho Chi Minh City University of 
 
 | Member | Student ID | Role | Responsibilities |
 |---|---|---|---|
-| [Trần Gia Lâm](https://github.com/n1velo) | 2352670 | Leader | A1 Colab runs and result analysis; A2 method, evaluation and compute planning; report integration and submission coordination. |
-| [Nguyễn Hữu Cầu](https://github.com/cau26) | 2352129 | Member | A1 EDA and MLP; A2 dataset analysis, duplicate and split review, and EDA report sections. |
+| [Trần Gia Lâm](https://github.com/n1velo) | 2352670 | Leader | A1 team coordination, experimental pipeline, Colab A100 training runs, result analysis and final integration, including the RGB extension; A2 method, evaluation and compute planning; report integration and submission coordination. |
+| [Nguyễn Hữu Cầu](https://github.com/cau26) | 2352129 | Member | A1 data analysis, EDA, MLP and related technical sections; A2 dataset analysis, duplicate and split review, and EDA report sections. |
 
 ## Assignments
 
 | Assignment | Task | Current status | Details |
 |---|---|---|---|
-| A1 | Fashion-MNIST classification | Linear and MLP M1 results recorded on Tesla T4 | [Assignment 1](assignment1.md) |
-| A2 | PASCAL VOC 2007 object detection | Preliminary EDA available; instructor approval not recorded | [Assignment 2](assignment2.md) |
-| A3 | Multimodal learning | Task not selected; page is a template | [Assignment 3](assignment3.md) |
+| A1 | Fashion-MNIST classification and RGB extension | Five-model study, matched follow-up and recorded RGB audit completed | [Final](assignment1/a1_m2/assignment1-final.md) · [M1 archive](assignment1/a1_m1/assignment1.md) |
+| A2 | PASCAL VOC 2007 object detection | Preliminary EDA available; instructor approval not recorded | [Assignment 2](assignment2/a2_m1/assignment2.md) |
+| A3 | Multimodal learning | Task not selected; page is a template | [Assignment 3](assignment3/a3_m1/assignment3.md) |
+
+## Assignment 1 - M2 Final
+
+- [Final study](assignment1/a1_m2/assignment1-final.md)
+- [Report PDF](assignment1/a1_m2/output/pdf/G-M10_A1_Report_Reviewed_20261104.pdf)
+- [Editable LaTeX source](assignment1/a1_m2/output/latex/G-M10_A1_Overleaf_Reviewed_20261104.zip)
+- [Presentation slides](assignment1/a1_m2/output/presentation/G-M10_A1_Slides_Reviewed_20261104.pptx) · [Slides PDF](assignment1/a1_m2/output/presentation/G-M10_A1_Slides_Reviewed_20261104.pdf)
+- [Vietnamese presentation script](assignment1/a1_m2/docs/a1_submission/VIDEO_SCRIPT_REVIEWED_20261104_VI.md)
+- [A1 team contributions](assignment1/a1_m2/docs/a1_submission/CONTRIBUTIONS.md)
+- [Matched A100 notebook](assignment1/a1_m2/notebooks/CO3133_Confirmatory_A100.ipynb)
+
+The final study compares Linear, MLP, CNN, GRU and Transformer. The original official-test scores and the later checkpoint-selected validation results are reported separately. A matched follow-up adds 30 training runs and 90 checkpoint evaluations. The RGB extension retains both the earlier assessment and the prospectively locked 2,766-crop audit, including negative and uncertain findings.
 
 ## Assignment 2 - M1 Dataset Proposal
 
-- [Proposal PDF](outputs/a2_eda/20261006T225426_686818Z/G-M10_A2_Proposal.pdf)
-- [EDA notebook](notebooks/A2_EDA_VOC2007.ipynb)
-- [Recorded EDA run](outputs/a2_eda/20261006T225426_686818Z/)
-- [EDA observations and duplicate review](outputs/a2_eda/20261006T225426_686818Z/EDA_NOTES_TO_COMPLETE.md)
+- [Proposal PDF](assignment2/a2_m1/outputs/a2_eda/20261006T225426_686818Z/G-M10_A2_Proposal.pdf)
+- [EDA notebook](assignment2/a2_m1/notebooks/A2_EDA_VOC2007.ipynb)
+- [Recorded EDA run](assignment2/a2_m1/outputs/a2_eda/20261006T225426_686818Z/)
+- [EDA observations and duplicate review](assignment2/a2_m1/outputs/a2_eda/20261006T225426_686818Z/EDA_NOTES_TO_COMPLETE.md)
 
 **Task:** detect objects in RGB images and predict their class labels, confidence scores and bounding boxes.
 
@@ -78,24 +90,24 @@ After approval, Lâm will implement Faster R-CNN and the freezing study, while C
 
 ### Reproduce the preliminary EDA
 
-Open [the recorded EDA notebook](notebooks/A2_EDA_VOC2007.ipynb) in Google Colab and run its cells from top to bottom. It installs the additional dependencies, downloads the official trainval archive, checks images and annotations, builds the proposed split, and exports tables, figures and run metadata.
+Open [the recorded EDA notebook](assignment2/a2_m1/notebooks/A2_EDA_VOC2007.ipynb) in Google Colab and run its cells from top to bottom. It installs the additional dependencies, downloads the official trainval archive, checks images and annotations, builds the proposed split, and exports tables, figures and run metadata.
 
 If automatic download fails, upload the official archive to Colab and set `MANUAL_ARCHIVE_PATH` in the notebook. The VOC images are not stored in this repository. The notebook currently reproduces the preliminary workflow; the near-duplicate grouping correction is still required before main training.
 
 ## Assignment 1 - M1 Draft
 
-- [Assignment page](assignment1.md)
-- [PDF report](G-M10_A1_Draft.pdf)
-- [Recorded Colab notebook](notebooks/A1_Colab_Run.ipynb)
-- [Run provenance and verification](COLAB_RUN.md)
-- [Experiment outputs](outputs/a1_t4/)
+- [Assignment page](assignment1/a1_m1/assignment1.md)
+- [PDF report](assignment1/a1_m1/G-M10_A1_Draft.pdf)
+- [Recorded Colab notebook](assignment1/a1_m1/notebooks/A1_Colab_Run.ipynb)
+- [Run provenance and verification](assignment1/a1_m1/COLAB_RUN.md)
+- [Experiment outputs](assignment1/a1_m1/outputs/a1_t4/)
 
 | Model | Validation accuracy | Validation macro-F1 | Selected epoch |
 |---|---:|---:|---:|
 | Linear | 86.62% | 0.8644 | 9 |
 | MLP | 89.30% | 0.8924 | 9 |
 
-Both checkpoints were selected by lowest validation loss. The test set has not been evaluated. A custom CNN, LSTM/GRU and Transformer are planned for the final milestone.
+These historical M1 checkpoints were selected by lowest validation loss and were not evaluated on the official test set in that run. The later five-model study is documented in the [A1 Final page](assignment1/a1_m2/assignment1-final.md).
 
 ### Run Assignment 1 on Colab
 
@@ -103,7 +115,7 @@ Select a GPU runtime, then prepare the project:
 
 ```python
 !git clone https://github.com/cau26/CO3133-DLProject.git
-%cd /content/CO3133-DLProject
+%cd /content/CO3133-DLProject/assignment1/a1_m1
 %pip install -r requirements-a1.txt
 
 import torch
@@ -123,7 +135,7 @@ Fashion-MNIST is downloaded automatically. Keep `outputs/a1_t4/` as the recorded
 
 ## AI Usage Disclosure
 
-AI tools supported project planning, implementation assistance, and report drafting and review. Team members are responsible for verifying the code, technical claims and reported results they contribute. See [AI_USAGE.md](AI_USAGE.md) for usage records.
+AI assisted LaTeX writing and pipeline development.
 
 ## Submission
 

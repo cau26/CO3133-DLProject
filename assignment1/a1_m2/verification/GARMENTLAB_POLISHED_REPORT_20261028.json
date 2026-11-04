@@ -1,0 +1,43 @@
+{
+  "status": "PASS_COMPILED_AND_VISUAL_EDITORIAL_REVIEW",
+  "measured_data_changed": false,
+  "new_training": false,
+  "base_report_sha256": "58ef077b43558f79cf399456e5438e88d55873947e3ccd9ea59d4c87fdc7af1f",
+  "source_sha256": {
+    "main.tex": "ce8cd46b2592115c6c256e34520c4521f2f7b7e69ef15a6b60c22062ef088d06",
+    "report.tex": "0b008ef492b74047658a13a1cb4b032cb3c4e42507e539fcf6503b9231674875",
+    "core_study.tex": "50939aeab5db9864ba025c1dc494b065e26780dc82e9c1341f09220ed7e34e59",
+    "rgb_study.tex": "7e3adcecc578725093680b9b00fd7ec936f576c3fde276bd2dbe6213aead88c2",
+    "model_evidence.tex": "a670e7c742287adce81dc81642bb6ad9cb8974cc14453fb31766d2a5e774a9c8"
+  },
+  "pdf_sha256": "f4800999fd021795bf346c3ae54227ea9cdcde84fe1a1063239a82aa2ad36c43",
+  "pdf_pages": 37,
+  "scientific_data_changed": false,
+  "figure_arrays_unchanged": true,
+  "visual_review": {
+    "all_initial_pages_reviewed": 40,
+    "final_changed_flow_pages_reviewed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      22,
+      28
+    ],
+    "overfull_boxes_reported": false,
+    "orphan_tail_pages_removed": true
+  },
+  "overleaf_zip_sha256": "76ee36833ff7930464f7091784f44a77ef620294bb4ebcf97efbb9f327321d71",
+  "overleaf_payload_count": 30,
+  "date_revision": {
+    "ai_assistance_period": "20--29 October2026",
+    "scientific_content_changed": false,
+    "compiled_text_changed_pages": [
+      32
+    ]
+  }
+}

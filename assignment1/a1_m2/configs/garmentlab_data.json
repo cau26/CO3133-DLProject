@@ -1,0 +1,17 @@
+{
+  "class_map": [
+    {"category_id": 0, "label": "shirt_blouse"},
+    {"category_id": 1, "label": "top_tshirt_sweatshirt"},
+    {"category_id": 4, "label": "jacket"},
+    {"category_id": 6, "label": "pants"},
+    {"category_id": 8, "label": "skirt"},
+    {"category_id": 10, "label": "dress"}
+  ],
+  "license_policy": {
+    "purpose": "public_portfolio_metadata_candidate",
+    "allowed_license_ids": [0, 1, 6],
+    "acknowledgement": "Metadata allowlist is not legal clearance or a verification of current source-platform terms. No photographs are redistributed by this draft."
+  },
+  "split": {"seed": 20261024, "fit_fraction": 0.8, "selection_fraction": 0.1, "calibration_fraction": 0.1},
+  "min_source_images_per_class": {"fit": 50, "selection": 10, "calibration": 10, "assessment": 15}
+}

@@ -1,0 +1,27 @@
+{
+  "method": "paired source/duplicate-component percentile bootstrap",
+  "replicates": 2000,
+  "seed": 8601,
+  "crops": 327,
+  "resampling_components": 221,
+  "fixed_training_seeds": [
+    314,
+    2718,
+    5772
+  ],
+  "selected_candidate": "C4",
+  "anchor_macro_f1_interval": [
+    0.7171100883194356,
+    0.8203213938182429
+  ],
+  "selected_macro_f1_interval": [
+    0.7056601157855327,
+    0.812613826802769
+  ],
+  "paired_mean_macro_f1_delta_interval": [
+    -0.038196013155820455,
+    0.018293709006840398
+  ],
+  "group_assignment_sha256": "6333b92f3be7d185fd3bfc37b967c348cfe02e014634b665fd8224929cef40a3",
+  "scope": "Descriptive conditional 95% percentile intervals on the previously inspected assessment. Components, rather than crops, are resampled jointly. Fixed models/seeds are not resampled. No post-selection correction, fresh-test claim or deployment guarantee."
+}

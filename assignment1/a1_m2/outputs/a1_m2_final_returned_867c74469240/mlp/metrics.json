@@ -1,0 +1,175 @@
+{
+  "model": "mlp",
+  "evaluation_split": "validation",
+  "n_eval": 6000,
+  "loss": 0.27583998266855875,
+  "accuracy": 0.9061666666666667,
+  "macro_f1": 0.9058524471931195,
+  "parameters": 203530,
+  "best_epoch": 20,
+  "checkpoint_rule": "lowest validation loss; first if tied",
+  "checkpoint": "best.pt",
+  "checkpoint_sha256": "683cc723f36e860c384157741443e77b1733b8caf47d8fbc768038470be4b5a8",
+  "epochs_completed": 20,
+  "run_id": "adaae7c7221445ad9be48fc13d6a18dd",
+  "train_seconds": 73.22436710400007,
+  "validation_seconds": 9.169532492999451,
+  "fit_wall_seconds": 83.21445709099999,
+  "gpu_peak_allocated_bytes": 72638464,
+  "train_time_scope": "actual epoch loops including data loading/updates/metrics; excludes validation; cold first epoch retained",
+  "inference": {
+    "batch_size": 128,
+    "warmup_batches": 10,
+    "measured_batches": 50,
+    "batch_ms": 0.4005526799983272,
+    "per_image_ms_amortized": 0.0031293178124869314,
+    "scope": "model forward only; input already on device; excludes DataLoader and transfers"
+  },
+  "top_errors": [
+    {
+      "true_label": 2,
+      "true_class": "Pullover",
+      "predicted_label": 4,
+      "predicted_class": "Coat",
+      "count": 67,
+      "rate_within_true_class": 0.11166666666666666
+    },
+    {
+      "true_label": 6,
+      "true_class": "Shirt",
+      "predicted_label": 0,
+      "predicted_class": "T-shirt/top",
+      "count": 59,
+      "rate_within_true_class": 0.09833333333333333
+    },
+    {
+      "true_label": 0,
+      "true_class": "T-shirt/top",
+      "predicted_label": 6,
+      "predicted_class": "Shirt",
+      "count": 49,
+      "rate_within_true_class": 0.08166666666666667
+    },
+    {
+      "true_label": 6,
+      "true_class": "Shirt",
+      "predicted_label": 2,
+      "predicted_class": "Pullover",
+      "count": 45,
+      "rate_within_true_class": 0.075
+    },
+    {
+      "true_label": 6,
+      "true_class": "Shirt",
+      "predicted_label": 4,
+      "predicted_class": "Coat",
+      "count": 44,
+      "rate_within_true_class": 0.07333333333333333
+    }
+  ],
+  "config": {
+    "group": "G-M10",
+    "members": [
+      "Trần Gia Lâm (2352670)",
+      "Nguyễn Hữu Cầu (2352129)"
+    ],
+    "seed": 42,
+    "validation_size": 6000,
+    "batch_size": 128,
+    "epochs": 20,
+    "learning_rate": 0.001,
+    "optimizer": "adam",
+    "weight_decay": 0.0,
+    "hidden_size": 256,
+    "num_workers": 2,
+    "cpu_threads": 4,
+    "device": "cuda",
+    "gradient_clip": 1.0,
+    "inference_warmup_batches": 10,
+    "inference_measured_batches": 50
+  },
+  "config_sha256": "eddf9ff6dccb5299f1fa4ae722e9c7a59c6922ad89f8f672f0a48ccd07b04169",
+  "data": {
+    "dataset": "Fashion-MNIST",
+    "source": "https://github.com/zalandoresearch/fashion-mnist",
+    "license": "MIT",
+    "official_train": 60000,
+    "train": 54000,
+    "archive_md5_expected": {
+      "train-images-idx3-ubyte.gz": "8d4fb7e6c68d591d4c3dfef9ec88bf0d",
+      "train-labels-idx1-ubyte.gz": "25c81989df183df01b3e8a0aad5dffbe",
+      "t10k-images-idx3-ubyte.gz": "bef4ecab320f06d8554ea6380940ec79",
+      "t10k-labels-idx1-ubyte.gz": "bb300cfdad3c16e7a12a480ee83cd310"
+    },
+    "validation": 6000,
+    "test": 10000,
+    "seed": 42,
+    "dataset_sha256": "1f243a60b4b748a44c48b9a6f6907be2a08bee3e4e226f0e86fbde8e147b745a",
+    "stratified": true,
+    "split_sha256": "0289c4940126abe338a376ea49eb866788d57cd67fa3ca17fe80139abb8c8fba",
+    "input_shape": [
+      1,
+      28,
+      28
+    ],
+    "classes": [
+      "T-shirt/top",
+      "Trouser",
+      "Pullover",
+      "Dress",
+      "Coat",
+      "Sandal",
+      "Shirt",
+      "Sneaker",
+      "Bag",
+      "Ankle boot"
+    ],
+    "preprocessing": "ToTensor: float32 [0,1]; no augmentation in this baseline",
+    "split_unit": "individual image; official test partition retained",
+    "leakage_checks": "train/validation IDs disjoint; complete coverage of official train",
+    "test_usage": "reserved; descriptive EDA counts allowed; evaluation requires an explicit five-model freeze",
+    "duplicate_audit": "not performed; split-ID checks do not prove absence of duplicate images"
+  },
+  "environment": {
+    "recorded_at_utc": "2026-10-20T15:43:25.827398+00:00",
+    "python": "3.13.15 (main, Aug  6 2026, 11:06:22) [GCC 13.3.0]",
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+    "cpu": "Intel(R) Xeon(R) CPU @ 2.20GHz",
+    "logical_cpu_count": 12,
+    "torch_threads": 4,
+    "device": "cuda",
+    "cuda_runtime": "13.0",
+    "cudnn_version": 92700,
+    "deterministic_algorithms": true,
+    "gpu": "NVIDIA A100-SXM4-40GB",
+    "versions": {
+      "torch": "2.11.0+cu130",
+      "torchvision": "0.26.0+cu130",
+      "numpy": "2.1.3",
+      "matplotlib": "3.10.0",
+      "scikit-learn": "1.6.1"
+    }
+  },
+  "source": {
+    "git_commit": "caa22313198b91cd4bd6aeb86a8604b8dfb2ddac",
+    "working_tree_dirty": false,
+    "source_sha256": "723859922a133288b76c9b0ef3f82aea7af83d395066703d43f0b99a64de0890",
+    "files_sha256": {
+      "run_a1.py": "703e9f5667d9c3b05fbdd1298942c2981f79e066804dab664343d1bed0ce6893",
+      "a1/__init__.py": "78dca9bddf50b00fa1531912e55e5c64d7d1049fc564e3178ec09f3fc494c430",
+      "a1/cnn.py": "7789a03b6cce9801f2824d58ad8886b5488023a3184ef248b457de1d89d6fff2",
+      "a1/common.py": "dbe7d9d1acd9380d3ab346a12ac1c24adceb6d2cbc4ddda24fe87ddb5088dacc",
+      "a1/data.py": "b853c8efcd88bac5bd094343b38aedc5a119f7422f7168fae380d178216a29c2",
+      "a1/eda.py": "b402321ca511952ba00023cd661540c4f7ede67d3cc26b55e864e7e29482292b",
+      "a1/finalize.py": "ddb6eab97cd44c5b55000e10326ecb7ea0f18f7c975116a3b5d498de0c649c4f",
+      "a1/gru.py": "25e989ca3e1458ad229a8f6cd52cd92cf1778dfafe79faa8cebc58216d4b22fe",
+      "a1/linear.py": "f1bd49738aa7dcccd5ee76904087db2ba317d50333ffb52ba4259ccf4d49fdc9",
+      "a1/mlp.py": "049a7b36c03b238887c1638fa63933c2b30650e2398744afffc4f94f1a35f42e",
+      "a1/report.py": "b59f65e76a64d0f67ad8c7cce7d43b698abedaa59daac161782f7e6c01ad0e34",
+      "a1/train.py": "b574b15127390fb89dc4e9c283c03637c432c526a872fad1c39c453fca8f6a17",
+      "a1/transformer.py": "b24289d79c63e88308c983ef1870280376b4fc66d31407898287c1cc667c1d7e"
+    }
+  },
+  "test_evaluated": false,
+  "human_review_status": "Pending: student must review actual results before submission"
+}

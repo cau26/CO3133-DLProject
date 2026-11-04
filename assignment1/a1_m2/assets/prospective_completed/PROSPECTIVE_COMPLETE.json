@@ -1,0 +1,82 @@
+{
+  "schema": "garmentlab_prospective_completion_v1",
+  "status": "PROSPECTIVE_AUDIT_COMPLETE",
+  "results_sha256": "9b51c6a5b9628cad9b27ac8df5d0fab0b7df429858a12bfe187feccc09851d1a",
+  "freeze_sha256": "82745fb359508780117f5248298414ba38363716e2e0b454250d629009bd97e0",
+  "cohort_ready_sha256": "65810b9ebb8b12b793566f42b478be6e5fe5ebddca29f268045911c7ab5466ef",
+  "inference_inputs_sha256": "72c3e370120e63860789432375258ac64c296564312250f509fbbf24cc1dcd62",
+  "prediction_payloads": [
+    {
+      "path": "evaluation/final_C0_seed2718/metrics.json",
+      "sha256": "4c66846a087ff293ecf0d77914d30d4d89d62e978b972e8d27d7fb87808b1887"
+    },
+    {
+      "path": "evaluation/final_C0_seed2718/logits.npz",
+      "sha256": "aa8b00c593a85f5608fdcf5401bac59d33728e057805fc8225ab134b97e13726"
+    },
+    {
+      "path": "evaluation/final_C0_seed2718/LOGITS_RECEIPT.json",
+      "sha256": "4eee55746ef6eae611d3101546c1e77e7a7152cec3ce818a03eba3f6ccc1a8bc"
+    },
+    {
+      "path": "evaluation/final_C0_seed314/metrics.json",
+      "sha256": "2b09c6dad9453ad6536e8bb45b65421550bd907b9006e4cbd53dd09527940ffe"
+    },
+    {
+      "path": "evaluation/final_C0_seed314/logits.npz",
+      "sha256": "2b185964f5eb1fdcffa2e6788537794b4e61d897a311c73c442bd41b7285e5d5"
+    },
+    {
+      "path": "evaluation/final_C0_seed314/LOGITS_RECEIPT.json",
+      "sha256": "d79cdac3283255aca9a149e6a208d1bf7c9c14b15f234c5cbbdb7797009ad046"
+    },
+    {
+      "path": "evaluation/final_C0_seed5772/metrics.json",
+      "sha256": "8c7b6ea2cae3b82b0ba026048877f6ab78b82d9c9608287bc829d75744d9616b"
+    },
+    {
+      "path": "evaluation/final_C0_seed5772/logits.npz",
+      "sha256": "6b36e00bb4ff65b23c0580f1190322d723b0824e52be7a3f468acfff3c8d8f87"
+    },
+    {
+      "path": "evaluation/final_C0_seed5772/LOGITS_RECEIPT.json",
+      "sha256": "682e4776ec37f02094b6a7cba54196cf67aaff2bb0779bc8fa86dd4e106fb569"
+    },
+    {
+      "path": "evaluation/final_C4_seed2718/metrics.json",
+      "sha256": "d90e114a30e06c907083557d1ba27fffa95539ae0d08b70a0afcc18a2fe2f2d6"
+    },
+    {
+      "path": "evaluation/final_C4_seed2718/logits.npz",
+      "sha256": "3777bca53b5114fb1db33403b955a815b8b89b4897f56d9e3ed4e55729013878"
+    },
+    {
+      "path": "evaluation/final_C4_seed2718/LOGITS_RECEIPT.json",
+      "sha256": "886a65da5beac11a7f133a3671310d8dd249e6076237d4aaf92d9e7c5fe5c720"
+    },
+    {
+      "path": "evaluation/final_C4_seed314/metrics.json",
+      "sha256": "c82b6ed08352b67fa0e28f8ab1f47939c3b2d10afc25a133f4c0377fc7421d09"
+    },
+    {
+      "path": "evaluation/final_C4_seed314/logits.npz",
+      "sha256": "fff0204286aaf2071b8e728e88fc8cd0d91ea46ea57094650a4acdba6baa7e91"
+    },
+    {
+      "path": "evaluation/final_C4_seed314/LOGITS_RECEIPT.json",
+      "sha256": "db913308c88f86fce8708e0954609c8220366cc70004ab4072103b6699031c0f"
+    },
+    {
+      "path": "evaluation/final_C4_seed5772/metrics.json",
+      "sha256": "29c1e975a8fbb710c72665ccc4b93f040b4dc4e19d14e62a90ef3aceb23c30f0"
+    },
+    {
+      "path": "evaluation/final_C4_seed5772/logits.npz",
+      "sha256": "bdf35f978f7de4df5c99d05adc98675f3d3a9e51666f54cdb74100c17f70062e"
+    },
+    {
+      "path": "evaluation/final_C4_seed5772/LOGITS_RECEIPT.json",
+      "sha256": "4645e09141ffe0b3281ba08e1c2e67809dc6fd85a842a3a088ee90d2823bf288"
+    }
+  ]
+}

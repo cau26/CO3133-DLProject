@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "run_id": "adaae7c7221445ad9be48fc13d6a18dd",
+  "frozen_at_utc": "2026-10-20T18:20:15.845150+00:00",
+  "confirmation": "user explicitly invoked freeze with --confirm-freeze",
+  "models": {
+    "linear": {
+      "best_epoch": 18,
+      "config_sha256": "eddf9ff6dccb5299f1fa4ae722e9c7a59c6922ad89f8f672f0a48ccd07b04169",
+      "checkpoint_sha256": "e5068fab87dfa3db1d2c977dd60088cf9c6c1587eb0f5c424a63eefbe8f1a757",
+      "selection": "minimum validation loss; earliest epoch wins ties"
+    },
+    "mlp": {
+      "best_epoch": 20,
+      "config_sha256": "eddf9ff6dccb5299f1fa4ae722e9c7a59c6922ad89f8f672f0a48ccd07b04169",
+      "checkpoint_sha256": "683cc723f36e860c384157741443e77b1733b8caf47d8fbc768038470be4b5a8",
+      "selection": "minimum validation loss; earliest epoch wins ties"
+    },
+    "cnn": {
+      "best_epoch": 20,
+      "config_sha256": "de67af66eeecd1789a9889eaf0903db289eacd8b4cdda8ab64cb7fc762af511d",
+      "checkpoint_sha256": "b6ea2f3007b9ae7ff46c149044d59f60df766cbf5af5e8a8c0c1a132e471ccc7",
+      "selection": "minimum validation loss; earliest epoch wins ties"
+    },
+    "gru": {
+      "best_epoch": 18,
+      "config_sha256": "d4ad1d747c4261161408785cfb81146c6726d03e0c7364d4a36bfd68d9552055",
+      "checkpoint_sha256": "4c27108449e72725643cd081609ff70b0f43581a75640b2a2f65f498d0cf097b",
+      "selection": "minimum validation loss; earliest epoch wins ties"
+    },
+    "transformer": {
+      "best_epoch": 20,
+      "config_sha256": "f33da7082f01195f97ac2144e4e8e11e7e54affad15641aa60a49c5cde243c2e",
+      "checkpoint_sha256": "08c5619d3ee0d987534110effa2cbbce6d7ee1b961c9651ab7a7c29a8aa9c6a2",
+      "selection": "minimum validation loss; earliest epoch wins ties"
+    }
+  },
+  "split_sha256": "0289c4940126abe338a376ea49eb866788d57cd67fa3ca17fe80139abb8c8fba",
+  "dataset_sha256": "1f243a60b4b748a44c48b9a6f6907be2a08bee3e4e226f0e86fbde8e147b745a",
+  "source_sha256": "723859922a133288b76c9b0ef3f82aea7af83d395066703d43f0b99a64de0890",
+  "files_sha256": {
+    "config.json": "2d4bade7233132fdcc630b061b36f8df43a2279a9fe863c2b072d8ef1901a52b",
+    "run_manifest.json": "08a33f3e648301d7963e6d574cd1a59dc6354d0d0ce68eea1ac4d15cac800df5",
+    "split_indices.npz": "cbc2d0fe6e635c171782407510d86e0a7b9745104fcdc4afc180a2b47ead76f4",
+    "data_summary.json": "21a256e593cd366b87efed0c3af326c47cf948a937d416f9d6509d625de0d7e9",
+    "linear/best.pt": "e5068fab87dfa3db1d2c977dd60088cf9c6c1587eb0f5c424a63eefbe8f1a757",
+    "linear/metrics.json": "01558acc7d93ad7b4d6d4d7a6211f0c7756e457ad1c1697ab4bb4fc4302c19d4",
+    "linear/model_config.json": "f04baf5f4e96758248b438d751eb5b5e8d300632b7ec60d29356e21825c17e80",
+    "linear/history.csv": "396e6301df3fcfd8e84aa691dd8090bd5c4852b0aaba414f120a7355fee58780",
+    "mlp/best.pt": "683cc723f36e860c384157741443e77b1733b8caf47d8fbc768038470be4b5a8",
+    "mlp/metrics.json": "854add4a89010ae4ef5b4140025cd80d506ffd98b193a0f5dda7385f6bcdce48",
+    "mlp/model_config.json": "f04baf5f4e96758248b438d751eb5b5e8d300632b7ec60d29356e21825c17e80",
+    "mlp/history.csv": "449bb18f963c19845c491a7332977c0b31b948e73c33a3b650a9e9d7e79bef1c",
+    "cnn/best.pt": "b6ea2f3007b9ae7ff46c149044d59f60df766cbf5af5e8a8c0c1a132e471ccc7",
+    "cnn/metrics.json": "216f3f31e658febd455b60a5e6846fa7634ce063ef8f36e1cd1d8fad29e2214b",
+    "cnn/model_config.json": "0a9223fc272e4575e60be504d4f57780f827d9b03ae5d5edd5179df225776c81",
+    "cnn/history.csv": "3fcf2c1495581c29a786aa6125800f4cc9e19a115a583640a69058718f11da18",
+    "gru/best.pt": "4c27108449e72725643cd081609ff70b0f43581a75640b2a2f65f498d0cf097b",
+    "gru/metrics.json": "53ab729846c5c139da37bf4a7de0e8e8ac6334b9cec3ef6fb111848b839427bd",
+    "gru/model_config.json": "42b94f38c4fadc93ca439cc71270562eba8efbf60f766e1b3e076aeccedd1fb1",
+    "gru/history.csv": "10f9c59ebc3430eacfe8248e36d3d786dc3c615f667f48cc5c2d6884de698614",
+    "transformer/best.pt": "08c5619d3ee0d987534110effa2cbbce6d7ee1b961c9651ab7a7c29a8aa9c6a2",
+    "transformer/metrics.json": "89e69e79423f857c2f8b1fef8c9df87abedb5111bfb1c5dd02fa6716871c2482",
+    "transformer/model_config.json": "efc501b59599e20def89b2292fb6c07827e62fa2fdfad128b39734f6bd76c6c1",
+    "transformer/history.csv": "5fd4697bec339781b1a1042ed57eb6483e7001e640e659114a41b91b49666f81"
+  },
+  "test_policy": "all five frozen checkpoints; no test-driven checkpoint or hyperparameter changes",
+  "manifest_sha256": "ff92710df1b1698c523f38851625092a328035cbe82d550f903557e43c256e96"
+}

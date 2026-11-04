@@ -1,0 +1,244 @@
+{
+  "status": "FAIL_LOCAL_NUMERIC_OR_SERVING_CHECK",
+  "verified_utc": "2026-10-28T11:15:14.063109+00:00",
+  "release_id": "g_m10_garmentlab_controlled_v2-C4-seed314",
+  "release_files_sha256": {
+    "CPU_BENCHMARK.json": "78058ceb4a4ab9aaab8ce44fe3b3d2525ebabf96993b8c2933035c5c9a1645f3",
+    "evaluation_receipt.json": "1e311d29806a5012695e35f04105cc4eab440d5446979847fd9a36fa4996d9f4",
+    "model.onnx": "de446d941e9757a4351ef6639409320804701fbe3361bf9b390f44d794d45fa6",
+    "ONNX_PARITY.json": "31ee795c7433241e15c34a3fe4bbf731dcdbf1536f41dec1d9cc2fcc125fdfae",
+    "onnx_parity_outputs.npz": "63d184370864553dd27866b0c66bd485729c48137a50c287d11415f659a5c4f5",
+    "release.json": "6ea88269e5c70cd02862bcab108461ce1a7ece82f39641aa48a3b67c11f000b0",
+    "SERVING_CHECK.json": "68c583d83e35e8a5b0395baa892a5ec330ad1fe518e4156fe5a9b726960c46ec",
+    "weights.pt": "74b618510179bb905a725b6620b63beb7d8a796bb034e754d4ca593e890d6b05"
+  },
+  "release_validation": "require_ready=True passed, exact weight and receipt SHA bindings validated",
+  "prepared_array_bindings": {
+    "images_uint8.npy": "c9ba2ec047594062ab38d7d7d0e5376363c61c86ebf8eb24992f0479c3204b27",
+    "labels.npy": "7bd6f836c34ca005b69a962564845b78f6e054de0c44a51db2bda37bf50a3d61",
+    "roles.npy": "65227362fe6541996c2a5938126040c0b36249c24e5b1c751ac54fe458137d23"
+  },
+  "numerical_regression": {
+    "status": "fail",
+    "samples": 327,
+    "batch_size": 1,
+    "temperature": 5.345757234366385,
+    "review_threshold": 0.88,
+    "checks": {
+      "local_pytorch": {
+        "status": "pass",
+        "maximum_absolute_error": 5.340576171875e-05,
+        "max_abs_tolerance": 0.0001,
+        "top1_disagreements": 0,
+        "samples": 327,
+        "maximum_probability_error": 1.622348913099536e-06,
+        "maximum_confidence_error": 1.622348913099536e-06,
+        "accepted_decision_disagreements": 0,
+        "accepted_count": 182
+      },
+      "preserved_returned_onnx": {
+        "status": "fail",
+        "maximum_absolute_error": 0.0001354217529296875,
+        "max_abs_tolerance": 0.0001,
+        "top1_disagreements": 0,
+        "samples": 327,
+        "maximum_probability_error": 7.639024602379418e-06,
+        "maximum_confidence_error": 7.639024602379418e-06,
+        "accepted_decision_disagreements": 0,
+        "accepted_count": 182
+      }
+    },
+    "scope": "Numerical/serving equivalence only; original model, metric, seed and threshold choices unchanged. No calibration refit.",
+    "arrays_sha256": "5650a083c582ac248f68c2fecdfec254c42bb35afcd75919125477eb1013ed9c",
+    "onnx_is_preserved_returned_artifact": true
+  },
+  "png_predictor": {
+    "status": "pass",
+    "cases": [
+      {
+        "array_index": 17500,
+        "predicted_index": 5,
+        "expected_index": 5,
+        "review_required": false,
+        "expected_review": false,
+        "confidence_error": 1.1553955570065e-09,
+        "input_tensor_sha256": "1be114cf78fa7e47d790467d4b394c6d2736d89dabd0daa82aaa89e3f5f406cd",
+        "prepared_tensor_sha256": "1be114cf78fa7e47d790467d4b394c6d2736d89dabd0daa82aaa89e3f5f406cd",
+        "passed": true
+      },
+      {
+        "array_index": 17501,
+        "predicted_index": 1,
+        "expected_index": 1,
+        "review_required": true,
+        "expected_review": true,
+        "confidence_error": 1.966105823703046e-07,
+        "input_tensor_sha256": "814e623f2f398798c0e1aaa93b92a4e865210ae64bbe3889aa908d078c73040c",
+        "prepared_tensor_sha256": "814e623f2f398798c0e1aaa93b92a4e865210ae64bbe3889aa908d078c73040c",
+        "passed": true
+      },
+      {
+        "array_index": 17502,
+        "predicted_index": 3,
+        "expected_index": 3,
+        "review_required": true,
+        "expected_review": true,
+        "confidence_error": 2.892203360138623e-07,
+        "input_tensor_sha256": "d2b442cb3b403fbaae771eccd2fdefa222adcc6fd19d8bb02073264428451784",
+        "prepared_tensor_sha256": "d2b442cb3b403fbaae771eccd2fdefa222adcc6fd19d8bb02073264428451784",
+        "passed": true
+      },
+      {
+        "array_index": 17504,
+        "predicted_index": 1,
+        "expected_index": 1,
+        "review_required": true,
+        "expected_review": true,
+        "confidence_error": 6.682528161383594e-07,
+        "input_tensor_sha256": "d4b098b0335d215b1747976a8a41c899eda7742f419572e2b1d97d7336c958d3",
+        "prepared_tensor_sha256": "d4b098b0335d215b1747976a8a41c899eda7742f419572e2b1d97d7336c958d3",
+        "passed": true
+      },
+      {
+        "array_index": 17514,
+        "predicted_index": 5,
+        "expected_index": 5,
+        "review_required": true,
+        "expected_review": true,
+        "confidence_error": 2.2941078414717708e-07,
+        "input_tensor_sha256": "13314f132c80d652fed7930f770f24da495af4efe09d3cc963aacf186480c793",
+        "prepared_tensor_sha256": "13314f132c80d652fed7930f770f24da495af4efe09d3cc963aacf186480c793",
+        "passed": true
+      },
+      {
+        "array_index": 17516,
+        "predicted_index": 2,
+        "expected_index": 2,
+        "review_required": true,
+        "expected_review": true,
+        "confidence_error": 1.2138135474515366e-07,
+        "input_tensor_sha256": "9fe35559f3d01870edfc0e3713135840b1b4727a1140dd2cd61188d7510358cf",
+        "prepared_tensor_sha256": "9fe35559f3d01870edfc0e3713135840b1b4727a1140dd2cd61188d7510358cf",
+        "passed": true
+      },
+      {
+        "array_index": 17791,
+        "predicted_index": 1,
+        "expected_index": 1,
+        "review_required": false,
+        "expected_review": false,
+        "confidence_error": 1.5291788191262867e-07,
+        "input_tensor_sha256": "a6e8c60f4571ba85026a7b21b3d20722f61f35210dadffef58e99c409271b6b0",
+        "prepared_tensor_sha256": "a6e8c60f4571ba85026a7b21b3d20722f61f35210dadffef58e99c409271b6b0",
+        "passed": true
+      }
+    ],
+    "scope": "PNG encoding of prepared 224px crops through actual decode/crop/preprocess/Predictor; no arbitrary-photo quality claim."
+  },
+  "in_process_http": {
+    "status": "pass",
+    "checks": [
+      {
+        "name": "health",
+        "passed": true
+      },
+      {
+        "name": "models",
+        "passed": true
+      },
+      {
+        "name": "predict_accept",
+        "array_index": 17500,
+        "passed": true,
+        "status_code": 200
+      },
+      {
+        "name": "predict_review",
+        "array_index": 17501,
+        "passed": true,
+        "status_code": 200
+      },
+      {
+        "name": "missing_crop_rejected",
+        "passed": true
+      },
+      {
+        "name": "absent_reference_not_substituted",
+        "passed": true
+      }
+    ],
+    "scope": "In-process HTTP ASGI contract with actual Predictor; no network deployment, uptime or production traffic."
+  },
+  "local_environment": {
+    "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "backend": {
+      "schema": 1,
+      "policy_id": "garmentlab_training_fp32_deterministic_v1",
+      "backend_source_sha256": "a39d06b05aba5388197ca47486c95877e603ef2ef816bd7315b1676eb9c24443",
+      "device": null,
+      "flags": {
+        "deterministic_algorithms": true,
+        "deterministic_warn_only": false,
+        "cudnn_benchmark": false,
+        "cudnn_deterministic": false,
+        "cuda_matmul_allow_tf32": false,
+        "cudnn_allow_tf32": false,
+        "float32_matmul_precision": "highest",
+        "default_dtype": "torch.float32",
+        "cuda_autocast_enabled": false,
+        "mkldnn_enabled": true
+      },
+      "runtime": {
+        "python": "3.12.10",
+        "torch": "2.10.0+cpu",
+        "torchvision": "0.25.0+cpu",
+        "numpy": "2.4.2",
+        "cuda": "None",
+        "cudnn": null,
+        "cuda_available": false,
+        "gpu": null,
+        "gpu_capability": null,
+        "cpu_threads": 1,
+        "cpu_interop_threads": 24
+      }
+    },
+    "versions": {
+      "torch": "2.10.0+cpu",
+      "torchvision": "0.25.0+cpu",
+      "onnxruntime": "1.31.0",
+      "numpy": "2.4.2",
+      "Pillow": "12.2.0",
+      "fastapi": "0.162.0",
+      "httpx": "0.28.1"
+    }
+  },
+  "oracle_environment": {
+    "python": "3.13.16",
+    "torch": "2.11.0+cu130",
+    "torchvision": "0.26.0+cu130",
+    "numpy": "2.4.2",
+    "cuda": "13.0",
+    "cudnn": 92700,
+    "cuda_available": true,
+    "gpu": "NVIDIA A100-SXM4-40GB",
+    "gpu_capability": [
+      8,
+      0
+    ],
+    "cpu_threads": 1,
+    "cpu_interop_threads": 6
+  },
+  "source_sha256": {
+    "garmentlab/inference.py": "24a768f17f1a921cf6120bda760d698876e56d3bcd124563ce0a4d5c20484d31",
+    "garmentlab/release.py": "4118112fe8eb733058e2843bfd3e1b37cb23c0330e4bfad97e574fce165ec094",
+    "garmentlab/api.py": "e125a3fad803a6d8504ec6d4bfb9727078f7b694f35e0b2df06c9b86c388d16e",
+    "tools/reexport_garmentlab.py": "29cfceb5d91def5dec607b9ae92a6f1e505ca14d42aa9dfc69315f9c4557381a"
+  },
+  "limitations": [
+    "Local PyTorch 2.10 CPU and torchvision 0.25 differ from Colab PyTorch 2.11 and torchvision 0.26; measured numerical agreement applies to the recorded samples.",
+    "All327 previously inspected assessment crops verify serving/numerics only, not new-image quality or an independent holdout.",
+    "PNG cases use encoded prepared224px crops; in-processHTTP checks are not hostednetwork or production validation.",
+    "No retraining, calibration refit, threshold change, checkpoint change or ONNX reexport was performed."
+  ]
+}

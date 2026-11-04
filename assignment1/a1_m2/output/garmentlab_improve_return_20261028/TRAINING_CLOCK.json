@@ -1,0 +1,6 @@
+{
+  "active_seconds": 4673.023102458999,
+  "budget_seconds": 10800,
+  "updated_utc": "2026-10-28T10:01:46.336832+00:00",
+  "scope": "Cumulative training-controller time; abrupt uncommitted tail may be unrecorded. Parent controller enforces the complete run budget."
+}

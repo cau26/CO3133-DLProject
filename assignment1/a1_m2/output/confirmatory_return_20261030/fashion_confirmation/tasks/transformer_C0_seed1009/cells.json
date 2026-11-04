@@ -1,0 +1,50 @@
+[
+  {
+    "task_id": "transformer_C0_seed1009",
+    "family": "transformer",
+    "seed": 1009,
+    "arm": "C0",
+    "candidate_id": "C0",
+    "policy": "ce",
+    "checkpoint_epoch": 23,
+    "checkpoint": "engine/best_ce.pt",
+    "checkpoint_sha256": "d004c484549ca3702cbefcd41d1d0cd4d0c57edfd721cc17bb746b04e570d8a8",
+    "loss": 0.26473705809064607,
+    "accuracy": 0.907,
+    "macro_f1": 0.9065168671735808,
+    "n_examples": 6000,
+    "evaluation_scope": "previously_seen_old_validation_exploratory"
+  },
+  {
+    "task_id": "transformer_C0_seed1009",
+    "family": "transformer",
+    "seed": 1009,
+    "arm": "C0",
+    "candidate_id": "C0",
+    "policy": "f1",
+    "checkpoint_epoch": 49,
+    "checkpoint": "engine/best_f1.pt",
+    "checkpoint_sha256": "4364224628c4ec0eed3f04fa94b20ef3cf736247dc3cf75a67029b55ba78871a",
+    "loss": 0.31139915540182406,
+    "accuracy": 0.9125,
+    "macro_f1": 0.9120129062391905,
+    "n_examples": 6000,
+    "evaluation_scope": "previously_seen_old_validation_exploratory"
+  },
+  {
+    "task_id": "transformer_C0_seed1009",
+    "family": "transformer",
+    "seed": 1009,
+    "arm": "C0",
+    "candidate_id": "C0",
+    "policy": "final",
+    "checkpoint_epoch": 60,
+    "checkpoint": "final_epoch.pt",
+    "checkpoint_sha256": "614a2946756a9a3dbc19aa4b7ab8f4f746964436eae05014c3c8d6d6f2ba3fc7",
+    "loss": 0.3484353686177614,
+    "accuracy": 0.9028333333333334,
+    "macro_f1": 0.9020811500447158,
+    "n_examples": 6000,
+    "evaluation_scope": "previously_seen_old_validation_exploratory"
+  }
+]

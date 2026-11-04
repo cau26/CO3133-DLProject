@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="GarmentLab: phân loại vùng ảnh trang phục, xem confidence và kiểm tra phạm vi của mô hình.">
+  <title>GarmentLab · Phân loại trang phục</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar wrap">
+    <a class="brand" href="/" aria-label="GarmentLab, trang chính"><span class="brand-mark" aria-hidden="true">G</span>GarmentLab</a>
+    <div class="top-meta"><span>CO3133 · G-M10</span><span class="draft-pill">Research demo</span></div>
+  </header>
+  <main class="wrap">
+    <section class="intro" aria-labelledby="page-title">
+      <div><p class="eyebrow">Model &amp; inference studio</p><h1 id="page-title">Phân loại ảnh trang phục</h1>
+      <p class="lede">Thử mô hình, đọc kết quả và kiểm tra phạm vi áp dụng.</p></div>
+      <div class="service-state"><span class="status-dot" id="status-dot"></span><span id="service-status" role="status">Đang kiểm tra dịch vụ…</span></div>
+    </section>
+
+    <div class="workspace">
+      <section class="panel input-panel" aria-labelledby="input-title">
+        <div class="panel-title"><span class="step">01</span><h2 id="input-title">Chọn dữ liệu đầu vào</h2></div>
+        <fieldset class="mode-picker"><legend>Phạm vi mô hình</legend>
+          <label class="mode-option"><input type="radio" name="mode" value="reference" checked><span><strong>Fashion-MNIST</strong><small>Checkpoint tham chiếu · ảnh 28×28 thang xám</small></span><span id="reference-status" class="small-pill">Đang kiểm tra</span></label>
+          <label class="mode-option"><input type="radio" name="mode" value="garment"><span><strong>Ảnh quần áo thật</strong><small>Phân loại một trang phục trong vùng crop</small></span><span id="garment-status" class="small-pill">Chưa sẵn sàng</span></label>
+        </fieldset>
+        <p id="mode-note" class="scope-note">Mô hình tham chiếu dành cho Fashion-MNIST; khả năng nhận diện ảnh chụp thật chưa được xác nhận.</p>
+
+        <div id="sample-section"><div class="section-label"><h3>Thử ảnh mẫu</h3><span>Ảnh minh họa từ tập train</span></div>
+          <div class="samples">
+            <button type="button" class="sample" data-sample="sample-tshirt.png"><img src="/static/samples/sample-tshirt.png" alt="Ảnh mẫu T-shirt Fashion-MNIST" width="56" height="56"><span>T-shirt</span></button>
+            <button type="button" class="sample" data-sample="sample-trouser.png"><img src="/static/samples/sample-trouser.png" alt="Ảnh mẫu Trouser Fashion-MNIST" width="56" height="56"><span>Trouser</span></button>
+            <button type="button" class="sample" data-sample="sample-boot.png"><img src="/static/samples/sample-boot.png" alt="Ảnh mẫu Ankle boot Fashion-MNIST" width="56" height="56"><span>Ankle boot</span></button>
+          </div>
+          <p class="sample-caption">Các mẫu giúp kiểm tra luồng xử lý; không dùng để đánh giá chất lượng. <a href="/static/samples/SOURCE.md">Nguồn và giấy phép</a></p>
+        </div>
+
+        <label class="upload-zone" for="image-file"><span class="upload-icon" aria-hidden="true">＋</span><strong>Chọn ảnh từ máy</strong><span id="upload-hint">PNG 28×28 thang xám · tối đa 5 MiB</span><input id="image-file" type="file" accept="image/png,image/jpeg"></label>
+        <div class="preview-row" id="preview-row" hidden><img id="preview" alt="Ảnh đang chọn"><div><strong id="file-name"></strong><span id="file-info"></span></div><button type="button" class="text-button" id="clear-image" aria-label="Bỏ ảnh đã chọn">Bỏ ảnh</button></div>
+        <details id="crop-section" hidden open><summary>Vùng chứa một trang phục</summary><p>Điền bốn tọa độ pixel trên ảnh đã xoay theo EXIF: left, top, right, bottom. Mô hình ảnh thật cần vùng crop tối thiểu 8×8 pixel.</p><div class="crop-fields"><label>Left<input id="crop-left" type="number" min="0" step="1" inputmode="numeric"></label><label>Top<input id="crop-top" type="number" min="0" step="1" inputmode="numeric"></label><label>Right<input id="crop-right" type="number" min="1" step="1" inputmode="numeric"></label><label>Bottom<input id="crop-bottom" type="number" min="1" step="1" inputmode="numeric"></label></div></details>
+        <button id="predict-button" type="button" class="primary-button" disabled>Phân tích ảnh <span aria-hidden="true">↗</span></button>
+        <p class="privacy-note">Ảnh được xử lý tại dịch vụ trên máy này. Ứng dụng không ghi nội dung ảnh vào log.</p>
+        <div id="message" class="message" role="alert" hidden></div>
+      </section>
+
+      <section class="panel result-panel" aria-labelledby="result-title">
+        <div class="panel-title"><span class="step">02</span><h2 id="result-title">Đọc kết quả</h2><span class="small-pill" id="result-mode">Chưa có dự đoán</span></div>
+        <div class="empty-state" id="empty-state"><div class="empty-mark" aria-hidden="true">◫</div><h3>Sẵn sàng khi bạn chọn ảnh</h3><p>Kết quả sẽ hiển thị phân bố xác suất, phiên bản mô hình và phạm vi của dự đoán.</p></div>
+        <div id="prediction" hidden aria-live="polite">
+          <p class="eyebrow">Nhãn có điểm cao nhất</p><div class="prediction-heading"><h3 id="predicted-label"></h3><span id="predicted-probability"></span></div>
+          <p id="confidence-note" class="scope-note"></p>
+          <div class="section-label"><h3>Phân bố xác suất</h3><span id="probability-label">Softmax</span></div><ol id="probability-bars" class="probability-bars"></ol>
+          <details class="model-details" open><summary>Thông tin lần xử lý</summary><dl><div><dt>Model version</dt><dd id="model-version"></dd></div><div><dt>Đầu vào</dt><dd id="input-shape"></dd></div><div><dt>Tiền xử lý</dt><dd id="preprocessing-version"></dd></div><div><dt>Xử lý ảnh + mô hình</dt><dd id="request-time"></dd></div><div><dt>Request ID</dt><dd id="request-id"></dd></div></dl><p class="sample-caption">Thời gian của lần gọi này không thay thế benchmark độ trễ trên nhiều request.</p></details>
+        </div>
+        <div class="scope-footer"><span aria-hidden="true">i</span><p>Nhánh ảnh thật cần checkpoint và bằng chứng đánh giá riêng. Trạng thái của nhánh này được hiển thị độc lập với mô hình tham chiếu.</p></div>
+      </section>
+    </div>
+    <footer class="page-footer"><span>GarmentLab · Research to inference</span><a href="/openapi.json">API contract</a><span>Fashion-MNIST · © 2017 Zalando SE · MIT</span></footer>
+  </main>
+</body>
+</html>

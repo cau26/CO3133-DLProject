@@ -1,0 +1,40 @@
+name: CPU contracts and evidence
+on:
+  push:
+    paths: ['a1/**', 'a1opt/**', 'a1confirm/**', 'garmentlab/**', 'tests/**', 'notebooks/**', 'configs/**', 'requirements*.txt', 'tools/**', 'assets/**', 'output/a1_final/**', 'output/confirmatory_return_20261030/**', 'outputs/a1_m2_final_returned_867c74469240/**', '.github/workflows/garmentlab-draft.yml']
+  pull_request:
+    paths: ['a1/**', 'a1opt/**', 'a1confirm/**', 'garmentlab/**', 'tests/**', 'notebooks/**', 'configs/**', 'requirements*.txt', 'tools/**', 'assets/**', 'output/a1_final/**', 'output/confirmatory_return_20261030/**', 'outputs/a1_m2_final_returned_867c74469240/**', '.github/workflows/garmentlab-draft.yml']
+permissions:
+  contents: read
+concurrency:
+  group: garmentlab-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  cpu-contracts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      PYTHONUTF8: '1'
+      OMP_NUM_THREADS: '2'
+      MKL_NUM_THREADS: '2'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: |
+            requirements-garmentlab-draft.txt
+            requirements-garmentlab-cpu-lock.txt
+            requirements-public-tests.txt
+      - run: python -m pip install -r requirements-public-tests.txt --index-url https://pypi.org/simple
+      - run: python -m pip check
+      - run: python -m pytest tests -q --basetemp .private-build/ci-tests --junitxml=.private-build/cpu-junit.xml
+      - run: python tools/verify_a1_final_evidence.py
+      - run: python tools/verify_confirmatory_evidence.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cpu-test-results
+          path: .private-build/cpu-junit.xml
+          if-no-files-found: ignore

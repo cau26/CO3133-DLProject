@@ -1,0 +1,28 @@
+{
+  "task_id": "final_C0_seed2718",
+  "candidate_id": "C0",
+  "phase": "final",
+  "recipe": "finetune",
+  "seed": 2718,
+  "epochs": 18,
+  "labels": [
+    "shirt_blouse",
+    "top_tshirt_sweatshirt",
+    "jacket",
+    "pants",
+    "skirt",
+    "dress"
+  ],
+  "architecture": "mobilenet_v3_small",
+  "candidate": {
+    "id": "C0",
+    "name": "original_anchor",
+    "head_lr": 0.001,
+    "backbone_lr": 0.0003,
+    "weight_decay": 0.0001,
+    "head_dropout": 0.2,
+    "label_smoothing": 0.0,
+    "photo_brightness": 0.0,
+    "photo_contrast": 0.0
+  }
+}

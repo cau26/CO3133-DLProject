@@ -1,0 +1,392 @@
+{
+  "final_exploratory_validation": [
+    {
+      "model": "linear",
+      "candidate_id": "C1",
+      "n": 3,
+      "macro_f1_mean": 0.8685125330451335,
+      "macro_f1_sample_sd": 0.00023870153734325915,
+      "accuracy_mean": 0.8685555555555556,
+      "accuracy_sample_sd": 9.622504486492703e-05,
+      "loss_mean": 0.3790149280607693,
+      "loss_sample_sd": 0.0009284166828149984,
+      "selected_epochs": [
+        40,
+        41,
+        35
+      ],
+      "parameters": 7850
+    },
+    {
+      "model": "mlp",
+      "candidate_id": "C7",
+      "n": 3,
+      "macro_f1_mean": 0.9144831340664631,
+      "macro_f1_sample_sd": 0.001527709699555157,
+      "accuracy_mean": 0.9143888888888889,
+      "accuracy_sample_sd": 0.00166944213347964,
+      "loss_mean": 0.26301762743354595,
+      "loss_sample_sd": 0.0012041932799415527,
+      "selected_epochs": [
+        56,
+        47,
+        58
+      ],
+      "parameters": 203530
+    },
+    {
+      "model": "cnn",
+      "candidate_id": "C5",
+      "n": 3,
+      "macro_f1_mean": 0.933080471774959,
+      "macro_f1_sample_sd": 0.00026682532182050416,
+      "accuracy_mean": 0.9327777777777778,
+      "accuracy_sample_sd": 0.0005853140973806959,
+      "loss_mean": 0.19150563881064286,
+      "loss_sample_sd": 0.0002814273259196909,
+      "selected_epochs": [
+        44,
+        60,
+        55
+      ],
+      "parameters": 93962
+    },
+    {
+      "model": "gru",
+      "candidate_id": "C1",
+      "n": 3,
+      "macro_f1_mean": 0.913668539575603,
+      "macro_f1_sample_sd": 0.00375815595177194,
+      "accuracy_mean": 0.914,
+      "accuracy_sample_sd": 0.003278719262150978,
+      "loss_mean": 0.274751439846624,
+      "loss_sample_sd": 0.013715582436326477,
+      "selected_epochs": [
+        37,
+        28,
+        34
+      ],
+      "parameters": 61962
+    },
+    {
+      "model": "transformer",
+      "candidate_id": "C1",
+      "n": 3,
+      "macro_f1_mean": 0.9143144716174813,
+      "macro_f1_sample_sd": 0.000963098262739151,
+      "accuracy_mean": 0.9143333333333333,
+      "accuracy_sample_sd": 0.0012018504251546385,
+      "loss_mean": 0.3091735003247225,
+      "loss_sample_sd": 0.017679763961647655,
+      "selected_epochs": [
+        58,
+        48,
+        41
+      ],
+      "parameters": 274954
+    }
+  ],
+  "inner_confirmation": {
+    "selected": {
+      "linear": {
+        "candidate": {
+          "candidate_id": "C1",
+          "family": "linear",
+          "config": {
+            "group": "G-M10",
+            "members": [
+              "Trần Gia Lâm (2352670)",
+              "Nguyễn Hữu Cầu (2352129)"
+            ],
+            "batch_size": 128,
+            "epochs": 60,
+            "learning_rate": 0.001,
+            "optimizer": "adam",
+            "weight_decay": 0.0,
+            "hidden_size": 256,
+            "num_workers": 0,
+            "cpu_threads": 4,
+            "gradient_clip": 1.0,
+            "inference_warmup_batches": 10,
+            "inference_measured_batches": 50,
+            "head_dropout": 0.0,
+            "encoder_init": "legacy",
+            "schedule": "cosine",
+            "min_lr_ratio": 0.05,
+            "warmup_epochs": 0
+          },
+          "effective_sha256": "7fa9578e28f29fde9cd026815fd4ab125f1129fb24a9dc61e189a54449da4e9b",
+          "provenance": {
+            "kind": "schedule_probe",
+            "generation_policy": "opt3_balanced_random_fixedshape_v1",
+            "sampler": "optuna.samplers.RandomSampler",
+            "sampler_seed": 20261021,
+            "schedule_shuffle_seed": 20261023
+          }
+        },
+        "anchor_f1": [
+          0.8565500023160538,
+          0.8561856712223312
+        ],
+        "challenger_f1": [
+          0.8565697100721165,
+          0.8565300044649817
+        ],
+        "paired_f1_delta": [
+          1.970775606263686e-05,
+          0.00034433324265048526
+        ],
+        "confirmation_training_seeds": [
+          101,
+          202
+        ]
+      },
+      "mlp": {
+        "candidate": {
+          "candidate_id": "C7",
+          "family": "mlp",
+          "config": {
+            "group": "G-M10",
+            "members": [
+              "Trần Gia Lâm (2352670)",
+              "Nguyễn Hữu Cầu (2352129)"
+            ],
+            "batch_size": 128,
+            "epochs": 60,
+            "learning_rate": 0.0010097926757800027,
+            "optimizer": "adam",
+            "weight_decay": 1e-05,
+            "hidden_size": 256,
+            "num_workers": 0,
+            "cpu_threads": 4,
+            "gradient_clip": 1.0,
+            "inference_warmup_batches": 10,
+            "inference_measured_batches": 50,
+            "head_dropout": 0.2,
+            "encoder_init": "legacy",
+            "schedule": "cosine",
+            "min_lr_ratio": 0.05,
+            "warmup_epochs": 0
+          },
+          "effective_sha256": "fdab20a0cec374246023037b4a026d27d92481ea243f27c25ab1c4237437df0c",
+          "provenance": {
+            "kind": "stratified_random",
+            "generation_policy": "opt3_balanced_random_fixedshape_v1",
+            "sampler": "optuna.samplers.RandomSampler",
+            "sampler_seed": 20261021,
+            "schedule_shuffle_seed": 20261023,
+            "trial_number": 6,
+            "sampling_attempts": 1,
+            "rejected_duplicate_draws": [],
+            "objective_observed": false
+          }
+        },
+        "anchor_f1": [
+          0.8989708048546652,
+          0.8996101481957002
+        ],
+        "challenger_f1": [
+          0.9041065323579126,
+          0.9043534640819069
+        ],
+        "paired_f1_delta": [
+          0.0051357275032474226,
+          0.004743315886206689
+        ],
+        "confirmation_training_seeds": [
+          101,
+          202
+        ]
+      },
+      "cnn": {
+        "candidate": {
+          "candidate_id": "C5",
+          "family": "cnn",
+          "config": {
+            "group": "G-M10",
+            "members": [
+              "Trần Gia Lâm (2352670)",
+              "Nguyễn Hữu Cầu (2352129)"
+            ],
+            "batch_size": 128,
+            "epochs": 60,
+            "learning_rate": 0.0014380860997919844,
+            "optimizer": "adamw",
+            "weight_decay": 0.0001,
+            "hidden_size": 256,
+            "num_workers": 0,
+            "cpu_threads": 4,
+            "gradient_clip": 1.0,
+            "inference_warmup_batches": 10,
+            "inference_measured_batches": 50,
+            "cnn_channels": [
+              32,
+              64,
+              128
+            ],
+            "dropout": 0.3,
+            "head_dropout": 0.0,
+            "encoder_init": "legacy",
+            "schedule": "constant",
+            "min_lr_ratio": 0.05,
+            "warmup_epochs": 0
+          },
+          "effective_sha256": "7a17c98d8e8e3d7424b0e95119d31a816ea1804f374f96315ede954e9c59aff8",
+          "provenance": {
+            "kind": "stratified_random",
+            "generation_policy": "opt3_balanced_random_fixedshape_v1",
+            "sampler": "optuna.samplers.RandomSampler",
+            "sampler_seed": 20261021,
+            "schedule_shuffle_seed": 20261023,
+            "trial_number": 9,
+            "sampling_attempts": 1,
+            "rejected_duplicate_draws": [],
+            "objective_observed": false
+          }
+        },
+        "anchor_f1": [
+          0.9209526887893542,
+          0.9282620296227806
+        ],
+        "challenger_f1": [
+          0.9266204207073766,
+          0.9291920905122968
+        ],
+        "paired_f1_delta": [
+          0.0056677319180223895,
+          0.0009300608895161933
+        ],
+        "confirmation_training_seeds": [
+          101,
+          202
+        ]
+      },
+      "gru": {
+        "candidate": {
+          "candidate_id": "C1",
+          "family": "gru",
+          "config": {
+            "group": "G-M10",
+            "members": [
+              "Trần Gia Lâm (2352670)",
+              "Nguyễn Hữu Cầu (2352129)"
+            ],
+            "batch_size": 128,
+            "epochs": 60,
+            "learning_rate": 0.001,
+            "optimizer": "adamw",
+            "weight_decay": 0.0001,
+            "hidden_size": 256,
+            "num_workers": 0,
+            "cpu_threads": 4,
+            "gradient_clip": 1.0,
+            "inference_warmup_batches": 10,
+            "inference_measured_batches": 50,
+            "gru_hidden_size": 128,
+            "gru_num_layers": 1,
+            "dropout": 0.0,
+            "head_dropout": 0.0,
+            "encoder_init": "legacy",
+            "sequence_axis": "rows",
+            "schedule": "cosine",
+            "min_lr_ratio": 0.05,
+            "warmup_epochs": 0
+          },
+          "effective_sha256": "b5f4d4c3a1ec1859a5e73fc221d4d5fea9fa31dbfe234714cfbfe17b71041fa4",
+          "provenance": {
+            "kind": "schedule_probe",
+            "generation_policy": "opt3_balanced_random_fixedshape_v1",
+            "sampler": "optuna.samplers.RandomSampler",
+            "sampler_seed": 20261021,
+            "schedule_shuffle_seed": 20261023
+          }
+        },
+        "anchor_f1": [
+          0.9018504016142124,
+          0.9026169119393307
+        ],
+        "challenger_f1": [
+          0.9029801466399693,
+          0.9038532084717836
+        ],
+        "paired_f1_delta": [
+          0.001129745025756912,
+          0.0012362965324529407
+        ],
+        "confirmation_training_seeds": [
+          101,
+          202
+        ]
+      },
+      "transformer": {
+        "candidate": {
+          "candidate_id": "C1",
+          "family": "transformer",
+          "config": {
+            "group": "G-M10",
+            "members": [
+              "Trần Gia Lâm (2352670)",
+              "Nguyễn Hữu Cầu (2352129)"
+            ],
+            "batch_size": 128,
+            "epochs": 60,
+            "learning_rate": 0.0005,
+            "optimizer": "adamw",
+            "weight_decay": 0.0001,
+            "hidden_size": 256,
+            "num_workers": 0,
+            "cpu_threads": 4,
+            "gradient_clip": 1.0,
+            "inference_warmup_batches": 10,
+            "inference_measured_batches": 50,
+            "patch_size": 4,
+            "d_model": 128,
+            "nhead": 4,
+            "transformer_layers": 2,
+            "dim_feedforward": 256,
+            "dropout": 0.1,
+            "head_dropout": 0.0,
+            "encoder_init": "legacy",
+            "use_position_embedding": true,
+            "schedule": "warmup_cosine",
+            "min_lr_ratio": 0.05,
+            "warmup_epochs": 5
+          },
+          "effective_sha256": "ead9d18b6b2bbafeb0f089541b3889080ef04f1619f2b82cf336bf3cf8efb389",
+          "provenance": {
+            "kind": "schedule_probe",
+            "generation_policy": "opt3_balanced_random_fixedshape_v1",
+            "sampler": "optuna.samplers.RandomSampler",
+            "sampler_seed": 20261021,
+            "schedule_shuffle_seed": 20261023
+          }
+        },
+        "anchor_f1": [
+          0.8939276261768155,
+          0.9009602145302116
+        ],
+        "challenger_f1": [
+          0.8997396887989938,
+          0.898814244083697
+        ],
+        "paired_f1_delta": [
+          0.00581206262217826,
+          -0.0021459704465145446
+        ],
+        "confirmation_training_seeds": [
+          101,
+          202
+        ]
+      }
+    },
+    "objective": "Mean selected inner macro-F1 across two matched seeds; 1e-6 tie prefers C0",
+    "study_manifest_sha256": "8ee891e30ad411818f664db31e74f923cf3730a355d4d9687e7234e0f80eee46",
+    "final_training_policy": "full54k_old6k_validation_selected_60_epochs"
+  },
+  "limitations": [
+    "Previously seen validation selects final checkpoint; no new blind test",
+    "Inner selection uses only2seeds",
+    "Historical CE-selected references differ in protocol",
+    "No causal claim without fresh matched final anchors"
+  ]
+}

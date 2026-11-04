@@ -1,0 +1,82 @@
+{
+  "task_id": "final_C0_seed5772",
+  "binding": "de1776965e16fa98f8b732bc8eec6770636e07954224e3c14a84877702d90c2b",
+  "seed": 5772,
+  "epochs": 18,
+  "best_epoch": 15,
+  "selection": {
+    "loss": 1.0688819113279713,
+    "accuracy": 0.8710554951033732,
+    "macro_f1": 0.8400450651343233,
+    "confusion": [
+      [
+        127,
+        30,
+        15,
+        1,
+        2,
+        5
+      ],
+      [
+        28,
+        397,
+        15,
+        5,
+        2,
+        14
+      ],
+      [
+        15,
+        18,
+        140,
+        3,
+        0,
+        7
+      ],
+      [
+        1,
+        4,
+        0,
+        299,
+        2,
+        3
+      ],
+      [
+        0,
+        5,
+        0,
+        9,
+        82,
+        11
+      ],
+      [
+        2,
+        25,
+        5,
+        3,
+        7,
+        556
+      ]
+    ],
+    "examples": 1838,
+    "objective_loss": 1.0688819113279713,
+    "loss_definition": "Unsmoothed CE; objective_loss separately records the training regularization objective"
+  },
+  "fit_seconds": 228.748905145997,
+  "initial_head_sha256": "25176cdbc388147771fe3b7ae1fd62b8e6ae6efbd30fec3f36cba30659e57b53",
+  "initial_encoder_sha256": "f1fb0b60c7a1e0cfe0e6d56b741026afd54610019158d6cd9220dba99bcc489d",
+  "files": {
+    "task.json": {
+      "sha256": "bd75b16cea57f506884f1e6efae11c30ed39b0d86897519ca583d9e4923c45c4"
+    },
+    "best.pt": {
+      "sha256": "1517f6dce07d443fdc03bd45fbbade85dc2cea7a2a105f42838f284409852b8c"
+    },
+    "history.json": {
+      "sha256": "cd1336c245bac599ad8b8c8aa0e0f36ff92941a5967021f45d6d95ca126bca58"
+    },
+    "epoch_state.pt": {
+      "sha256": "11c35503b701573a88c5561da603053c609c271cf0ffef0b737bf82eb3971ede"
+    }
+  }
+}

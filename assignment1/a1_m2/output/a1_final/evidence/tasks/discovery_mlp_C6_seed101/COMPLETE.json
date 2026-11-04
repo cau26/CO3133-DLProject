@@ -1,0 +1,49 @@
+{
+  "status": "COMPLETE",
+  "task_sha256": "9d0e3193f74db26d6045002389498db37430cac124539bb354a731885577a8a4",
+  "binding_sha256": "1c4e2ad9a65832646b5f1aa8927b81bfb2bc1e9f977d9bbdcce8b55644915033",
+  "metrics": {
+    "task_id": "discovery_mlp_C6_seed101",
+    "family": "mlp",
+    "phase": "discovery",
+    "seed": 101,
+    "parameters": 203530,
+    "selection_rule": "max_macro_f1_then_min_ce_then_earliest_epoch",
+    "best_f1_epoch": 54,
+    "best_f1_metrics": {
+      "loss": 0.3246012889000193,
+      "accuracy": 0.8988888888888888,
+      "macro_f1": 0.8985344433864348,
+      "n_examples": 5400
+    },
+    "best_ce_epoch": 34,
+    "best_ce_metrics": {
+      "loss": 0.30408815842128756,
+      "accuracy": 0.8946296296296297,
+      "macro_f1": 0.8941427830246351,
+      "n_examples": 5400
+    },
+    "epochs_completed": 60,
+    "optimizer_updates": 22800,
+    "n_train": 48600,
+    "n_validation": 5400,
+    "fit_wall_seconds": 421.7231883620034,
+    "fit_timer_scope": "completed epochs: train + validation + in-memory checkpoint selection; excludes setup, transaction writes, finalization, discarded crash work",
+    "training_loop_seconds": 384.4977870030034,
+    "validation_seconds": 37.13814395400459,
+    "scope": "validation_only_exploratory_no_official_test",
+    "task_sha256": "9d0e3193f74db26d6045002389498db37430cac124539bb354a731885577a8a4",
+    "binding_sha256": "1c4e2ad9a65832646b5f1aa8927b81bfb2bc1e9f977d9bbdcce8b55644915033",
+    "finalization_seconds_before_metrics_write": 0.7404661660002603
+  },
+  "artifacts_sha256": {
+    "TASK.json": "363674bd9bfc1ec55211070641de2e5b65b6322d0b8c33f9502e5ce3b47de02e",
+    "history.csv": "1ff08e0542e0a87b5f746d2f0eaba04289d6c634f2dcd97d5c2d10fee0cf54ee",
+    "predictions.csv": "8a10e1b3b0e0a7ad03b3ced06766a1e4f27876b1981a12eec0720d7c6a3610b4",
+    "metrics.json": "058150cad4a26021175d97a5a6860b715fc13c3ee93f23c53c79f9a2f7312ba1",
+    "best_f1.pt": "9a6eb59c0023c8164bae2dbb8e8fb503f6ea9023d8e3078ede31857df1463794",
+    "best_ce.pt": "fba512b6069fad4b00462aafc4dee674ffb76d13e799b5689f1f89e5af61c741",
+    "COMMIT.json": "ac26e13942c97e2198149fef7b210e405661a88628f3bc316f0293a6cb199f66",
+    "state-0060-9ba371a7de0e43f8978cb43bf44cfdbf.pt": "337aa3bea0ceaa70e53d7fb65a1d06a844ea2ef7af130c80859bb5d289fedd09"
+  }
+}

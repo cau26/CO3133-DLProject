@@ -1,0 +1,284 @@
+{
+  "status": "PASS_LOCAL_EXPORT_FIX_NOT_ORIGINAL_COLAB_RERUN",
+  "original_results_zip_sha256": "662b2fe873223abf25fe48c4ece51c1c3d5738af97a1602d893525de0d53f2a4",
+  "original_weights_sha256": "76a1926c57100f793600c4c7ca805f37610eddbd35347102bff4551c9ed60ecd",
+  "original_parity": {
+    "status": "fail",
+    "scope": "CPU FP32 tensor-logit parity after choices frozen; no assessment-driven model selection.",
+    "max_abs_tolerance": 0.0001,
+    "maximum_absolute_error": 0.0001544952392578125,
+    "top1_disagreements": 0,
+    "batch_sizes": [
+      1,
+      3,
+      64
+    ],
+    "distinct_assessment_cases": 64,
+    "model_sha256": "c7a40608a5c3a7bec732fa60a3c5873f48ec81f6721e55b64bc49762c2ae0960",
+    "declared_batch_range": [
+      1,
+      128
+    ],
+    "tested_batch_range_is_only_the_recorded_sizes": true
+  },
+  "diagnosis": {
+    "observation": "Original ONNX outputs reproduce exactly on local ORT1.31 CPU; only largest tested batch64 breached1e-4. Exporter optimize=True graph has0 BatchNormalization operators; optimize=False preserves34. This controlled export-option change reduces error with unchanged weights.",
+    "inference": "Exporter-side graph optimization/folding is the supported source of excess FP32 drift; no per-operator numerical tracing was performed."
+  },
+  "changed_settings": {
+    "torch_onnx_export_optimize": false,
+    "onnxruntime_graph_optimization_level": "ORT_ENABLE_ALL",
+    "unchanged_max_abs_tolerance": 0.0001,
+    "same_checkpoint_calibration_threshold_seed_and_data": true,
+    "retraining": false
+  },
+  "fixed_helper_real_data": {
+    "scope": "Export-only CPU diagnostic with original checkpoint and first64 declared assessment cases; not a new training run or original Colab2.11 execution. Original received ZIP and study outputs unchanged.",
+    "original_results_archive_sha256": "662b2fe873223abf25fe48c4ece51c1c3d5738af97a1602d893525de0d53f2a4",
+    "original_weights_sha256": "76a1926c57100f793600c4c7ca805f37610eddbd35347102bff4551c9ed60ecd",
+    "runtime": {
+      "python": "3.12.10",
+      "torch": "2.10.0+cpu",
+      "onnxruntime": "1.31.0",
+      "onnx": "1.23.2",
+      "platform": "Windows-11-10.0.26300-SP0"
+    },
+    "fixed_helper_parity": {
+      "status": "pass",
+      "scope": "CPU FP32 tensor-logit parity after choices frozen; no assessment-driven model selection.",
+      "max_abs_tolerance": 0.0001,
+      "export_settings": {
+        "dynamo": true,
+        "optimize": false,
+        "opset_version": 18,
+        "external_data": false,
+        "onnxruntime_graph_optimization_level": "ORT_ENABLE_ALL",
+        "onnxruntime_providers": [
+          "CPUExecutionProvider"
+        ],
+        "onnxruntime_intra_op_num_threads": 1,
+        "onnxruntime_inter_op_num_threads": 1
+      },
+      "runtime": {
+        "torch": "2.10.0+cpu",
+        "onnxruntime": "1.31.0"
+      },
+      "maximum_absolute_error": 7.62939453125e-05,
+      "top1_disagreements": 0,
+      "batch_sizes": [
+        1,
+        3,
+        64
+      ],
+      "distinct_assessment_cases": 64,
+      "model_sha256": "a0c7d8cf424e4981e3681272859efa1ba09d80423c6cc1f15eee1a652490a4cb",
+      "declared_batch_range": [
+        1,
+        128
+      ],
+      "tested_batch_range_is_only_the_recorded_sizes": true
+    },
+    "comparison_to_returned_original_pytorch_2_11": [
+      {
+        "batch": 1,
+        "maximum_absolute_error_against_original_pytorch_2_11": 4.57763671875e-05,
+        "top1_disagreements_against_original_pytorch_2_11": 0
+      },
+      {
+        "batch": 3,
+        "maximum_absolute_error_against_original_pytorch_2_11": 4.57763671875e-05,
+        "top1_disagreements_against_original_pytorch_2_11": 0
+      },
+      {
+        "batch": 64,
+        "maximum_absolute_error_against_original_pytorch_2_11": 8.296966552734375e-05,
+        "top1_disagreements_against_original_pytorch_2_11": 0
+      }
+    ]
+  },
+  "all_controlled_export_variants": [
+    {
+      "optimize": false,
+      "ort": "ORT_DISABLE_ALL",
+      "batch": 1,
+      "vs_return_torch": 4.673004150390625e-05,
+      "vs_local_torch": 4.1961669921875e-05
+    },
+    {
+      "optimize": false,
+      "ort": "ORT_DISABLE_ALL",
+      "batch": 3,
+      "vs_return_torch": 4.673004150390625e-05,
+      "vs_local_torch": 4.00543212890625e-05
+    },
+    {
+      "optimize": false,
+      "ort": "ORT_DISABLE_ALL",
+      "batch": 64,
+      "vs_return_torch": 8.20159912109375e-05,
+      "vs_local_torch": 7.43865966796875e-05
+    },
+    {
+      "optimize": false,
+      "ort": "ORT_ENABLE_ALL",
+      "batch": 1,
+      "vs_return_torch": 4.57763671875e-05,
+      "vs_local_torch": 4.00543212890625e-05
+    },
+    {
+      "optimize": false,
+      "ort": "ORT_ENABLE_ALL",
+      "batch": 3,
+      "vs_return_torch": 4.57763671875e-05,
+      "vs_local_torch": 3.814697265625e-05
+    },
+    {
+      "optimize": false,
+      "ort": "ORT_ENABLE_ALL",
+      "batch": 64,
+      "vs_return_torch": 8.296966552734375e-05,
+      "vs_local_torch": 7.62939453125e-05
+    },
+    {
+      "optimize": true,
+      "ort": "ORT_DISABLE_ALL",
+      "batch": 1,
+      "vs_return_torch": 3.62396240234375e-05,
+      "vs_local_torch": 3.24249267578125e-05
+    },
+    {
+      "optimize": true,
+      "ort": "ORT_DISABLE_ALL",
+      "batch": 3,
+      "vs_return_torch": 0.0001373291015625,
+      "vs_local_torch": 0.00013637542724609375
+    },
+    {
+      "optimize": true,
+      "ort": "ORT_DISABLE_ALL",
+      "batch": 64,
+      "vs_return_torch": 0.0002498626708984375,
+      "vs_local_torch": 0.000247955322265625
+    },
+    {
+      "optimize": true,
+      "ort": "ORT_ENABLE_ALL",
+      "batch": 1,
+      "vs_return_torch": 5.53131103515625e-05,
+      "vs_local_torch": 7.62939453125e-05
+    },
+    {
+      "optimize": true,
+      "ort": "ORT_ENABLE_ALL",
+      "batch": 3,
+      "vs_return_torch": 8.487701416015625e-05,
+      "vs_local_torch": 8.392333984375e-05
+    },
+    {
+      "optimize": true,
+      "ort": "ORT_ENABLE_ALL",
+      "batch": 64,
+      "vs_return_torch": 0.0001544952392578125,
+      "vs_local_torch": 0.00012493133544921875
+    }
+  ],
+  "software_tests": {
+    "command": "pytest tests/test_garmentlab_evaluate.py tests/test_garmentlab_recovery_integration.py -q",
+    "passed": 18,
+    "seconds": 24.49,
+    "junitxml": ".private-build/ox28/pytest.xml",
+    "meaning": "Existing six-task real tiny recovery/no-inference replay and actual MobileNet dynamic exporter test pass. Added assertions retain BatchNorm and record explicit export/session settings."
+  },
+  "files": [
+    {
+      "path": "garmentlab/evaluate.py",
+      "sha256": "754b146f23ee0a8bbcedc5d0f2b8939c01cd128a8939a149535518f8b84f4e1b",
+      "bytes": 48372
+    },
+    {
+      "path": "tests/test_garmentlab_evaluate.py",
+      "sha256": "b4e627578a8e3c10ea953245c04f81aeae114cefd9c42e7d20edea3af6c12880",
+      "bytes": 11224
+    },
+    {
+      "path": ".private-build/ox28/fixed_helper/model.onnx",
+      "sha256": "a0c7d8cf424e4981e3681272859efa1ba09d80423c6cc1f15eee1a652490a4cb",
+      "bytes": 7691052
+    },
+    {
+      "path": ".private-build/ox28/fixed_helper/ONNX_PARITY.json",
+      "sha256": "4b189bf46ed6a0dc906831f383ba8d351ce8e703b2e7ef721740b4d41e00dbf5",
+      "bytes": 950
+    },
+    {
+      "path": ".private-build/ox28/fixed_helper/CPU_BENCHMARK.json",
+      "sha256": "17b4ad3e1ca7f9afc9afb37689faa1117a29d00d7a594d68ba4fc18ef0de76bb",
+      "bytes": 2765
+    },
+    {
+      "path": ".private-build/ox28/fixed_helper/onnx_parity_outputs.npz",
+      "sha256": "1b3b4f989491e25f10e92c49af8a14323a4379eb34c193a70ce1747f992606a5",
+      "bytes": 4372
+    },
+    {
+      "path": ".private-build/ox28/fixed_helper/ORACLE_COMPARISON.npz",
+      "sha256": "4e53498d3a0c3303e113b592c563c94f82c565235dca6fd5d0d1b0f8edb80c45",
+      "bytes": 8901
+    }
+  ],
+  "limits": [
+    "Local execution is Windows, Python3.12, torch2.10+cpu, ORT1.31; original Colab used Linux, Python3.13, torch2.11+cu130. New ONNX is also compared against archived original2.11 PyTorch outputs for same fixed64cases/batches1,3,64, but no live original-runtime rerun is asserted.",
+    "Only exporter/session configuration changed. Original run ZIP, checkpoints, selection freeze, calibration and assessment metrics must remain immutable. A separate export amendment/derived release should record this runtime and source.",
+    "The declared dynamic range1..128 is only tested at recorded batch sizes1,3,64 in the original gate; no all-input numerical guarantee.",
+    "The additional all327cases/batches1,3,64,128 export-only diagnostic also passes unchanged1e-4; it is explicitly post-selection engineering verification and does not replace original quality metrics or gate specification."
+  ],
+  "primary_sources": [
+    {
+      "url": "https://docs.pytorch.org/docs/2.11/onnx.html",
+      "supports": "optimize is a supported dynamo exporter option, defaultTrue since2.7; settingFalse disables exporter-side graph optimization."
+    },
+    {
+      "url": "https://onnxruntime.ai/docs/performance/model-optimizations/graph-optimizations.html",
+      "supports": "Default all ORT graph optimizations include Conv-BatchNorm fusion and layout transformations; explicit policy should be bound to parity receipt."
+    },
+    {
+      "url": "https://docs.pytorch.org/docs/main/notes/numerical_accuracy.html",
+      "supports": "FP32 operation order, batching, platform/release differences can change results; mathematical equivalence does not ensure bit identity."
+    }
+  ],
+  "broader_post_selection_export_diagnostic": [
+    {
+      "batch": 1,
+      "all_assessment_cases": 327,
+      "maximum_absolute_error_against_local_torch_same_batch": 7.82012939453125e-05,
+      "top1_disagreements_local": 0,
+      "maximum_absolute_error_against_original_torch_batch1": 9.441375732421875e-05,
+      "top1_disagreements_original_batch1": 0
+    },
+    {
+      "batch": 3,
+      "all_assessment_cases": 327,
+      "maximum_absolute_error_against_local_torch_same_batch": 7.62939453125e-05,
+      "top1_disagreements_local": 0,
+      "maximum_absolute_error_against_original_torch_batch1": 9.441375732421875e-05,
+      "top1_disagreements_original_batch1": 0
+    },
+    {
+      "batch": 64,
+      "all_assessment_cases": 327,
+      "maximum_absolute_error_against_local_torch_same_batch": 7.62939453125e-05,
+      "top1_disagreements_local": 0,
+      "maximum_absolute_error_against_original_torch_batch1": 9.441375732421875e-05,
+      "top1_disagreements_original_batch1": 0
+    },
+    {
+      "batch": 128,
+      "all_assessment_cases": 327,
+      "maximum_absolute_error_against_local_torch_same_batch": 7.62939453125e-05,
+      "top1_disagreements_local": 0,
+      "maximum_absolute_error_against_original_torch_batch1": 9.441375732421875e-05,
+      "top1_disagreements_original_batch1": 0
+    }
+  ],
+  "broader_diagnostic_index_order_matches_original_assessment": true
+}

@@ -1,0 +1,59 @@
+{
+  "status": "PASS_INDEPENDENT_FROZEN_LOGIT_STATISTICS_REPLAY",
+  "results_sha256": "9b51c6a5b9628cad9b27ac8df5d0fab0b7df429858a12bfe187feccc09851d1a",
+  "completion_sha256": "1806138f634d60f731700a358faae0abcc2df10f3719a7d1666cfd33831e3b7d",
+  "prediction_payloads_verified": 18,
+  "models_replayed": 6,
+  "crops": 2766,
+  "components": 1826,
+  "metric_absolute_tolerance": 2e-12,
+  "bootstrap_replicates": 2000,
+  "rows": [
+    {
+      "task_id": "final_C0_seed2718",
+      "accuracy": 0.8062183658712943,
+      "macro_f1": 0.7643491714956223,
+      "nll": 0.9984302736429297
+    },
+    {
+      "task_id": "final_C0_seed314",
+      "accuracy": 0.8091106290672451,
+      "macro_f1": 0.7736271611709756,
+      "nll": 1.4705027125420778
+    },
+    {
+      "task_id": "final_C0_seed5772",
+      "accuracy": 0.8199566160520607,
+      "macro_f1": 0.7855051952462286,
+      "nll": 1.4627793203097612
+    },
+    {
+      "task_id": "final_C4_seed2718",
+      "accuracy": 0.8145336225596529,
+      "macro_f1": 0.7783937715149493,
+      "nll": 1.3828371964390158
+    },
+    {
+      "task_id": "final_C4_seed314",
+      "accuracy": 0.8210412147505423,
+      "macro_f1": 0.7839140545302046,
+      "nll": 1.5926174793336443
+    },
+    {
+      "task_id": "final_C4_seed5772",
+      "accuracy": 0.82176428054953,
+      "macro_f1": 0.7823116304098109,
+      "nll": 1.2899901042477961
+    }
+  ],
+  "mean_macro_f1": {
+    "C0": 0.7744938426376088,
+    "C4": 0.7815398188183216
+  },
+  "paired_mean_macro_f1_delta": 0.007045976180712787,
+  "paired_delta_interval": [
+    -0.000360016466329463,
+    0.015124302054412876
+  ],
+  "method": "Independent NumPy confusion/softmax/NLL/Brier/ECE, preset policy and joint component multinomial bootstrap from already locked logits only. No photographs, model construction/inference, fitting, calibration, model selection or threshold adaptation."
+}

@@ -1,0 +1,229 @@
+{
+  "samples": 327,
+  "accuracy": 0.8195718654434251,
+  "macro_f1": 0.7684516292865694,
+  "loss": 0.5314408016906026,
+  "nll": 0.5314408016906026,
+  "brier_score": 0.2711919063067361,
+  "brier_definition": "mean sum of squared K-class probability errors, not divided by K",
+  "ece": 0.07667315110426304,
+  "ece_bins": 15,
+  "reliability_bins": [
+    {
+      "lower": 0.0,
+      "upper": 0.06666666666666667,
+      "count": 0,
+      "confidence": null,
+      "accuracy": null
+    },
+    {
+      "lower": 0.06666666666666667,
+      "upper": 0.13333333333333333,
+      "count": 0,
+      "confidence": null,
+      "accuracy": null
+    },
+    {
+      "lower": 0.13333333333333333,
+      "upper": 0.2,
+      "count": 0,
+      "confidence": null,
+      "accuracy": null
+    },
+    {
+      "lower": 0.2,
+      "upper": 0.26666666666666666,
+      "count": 0,
+      "confidence": null,
+      "accuracy": null
+    },
+    {
+      "lower": 0.26666666666666666,
+      "upper": 0.3333333333333333,
+      "count": 2,
+      "confidence": 0.30302351382531256,
+      "accuracy": 0.5
+    },
+    {
+      "lower": 0.3333333333333333,
+      "upper": 0.4,
+      "count": 3,
+      "confidence": 0.35085620730780803,
+      "accuracy": 0.6666666666666666
+    },
+    {
+      "lower": 0.4,
+      "upper": 0.4666666666666667,
+      "count": 10,
+      "confidence": 0.43720159442234496,
+      "accuracy": 0.4
+    },
+    {
+      "lower": 0.4666666666666667,
+      "upper": 0.5333333333333333,
+      "count": 23,
+      "confidence": 0.49913972044973226,
+      "accuracy": 0.6521739130434783
+    },
+    {
+      "lower": 0.5333333333333333,
+      "upper": 0.6,
+      "count": 20,
+      "confidence": 0.556505728061812,
+      "accuracy": 0.7
+    },
+    {
+      "lower": 0.6,
+      "upper": 0.6666666666666666,
+      "count": 15,
+      "confidence": 0.6265511370821475,
+      "accuracy": 0.2
+    },
+    {
+      "lower": 0.6666666666666666,
+      "upper": 0.7333333333333333,
+      "count": 19,
+      "confidence": 0.6999704582465013,
+      "accuracy": 0.5789473684210527
+    },
+    {
+      "lower": 0.7333333333333333,
+      "upper": 0.8,
+      "count": 17,
+      "confidence": 0.7609438994148755,
+      "accuracy": 0.8235294117647058
+    },
+    {
+      "lower": 0.8,
+      "upper": 0.8666666666666667,
+      "count": 32,
+      "confidence": 0.8358204099777476,
+      "accuracy": 0.90625
+    },
+    {
+      "lower": 0.8666666666666667,
+      "upper": 0.9333333333333333,
+      "count": 40,
+      "confidence": 0.906235116572193,
+      "accuracy": 0.85
+    },
+    {
+      "lower": 0.9333333333333333,
+      "upper": 1.0,
+      "count": 146,
+      "confidence": 0.9842755974764523,
+      "accuracy": 0.9657534246575342
+    }
+  ],
+  "confusion": [
+    [
+      10,
+      9,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      80,
+      4,
+      1,
+      1,
+      7
+    ],
+    [
+      3,
+      4,
+      14,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      43,
+      2,
+      3
+    ],
+    [
+      0,
+      3,
+      0,
+      3,
+      22,
+      5
+    ],
+    [
+      1,
+      9,
+      2,
+      0,
+      1,
+      99
+    ]
+  ],
+  "per_class": [
+    {
+      "index": 0,
+      "label": "shirt_blouse",
+      "precision": 0.7142857142857143,
+      "recall": 0.5263157894736842,
+      "f1": 0.6060606060606061,
+      "support": 19
+    },
+    {
+      "index": 1,
+      "label": "top_tshirt_sweatshirt",
+      "precision": 0.7547169811320755,
+      "recall": 0.8602150537634409,
+      "f1": 0.8040201005025127,
+      "support": 93
+    },
+    {
+      "index": 2,
+      "label": "jacket",
+      "precision": 0.7,
+      "recall": 0.6666666666666666,
+      "f1": 0.6829268292682926,
+      "support": 21
+    },
+    {
+      "index": 3,
+      "label": "pants",
+      "precision": 0.9148936170212766,
+      "recall": 0.8775510204081632,
+      "f1": 0.8958333333333333,
+      "support": 49
+    },
+    {
+      "index": 4,
+      "label": "skirt",
+      "precision": 0.8461538461538461,
+      "recall": 0.6666666666666666,
+      "f1": 0.7457627118644068,
+      "support": 33
+    },
+    {
+      "index": 5,
+      "label": "dress",
+      "precision": 0.868421052631579,
+      "recall": 0.8839285714285714,
+      "f1": 0.8761061946902655,
+      "support": 112
+    }
+  ],
+  "acceptance": {
+    "policy_mode": "confidence_threshold",
+    "threshold": 0.88,
+    "samples": 327,
+    "accepted_count": 180,
+    "accepted_correct": 170,
+    "coverage": 0.5504587155963303,
+    "accepted_accuracy": 0.9444444444444444,
+    "scope": "Descriptive crop-weighted regression score with frozen policy; not the independent-component bound or a future accuracy guarantee."
+  },
+  "evaluation_scope": "POST_TEST_EXPLORATORY_REGRESSION"
+}

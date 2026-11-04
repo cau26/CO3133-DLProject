@@ -1,0 +1,5 @@
+# CPU software verification profile, separate from the recorded A100 environment.
+-r requirements-garmentlab-cpu-lock.txt
+scikit-learn==1.8.0
+optuna==4.8.0
+scipy==1.18.1

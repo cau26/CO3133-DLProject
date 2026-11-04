@@ -1,0 +1,63 @@
+{
+  "task": {
+    "task_id": "transformer_selected_seed3037",
+    "family": "transformer",
+    "phase": "matched_confirmation",
+    "seed": 3037,
+    "epochs": 60,
+    "arm": "selected",
+    "candidate_id": "C1",
+    "config": {
+      "group": "G-M10",
+      "members": [
+        "Trần Gia Lâm (2352670)",
+        "Nguyễn Hữu Cầu (2352129)"
+      ],
+      "batch_size": 128,
+      "epochs": 60,
+      "learning_rate": 0.0005,
+      "optimizer": "adamw",
+      "weight_decay": 0.0001,
+      "hidden_size": 256,
+      "num_workers": 0,
+      "cpu_threads": 4,
+      "gradient_clip": 1.0,
+      "inference_warmup_batches": 10,
+      "inference_measured_batches": 50,
+      "patch_size": 4,
+      "d_model": 128,
+      "nhead": 4,
+      "transformer_layers": 2,
+      "dim_feedforward": 256,
+      "dropout": 0.1,
+      "head_dropout": 0.0,
+      "encoder_init": "legacy",
+      "use_position_embedding": true,
+      "schedule": "warmup_cosine",
+      "min_lr_ratio": 0.05,
+      "warmup_epochs": 5
+    }
+  },
+  "binding": {
+    "confirmation_manifest_sha256": "700db95d22d32d5c3e7f3c1dc9cf4c526f4f646698d82b88838f21be16215103",
+    "source_sha256": "9ae49ca390bc424478bcce8dd5cb185a29c87e401156703bb4a0a1654fee9166",
+    "dataset_sha256": "1f243a60b4b748a44c48b9a6f6907be2a08bee3e4e226f0e86fbde8e147b745a",
+    "split_sha256": "0289c4940126abe338a376ea49eb866788d57cd67fa3ca17fe80139abb8c8fba",
+    "environment": {
+      "python_major_minor": [
+        3,
+        13
+      ],
+      "device_type": "cuda",
+      "gpu": "NVIDIA A100-SXM4-40GB",
+      "cuda": "13.0",
+      "cudnn": 92700,
+      "versions": {
+        "torch": "2.11.0+cu130",
+        "torchvision": "0.26.0+cu130",
+        "numpy": "2.4.2",
+        "scikit-learn": "1.8.0"
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "binding": {
+    "weights_sha256": "74b618510179bb905a725b6620b63beb7d8a796bb034e754d4ca593e890d6b05",
+    "split_sha256": "4f1bf6953cfe3fab520dc0a004312a50dc265c1671a75aa5e434a8cdeca125f9",
+    "corruption": {
+      "kind": "noise",
+      "severity": 3,
+      "sigma": 0.1
+    },
+    "inference_device": "cpu",
+    "batch_size": 1,
+    "backend": {
+      "schema": 1,
+      "policy_id": "garmentlab_training_fp32_deterministic_v1",
+      "backend_source_sha256": "a39d06b05aba5388197ca47486c95877e603ef2ef816bd7315b1676eb9c24443",
+      "device": "cpu",
+      "flags": {
+        "deterministic_algorithms": true,
+        "deterministic_warn_only": false,
+        "cudnn_benchmark": false,
+        "cudnn_deterministic": false,
+        "cuda_matmul_allow_tf32": false,
+        "cudnn_allow_tf32": false,
+        "float32_matmul_precision": "highest",
+        "default_dtype": "torch.float32",
+        "cuda_autocast_enabled": false,
+        "mkldnn_enabled": true
+      },
+      "runtime": {
+        "python": "3.13.16",
+        "torch": "2.11.0+cu130",
+        "torchvision": "0.26.0+cu130",
+        "numpy": "2.4.2",
+        "cuda": "13.0",
+        "cudnn": 92700,
+        "cuda_available": true,
+        "gpu": "NVIDIA A100-SXM4-40GB",
+        "gpu_capability": [
+          8,
+          0
+        ],
+        "cpu_threads": 1,
+        "cpu_interop_threads": 6
+      }
+    },
+    "schema": 2
+  },
+  "sha256": "aec8bbe850a0d472b6fd3e3376ace6ca111dc13620e0eef24298db8f6017ec22",
+  "device": "cpu",
+  "scope": "Fixed-checkpoint inference; saved complete passes reused on resume. A crash before commit may repeat an incomplete pass."
+}

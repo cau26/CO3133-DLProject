@@ -1,0 +1,49 @@
+{
+  "status": "COMPLETE",
+  "task_sha256": "fd130a323e0ef641a72a11161d0fbf98b657de124faf875f14ab92bf99d7f13b",
+  "binding_sha256": "c0c6e9a2050508ef9296524564ba0058c43f3cd2b99b0ae25d19627c7d31e60f",
+  "metrics": {
+    "task_id": "gru_selected_seed3037",
+    "family": "gru",
+    "phase": "matched_confirmation",
+    "seed": 3037,
+    "parameters": 61962,
+    "selection_rule": "max_macro_f1_then_min_ce_then_earliest_epoch",
+    "best_f1_epoch": 30,
+    "best_f1_metrics": {
+      "loss": 0.2686816024298668,
+      "accuracy": 0.9121666666666667,
+      "macro_f1": 0.9119849769232926,
+      "n_examples": 6000
+    },
+    "best_ce_epoch": 18,
+    "best_ce_metrics": {
+      "loss": 0.257492288555691,
+      "accuracy": 0.9045,
+      "macro_f1": 0.9048115140133065,
+      "n_examples": 6000
+    },
+    "epochs_completed": 60,
+    "optimizer_updates": 25320,
+    "n_train": 54000,
+    "n_validation": 6000,
+    "fit_wall_seconds": 472.6799423240045,
+    "fit_timer_scope": "completed epochs: train + validation + in-memory checkpoint selection; excludes setup, transaction writes, finalization, discarded crash work",
+    "training_loop_seconds": 432.14863933200286,
+    "validation_seconds": 40.4619392689965,
+    "scope": "validation_only_exploratory_no_official_test",
+    "task_sha256": "fd130a323e0ef641a72a11161d0fbf98b657de124faf875f14ab92bf99d7f13b",
+    "binding_sha256": "c0c6e9a2050508ef9296524564ba0058c43f3cd2b99b0ae25d19627c7d31e60f",
+    "finalization_seconds_before_metrics_write": 0.8225389880008152
+  },
+  "artifacts_sha256": {
+    "TASK.json": "a7c3fb5d97ca3a082eeca7dabe71a9d7948a7c36905fd7b8a14d25cf3351f038",
+    "history.csv": "f55da2bbe2dda54d3f390e9f84aff90d56556e1fb43a0f775f1f598431c9bb4e",
+    "predictions.csv": "e0129158dc565d1f4107121adeb0d30761b3a2b01c4cf5069ba1f4499c634524",
+    "metrics.json": "8b65af4a046154a431ac8169b08523554617459463379008cf4d53adcabc255d",
+    "best_f1.pt": "33714bbdab04bee6d001d3921a3756158e0db0ae51adcde181e8f6588607898d",
+    "best_ce.pt": "01c0709d341e25e8b6f6c0f3dc2da02438eb1dba496f9f647873bbe7c0e03609",
+    "COMMIT.json": "150008d8e9a3cf45163ab4513f7e2f694b4a748d63ebf97a3315e72048b7a7ba",
+    "state-0060-c40e60f9ddc94987950417f79c1ebefb.pt": "e7c052abc46ed0d00450361fae5ac0e97f71650fdb7863636f00bd1b30d827e4"
+  }
+}

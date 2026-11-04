@@ -1,0 +1,5 @@
+{
+  "budget_seconds": 17100.0,
+  "active_run_seconds": 15335.759257179001,
+  "scope": "Controller active run time; setup/smoke excluded; epoch-boundary stop can overrun by an epoch."
+}

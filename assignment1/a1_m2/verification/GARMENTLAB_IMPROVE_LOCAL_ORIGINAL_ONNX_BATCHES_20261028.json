@@ -1,0 +1,139 @@
+{
+  "status": "EXPANDED_DIAGNOSTIC_FAIL_ORIGINAL_ONNX_FIXED_TOLERANCE",
+  "release_id": "g_m10_garmentlab_controlled_v2-C4-seed314",
+  "model_sha256": "de446d941e9757a4351ef6639409320804701fbe3361bf9b390f44d794d45fa6",
+  "fixed_max_abs_tolerance": 0.0001,
+  "rows": [
+    {
+      "nominal_batch_size": 1,
+      "observed_chunk_sizes": [
+        1
+      ],
+      "onnx_vs_archived_colab_batch1": {
+        "status": "fail",
+        "max_abs_error": 0.0001354217529296875,
+        "samples": 327,
+        "top1_disagreements": 0,
+        "review_disagreements": 0,
+        "max_probability_error": 7.639024602379418e-06
+      },
+      "onnx_vs_local_pytorch_same_batches": {
+        "status": "fail",
+        "max_abs_error": 0.0001277923583984375,
+        "samples": 327,
+        "top1_disagreements": 0,
+        "review_disagreements": 0,
+        "max_probability_error": 6.991885165841261e-06
+      },
+      "local_pytorch_vs_archived_colab_batch1": {
+        "status": "pass",
+        "max_abs_error": 5.435943603515625e-05,
+        "samples": 327,
+        "top1_disagreements": 0,
+        "review_disagreements": 0,
+        "max_probability_error": 1.7785940608083806e-06
+      }
+    },
+    {
+      "nominal_batch_size": 3,
+      "observed_chunk_sizes": [
+        3
+      ],
+      "onnx_vs_archived_colab_batch1": {
+        "status": "fail",
+        "max_abs_error": 0.0001354217529296875,
+        "samples": 327,
+        "top1_disagreements": 0,
+        "review_disagreements": 0,
+        "max_probability_error": 7.639024602379418e-06
+      },
+      "onnx_vs_local_pytorch_same_batches": {
+        "status": "fail",
+        "max_abs_error": 0.000125885009765625,
+        "samples": 327,
+        "top1_disagreements": 0,
+        "review_disagreements": 0,
+        "max_probability_error": 7.021709335253146e-06
+      },
+      "local_pytorch_vs_archived_colab_batch1": {
+        "status": "pass",
+        "max_abs_error": 5.340576171875e-05,
+        "samples": 327,
+        "top1_disagreements": 0,
+        "review_disagreements": 0,
+        "max_probability_error": 1.7653924805349774e-06
+      }
+    },
+    {
+      "nominal_batch_size": 64,
+      "observed_chunk_sizes": [
+        7,
+        64
+      ],
+      "onnx_vs_archived_colab_batch1": {
+        "status": "fail",
+        "max_abs_error": 0.0001354217529296875,
+        "samples": 327,
+        "top1_disagreements": 0,
+        "review_disagreements": 0,
+        "max_probability_error": 7.639024602379418e-06
+      },
+      "onnx_vs_local_pytorch_same_batches": {
+        "status": "fail",
+        "max_abs_error": 0.00011920928955078125,
+        "samples": 327,
+        "top1_disagreements": 0,
+        "review_disagreements": 0,
+        "max_probability_error": 7.510067709826096e-06
+      },
+      "local_pytorch_vs_archived_colab_batch1": {
+        "status": "pass",
+        "max_abs_error": 5.91278076171875e-05,
+        "samples": 327,
+        "top1_disagreements": 0,
+        "review_disagreements": 0,
+        "max_probability_error": 1.975629920769606e-06
+      }
+    },
+    {
+      "nominal_batch_size": 128,
+      "observed_chunk_sizes": [
+        71,
+        128
+      ],
+      "onnx_vs_archived_colab_batch1": {
+        "status": "fail",
+        "max_abs_error": 0.0001354217529296875,
+        "samples": 327,
+        "top1_disagreements": 0,
+        "review_disagreements": 0,
+        "max_probability_error": 7.639024602379418e-06
+      },
+      "onnx_vs_local_pytorch_same_batches": {
+        "status": "fail",
+        "max_abs_error": 0.00011920928955078125,
+        "samples": 327,
+        "top1_disagreements": 0,
+        "review_disagreements": 0,
+        "max_probability_error": 7.510067709826096e-06
+      },
+      "local_pytorch_vs_archived_colab_batch1": {
+        "status": "pass",
+        "max_abs_error": 5.91278076171875e-05,
+        "samples": 327,
+        "top1_disagreements": 0,
+        "review_disagreements": 0,
+        "max_probability_error": 1.975629920769606e-06
+      }
+    }
+  ],
+  "settings": {
+    "graph_optimization_level": "ORT_ENABLE_ALL",
+    "intra_op_num_threads": 1,
+    "inter_op_num_threads": 1,
+    "providers": [
+      "CPUExecutionProvider"
+    ]
+  },
+  "scope": "Diagnostic only. Original graph/weights/calibration/threshold unchanged. Every327case evaluated at each nominalbatchsize, short finalchunk recorded. No newexportvariant or tuning."
+}

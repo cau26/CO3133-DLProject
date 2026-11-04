@@ -1,0 +1,11 @@
+{
+  "run_id": "adaae7c7221445ad9be48fc13d6a18dd",
+  "models": [
+    "linear",
+    "mlp",
+    "cnn",
+    "gru",
+    "transformer"
+  ],
+  "freeze_manifest_sha256": "a3629a402b58ab0df84e94fb14b534b0b1f5c83fa3a27cc83ac0d83c2b8a04f5"
+}

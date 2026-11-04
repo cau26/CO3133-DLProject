@@ -1,0 +1,27 @@
+{
+  "status": "COMPLETE",
+  "fashion": {
+    "status": "COMPLETE",
+    "completed_trajectories": 30,
+    "maximum_trajectories": 30,
+    "completed_checkpoint_cells": 90,
+    "maximum_checkpoint_cells": 90,
+    "clock": {
+      "budget_seconds": 17100.0,
+      "active_run_seconds": 15335.759257179001,
+      "scope": "Controller active run time; setup/smoke excluded; epoch-boundary stop can overrun by an epoch."
+    },
+    "official_test_evaluated": false,
+    "limitations": [
+      "Previously inspected old validation selects CE/F1 checkpoints; its metrics are exploratory.",
+      "Fresh training seeds do not create fresh images or undo historical evaluation exposure.",
+      "The official test partition is not loaded and is not a new blind benchmark.",
+      "The paired factor design isolates combined recipe changes from checkpoint selection, not individual hyperparameters.",
+      "Across-seed sample SD is conditional on one fixed split, not a population confidence interval.",
+      "A genuinely independent image benchmark requires an externally collected, prospectively locked audit set."
+    ]
+  },
+  "rgb_status": "PROSPECTIVE_AUDIT_COMPLETE",
+  "new_blind_Fashion_MNIST_test": false,
+  "new_project_unused_RGB_cohort": true
+}

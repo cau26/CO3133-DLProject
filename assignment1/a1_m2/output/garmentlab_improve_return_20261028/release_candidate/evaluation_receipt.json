@@ -1,0 +1,253 @@
+{
+  "format_version": 1,
+  "release_id": "g_m10_garmentlab_controlled_v2-C4-seed314",
+  "weights_sha256": "74b618510179bb905a725b6620b63beb7d8a796bb034e754d4ca593e890d6b05",
+  "calibration": {
+    "status": "fitted",
+    "temperature": 5.345757234366385,
+    "review_threshold": 0.88,
+    "fit_split_sha256": "4f385288d00ba04b51d8debf84442eaba16639e5bfb6fb4491fc281dcfe3800a",
+    "threshold_selection_split_sha256": "12e9132cb83a296099df5bdc6f09615fa13eb8fdc7c91ac71367a44e52cffa11",
+    "policy": {
+      "version": "disjoint_component_representative_bonferroni_v2",
+      "mode": "confidence_threshold",
+      "target_accuracy": 0.95,
+      "bound_eligible": true,
+      "family_error_probability": 0.05,
+      "target_bound_satisfied_under_assumptions": true,
+      "unconditional_accuracy_guarantee": false,
+      "target_population": "equally weighted metadata-selected representative of an independent source/duplicate component",
+      "partition_sha256": "385c0e7768032d44b4e985f8d4f5ebc0772afa0dcce57376bc273c395934c17d",
+      "threshold_grid_sha256": "6e7cf29829ec0f572e3d603a963affa9629c450310b4657bd843e531b24ca2a0"
+    }
+  },
+  "gates": {
+    "data": {
+      "status": "pass",
+      "class_counts": {
+        "fit": [
+          1284,
+          3459,
+          1308,
+          2398,
+          773,
+          4605
+        ],
+        "selection": [
+          180,
+          461,
+          183,
+          309,
+          107,
+          598
+        ],
+        "calibration": [
+          172,
+          448,
+          159,
+          295,
+          116,
+          645
+        ],
+        "assessment": [
+          19,
+          93,
+          21,
+          49,
+          33,
+          112
+        ]
+      },
+      "failures": [],
+      "prepared_bindings": {
+        "images_uint8.npy": "c9ba2ec047594062ab38d7d7d0e5376363c61c86ebf8eb24992f0479c3204b27",
+        "labels.npy": "7bd6f836c34ca005b69a962564845b78f6e054de0c44a51db2bda37bf50a3d61",
+        "roles.npy": "65227362fe6541996c2a5938126040c0b36249c24e5b1c751ac54fe458137d23",
+        "index_manifest.json": "cacb96a7d87529dce147a7e73237eec410ba29ed437b0d464cfca57fc9509637",
+        "DATA_READINESS.json": "1f8c4ac24b7f71966658749a708f8eed2aed8d492d077628fcc395d802a0422f"
+      },
+      "scope": "Cached data integrity, nonempty class support and source-group separation; not legal clearance or independent garment identity."
+    },
+    "quality": {
+      "status": "pass",
+      "minimum_selection_macro_f1": 0.7,
+      "maximum_selection_regression": 0.005,
+      "deployment_candidate_mean_selection_macro_f1": 0.8434698272134985,
+      "deployment_guard": {
+        "maximum_selection_f1_regression": 0.005,
+        "selected_minus_anchor_f1": -0.002808345671629242,
+        "fallback_to_anchor": false,
+        "scope": "Preset seed selection-only regression guard; no assessment or calibration inference"
+      },
+      "scope": "Selection-only quality criteria and fixed-seed fallback; no assessment-driven choice."
+    },
+    "calibration": {
+      "status": "pass",
+      "temperature_fit_valid": true,
+      "policy_mode": "confidence_threshold",
+      "target_bound_satisfied_under_assumptions": true,
+      "unconditional_accuracy_guarantee": false,
+      "scope": "Valid disjoint calibration fit and explicit review policy. Review-all is technically valid even when no risk threshold qualifies; passing this gate is not a95% accuracy guarantee."
+    },
+    "parity": {
+      "status": "pass",
+      "scope": "CPU FP32 tensor-logit parity after choices frozen; no assessment-driven model selection.",
+      "max_abs_tolerance": 0.0001,
+      "export_settings": {
+        "dynamo": true,
+        "optimize": false,
+        "opset_version": 18,
+        "external_data": false,
+        "onnxruntime_graph_optimization_level": "ORT_ENABLE_ALL",
+        "onnxruntime_providers": [
+          "CPUExecutionProvider"
+        ],
+        "onnxruntime_intra_op_num_threads": 1,
+        "onnxruntime_inter_op_num_threads": 1
+      },
+      "runtime": {
+        "torch": "2.11.0+cu130",
+        "onnxruntime": "1.31.0"
+      },
+      "maximum_absolute_error": 9.196996688842773e-05,
+      "top1_disagreements": 0,
+      "batch_sizes": [
+        1,
+        3,
+        64
+      ],
+      "distinct_assessment_cases": 64,
+      "model_sha256": "de446d941e9757a4351ef6639409320804701fbe3361bf9b390f44d794d45fa6",
+      "declared_batch_range": [
+        1,
+        128
+      ],
+      "tested_batch_range_is_only_the_recorded_sizes": true
+    },
+    "serving": {
+      "status": "pass",
+      "png_predictor": {
+        "status": "pass",
+        "cases": [
+          {
+            "array_index": 17500,
+            "predicted_index": 5,
+            "expected_index": 5,
+            "review_required": false,
+            "expected_review": false,
+            "confidence_error": 1.8918322464145376e-10,
+            "input_tensor_sha256": "1be114cf78fa7e47d790467d4b394c6d2736d89dabd0daa82aaa89e3f5f406cd",
+            "prepared_tensor_sha256": "1be114cf78fa7e47d790467d4b394c6d2736d89dabd0daa82aaa89e3f5f406cd",
+            "passed": true
+          },
+          {
+            "array_index": 17501,
+            "predicted_index": 1,
+            "expected_index": 1,
+            "review_required": true,
+            "expected_review": true,
+            "confidence_error": 4.517912993717843e-07,
+            "input_tensor_sha256": "814e623f2f398798c0e1aaa93b92a4e865210ae64bbe3889aa908d078c73040c",
+            "prepared_tensor_sha256": "814e623f2f398798c0e1aaa93b92a4e865210ae64bbe3889aa908d078c73040c",
+            "passed": true
+          },
+          {
+            "array_index": 17502,
+            "predicted_index": 3,
+            "expected_index": 3,
+            "review_required": true,
+            "expected_review": true,
+            "confidence_error": 1.497027745100965e-07,
+            "input_tensor_sha256": "d2b442cb3b403fbaae771eccd2fdefa222adcc6fd19d8bb02073264428451784",
+            "prepared_tensor_sha256": "d2b442cb3b403fbaae771eccd2fdefa222adcc6fd19d8bb02073264428451784",
+            "passed": true
+          },
+          {
+            "array_index": 17504,
+            "predicted_index": 1,
+            "expected_index": 1,
+            "review_required": true,
+            "expected_review": true,
+            "confidence_error": 4.5382147634276393e-07,
+            "input_tensor_sha256": "d4b098b0335d215b1747976a8a41c899eda7742f419572e2b1d97d7336c958d3",
+            "prepared_tensor_sha256": "d4b098b0335d215b1747976a8a41c899eda7742f419572e2b1d97d7336c958d3",
+            "passed": true
+          },
+          {
+            "array_index": 17514,
+            "predicted_index": 5,
+            "expected_index": 5,
+            "review_required": true,
+            "expected_review": true,
+            "confidence_error": 3.256224699876853e-07,
+            "input_tensor_sha256": "13314f132c80d652fed7930f770f24da495af4efe09d3cc963aacf186480c793",
+            "prepared_tensor_sha256": "13314f132c80d652fed7930f770f24da495af4efe09d3cc963aacf186480c793",
+            "passed": true
+          },
+          {
+            "array_index": 17516,
+            "predicted_index": 2,
+            "expected_index": 2,
+            "review_required": true,
+            "expected_review": true,
+            "confidence_error": 1.540701318747395e-07,
+            "input_tensor_sha256": "9fe35559f3d01870edfc0e3713135840b1b4727a1140dd2cd61188d7510358cf",
+            "prepared_tensor_sha256": "9fe35559f3d01870edfc0e3713135840b1b4727a1140dd2cd61188d7510358cf",
+            "passed": true
+          },
+          {
+            "array_index": 17791,
+            "predicted_index": 1,
+            "expected_index": 1,
+            "review_required": false,
+            "expected_review": false,
+            "confidence_error": 5.538440817076662e-09,
+            "input_tensor_sha256": "a6e8c60f4571ba85026a7b21b3d20722f61f35210dadffef58e99c409271b6b0",
+            "prepared_tensor_sha256": "a6e8c60f4571ba85026a7b21b3d20722f61f35210dadffef58e99c409271b6b0",
+            "passed": true
+          }
+        ],
+        "scope": "PNG encoding of prepared 224px crops through actual decode/crop/preprocess/Predictor; no arbitrary-photo quality claim."
+      },
+      "http_contract": {
+        "status": "pass",
+        "checks": [
+          {
+            "name": "health",
+            "passed": true
+          },
+          {
+            "name": "models",
+            "passed": true
+          },
+          {
+            "name": "predict_accept",
+            "array_index": 17500,
+            "passed": true,
+            "status_code": 200
+          },
+          {
+            "name": "predict_review",
+            "array_index": 17501,
+            "passed": true,
+            "status_code": 200
+          },
+          {
+            "name": "missing_crop_rejected",
+            "passed": true
+          },
+          {
+            "name": "absent_reference_not_substituted",
+            "passed": true
+          }
+        ],
+        "scope": "In-process HTTP ASGI contract with actual Predictor; no network deployment, uptime or production traffic."
+      },
+      "scope": "Actual local CPU Predictor and in-process HTTP contracts on recorded prepared crops. No public deployment or arbitrary-photo validation."
+    }
+  },
+  "study_binding": "de1776965e16fa98f8b732bc8eec6770636e07954224e3c14a84877702d90c2b",
+  "selection_freeze_sha256": "765c6d8acbc3b34cab66f8e4d024022a4b0b65140dab108816038bde2cfc8129",
+  "smoke_only": false,
+  "scope": "Local technical checks, distinct from component-representative statistical eligibility. Not production certification."
+}

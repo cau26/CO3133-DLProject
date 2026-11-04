@@ -1,0 +1,49 @@
+{
+  "status": "COMPLETE",
+  "task_sha256": "b408a01cbea555e693bdd1569b31c1e03cefbb85f5300a5e973ce35799dc862b",
+  "binding_sha256": "c0c6e9a2050508ef9296524564ba0058c43f3cd2b99b0ae25d19627c7d31e60f",
+  "metrics": {
+    "task_id": "cnn_selected_seed2027",
+    "family": "cnn",
+    "phase": "matched_confirmation",
+    "seed": 2027,
+    "parameters": 93962,
+    "selection_rule": "max_macro_f1_then_min_ce_then_earliest_epoch",
+    "best_f1_epoch": 55,
+    "best_f1_metrics": {
+      "loss": 0.20165301536047517,
+      "accuracy": 0.931,
+      "macro_f1": 0.9306299807738686,
+      "n_examples": 6000
+    },
+    "best_ce_epoch": 56,
+    "best_ce_metrics": {
+      "loss": 0.19733169558268746,
+      "accuracy": 0.9285,
+      "macro_f1": 0.9290252442057177,
+      "n_examples": 6000
+    },
+    "epochs_completed": 60,
+    "optimizer_updates": 25320,
+    "n_train": 54000,
+    "n_validation": 6000,
+    "fit_wall_seconds": 457.7885771900019,
+    "fit_timer_scope": "completed epochs: train + validation + in-memory checkpoint selection; excludes setup, transaction writes, finalization, discarded crash work",
+    "training_loop_seconds": 418.3548011269959,
+    "validation_seconds": 39.34128013499503,
+    "scope": "validation_only_exploratory_no_official_test",
+    "task_sha256": "b408a01cbea555e693bdd1569b31c1e03cefbb85f5300a5e973ce35799dc862b",
+    "binding_sha256": "c0c6e9a2050508ef9296524564ba0058c43f3cd2b99b0ae25d19627c7d31e60f",
+    "finalization_seconds_before_metrics_write": 0.7913139979991684
+  },
+  "artifacts_sha256": {
+    "TASK.json": "266075a5e93e177588e19e935b056f3b38985c4d25fbf346a000f5089c431732",
+    "history.csv": "cd7efdb72c1a1f84dd62cacd2f641675ceef43d7948371b53f25ede51b7c9249",
+    "predictions.csv": "4483d8ee92fb65eb5f1d1a392e03a7343ced25a819667deb01ca0cae0161669f",
+    "metrics.json": "8b520c08b793de70245ba2fad5099da525c53d16734f9ce54fee4ec31ffa8a66",
+    "best_f1.pt": "aa98a4df832165437250d675648505710da1990c9671d020cf3c9db76ed7bb00",
+    "best_ce.pt": "de0140e771cad21dc9310cfc093855aefd1f25b757905e6b7c48049e696dce17",
+    "COMMIT.json": "dc28cfa23309889fd7465700b9b41deb00b739daa2a83995b2a0b1612a202428",
+    "state-0060-ca5c04df46194a2bab434f04ee40ad68.pt": "0f1c6eabb504832810b52cfa63a93cca57ac7acb35427d8df3ca2659b48801e9"
+  }
+}

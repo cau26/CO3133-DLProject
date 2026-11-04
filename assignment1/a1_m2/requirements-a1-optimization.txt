@@ -1,0 +1,5 @@
+# Keep Colab's CUDA torch/torchvision pair; record exact versions per study.
+numpy>=1.26,<3
+scikit-learn>=1.5,<2
+matplotlib>=3.9,<4
+optuna==4.8.0

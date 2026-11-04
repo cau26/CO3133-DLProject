@@ -1,0 +1,244 @@
+\setcounter{tocdepth}{1}
+\setlist[itemize]{leftmargin=1.4em,itemsep=2pt,topsep=4pt}
+\setlist[enumerate]{leftmargin=1.5em,itemsep=2pt,topsep=4pt}
+\captionsetup{font=small,labelfont=bf}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small CO3133 -- Assignment 1}
+\fancyhead[R]{\small Group G-M10}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\setlength{\headheight}{14pt}
+
+\begin{titlepage}
+\centering
+{\large VIETNAM NATIONAL UNIVERSITY HO CHI MINH CITY\par}
+\vspace{4mm}
+{\Large\bfseries HO CHI MINH CITY UNIVERSITY OF TECHNOLOGY\par}
+\vspace{3mm}
+{\large Faculty of Computer Science and Engineering\par}
+\vspace{21mm}
+{\large CO3133 -- Deep Learning and Its Applications\par}
+\vspace{7mm}
+{\Huge\bfseries Fashion-MNIST Classification\par}
+\vspace{7mm}
+{\LARGE Architectures and Controlled Training Studies\par}
+\vspace{4mm}
+{\large With an RGB Garment Classification Extension\par}
+\vspace{12mm}
+{\Large Assignment 1 -- Final Report\par}
+\vspace{15mm}
+\begin{tabular}{ll}
+\textbf{Group} & G-M10 \\
+\textbf{Members} & Trần Gia Lâm -- 2352670 \\
+ & Nguyễn Hữu Cầu -- 2352129 \\
+\textbf{Instructor} & Lê Thành Sách \\
+\textbf{Semester} & 261 \\
+\end{tabular}
+\vfill
+{\large Ho Chi Minh City, October 2026\par}
+\end{titlepage}
+
+\pagenumbering{roman}
+\section*{Abstract}
+We compare a linear classifier, multilayer perceptron, custom CNN, row-wise GRU and patch Transformer on Fashion-MNIST using fixed partitions and a shared PyTorch pipeline. The original 20-epoch study selects checkpoints by validation cross-entropy before official-test evaluation. CNN records the highest test accuracy among these five models, 89.59\%. Later optimization remains separate because the official test was already inspected.
+
+A 61-fit recipe search yields CNN validation Macro-F1 $0.93308\pm0.00027$ over three seeds. A subsequent matched study completes 30 fits and retains 90 checkpoints, comparing the original and selected recipes at minimum cross-entropy, maximum F1 and fixed epoch 60. The predeclared primary CNN contrast at epoch 60 is $+0.000912$ mean F1, with a paired SD of $0.003511$ and a positive difference in one of three seeds. This result does not establish a reliable CNN recipe gain. MLP and Transformer show more consistent positive differences at the fixed horizon. All follow-up Fashion-MNIST scores use previously inspected validation images.
+
+An optional six-class Fashionpedia extension uses ImageNet-initialized MobileNetV3-Small, grouped data roles and calibrated selective prediction. Fine-tuning outperforms a frozen encoder on the original assessment, but a later dropout study does not establish a further gain there. A prospectively locked source-cohort audit evaluates six fixed models on 2,766 project-unused crops in 1,826 source/duplicate components. Mean F1 is 0.77449 for C0 and 0.78154 for C4, with paired difference $0.00705$ and a component-bootstrap interval $[-0.00036,0.01512]$. The interval includes zero. The preset C4 policy accepts 54.45\% of crops with 95.95\% observed accepted accuracy, without retuning. A post-hoc class analysis finds accepted accuracy of 66.67\% for true shirt/blouse crops and accepted precision of 86.36\% for outputs labeled jacket, exposing weaknesses hidden by the pooled rate. This license-defined population shift does not certify arbitrary future images.
+
+Saved predictions, configurations and checkpoints support independent numerical checks. Local PyTorch serving passes its recorded regression and HTTP checks, while broader ONNX parity remains unresolved. The experiments distinguish recipe effects, checkpoint selection and population changes, retaining negative results and explicit limits on generalization and numerical portability.
+
+\clearpage
+\begingroup\small\setlength{\parskip}{0pt}
+\makeatletter\renewcommand{\l@section}{\@dottedtocline{1}{0em}{2.2em}}\makeatother
+\tableofcontents
+\endgroup
+\clearpage
+\pagenumbering{arabic}
+\input{core_study.tex}
+\clearpage
+\input{rgb_study.tex}
+\clearpage
+\input{confirmation_study.tex}
+\clearpage
+\appendix
+\section{OPT3 per-seed results}\label{app:seeds}
+Every row is a separate completed 60-epoch final fit on 54,000 training images, selected on the same 6,000-image old-validation partition. The epoch column is the F1-selected checkpoint; it is not the number of epochs executed.
+
+\begin{center}
+\small
+\begin{tabular}{lcrrrrrr}
+\toprule
+Model & ID & Seed & Epoch & Acc.(\%) & F1(\%) & CE & Fit(s) \\
+\midrule
+Linear & C1 & 42 & 40 & 86.850 & 86.876 & 0.38007 & 441.25 \\
+Linear & C1 & 43 & 41 & 86.850 & 86.828 & 0.37832 & 441.60 \\
+Linear & C1 & 44 & 35 & 86.867 & 86.850 & 0.37865 & 441.25 \\
+MLP & C7 & 42 & 56 & 91.500 & 91.501 & 0.26230 & 462.55 \\
+MLP & C7 & 43 & 47 & 91.250 & 91.276 & 0.26441 & 461.76 \\
+MLP & C7 & 44 & 58 & 91.567 & 91.568 & 0.26235 & 461.72 \\
+CNN & C5 & 42 & 44 & 93.283 & 93.295 & 0.19159 & 481.63 \\
+CNN & C5 & 43 & 60 & 93.217 & 93.290 & 0.19119 & 481.90 \\
+CNN & C5 & 44 & 55 & 93.333 & 93.339 & 0.19174 & 482.16 \\
+GRU & C1 & 42 & 37 & 91.350 & 91.324 & 0.27978 & 476.13 \\
+GRU & C1 & 43 & 28 & 91.750 & 91.762 & 0.25923 & 478.33 \\
+GRU & C1 & 44 & 34 & 91.100 & 91.014 & 0.28524 & 479.39 \\
+Transformer & C1 & 42 & 58 & 91.567 & 91.541 & 0.32483 & 681.46 \\
+Transformer & C1 & 43 & 48 & 91.400 & 91.395 & 0.31269 & 679.56 \\
+Transformer & C1 & 44 & 41 & 91.333 & 91.358 & 0.29000 & 678.59 \\
+\bottomrule
+\end{tabular}
+\end{center}
+\subsection{Checkpoint contrast for CNN C5, seed 42}
+
+\begin{center}
+\small
+\begin{tabular}{lrrrr}
+\toprule
+Selection & Epoch & Accuracy(\%) & Macro-F1(\%) & CE \\
+\midrule
+Maximum F1 & 44 & 93.283 & 93.295 & 0.191585 \\
+Minimum CE & 51 & 93.267 & 93.282 & 0.187897 \\
+Last epoch & 60 & 92.700 & 92.635 & 0.206214 \\
+\bottomrule
+\end{tabular}
+\end{center}
+The selected-epoch examples in the main text use saved predictions from the F1 checkpoint. The loss column can be checked by averaging the supplied per-image negative log-likelihood values. Accuracy and macro-F1 are independently reconstructed from class counts. Without logits, the artifact review validates NLL aggregation rather than independently recomputing softmax probabilities.
+
+\clearpage
+\section{Realized candidate recipes}\label{app:recipes}
+The following 36 rows are the actual discovery manifest. LR values are rounded here for readability; machine-readable configurations retain full precision. ``Drop'' denotes the effective hidden/head/encoder dropout appropriate to that family. The architecture widths and optimizer families are held fixed. C0 is the anchor, C1 the schedule probe; nonlinear C2 is the targeted probe. The remaining rows are sampled candidates from the declared search space.
+
+\begin{center}\footnotesize
+\begin{longtable}{llrrlllr}
+\toprule
+Family & ID & LR & Decay & Drop & Schedule & Init & Discovery F1(\%)\\
+\midrule\endfirsthead
+\toprule
+Family & ID & LR & Decay & Drop & Schedule & Init & Discovery F1(\%)\\
+\midrule\endhead
+
+Linear & C0 & $1.000\!\times\!10^{-3}$ & $0$ & 0 & const. & legacy & 85.655 \\
+Linear & C1 & $1.000\!\times\!10^{-3}$ & $0$ & 0 & cosine & legacy & 85.657 \\
+Linear & C2 & $7.136\!\times\!10^{-4}$ & $1.000\!\times\!10^{-4}$ & 0 & const. & legacy & 85.516 \\
+Linear & C3 & $2.740\!\times\!10^{-3}$ & $1.000\!\times\!10^{-3}$ & 0 & cosine & legacy & 85.398 \\
+MLP & C0 & $1.000\!\times\!10^{-3}$ & $0$ & 0 & const. & legacy & 89.897 \\
+MLP & C1 & $1.000\!\times\!10^{-3}$ & $0$ & 0 & cosine & legacy & 90.296 \\
+MLP & C2 & $1.000\!\times\!10^{-3}$ & $0$ & 0.2 & const. & legacy & 89.981 \\
+MLP & C3 & $4.168\!\times\!10^{-4}$ & $1.000\!\times\!10^{-5}$ & 0.3 & const. & legacy & 90.114 \\
+MLP & C4 & $9.448\!\times\!10^{-4}$ & $1.000\!\times\!10^{-5}$ & 0.3 & cosine & legacy & 90.352 \\
+MLP & C5 & $1.599\!\times\!10^{-3}$ & $0$ & 0 & cosine & legacy & 90.071 \\
+MLP & C6 & $1.289\!\times\!10^{-3}$ & $1.000\!\times\!10^{-5}$ & 0.3 & const. & legacy & 89.853 \\
+MLP & C7 & $1.010\!\times\!10^{-3}$ & $1.000\!\times\!10^{-5}$ & 0.2 & cosine & legacy & 90.411 \\
+CNN & C0 & $1.000\!\times\!10^{-3}$ & $1.000\!\times\!10^{-4}$ & 0.2 & const. & legacy & 92.095 \\
+CNN & C1 & $1.000\!\times\!10^{-3}$ & $1.000\!\times\!10^{-4}$ & 0.2 & cosine & legacy & 91.709 \\
+CNN & C2 & $1.000\!\times\!10^{-3}$ & $1.000\!\times\!10^{-3}$ & 0.2 & const. & legacy & 92.219 \\
+CNN & C3 & $1.521\!\times\!10^{-3}$ & $1.000\!\times\!10^{-5}$ & 0.1 & cosine & legacy & 92.559 \\
+CNN & C4 & $1.008\!\times\!10^{-3}$ & $1.000\!\times\!10^{-3}$ & 0.2 & cosine & legacy & 91.656 \\
+CNN & C5 & $1.438\!\times\!10^{-3}$ & $1.000\!\times\!10^{-4}$ & 0.3 & const. & legacy & 92.662 \\
+CNN & C6 & $8.522\!\times\!10^{-4}$ & $1.000\!\times\!10^{-5}$ & 0.1 & cosine & legacy & 91.084 \\
+CNN & C7 & $7.314\!\times\!10^{-4}$ & $1.000\!\times\!10^{-3}$ & 0.1 & const. & legacy & 91.849 \\
+GRU & C0 & $1.000\!\times\!10^{-3}$ & $1.000\!\times\!10^{-4}$ & 0 & const. & legacy & 90.185 \\
+GRU & C1 & $1.000\!\times\!10^{-3}$ & $1.000\!\times\!10^{-4}$ & 0 & cosine & legacy & 90.298 \\
+GRU & C2 & $1.000\!\times\!10^{-3}$ & $1.000\!\times\!10^{-4}$ & 0.2 & const. & legacy & 90.297 \\
+GRU & C3 & $7.591\!\times\!10^{-4}$ & $1.000\!\times\!10^{-4}$ & 0 & cosine & legacy & 90.206 \\
+GRU & C4 & $9.599\!\times\!10^{-4}$ & $1.000\!\times\!10^{-3}$ & 0.2 & const. & legacy & 90.216 \\
+GRU & C5 & $1.517\!\times\!10^{-3}$ & $1.000\!\times\!10^{-3}$ & 0 & cosine & legacy & 90.274 \\
+GRU & C6 & $2.538\!\times\!10^{-4}$ & $0$ & 0.3 & cosine & legacy & 87.955 \\
+GRU & C7 & $4.253\!\times\!10^{-4}$ & $1.000\!\times\!10^{-3}$ & 0.3 & const. & legacy & 89.782 \\
+Transformer & C0 & $5.000\!\times\!10^{-4}$ & $1.000\!\times\!10^{-4}$ & 0.1 & const. & legacy & 89.393 \\
+Transformer & C1 & $5.000\!\times\!10^{-4}$ & $1.000\!\times\!10^{-4}$ & 0.1 & warm+cos. & legacy & 89.974 \\
+Transformer & C2 & $5.000\!\times\!10^{-4}$ & $1.000\!\times\!10^{-4}$ & 0.1 & const. & indep. & 89.646 \\
+Transformer & C3 & $3.496\!\times\!10^{-4}$ & $0$ & 0.05 & const. & indep. & 89.018 \\
+Transformer & C4 & $1.036\!\times\!10^{-4}$ & $1.000\!\times\!10^{-4}$ & 0.2 & const. & indep. & 89.374 \\
+Transformer & C5 & $3.369\!\times\!10^{-4}$ & $0$ & 0.2 & warm+cos. & indep. & 89.842 \\
+Transformer & C6 & $6.724\!\times\!10^{-4}$ & $1.000\!\times\!10^{-3}$ & 0.1 & warm+cos. & indep. & 89.653 \\
+Transformer & C7 & $3.328\!\times\!10^{-4}$ & $0$ & 0.3 & warm+cos. & indep. & 89.631 \\
+\bottomrule
+\end{longtable}\end{center}
+\textbf{Reading the table.} The scored checkpoint is selected within the discovery trajectory. These scores are not independent estimates for the winning candidate because the same inner-validation data guide selection. Initialization is only a varied factor for Transformer candidates; ``legacy'' for other families simply means their unchanged original initialization path. In the CNN, C2 changes weight decay while retaining original dropout. In the GRU, dropout shown here is the external final-state dropout, not inactive one-layer inter-recurrent dropout.
+
+\clearpage
+\section{Reproducibility and verification}
+\subsection{Recorded execution and source identity}
+The 61-fit OPT3 study was run by Trần Gia Lâm on Google Colab with a recorded NVIDIA A100-SXM4-40GB. The environment records Python 3.13, PyTorch 2.11.0+cu130, torchvision 0.26.0+cu130, NumPy 2.1.3, scikit-learn 1.6.1, Optuna 4.8.0, CUDA 13.0 and cuDNN 92700. The RGB study and CPU service checks use the separately recorded environments described in Section~\ref{sec:garmentlab}.
+
+The source snapshot inside the returned archive is authoritative for the recorded run. Its configuration fixes the study type, split identities, candidate manifest, training seeds, metric rule and budget policy. The controller records approximately 8.34 hours of active execution for the completed study.
+
+\begin{itemize}
+\item Original split seed: 42. Inner split seed: 20261022. Candidate sampler seed: 20261021. Schedule shuffle seed: 20261023.
+\item Discovery training seed: 101. Additional confirmation seed: 202. Final training seeds: 42,43,44.
+\item Batch size: 128; CPU threads: 4; data-loader workers: 0 in final OPT3. Every task executes 60 epochs.
+\item Exact effective recipe values, source files and candidate provenance are preserved in \nolinkurl{study_manifest.json}; phase IDs are preserved in \nolinkurl{split_ids.npz}.
+\end{itemize}
+
+The original OPT3 returned archive SHA-256 is:\par
+{\scriptsize\texttt{1d2d83edf1dc0608ee25dc1f4a9bc8ad6c1ca61c8762140f3cff924e9f365610}}\par
+
+The study-manifest identity is:\par
+{\scriptsize\texttt{8ee891e30ad411818f664db31e74f923cf3730a355d4d9687e7234e0f80eee46}}\par
+
+\subsection{Artifact checks and their limits}
+Independent artifact review checks 61 task records and 3,660 history epochs. All 338,400 prediction rows match the expected phase-specific original IDs and official training labels. Accuracy and macro-F1 are recomputed from integer confusion matrices. F1-selected and CE-selected epochs, discovery challengers, the two-seed recipe decision and final sample-SD summaries are reconstructed from the saved evidence.
+
+Artifact verification reconstructs statistics from the saved student-run evidence. Supplied per-image NLL averages agree with reported CE; full logits were not retained for the Fashion-MNIST prediction records, so the review checks NLL aggregation rather than recomputing softmax probabilities. Runtime values come from the recorded training environment. Detailed receipts and input identities are retained with the repository.
+
+To reproduce the study, use the source snapshot and recorded dependency versions, restore the referenced official Fashion-MNIST raw files, retain the same split IDs and frozen candidate manifest, and execute discovery, confirmation and final phases in that order. Reconstructing a differently seeded split or modifying a completed manifest constitutes a new experiment. Checkpoints and per-epoch transaction records support inspection and recovery; reported results come from the returned completed run.
+
+\subsection{AI assistance}
+AI assisted LaTeX writing and pipeline development.
+
+\clearpage
+\input{model_evidence.tex}
+\clearpage
+\begin{thebibliography}{99}
+\bibitem{fashionmnist}
+H. Xiao, K. Rasul and R. Vollgraf.
+\emph{Fashion-MNIST: a Novel Image Dataset for Benchmarking Machine Learning Algorithms}. 2017.
+\url{https://arxiv.org/abs/1708.07747}.
+
+\bibitem{gru}
+K. Cho et al.
+\emph{Learning Phrase Representations using RNN Encoder--Decoder for Statistical Machine Translation}. 2014.
+\url{https://arxiv.org/abs/1406.1078}.
+
+\bibitem{attention}
+A. Vaswani et al.
+\emph{Attention Is All You Need}. 2017.
+\url{https://arxiv.org/abs/1706.03762}.
+
+\bibitem{adam}
+D. P. Kingma and J. Ba.
+\emph{Adam: A Method for Stochastic Optimization}. 2014.
+\url{https://arxiv.org/abs/1412.6980}.
+
+\bibitem{adamw}
+I. Loshchilov and F. Hutter.
+\emph{Decoupled Weight Decay Regularization}. 2017.
+\url{https://arxiv.org/abs/1711.05101}.
+
+\bibitem{optuna}
+T. Akiba et al.
+\emph{Optuna: A Next-generation Hyperparameter Optimization Framework}. 2019.
+\url{https://arxiv.org/abs/1907.10902}.
+
+\bibitem{fashionpedia}
+M. Jia et al.
+\emph{Fashionpedia: Ontology, Segmentation, and an Attribute Localization Dataset}. ECCV, 2020.
+\url{https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123460307.pdf}.
+
+\bibitem{mobilenetv3}
+A. Howard et al.
+\emph{Searching for MobileNetV3}. ICCV, 2019.
+\url{https://openaccess.thecvf.com/content_ICCV_2019/html/Howard_Searching_for_MobileNetV3_ICCV_2019_paper.html}.
+
+\bibitem{temperature}
+C. Guo, G. Pleiss, Y. Sun and K. Q. Weinberger.
+\emph{On Calibration of Modern Neural Networks}. ICML, PMLR 70, 2017.
+\url{https://proceedings.mlr.press/v70/guo17a.html}.
+
+\bibitem{exactbinomial}
+C. J. Clopper and E. S. Pearson. The Use of Confidence or Fiducial Limits Illustrated in the Case of the Binomial. Biometrika, 26(4), 1934. Exact-binomial implementation reference: \url{https://docs.scipy.org/doc/scipy-1.16.1/reference/generated/scipy.stats._result_classes.BinomTestResult.proportion_ci.html}.
+\end{thebibliography}
+

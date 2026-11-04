@@ -1,0 +1,40 @@
+{
+  "status": "BLINDED_COHORT_READY",
+  "freeze_sha256": "82745fb359508780117f5248298414ba38363716e2e0b454250d629009bd97e0",
+  "selection_sha256": "068ced18f0643eb2d704af2f22cf2c1df410fad918a634627ebab44b7b36ebd3",
+  "duplicate_audit_sha256": "826b4558e19a11e97586cc1f4378b6e1eb86537880a197d82fe25119a759abe0",
+  "files": {
+    "images_uint8.npy": "0d7063c2330247e341faf99b0e23a0c9ed2f1491cbd46d7d0e730efa4408d02a",
+    "labels.npy": "6fc5a19ae0e730839e50b8576c690268db5625b03e6eb654ee50b61f929fa657",
+    "index_manifest.json": "d3b0b6ec4ada4c2498dfc073fd2e23db14a8f8a9dd6b2bb9ada0d40940ea968a"
+  },
+  "crops": 2766,
+  "class_support": {
+    "shirt_blouse": {
+      "crops": 182,
+      "components": 175
+    },
+    "top_tshirt_sweatshirt": {
+      "crops": 856,
+      "components": 811
+    },
+    "jacket": {
+      "crops": 300,
+      "components": 279
+    },
+    "pants": {
+      "crops": 476,
+      "components": 461
+    },
+    "skirt": {
+      "crops": 257,
+      "components": 253
+    },
+    "dress": {
+      "crops": 695,
+      "components": 684
+    }
+  },
+  "components": 1826,
+  "model_inference_performed": false
+}

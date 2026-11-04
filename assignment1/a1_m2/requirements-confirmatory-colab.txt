@@ -1,0 +1,8 @@
+# Retain the runtime's compatible CUDA torch/torchvision pair.
+numpy==2.4.2
+Pillow==12.2.0
+ijson==3.6.0
+matplotlib==3.10.8
+scikit-learn==1.8.0
+optuna==4.8.0
+pytest==9.0.2

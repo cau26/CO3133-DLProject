@@ -1,0 +1,49 @@
+{
+  "status": "COMPLETE",
+  "task_sha256": "da8e580c3a5524ade62a403ecb06cb0149dd96ddf4df5cdc7848553a39d81688",
+  "binding_sha256": "c0c6e9a2050508ef9296524564ba0058c43f3cd2b99b0ae25d19627c7d31e60f",
+  "metrics": {
+    "task_id": "transformer_selected_seed1009",
+    "family": "transformer",
+    "phase": "matched_confirmation",
+    "seed": 1009,
+    "parameters": 274954,
+    "selection_rule": "max_macro_f1_then_min_ce_then_earliest_epoch",
+    "best_f1_epoch": 28,
+    "best_f1_metrics": {
+      "loss": 0.2642891073564544,
+      "accuracy": 0.9128333333333334,
+      "macro_f1": 0.9124080384413137,
+      "n_examples": 6000
+    },
+    "best_ce_epoch": 24,
+    "best_ce_metrics": {
+      "loss": 0.26015636830577965,
+      "accuracy": 0.9066666666666666,
+      "macro_f1": 0.9064677118668039,
+      "n_examples": 6000
+    },
+    "epochs_completed": 60,
+    "optimizer_updates": 25320,
+    "n_train": 54000,
+    "n_validation": 6000,
+    "fit_wall_seconds": 705.092096800001,
+    "fit_timer_scope": "completed epochs: train + validation + in-memory checkpoint selection; excludes setup, transaction writes, finalization, discarded crash work",
+    "training_loop_seconds": 657.1456214669997,
+    "validation_seconds": 47.74386136400426,
+    "scope": "validation_only_exploratory_no_official_test",
+    "task_sha256": "da8e580c3a5524ade62a403ecb06cb0149dd96ddf4df5cdc7848553a39d81688",
+    "binding_sha256": "c0c6e9a2050508ef9296524564ba0058c43f3cd2b99b0ae25d19627c7d31e60f",
+    "finalization_seconds_before_metrics_write": 0.9530311099988467
+  },
+  "artifacts_sha256": {
+    "TASK.json": "85e3926da502b71d6e5b85534a0c5dab5a499fe6adc6fd568d708605a71cb352",
+    "history.csv": "8967b1c96fb43c7d05eeba6a494bc1e9a080a8c0588cf3ad116cdb180b3147bb",
+    "predictions.csv": "3512fa263ecc6f62275b44d269be67f2636f896fd6c20b369615070a676b2820",
+    "metrics.json": "5b0cc31c5b3b8c97bab4d978e3f5fce86a01be6027779d6d6043029d59e8b2a7",
+    "best_f1.pt": "9f9b8817d20bd27a358dcc15c808760da9b34841ba5670e9761d41536bb2b8e7",
+    "best_ce.pt": "7e6f7bb3e746f308769fff57f476cfacf311a93823c9c694b29cea8422846634",
+    "COMMIT.json": "aa9100b4a14ab1a8e4ffe398b4760ceb40912193b67b7e6abe0de9152a1e8ec2",
+    "state-0060-8e2f4dbe18ff4e0199d746cae5727c3d.pt": "5f566c49fcb542d1425a05b81cae41430504d1eaf349b8bd4b3d1e2fe9953d49"
+  }
+}

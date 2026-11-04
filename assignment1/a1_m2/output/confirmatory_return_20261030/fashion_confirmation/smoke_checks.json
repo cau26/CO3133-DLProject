@@ -1,0 +1,56 @@
+{
+  "scope": "One eight-training-image software step per recipe; no study trajectory or performance result.",
+  "checks": [
+    {
+      "family": "linear",
+      "arm": "C0",
+      "finite_forward_backward_optimizer": true
+    },
+    {
+      "family": "linear",
+      "arm": "selected",
+      "finite_forward_backward_optimizer": true
+    },
+    {
+      "family": "mlp",
+      "arm": "C0",
+      "finite_forward_backward_optimizer": true
+    },
+    {
+      "family": "mlp",
+      "arm": "selected",
+      "finite_forward_backward_optimizer": true
+    },
+    {
+      "family": "cnn",
+      "arm": "C0",
+      "finite_forward_backward_optimizer": true
+    },
+    {
+      "family": "cnn",
+      "arm": "selected",
+      "finite_forward_backward_optimizer": true
+    },
+    {
+      "family": "gru",
+      "arm": "C0",
+      "finite_forward_backward_optimizer": true
+    },
+    {
+      "family": "gru",
+      "arm": "selected",
+      "finite_forward_backward_optimizer": true
+    },
+    {
+      "family": "transformer",
+      "arm": "C0",
+      "finite_forward_backward_optimizer": true
+    },
+    {
+      "family": "transformer",
+      "arm": "selected",
+      "finite_forward_backward_optimizer": true
+    }
+  ],
+  "official_test_evaluated": false
+}

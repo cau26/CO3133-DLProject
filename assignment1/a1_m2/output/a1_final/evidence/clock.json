@@ -1,0 +1,5 @@
+{
+  "active_run_seconds": 30029.089648856003,
+  "budget_seconds": 604800,
+  "scope": "Controller process monotonic heartbeat; setup/smoke excluded; abrupt final tail may be unrecorded"
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": 3,
+  "study_id": "g_m10_a1_optimization_v3_1_7days",
+  "study_type": "post_test_exploratory_validation_only",
+  "base_config": "configs/a1_final.json",
+  "reference": "assets/a1_optimization_reference",
+  "epochs": 60,
+  "batch_size": 128,
+  "num_workers": 0,
+  "cpu_threads": 4,
+  "sampler_seed": 20261021,
+  "inner_split_seed": 20261022,
+  "schedule_shuffle_seed": 20261023,
+  "discovery_seed": 101,
+  "confirmation_seed": 202,
+  "final_seeds": [
+    42,
+    43,
+    44
+  ],
+  "recipe_f1_tie_tolerance": 1e-06,
+  "primary_metric": "macro_f1",
+  "checkpoint_rule": "max_macro_f1_then_min_ce_then_earliest_epoch",
+  "final_training_policy": "full54k_old6k_validation_selected_60_epochs",
+  "time_budget_seconds": 604800,
+  "budget_policy": "next_discovery_and_downstream_reservation_v1",
+  "forecast_buffer_fraction": 0.2,
+  "finalization_reserve_seconds": 540,
+  "expected_dataset_sha256": "1f243a60b4b748a44c48b9a6f6907be2a08bee3e4e226f0e86fbde8e147b745a",
+  "expected_original_split_sha256": "0289c4940126abe338a376ea49eb866788d57cd67fa3ca17fe80139abb8c8fba"
+}

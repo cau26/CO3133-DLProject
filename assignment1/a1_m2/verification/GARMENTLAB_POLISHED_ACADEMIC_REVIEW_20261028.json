@@ -1,0 +1,214 @@
+{
+  "schema": "garmentlab_polished_report_content_review_v1",
+  "status": "PASS_ACADEMIC_CONTENT_AND_NUMERICAL_CONSISTENCY",
+  "reviewed_utc": "2026-10-28T23:18:50.654303+00:00",
+  "checks": [
+    {
+      "check": "Cross-reference resolution",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "Bibliography resolution",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "Control-character scan",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Five from-scratch model explanations",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Original test and selected validation distinguished",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Seed-SD interpretation explicit",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Sample-weighted training and epoch metrics",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Implemented GRU reset-after-affine equation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "GRU dimensions and dropout semantics",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Transformer attention tensor dimensions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Model parameter counts and main final score preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Architecture and search fairness limitations explicit",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Confirmation discovery reuse explicit",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "RGB data-role counts retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Assessment historical reuse explicit",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Negative tuning result and paired interval explicit",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Disjoint calibration and conditional assumptions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Accepted accuracy and coverage populations distinguished",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ONNX failure and local PyTorch service scope explicit",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Reader-facing scientific scope without operator instructions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "AI assistance fields and responsibility present",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Independent RGB metadata arithmetic",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Independent accepted-accuracy arithmetic",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "No unsupported status or outcome claims",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Shift result phrased as observed accuracy and conditional certification",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "AI implementation contribution explicit",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Highest-priority role retained during quarantine",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Four non-report TeX sources unchanged",
+      "passed": true
+    },
+    {
+      "check": "Report text differs from previous archive only by AI date",
+      "passed": true,
+      "detail": "Logical text comparison normalizes CRLF/LF; scientific content is unchanged."
+    },
+    {
+      "check": "AI assistance date agrees in report and disclosure",
+      "passed": true
+    },
+    {
+      "check": "Compiled pagination preserved",
+      "passed": true
+    },
+    {
+      "check": "Compiled text differs only by AI date",
+      "passed": true,
+      "detail": [
+        32
+      ]
+    },
+    {
+      "check": "PDF references and selected metrics resolved",
+      "passed": true
+    },
+    {
+      "check": "Original Overleaf inventory is 30 payloads",
+      "passed": true
+    },
+    {
+      "check": "Figure payloads remain byte-identical",
+      "passed": true
+    },
+    {
+      "check": "Public manifests sanitized and final 30-payload ZIP CRC/hash checks pass",
+      "passed": true
+    }
+  ],
+  "passed_checks": 36,
+  "failed_checks": [],
+  "minor_recommendations": [],
+  "report_source_sha256": {
+    "output/latex/G-M10_A1_Polished_20261028/main.tex": "ce8cd46b2592115c6c256e34520c4521f2f7b7e69ef15a6b60c22062ef088d06",
+    "output/latex/G-M10_A1_Polished_20261028/report.tex": "0b008ef492b74047658a13a1cb4b032cb3c4e42507e539fcf6503b9231674875",
+    "output/latex/G-M10_A1_Polished_20261028/core_study.tex": "50939aeab5db9864ba025c1dc494b065e26780dc82e9c1341f09220ed7e34e59",
+    "output/latex/G-M10_A1_Polished_20261028/rgb_study.tex": "7e3adcecc578725093680b9b00fd7ec936f576c3fde276bd2dbe6213aead88c2",
+    "output/latex/G-M10_A1_Polished_20261028/model_evidence.tex": "a670e7c742287adce81dc81642bb6ad9cb8974cc14453fb31766d2a5e774a9c8"
+  },
+  "compiled_pdf_sha256": "f4800999fd021795bf346c3ae54227ea9cdcde84fe1a1063239a82aa2ad36c43",
+  "compiled_pdf_pages": 37,
+  "verification_basis": [
+    "a1/train.py",
+    "a1/data.py",
+    "a1opt/engine.py",
+    "a1/transformer.py",
+    "garmentlab/images.py",
+    "output/a1_final/data/publication_data.json",
+    "output/garmentlab_improve_return_20261028/FINAL_SUMMARY_V2.json",
+    "output/garmentlab_improve_return_20261028/data_evidence/index_manifest.json",
+    "https://docs.pytorch.org/docs/2.11/generated/torch.nn.GRU.html"
+  ],
+  "scope": "Scientific content, theoretical definitions, numerical consistency, evidence interpretation and required architecture coverage. PDF visual layout is reviewed separately. No new model training or inference was performed.",
+  "compiled_pdf_text_checks": {
+    "resolved_reference_markers": true,
+    "selected_RGB_metrics_present": true,
+    "AI_date_present": "20–29 October2026",
+    "page_count": 37,
+    "date_only_text_change_page": 32
+  },
+  "date_revision_scope": "Bounded recheck of a date-only text revision, source identity, unchanged numerical content, PDF pagination, public manifest sanitization and archive integrity."
+}

@@ -1,0 +1,66 @@
+{
+  "status": "COMPLETE",
+  "task_sha256": "98da198e273bac98a8faf11e00080190d42f472d6b5d3edccb76678d48e8c57c",
+  "binding_sha256": "c0c6e9a2050508ef9296524564ba0058c43f3cd2b99b0ae25d19627c7d31e60f",
+  "same_training_trajectory_for_all_policies": true,
+  "cells": [
+    {
+      "task_id": "gru_selected_seed1009",
+      "family": "gru",
+      "seed": 1009,
+      "arm": "selected",
+      "candidate_id": "C1",
+      "policy": "ce",
+      "checkpoint_epoch": 25,
+      "checkpoint": "engine/best_ce.pt",
+      "checkpoint_sha256": "d6e1704b47f18d80c6e6fd720a28ec4df7de19c4afebf5c4a875b56b97016aeb",
+      "loss": 0.2571644599004767,
+      "accuracy": 0.9096666666666666,
+      "macro_f1": 0.9091719613335776,
+      "n_examples": 6000,
+      "evaluation_scope": "previously_seen_old_validation_exploratory"
+    },
+    {
+      "task_id": "gru_selected_seed1009",
+      "family": "gru",
+      "seed": 1009,
+      "arm": "selected",
+      "candidate_id": "C1",
+      "policy": "f1",
+      "checkpoint_epoch": 34,
+      "checkpoint": "engine/best_f1.pt",
+      "checkpoint_sha256": "3e95b74a7692a453cbea83beae6edaa3eb9998723faed5da6cda2a6ac7d77bb2",
+      "loss": 0.27486532321187523,
+      "accuracy": 0.911,
+      "macro_f1": 0.9110949755556185,
+      "n_examples": 6000,
+      "evaluation_scope": "previously_seen_old_validation_exploratory"
+    },
+    {
+      "task_id": "gru_selected_seed1009",
+      "family": "gru",
+      "seed": 1009,
+      "arm": "selected",
+      "candidate_id": "C1",
+      "policy": "final",
+      "checkpoint_epoch": 60,
+      "checkpoint": "final_epoch.pt",
+      "checkpoint_sha256": "05b8af65e4d4ff44a917c839f83fb7fbad16a8018aaa79c7c31991b51eca0532",
+      "loss": 0.33309110688646454,
+      "accuracy": 0.9048333333333334,
+      "macro_f1": 0.9047081128378103,
+      "n_examples": 6000,
+      "evaluation_scope": "previously_seen_old_validation_exploratory"
+    }
+  ],
+  "artifacts_sha256": {
+    "engine/COMPLETE.json": "10de4a21eae01ef09762e2b4967e35e13590afc4b8fd1779a11aff0537007a89",
+    "engine/best_ce.pt": "d6e1704b47f18d80c6e6fd720a28ec4df7de19c4afebf5c4a875b56b97016aeb",
+    "engine/best_f1.pt": "3e95b74a7692a453cbea83beae6edaa3eb9998723faed5da6cda2a6ac7d77bb2",
+    "final_epoch.pt": "05b8af65e4d4ff44a917c839f83fb7fbad16a8018aaa79c7c31991b51eca0532",
+    "cells.json": "0ad23ab9417418ee891b34b7f38e61d9814ceb6839a1bd0b4f8e92fa6218c02c",
+    "predictions_ce.csv": "3b9a600298713aac30a11884d6f76b33944d7a952395545a6b51e6bd8e36fd15",
+    "predictions_f1.csv": "ae4a31eeaeb4d19006770beff4dcb36ec0779d1cf2c1c09bbc9b99c7674526ef",
+    "predictions_final.csv": "f9f1aa53021063f845b7a6c6fbeecbad10931cded123866a9820448c0c7c60ca"
+  }
+}

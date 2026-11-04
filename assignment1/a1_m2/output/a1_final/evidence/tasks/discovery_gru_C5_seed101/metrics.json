@@ -1,0 +1,34 @@
+{
+  "task_id": "discovery_gru_C5_seed101",
+  "family": "gru",
+  "phase": "discovery",
+  "seed": 101,
+  "parameters": 61962,
+  "selection_rule": "max_macro_f1_then_min_ce_then_earliest_epoch",
+  "best_f1_epoch": 40,
+  "best_f1_metrics": {
+    "loss": 0.403915990545132,
+    "accuracy": 0.9031481481481481,
+    "macro_f1": 0.9027413605030838,
+    "n_examples": 5400
+  },
+  "best_ce_epoch": 14,
+  "best_ce_metrics": {
+    "loss": 0.28818379552726286,
+    "accuracy": 0.897962962962963,
+    "macro_f1": 0.8976224448124261,
+    "n_examples": 5400
+  },
+  "epochs_completed": 60,
+  "optimizer_updates": 22800,
+  "n_train": 48600,
+  "n_validation": 5400,
+  "fit_wall_seconds": 465.011007162002,
+  "fit_timer_scope": "completed epochs: train + validation + in-memory checkpoint selection; excludes setup, transaction writes, finalization, discarded crash work",
+  "training_loop_seconds": 425.44399589600107,
+  "validation_seconds": 39.491266058987094,
+  "scope": "validation_only_exploratory_no_official_test",
+  "task_sha256": "8b725007be1f14e655723abe14a19025cd78a16170c5d772c9cca8845414da51",
+  "binding_sha256": "e5540247abf1ccea7492f01ce299d6dfc7256e673c66a1e06afca153f6745b7c",
+  "finalization_seconds_before_metrics_write": 0.7843080239999836
+}

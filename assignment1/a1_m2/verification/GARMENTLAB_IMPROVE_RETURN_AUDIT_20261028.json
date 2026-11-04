@@ -1,0 +1,4467 @@
+{
+  "status": "PASS_ARTIFACT_INTEGRITY_AND_INDEPENDENT_NUMERIC_REPLAY",
+  "archive": "C:\\Users\\ADMIN\\Downloads\\g_m10_garmentlab_improve_today_run01_results.zip",
+  "archive_sha256": "feac4f00132c4a8500cf94e7c6ada347be7463855477c79e7b7cb47a5b96266a",
+  "archive_bytes": 589026223,
+  "payloads_verified": 273,
+  "source_zip_sha256": "016b81f5f6ce595bba68513fe39b1b4f509563f6748dd174d02422b4d22b32ad",
+  "source_files_captured_and_matched": 33,
+  "checks_passed": 761,
+  "tasks_completed": 20,
+  "epochs_each": 18,
+  "total_epochs": 360,
+  "fit_seconds_sum": 4593.155638306003,
+  "training_controller_seconds": 4673.033993237999,
+  "total_controller_seconds": 5380.475383962,
+  "finalization_completed_utc": "2026-10-28T10:03:43.107086+00:00",
+  "gpu": "NVIDIA A100-SXM4-40GB",
+  "environment": {
+    "python": "3.13.16",
+    "torch": "2.11.0+cu130",
+    "torchvision": "0.26.0+cu130",
+    "numpy": "2.4.2",
+    "cuda": "13.0",
+    "gpu": "NVIDIA A100-SXM4-40GB",
+    "device": "cuda",
+    "precision": "fp32",
+    "bn_running_statistics": "fixed_imagenet"
+  },
+  "confirmation_means": {
+    "C0": {
+      "macro_f1": 0.8408238689349372,
+      "loss": 1.1025039676386332
+    },
+    "C4": {
+      "macro_f1": 0.8424454411601261,
+      "loss": 1.084853180393301
+    },
+    "C5": {
+      "macro_f1": 0.8417705082808751,
+      "loss": 0.8694956504351685
+    }
+  },
+  "selection_candidate": "C4",
+  "deployment_task": "final_C4_seed314",
+  "candidate_summary": {
+    "C0": {
+      "selection": {
+        "accuracy": {
+          "mean": 0.8721436343852013,
+          "sample_sd": 0.0023715445829927584,
+          "seeds": [
+            314,
+            2718,
+            5772
+          ]
+        },
+        "macro_f1": {
+          "mean": 0.8424453056677037,
+          "sample_sd": 0.005968362175041517,
+          "seeds": [
+            314,
+            2718,
+            5772
+          ]
+        },
+        "loss": {
+          "mean": 0.9505560971227069,
+          "sample_sd": 0.23445879264006958,
+          "seeds": [
+            314,
+            2718,
+            5772
+          ]
+        }
+      },
+      "assessment_regression": {
+        "accuracy": {
+          "mean": 0.8205912334352701,
+          "sample_sd": 0.02254163546125993,
+          "seeds": [
+            314,
+            2718,
+            5772
+          ]
+        },
+        "macro_f1": {
+          "mean": 0.7747223179587377,
+          "sample_sd": 0.01492655422340475,
+          "seeds": [
+            314,
+            2718,
+            5772
+          ]
+        },
+        "loss": {
+          "mean": 1.2103135200119741,
+          "sample_sd": 0.196581687426125,
+          "seeds": [
+            314,
+            2718,
+            5772
+          ]
+        }
+      }
+    },
+    "C4": {
+      "selection": {
+        "accuracy": {
+          "mean": 0.872506347479144,
+          "sample_sd": 0.0036225941885088993,
+          "seeds": [
+            314,
+            2718,
+            5772
+          ]
+        },
+        "macro_f1": {
+          "mean": 0.8434698272134985,
+          "sample_sd": 0.003828074505969432,
+          "seeds": [
+            314,
+            2718,
+            5772
+          ]
+        },
+        "loss": {
+          "mean": 1.0669525697806554,
+          "sample_sd": 0.08565527781148909,
+          "seeds": [
+            314,
+            2718,
+            5772
+          ]
+        }
+      },
+      "assessment_regression": {
+        "accuracy": {
+          "mean": 0.817533129459735,
+          "sample_sd": 0.011577794792661114,
+          "seeds": [
+            314,
+            2718,
+            5772
+          ]
+        },
+        "macro_f1": {
+          "mean": 0.7663833904791524,
+          "sample_sd": 0.022581315434086716,
+          "seeds": [
+            314,
+            2718,
+            5772
+          ]
+        },
+        "loss": {
+          "mean": 1.461465437731248,
+          "sample_sd": 0.10967979853018976,
+          "seeds": [
+            314,
+            2718,
+            5772
+          ]
+        }
+      }
+    }
+  },
+  "deployment_raw": {
+    "accuracy": 0.8226299694189603,
+    "macro_f1": 0.7755285737948397,
+    "nll": 1.5879072449831924,
+    "ece": 0.1535781783693735
+  },
+  "deployment_calibrated": {
+    "accuracy": 0.8226299694189603,
+    "macro_f1": 0.7755285737948397,
+    "nll": 0.5158668402335641,
+    "ece": 0.049898481060524226,
+    "acceptance": {
+      "policy_mode": "confidence_threshold",
+      "threshold": 0.88,
+      "samples": 327,
+      "accepted_count": 182,
+      "accepted_correct": 173,
+      "coverage": 0.5565749235474006,
+      "accepted_accuracy": 0.9505494505494505,
+      "scope": "Descriptive crop-weighted regression score with frozen policy; not the independent-component bound or a future accuracy guarantee."
+    }
+  },
+  "calibration": {
+    "temperature": 5.345757234366385,
+    "threshold": 0.88,
+    "fit_samples": 936,
+    "risk_crop_samples": 899,
+    "risk_representatives": 622,
+    "selected_rule": {
+      "threshold": 0.88,
+      "accepted_count": 423,
+      "error_count": 6,
+      "accepted_accuracy": 0.9858156028368794,
+      "coverage": 0.680064308681672,
+      "error_upper_bound": 0.04438834454448352,
+      "eligible_under_assumptions": true
+    },
+    "independent_scipy_temperature": 5.345757178569983,
+    "bound_independently_checked_with": "scipy.stats.beta.ppf",
+    "family_error_probability": 0.05,
+    "grid_size": 101,
+    "unconditional_accuracy_guarantee": false
+  },
+  "grouped_uncertainty": {
+    "method": "paired source/duplicate-component percentile bootstrap",
+    "replicates": 2000,
+    "seed": 8601,
+    "crops": 327,
+    "resampling_components": 221,
+    "fixed_training_seeds": [
+      314,
+      2718,
+      5772
+    ],
+    "selected_candidate": "C4",
+    "anchor_macro_f1_interval": [
+      0.7171100883194356,
+      0.8203213938182429
+    ],
+    "selected_macro_f1_interval": [
+      0.7056601157855327,
+      0.812613826802769
+    ],
+    "paired_mean_macro_f1_delta_interval": [
+      -0.038196013155820455,
+      0.018293709006840398
+    ],
+    "group_assignment_sha256": "6333b92f3be7d185fd3bfc37b967c348cfe02e014634b665fd8224929cef40a3",
+    "scope": "Descriptive conditional 95% percentile intervals on the previously inspected assessment. Components, rather than crops, are resampled jointly. Fixed models/seeds are not resampled. No post-selection correction, fresh-test claim or deployment guarantee."
+  },
+  "corruptions": [
+    {
+      "kind": "noise",
+      "severity": 1,
+      "accuracy": 0.7828746177370031,
+      "macro_f1": 0.709773465516612,
+      "macro_f1_delta_from_clean": -0.06575510827822761
+    },
+    {
+      "kind": "noise",
+      "severity": 2,
+      "accuracy": 0.7400611620795107,
+      "macro_f1": 0.671144689847333,
+      "macro_f1_delta_from_clean": -0.10438388394750675
+    },
+    {
+      "kind": "noise",
+      "severity": 3,
+      "accuracy": 0.6788990825688074,
+      "macro_f1": 0.6044188333640667,
+      "macro_f1_delta_from_clean": -0.1711097404307731
+    },
+    {
+      "kind": "blur",
+      "severity": 1,
+      "accuracy": 0.8195718654434251,
+      "macro_f1": 0.7684516292865696,
+      "macro_f1_delta_from_clean": -0.007076944508270344
+    },
+    {
+      "kind": "blur",
+      "severity": 2,
+      "accuracy": 0.764525993883792,
+      "macro_f1": 0.7026786849089818,
+      "macro_f1_delta_from_clean": -0.07284988888585797
+    },
+    {
+      "kind": "blur",
+      "severity": 3,
+      "accuracy": 0.672782874617737,
+      "macro_f1": 0.5941103850064021,
+      "macro_f1_delta_from_clean": -0.18141818878843763
+    },
+    {
+      "kind": "translation",
+      "severity": 1,
+      "accuracy": 0.7889908256880734,
+      "macro_f1": 0.7278949057853722,
+      "macro_f1_delta_from_clean": -0.047633668009467556
+    },
+    {
+      "kind": "translation",
+      "severity": 2,
+      "accuracy": 0.8012232415902141,
+      "macro_f1": 0.7418169349081886,
+      "macro_f1_delta_from_clean": -0.033711638886651074
+    },
+    {
+      "kind": "translation",
+      "severity": 3,
+      "accuracy": 0.8256880733944955,
+      "macro_f1": 0.7825479886687122,
+      "macro_f1_delta_from_clean": 0.007019414873872476
+    }
+  ],
+  "gate_statuses": {
+    "data": "pass",
+    "quality": "pass",
+    "calibration": "pass",
+    "parity": "pass",
+    "serving": "pass"
+  },
+  "task_results": [
+    {
+      "task_id": "confirmation_C0_seed202",
+      "phase": "confirmation",
+      "candidate_id": "C0",
+      "seed": 202,
+      "best_epoch": 17,
+      "selection_macro_f1": 0.8395493566256195,
+      "selection_ce": 1.0590570405271549,
+      "fit_seconds": 229.11474807800096,
+      "initial_head_sha256": "d36767112a9ab044b7176368d86b54755c2204a45dfdc9f70bbd73a942038ade",
+      "initial_encoder_sha256": "f1fb0b60c7a1e0cfe0e6d56b741026afd54610019158d6cd9220dba99bcc489d",
+      "last_train_accuracy": 0.9998553554639473,
+      "last_train_ce": 0.0010183761116071975,
+      "last_selection_ce": 1.0704235298330038,
+      "minimum_selection_ce": 0.4548360815958826
+    },
+    {
+      "task_id": "confirmation_C0_seed303",
+      "phase": "confirmation",
+      "candidate_id": "C0",
+      "seed": 303,
+      "best_epoch": 18,
+      "selection_macro_f1": 0.842098381244255,
+      "selection_ce": 1.1459508947501116,
+      "fit_seconds": 228.87395121500094,
+      "initial_head_sha256": "2364b3486044659351125e022f070515f10e6e22f1905fcb6022f4b2f3feaf51",
+      "initial_encoder_sha256": "f1fb0b60c7a1e0cfe0e6d56b741026afd54610019158d6cd9220dba99bcc489d",
+      "last_train_accuracy": 0.9999276777319737,
+      "last_train_ce": 0.0005787553369013927,
+      "last_selection_ce": 1.1459508947501116,
+      "minimum_selection_ce": 0.4475119408215999
+    },
+    {
+      "task_id": "confirmation_C4_seed202",
+      "phase": "confirmation",
+      "candidate_id": "C4",
+      "seed": 202,
+      "best_epoch": 17,
+      "selection_macro_f1": 0.8419883114567496,
+      "selection_ce": 1.0752658826158148,
+      "fit_seconds": 229.44672723199938,
+      "initial_head_sha256": "d36767112a9ab044b7176368d86b54755c2204a45dfdc9f70bbd73a942038ade",
+      "initial_encoder_sha256": "f1fb0b60c7a1e0cfe0e6d56b741026afd54610019158d6cd9220dba99bcc489d",
+      "last_train_accuracy": 0.9994214218557894,
+      "last_train_ce": 0.0017503290531964593,
+      "last_selection_ce": 1.1142286627155134,
+      "minimum_selection_ce": 0.44301510705198116
+    },
+    {
+      "task_id": "confirmation_C4_seed303",
+      "phase": "confirmation",
+      "candidate_id": "C4",
+      "seed": 303,
+      "best_epoch": 17,
+      "selection_macro_f1": 0.8429025708635027,
+      "selection_ce": 1.0944404781707873,
+      "fit_seconds": 229.86245430500458,
+      "initial_head_sha256": "2364b3486044659351125e022f070515f10e6e22f1905fcb6022f4b2f3feaf51",
+      "initial_encoder_sha256": "f1fb0b60c7a1e0cfe0e6d56b741026afd54610019158d6cd9220dba99bcc489d",
+      "last_train_accuracy": 0.9993490995877631,
+      "last_train_ce": 0.0021163327413321314,
+      "last_selection_ce": 1.1026064787258651,
+      "minimum_selection_ce": 0.4461463745419945
+    },
+    {
+      "task_id": "confirmation_C5_seed202",
+      "phase": "confirmation",
+      "candidate_id": "C5",
+      "seed": 202,
+      "best_epoch": 9,
+      "selection_macro_f1": 0.83797415641187,
+      "selection_ce": 0.6853740119960026,
+      "fit_seconds": 231.28909932900024,
+      "initial_head_sha256": "d36767112a9ab044b7176368d86b54755c2204a45dfdc9f70bbd73a942038ade",
+      "initial_encoder_sha256": "f1fb0b60c7a1e0cfe0e6d56b741026afd54610019158d6cd9220dba99bcc489d",
+      "last_train_accuracy": 0.999783033195921,
+      "last_train_ce": 0.0013494767184760803,
+      "last_selection_ce": 1.0658731083745407,
+      "minimum_selection_ce": 0.43906492760184024
+    },
+    {
+      "task_id": "confirmation_C5_seed303",
+      "phase": "confirmation",
+      "candidate_id": "C5",
+      "seed": 303,
+      "best_epoch": 15,
+      "selection_macro_f1": 0.84556686014988,
+      "selection_ce": 1.0536172888743345,
+      "fit_seconds": 230.93542002499817,
+      "initial_head_sha256": "2364b3486044659351125e022f070515f10e6e22f1905fcb6022f4b2f3feaf51",
+      "initial_encoder_sha256": "f1fb0b60c7a1e0cfe0e6d56b741026afd54610019158d6cd9220dba99bcc489d",
+      "last_train_accuracy": 0.9999276777319737,
+      "last_train_ce": 0.001008422746926823,
+      "last_selection_ce": 1.0632632208726611,
+      "minimum_selection_ce": 0.4641548774739215
+    },
+    {
+      "task_id": "discovery_C0_seed101",
+      "phase": "discovery",
+      "candidate_id": "C0",
+      "seed": 101,
+      "best_epoch": 11,
+      "selection_macro_f1": 0.8496394673328056,
+      "selection_ce": 0.7877596300885779,
+      "fit_seconds": 231.4787209409999,
+      "initial_head_sha256": "6263e438bf1d1c302e0b8d630924b93f55e759e31e2761d6f8be1e10ac6b35e1",
+      "initial_encoder_sha256": "f1fb0b60c7a1e0cfe0e6d56b741026afd54610019158d6cd9220dba99bcc489d",
+      "last_train_accuracy": 0.9999276777319737,
+      "last_train_ce": 0.000433321967496018,
+      "last_selection_ce": 1.0552481748852818,
+      "minimum_selection_ce": 0.42170394044187043
+    },
+    {
+      "task_id": "discovery_C1_seed101",
+      "phase": "discovery",
+      "candidate_id": "C1",
+      "seed": 101,
+      "best_epoch": 9,
+      "selection_macro_f1": 0.82534835103547,
+      "selection_ce": 0.53983814727365,
+      "fit_seconds": 228.9514161900006,
+      "initial_head_sha256": "6263e438bf1d1c302e0b8d630924b93f55e759e31e2761d6f8be1e10ac6b35e1",
+      "initial_encoder_sha256": "f1fb0b60c7a1e0cfe0e6d56b741026afd54610019158d6cd9220dba99bcc489d",
+      "last_train_accuracy": 0.9947927967021046,
+      "last_train_ce": 0.020922534528961798,
+      "last_selection_ce": 0.7463412264745046,
+      "minimum_selection_ce": 0.4534063154387656
+    },
+    {
+      "task_id": "discovery_C2_seed101",
+      "phase": "discovery",
+      "candidate_id": "C2",
+      "seed": 101,
+      "best_epoch": 15,
+      "selection_macro_f1": 0.8464266423795904,
+      "selection_ce": 0.974042773571056,
+      "fit_seconds": 228.11287262900032,
+      "initial_head_sha256": "6263e438bf1d1c302e0b8d630924b93f55e759e31e2761d6f8be1e10ac6b35e1",
+      "initial_encoder_sha256": "f1fb0b60c7a1e0cfe0e6d56b741026afd54610019158d6cd9220dba99bcc489d",
+      "last_train_accuracy": 0.9999276777319737,
+      "last_train_ce": 0.0004740403562327735,
+      "last_selection_ce": 1.0569214518622811,
+      "minimum_selection_ce": 0.4221177985800493
+    },
+    {
+      "task_id": "discovery_C3_seed101",
+      "phase": "discovery",
+      "candidate_id": "C3",
+      "seed": 101,
+      "best_epoch": 16,
+      "selection_macro_f1": 0.8486757384147213,
+      "selection_ce": 0.41789160501840195,
+      "fit_seconds": 229.71827524399896,
+      "initial_head_sha256": "6263e438bf1d1c302e0b8d630924b93f55e759e31e2761d6f8be1e10ac6b35e1",
+      "initial_encoder_sha256": "f1fb0b60c7a1e0cfe0e6d56b741026afd54610019158d6cd9220dba99bcc489d",
+      "last_train_accuracy": 1.0,
+      "last_train_ce": 0.04805207067113546,
+      "last_selection_ce": 0.4191271404252348,
+      "minimum_selection_ce": 0.41700056240659805
+    },
+    {
+      "task_id": "discovery_C4_seed101",
+      "phase": "discovery",
+      "candidate_id": "C4",
+      "seed": 101,
+      "best_epoch": 17,
+      "selection_macro_f1": 0.8538779025948187,
+      "selection_ce": 1.14784517900469,
+      "fit_seconds": 229.34453596800086,
+      "initial_head_sha256": "6263e438bf1d1c302e0b8d630924b93f55e759e31e2761d6f8be1e10ac6b35e1",
+      "initial_encoder_sha256": "f1fb0b60c7a1e0cfe0e6d56b741026afd54610019158d6cd9220dba99bcc489d",
+      "last_train_accuracy": 0.9994214218557894,
+      "last_train_ce": 0.001940102034186512,
+      "last_selection_ce": 1.1537248275614667,
+      "minimum_selection_ce": 0.43409443932856
+    },
+    {
+      "task_id": "discovery_C5_seed101",
+      "phase": "discovery",
+      "candidate_id": "C5",
+      "seed": 101,
+      "best_epoch": 17,
+      "selection_macro_f1": 0.8499475664226771,
+      "selection_ce": 0.9775532571613075,
+      "fit_seconds": 230.41760119100127,
+      "initial_head_sha256": "6263e438bf1d1c302e0b8d630924b93f55e759e31e2761d6f8be1e10ac6b35e1",
+      "initial_encoder_sha256": "f1fb0b60c7a1e0cfe0e6d56b741026afd54610019158d6cd9220dba99bcc489d",
+      "last_train_accuracy": 0.9996383886598684,
+      "last_train_ce": 0.0012153525999387392,
+      "last_selection_ce": 0.9934539631479323,
+      "minimum_selection_ce": 0.413990081232183
+    },
+    {
+      "task_id": "discovery_C6_seed101",
+      "phase": "discovery",
+      "candidate_id": "C6",
+      "seed": 101,
+      "best_epoch": 9,
+      "selection_macro_f1": 0.8249428035424445,
+      "selection_ce": 0.5394150689973924,
+      "fit_seconds": 229.2594729539992,
+      "initial_head_sha256": "6263e438bf1d1c302e0b8d630924b93f55e759e31e2761d6f8be1e10ac6b35e1",
+      "initial_encoder_sha256": "f1fb0b60c7a1e0cfe0e6d56b741026afd54610019158d6cd9220dba99bcc489d",
+      "last_train_accuracy": 0.9941418962898676,
+      "last_train_ce": 0.02154095039325566,
+      "last_selection_ce": 0.7506712660177228,
+      "minimum_selection_ce": 0.4511892051639702
+    },
+    {
+      "task_id": "discovery_C7_seed101",
+      "phase": "discovery",
+      "candidate_id": "C7",
+      "seed": 101,
+      "best_epoch": 14,
+      "selection_macro_f1": 0.8264076108239529,
+      "selection_ce": 0.425263596729044,
+      "fit_seconds": 231.85984312200026,
+      "initial_head_sha256": "6263e438bf1d1c302e0b8d630924b93f55e759e31e2761d6f8be1e10ac6b35e1",
+      "initial_encoder_sha256": "f1fb0b60c7a1e0cfe0e6d56b741026afd54610019158d6cd9220dba99bcc489d",
+      "last_train_accuracy": 0.9818471107253923,
+      "last_train_ce": 0.12128675493750585,
+      "last_selection_ce": 0.42504216563584885,
+      "minimum_selection_ce": 0.41546222029235597
+    },
+    {
+      "task_id": "final_C0_seed2718",
+      "phase": "final",
+      "candidate_id": "C0",
+      "seed": 2718,
+      "best_epoch": 9,
+      "selection_macro_f1": 0.8380507426467623,
+      "selection_ce": 0.680513641682491,
+      "fit_seconds": 229.48724771700108,
+      "initial_head_sha256": "f92b76670c5b082ae26c5810cd95e95eeb8d1682405bec8390cd87aa817f7b4b",
+      "initial_encoder_sha256": "f1fb0b60c7a1e0cfe0e6d56b741026afd54610019158d6cd9220dba99bcc489d",
+      "last_train_accuracy": 0.9999276777319737,
+      "last_train_ce": 0.0006704583685295718,
+      "last_selection_ce": 1.0709345378995072,
+      "minimum_selection_ce": 0.4335921092183857
+    },
+    {
+      "task_id": "final_C0_seed314",
+      "phase": "final",
+      "candidate_id": "C0",
+      "seed": 314,
+      "best_epoch": 15,
+      "selection_macro_f1": 0.8492401092220255,
+      "selection_ce": 1.1022726902505129,
+      "fit_seconds": 229.45913326799928,
+      "initial_head_sha256": "bfbd5672e8b4265f1666c03c5934c5752af0e9385c974a7c841973f01d0ab3ed",
+      "initial_encoder_sha256": "f1fb0b60c7a1e0cfe0e6d56b741026afd54610019158d6cd9220dba99bcc489d",
+      "last_train_accuracy": 0.9999276777319737,
+      "last_train_ce": 0.0006164205356724595,
+      "last_selection_ce": 1.1218451896481727,
+      "minimum_selection_ce": 0.4193528861747862
+    },
+    {
+      "task_id": "final_C0_seed5772",
+      "phase": "final",
+      "candidate_id": "C0",
+      "seed": 5772,
+      "best_epoch": 15,
+      "selection_macro_f1": 0.8400450651343233,
+      "selection_ce": 1.0688819113279713,
+      "fit_seconds": 228.748905145997,
+      "initial_head_sha256": "25176cdbc388147771fe3b7ae1fd62b8e6ae6efbd30fec3f36cba30659e57b53",
+      "initial_encoder_sha256": "f1fb0b60c7a1e0cfe0e6d56b741026afd54610019158d6cd9220dba99bcc489d",
+      "last_train_accuracy": 1.0,
+      "last_train_ce": 0.0004612923474970122,
+      "last_selection_ce": 1.1228605736780737,
+      "minimum_selection_ce": 0.44306110585021247
+    },
+    {
+      "task_id": "final_C4_seed2718",
+      "phase": "final",
+      "candidate_id": "C4",
+      "seed": 2718,
+      "best_epoch": 14,
+      "selection_macro_f1": 0.8391473182173689,
+      "selection_ce": 1.0439902899444298,
+      "fit_seconds": 228.91520028800005,
+      "initial_head_sha256": "f92b76670c5b082ae26c5810cd95e95eeb8d1682405bec8390cd87aa817f7b4b",
+      "initial_encoder_sha256": "f1fb0b60c7a1e0cfe0e6d56b741026afd54610019158d6cd9220dba99bcc489d",
+      "last_train_accuracy": 0.9999276777319737,
+      "last_train_ce": 0.0010330705614886473,
+      "last_selection_ce": 1.124592558343989,
+      "minimum_selection_ce": 0.43823790238912785
+    },
+    {
+      "task_id": "final_C4_seed314",
+      "phase": "final",
+      "candidate_id": "C4",
+      "seed": 314,
+      "best_epoch": 17,
+      "selection_macro_f1": 0.8464317635503963,
+      "selection_ce": 1.1617486472358123,
+      "fit_seconds": 228.77000527299788,
+      "initial_head_sha256": "bfbd5672e8b4265f1666c03c5934c5752af0e9385c974a7c841973f01d0ab3ed",
+      "initial_encoder_sha256": "f1fb0b60c7a1e0cfe0e6d56b741026afd54610019158d6cd9220dba99bcc489d",
+      "last_train_accuracy": 0.9995660663918421,
+      "last_train_ce": 0.0014929369275716196,
+      "last_selection_ce": 1.1894666824947893,
+      "minimum_selection_ce": 0.4299068531027556
+    },
+    {
+      "task_id": "final_C4_seed5772",
+      "phase": "final",
+      "candidate_id": "C4",
+      "seed": 5772,
+      "best_epoch": 14,
+      "selection_macro_f1": 0.8448303998727303,
+      "selection_ce": 0.9951187719685209,
+      "fit_seconds": 229.11000819100263,
+      "initial_head_sha256": "25176cdbc388147771fe3b7ae1fd62b8e6ae6efbd30fec3f36cba30659e57b53",
+      "initial_encoder_sha256": "f1fb0b60c7a1e0cfe0e6d56b741026afd54610019158d6cd9220dba99bcc489d",
+      "last_train_accuracy": 0.9995660663918421,
+      "last_train_ce": 0.0017309382357082626,
+      "last_selection_ce": 1.0598442568094089,
+      "minimum_selection_ce": 0.42691407407004633
+    }
+  ],
+  "findings": [
+    {
+      "severity": "material_interpretation",
+      "finding": "No model-quality improvement is demonstrated. C4 mean assessment Macro-F1 is lower than C0 by 0.00833892748; the paired component interval crosses zero. Preset seed 314 also scores below original C0 seed 314. Keep validation-selected C4 as the study output without choosing a replacement using assessment."
+    },
+    {
+      "severity": "scope",
+      "finding": "All 327 assessment cases were previously inspected. New results are exploratory regression evidence, not a fresh blind test. The original calibration was also historically inspected; conditional corrected bounds do not establish a future 95% accuracy guarantee."
+    },
+    {
+      "severity": "remaining_weakness",
+      "finding": "Overfitting remains: late fit accuracy approaches 1 while clean selection CE rises. Stronger dropout C4 did not establish improved generalization; do not present every modeling shortcoming as solved."
+    },
+    {
+      "severity": "evidence_limit",
+      "finding": "Choice freeze is hash-bound and executed before assessment in captured source. JSON records do not contain a separate externally authenticated wall-clock audit for every phase; chronology is source/control-flow evidence, not an external timestamp attestation."
+    },
+    {
+      "severity": "scope",
+      "finding": "Local ready gates cover CPU FP32 parity, prepared PNG crop Predictor and in-process ASGI contracts only. They are not hosted uptime, production load or arbitrary-photo quality evidence."
+    }
+  ],
+  "checks": [
+    {
+      "name": "zip_crc",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "unique_zip_names",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "export_payload_count",
+      "passed": true,
+      "detail": {
+        "zip_entries": 274,
+        "payloads": 273
+      }
+    },
+    {
+      "name": "payload:CONFIRMATION_SELECTION.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:CONSOLE_CAPTURE.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:DEVICE_CHECK.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:DISCOVERY_SELECTION.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:EVALUATION_BACKEND_V2.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:EVALUATION_INPUTS_V2.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:FINAL_SELECTION.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:FINAL_SUMMARY_V2.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:PLAN.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:PREPARED_POINTER_V2.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:RUN_CLOCK.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:RUN_MANIFEST_V2.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:RUN_STATUS.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:TRAINING_CLOCK.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:data_evidence/DATA_READINESS.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:data_evidence/DUPLICATE_AUDIT.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:data_evidence/METADATA_AUDITS.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:data_evidence/index_manifest.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:effective_config.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_source_snapshot/garmentlab/api.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_source_snapshot/garmentlab/calibration_v2.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_source_snapshot/garmentlab/evaluate.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_source_snapshot/garmentlab/evaluate_v2.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_source_snapshot/garmentlab/inference.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_source_snapshot/garmentlab/probabilities.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_source_snapshot/garmentlab/release.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_source_snapshot/garmentlab/study_v2.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_source_snapshot/garmentlab/training.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_source_snapshot/garmentlab/uncertainty_v2.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_source_snapshot/tools/reexport_garmentlab.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/CALIBRATION_PARTITION.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/GROUPED_UNCERTAINTY.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/SELECTION_FREEZE.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/calibration/CALIBRATION_V2.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/calibration/LOGITS_RECEIPT.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/calibration/logits.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/calibration/predictions.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/calibration/probabilities.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/corruptions/blur_severity1/LOGITS_RECEIPT.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/corruptions/blur_severity1/logits.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/corruptions/blur_severity1/metrics.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/corruptions/blur_severity1/predictions.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/corruptions/blur_severity1/probabilities.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/corruptions/blur_severity2/LOGITS_RECEIPT.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/corruptions/blur_severity2/logits.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/corruptions/blur_severity2/metrics.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/corruptions/blur_severity2/predictions.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/corruptions/blur_severity2/probabilities.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/corruptions/blur_severity3/LOGITS_RECEIPT.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/corruptions/blur_severity3/logits.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/corruptions/blur_severity3/metrics.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/corruptions/blur_severity3/predictions.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/corruptions/blur_severity3/probabilities.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/corruptions/noise_severity1/LOGITS_RECEIPT.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/corruptions/noise_severity1/logits.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/corruptions/noise_severity1/metrics.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/corruptions/noise_severity1/predictions.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/corruptions/noise_severity1/probabilities.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/corruptions/noise_severity2/LOGITS_RECEIPT.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/corruptions/noise_severity2/logits.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/corruptions/noise_severity2/metrics.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/corruptions/noise_severity2/predictions.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/corruptions/noise_severity2/probabilities.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/corruptions/noise_severity3/LOGITS_RECEIPT.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/corruptions/noise_severity3/logits.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/corruptions/noise_severity3/metrics.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/corruptions/noise_severity3/predictions.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/corruptions/noise_severity3/probabilities.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/corruptions/translation_severity1/LOGITS_RECEIPT.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/corruptions/translation_severity1/logits.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/corruptions/translation_severity1/metrics.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/corruptions/translation_severity1/predictions.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/corruptions/translation_severity1/probabilities.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/corruptions/translation_severity2/LOGITS_RECEIPT.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/corruptions/translation_severity2/logits.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/corruptions/translation_severity2/metrics.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/corruptions/translation_severity2/predictions.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/corruptions/translation_severity2/probabilities.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/corruptions/translation_severity3/LOGITS_RECEIPT.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/corruptions/translation_severity3/logits.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/corruptions/translation_severity3/metrics.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/corruptions/translation_severity3/predictions.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/corruptions/translation_severity3/probabilities.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/figures/ASSESSMENT_EXAMPLE_CREDITS.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/figures/assessment_confusion.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/figures/assessment_examples.jpg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/figures/assessment_reliability.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/figures/corruption_stress.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/figures/selection_curves.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/final_C0_seed2718/assessment/LOGITS_RECEIPT.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/final_C0_seed2718/assessment/logits.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/final_C0_seed2718/assessment/metrics.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/final_C0_seed2718/assessment/predictions.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/final_C0_seed2718/assessment/probabilities.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/final_C0_seed2718/selection/LOGITS_RECEIPT.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/final_C0_seed2718/selection/logits.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/final_C0_seed2718/selection/metrics.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/final_C0_seed314/assessment/LOGITS_RECEIPT.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/final_C0_seed314/assessment/logits.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/final_C0_seed314/assessment/metrics.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/final_C0_seed314/assessment/predictions.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/final_C0_seed314/assessment/probabilities.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/final_C0_seed314/selection/LOGITS_RECEIPT.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/final_C0_seed314/selection/logits.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/final_C0_seed314/selection/metrics.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/final_C0_seed5772/assessment/LOGITS_RECEIPT.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/final_C0_seed5772/assessment/logits.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/final_C0_seed5772/assessment/metrics.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/final_C0_seed5772/assessment/predictions.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/final_C0_seed5772/assessment/probabilities.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/final_C0_seed5772/selection/LOGITS_RECEIPT.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/final_C0_seed5772/selection/logits.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/final_C0_seed5772/selection/metrics.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/final_C4_seed2718/assessment/LOGITS_RECEIPT.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/final_C4_seed2718/assessment/logits.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/final_C4_seed2718/assessment/metrics.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/final_C4_seed2718/assessment/predictions.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/final_C4_seed2718/assessment/probabilities.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/final_C4_seed2718/selection/LOGITS_RECEIPT.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/final_C4_seed2718/selection/logits.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/final_C4_seed2718/selection/metrics.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/final_C4_seed314/assessment/LOGITS_RECEIPT.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/final_C4_seed314/assessment/calibrated/predictions.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/final_C4_seed314/assessment/calibrated/probabilities.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/final_C4_seed314/assessment/calibrated_metrics.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/final_C4_seed314/assessment/logits.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/final_C4_seed314/assessment/metrics.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/final_C4_seed314/assessment/predictions.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/final_C4_seed314/assessment/probabilities.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/final_C4_seed314/selection/LOGITS_RECEIPT.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/final_C4_seed314/selection/logits.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/final_C4_seed314/selection/metrics.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/final_C4_seed5772/assessment/LOGITS_RECEIPT.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/final_C4_seed5772/assessment/logits.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/final_C4_seed5772/assessment/metrics.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/final_C4_seed5772/assessment/predictions.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/final_C4_seed5772/assessment/probabilities.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/final_C4_seed5772/selection/LOGITS_RECEIPT.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/final_C4_seed5772/selection/logits.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:evaluation_v2/final_C4_seed5772/selection/metrics.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:release_candidate/CPU_BENCHMARK.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:release_candidate/ONNX_PARITY.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:release_candidate/SERVING_CHECK.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:release_candidate/evaluation_receipt.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:release_candidate/model.onnx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:release_candidate/onnx_parity_outputs.npz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:release_candidate/release.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:release_candidate/weights.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:source_snapshot/SOURCE_MANIFEST.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:source_snapshot/a1/__init__.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:source_snapshot/a1/cnn.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:source_snapshot/configs/garmentlab_data.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:source_snapshot/garmentlab/__init__.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:source_snapshot/garmentlab/api.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:source_snapshot/garmentlab/backend.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:source_snapshot/garmentlab/calibration_v2.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:source_snapshot/garmentlab/data.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:source_snapshot/garmentlab/evaluate.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:source_snapshot/garmentlab/evaluate_v2.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:source_snapshot/garmentlab/images.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:source_snapshot/garmentlab/inference.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:source_snapshot/garmentlab/probabilities.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:source_snapshot/garmentlab/recovery.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:source_snapshot/garmentlab/release.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:source_snapshot/garmentlab/runtime.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:source_snapshot/garmentlab/study_v2.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:source_snapshot/garmentlab/training.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:source_snapshot/garmentlab/uncertainty_v2.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:source_snapshot/tools/reexport_garmentlab.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:source_snapshot/tools/run_garmentlab_deadline.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:source_snapshot/tools/run_garmentlab_improve.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:study_v2_manifest.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:study_v2_state.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/confirmation_C0_seed202/COMPLETE.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/confirmation_C0_seed202/best.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/confirmation_C0_seed202/epoch_state.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/confirmation_C0_seed202/history.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/confirmation_C0_seed202/task.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/confirmation_C0_seed303/COMPLETE.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/confirmation_C0_seed303/best.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/confirmation_C0_seed303/epoch_state.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/confirmation_C0_seed303/history.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/confirmation_C0_seed303/task.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/confirmation_C4_seed202/COMPLETE.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/confirmation_C4_seed202/best.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/confirmation_C4_seed202/epoch_state.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/confirmation_C4_seed202/history.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/confirmation_C4_seed202/task.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/confirmation_C4_seed303/COMPLETE.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/confirmation_C4_seed303/best.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/confirmation_C4_seed303/epoch_state.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/confirmation_C4_seed303/history.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/confirmation_C4_seed303/task.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/confirmation_C5_seed202/COMPLETE.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/confirmation_C5_seed202/best.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/confirmation_C5_seed202/epoch_state.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/confirmation_C5_seed202/history.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/confirmation_C5_seed202/task.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/confirmation_C5_seed303/COMPLETE.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/confirmation_C5_seed303/best.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/confirmation_C5_seed303/epoch_state.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/confirmation_C5_seed303/history.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/confirmation_C5_seed303/task.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/discovery_C0_seed101/COMPLETE.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/discovery_C0_seed101/best.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/discovery_C0_seed101/epoch_state.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/discovery_C0_seed101/history.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/discovery_C0_seed101/task.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/discovery_C1_seed101/COMPLETE.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/discovery_C1_seed101/best.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/discovery_C1_seed101/epoch_state.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/discovery_C1_seed101/history.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/discovery_C1_seed101/task.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/discovery_C2_seed101/COMPLETE.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/discovery_C2_seed101/best.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/discovery_C2_seed101/epoch_state.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/discovery_C2_seed101/history.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/discovery_C2_seed101/task.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/discovery_C3_seed101/COMPLETE.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/discovery_C3_seed101/best.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/discovery_C3_seed101/epoch_state.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/discovery_C3_seed101/history.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/discovery_C3_seed101/task.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/discovery_C4_seed101/COMPLETE.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/discovery_C4_seed101/best.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/discovery_C4_seed101/epoch_state.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/discovery_C4_seed101/history.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/discovery_C4_seed101/task.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/discovery_C5_seed101/COMPLETE.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/discovery_C5_seed101/best.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/discovery_C5_seed101/epoch_state.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/discovery_C5_seed101/history.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/discovery_C5_seed101/task.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/discovery_C6_seed101/COMPLETE.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/discovery_C6_seed101/best.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/discovery_C6_seed101/epoch_state.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/discovery_C6_seed101/history.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/discovery_C6_seed101/task.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/discovery_C7_seed101/COMPLETE.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/discovery_C7_seed101/best.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/discovery_C7_seed101/epoch_state.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/discovery_C7_seed101/history.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/discovery_C7_seed101/task.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/final_C0_seed2718/COMPLETE.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/final_C0_seed2718/best.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/final_C0_seed2718/epoch_state.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/final_C0_seed2718/history.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/final_C0_seed2718/task.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/final_C0_seed314/COMPLETE.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/final_C0_seed314/best.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/final_C0_seed314/epoch_state.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/final_C0_seed314/history.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/final_C0_seed314/task.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/final_C0_seed5772/COMPLETE.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/final_C0_seed5772/best.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/final_C0_seed5772/epoch_state.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/final_C0_seed5772/history.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/final_C0_seed5772/task.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/final_C4_seed2718/COMPLETE.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/final_C4_seed2718/best.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/final_C4_seed2718/epoch_state.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/final_C4_seed2718/history.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/final_C4_seed2718/task.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/final_C4_seed314/COMPLETE.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/final_C4_seed314/best.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/final_C4_seed314/epoch_state.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/final_C4_seed314/history.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/final_C4_seed314/task.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/final_C4_seed5772/COMPLETE.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/final_C4_seed5772/best.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/final_C4_seed5772/epoch_state.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/final_C4_seed5772/history.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "payload:tasks/final_C4_seed5772/task.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "delivered_source_zip_sha256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_identical",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "captured_source:source_snapshot/a1/cnn.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "captured_source:source_snapshot/a1/__init__.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "captured_source:source_snapshot/configs/garmentlab_data.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "captured_source:source_snapshot/garmentlab/api.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "captured_source:source_snapshot/garmentlab/backend.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "captured_source:source_snapshot/garmentlab/calibration_v2.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "captured_source:source_snapshot/garmentlab/data.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "captured_source:source_snapshot/garmentlab/evaluate.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "captured_source:source_snapshot/garmentlab/evaluate_v2.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "captured_source:source_snapshot/garmentlab/images.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "captured_source:source_snapshot/garmentlab/inference.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "captured_source:source_snapshot/garmentlab/probabilities.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "captured_source:source_snapshot/garmentlab/recovery.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "captured_source:source_snapshot/garmentlab/release.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "captured_source:source_snapshot/garmentlab/runtime.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "captured_source:source_snapshot/garmentlab/study_v2.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "captured_source:source_snapshot/garmentlab/training.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "captured_source:source_snapshot/garmentlab/uncertainty_v2.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "captured_source:source_snapshot/garmentlab/__init__.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "captured_source:source_snapshot/tools/reexport_garmentlab.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "captured_source:source_snapshot/tools/run_garmentlab_deadline.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "captured_source:source_snapshot/tools/run_garmentlab_improve.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "captured_source:evaluation_source_snapshot/garmentlab/api.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "captured_source:evaluation_source_snapshot/garmentlab/calibration_v2.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "captured_source:evaluation_source_snapshot/garmentlab/evaluate.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "captured_source:evaluation_source_snapshot/garmentlab/evaluate_v2.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "captured_source:evaluation_source_snapshot/garmentlab/inference.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "captured_source:evaluation_source_snapshot/garmentlab/probabilities.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "captured_source:evaluation_source_snapshot/garmentlab/release.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "captured_source:evaluation_source_snapshot/garmentlab/study_v2.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "captured_source:evaluation_source_snapshot/garmentlab/training.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "captured_source:evaluation_source_snapshot/garmentlab/uncertainty_v2.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "captured_source:evaluation_source_snapshot/tools/reexport_garmentlab.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:.github/workflows/garmentlab-draft.yml",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:a1/__init__.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:a1/cnn.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:AI_USAGE.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:configs/garmentlab_data.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:configs/garmentlab_deadline.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:configs/garmentlab_improve_today.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:docs/a1_extension_research/CALIBRATION_V2_METHOD.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:docs/a1_extension_research/IMPROVE_TODAY_20261028_VI.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:garmentlab/__init__.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:garmentlab/api.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:garmentlab/backend.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:garmentlab/calibration_v2.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:garmentlab/data.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:garmentlab/evaluate.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:garmentlab/evaluate_v2.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:garmentlab/images.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:garmentlab/inference.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:garmentlab/probabilities.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:garmentlab/recovery.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:garmentlab/release.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:garmentlab/runtime.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:garmentlab/static/app.js",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:garmentlab/static/index.html",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:garmentlab/static/samples/sample-boot.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:garmentlab/static/samples/sample-trouser.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:garmentlab/static/samples/sample-tshirt.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:garmentlab/static/samples/SOURCE.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:garmentlab/static/style.css",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:garmentlab/study_v2.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:garmentlab/training.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:garmentlab/uncertainty_v2.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:requirements-garmentlab-colab.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:requirements-garmentlab-cpu-lock.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:requirements-garmentlab-draft.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:requirements-garmentlab-improve-colab.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:tests/test_garmentlab_api.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:tests/test_garmentlab_backend.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:tests/test_garmentlab_calibration_v2.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:tests/test_garmentlab_data.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:tests/test_garmentlab_evaluate.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:tests/test_garmentlab_evaluate_v2.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:tests/test_garmentlab_images.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:tests/test_garmentlab_improve_controller.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:tests/test_garmentlab_inference.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:tests/test_garmentlab_recovery.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:tests/test_garmentlab_recovery_integration.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:tests/test_garmentlab_reexport.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:tests/test_garmentlab_release.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:tests/test_garmentlab_runtime.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:tests/test_garmentlab_service_benchmark.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:tests/test_garmentlab_study_v2.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:tests/test_garmentlab_training.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:tests/test_garmentlab_uncertainty_v2.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:tools/benchmark_garmentlab_service.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:tools/prepare_garment_data.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:tools/reexport_garmentlab.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:tools/run_garmentlab_deadline.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:tools/run_garmentlab_draft.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_manifest_payload:tools/run_garmentlab_improve.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "run_status_complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "non_smoke_ready",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "full_twenty_tasks",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "18_epochs:confirmation_C0_seed202",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "best_epoch_rule:confirmation_C0_seed202",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:confirmation_C0_seed202/task.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:confirmation_C0_seed202/best.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:confirmation_C0_seed202/history.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:confirmation_C0_seed202/epoch_state.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_binding:confirmation_C0_seed202",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "18_epochs:confirmation_C0_seed303",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "best_epoch_rule:confirmation_C0_seed303",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:confirmation_C0_seed303/task.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:confirmation_C0_seed303/best.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:confirmation_C0_seed303/history.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:confirmation_C0_seed303/epoch_state.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_binding:confirmation_C0_seed303",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "18_epochs:confirmation_C4_seed202",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "best_epoch_rule:confirmation_C4_seed202",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:confirmation_C4_seed202/task.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:confirmation_C4_seed202/best.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:confirmation_C4_seed202/history.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:confirmation_C4_seed202/epoch_state.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_binding:confirmation_C4_seed202",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "18_epochs:confirmation_C4_seed303",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "best_epoch_rule:confirmation_C4_seed303",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:confirmation_C4_seed303/task.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:confirmation_C4_seed303/best.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:confirmation_C4_seed303/history.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:confirmation_C4_seed303/epoch_state.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_binding:confirmation_C4_seed303",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "18_epochs:confirmation_C5_seed202",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "best_epoch_rule:confirmation_C5_seed202",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:confirmation_C5_seed202/task.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:confirmation_C5_seed202/best.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:confirmation_C5_seed202/history.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:confirmation_C5_seed202/epoch_state.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_binding:confirmation_C5_seed202",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "18_epochs:confirmation_C5_seed303",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "best_epoch_rule:confirmation_C5_seed303",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:confirmation_C5_seed303/task.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:confirmation_C5_seed303/best.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:confirmation_C5_seed303/history.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:confirmation_C5_seed303/epoch_state.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_binding:confirmation_C5_seed303",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "18_epochs:discovery_C0_seed101",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "best_epoch_rule:discovery_C0_seed101",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:discovery_C0_seed101/task.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:discovery_C0_seed101/best.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:discovery_C0_seed101/history.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:discovery_C0_seed101/epoch_state.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_binding:discovery_C0_seed101",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "18_epochs:discovery_C1_seed101",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "best_epoch_rule:discovery_C1_seed101",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:discovery_C1_seed101/task.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:discovery_C1_seed101/best.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:discovery_C1_seed101/history.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:discovery_C1_seed101/epoch_state.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_binding:discovery_C1_seed101",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "18_epochs:discovery_C2_seed101",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "best_epoch_rule:discovery_C2_seed101",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:discovery_C2_seed101/task.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:discovery_C2_seed101/best.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:discovery_C2_seed101/history.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:discovery_C2_seed101/epoch_state.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_binding:discovery_C2_seed101",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "18_epochs:discovery_C3_seed101",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "best_epoch_rule:discovery_C3_seed101",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:discovery_C3_seed101/task.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:discovery_C3_seed101/best.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:discovery_C3_seed101/history.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:discovery_C3_seed101/epoch_state.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_binding:discovery_C3_seed101",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "18_epochs:discovery_C4_seed101",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "best_epoch_rule:discovery_C4_seed101",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:discovery_C4_seed101/task.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:discovery_C4_seed101/best.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:discovery_C4_seed101/history.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:discovery_C4_seed101/epoch_state.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_binding:discovery_C4_seed101",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "18_epochs:discovery_C5_seed101",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "best_epoch_rule:discovery_C5_seed101",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:discovery_C5_seed101/task.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:discovery_C5_seed101/best.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:discovery_C5_seed101/history.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:discovery_C5_seed101/epoch_state.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_binding:discovery_C5_seed101",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "18_epochs:discovery_C6_seed101",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "best_epoch_rule:discovery_C6_seed101",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:discovery_C6_seed101/task.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:discovery_C6_seed101/best.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:discovery_C6_seed101/history.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:discovery_C6_seed101/epoch_state.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_binding:discovery_C6_seed101",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "18_epochs:discovery_C7_seed101",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "best_epoch_rule:discovery_C7_seed101",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:discovery_C7_seed101/task.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:discovery_C7_seed101/best.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:discovery_C7_seed101/history.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:discovery_C7_seed101/epoch_state.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_binding:discovery_C7_seed101",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "18_epochs:final_C0_seed2718",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "best_epoch_rule:final_C0_seed2718",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:final_C0_seed2718/task.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:final_C0_seed2718/best.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:final_C0_seed2718/history.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:final_C0_seed2718/epoch_state.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_binding:final_C0_seed2718",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "18_epochs:final_C0_seed314",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "best_epoch_rule:final_C0_seed314",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:final_C0_seed314/task.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:final_C0_seed314/best.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:final_C0_seed314/history.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:final_C0_seed314/epoch_state.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_binding:final_C0_seed314",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "18_epochs:final_C0_seed5772",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "best_epoch_rule:final_C0_seed5772",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:final_C0_seed5772/task.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:final_C0_seed5772/best.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:final_C0_seed5772/history.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:final_C0_seed5772/epoch_state.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_binding:final_C0_seed5772",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "18_epochs:final_C4_seed2718",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "best_epoch_rule:final_C4_seed2718",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:final_C4_seed2718/task.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:final_C4_seed2718/best.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:final_C4_seed2718/history.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:final_C4_seed2718/epoch_state.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_binding:final_C4_seed2718",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "18_epochs:final_C4_seed314",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "best_epoch_rule:final_C4_seed314",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:final_C4_seed314/task.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:final_C4_seed314/best.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:final_C4_seed314/history.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:final_C4_seed314/epoch_state.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_binding:final_C4_seed314",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "18_epochs:final_C4_seed5772",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "best_epoch_rule:final_C4_seed5772",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:final_C4_seed5772/task.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:final_C4_seed5772/best.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:final_C4_seed5772/history.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_file:final_C4_seed5772/epoch_state.pt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "task_binding:final_C4_seed5772",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "paired_initialization:202",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "paired_initialization:303",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "paired_initialization:101",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "paired_initialization:2718",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "paired_initialization:314",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "paired_initialization:5772",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "discovery_shortlist",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_confirmation_seeds:C0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_confirmation_seeds:C4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fresh_confirmation_seeds:C5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "confirmation_selected_C4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "discovery_not_reused",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fixed_deployment_seed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "selection_guard",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "freeze_binding:evaluation_inputs_sha256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "freeze_binding:final_selection_sha256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "freeze_binding:calibration_partition_sha256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "freeze_binding:calibration_fit_sha256",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "summary_final_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "choice_before_assessment_source_order",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no_fresh_test_claim",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "confusion_replay:selection/final_C0_seed314",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "confusion_replay:selection/final_C0_seed2718",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "confusion_replay:selection/final_C0_seed5772",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "confusion_replay:selection/final_C4_seed314",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "confusion_replay:selection/final_C4_seed2718",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "confusion_replay:selection/final_C4_seed5772",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "confusion_replay:assessment/final_C0_seed314",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "confusion_replay:assessment/final_C0_seed2718",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "confusion_replay:assessment/final_C0_seed5772",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "confusion_replay:assessment/final_C4_seed314",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "confusion_replay:assessment/final_C4_seed2718",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "confusion_replay:assessment/final_C4_seed5772",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "acceptance_replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "role_separation:source_group_id",
+      "passed": true,
+      "detail": {
+        "groups": 12407
+      }
+    },
+    {
+      "name": "role_separation:evaluation_group_id",
+      "passed": true,
+      "detail": {
+        "groups": 12068
+      }
+    },
+    {
+      "name": "disjoint_calibration_indices",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "calibration_partition_separation:source_group_id",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_unique_representative:source_group_id",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "calibration_partition_separation:evaluation_group_id",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_unique_representative:evaluation_group_id",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "partition_counts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.04",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.04",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.05",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.05",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.06",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.06",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.07",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.07",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.08",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.08",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.09",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.09",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.14",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.14",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.17",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.17",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.18",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.18",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.21",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.21",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.23",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.23",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.24",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.24",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.26",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.26",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.27",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.27",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.28",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.28",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.29",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.29",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.32",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.32",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.33",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.33",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.34",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.34",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.35",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.35",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.36",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.36",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.37",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.37",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.38",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.38",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.39",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.39",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.41",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.41",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.42",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.42",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.43",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.43",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.44",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.44",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.45",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.45",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.46",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.46",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.47",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.47",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.48",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.48",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.49",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.49",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.51",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.51",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.52",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.52",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.53",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.53",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.54",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.54",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.55",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.55",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.56",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.56",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.57",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.57",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.58",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.58",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.59",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.59",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.61",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.61",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.62",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.62",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.63",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.63",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.64",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.64",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.65",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.65",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.66",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.66",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.67",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.67",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.68",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.68",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.69",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.69",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.71",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.71",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.72",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.72",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.73",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.73",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.74",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.74",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.75",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.75",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.76",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.76",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.77",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.77",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.78",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.78",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.79",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.79",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.81",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.81",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.82",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.82",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.83",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.83",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.84",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.84",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.85",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.85",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.86",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.86",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.87",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.87",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.88",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.88",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.89",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.89",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.91",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.91",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.92",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.92",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.93",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.93",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.94",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.94",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.95",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.95",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.96",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.96",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.97",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.97",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.98",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.98",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:0.99",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:0.99",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_counts:1.0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "risk_grid_eligibility:1.0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "maximum_coverage_eligible_threshold",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nine_fixed_corruptions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "bootstrap_component_count",
+      "passed": true,
+      "detail": null
+    }
+  ]
+}

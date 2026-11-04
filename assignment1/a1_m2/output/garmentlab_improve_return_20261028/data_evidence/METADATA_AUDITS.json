@@ -1,0 +1,710 @@
+{
+  "assessment": {
+    "assessment_guard": {
+      "metadata_audit_only": true,
+      "training_manifest_export_allowed": false
+    },
+    "assessment_reference": null,
+    "class_map": [
+      {
+        "category_id": 0,
+        "label": "shirt_blouse",
+        "source_category_name": "shirt, blouse"
+      },
+      {
+        "category_id": 1,
+        "label": "top_tshirt_sweatshirt",
+        "source_category_name": "top, t-shirt, sweatshirt"
+      },
+      {
+        "category_id": 4,
+        "label": "jacket",
+        "source_category_name": "jacket"
+      },
+      {
+        "category_id": 6,
+        "label": "pants",
+        "source_category_name": "pants"
+      },
+      {
+        "category_id": 8,
+        "label": "skirt",
+        "source_category_name": "skirt"
+      },
+      {
+        "category_id": 10,
+        "label": "dress",
+        "source_category_name": "dress"
+      }
+    ],
+    "config": {
+      "class_map": [
+        {
+          "category_id": 0,
+          "label": "shirt_blouse"
+        },
+        {
+          "category_id": 1,
+          "label": "top_tshirt_sweatshirt"
+        },
+        {
+          "category_id": 4,
+          "label": "jacket"
+        },
+        {
+          "category_id": 6,
+          "label": "pants"
+        },
+        {
+          "category_id": 8,
+          "label": "skirt"
+        },
+        {
+          "category_id": 10,
+          "label": "dress"
+        }
+      ],
+      "license_policy": {
+        "acknowledgement": "Metadata allowlist is not legal clearance or a verification of current source-platform terms. No photographs are redistributed by this draft.",
+        "allowed_license_ids": [
+          0,
+          1,
+          6
+        ],
+        "purpose": "public_portfolio_metadata_candidate"
+      },
+      "min_source_images_per_class": {
+        "assessment": 15,
+        "calibration": 10,
+        "fit": 50,
+        "selection": 10
+      },
+      "split": {
+        "calibration_fraction": 0.1,
+        "fit_fraction": 0.8,
+        "seed": 20261024,
+        "selection_fraction": 0.1
+      }
+    },
+    "counts": {
+      "annotations_total": 8781,
+      "by_partition_and_class": {
+        "assessment": {
+          "dress": {
+            "crops": 112,
+            "unique_source_groups": 111,
+            "unique_source_images": 111
+          },
+          "jacket": {
+            "crops": 21,
+            "unique_source_groups": 21,
+            "unique_source_images": 21
+          },
+          "pants": {
+            "crops": 49,
+            "unique_source_groups": 49,
+            "unique_source_images": 49
+          },
+          "shirt_blouse": {
+            "crops": 19,
+            "unique_source_groups": 19,
+            "unique_source_images": 19
+          },
+          "skirt": {
+            "crops": 33,
+            "unique_source_groups": 33,
+            "unique_source_images": 33
+          },
+          "top_tshirt_sweatshirt": {
+            "crops": 93,
+            "unique_source_groups": 91,
+            "unique_source_images": 91
+          }
+        },
+        "calibration": {
+          "dress": {
+            "crops": 0,
+            "unique_source_groups": 0,
+            "unique_source_images": 0
+          },
+          "jacket": {
+            "crops": 0,
+            "unique_source_groups": 0,
+            "unique_source_images": 0
+          },
+          "pants": {
+            "crops": 0,
+            "unique_source_groups": 0,
+            "unique_source_images": 0
+          },
+          "shirt_blouse": {
+            "crops": 0,
+            "unique_source_groups": 0,
+            "unique_source_images": 0
+          },
+          "skirt": {
+            "crops": 0,
+            "unique_source_groups": 0,
+            "unique_source_images": 0
+          },
+          "top_tshirt_sweatshirt": {
+            "crops": 0,
+            "unique_source_groups": 0,
+            "unique_source_images": 0
+          }
+        },
+        "fit": {
+          "dress": {
+            "crops": 0,
+            "unique_source_groups": 0,
+            "unique_source_images": 0
+          },
+          "jacket": {
+            "crops": 0,
+            "unique_source_groups": 0,
+            "unique_source_images": 0
+          },
+          "pants": {
+            "crops": 0,
+            "unique_source_groups": 0,
+            "unique_source_images": 0
+          },
+          "shirt_blouse": {
+            "crops": 0,
+            "unique_source_groups": 0,
+            "unique_source_images": 0
+          },
+          "skirt": {
+            "crops": 0,
+            "unique_source_groups": 0,
+            "unique_source_images": 0
+          },
+          "top_tshirt_sweatshirt": {
+            "crops": 0,
+            "unique_source_groups": 0,
+            "unique_source_images": 0
+          }
+        },
+        "selection": {
+          "dress": {
+            "crops": 0,
+            "unique_source_groups": 0,
+            "unique_source_images": 0
+          },
+          "jacket": {
+            "crops": 0,
+            "unique_source_groups": 0,
+            "unique_source_images": 0
+          },
+          "pants": {
+            "crops": 0,
+            "unique_source_groups": 0,
+            "unique_source_images": 0
+          },
+          "shirt_blouse": {
+            "crops": 0,
+            "unique_source_groups": 0,
+            "unique_source_images": 0
+          },
+          "skirt": {
+            "crops": 0,
+            "unique_source_groups": 0,
+            "unique_source_images": 0
+          },
+          "top_tshirt_sweatshirt": {
+            "crops": 0,
+            "unique_source_groups": 0,
+            "unique_source_images": 0
+          }
+        }
+      },
+      "eligible_crops": 327,
+      "image_license_id_counts": {
+        "0": 153,
+        "1": 74,
+        "10": 5,
+        "2": 25,
+        "3": 56,
+        "4": 632,
+        "5": 115,
+        "7": 69,
+        "8": 27,
+        "9": 2
+      },
+      "images_metadata_accepted": 227,
+      "images_metadata_excluded": 931,
+      "images_total": 1158
+    },
+    "exclusions": {
+      "annotations_by_primary_reason": {
+        "category_not_selected": 1202,
+        "image_metadata_or_license_rejected": 7252
+      },
+      "images_by_reason_nonexclusive": {
+        "license_not_allowed": 931
+      }
+    },
+    "grouping": {
+      "assessment_original_url_overlap_audited": false,
+      "assignment": "seeded hash threshold assigned to source groups before annotations",
+      "balanced_partitions_claimed": false,
+      "key": "SHA256 of normalized original_url; HTTP/HTTPS share a group",
+      "not_verified": [
+        "pixel duplicates",
+        "near duplicates",
+        "product/person identity",
+        "pixel/near-duplicate train-assessment overlap"
+      ],
+      "quarantined_assessment_source_groups": 0,
+      "quarantined_source_group_ids": [],
+      "quarantined_train_image_ids": [],
+      "stratified": false,
+      "support_gate_unit": "source_group"
+    },
+    "license_definitions": [
+      {
+        "id": 0,
+        "name": "Attribution License",
+        "url": "https://creativecommons.org/licenses/by/2.0/"
+      },
+      {
+        "id": 1,
+        "name": "Attribution-ShareAlike License",
+        "url": "https://creativecommons.org/licenses/by-sa/2.0/"
+      },
+      {
+        "id": 2,
+        "name": "Attribution-NoDerivatives License",
+        "url": "https://creativecommons.org/licenses/by-nd/2.0/"
+      },
+      {
+        "id": 3,
+        "name": "Attribution-NonCommercial-ShareAlike License",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/2.0/"
+      },
+      {
+        "id": 4,
+        "name": "Attribution-NonCommercial-NoDerivatives License",
+        "url": "https://creativecommons.org/licenses/by-nc-nd/2.0/"
+      },
+      {
+        "id": 5,
+        "name": "Attribution-NonCommercial License",
+        "url": "https://creativecommons.org/licenses/by-nc/2.0/"
+      },
+      {
+        "id": 6,
+        "name": "Public Domain Dedication",
+        "url": "https://creativecommons.org/publicdomain/mark/1.0/"
+      },
+      {
+        "id": 7,
+        "name": "unsplash",
+        "url": "https://unsplash.com/license"
+      },
+      {
+        "id": 8,
+        "name": "pexels",
+        "url": "https://www.pexels.com/photo-license"
+      },
+      {
+        "id": 9,
+        "name": "freestocks",
+        "url": "https://freestocks.org/terms-of-use"
+      },
+      {
+        "id": 10,
+        "name": "burst",
+        "url": "https://burst.shopify.com/legal/terms"
+      },
+      {
+        "id": 11,
+        "name": "all rights reserved/not found",
+        "url": ""
+      }
+    ],
+    "normalized_data_config_sha256": "92fac6d442a77f0708b6cd07e287b4c1fd1240187379b0a2d182979df0dbb355",
+    "reader": "stdlib_json",
+    "readiness": {
+      "failures": [],
+      "legal_clearance_claimed": false,
+      "metadata_ready": true,
+      "pending": [
+        "image download/decode/dimension/hash checks",
+        "cross-partition duplicate audit",
+        "taxonomy and crop visual review",
+        "individual image-rights review"
+      ],
+      "training_ready": false
+    },
+    "schema": "garmentlab_fashionpedia_metadata_audit_v1",
+    "source_annotation": {
+      "bytes": 14533475,
+      "file_name": "instances_attributes_val2020.json",
+      "sha256": "f831f415edad12d52acde8b138fe7ebd1592b57bf0dcd6a3b63ba8cabd208223"
+    },
+    "source_role": "official_assessment"
+  },
+  "train": {
+    "assessment_guard": {
+      "metadata_audit_only": false,
+      "training_manifest_export_allowed": true
+    },
+    "assessment_reference": {
+      "matching_scope": "all valid normalized original URLs, before image/license/category filtering",
+      "metadata_ready": true,
+      "source_annotation": {
+        "bytes": 14533475,
+        "file_name": "instances_attributes_val2020.json",
+        "sha256": "f831f415edad12d52acde8b138fe7ebd1592b57bf0dcd6a3b63ba8cabd208223"
+      }
+    },
+    "class_map": [
+      {
+        "category_id": 0,
+        "label": "shirt_blouse",
+        "source_category_name": "shirt, blouse"
+      },
+      {
+        "category_id": 1,
+        "label": "top_tshirt_sweatshirt",
+        "source_category_name": "top, t-shirt, sweatshirt"
+      },
+      {
+        "category_id": 4,
+        "label": "jacket",
+        "source_category_name": "jacket"
+      },
+      {
+        "category_id": 6,
+        "label": "pants",
+        "source_category_name": "pants"
+      },
+      {
+        "category_id": 8,
+        "label": "skirt",
+        "source_category_name": "skirt"
+      },
+      {
+        "category_id": 10,
+        "label": "dress",
+        "source_category_name": "dress"
+      }
+    ],
+    "config": {
+      "class_map": [
+        {
+          "category_id": 0,
+          "label": "shirt_blouse"
+        },
+        {
+          "category_id": 1,
+          "label": "top_tshirt_sweatshirt"
+        },
+        {
+          "category_id": 4,
+          "label": "jacket"
+        },
+        {
+          "category_id": 6,
+          "label": "pants"
+        },
+        {
+          "category_id": 8,
+          "label": "skirt"
+        },
+        {
+          "category_id": 10,
+          "label": "dress"
+        }
+      ],
+      "license_policy": {
+        "acknowledgement": "Metadata allowlist is not legal clearance or a verification of current source-platform terms. No photographs are redistributed by this draft.",
+        "allowed_license_ids": [
+          0,
+          1,
+          6
+        ],
+        "purpose": "public_portfolio_metadata_candidate"
+      },
+      "min_source_images_per_class": {
+        "assessment": 15,
+        "calibration": 10,
+        "fit": 50,
+        "selection": 10
+      },
+      "split": {
+        "calibration_fraction": 0.1,
+        "fit_fraction": 0.8,
+        "seed": 20261024,
+        "selection_fraction": 0.1
+      }
+    },
+    "counts": {
+      "annotations_total": 333401,
+      "by_partition_and_class": {
+        "assessment": {
+          "dress": {
+            "crops": 0,
+            "unique_source_groups": 0,
+            "unique_source_images": 0
+          },
+          "jacket": {
+            "crops": 0,
+            "unique_source_groups": 0,
+            "unique_source_images": 0
+          },
+          "pants": {
+            "crops": 0,
+            "unique_source_groups": 0,
+            "unique_source_images": 0
+          },
+          "shirt_blouse": {
+            "crops": 0,
+            "unique_source_groups": 0,
+            "unique_source_images": 0
+          },
+          "skirt": {
+            "crops": 0,
+            "unique_source_groups": 0,
+            "unique_source_images": 0
+          },
+          "top_tshirt_sweatshirt": {
+            "crops": 0,
+            "unique_source_groups": 0,
+            "unique_source_images": 0
+          }
+        },
+        "calibration": {
+          "dress": {
+            "crops": 645,
+            "unique_source_groups": 643,
+            "unique_source_images": 643
+          },
+          "jacket": {
+            "crops": 159,
+            "unique_source_groups": 158,
+            "unique_source_images": 159
+          },
+          "pants": {
+            "crops": 295,
+            "unique_source_groups": 294,
+            "unique_source_images": 295
+          },
+          "shirt_blouse": {
+            "crops": 172,
+            "unique_source_groups": 168,
+            "unique_source_images": 169
+          },
+          "skirt": {
+            "crops": 116,
+            "unique_source_groups": 116,
+            "unique_source_images": 116
+          },
+          "top_tshirt_sweatshirt": {
+            "crops": 450,
+            "unique_source_groups": 443,
+            "unique_source_images": 443
+          }
+        },
+        "fit": {
+          "dress": {
+            "crops": 4975,
+            "unique_source_groups": 4950,
+            "unique_source_images": 4952
+          },
+          "jacket": {
+            "crops": 1354,
+            "unique_source_groups": 1344,
+            "unique_source_images": 1347
+          },
+          "pants": {
+            "crops": 2551,
+            "unique_source_groups": 2534,
+            "unique_source_images": 2543
+          },
+          "shirt_blouse": {
+            "crops": 1354,
+            "unique_source_groups": 1350,
+            "unique_source_images": 1352
+          },
+          "skirt": {
+            "crops": 783,
+            "unique_source_groups": 779,
+            "unique_source_images": 779
+          },
+          "top_tshirt_sweatshirt": {
+            "crops": 3767,
+            "unique_source_groups": 3676,
+            "unique_source_images": 3683
+          }
+        },
+        "selection": {
+          "dress": {
+            "crops": 642,
+            "unique_source_groups": 641,
+            "unique_source_images": 641
+          },
+          "jacket": {
+            "crops": 183,
+            "unique_source_groups": 178,
+            "unique_source_images": 178
+          },
+          "pants": {
+            "crops": 319,
+            "unique_source_groups": 317,
+            "unique_source_images": 317
+          },
+          "shirt_blouse": {
+            "crops": 189,
+            "unique_source_groups": 189,
+            "unique_source_images": 189
+          },
+          "skirt": {
+            "crops": 107,
+            "unique_source_groups": 106,
+            "unique_source_images": 106
+          },
+          "top_tshirt_sweatshirt": {
+            "crops": 486,
+            "unique_source_groups": 467,
+            "unique_source_images": 467
+          }
+        }
+      },
+      "eligible_crops": 18547,
+      "image_license_id_counts": {
+        "0": 6650,
+        "1": 7131,
+        "10": 70,
+        "11": 544,
+        "2": 6064,
+        "3": 4819,
+        "4": 14775,
+        "5": 3776,
+        "6": 50,
+        "7": 1274,
+        "8": 456,
+        "9": 14
+      },
+      "images_metadata_accepted": 13830,
+      "images_metadata_excluded": 31793,
+      "images_total": 45623
+    },
+    "exclusions": {
+      "annotations_by_primary_reason": {
+        "category_not_selected": 72023,
+        "image_metadata_or_license_rejected": 242831
+      },
+      "images_by_reason_nonexclusive": {
+        "invalid_original_url": 327,
+        "license_not_allowed": 31792,
+        "source_group_overlaps_assessment": 1
+      }
+    },
+    "grouping": {
+      "assessment_original_url_overlap_audited": true,
+      "assignment": "seeded hash threshold assigned to source groups before annotations",
+      "balanced_partitions_claimed": false,
+      "key": "SHA256 of normalized original_url; HTTP/HTTPS share a group",
+      "not_verified": [
+        "pixel duplicates",
+        "near duplicates",
+        "product/person identity",
+        "pixel/near-duplicate train-assessment overlap"
+      ],
+      "quarantined_assessment_source_groups": 1,
+      "quarantined_source_group_ids": [
+        "f66d26913a3d9a8236451952d9650f575dfd48b0602c6f5ee3659d5a0828eebe"
+      ],
+      "quarantined_train_image_ids": [
+        34698
+      ],
+      "stratified": false,
+      "support_gate_unit": "source_group"
+    },
+    "license_definitions": [
+      {
+        "id": 0,
+        "name": "Attribution License",
+        "url": "https://creativecommons.org/licenses/by/2.0/"
+      },
+      {
+        "id": 1,
+        "name": "Attribution-ShareAlike License",
+        "url": "https://creativecommons.org/licenses/by-sa/2.0/"
+      },
+      {
+        "id": 2,
+        "name": "Attribution-NoDerivatives License",
+        "url": "https://creativecommons.org/licenses/by-nd/2.0/"
+      },
+      {
+        "id": 3,
+        "name": "Attribution-NonCommercial-ShareAlike License",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/2.0/"
+      },
+      {
+        "id": 4,
+        "name": "Attribution-NonCommercial-NoDerivatives License",
+        "url": "https://creativecommons.org/licenses/by-nc-nd/2.0/"
+      },
+      {
+        "id": 5,
+        "name": "Attribution-NonCommercial License",
+        "url": "https://creativecommons.org/licenses/by-nc/2.0/"
+      },
+      {
+        "id": 6,
+        "name": "Public Domain Dedication",
+        "url": "https://creativecommons.org/publicdomain/mark/1.0/"
+      },
+      {
+        "id": 7,
+        "name": "unsplash",
+        "url": "https://unsplash.com/license"
+      },
+      {
+        "id": 8,
+        "name": "pexels",
+        "url": "https://www.pexels.com/photo-license"
+      },
+      {
+        "id": 9,
+        "name": "freestocks",
+        "url": "https://freestocks.org/terms-of-use"
+      },
+      {
+        "id": 10,
+        "name": "burst",
+        "url": "https://burst.shopify.com/legal/terms"
+      },
+      {
+        "id": 11,
+        "name": "all rights reserved/not found",
+        "url": ""
+      }
+    ],
+    "normalized_data_config_sha256": "92fac6d442a77f0708b6cd07e287b4c1fd1240187379b0a2d182979df0dbb355",
+    "reader": "ijson_streaming",
+    "readiness": {
+      "failures": [],
+      "legal_clearance_claimed": false,
+      "metadata_ready": true,
+      "pending": [
+        "image download/decode/dimension/hash checks",
+        "cross-partition duplicate audit",
+        "taxonomy and crop visual review",
+        "individual image-rights review"
+      ],
+      "training_ready": false
+    },
+    "schema": "garmentlab_fashionpedia_metadata_audit_v1",
+    "source_annotation": {
+      "bytes": 542193045,
+      "file_name": "instances_attributes_train2020.json",
+      "sha256": "f6af94fb8712bd8170a49c857e842e1227e6806c4f33f32340db0c849133e006"
+    },
+    "source_role": "official_train"
+  }
+}

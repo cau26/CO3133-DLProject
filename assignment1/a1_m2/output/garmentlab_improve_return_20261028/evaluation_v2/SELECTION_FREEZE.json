@@ -1,0 +1,91 @@
+{
+  "schema": "garmentlab_choices_before_regression_assessment_v2",
+  "evaluation_inputs_sha256": "b9631d88fee7a631e2d0481600f7637af178035ea25b027040bf3b4d491796af",
+  "final_selection_sha256": "4ba4d6a5ccd3d881b89fea97a83eb281f153b0db3a1073d1c5fe342116f30d97",
+  "deployment_task_id": "final_C4_seed314",
+  "calibration_partition_sha256": "619c13d0b369d8ea1916332e6581165ecfb57e1a80816a9675d3121447e93f8a",
+  "calibration_fit_sha256": "0d9321d78bdb09e4ca1442bcd1491b8df76cc72af0c3450cf9646b8d5bd587d1",
+  "calibration": {
+    "status": "fitted",
+    "temperature": 5.345757234366385,
+    "review_threshold": 0.88,
+    "fit_split_sha256": "4f385288d00ba04b51d8debf84442eaba16639e5bfb6fb4491fc281dcfe3800a",
+    "threshold_selection_split_sha256": "12e9132cb83a296099df5bdc6f09615fa13eb8fdc7c91ac71367a44e52cffa11",
+    "policy": {
+      "version": "disjoint_component_representative_bonferroni_v2",
+      "mode": "confidence_threshold",
+      "target_accuracy": 0.95,
+      "bound_eligible": true,
+      "family_error_probability": 0.05,
+      "target_bound_satisfied_under_assumptions": true,
+      "unconditional_accuracy_guarantee": false,
+      "target_population": "equally weighted metadata-selected representative of an independent source/duplicate component",
+      "partition_sha256": "385c0e7768032d44b4e985f8d4f5ebc0772afa0dcce57376bc273c395934c17d",
+      "threshold_grid_sha256": "6e7cf29829ec0f572e3d603a963affa9629c450310b4657bd843e531b24ca2a0"
+    }
+  },
+  "quality_criteria": {
+    "status": "pass",
+    "minimum_selection_macro_f1": 0.7,
+    "maximum_selection_regression": 0.005,
+    "deployment_candidate_mean_selection_macro_f1": 0.8434698272134985,
+    "deployment_guard": {
+      "maximum_selection_f1_regression": 0.005,
+      "selected_minus_anchor_f1": -0.002808345671629242,
+      "fallback_to_anchor": false,
+      "scope": "Preset seed selection-only regression guard; no assessment or calibration inference"
+    },
+    "scope": "Selection-only quality criteria and fixed-seed fallback; no assessment-driven choice."
+  },
+  "corruptions": [
+    {
+      "kind": "noise",
+      "severity": 1,
+      "sigma": 0.02
+    },
+    {
+      "kind": "noise",
+      "severity": 2,
+      "sigma": 0.05
+    },
+    {
+      "kind": "noise",
+      "severity": 3,
+      "sigma": 0.1
+    },
+    {
+      "kind": "blur",
+      "severity": 1,
+      "radius": 0.5
+    },
+    {
+      "kind": "blur",
+      "severity": 2,
+      "radius": 1.0
+    },
+    {
+      "kind": "blur",
+      "severity": 3,
+      "radius": 2.0
+    },
+    {
+      "kind": "translation",
+      "severity": 1,
+      "pixels": 2
+    },
+    {
+      "kind": "translation",
+      "severity": 2,
+      "pixels": 4
+    },
+    {
+      "kind": "translation",
+      "severity": 3,
+      "pixels": 8
+    }
+  ],
+  "parity_max_abs_error": 0.0001,
+  "assessment_scope": "POST_TEST_EXPLORATORY_REGRESSION",
+  "smoke_only": false,
+  "scope": "All model, seed, calibration and policy choices frozen before regression assessment inference. Previously inspected assessment cannot become a new blind test."
+}

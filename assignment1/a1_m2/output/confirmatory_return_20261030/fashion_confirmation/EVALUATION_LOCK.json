@@ -1,0 +1,912 @@
+{
+  "schema_version": 1,
+  "confirmation_manifest_sha256": "700db95d22d32d5c3e7f3c1dc9cf4c526f4f646698d82b88838f21be16215103",
+  "checkpoints": [
+    {
+      "task_id": "linear_C0_seed1009",
+      "family": "linear",
+      "seed": 1009,
+      "arm": "C0",
+      "policy": "ce",
+      "checkpoint_epoch": 40,
+      "checkpoint_sha256": "fb6f1c6b935f65fc0b07d81ff066e5cff34c4948b85dbd172e95e9d9e4b2f57e",
+      "checkpoint": "tasks/linear_C0_seed1009/engine/best_ce.pt"
+    },
+    {
+      "task_id": "linear_C0_seed1009",
+      "family": "linear",
+      "seed": 1009,
+      "arm": "C0",
+      "policy": "f1",
+      "checkpoint_epoch": 44,
+      "checkpoint_sha256": "77155811e8f22c4ddea29f7391a4229470d580a80184a92b2e687093a4bbb4d3",
+      "checkpoint": "tasks/linear_C0_seed1009/engine/best_f1.pt"
+    },
+    {
+      "task_id": "linear_C0_seed1009",
+      "family": "linear",
+      "seed": 1009,
+      "arm": "C0",
+      "policy": "final",
+      "checkpoint_epoch": 60,
+      "checkpoint_sha256": "e50a6291ac6cf7de6c0544dde59789f92f36041c65cdca3ab4ebd039f7f710e5",
+      "checkpoint": "tasks/linear_C0_seed1009/final_epoch.pt"
+    },
+    {
+      "task_id": "linear_selected_seed1009",
+      "family": "linear",
+      "seed": 1009,
+      "arm": "selected",
+      "policy": "ce",
+      "checkpoint_epoch": 48,
+      "checkpoint_sha256": "83103cd8dca05c57785876f8a8d0de2a41d4aaa290cd683e1f10d329e57d35d0",
+      "checkpoint": "tasks/linear_selected_seed1009/engine/best_ce.pt"
+    },
+    {
+      "task_id": "linear_selected_seed1009",
+      "family": "linear",
+      "seed": 1009,
+      "arm": "selected",
+      "policy": "f1",
+      "checkpoint_epoch": 24,
+      "checkpoint_sha256": "5bac999a9e35c8a865e4130fe057be742c1a480931a1f363df3f732f066460c2",
+      "checkpoint": "tasks/linear_selected_seed1009/engine/best_f1.pt"
+    },
+    {
+      "task_id": "linear_selected_seed1009",
+      "family": "linear",
+      "seed": 1009,
+      "arm": "selected",
+      "policy": "final",
+      "checkpoint_epoch": 60,
+      "checkpoint_sha256": "eea277bef8f4ffe3b998e99477d66caf2bb39c475201d2052ed483c91b3630c3",
+      "checkpoint": "tasks/linear_selected_seed1009/final_epoch.pt"
+    },
+    {
+      "task_id": "linear_selected_seed2027",
+      "family": "linear",
+      "seed": 2027,
+      "arm": "selected",
+      "policy": "ce",
+      "checkpoint_epoch": 51,
+      "checkpoint_sha256": "51ed27a06fc3b2801d39ab34110ece9c7a850d7f2f85a79a033b39464c735950",
+      "checkpoint": "tasks/linear_selected_seed2027/engine/best_ce.pt"
+    },
+    {
+      "task_id": "linear_selected_seed2027",
+      "family": "linear",
+      "seed": 2027,
+      "arm": "selected",
+      "policy": "f1",
+      "checkpoint_epoch": 25,
+      "checkpoint_sha256": "245db540aa1a010916ef6c4d84bca42faef2f43b92aa20209d32553509f15eaa",
+      "checkpoint": "tasks/linear_selected_seed2027/engine/best_f1.pt"
+    },
+    {
+      "task_id": "linear_selected_seed2027",
+      "family": "linear",
+      "seed": 2027,
+      "arm": "selected",
+      "policy": "final",
+      "checkpoint_epoch": 60,
+      "checkpoint_sha256": "030ec13d80698aa793073833efa7582d0357956b7e9c1e2d43469da49b6ea33f",
+      "checkpoint": "tasks/linear_selected_seed2027/final_epoch.pt"
+    },
+    {
+      "task_id": "linear_C0_seed2027",
+      "family": "linear",
+      "seed": 2027,
+      "arm": "C0",
+      "policy": "ce",
+      "checkpoint_epoch": 28,
+      "checkpoint_sha256": "c8e203772fac6fd8cb64cef34b12fe3a0187d33d247841607bd819885152837b",
+      "checkpoint": "tasks/linear_C0_seed2027/engine/best_ce.pt"
+    },
+    {
+      "task_id": "linear_C0_seed2027",
+      "family": "linear",
+      "seed": 2027,
+      "arm": "C0",
+      "policy": "f1",
+      "checkpoint_epoch": 56,
+      "checkpoint_sha256": "fa2aa2debd02a5e366210f0c064a789a36f83c80bb57e72ecfce7a6303696f12",
+      "checkpoint": "tasks/linear_C0_seed2027/engine/best_f1.pt"
+    },
+    {
+      "task_id": "linear_C0_seed2027",
+      "family": "linear",
+      "seed": 2027,
+      "arm": "C0",
+      "policy": "final",
+      "checkpoint_epoch": 60,
+      "checkpoint_sha256": "e8a2320a85e95bcac2f29cf2607de69be6ad844fd73513f6b237cbec7e458351",
+      "checkpoint": "tasks/linear_C0_seed2027/final_epoch.pt"
+    },
+    {
+      "task_id": "linear_C0_seed3037",
+      "family": "linear",
+      "seed": 3037,
+      "arm": "C0",
+      "policy": "ce",
+      "checkpoint_epoch": 41,
+      "checkpoint_sha256": "970fe6f6ca3c0c589d02841f64e53855043cea436e530caa731252c04e764516",
+      "checkpoint": "tasks/linear_C0_seed3037/engine/best_ce.pt"
+    },
+    {
+      "task_id": "linear_C0_seed3037",
+      "family": "linear",
+      "seed": 3037,
+      "arm": "C0",
+      "policy": "f1",
+      "checkpoint_epoch": 36,
+      "checkpoint_sha256": "386964f6826ca0df91971d29d87b9c26466af70d414a5f726e21d95c89d105d5",
+      "checkpoint": "tasks/linear_C0_seed3037/engine/best_f1.pt"
+    },
+    {
+      "task_id": "linear_C0_seed3037",
+      "family": "linear",
+      "seed": 3037,
+      "arm": "C0",
+      "policy": "final",
+      "checkpoint_epoch": 60,
+      "checkpoint_sha256": "8589f22694342b319285189ddf74b01f5f369e5ed05f89ca87aa2b895d090cf3",
+      "checkpoint": "tasks/linear_C0_seed3037/final_epoch.pt"
+    },
+    {
+      "task_id": "linear_selected_seed3037",
+      "family": "linear",
+      "seed": 3037,
+      "arm": "selected",
+      "policy": "ce",
+      "checkpoint_epoch": 51,
+      "checkpoint_sha256": "c8d0a793db4a3c26a38e23f71f33239f353130ba22f5b84a9299ef77fed79b43",
+      "checkpoint": "tasks/linear_selected_seed3037/engine/best_ce.pt"
+    },
+    {
+      "task_id": "linear_selected_seed3037",
+      "family": "linear",
+      "seed": 3037,
+      "arm": "selected",
+      "policy": "f1",
+      "checkpoint_epoch": 33,
+      "checkpoint_sha256": "e684f847cfaab622d82383f36e3d4a6f4c03928c86a84b3fc6f6afa025066f1f",
+      "checkpoint": "tasks/linear_selected_seed3037/engine/best_f1.pt"
+    },
+    {
+      "task_id": "linear_selected_seed3037",
+      "family": "linear",
+      "seed": 3037,
+      "arm": "selected",
+      "policy": "final",
+      "checkpoint_epoch": 60,
+      "checkpoint_sha256": "f632255f52c2f4deddabeed69fc4912e7cf21fc86234ec9339ba05896f870324",
+      "checkpoint": "tasks/linear_selected_seed3037/final_epoch.pt"
+    },
+    {
+      "task_id": "mlp_C0_seed1009",
+      "family": "mlp",
+      "seed": 1009,
+      "arm": "C0",
+      "policy": "ce",
+      "checkpoint_epoch": 15,
+      "checkpoint_sha256": "2dfb89b15182723b0487d9d43b01d1cb24897c69937762b9ccd8e3197bdb8a5b",
+      "checkpoint": "tasks/mlp_C0_seed1009/engine/best_ce.pt"
+    },
+    {
+      "task_id": "mlp_C0_seed1009",
+      "family": "mlp",
+      "seed": 1009,
+      "arm": "C0",
+      "policy": "f1",
+      "checkpoint_epoch": 45,
+      "checkpoint_sha256": "e018266024778eaf3239b0160585eb2977b998e7dfcd411c8b1a4ba2bfa8701b",
+      "checkpoint": "tasks/mlp_C0_seed1009/engine/best_f1.pt"
+    },
+    {
+      "task_id": "mlp_C0_seed1009",
+      "family": "mlp",
+      "seed": 1009,
+      "arm": "C0",
+      "policy": "final",
+      "checkpoint_epoch": 60,
+      "checkpoint_sha256": "f7fa288eb542b46e6c70ed268b2bfa2adc3340a131f7cbbcea898df1a02cbbb5",
+      "checkpoint": "tasks/mlp_C0_seed1009/final_epoch.pt"
+    },
+    {
+      "task_id": "mlp_selected_seed1009",
+      "family": "mlp",
+      "seed": 1009,
+      "arm": "selected",
+      "policy": "ce",
+      "checkpoint_epoch": 29,
+      "checkpoint_sha256": "753f65b11fc12a56e82f679422b344e7526abee9544bc03612cbb31235cbded7",
+      "checkpoint": "tasks/mlp_selected_seed1009/engine/best_ce.pt"
+    },
+    {
+      "task_id": "mlp_selected_seed1009",
+      "family": "mlp",
+      "seed": 1009,
+      "arm": "selected",
+      "policy": "f1",
+      "checkpoint_epoch": 55,
+      "checkpoint_sha256": "b3f9017df3595655d7f52d5ec54702850d78ff36d3d7e30785e562d30401781c",
+      "checkpoint": "tasks/mlp_selected_seed1009/engine/best_f1.pt"
+    },
+    {
+      "task_id": "mlp_selected_seed1009",
+      "family": "mlp",
+      "seed": 1009,
+      "arm": "selected",
+      "policy": "final",
+      "checkpoint_epoch": 60,
+      "checkpoint_sha256": "475ec83d12893a0f79434e65f7d4129628429e844699fff402e6dbfbed653309",
+      "checkpoint": "tasks/mlp_selected_seed1009/final_epoch.pt"
+    },
+    {
+      "task_id": "mlp_selected_seed2027",
+      "family": "mlp",
+      "seed": 2027,
+      "arm": "selected",
+      "policy": "ce",
+      "checkpoint_epoch": 44,
+      "checkpoint_sha256": "b26fc2ef671a7de92538172c7db6c0c9577390d4b0701bea015db077d00d1e6a",
+      "checkpoint": "tasks/mlp_selected_seed2027/engine/best_ce.pt"
+    },
+    {
+      "task_id": "mlp_selected_seed2027",
+      "family": "mlp",
+      "seed": 2027,
+      "arm": "selected",
+      "policy": "f1",
+      "checkpoint_epoch": 49,
+      "checkpoint_sha256": "578afa67ebafd1e244437ce852587d75336f1e457c44a323145509e683981c64",
+      "checkpoint": "tasks/mlp_selected_seed2027/engine/best_f1.pt"
+    },
+    {
+      "task_id": "mlp_selected_seed2027",
+      "family": "mlp",
+      "seed": 2027,
+      "arm": "selected",
+      "policy": "final",
+      "checkpoint_epoch": 60,
+      "checkpoint_sha256": "6d058f381063261c93d48020ecafab7f411b8f809432a0fd9bce72c58f9cd336",
+      "checkpoint": "tasks/mlp_selected_seed2027/final_epoch.pt"
+    },
+    {
+      "task_id": "mlp_C0_seed2027",
+      "family": "mlp",
+      "seed": 2027,
+      "arm": "C0",
+      "policy": "ce",
+      "checkpoint_epoch": 12,
+      "checkpoint_sha256": "5a0a9deec3122e5258f57a31fdfc32c8cfa5b16cce1d2e96848e30b9e8a9d14b",
+      "checkpoint": "tasks/mlp_C0_seed2027/engine/best_ce.pt"
+    },
+    {
+      "task_id": "mlp_C0_seed2027",
+      "family": "mlp",
+      "seed": 2027,
+      "arm": "C0",
+      "policy": "f1",
+      "checkpoint_epoch": 36,
+      "checkpoint_sha256": "45586a3f65e5255e7f353aa08e54babba9600196313fe1005b39a3c7d063edcf",
+      "checkpoint": "tasks/mlp_C0_seed2027/engine/best_f1.pt"
+    },
+    {
+      "task_id": "mlp_C0_seed2027",
+      "family": "mlp",
+      "seed": 2027,
+      "arm": "C0",
+      "policy": "final",
+      "checkpoint_epoch": 60,
+      "checkpoint_sha256": "43f3d15c62fbce10d70f3cc9fea62e8056fb74dfdd6716d2efacc7ae0086c6be",
+      "checkpoint": "tasks/mlp_C0_seed2027/final_epoch.pt"
+    },
+    {
+      "task_id": "mlp_C0_seed3037",
+      "family": "mlp",
+      "seed": 3037,
+      "arm": "C0",
+      "policy": "ce",
+      "checkpoint_epoch": 18,
+      "checkpoint_sha256": "31f9a75798d6bdb9986eb2431826d8f9da985ccc33f2eafeaece684d3035810f",
+      "checkpoint": "tasks/mlp_C0_seed3037/engine/best_ce.pt"
+    },
+    {
+      "task_id": "mlp_C0_seed3037",
+      "family": "mlp",
+      "seed": 3037,
+      "arm": "C0",
+      "policy": "f1",
+      "checkpoint_epoch": 38,
+      "checkpoint_sha256": "17c7613fe3017b3dcac364df0f315fbc67ba783f5fc2efbed4c64f189a8272c6",
+      "checkpoint": "tasks/mlp_C0_seed3037/engine/best_f1.pt"
+    },
+    {
+      "task_id": "mlp_C0_seed3037",
+      "family": "mlp",
+      "seed": 3037,
+      "arm": "C0",
+      "policy": "final",
+      "checkpoint_epoch": 60,
+      "checkpoint_sha256": "5a1601d442879b213c0f734ee42b57302c1f03a8523c63139805b7a0fecc392f",
+      "checkpoint": "tasks/mlp_C0_seed3037/final_epoch.pt"
+    },
+    {
+      "task_id": "mlp_selected_seed3037",
+      "family": "mlp",
+      "seed": 3037,
+      "arm": "selected",
+      "policy": "ce",
+      "checkpoint_epoch": 34,
+      "checkpoint_sha256": "6fe7c2ca4edc5d980f2470d6b733d4d6f027dd0bbef757a34306eaeb0af8cfd0",
+      "checkpoint": "tasks/mlp_selected_seed3037/engine/best_ce.pt"
+    },
+    {
+      "task_id": "mlp_selected_seed3037",
+      "family": "mlp",
+      "seed": 3037,
+      "arm": "selected",
+      "policy": "f1",
+      "checkpoint_epoch": 54,
+      "checkpoint_sha256": "538f5542602d22124fba5ebb9394fef2384788933e4b006b2711833d979c53fc",
+      "checkpoint": "tasks/mlp_selected_seed3037/engine/best_f1.pt"
+    },
+    {
+      "task_id": "mlp_selected_seed3037",
+      "family": "mlp",
+      "seed": 3037,
+      "arm": "selected",
+      "policy": "final",
+      "checkpoint_epoch": 60,
+      "checkpoint_sha256": "21de45d56ff836d5cb96101bd9fdc874caa8b061971c24f985fa7ff52387973b",
+      "checkpoint": "tasks/mlp_selected_seed3037/final_epoch.pt"
+    },
+    {
+      "task_id": "cnn_C0_seed1009",
+      "family": "cnn",
+      "seed": 1009,
+      "arm": "C0",
+      "policy": "ce",
+      "checkpoint_epoch": 56,
+      "checkpoint_sha256": "8c58429d58eacbc24273cc213459c8ca02128885a8af4c0306e01bd02ffd6f11",
+      "checkpoint": "tasks/cnn_C0_seed1009/engine/best_ce.pt"
+    },
+    {
+      "task_id": "cnn_C0_seed1009",
+      "family": "cnn",
+      "seed": 1009,
+      "arm": "C0",
+      "policy": "f1",
+      "checkpoint_epoch": 59,
+      "checkpoint_sha256": "3f9f1ef99a65e138a7c8a46c3921b766525e87f37473e528025b93314b14cf4e",
+      "checkpoint": "tasks/cnn_C0_seed1009/engine/best_f1.pt"
+    },
+    {
+      "task_id": "cnn_C0_seed1009",
+      "family": "cnn",
+      "seed": 1009,
+      "arm": "C0",
+      "policy": "final",
+      "checkpoint_epoch": 60,
+      "checkpoint_sha256": "e0c4b393d0ecfb8ff3529b902160d86eaf249a61d5d49e78263949356d216604",
+      "checkpoint": "tasks/cnn_C0_seed1009/final_epoch.pt"
+    },
+    {
+      "task_id": "cnn_selected_seed1009",
+      "family": "cnn",
+      "seed": 1009,
+      "arm": "selected",
+      "policy": "ce",
+      "checkpoint_epoch": 44,
+      "checkpoint_sha256": "fcc51816345444877f730fa8848dddf12207007d5594cd29c5d3f13324095f4c",
+      "checkpoint": "tasks/cnn_selected_seed1009/engine/best_ce.pt"
+    },
+    {
+      "task_id": "cnn_selected_seed1009",
+      "family": "cnn",
+      "seed": 1009,
+      "arm": "selected",
+      "policy": "f1",
+      "checkpoint_epoch": 60,
+      "checkpoint_sha256": "ac51101c33cb081e69b7b12382f721d183afd50dc75aa8c8fa8bab5bef1ad99c",
+      "checkpoint": "tasks/cnn_selected_seed1009/engine/best_f1.pt"
+    },
+    {
+      "task_id": "cnn_selected_seed1009",
+      "family": "cnn",
+      "seed": 1009,
+      "arm": "selected",
+      "policy": "final",
+      "checkpoint_epoch": 60,
+      "checkpoint_sha256": "5b486a438ac0151ae09480cb532b3d6a497dab82197139ef537e703476e94bfd",
+      "checkpoint": "tasks/cnn_selected_seed1009/final_epoch.pt"
+    },
+    {
+      "task_id": "cnn_selected_seed2027",
+      "family": "cnn",
+      "seed": 2027,
+      "arm": "selected",
+      "policy": "ce",
+      "checkpoint_epoch": 56,
+      "checkpoint_sha256": "de0140e771cad21dc9310cfc093855aefd1f25b757905e6b7c48049e696dce17",
+      "checkpoint": "tasks/cnn_selected_seed2027/engine/best_ce.pt"
+    },
+    {
+      "task_id": "cnn_selected_seed2027",
+      "family": "cnn",
+      "seed": 2027,
+      "arm": "selected",
+      "policy": "f1",
+      "checkpoint_epoch": 55,
+      "checkpoint_sha256": "aa98a4df832165437250d675648505710da1990c9671d020cf3c9db76ed7bb00",
+      "checkpoint": "tasks/cnn_selected_seed2027/engine/best_f1.pt"
+    },
+    {
+      "task_id": "cnn_selected_seed2027",
+      "family": "cnn",
+      "seed": 2027,
+      "arm": "selected",
+      "policy": "final",
+      "checkpoint_epoch": 60,
+      "checkpoint_sha256": "e00ffe77148e75efbeb937e8e0ad02efa336f5a73465c9572cf9609e7bc42d9e",
+      "checkpoint": "tasks/cnn_selected_seed2027/final_epoch.pt"
+    },
+    {
+      "task_id": "cnn_C0_seed2027",
+      "family": "cnn",
+      "seed": 2027,
+      "arm": "C0",
+      "policy": "ce",
+      "checkpoint_epoch": 57,
+      "checkpoint_sha256": "12880a1885d84a0c39ae5a59d9259eaac641dadf02bb6f387ec3d64ee38f83e8",
+      "checkpoint": "tasks/cnn_C0_seed2027/engine/best_ce.pt"
+    },
+    {
+      "task_id": "cnn_C0_seed2027",
+      "family": "cnn",
+      "seed": 2027,
+      "arm": "C0",
+      "policy": "f1",
+      "checkpoint_epoch": 55,
+      "checkpoint_sha256": "241e9fee85ff3d4da5b741ccbea9d3e8bd3d85af5084b6f19dda374584dfb1eb",
+      "checkpoint": "tasks/cnn_C0_seed2027/engine/best_f1.pt"
+    },
+    {
+      "task_id": "cnn_C0_seed2027",
+      "family": "cnn",
+      "seed": 2027,
+      "arm": "C0",
+      "policy": "final",
+      "checkpoint_epoch": 60,
+      "checkpoint_sha256": "ef7c5ee36e8812fc1166788685c08e05dc4b0939a5a2b9ed38c59e9ba14bc7b3",
+      "checkpoint": "tasks/cnn_C0_seed2027/final_epoch.pt"
+    },
+    {
+      "task_id": "cnn_C0_seed3037",
+      "family": "cnn",
+      "seed": 3037,
+      "arm": "C0",
+      "policy": "ce",
+      "checkpoint_epoch": 53,
+      "checkpoint_sha256": "b328ce6d4bcd02bb99ed51a84114533c091efbfd9cf528db6305d6f0e382f27b",
+      "checkpoint": "tasks/cnn_C0_seed3037/engine/best_ce.pt"
+    },
+    {
+      "task_id": "cnn_C0_seed3037",
+      "family": "cnn",
+      "seed": 3037,
+      "arm": "C0",
+      "policy": "f1",
+      "checkpoint_epoch": 53,
+      "checkpoint_sha256": "b328ce6d4bcd02bb99ed51a84114533c091efbfd9cf528db6305d6f0e382f27b",
+      "checkpoint": "tasks/cnn_C0_seed3037/engine/best_f1.pt"
+    },
+    {
+      "task_id": "cnn_C0_seed3037",
+      "family": "cnn",
+      "seed": 3037,
+      "arm": "C0",
+      "policy": "final",
+      "checkpoint_epoch": 60,
+      "checkpoint_sha256": "ce0757266f55be9c4ad8aaebe7da8a7a82948a84b965754d14961884cf891680",
+      "checkpoint": "tasks/cnn_C0_seed3037/final_epoch.pt"
+    },
+    {
+      "task_id": "cnn_selected_seed3037",
+      "family": "cnn",
+      "seed": 3037,
+      "arm": "selected",
+      "policy": "ce",
+      "checkpoint_epoch": 41,
+      "checkpoint_sha256": "0a9d9276658e578e7b1c9ff66d0d4b2e6c02ad53da6acc601829d67b10652a98",
+      "checkpoint": "tasks/cnn_selected_seed3037/engine/best_ce.pt"
+    },
+    {
+      "task_id": "cnn_selected_seed3037",
+      "family": "cnn",
+      "seed": 3037,
+      "arm": "selected",
+      "policy": "f1",
+      "checkpoint_epoch": 52,
+      "checkpoint_sha256": "66754b6f4d22364966527db56908d504a18436ab858fc0059eeef5e548ea663f",
+      "checkpoint": "tasks/cnn_selected_seed3037/engine/best_f1.pt"
+    },
+    {
+      "task_id": "cnn_selected_seed3037",
+      "family": "cnn",
+      "seed": 3037,
+      "arm": "selected",
+      "policy": "final",
+      "checkpoint_epoch": 60,
+      "checkpoint_sha256": "1e9e49fea415c0ba9524471b06252c8ebc3e1b2f803972e312baa24de96e8b32",
+      "checkpoint": "tasks/cnn_selected_seed3037/final_epoch.pt"
+    },
+    {
+      "task_id": "gru_C0_seed1009",
+      "family": "gru",
+      "seed": 1009,
+      "arm": "C0",
+      "policy": "ce",
+      "checkpoint_epoch": 25,
+      "checkpoint_sha256": "79435deab3ca2bc1f992ef956002a559da107d15c635be1b1464345ae82c1bd6",
+      "checkpoint": "tasks/gru_C0_seed1009/engine/best_ce.pt"
+    },
+    {
+      "task_id": "gru_C0_seed1009",
+      "family": "gru",
+      "seed": 1009,
+      "arm": "C0",
+      "policy": "f1",
+      "checkpoint_epoch": 35,
+      "checkpoint_sha256": "87e6f58ae8ffd16e9aaddb090c111e7726991903b910d22b207e2a93e1fc8708",
+      "checkpoint": "tasks/gru_C0_seed1009/engine/best_f1.pt"
+    },
+    {
+      "task_id": "gru_C0_seed1009",
+      "family": "gru",
+      "seed": 1009,
+      "arm": "C0",
+      "policy": "final",
+      "checkpoint_epoch": 60,
+      "checkpoint_sha256": "5cfc402bef603d29f62eb76a69fe44ff7ada0cc078ac327706cbbaca8d82cb8c",
+      "checkpoint": "tasks/gru_C0_seed1009/final_epoch.pt"
+    },
+    {
+      "task_id": "gru_selected_seed1009",
+      "family": "gru",
+      "seed": 1009,
+      "arm": "selected",
+      "policy": "ce",
+      "checkpoint_epoch": 25,
+      "checkpoint_sha256": "d6e1704b47f18d80c6e6fd720a28ec4df7de19c4afebf5c4a875b56b97016aeb",
+      "checkpoint": "tasks/gru_selected_seed1009/engine/best_ce.pt"
+    },
+    {
+      "task_id": "gru_selected_seed1009",
+      "family": "gru",
+      "seed": 1009,
+      "arm": "selected",
+      "policy": "f1",
+      "checkpoint_epoch": 34,
+      "checkpoint_sha256": "3e95b74a7692a453cbea83beae6edaa3eb9998723faed5da6cda2a6ac7d77bb2",
+      "checkpoint": "tasks/gru_selected_seed1009/engine/best_f1.pt"
+    },
+    {
+      "task_id": "gru_selected_seed1009",
+      "family": "gru",
+      "seed": 1009,
+      "arm": "selected",
+      "policy": "final",
+      "checkpoint_epoch": 60,
+      "checkpoint_sha256": "05b8af65e4d4ff44a917c839f83fb7fbad16a8018aaa79c7c31991b51eca0532",
+      "checkpoint": "tasks/gru_selected_seed1009/final_epoch.pt"
+    },
+    {
+      "task_id": "gru_selected_seed2027",
+      "family": "gru",
+      "seed": 2027,
+      "arm": "selected",
+      "policy": "ce",
+      "checkpoint_epoch": 23,
+      "checkpoint_sha256": "fbdca2723d18ab91cf7e2415a56a18c4cb986329b53663ba1f31311c895f4f02",
+      "checkpoint": "tasks/gru_selected_seed2027/engine/best_ce.pt"
+    },
+    {
+      "task_id": "gru_selected_seed2027",
+      "family": "gru",
+      "seed": 2027,
+      "arm": "selected",
+      "policy": "f1",
+      "checkpoint_epoch": 28,
+      "checkpoint_sha256": "93f916c358bd9325d58dac3034d2838245dcb1f6797fe1b46d735d6424cfeef8",
+      "checkpoint": "tasks/gru_selected_seed2027/engine/best_f1.pt"
+    },
+    {
+      "task_id": "gru_selected_seed2027",
+      "family": "gru",
+      "seed": 2027,
+      "arm": "selected",
+      "policy": "final",
+      "checkpoint_epoch": 60,
+      "checkpoint_sha256": "afa76503eb59f57ae228466628e06c79310e55db6e3243491de677aa7f3f8fb4",
+      "checkpoint": "tasks/gru_selected_seed2027/final_epoch.pt"
+    },
+    {
+      "task_id": "gru_C0_seed2027",
+      "family": "gru",
+      "seed": 2027,
+      "arm": "C0",
+      "policy": "ce",
+      "checkpoint_epoch": 20,
+      "checkpoint_sha256": "5f20f9dd7b4bb0f68a451b2af7f2e166511600a930f14906cf67f1225fbccc85",
+      "checkpoint": "tasks/gru_C0_seed2027/engine/best_ce.pt"
+    },
+    {
+      "task_id": "gru_C0_seed2027",
+      "family": "gru",
+      "seed": 2027,
+      "arm": "C0",
+      "policy": "f1",
+      "checkpoint_epoch": 32,
+      "checkpoint_sha256": "c95915e978a09fb609de67329c3904db47cd2f2445f78025c62b41719ec660ea",
+      "checkpoint": "tasks/gru_C0_seed2027/engine/best_f1.pt"
+    },
+    {
+      "task_id": "gru_C0_seed2027",
+      "family": "gru",
+      "seed": 2027,
+      "arm": "C0",
+      "policy": "final",
+      "checkpoint_epoch": 60,
+      "checkpoint_sha256": "dfe88e45852a982db31b7869ca2b7e975f6190331d510b22fe8a7861bd6e25b1",
+      "checkpoint": "tasks/gru_C0_seed2027/final_epoch.pt"
+    },
+    {
+      "task_id": "gru_C0_seed3037",
+      "family": "gru",
+      "seed": 3037,
+      "arm": "C0",
+      "policy": "ce",
+      "checkpoint_epoch": 22,
+      "checkpoint_sha256": "3fd4088769cb5342eb80adb775a8ce9f98eaea94ff19c6f349986fc9fcf4e515",
+      "checkpoint": "tasks/gru_C0_seed3037/engine/best_ce.pt"
+    },
+    {
+      "task_id": "gru_C0_seed3037",
+      "family": "gru",
+      "seed": 3037,
+      "arm": "C0",
+      "policy": "f1",
+      "checkpoint_epoch": 32,
+      "checkpoint_sha256": "26f944898cc166f096300919df075929aa17436adfb3f148dfd574da182a1013",
+      "checkpoint": "tasks/gru_C0_seed3037/engine/best_f1.pt"
+    },
+    {
+      "task_id": "gru_C0_seed3037",
+      "family": "gru",
+      "seed": 3037,
+      "arm": "C0",
+      "policy": "final",
+      "checkpoint_epoch": 60,
+      "checkpoint_sha256": "e5fef74b48ecba6b57ae3cf4b449a6122da3330019dcb0627a6a38d2fde6ec18",
+      "checkpoint": "tasks/gru_C0_seed3037/final_epoch.pt"
+    },
+    {
+      "task_id": "gru_selected_seed3037",
+      "family": "gru",
+      "seed": 3037,
+      "arm": "selected",
+      "policy": "ce",
+      "checkpoint_epoch": 18,
+      "checkpoint_sha256": "01c0709d341e25e8b6f6c0f3dc2da02438eb1dba496f9f647873bbe7c0e03609",
+      "checkpoint": "tasks/gru_selected_seed3037/engine/best_ce.pt"
+    },
+    {
+      "task_id": "gru_selected_seed3037",
+      "family": "gru",
+      "seed": 3037,
+      "arm": "selected",
+      "policy": "f1",
+      "checkpoint_epoch": 30,
+      "checkpoint_sha256": "33714bbdab04bee6d001d3921a3756158e0db0ae51adcde181e8f6588607898d",
+      "checkpoint": "tasks/gru_selected_seed3037/engine/best_f1.pt"
+    },
+    {
+      "task_id": "gru_selected_seed3037",
+      "family": "gru",
+      "seed": 3037,
+      "arm": "selected",
+      "policy": "final",
+      "checkpoint_epoch": 60,
+      "checkpoint_sha256": "be5aad14f51018cc1010228043407d84f60cf8cd9ede90d4b6fab68e3fb7bf0d",
+      "checkpoint": "tasks/gru_selected_seed3037/final_epoch.pt"
+    },
+    {
+      "task_id": "transformer_C0_seed1009",
+      "family": "transformer",
+      "seed": 1009,
+      "arm": "C0",
+      "policy": "ce",
+      "checkpoint_epoch": 23,
+      "checkpoint_sha256": "d004c484549ca3702cbefcd41d1d0cd4d0c57edfd721cc17bb746b04e570d8a8",
+      "checkpoint": "tasks/transformer_C0_seed1009/engine/best_ce.pt"
+    },
+    {
+      "task_id": "transformer_C0_seed1009",
+      "family": "transformer",
+      "seed": 1009,
+      "arm": "C0",
+      "policy": "f1",
+      "checkpoint_epoch": 49,
+      "checkpoint_sha256": "4364224628c4ec0eed3f04fa94b20ef3cf736247dc3cf75a67029b55ba78871a",
+      "checkpoint": "tasks/transformer_C0_seed1009/engine/best_f1.pt"
+    },
+    {
+      "task_id": "transformer_C0_seed1009",
+      "family": "transformer",
+      "seed": 1009,
+      "arm": "C0",
+      "policy": "final",
+      "checkpoint_epoch": 60,
+      "checkpoint_sha256": "614a2946756a9a3dbc19aa4b7ab8f4f746964436eae05014c3c8d6d6f2ba3fc7",
+      "checkpoint": "tasks/transformer_C0_seed1009/final_epoch.pt"
+    },
+    {
+      "task_id": "transformer_selected_seed1009",
+      "family": "transformer",
+      "seed": 1009,
+      "arm": "selected",
+      "policy": "ce",
+      "checkpoint_epoch": 24,
+      "checkpoint_sha256": "7e6f7bb3e746f308769fff57f476cfacf311a93823c9c694b29cea8422846634",
+      "checkpoint": "tasks/transformer_selected_seed1009/engine/best_ce.pt"
+    },
+    {
+      "task_id": "transformer_selected_seed1009",
+      "family": "transformer",
+      "seed": 1009,
+      "arm": "selected",
+      "policy": "f1",
+      "checkpoint_epoch": 28,
+      "checkpoint_sha256": "9f9b8817d20bd27a358dcc15c808760da9b34841ba5670e9761d41536bb2b8e7",
+      "checkpoint": "tasks/transformer_selected_seed1009/engine/best_f1.pt"
+    },
+    {
+      "task_id": "transformer_selected_seed1009",
+      "family": "transformer",
+      "seed": 1009,
+      "arm": "selected",
+      "policy": "final",
+      "checkpoint_epoch": 60,
+      "checkpoint_sha256": "2f33d6cf5691ca0a93945b8e8890057903dbe283e15e24d9062fec5f2d96d0f0",
+      "checkpoint": "tasks/transformer_selected_seed1009/final_epoch.pt"
+    },
+    {
+      "task_id": "transformer_selected_seed2027",
+      "family": "transformer",
+      "seed": 2027,
+      "arm": "selected",
+      "policy": "ce",
+      "checkpoint_epoch": 23,
+      "checkpoint_sha256": "9010d1315cd69e735a864e8feaba96310c3a62313cf6d86320e71408047f3eec",
+      "checkpoint": "tasks/transformer_selected_seed2027/engine/best_ce.pt"
+    },
+    {
+      "task_id": "transformer_selected_seed2027",
+      "family": "transformer",
+      "seed": 2027,
+      "arm": "selected",
+      "policy": "f1",
+      "checkpoint_epoch": 54,
+      "checkpoint_sha256": "e8436d6084bb8513dc5782458b8c9e7dea52f8a0383702d110665a83bf869953",
+      "checkpoint": "tasks/transformer_selected_seed2027/engine/best_f1.pt"
+    },
+    {
+      "task_id": "transformer_selected_seed2027",
+      "family": "transformer",
+      "seed": 2027,
+      "arm": "selected",
+      "policy": "final",
+      "checkpoint_epoch": 60,
+      "checkpoint_sha256": "c86c0167b3ec09fe57c540f78be61a233e7dffb25d5637d3a815066b93e45286",
+      "checkpoint": "tasks/transformer_selected_seed2027/final_epoch.pt"
+    },
+    {
+      "task_id": "transformer_C0_seed2027",
+      "family": "transformer",
+      "seed": 2027,
+      "arm": "C0",
+      "policy": "ce",
+      "checkpoint_epoch": 20,
+      "checkpoint_sha256": "2b8a45a956c8cecfbef62a2952d170ab4d2cd8bdfe86a8190df4121d5f4b5ea3",
+      "checkpoint": "tasks/transformer_C0_seed2027/engine/best_ce.pt"
+    },
+    {
+      "task_id": "transformer_C0_seed2027",
+      "family": "transformer",
+      "seed": 2027,
+      "arm": "C0",
+      "policy": "f1",
+      "checkpoint_epoch": 43,
+      "checkpoint_sha256": "78d37fb16b50068b67f3c3e0da4d6907ffe1739bb904fce9594bb7ef65a793a1",
+      "checkpoint": "tasks/transformer_C0_seed2027/engine/best_f1.pt"
+    },
+    {
+      "task_id": "transformer_C0_seed2027",
+      "family": "transformer",
+      "seed": 2027,
+      "arm": "C0",
+      "policy": "final",
+      "checkpoint_epoch": 60,
+      "checkpoint_sha256": "f70b528a24b9824a35cfdf28544c548e6c91424285f129d5d5a13e18b3fba76f",
+      "checkpoint": "tasks/transformer_C0_seed2027/final_epoch.pt"
+    },
+    {
+      "task_id": "transformer_C0_seed3037",
+      "family": "transformer",
+      "seed": 3037,
+      "arm": "C0",
+      "policy": "ce",
+      "checkpoint_epoch": 19,
+      "checkpoint_sha256": "9d819af91f45f0d573a68875565fd45b153957df00b267994ad4236d228ac76e",
+      "checkpoint": "tasks/transformer_C0_seed3037/engine/best_ce.pt"
+    },
+    {
+      "task_id": "transformer_C0_seed3037",
+      "family": "transformer",
+      "seed": 3037,
+      "arm": "C0",
+      "policy": "f1",
+      "checkpoint_epoch": 30,
+      "checkpoint_sha256": "ca98f69f733ed1015baa19abc81d299d9e6af0eba6f59c4ad8ccab290dd673d6",
+      "checkpoint": "tasks/transformer_C0_seed3037/engine/best_f1.pt"
+    },
+    {
+      "task_id": "transformer_C0_seed3037",
+      "family": "transformer",
+      "seed": 3037,
+      "arm": "C0",
+      "policy": "final",
+      "checkpoint_epoch": 60,
+      "checkpoint_sha256": "550832ed123740d25bf1cbc922ddea929bf67a60a9bb6e5f8e81599048db5cd5",
+      "checkpoint": "tasks/transformer_C0_seed3037/final_epoch.pt"
+    },
+    {
+      "task_id": "transformer_selected_seed3037",
+      "family": "transformer",
+      "seed": 3037,
+      "arm": "selected",
+      "policy": "ce",
+      "checkpoint_epoch": 22,
+      "checkpoint_sha256": "32482989667f84dedc205d648d83ce9dc4d25d64bef9cd1206e6fc7290b0c4d8",
+      "checkpoint": "tasks/transformer_selected_seed3037/engine/best_ce.pt"
+    },
+    {
+      "task_id": "transformer_selected_seed3037",
+      "family": "transformer",
+      "seed": 3037,
+      "arm": "selected",
+      "policy": "f1",
+      "checkpoint_epoch": 60,
+      "checkpoint_sha256": "d723a58a07e7c0f3db87fae18c6fd53f0cc508fbc56dc81185c3aec7d86b2ba9",
+      "checkpoint": "tasks/transformer_selected_seed3037/engine/best_f1.pt"
+    },
+    {
+      "task_id": "transformer_selected_seed3037",
+      "family": "transformer",
+      "seed": 3037,
+      "arm": "selected",
+      "policy": "final",
+      "checkpoint_epoch": 60,
+      "checkpoint_sha256": "3af2829bd9a30e275d47704305025f711804a82e53d8d5cad10dfa17ad9e5858",
+      "checkpoint": "tasks/transformer_selected_seed3037/final_epoch.pt"
+    }
+  ],
+  "primary_policy": "final",
+  "primary_contrast": "selected_minus_C0",
+  "primary_family": "cnn",
+  "audit_labels_accessed_by_this_package": false,
+  "scope": "All models and contrasts frozen before an external prospective audit; no per-audit winner selection.",
+  "lock_sha256": "e4fe9e701e22f595e40a8065c97acf5b54160901cf71b7bfa366c35f9e5021c6"
+}

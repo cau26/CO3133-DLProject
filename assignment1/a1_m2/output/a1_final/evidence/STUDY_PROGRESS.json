@@ -1,0 +1,257 @@
+{
+  "status": "COMPLETE",
+  "completed_tasks": 61,
+  "maximum_tasks": 61,
+  "known_tasks": 61,
+  "tasks": [
+    {
+      "task_id": "discovery_linear_C0_seed101",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "discovery_linear_C1_seed101",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "discovery_linear_C2_seed101",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "discovery_linear_C3_seed101",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "discovery_mlp_C0_seed101",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "discovery_mlp_C1_seed101",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "discovery_mlp_C2_seed101",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "discovery_mlp_C3_seed101",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "discovery_mlp_C4_seed101",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "discovery_mlp_C5_seed101",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "discovery_mlp_C6_seed101",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "discovery_mlp_C7_seed101",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "discovery_cnn_C0_seed101",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "discovery_cnn_C1_seed101",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "discovery_cnn_C2_seed101",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "discovery_cnn_C3_seed101",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "discovery_cnn_C4_seed101",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "discovery_cnn_C5_seed101",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "discovery_cnn_C6_seed101",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "discovery_cnn_C7_seed101",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "discovery_gru_C0_seed101",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "discovery_gru_C1_seed101",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "discovery_gru_C2_seed101",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "discovery_gru_C3_seed101",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "discovery_gru_C4_seed101",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "discovery_gru_C5_seed101",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "discovery_gru_C6_seed101",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "discovery_gru_C7_seed101",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "discovery_transformer_C0_seed101",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "discovery_transformer_C1_seed101",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "discovery_transformer_C2_seed101",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "discovery_transformer_C3_seed101",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "discovery_transformer_C4_seed101",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "discovery_transformer_C5_seed101",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "discovery_transformer_C6_seed101",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "discovery_transformer_C7_seed101",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "confirmation_linear_C0_seed202",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "confirmation_linear_C1_seed202",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "confirmation_mlp_C0_seed202",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "confirmation_mlp_C7_seed202",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "confirmation_cnn_C0_seed202",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "confirmation_cnn_C5_seed202",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "confirmation_gru_C0_seed202",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "confirmation_gru_C1_seed202",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "confirmation_transformer_C0_seed202",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "confirmation_transformer_C1_seed202",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "final_linear_C1_seed42",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "final_linear_C1_seed43",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "final_linear_C1_seed44",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "final_mlp_C7_seed42",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "final_mlp_C7_seed43",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "final_mlp_C7_seed44",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "final_cnn_C5_seed42",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "final_cnn_C5_seed43",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "final_cnn_C5_seed44",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "final_gru_C1_seed42",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "final_gru_C1_seed43",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "final_gru_C1_seed44",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "final_transformer_C1_seed42",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "final_transformer_C1_seed43",
+      "state": "COMPLETE"
+    },
+    {
+      "task_id": "final_transformer_C1_seed44",
+      "state": "COMPLETE"
+    }
+  ],
+  "clock": {
+    "active_run_seconds": 30029.089648856003,
+    "budget_seconds": 604800,
+    "scope": "Controller process monotonic heartbeat; setup/smoke excluded; abrupt final tail may be unrecorded"
+  }
+}

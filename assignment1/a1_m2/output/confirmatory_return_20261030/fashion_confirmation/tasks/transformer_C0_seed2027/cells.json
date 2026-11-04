@@ -1,0 +1,50 @@
+[
+  {
+    "task_id": "transformer_C0_seed2027",
+    "family": "transformer",
+    "seed": 2027,
+    "arm": "C0",
+    "candidate_id": "C0",
+    "policy": "ce",
+    "checkpoint_epoch": 20,
+    "checkpoint": "engine/best_ce.pt",
+    "checkpoint_sha256": "2b8a45a956c8cecfbef62a2952d170ab4d2cd8bdfe86a8190df4121d5f4b5ea3",
+    "loss": 0.2617002502175746,
+    "accuracy": 0.9073333333333333,
+    "macro_f1": 0.9075333282001227,
+    "n_examples": 6000,
+    "evaluation_scope": "previously_seen_old_validation_exploratory"
+  },
+  {
+    "task_id": "transformer_C0_seed2027",
+    "family": "transformer",
+    "seed": 2027,
+    "arm": "C0",
+    "candidate_id": "C0",
+    "policy": "f1",
+    "checkpoint_epoch": 43,
+    "checkpoint": "engine/best_f1.pt",
+    "checkpoint_sha256": "78d37fb16b50068b67f3c3e0da4d6907ffe1739bb904fce9594bb7ef65a793a1",
+    "loss": 0.3238068365680401,
+    "accuracy": 0.9083333333333333,
+    "macro_f1": 0.9085880097883201,
+    "n_examples": 6000,
+    "evaluation_scope": "previously_seen_old_validation_exploratory"
+  },
+  {
+    "task_id": "transformer_C0_seed2027",
+    "family": "transformer",
+    "seed": 2027,
+    "arm": "C0",
+    "candidate_id": "C0",
+    "policy": "final",
+    "checkpoint_epoch": 60,
+    "checkpoint": "final_epoch.pt",
+    "checkpoint_sha256": "f70b528a24b9824a35cfdf28544c548e6c91424285f129d5d5a13e18b3fba76f",
+    "loss": 0.392623552113366,
+    "accuracy": 0.8995,
+    "macro_f1": 0.899418160220218,
+    "n_examples": 6000,
+    "evaluation_scope": "previously_seen_old_validation_exploratory"
+  }
+]

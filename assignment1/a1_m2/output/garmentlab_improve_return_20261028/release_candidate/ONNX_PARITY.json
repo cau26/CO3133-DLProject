@@ -1,0 +1,35 @@
+{
+  "status": "pass",
+  "scope": "CPU FP32 tensor-logit parity after choices frozen; no assessment-driven model selection.",
+  "max_abs_tolerance": 0.0001,
+  "export_settings": {
+    "dynamo": true,
+    "optimize": false,
+    "opset_version": 18,
+    "external_data": false,
+    "onnxruntime_graph_optimization_level": "ORT_ENABLE_ALL",
+    "onnxruntime_providers": [
+      "CPUExecutionProvider"
+    ],
+    "onnxruntime_intra_op_num_threads": 1,
+    "onnxruntime_inter_op_num_threads": 1
+  },
+  "runtime": {
+    "torch": "2.11.0+cu130",
+    "onnxruntime": "1.31.0"
+  },
+  "maximum_absolute_error": 9.196996688842773e-05,
+  "top1_disagreements": 0,
+  "batch_sizes": [
+    1,
+    3,
+    64
+  ],
+  "distinct_assessment_cases": 64,
+  "model_sha256": "de446d941e9757a4351ef6639409320804701fbe3361bf9b390f44d794d45fa6",
+  "declared_batch_range": [
+    1,
+    128
+  ],
+  "tested_batch_range_is_only_the_recorded_sizes": true
+}

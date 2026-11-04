@@ -1,0 +1,49 @@
+{
+  "status": "COMPLETE",
+  "task_sha256": "fc97f18866af4af8175e971561556ffa183323034a803081cae809fd5a5105e4",
+  "binding_sha256": "c0c6e9a2050508ef9296524564ba0058c43f3cd2b99b0ae25d19627c7d31e60f",
+  "metrics": {
+    "task_id": "gru_selected_seed2027",
+    "family": "gru",
+    "phase": "matched_confirmation",
+    "seed": 2027,
+    "parameters": 61962,
+    "selection_rule": "max_macro_f1_then_min_ce_then_earliest_epoch",
+    "best_f1_epoch": 28,
+    "best_f1_metrics": {
+      "loss": 0.2551403386031141,
+      "accuracy": 0.9155,
+      "macro_f1": 0.9152587533056057,
+      "n_examples": 6000
+    },
+    "best_ce_epoch": 23,
+    "best_ce_metrics": {
+      "loss": 0.25167122645334433,
+      "accuracy": 0.915,
+      "macro_f1": 0.9147764981593897,
+      "n_examples": 6000
+    },
+    "epochs_completed": 60,
+    "optimizer_updates": 25320,
+    "n_train": 54000,
+    "n_validation": 6000,
+    "fit_wall_seconds": 479.31532687800063,
+    "fit_timer_scope": "completed epochs: train + validation + in-memory checkpoint selection; excludes setup, transaction writes, finalization, discarded crash work",
+    "training_loop_seconds": 438.47411880399704,
+    "validation_seconds": 40.77062890501111,
+    "scope": "validation_only_exploratory_no_official_test",
+    "task_sha256": "fc97f18866af4af8175e971561556ffa183323034a803081cae809fd5a5105e4",
+    "binding_sha256": "c0c6e9a2050508ef9296524564ba0058c43f3cd2b99b0ae25d19627c7d31e60f",
+    "finalization_seconds_before_metrics_write": 0.828913929999544
+  },
+  "artifacts_sha256": {
+    "TASK.json": "9d249956977d8417e83e2dfdd482532917dab954c7a2575e4b9b3682b1d5f8f5",
+    "history.csv": "6791fb5b244094a0bdf27fad96361f1331e882e928fea2d202cdd3ed3e2ff1c3",
+    "predictions.csv": "363bbcf597c8f67433d43321f648a264f5c37f2af4fdf805b04165fe9ad8a3bb",
+    "metrics.json": "09fde90da72e1da2983afab8aa214b5941cd3147cecabcf8d2e9e1cf0c6092cd",
+    "best_f1.pt": "93f916c358bd9325d58dac3034d2838245dcb1f6797fe1b46d735d6424cfeef8",
+    "best_ce.pt": "fbdca2723d18ab91cf7e2415a56a18c4cb986329b53663ba1f31311c895f4f02",
+    "COMMIT.json": "61e9b10c0fff10cb10ae32d7a8230b2bfa4cae7fccfd5a9f357686380005449d",
+    "state-0060-fd56af9a5c324524a9baf2dc225a1721.pt": "bb78625d37ea14ae0fd302fcaa8d14880c2889179be95b800353e9c33f70889e"
+  }
+}

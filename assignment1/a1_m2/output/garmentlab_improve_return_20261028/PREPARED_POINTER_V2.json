@@ -1,0 +1,13 @@
+{
+  "prepared_dir": "/content/garmentlab_improve_work_016b81f5f6ce/prepared",
+  "bindings": {
+    "images_uint8.npy": "c9ba2ec047594062ab38d7d7d0e5376363c61c86ebf8eb24992f0479c3204b27",
+    "labels.npy": "7bd6f836c34ca005b69a962564845b78f6e054de0c44a51db2bda37bf50a3d61",
+    "roles.npy": "65227362fe6541996c2a5938126040c0b36249c24e5b1c751ac54fe458137d23",
+    "index_manifest.json": "cacb96a7d87529dce147a7e73237eec410ba29ed437b0d464cfca57fc9509637",
+    "DATA_READINESS.json": "1f8c4ac24b7f71966658749a708f8eed2aed8d492d077628fcc395d802a0422f"
+  },
+  "scope": "Same original arrays and four roles; metadata for this reconstruction is recorded separately.",
+  "original_arrays_identical": true,
+  "smoke_only": false
+}

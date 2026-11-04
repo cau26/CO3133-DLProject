@@ -1,0 +1,28 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1,T5]{fontenc}
+\else
+  \usepackage{fontspec}
+  \setmainfont{texgyretermes-regular.otf}[
+    BoldFont=texgyretermes-bold.otf,
+    ItalicFont=texgyretermes-italic.otf,
+    BoldItalicFont=texgyretermes-bolditalic.otf]
+  \setsansfont{texgyreheros-regular.otf}[
+    BoldFont=texgyreheros-bold.otf,
+    ItalicFont=texgyreheros-italic.otf,
+    BoldItalicFont=texgyreheros-bolditalic.otf]
+  \setmonofont{lmmono10-regular.otf}
+\fi
+\usepackage{graphicx,booktabs,longtable,tabularx,amsmath,amssymb,geometry,xcolor,hyperref,caption,float,fancyhdr,enumitem}
+\geometry{margin=24mm}
+\definecolor{navy}{HTML}{17344B}
+\definecolor{teal}{HTML}{007D83}
+\hypersetup{hypertexnames=false,colorlinks=true,linkcolor=navy,urlcolor=teal,citecolor=teal}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlength{\emergencystretch}{2em}
+\begin{document}
+\input{report.tex}
+\end{document}

@@ -1,0 +1,23 @@
+{
+  "recorded_at_utc": "2026-10-20T15:38:29.849222+00:00",
+  "python": "3.13.15 (main, Aug  6 2026, 11:06:22) [GCC 13.3.0]",
+  "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+  "cpu": "Intel(R) Xeon(R) CPU @ 2.20GHz",
+  "logical_cpu_count": 12,
+  "torch_threads": 6,
+  "device": "cuda:0",
+  "cuda_runtime": "13.0",
+  "cudnn_version": 92700,
+  "deterministic_algorithms": true,
+  "gpu": "NVIDIA A100-SXM4-40GB",
+  "versions": {
+    "torch": "2.11.0+cu130",
+    "torchvision": "0.26.0+cu130",
+    "numpy": "2.1.3",
+    "matplotlib": "3.10.0",
+    "scikit-learn": "1.6.1"
+  },
+  "source_commit_confirmed_in_notebook": "caa22313198b91cd4bd6aeb86a8604b8dfb2ddac",
+  "notebook_operator": "Trần Gia Lâm (student-run; team to verify execution)",
+  "nvidia_smi": "Tue Oct 20 15:38:30 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 580.82.07              Driver Version: 580.82.07      CUDA Version: 13.0     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA A100-SXM4-40GB          Off |   00000000:00:04.0 Off |                    0 |\n| N/A   33C    P0             47W /  400W |       6MiB /  40960MiB |      0%      Default |\n|                                         |                        |             Disabled |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|  No running processes found                                                             |\n+-----------------------------------------------------------------------------------------+\n"
+}

@@ -1,0 +1,279 @@
+{
+  "status": "PASS_LOCAL_PYTORCH_SERVICE_WITH_ONNX_LIMITATION",
+  "verified_utc": "2026-10-28T11:20:30.697565+00:00",
+  "release_id": "g_m10_garmentlab_controlled_v2-C4-seed314",
+  "primary_service_backend": "PyTorch CPU, not ONNX Runtime",
+  "weights_sha256": "74b618510179bb905a725b6620b63beb7d8a796bb034e754d4ca593e890d6b05",
+  "pytorch_full327_numerical_regression": {
+    "status": "pass",
+    "maximum_absolute_error": 5.340576171875e-05,
+    "max_abs_tolerance": 0.0001,
+    "top1_disagreements": 0,
+    "samples": 327,
+    "maximum_probability_error": 1.622348913099536e-06,
+    "maximum_confidence_error": 1.622348913099536e-06,
+    "accepted_decision_disagreements": 0,
+    "accepted_count": 182
+  },
+  "png_predictor_cases": {
+    "count": 7,
+    "all_passed": true
+  },
+  "in_process_http_contracts": [
+    {
+      "name": "health",
+      "passed": true
+    },
+    {
+      "name": "models",
+      "passed": true
+    },
+    {
+      "name": "predict_accept",
+      "array_index": 17500,
+      "passed": true,
+      "status_code": 200
+    },
+    {
+      "name": "predict_review",
+      "array_index": 17501,
+      "passed": true,
+      "status_code": 200
+    },
+    {
+      "name": "missing_crop_rejected",
+      "passed": true
+    },
+    {
+      "name": "absent_reference_not_substituted",
+      "passed": true
+    }
+  ],
+  "real_http_phases": [
+    {
+      "kind": "supported_concurrency",
+      "concurrency": 1,
+      "summary": {
+        "requests": 120,
+        "elapsed_seconds": 2.535322400042787,
+        "attempted_requests_per_second": 47.33125854052125,
+        "successful_predictions_per_second": 47.33125854052125,
+        "status_counts": {
+          "200": 120
+        },
+        "successful_prediction_client_e2e": {
+          "count": 120,
+          "p50_ms": 22.243550047278404,
+          "p95_ms": 28.084844979457557,
+          "p99_ms": 29.6894099470228,
+          "maximum_ms": 30.163099989295006
+        },
+        "all_response_client_e2e": {
+          "count": 120,
+          "p50_ms": 22.243550047278404,
+          "p95_ms": 28.084844979457557,
+          "p99_ms": 29.6894099470228,
+          "maximum_ms": 30.163099989295006
+        },
+        "predictor_decode_preprocess": {
+          "count": 120,
+          "p50_ms": 7.558299927040935,
+          "p95_ms": 10.508530132938176,
+          "p99_ms": 10.982058041263372,
+          "maximum_ms": 11.263199849054217
+        },
+        "predictor_forward": {
+          "count": 120,
+          "p50_ms": 8.64690006710589,
+          "p95_ms": 9.841304912697524,
+          "p99_ms": 10.915214079432191,
+          "maximum_ms": 11.079400079324841
+        },
+        "busy_responses": 0,
+        "unexpected_failures": 0
+      }
+    },
+    {
+      "kind": "supported_concurrency",
+      "concurrency": 2,
+      "summary": {
+        "requests": 120,
+        "elapsed_seconds": 1.320431600091979,
+        "attempted_requests_per_second": 90.8793761006939,
+        "successful_predictions_per_second": 90.8793761006939,
+        "status_counts": {
+          "200": 120
+        },
+        "successful_prediction_client_e2e": {
+          "count": 120,
+          "p50_ms": 20.936699933372438,
+          "p95_ms": 30.30822492437437,
+          "p99_ms": 39.871177056338645,
+          "maximum_ms": 41.821999941021204
+        },
+        "all_response_client_e2e": {
+          "count": 120,
+          "p50_ms": 20.936699933372438,
+          "p95_ms": 30.30822492437437,
+          "p99_ms": 39.871177056338645,
+          "maximum_ms": 41.821999941021204
+        },
+        "predictor_decode_preprocess": {
+          "count": 120,
+          "p50_ms": 7.104150019586086,
+          "p95_ms": 9.497054887469858,
+          "p99_ms": 10.335052993614227,
+          "maximum_ms": 10.908500058576465
+        },
+        "predictor_forward": {
+          "count": 120,
+          "p50_ms": 7.747000083327293,
+          "p95_ms": 15.24316989816725,
+          "p99_ms": 22.218732908368118,
+          "maximum_ms": 23.24200002476573
+        },
+        "busy_responses": 0,
+        "unexpected_failures": 0
+      }
+    },
+    {
+      "kind": "overload_probe",
+      "concurrency": 8,
+      "summary": {
+        "requests": 24,
+        "elapsed_seconds": 0.18736739992164075,
+        "attempted_requests_per_second": 128.09058571574928,
+        "successful_predictions_per_second": 48.03396964340598,
+        "status_counts": {
+          "200": 9,
+          "503": 15
+        },
+        "successful_prediction_client_e2e": {
+          "count": 9,
+          "p50_ms": 65.00529986806214,
+          "p95_ms": 104.35593989677727,
+          "p99_ms": 105.24294790811837,
+          "maximum_ms": 105.46469991095364
+        },
+        "all_response_client_e2e": {
+          "count": 24,
+          "p50_ms": 53.96074987947941,
+          "p95_ms": 102.85064498893917,
+          "p99_ms": 104.86987393349409,
+          "maximum_ms": 105.46469991095364
+        },
+        "predictor_decode_preprocess": {
+          "count": 9,
+          "p50_ms": 8.488200139254332,
+          "p95_ms": 10.269439965486526,
+          "p99_ms": 10.404927879571915,
+          "maximum_ms": 10.438799858093262
+        },
+        "predictor_forward": {
+          "count": 9,
+          "p50_ms": 11.22179999947548,
+          "p95_ms": 19.3584599532187,
+          "p99_ms": 19.517212007194757,
+          "maximum_ms": 19.556900020688772
+        },
+        "busy_responses": 15,
+        "unexpected_failures": 0
+      }
+    },
+    {
+      "kind": "soak_supported_concurrency",
+      "concurrency": 2,
+      "summary": {
+        "requests": 5312,
+        "elapsed_seconds": 60.01433959999122,
+        "attempted_requests_per_second": 88.512179512524,
+        "successful_predictions_per_second": 88.512179512524,
+        "status_counts": {
+          "200": 5312
+        },
+        "successful_prediction_client_e2e": {
+          "count": 5312,
+          "p50_ms": 21.69704996049404,
+          "p95_ms": 31.432055053301156,
+          "p99_ms": 36.931333108805134,
+          "maximum_ms": 50.47100014053285
+        },
+        "all_response_client_e2e": {
+          "count": 5312,
+          "p50_ms": 21.69704996049404,
+          "p95_ms": 31.432055053301156,
+          "p99_ms": 36.931333108805134,
+          "maximum_ms": 50.47100014053285
+        },
+        "predictor_decode_preprocess": {
+          "count": 5312,
+          "p50_ms": 7.41540000308305,
+          "p95_ms": 10.172790044452995,
+          "p99_ms": 11.504035845864568,
+          "maximum_ms": 15.498700086027384
+        },
+        "predictor_forward": {
+          "count": 5312,
+          "p50_ms": 8.155100047588348,
+          "p95_ms": 14.630315045360476,
+          "p99_ms": 18.98029106669128,
+          "maximum_ms": 27.902300003916025
+        },
+        "busy_responses": 0,
+        "unexpected_failures": 0
+      }
+    }
+  ],
+  "invalid_input_contracts": [
+    {
+      "name": "missing_crop",
+      "expected_status": 400,
+      "observed_status": 400,
+      "passed": true
+    },
+    {
+      "name": "invalid_jpeg",
+      "expected_status": 400,
+      "observed_status": 400,
+      "passed": true
+    },
+    {
+      "name": "unsupported_media_type",
+      "expected_status": 415,
+      "observed_status": 415,
+      "passed": true
+    },
+    {
+      "name": "oversized_upload",
+      "expected_status": 413,
+      "observed_status": 413,
+      "passed": true
+    }
+  ],
+  "onnx_expanded_regression": {
+    "status": "fail",
+    "maximum_absolute_error": 0.0001354217529296875,
+    "max_abs_tolerance": 0.0001,
+    "top1_disagreements": 0,
+    "samples": 327,
+    "maximum_probability_error": 7.639024602379418e-06,
+    "maximum_confidence_error": 7.639024602379418e-06,
+    "accepted_decision_disagreements": 0,
+    "accepted_count": 182
+  },
+  "additional_onnx_variants_attempted": 3,
+  "additional_onnx_variants_passed": 0,
+  "original_return_preserved": true,
+  "receipts": {
+    "GARMENTLAB_IMPROVE_LOCAL_CPU_20261028.json": "71560f959afe5cc5872aea07f16cd6300772ba0bfc23491677ead142efd6a927",
+    "GARMENTLAB_IMPROVE_LOCAL_HTTP_20261028.json": "29d1b581a91707163d34ab676c922b98e09d313778134e2029f168f7853b6c82",
+    "GARMENTLAB_IMPROVE_LOCAL_DERIVED_CPU_20261028.json": "01ee4b7bb8b2b65cfdefe6d8133a83236205e374131f19ae5b4322d6d72b1bbb"
+  },
+  "limitations": [
+    "Existing ONNX artifact passed the original64case protocol but fails the expanded all327 fixed1e-4 protocol; it must not be described as fully verified or used as the primary service backend.",
+    "No original modelweights/calibration/threshold were changed. No numerical tolerance was relaxed and no training performed.",
+    "Local truecleanvenv torch2.10CPU differsfromColab2.11; zero label/reviewdifferences measuredonrecorded327crops are finiteevidence only.",
+    "Two sourceJPEG/cropcases on Windowsloopback with a60secondsoak are not hostedSLA, productionreliability or newimagequality evidence.",
+    "Do not compare these timings with earlier v1 results as a controlled model speedup: machine state and timing populations differ."
+  ]
+}

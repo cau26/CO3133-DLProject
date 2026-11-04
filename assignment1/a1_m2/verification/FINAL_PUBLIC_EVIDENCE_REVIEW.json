@@ -1,0 +1,8 @@
+{
+  "status": "PASS_PUBLIC_EVIDENCE_AND_METRICS",
+  "files": 333,
+  "tasks": 61,
+  "prediction_rows": 338400,
+  "final_seeds_per_family": 3,
+  "scope": "Byte hashes, saved-prediction metrics/NLL aggregation and final mean/sample SD; no model inference or checkpoint deserialization."
+}

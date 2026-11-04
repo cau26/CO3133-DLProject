@@ -1,0 +1,493 @@
+{
+  "schema": "garmentlab_recovery_return_protocol_review_v1",
+  "returned_zip": "C:\\Users\\ADMIN\\Downloads\\g_m10_garmentlab_recovery_run01_results.zip",
+  "returned_zip_sha256": "662b2fe873223abf25fe48c4ece51c1c3d5738af97a1602d893525de0d53f2a4",
+  "returned_zip_bytes": 155511201,
+  "status": "PASS_PROTOCOL_AND_PROVENANCE_REVIEW_CANDIDATE_NOT_READY",
+  "passed": 38,
+  "total": 38,
+  "checks": [
+    {
+      "name": "all_return_members_pass_crc",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "unique_member_names",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "safe_member_paths",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "manifest_member_set_exact",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "all_payload_sizes_hashes_exact",
+      "passed": true,
+      "details": {
+        "payload_count": 208,
+        "bad": []
+      }
+    },
+    {
+      "name": "original_archive_identity_exact",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "delivered_recovery_source_identity_exact",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "all_original_members_byte_exact_via_map",
+      "passed": true,
+      "details": {
+        "original_member_count": 69,
+        "changed": []
+      }
+    },
+    {
+      "name": "every_recorded_patch_file_matches_delivered_source",
+      "passed": true,
+      "details": {
+        "snapshot_count": 14,
+        "bad": []
+      }
+    },
+    {
+      "name": "training_implementation_unchanged",
+      "passed": true,
+      "details": "b46c52fd58cfbf737b148b6244aa6622baf42454df1a8195f6d79ebd78e92c6d"
+    },
+    {
+      "name": "original_study_binding_exact",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "all_six_original_training_tasks_complete",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "frozen_seed314_original_selection_rule_and_strict_recheck",
+      "passed": true,
+      "details": {
+        "best_epoch": 12,
+        "delta": {
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "loss": 9.887478169545716e-09
+        },
+        "task_hashes_exact": true
+      }
+    },
+    {
+      "name": "finetune_seed314_original_selection_rule_and_strict_recheck",
+      "passed": true,
+      "details": {
+        "best_epoch": 15,
+        "delta": {
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "loss": 2.139601851247619e-08
+        },
+        "task_hashes_exact": true
+      }
+    },
+    {
+      "name": "frozen_seed2718_original_selection_rule_and_strict_recheck",
+      "passed": true,
+      "details": {
+        "best_epoch": 7,
+        "delta": {
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "loss": 2.9705227166942905e-10
+        },
+        "task_hashes_exact": true
+      }
+    },
+    {
+      "name": "finetune_seed2718_original_selection_rule_and_strict_recheck",
+      "passed": true,
+      "details": {
+        "best_epoch": 9,
+        "delta": {
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "loss": 1.6220228826746563e-08
+        },
+        "task_hashes_exact": true
+      }
+    },
+    {
+      "name": "frozen_seed5772_original_selection_rule_and_strict_recheck",
+      "passed": true,
+      "details": {
+        "best_epoch": 14,
+        "delta": {
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "loss": 1.8416090874495694e-09
+        },
+        "task_hashes_exact": true
+      }
+    },
+    {
+      "name": "finetune_seed5772_original_selection_rule_and_strict_recheck",
+      "passed": true,
+      "details": {
+        "best_epoch": 15,
+        "delta": {
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "loss": 1.0490898594284204e-08
+        },
+        "task_hashes_exact": true
+      }
+    },
+    {
+      "name": "backend_bound_to_freeze_and_summary",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "training_fp32_deterministic_backend_restored",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "original_training_environment_verified",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "all_22_inference_receipts_have_expected_backend_device_batch_and_logits_hash",
+      "passed": true,
+      "details": [
+        {
+          "receipt": "evaluation/calibration/LOGITS_RECEIPT.json",
+          "passed": true
+        },
+        {
+          "receipt": "evaluation/corruptions/blur_severity1/LOGITS_RECEIPT.json",
+          "passed": true
+        },
+        {
+          "receipt": "evaluation/corruptions/blur_severity2/LOGITS_RECEIPT.json",
+          "passed": true
+        },
+        {
+          "receipt": "evaluation/corruptions/blur_severity3/LOGITS_RECEIPT.json",
+          "passed": true
+        },
+        {
+          "receipt": "evaluation/corruptions/noise_severity1/LOGITS_RECEIPT.json",
+          "passed": true
+        },
+        {
+          "receipt": "evaluation/corruptions/noise_severity2/LOGITS_RECEIPT.json",
+          "passed": true
+        },
+        {
+          "receipt": "evaluation/corruptions/noise_severity3/LOGITS_RECEIPT.json",
+          "passed": true
+        },
+        {
+          "receipt": "evaluation/corruptions/translation_severity1/LOGITS_RECEIPT.json",
+          "passed": true
+        },
+        {
+          "receipt": "evaluation/corruptions/translation_severity2/LOGITS_RECEIPT.json",
+          "passed": true
+        },
+        {
+          "receipt": "evaluation/corruptions/translation_severity3/LOGITS_RECEIPT.json",
+          "passed": true
+        },
+        {
+          "receipt": "evaluation/finetune_seed2718/assessment/LOGITS_RECEIPT.json",
+          "passed": true
+        },
+        {
+          "receipt": "evaluation/finetune_seed2718/selection/LOGITS_RECEIPT.json",
+          "passed": true
+        },
+        {
+          "receipt": "evaluation/finetune_seed314/assessment/LOGITS_RECEIPT.json",
+          "passed": true
+        },
+        {
+          "receipt": "evaluation/finetune_seed314/selection/LOGITS_RECEIPT.json",
+          "passed": true
+        },
+        {
+          "receipt": "evaluation/finetune_seed5772/assessment/LOGITS_RECEIPT.json",
+          "passed": true
+        },
+        {
+          "receipt": "evaluation/finetune_seed5772/selection/LOGITS_RECEIPT.json",
+          "passed": true
+        },
+        {
+          "receipt": "evaluation/frozen_seed2718/assessment/LOGITS_RECEIPT.json",
+          "passed": true
+        },
+        {
+          "receipt": "evaluation/frozen_seed2718/selection/LOGITS_RECEIPT.json",
+          "passed": true
+        },
+        {
+          "receipt": "evaluation/frozen_seed314/assessment/LOGITS_RECEIPT.json",
+          "passed": true
+        },
+        {
+          "receipt": "evaluation/frozen_seed314/selection/LOGITS_RECEIPT.json",
+          "passed": true
+        },
+        {
+          "receipt": "evaluation/frozen_seed5772/assessment/LOGITS_RECEIPT.json",
+          "passed": true
+        },
+        {
+          "receipt": "evaluation/frozen_seed5772/selection/LOGITS_RECEIPT.json",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "name": "recipe_chosen_only_by_mean_selection_f1",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "deployment_seed_fixed_before_assessment",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "freeze_hash_bound_to_release_receipt",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "calibration_and_threshold_binding_match_freeze",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "data_reconstitution_preserves_original_bindings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "reconstitution_reports_no_training",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "finalized_weights_are_original_fixed_seed_checkpoint",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "audited_code_freezes_before_assessment_loop",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "archived_file_times_corroborate_freeze_before_all_assessments",
+      "passed": true,
+      "details": {
+        "freeze_time": [
+          2026,
+          10,
+          27,
+          22,
+          35,
+          18
+        ],
+        "assessment_times": [
+          [
+            2026,
+            10,
+            27,
+            22,
+            35,
+            34
+          ],
+          [
+            2026,
+            10,
+            27,
+            22,
+            35,
+            30
+          ],
+          [
+            2026,
+            10,
+            27,
+            22,
+            35,
+            36
+          ],
+          [
+            2026,
+            10,
+            27,
+            22,
+            35,
+            24
+          ],
+          [
+            2026,
+            10,
+            27,
+            22,
+            35,
+            22
+          ],
+          [
+            2026,
+            10,
+            27,
+            22,
+            35,
+            28
+          ]
+        ],
+        "limitation": "Archive modification times corroborate source order but are not an independent tamper-proof event ledger."
+      }
+    },
+    {
+      "name": "source_rgb_duplicate_components_do_not_cross_roles",
+      "passed": true,
+      "details": {
+        "source_group_id": 0,
+        "decoded_rgb_sha256": 0,
+        "evaluation_group_id": 0
+      }
+    },
+    {
+      "name": "assessment_is_original_external_val_archive_subset",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "gates_identical_across_summary_and_receipt",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "strict_original_parity_tolerance_preserved",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "candidate_not_ready_correctly_fails_parity",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "only_parity_gate_fails",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "research_completed_and_no_recovery_error",
+      "passed": true,
+      "details": null
+    }
+  ],
+  "task_rechecks": [
+    {
+      "id": "frozen_seed314",
+      "best_epoch": 12,
+      "selection_delta": {
+        "accuracy": 0.0,
+        "macro_f1": 0.0,
+        "loss": 9.887478169545716e-09
+      }
+    },
+    {
+      "id": "finetune_seed314",
+      "best_epoch": 15,
+      "selection_delta": {
+        "accuracy": 0.0,
+        "macro_f1": 0.0,
+        "loss": 2.139601851247619e-08
+      }
+    },
+    {
+      "id": "frozen_seed2718",
+      "best_epoch": 7,
+      "selection_delta": {
+        "accuracy": 0.0,
+        "macro_f1": 0.0,
+        "loss": 2.9705227166942905e-10
+      }
+    },
+    {
+      "id": "finetune_seed2718",
+      "best_epoch": 9,
+      "selection_delta": {
+        "accuracy": 0.0,
+        "macro_f1": 0.0,
+        "loss": 1.6220228826746563e-08
+      }
+    },
+    {
+      "id": "frozen_seed5772",
+      "best_epoch": 14,
+      "selection_delta": {
+        "accuracy": 0.0,
+        "macro_f1": 0.0,
+        "loss": 1.8416090874495694e-09
+      }
+    },
+    {
+      "id": "finetune_seed5772",
+      "best_epoch": 15,
+      "selection_delta": {
+        "accuracy": 0.0,
+        "macro_f1": 0.0,
+        "loss": 1.0490898594284204e-08
+      }
+    }
+  ],
+  "substantive_release_blocker": {
+    "gate": "parity",
+    "status": "fail",
+    "scope": "CPU FP32 tensor-logit parity after choices frozen; no assessment-driven model selection.",
+    "max_abs_tolerance": 0.0001,
+    "maximum_absolute_error": 0.0001544952392578125,
+    "top1_disagreements": 0,
+    "batch_sizes": [
+      1,
+      3,
+      64
+    ],
+    "distinct_assessment_cases": 64,
+    "model_sha256": "c7a40608a5c3a7bec732fa60a3c5873f48ec81f6721e55b64bc49762c2ae0960",
+    "declared_batch_range": [
+      1,
+      128
+    ],
+    "tested_batch_range_is_only_the_recorded_sizes": true
+  },
+  "limitations": [
+    "No training or GPU pass was run in this review.",
+    "Original checkpoint and prepared-array identities are bound by SHA256 receipts; arrays themselves are not redistributed in the result ZIP.",
+    "Source ordering and archived file times support freeze-before-assessment but are not an independent event ledger.",
+    "Research completion is distinct from satisfying the unchanged numerical deployment gate."
+  ]
+}

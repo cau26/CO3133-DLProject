@@ -1,0 +1,306 @@
+{
+  "schema": "garmentlab_improve_today_source_v2",
+  "purpose": "Student-run bounded A100 controlled study; real results pending execution.",
+  "payloads": [
+    {
+      "path": ".github/workflows/garmentlab-draft.yml",
+      "bytes": 1466,
+      "sha256": "ecb372df4f0d2bf5c2a8255bbbd158fb1a6309d02cea7dc72cc213971de2a697"
+    },
+    {
+      "path": "a1/__init__.py",
+      "bytes": 70,
+      "sha256": "4468bf604669f95131749c81f2aa209399ac0b81cccc2be55d450c542ae84b5f"
+    },
+    {
+      "path": "a1/cnn.py",
+      "bytes": 917,
+      "sha256": "7789a03b6cce9801f2824d58ad8886b5488023a3184ef248b457de1d89d6fff2"
+    },
+    {
+      "path": "AI_USAGE.md",
+      "bytes": 10311,
+      "sha256": "b107e09a58e66c802fb0df69976b74749c04559fd441132058e949aa10f05f1d"
+    },
+    {
+      "path": "configs/garmentlab_data.json",
+      "bytes": 795,
+      "sha256": "23ee1bff4cff670d201175828029d3d9ce190ba0dc6780d9c1d56f6210ea7043"
+    },
+    {
+      "path": "configs/garmentlab_deadline.json",
+      "bytes": 1037,
+      "sha256": "252d807a717df789792f04cbf731d0dc3f853e77efe8906c8ef3dfcbb36858ca"
+    },
+    {
+      "path": "configs/garmentlab_improve_today.json",
+      "bytes": 4922,
+      "sha256": "17e25bdf18ac7f850581213c0789fb84859c60ef4697dfd054e226fa06d6ee4e"
+    },
+    {
+      "path": "docs/a1_extension_research/CALIBRATION_V2_METHOD.md",
+      "bytes": 4603,
+      "sha256": "a5a01882d76b1da4b89105c285542f831abbf0b2087faa5d3f08a143b9e627b0"
+    },
+    {
+      "path": "docs/a1_extension_research/IMPROVE_TODAY_20261028_VI.md",
+      "bytes": 6589,
+      "sha256": "26a42b1c4cecb4642a8fb30129d3767a9e718593a780d9aadc5c9823ca28b4c7"
+    },
+    {
+      "path": "garmentlab/__init__.py",
+      "bytes": 108,
+      "sha256": "7a1cf56e2f4cd7912fd14a8ca9743d3f943fad0df7a3021e5c2e970709248899"
+    },
+    {
+      "path": "garmentlab/api.py",
+      "bytes": 11061,
+      "sha256": "e125a3fad803a6d8504ec6d4bfb9727078f7b694f35e0b2df06c9b86c388d16e"
+    },
+    {
+      "path": "garmentlab/backend.py",
+      "bytes": 3026,
+      "sha256": "a39d06b05aba5388197ca47486c95877e603ef2ef816bd7315b1676eb9c24443"
+    },
+    {
+      "path": "garmentlab/calibration_v2.py",
+      "bytes": 19905,
+      "sha256": "1944f7931d6a3cb356f944717c5b7db482f5696e89341102f58fb46f198a460e"
+    },
+    {
+      "path": "garmentlab/data.py",
+      "bytes": 25787,
+      "sha256": "1ecede748a319f92a47b63c52b99c121348047c52522572046051fd60f0dd497"
+    },
+    {
+      "path": "garmentlab/evaluate.py",
+      "bytes": 48372,
+      "sha256": "754b146f23ee0a8bbcedc5d0f2b8939c01cd128a8939a149535518f8b84f4e1b"
+    },
+    {
+      "path": "garmentlab/evaluate_v2.py",
+      "bytes": 24174,
+      "sha256": "a5d5892808de0f98a54462f59af2a48e67e7eaab05541b839b9497b0d8177ed4"
+    },
+    {
+      "path": "garmentlab/images.py",
+      "bytes": 32503,
+      "sha256": "3632672b8db33fc6e02a4158d72ba1f32ccab4c3c7dd788eec9e18acb40fea75"
+    },
+    {
+      "path": "garmentlab/inference.py",
+      "bytes": 9664,
+      "sha256": "24a768f17f1a921cf6120bda760d698876e56d3bcd124563ce0a4d5c20484d31"
+    },
+    {
+      "path": "garmentlab/probabilities.py",
+      "bytes": 1084,
+      "sha256": "91ccab49f48fe4bb4dbf8dab2bd9121dcdf10fcab072a07969535fef3f72e7c4"
+    },
+    {
+      "path": "garmentlab/recovery.py",
+      "bytes": 24917,
+      "sha256": "f57857f65cbc15d02909c75e589b4e1dab39503dbd8f14eaf5a1de845ffd52eb"
+    },
+    {
+      "path": "garmentlab/release.py",
+      "bytes": 15386,
+      "sha256": "4118112fe8eb733058e2843bfd3e1b37cb23c0330e4bfad97e574fce165ec094"
+    },
+    {
+      "path": "garmentlab/runtime.py",
+      "bytes": 7931,
+      "sha256": "7c7b244d44db9a48aca372365d343535bd096bffbf4b2b9bf151f3c04c2efdd6"
+    },
+    {
+      "path": "garmentlab/static/app.js",
+      "bytes": 9654,
+      "sha256": "b56f1c2e1a962659dbcdf22b8197b6bcd543a99e5e567b0fb92f3d936ea6fb09"
+    },
+    {
+      "path": "garmentlab/static/index.html",
+      "bytes": 7015,
+      "sha256": "c8fa2231997ae6eabf1e2c5676b6355b3fb8fc21c360c89e531d01da29a25ecb"
+    },
+    {
+      "path": "garmentlab/static/samples/sample-boot.png",
+      "bytes": 580,
+      "sha256": "5abd1630c87db397207ea02521ff8e9e10b39631c4acc3c20921c1e9af94ecce"
+    },
+    {
+      "path": "garmentlab/static/samples/sample-trouser.png",
+      "bytes": 429,
+      "sha256": "ddaf95eb28f4214d7d415f8e2e00675c9720f8a6b17d56a4a116651944534639"
+    },
+    {
+      "path": "garmentlab/static/samples/sample-tshirt.png",
+      "bytes": 574,
+      "sha256": "6d9d8a565494e188e4b0227985e76f84ef92d001e22ca539f2e6ccdd85de122f"
+    },
+    {
+      "path": "garmentlab/static/samples/SOURCE.md",
+      "bytes": 1902,
+      "sha256": "8e96ce7aa138a9de8eddb34d07308cea34ede456bafbf0a916933ecef31a00a2"
+    },
+    {
+      "path": "garmentlab/static/style.css",
+      "bytes": 9029,
+      "sha256": "03f7bf9fc13673c3f2532ddee10df2fa246f0063a9d2262d27c0b1997fa9b027"
+    },
+    {
+      "path": "garmentlab/study_v2.py",
+      "bytes": 29425,
+      "sha256": "107310ec9d363899945dae27c6cf89b625a4e4fbd0bfecfad603d30a7847f00d"
+    },
+    {
+      "path": "garmentlab/training.py",
+      "bytes": 31489,
+      "sha256": "b46c52fd58cfbf737b148b6244aa6622baf42454df1a8195f6d79ebd78e92c6d"
+    },
+    {
+      "path": "garmentlab/uncertainty_v2.py",
+      "bytes": 4520,
+      "sha256": "5572cc377c3fffc0dce46f4a2e53a4ddd49d73237cf1179d7d62a3eb4307d923"
+    },
+    {
+      "path": "requirements-garmentlab-colab.txt",
+      "bytes": 188,
+      "sha256": "838bdbc6ff5e3c5d2312680a99e2956f8cd40d0917d0d29c1031b54d3947d183"
+    },
+    {
+      "path": "requirements-garmentlab-cpu-lock.txt",
+      "bytes": 1258,
+      "sha256": "18bc0863b96e0a761b9b03bf3ea7aaea2b481dba7d957725a05a1a2c6105c0ee"
+    },
+    {
+      "path": "requirements-garmentlab-draft.txt",
+      "bytes": 303,
+      "sha256": "e0d82839ef4810614f8aa695fa826c6401266c7c4b916c9e4b6132490409bb95"
+    },
+    {
+      "path": "requirements-garmentlab-improve-colab.txt",
+      "bytes": 190,
+      "sha256": "54fbdc76f3512138e7856ef70c51453ad8a46571171bb02a962b1caefa440088"
+    },
+    {
+      "path": "tests/test_garmentlab_api.py",
+      "bytes": 11860,
+      "sha256": "f87cc85e4c42b067f78936020be86cede073c2ef6e1d6255243432dbd9fa9bb4"
+    },
+    {
+      "path": "tests/test_garmentlab_backend.py",
+      "bytes": 9336,
+      "sha256": "635dd8f47cb5933f79c878cb1052ec752587ef4622f398a42e56c198603c4cd1"
+    },
+    {
+      "path": "tests/test_garmentlab_calibration_v2.py",
+      "bytes": 8857,
+      "sha256": "02ee5159892dbc893a4515fa9fced68252f08abc1e1d7db64579dc5ff7cd7de6"
+    },
+    {
+      "path": "tests/test_garmentlab_data.py",
+      "bytes": 16003,
+      "sha256": "de1421a2e9322e21f53b4311a61be69e11dd3393c9e1f13fb1d1ffc6ed7ef20b"
+    },
+    {
+      "path": "tests/test_garmentlab_evaluate.py",
+      "bytes": 11224,
+      "sha256": "b4e627578a8e3c10ea953245c04f81aeae114cefd9c42e7d20edea3af6c12880"
+    },
+    {
+      "path": "tests/test_garmentlab_evaluate_v2.py",
+      "bytes": 6393,
+      "sha256": "e132fd94f432ed61f8d2b8fe9d0f3ec07dd265347e773f890dfd8196e516bf3e"
+    },
+    {
+      "path": "tests/test_garmentlab_images.py",
+      "bytes": 9476,
+      "sha256": "e9caa3936d7a4c58e38c0db40a5fea4893f219f78d6bec1eff8e8d008b3b1d9f"
+    },
+    {
+      "path": "tests/test_garmentlab_improve_controller.py",
+      "bytes": 2664,
+      "sha256": "d24c71867180477bb7c9b8a16970a8236c90b60fc2d5aeb3ea96d09dc7e3f6a1"
+    },
+    {
+      "path": "tests/test_garmentlab_inference.py",
+      "bytes": 13331,
+      "sha256": "2d6738d9eaa7467792b913c52e85a9bba93c0fdbde4c989d3686d31294bc6c7a"
+    },
+    {
+      "path": "tests/test_garmentlab_recovery.py",
+      "bytes": 14237,
+      "sha256": "5784daccf22749347d0c91d25866b1eb8464e07305f44261ce217698df1a177c"
+    },
+    {
+      "path": "tests/test_garmentlab_recovery_integration.py",
+      "bytes": 8170,
+      "sha256": "49b33412ddc860ed781dc25c45f5c5c12329fbf9acbdafe6ba35b2bc759db622"
+    },
+    {
+      "path": "tests/test_garmentlab_reexport.py",
+      "bytes": 4699,
+      "sha256": "a36d6f91e04c95436b4efdc362ae0e9aadc7954d76e634d12d94a90237886ab9"
+    },
+    {
+      "path": "tests/test_garmentlab_release.py",
+      "bytes": 13427,
+      "sha256": "70425699b72984c955f7e0e05e40f7461234c2f4227c0866ebbe674381ab2d09"
+    },
+    {
+      "path": "tests/test_garmentlab_runtime.py",
+      "bytes": 4036,
+      "sha256": "e4d91b0a844bd3214eed385c77e04ab522e33be7780e3bd06089beaec73d3f52"
+    },
+    {
+      "path": "tests/test_garmentlab_service_benchmark.py",
+      "bytes": 2197,
+      "sha256": "f1bba03fe6b0437fee496ef8fde7968e22c4e958c5dcd0b1e41ec5421ea5e4c0"
+    },
+    {
+      "path": "tests/test_garmentlab_study_v2.py",
+      "bytes": 12541,
+      "sha256": "8f26dd7cddec731774ec7ec55d7f7f179c8634d7ec7a56eb62a941d30ab60a4a"
+    },
+    {
+      "path": "tests/test_garmentlab_training.py",
+      "bytes": 12559,
+      "sha256": "8e9f5f907969690b0e761ba655477eb09654dd74d24ed6cbd66de73073412cdd"
+    },
+    {
+      "path": "tests/test_garmentlab_uncertainty_v2.py",
+      "bytes": 1833,
+      "sha256": "be2702e1612fa8211a1b45e9bcec61ab7ac0b5b5e1da521c522317204f1d0a71"
+    },
+    {
+      "path": "tools/benchmark_garmentlab_service.py",
+      "bytes": 17640,
+      "sha256": "c015ef09f5b494fc3361f6fb6610684b29fc56269ec48d636ef0f3223172de17"
+    },
+    {
+      "path": "tools/prepare_garment_data.py",
+      "bytes": 2505,
+      "sha256": "2ceddeab0c0d61671c96b4e77395de190a49e169fdf9ce89bdeebb7b2bce632d"
+    },
+    {
+      "path": "tools/reexport_garmentlab.py",
+      "bytes": 30915,
+      "sha256": "29cfceb5d91def5dec607b9ae92a6f1e505ca14d42aa9dfc69315f9c4557381a"
+    },
+    {
+      "path": "tools/run_garmentlab_deadline.py",
+      "bytes": 9153,
+      "sha256": "1bf686a36cb947021c74ba589c445072c680cdc3b077bedf42c07e008424a9cb"
+    },
+    {
+      "path": "tools/run_garmentlab_draft.py",
+      "bytes": 2695,
+      "sha256": "36b9d8a2d2ad7c24ccac5a995f38fb63fb838cd9a334d1f419e5ae066aa2271f"
+    },
+    {
+      "path": "tools/run_garmentlab_improve.py",
+      "bytes": 11927,
+      "sha256": "6f1e28005ba1e9aea218037c4e74689baebef613a1a80aed735fc94d58224164"
+    }
+  ]
+}

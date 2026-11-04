@@ -1,0 +1,14 @@
+# Install a compatible CPU torch/torchvision pair separately; tested versions in review.
+fastapi==0.162.0
+uvicorn==0.54.0
+python-multipart==0.0.32
+httpx==0.28.1
+starlette==1.9.0
+Pillow==12.2.0
+numpy==2.4.2
+onnx==1.23.2
+onnxruntime==1.31.0
+onnxscript==0.7.2
+ijson==3.6.0
+pytest==9.0.2
+matplotlib==3.10.8

@@ -1,0 +1,9 @@
+{
+  "maximum_fits": 20,
+  "epochs_per_fit": 18,
+  "budget_seconds": 10800,
+  "stop_by_utc": "2026-10-28T12:30:00Z",
+  "training_reserve_seconds": 1800,
+  "scope": "Selection-only discovery/confirmation; final paired anchor and selected recipe; no promised metric gain.",
+  "assessment": "Original assessment retained; later scores labeled exploratory/regression."
+}

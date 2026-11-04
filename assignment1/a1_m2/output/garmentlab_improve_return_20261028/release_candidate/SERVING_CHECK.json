@@ -1,0 +1,121 @@
+{
+  "status": "pass",
+  "png_predictor": {
+    "status": "pass",
+    "cases": [
+      {
+        "array_index": 17500,
+        "predicted_index": 5,
+        "expected_index": 5,
+        "review_required": false,
+        "expected_review": false,
+        "confidence_error": 1.8918322464145376e-10,
+        "input_tensor_sha256": "1be114cf78fa7e47d790467d4b394c6d2736d89dabd0daa82aaa89e3f5f406cd",
+        "prepared_tensor_sha256": "1be114cf78fa7e47d790467d4b394c6d2736d89dabd0daa82aaa89e3f5f406cd",
+        "passed": true
+      },
+      {
+        "array_index": 17501,
+        "predicted_index": 1,
+        "expected_index": 1,
+        "review_required": true,
+        "expected_review": true,
+        "confidence_error": 4.517912993717843e-07,
+        "input_tensor_sha256": "814e623f2f398798c0e1aaa93b92a4e865210ae64bbe3889aa908d078c73040c",
+        "prepared_tensor_sha256": "814e623f2f398798c0e1aaa93b92a4e865210ae64bbe3889aa908d078c73040c",
+        "passed": true
+      },
+      {
+        "array_index": 17502,
+        "predicted_index": 3,
+        "expected_index": 3,
+        "review_required": true,
+        "expected_review": true,
+        "confidence_error": 1.497027745100965e-07,
+        "input_tensor_sha256": "d2b442cb3b403fbaae771eccd2fdefa222adcc6fd19d8bb02073264428451784",
+        "prepared_tensor_sha256": "d2b442cb3b403fbaae771eccd2fdefa222adcc6fd19d8bb02073264428451784",
+        "passed": true
+      },
+      {
+        "array_index": 17504,
+        "predicted_index": 1,
+        "expected_index": 1,
+        "review_required": true,
+        "expected_review": true,
+        "confidence_error": 4.5382147634276393e-07,
+        "input_tensor_sha256": "d4b098b0335d215b1747976a8a41c899eda7742f419572e2b1d97d7336c958d3",
+        "prepared_tensor_sha256": "d4b098b0335d215b1747976a8a41c899eda7742f419572e2b1d97d7336c958d3",
+        "passed": true
+      },
+      {
+        "array_index": 17514,
+        "predicted_index": 5,
+        "expected_index": 5,
+        "review_required": true,
+        "expected_review": true,
+        "confidence_error": 3.256224699876853e-07,
+        "input_tensor_sha256": "13314f132c80d652fed7930f770f24da495af4efe09d3cc963aacf186480c793",
+        "prepared_tensor_sha256": "13314f132c80d652fed7930f770f24da495af4efe09d3cc963aacf186480c793",
+        "passed": true
+      },
+      {
+        "array_index": 17516,
+        "predicted_index": 2,
+        "expected_index": 2,
+        "review_required": true,
+        "expected_review": true,
+        "confidence_error": 1.540701318747395e-07,
+        "input_tensor_sha256": "9fe35559f3d01870edfc0e3713135840b1b4727a1140dd2cd61188d7510358cf",
+        "prepared_tensor_sha256": "9fe35559f3d01870edfc0e3713135840b1b4727a1140dd2cd61188d7510358cf",
+        "passed": true
+      },
+      {
+        "array_index": 17791,
+        "predicted_index": 1,
+        "expected_index": 1,
+        "review_required": false,
+        "expected_review": false,
+        "confidence_error": 5.538440817076662e-09,
+        "input_tensor_sha256": "a6e8c60f4571ba85026a7b21b3d20722f61f35210dadffef58e99c409271b6b0",
+        "prepared_tensor_sha256": "a6e8c60f4571ba85026a7b21b3d20722f61f35210dadffef58e99c409271b6b0",
+        "passed": true
+      }
+    ],
+    "scope": "PNG encoding of prepared 224px crops through actual decode/crop/preprocess/Predictor; no arbitrary-photo quality claim."
+  },
+  "http_contract": {
+    "status": "pass",
+    "checks": [
+      {
+        "name": "health",
+        "passed": true
+      },
+      {
+        "name": "models",
+        "passed": true
+      },
+      {
+        "name": "predict_accept",
+        "array_index": 17500,
+        "passed": true,
+        "status_code": 200
+      },
+      {
+        "name": "predict_review",
+        "array_index": 17501,
+        "passed": true,
+        "status_code": 200
+      },
+      {
+        "name": "missing_crop_rejected",
+        "passed": true
+      },
+      {
+        "name": "absent_reference_not_substituted",
+        "passed": true
+      }
+    ],
+    "scope": "In-process HTTP ASGI contract with actual Predictor; no network deployment, uptime or production traffic."
+  },
+  "scope": "Actual local CPU Predictor and in-process HTTP contracts on recorded prepared crops. No public deployment or arbitrary-photo validation."
+}

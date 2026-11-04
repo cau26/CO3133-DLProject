@@ -1,0 +1,528 @@
+{
+  "schema": "garmentlab_posthoc_class_policy_v1",
+  "analysis_source_sha256": "07eb7947341d3a57b38d3c8c2a1d470d7acc793cc62189c7fb2a0e8c5e793a68",
+  "analysis_runtime": {
+    "python_major_minor": [
+      3,
+      12
+    ],
+    "numpy": "2.4.2"
+  },
+  "scope": "Post-hoc diagnostic from saved logits; same frozen model, temperature, threshold and cohort. No inference, training, fitting or threshold adaptation.",
+  "model": "C4",
+  "training_seed": 314,
+  "temperature": 5.345757234366385,
+  "review_threshold": 0.88,
+  "weights_sha256": "74b618510179bb905a725b6620b63beb7d8a796bb034e754d4ca593e890d6b05",
+  "decision": "accept if max softmax(logits / temperature) >= review_threshold",
+  "source_payloads_sha256": {
+    "freeze": "82745fb359508780117f5248298414ba38363716e2e0b454250d629009bd97e0",
+    "original_results": "9b51c6a5b9628cad9b27ac8df5d0fab0b7df429858a12bfe187feccc09851d1a",
+    "logits": "fff0204286aaf2071b8e728e88fc8cd0d91ea46ea57094650a4acdba6baa7e91",
+    "labels": "6fc5a19ae0e730839e50b8576c690268db5625b03e6eb654ee50b61f929fa657",
+    "index": "d3b0b6ec4ada4c2498dfc073fd2e23db14a8f8a9dd6b2bb9ada0d40940ea968a",
+    "completion": "1806138f634d60f731700a358faae0abcc2df10f3719a7d1666cfd33831e3b7d",
+    "cohort_ready": "65810b9ebb8b12b793566f42b478be6e5fe5ebddca29f268045911c7ab5466ef",
+    "logits_receipt": "db913308c88f86fce8708e0954609c8220366cc70004ab4072103b6699031c0f"
+  },
+  "labels": [
+    "shirt_blouse",
+    "top_tshirt_sweatshirt",
+    "jacket",
+    "pants",
+    "skirt",
+    "dress"
+  ],
+  "overall": {
+    "class_index": null,
+    "label": "all",
+    "support": 2766,
+    "accepted_count": 1506,
+    "accepted_correct": 1445,
+    "accepted_errors": 61,
+    "review_count": 1260,
+    "review_correct": 826,
+    "review_errors": 434,
+    "full_correct": 2271,
+    "full_errors": 495,
+    "coverage": 0.544468546637744,
+    "accepted_accuracy": 0.9594953519256308,
+    "accepted_risk": 0.04050464807436919,
+    "full_accuracy": 0.8210412147505423,
+    "review_error_capture": 0.8767676767676768,
+    "accepted_error_escape_fraction": 0.12323232323232323
+  },
+  "true_class": [
+    {
+      "class_index": 0,
+      "label": "shirt_blouse",
+      "support": 182,
+      "accepted_count": 33,
+      "accepted_correct": 22,
+      "accepted_errors": 11,
+      "review_count": 149,
+      "review_correct": 83,
+      "review_errors": 66,
+      "full_correct": 105,
+      "full_errors": 77,
+      "coverage": 0.1813186813186813,
+      "accepted_accuracy": 0.6666666666666666,
+      "accepted_risk": 0.3333333333333333,
+      "full_accuracy": 0.5769230769230769,
+      "review_error_capture": 0.8571428571428571,
+      "accepted_error_escape_fraction": 0.14285714285714285
+    },
+    {
+      "class_index": 1,
+      "label": "top_tshirt_sweatshirt",
+      "support": 856,
+      "accepted_count": 431,
+      "accepted_correct": 406,
+      "accepted_errors": 25,
+      "review_count": 425,
+      "review_correct": 301,
+      "review_errors": 124,
+      "full_correct": 707,
+      "full_errors": 149,
+      "coverage": 0.5035046728971962,
+      "accepted_accuracy": 0.9419953596287703,
+      "accepted_risk": 0.058004640371229696,
+      "full_accuracy": 0.8259345794392523,
+      "review_error_capture": 0.8322147651006712,
+      "accepted_error_escape_fraction": 0.16778523489932887
+    },
+    {
+      "class_index": 2,
+      "label": "jacket",
+      "support": 300,
+      "accepted_count": 82,
+      "accepted_correct": 76,
+      "accepted_errors": 6,
+      "review_count": 218,
+      "review_correct": 142,
+      "review_errors": 76,
+      "full_correct": 218,
+      "full_errors": 82,
+      "coverage": 0.2733333333333333,
+      "accepted_accuracy": 0.926829268292683,
+      "accepted_risk": 0.07317073170731707,
+      "full_accuracy": 0.7266666666666667,
+      "review_error_capture": 0.926829268292683,
+      "accepted_error_escape_fraction": 0.07317073170731707
+    },
+    {
+      "class_index": 3,
+      "label": "pants",
+      "support": 476,
+      "accepted_count": 361,
+      "accepted_correct": 360,
+      "accepted_errors": 1,
+      "review_count": 115,
+      "review_correct": 80,
+      "review_errors": 35,
+      "full_correct": 440,
+      "full_errors": 36,
+      "coverage": 0.7584033613445378,
+      "accepted_accuracy": 0.997229916897507,
+      "accepted_risk": 0.002770083102493075,
+      "full_accuracy": 0.9243697478991597,
+      "review_error_capture": 0.9722222222222222,
+      "accepted_error_escape_fraction": 0.027777777777777776
+    },
+    {
+      "class_index": 4,
+      "label": "skirt",
+      "support": 257,
+      "accepted_count": 106,
+      "accepted_correct": 100,
+      "accepted_errors": 6,
+      "review_count": 151,
+      "review_correct": 95,
+      "review_errors": 56,
+      "full_correct": 195,
+      "full_errors": 62,
+      "coverage": 0.41245136186770426,
+      "accepted_accuracy": 0.9433962264150944,
+      "accepted_risk": 0.05660377358490566,
+      "full_accuracy": 0.7587548638132295,
+      "review_error_capture": 0.9032258064516129,
+      "accepted_error_escape_fraction": 0.0967741935483871
+    },
+    {
+      "class_index": 5,
+      "label": "dress",
+      "support": 695,
+      "accepted_count": 493,
+      "accepted_correct": 481,
+      "accepted_errors": 12,
+      "review_count": 202,
+      "review_correct": 125,
+      "review_errors": 77,
+      "full_correct": 606,
+      "full_errors": 89,
+      "coverage": 0.7093525179856115,
+      "accepted_accuracy": 0.9756592292089249,
+      "accepted_risk": 0.02434077079107505,
+      "full_accuracy": 0.8719424460431655,
+      "review_error_capture": 0.8651685393258427,
+      "accepted_error_escape_fraction": 0.1348314606741573
+    }
+  ],
+  "predicted_class": [
+    {
+      "class_index": 0,
+      "label": "shirt_blouse",
+      "support": 183,
+      "accepted_count": 24,
+      "accepted_correct": 22,
+      "accepted_errors": 2,
+      "review_count": 159,
+      "review_correct": 83,
+      "review_errors": 76,
+      "full_correct": 105,
+      "full_errors": 78,
+      "coverage": 0.13114754098360656,
+      "accepted_accuracy": 0.9166666666666666,
+      "accepted_risk": 0.08333333333333333,
+      "full_accuracy": 0.5737704918032787,
+      "review_error_capture": 0.9743589743589743,
+      "accepted_error_escape_fraction": 0.02564102564102564
+    },
+    {
+      "class_index": 1,
+      "label": "top_tshirt_sweatshirt",
+      "support": 856,
+      "accepted_count": 428,
+      "accepted_correct": 406,
+      "accepted_errors": 22,
+      "review_count": 428,
+      "review_correct": 301,
+      "review_errors": 127,
+      "full_correct": 707,
+      "full_errors": 149,
+      "coverage": 0.5,
+      "accepted_accuracy": 0.9485981308411215,
+      "accepted_risk": 0.0514018691588785,
+      "full_accuracy": 0.8259345794392523,
+      "review_error_capture": 0.8523489932885906,
+      "accepted_error_escape_fraction": 0.1476510067114094
+    },
+    {
+      "class_index": 2,
+      "label": "jacket",
+      "support": 284,
+      "accepted_count": 88,
+      "accepted_correct": 76,
+      "accepted_errors": 12,
+      "review_count": 196,
+      "review_correct": 142,
+      "review_errors": 54,
+      "full_correct": 218,
+      "full_errors": 66,
+      "coverage": 0.30985915492957744,
+      "accepted_accuracy": 0.8636363636363636,
+      "accepted_risk": 0.13636363636363635,
+      "full_accuracy": 0.7676056338028169,
+      "review_error_capture": 0.8181818181818182,
+      "accepted_error_escape_fraction": 0.18181818181818182
+    },
+    {
+      "class_index": 3,
+      "label": "pants",
+      "support": 484,
+      "accepted_count": 362,
+      "accepted_correct": 360,
+      "accepted_errors": 2,
+      "review_count": 122,
+      "review_correct": 80,
+      "review_errors": 42,
+      "full_correct": 440,
+      "full_errors": 44,
+      "coverage": 0.7479338842975206,
+      "accepted_accuracy": 0.994475138121547,
+      "accepted_risk": 0.0055248618784530384,
+      "full_accuracy": 0.9090909090909091,
+      "review_error_capture": 0.9545454545454546,
+      "accepted_error_escape_fraction": 0.045454545454545456
+    },
+    {
+      "class_index": 4,
+      "label": "skirt",
+      "support": 243,
+      "accepted_count": 101,
+      "accepted_correct": 100,
+      "accepted_errors": 1,
+      "review_count": 142,
+      "review_correct": 95,
+      "review_errors": 47,
+      "full_correct": 195,
+      "full_errors": 48,
+      "coverage": 0.4156378600823045,
+      "accepted_accuracy": 0.9900990099009901,
+      "accepted_risk": 0.009900990099009901,
+      "full_accuracy": 0.8024691358024691,
+      "review_error_capture": 0.9791666666666666,
+      "accepted_error_escape_fraction": 0.020833333333333332
+    },
+    {
+      "class_index": 5,
+      "label": "dress",
+      "support": 716,
+      "accepted_count": 503,
+      "accepted_correct": 481,
+      "accepted_errors": 22,
+      "review_count": 213,
+      "review_correct": 125,
+      "review_errors": 88,
+      "full_correct": 606,
+      "full_errors": 110,
+      "coverage": 0.702513966480447,
+      "accepted_accuracy": 0.9562624254473161,
+      "accepted_risk": 0.0437375745526839,
+      "full_accuracy": 0.8463687150837989,
+      "review_error_capture": 0.8,
+      "accepted_error_escape_fraction": 0.2
+    }
+  ],
+  "accepted_confusion": [
+    [
+      22,
+      4,
+      5,
+      0,
+      0,
+      2
+    ],
+    [
+      2,
+      406,
+      6,
+      0,
+      0,
+      17
+    ],
+    [
+      0,
+      6,
+      76,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      360,
+      0,
+      1
+    ],
+    [
+      0,
+      2,
+      0,
+      2,
+      100,
+      2
+    ],
+    [
+      0,
+      10,
+      1,
+      0,
+      1,
+      481
+    ]
+  ],
+  "uncertainty": {
+    "method": "source/duplicate-component percentile bootstrap",
+    "replicates": 2000,
+    "seed": 20261030,
+    "resampling_components": 1826,
+    "confidence_level": 0.95,
+    "scope": "Post-hoc pointwise descriptive intervals for one fixed C4 seed314 model. No simultaneous classwise coverage, seed-population, deployment or future-accuracy guarantee.",
+    "true_class": [
+      {
+        "class_index": 0,
+        "label": "shirt_blouse",
+        "coverage_interval": [
+          0.12631323454266735,
+          0.23899712879409352
+        ],
+        "coverage_defined_replicates": 2000,
+        "accepted_accuracy_interval": [
+          0.5,
+          0.8205357142857141
+        ],
+        "accepted_accuracy_defined_replicates": 2000
+      },
+      {
+        "class_index": 1,
+        "label": "top_tshirt_sweatshirt",
+        "coverage_interval": [
+          0.47051028219132734,
+          0.5371034830893489
+        ],
+        "coverage_defined_replicates": 2000,
+        "accepted_accuracy_interval": [
+          0.9187326106357289,
+          0.9645452502247527
+        ],
+        "accepted_accuracy_defined_replicates": 2000
+      },
+      {
+        "class_index": 2,
+        "label": "jacket",
+        "coverage_interval": [
+          0.22151847194161545,
+          0.324818099400251
+        ],
+        "coverage_defined_replicates": 2000,
+        "accepted_accuracy_interval": [
+          0.8554177235256817,
+          0.9871794871794872
+        ],
+        "accepted_accuracy_defined_replicates": 2000
+      },
+      {
+        "class_index": 3,
+        "label": "pants",
+        "coverage_interval": [
+          0.7193300747556067,
+          0.7995691928561035
+        ],
+        "coverage_defined_replicates": 2000,
+        "accepted_accuracy_interval": [
+          0.9910714285714286,
+          1.0
+        ],
+        "accepted_accuracy_defined_replicates": 2000
+      },
+      {
+        "class_index": 4,
+        "label": "skirt",
+        "coverage_interval": [
+          0.35384476534296033,
+          0.47347475832438235
+        ],
+        "coverage_defined_replicates": 2000,
+        "accepted_accuracy_interval": [
+          0.8990825688073395,
+          0.981651376146789
+        ],
+        "accepted_accuracy_defined_replicates": 2000
+      },
+      {
+        "class_index": 5,
+        "label": "dress",
+        "coverage_interval": [
+          0.6757925072046109,
+          0.7416943229471975
+        ],
+        "coverage_defined_replicates": 2000,
+        "accepted_accuracy_interval": [
+          0.9615384615384616,
+          0.9880715705765407
+        ],
+        "accepted_accuracy_defined_replicates": 2000
+      }
+    ],
+    "predicted_class": [
+      {
+        "class_index": 0,
+        "label": "shirt_blouse",
+        "coverage_interval": [
+          0.08333333333333333,
+          0.1824401495404033
+        ],
+        "coverage_defined_replicates": 2000,
+        "accepted_accuracy_interval": [
+          0.7825747282608696,
+          1.0
+        ],
+        "accepted_accuracy_defined_replicates": 2000
+      },
+      {
+        "class_index": 1,
+        "label": "top_tshirt_sweatshirt",
+        "coverage_interval": [
+          0.46712464361553624,
+          0.5344102054787135
+        ],
+        "coverage_defined_replicates": 2000,
+        "accepted_accuracy_interval": [
+          0.9261038131727787,
+          0.9688891547049442
+        ],
+        "accepted_accuracy_defined_replicates": 2000
+      },
+      {
+        "class_index": 2,
+        "label": "jacket",
+        "coverage_interval": [
+          0.25551547083696896,
+          0.36805994283995186
+        ],
+        "coverage_defined_replicates": 2000,
+        "accepted_accuracy_interval": [
+          0.7906921373200443,
+          0.927710843373494
+        ],
+        "accepted_accuracy_defined_replicates": 2000
+      },
+      {
+        "class_index": 3,
+        "label": "pants",
+        "coverage_interval": [
+          0.7099989177489178,
+          0.7890299637969549
+        ],
+        "coverage_defined_replicates": 2000,
+        "accepted_accuracy_interval": [
+          0.9861486226531241,
+          1.0
+        ],
+        "accepted_accuracy_defined_replicates": 2000
+      },
+      {
+        "class_index": 4,
+        "label": "skirt",
+        "coverage_interval": [
+          0.3526911434596286,
+          0.47581085364135794
+        ],
+        "coverage_defined_replicates": 2000,
+        "accepted_accuracy_interval": [
+          0.9680851063829787,
+          1.0
+        ],
+        "accepted_accuracy_defined_replicates": 2000
+      },
+      {
+        "class_index": 5,
+        "label": "dress",
+        "coverage_interval": [
+          0.6681478218306413,
+          0.7369180303579072
+        ],
+        "coverage_defined_replicates": 2000,
+        "accepted_accuracy_interval": [
+          0.9377510040160643,
+          0.9736334951953612
+        ],
+        "accepted_accuracy_defined_replicates": 2000
+      }
+    ]
+  },
+  "definitions": {
+    "true_class": "Condition on the annotated true label, available only in offline evaluation.",
+    "predicted_class": "Condition on the model output label. Coverage denominator includes every prediction of that label, including reviewed predictions. Accepted accuracy is precision among accepted emissions.",
+    "review": "A referral flag only; no human review outcomes are measured."
+  },
+  "limitations": [
+    "Diagnostic classes were examined after cohort results. No prespecified classwise hypothesis or multiplicity-adjusted guarantee.",
+    "Component-bootstrap intervals are pointwise and conditional on one trained model, source grouping and this license-shift cohort.",
+    "The original global calibration procedure does not certify each class or transfer its risk bound to the new cohort.",
+    "True-class and predicted-class denominators answer different questions; class-specific thresholds require new calibration data and a separate untouched audit cohort."
+  ]
+}

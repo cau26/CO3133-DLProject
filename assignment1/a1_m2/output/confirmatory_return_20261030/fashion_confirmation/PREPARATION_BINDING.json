@@ -1,0 +1,513 @@
+{
+  "protocol": {
+    "schema_version": 1,
+    "study_type": "matched_post_test_recipe_checkpoint_confirmation",
+    "families": [
+      "linear",
+      "mlp",
+      "cnn",
+      "gru",
+      "transformer"
+    ],
+    "seeds": [
+      1009,
+      2027,
+      3037
+    ],
+    "epochs": 60,
+    "recipes": {
+      "linear": {
+        "C0": {
+          "model": "linear",
+          "candidate_id": "C0",
+          "family": "linear",
+          "config": {
+            "group": "G-M10",
+            "members": [
+              "Trần Gia Lâm (2352670)",
+              "Nguyễn Hữu Cầu (2352129)"
+            ],
+            "batch_size": 128,
+            "epochs": 60,
+            "learning_rate": 0.001,
+            "optimizer": "adam",
+            "weight_decay": 0.0,
+            "hidden_size": 256,
+            "num_workers": 0,
+            "cpu_threads": 4,
+            "gradient_clip": 1.0,
+            "inference_warmup_batches": 10,
+            "inference_measured_batches": 50,
+            "head_dropout": 0.0,
+            "encoder_init": "legacy",
+            "schedule": "constant",
+            "min_lr_ratio": 0.05,
+            "warmup_epochs": 0
+          },
+          "effective_sha256": "20d4835864fc5e6617336bccb317479f535fbeec1e1e44bfbe85652c32d1e2ff",
+          "provenance": {
+            "kind": "original_anchor",
+            "generation_policy": "opt3_balanced_random_fixedshape_v1",
+            "sampler": "optuna.samplers.RandomSampler",
+            "sampler_seed": 20261021,
+            "schedule_shuffle_seed": 20261023
+          }
+        },
+        "selected": {
+          "model": "linear",
+          "candidate_id": "C1",
+          "family": "linear",
+          "config": {
+            "group": "G-M10",
+            "members": [
+              "Trần Gia Lâm (2352670)",
+              "Nguyễn Hữu Cầu (2352129)"
+            ],
+            "batch_size": 128,
+            "epochs": 60,
+            "learning_rate": 0.001,
+            "optimizer": "adam",
+            "weight_decay": 0.0,
+            "hidden_size": 256,
+            "num_workers": 0,
+            "cpu_threads": 4,
+            "gradient_clip": 1.0,
+            "inference_warmup_batches": 10,
+            "inference_measured_batches": 50,
+            "head_dropout": 0.0,
+            "encoder_init": "legacy",
+            "schedule": "cosine",
+            "min_lr_ratio": 0.05,
+            "warmup_epochs": 0
+          },
+          "effective_sha256": "7fa9578e28f29fde9cd026815fd4ab125f1129fb24a9dc61e189a54449da4e9b",
+          "provenance": {
+            "kind": "schedule_probe",
+            "generation_policy": "opt3_balanced_random_fixedshape_v1",
+            "sampler": "optuna.samplers.RandomSampler",
+            "sampler_seed": 20261021,
+            "schedule_shuffle_seed": 20261023
+          }
+        }
+      },
+      "mlp": {
+        "C0": {
+          "model": "mlp",
+          "candidate_id": "C0",
+          "family": "mlp",
+          "config": {
+            "group": "G-M10",
+            "members": [
+              "Trần Gia Lâm (2352670)",
+              "Nguyễn Hữu Cầu (2352129)"
+            ],
+            "batch_size": 128,
+            "epochs": 60,
+            "learning_rate": 0.001,
+            "optimizer": "adam",
+            "weight_decay": 0.0,
+            "hidden_size": 256,
+            "num_workers": 0,
+            "cpu_threads": 4,
+            "gradient_clip": 1.0,
+            "inference_warmup_batches": 10,
+            "inference_measured_batches": 50,
+            "head_dropout": 0.0,
+            "encoder_init": "legacy",
+            "schedule": "constant",
+            "min_lr_ratio": 0.05,
+            "warmup_epochs": 0
+          },
+          "effective_sha256": "ef8f4668f4ecc9d93748b333402885c23e5d305832af3e87fe71408785710027",
+          "provenance": {
+            "kind": "original_anchor",
+            "generation_policy": "opt3_balanced_random_fixedshape_v1",
+            "sampler": "optuna.samplers.RandomSampler",
+            "sampler_seed": 20261021,
+            "schedule_shuffle_seed": 20261023
+          }
+        },
+        "selected": {
+          "model": "mlp",
+          "candidate_id": "C7",
+          "family": "mlp",
+          "config": {
+            "group": "G-M10",
+            "members": [
+              "Trần Gia Lâm (2352670)",
+              "Nguyễn Hữu Cầu (2352129)"
+            ],
+            "batch_size": 128,
+            "epochs": 60,
+            "learning_rate": 0.0010097926757800027,
+            "optimizer": "adam",
+            "weight_decay": 1e-05,
+            "hidden_size": 256,
+            "num_workers": 0,
+            "cpu_threads": 4,
+            "gradient_clip": 1.0,
+            "inference_warmup_batches": 10,
+            "inference_measured_batches": 50,
+            "head_dropout": 0.2,
+            "encoder_init": "legacy",
+            "schedule": "cosine",
+            "min_lr_ratio": 0.05,
+            "warmup_epochs": 0
+          },
+          "effective_sha256": "fdab20a0cec374246023037b4a026d27d92481ea243f27c25ab1c4237437df0c",
+          "provenance": {
+            "kind": "stratified_random",
+            "generation_policy": "opt3_balanced_random_fixedshape_v1",
+            "sampler": "optuna.samplers.RandomSampler",
+            "sampler_seed": 20261021,
+            "schedule_shuffle_seed": 20261023,
+            "trial_number": 6,
+            "sampling_attempts": 1,
+            "rejected_duplicate_draws": [],
+            "objective_observed": false
+          }
+        }
+      },
+      "cnn": {
+        "C0": {
+          "model": "cnn",
+          "candidate_id": "C0",
+          "family": "cnn",
+          "config": {
+            "group": "G-M10",
+            "members": [
+              "Trần Gia Lâm (2352670)",
+              "Nguyễn Hữu Cầu (2352129)"
+            ],
+            "batch_size": 128,
+            "epochs": 60,
+            "learning_rate": 0.001,
+            "optimizer": "adamw",
+            "weight_decay": 0.0001,
+            "hidden_size": 256,
+            "num_workers": 0,
+            "cpu_threads": 4,
+            "gradient_clip": 1.0,
+            "inference_warmup_batches": 10,
+            "inference_measured_batches": 50,
+            "cnn_channels": [
+              32,
+              64,
+              128
+            ],
+            "dropout": 0.2,
+            "head_dropout": 0.0,
+            "encoder_init": "legacy",
+            "schedule": "constant",
+            "min_lr_ratio": 0.05,
+            "warmup_epochs": 0
+          },
+          "effective_sha256": "6ef21fc3b2e35cffc98b1cd6603f0156e3e90368b2c62c977cd9616192e4d8e5",
+          "provenance": {
+            "kind": "original_anchor",
+            "generation_policy": "opt3_balanced_random_fixedshape_v1",
+            "sampler": "optuna.samplers.RandomSampler",
+            "sampler_seed": 20261021,
+            "schedule_shuffle_seed": 20261023
+          }
+        },
+        "selected": {
+          "model": "cnn",
+          "candidate_id": "C5",
+          "family": "cnn",
+          "config": {
+            "group": "G-M10",
+            "members": [
+              "Trần Gia Lâm (2352670)",
+              "Nguyễn Hữu Cầu (2352129)"
+            ],
+            "batch_size": 128,
+            "epochs": 60,
+            "learning_rate": 0.0014380860997919844,
+            "optimizer": "adamw",
+            "weight_decay": 0.0001,
+            "hidden_size": 256,
+            "num_workers": 0,
+            "cpu_threads": 4,
+            "gradient_clip": 1.0,
+            "inference_warmup_batches": 10,
+            "inference_measured_batches": 50,
+            "cnn_channels": [
+              32,
+              64,
+              128
+            ],
+            "dropout": 0.3,
+            "head_dropout": 0.0,
+            "encoder_init": "legacy",
+            "schedule": "constant",
+            "min_lr_ratio": 0.05,
+            "warmup_epochs": 0
+          },
+          "effective_sha256": "7a17c98d8e8e3d7424b0e95119d31a816ea1804f374f96315ede954e9c59aff8",
+          "provenance": {
+            "kind": "stratified_random",
+            "generation_policy": "opt3_balanced_random_fixedshape_v1",
+            "sampler": "optuna.samplers.RandomSampler",
+            "sampler_seed": 20261021,
+            "schedule_shuffle_seed": 20261023,
+            "trial_number": 9,
+            "sampling_attempts": 1,
+            "rejected_duplicate_draws": [],
+            "objective_observed": false
+          }
+        }
+      },
+      "gru": {
+        "C0": {
+          "model": "gru",
+          "candidate_id": "C0",
+          "family": "gru",
+          "config": {
+            "group": "G-M10",
+            "members": [
+              "Trần Gia Lâm (2352670)",
+              "Nguyễn Hữu Cầu (2352129)"
+            ],
+            "batch_size": 128,
+            "epochs": 60,
+            "learning_rate": 0.001,
+            "optimizer": "adamw",
+            "weight_decay": 0.0001,
+            "hidden_size": 256,
+            "num_workers": 0,
+            "cpu_threads": 4,
+            "gradient_clip": 1.0,
+            "inference_warmup_batches": 10,
+            "inference_measured_batches": 50,
+            "gru_hidden_size": 128,
+            "gru_num_layers": 1,
+            "dropout": 0.0,
+            "head_dropout": 0.0,
+            "encoder_init": "legacy",
+            "sequence_axis": "rows",
+            "schedule": "constant",
+            "min_lr_ratio": 0.05,
+            "warmup_epochs": 0
+          },
+          "effective_sha256": "84b06ec84cc45d24418973bf7a89812dce12f8acde19fb7b7192758e61fef4d7",
+          "provenance": {
+            "kind": "original_anchor",
+            "generation_policy": "opt3_balanced_random_fixedshape_v1",
+            "sampler": "optuna.samplers.RandomSampler",
+            "sampler_seed": 20261021,
+            "schedule_shuffle_seed": 20261023
+          }
+        },
+        "selected": {
+          "model": "gru",
+          "candidate_id": "C1",
+          "family": "gru",
+          "config": {
+            "group": "G-M10",
+            "members": [
+              "Trần Gia Lâm (2352670)",
+              "Nguyễn Hữu Cầu (2352129)"
+            ],
+            "batch_size": 128,
+            "epochs": 60,
+            "learning_rate": 0.001,
+            "optimizer": "adamw",
+            "weight_decay": 0.0001,
+            "hidden_size": 256,
+            "num_workers": 0,
+            "cpu_threads": 4,
+            "gradient_clip": 1.0,
+            "inference_warmup_batches": 10,
+            "inference_measured_batches": 50,
+            "gru_hidden_size": 128,
+            "gru_num_layers": 1,
+            "dropout": 0.0,
+            "head_dropout": 0.0,
+            "encoder_init": "legacy",
+            "sequence_axis": "rows",
+            "schedule": "cosine",
+            "min_lr_ratio": 0.05,
+            "warmup_epochs": 0
+          },
+          "effective_sha256": "b5f4d4c3a1ec1859a5e73fc221d4d5fea9fa31dbfe234714cfbfe17b71041fa4",
+          "provenance": {
+            "kind": "schedule_probe",
+            "generation_policy": "opt3_balanced_random_fixedshape_v1",
+            "sampler": "optuna.samplers.RandomSampler",
+            "sampler_seed": 20261021,
+            "schedule_shuffle_seed": 20261023
+          }
+        }
+      },
+      "transformer": {
+        "C0": {
+          "model": "transformer",
+          "candidate_id": "C0",
+          "family": "transformer",
+          "config": {
+            "group": "G-M10",
+            "members": [
+              "Trần Gia Lâm (2352670)",
+              "Nguyễn Hữu Cầu (2352129)"
+            ],
+            "batch_size": 128,
+            "epochs": 60,
+            "learning_rate": 0.0005,
+            "optimizer": "adamw",
+            "weight_decay": 0.0001,
+            "hidden_size": 256,
+            "num_workers": 0,
+            "cpu_threads": 4,
+            "gradient_clip": 1.0,
+            "inference_warmup_batches": 10,
+            "inference_measured_batches": 50,
+            "patch_size": 4,
+            "d_model": 128,
+            "nhead": 4,
+            "transformer_layers": 2,
+            "dim_feedforward": 256,
+            "dropout": 0.1,
+            "head_dropout": 0.0,
+            "encoder_init": "legacy",
+            "use_position_embedding": true,
+            "schedule": "constant",
+            "min_lr_ratio": 0.05,
+            "warmup_epochs": 0
+          },
+          "effective_sha256": "671d1ca3a343f500f969b0434ec28b8a9ce6b246617ab74a1c1df102f0f029d8",
+          "provenance": {
+            "kind": "original_anchor",
+            "generation_policy": "opt3_balanced_random_fixedshape_v1",
+            "sampler": "optuna.samplers.RandomSampler",
+            "sampler_seed": 20261021,
+            "schedule_shuffle_seed": 20261023
+          }
+        },
+        "selected": {
+          "model": "transformer",
+          "candidate_id": "C1",
+          "family": "transformer",
+          "config": {
+            "group": "G-M10",
+            "members": [
+              "Trần Gia Lâm (2352670)",
+              "Nguyễn Hữu Cầu (2352129)"
+            ],
+            "batch_size": 128,
+            "epochs": 60,
+            "learning_rate": 0.0005,
+            "optimizer": "adamw",
+            "weight_decay": 0.0001,
+            "hidden_size": 256,
+            "num_workers": 0,
+            "cpu_threads": 4,
+            "gradient_clip": 1.0,
+            "inference_warmup_batches": 10,
+            "inference_measured_batches": 50,
+            "patch_size": 4,
+            "d_model": 128,
+            "nhead": 4,
+            "transformer_layers": 2,
+            "dim_feedforward": 256,
+            "dropout": 0.1,
+            "head_dropout": 0.0,
+            "encoder_init": "legacy",
+            "use_position_embedding": true,
+            "schedule": "warmup_cosine",
+            "min_lr_ratio": 0.05,
+            "warmup_epochs": 5
+          },
+          "effective_sha256": "ead9d18b6b2bbafeb0f089541b3889080ef04f1619f2b82cf336bf3cf8efb389",
+          "provenance": {
+            "kind": "schedule_probe",
+            "generation_policy": "opt3_balanced_random_fixedshape_v1",
+            "sampler": "optuna.samplers.RandomSampler",
+            "sampler_seed": 20261021,
+            "schedule_shuffle_seed": 20261023
+          }
+        }
+      }
+    },
+    "publication_sha256": "7b48e8f7ff15c92fadeef4caf773612eaa05084b3db231cb04d329a06b014cce",
+    "expected_dataset_sha256": "1f243a60b4b748a44c48b9a6f6907be2a08bee3e4e226f0e86fbde8e147b745a",
+    "expected_split_sha256": "0289c4940126abe338a376ea49eb866788d57cd67fa3ca17fe80139abb8c8fba",
+    "checkpoint_policies": [
+      "ce",
+      "f1",
+      "final"
+    ],
+    "primary_comparison": "selected_minus_C0_at_fixed_final_epoch",
+    "primary_family": "cnn",
+    "secondary_families": [
+      "linear",
+      "mlp",
+      "gru",
+      "transformer"
+    ],
+    "secondary_comparisons": [
+      "recipe_at_ce",
+      "recipe_at_f1",
+      "selector_within_recipe",
+      "factor_interaction"
+    ],
+    "time_budget_seconds": 17100.0,
+    "finalization_reserve_seconds": 120,
+    "training_pairing": "same split, engine, training seed, initialization policy and loader seed; no early stopping",
+    "task_order": "family then seed; recipe order alternates by seed index",
+    "old_validation_scope": "previously_seen_exploratory_selection_set",
+    "official_test_evaluated": false,
+    "limitations": [
+      "Previously inspected old validation selects CE/F1 checkpoints; its metrics are exploratory.",
+      "Fresh training seeds do not create fresh images or undo historical evaluation exposure.",
+      "The official test partition is not loaded and is not a new blind benchmark.",
+      "The paired factor design isolates combined recipe changes from checkpoint selection, not individual hyperparameters.",
+      "Across-seed sample SD is conditional on one fixed split, not a population confidence interval.",
+      "A genuinely independent image benchmark requires an externally collected, prospectively locked audit set."
+    ]
+  },
+  "source": {
+    "files_sha256": {
+      "a1/__init__.py": "78dca9bddf50b00fa1531912e55e5c64d7d1049fc564e3178ec09f3fc494c430",
+      "a1/cnn.py": "7789a03b6cce9801f2824d58ad8886b5488023a3184ef248b457de1d89d6fff2",
+      "a1/common.py": "dbe7d9d1acd9380d3ab346a12ac1c24adceb6d2cbc4ddda24fe87ddb5088dacc",
+      "a1/data.py": "bb1fdc0258b114b8f906c368e889911f8e7c5506cf5dae54d9b3648a55afdf45",
+      "a1/eda.py": "b402321ca511952ba00023cd661540c4f7ede67d3cc26b55e864e7e29482292b",
+      "a1/finalize.py": "ddb6eab97cd44c5b55000e10326ecb7ea0f18f7c975116a3b5d498de0c649c4f",
+      "a1/gru.py": "eabdb5a6a1b8c5a03ca0bd4f34794cf3f5f10b3f1d4a1dc5668d2f8ec3dcd7dd",
+      "a1/linear.py": "f1bd49738aa7dcccd5ee76904087db2ba317d50333ffb52ba4259ccf4d49fdc9",
+      "a1/mlp.py": "049a7b36c03b238887c1638fa63933c2b30650e2398744afffc4f94f1a35f42e",
+      "a1/report.py": "b59f65e76a64d0f67ad8c7cce7d43b698abedaa59daac161782f7e6c01ad0e34",
+      "a1/study.py": "79c362ffe96bf0b669d502c16fd31c74b6d540bcfc39086630c779fc4bfe119a",
+      "a1/train.py": "5fc09f189384001706f9f5a9a386c6269e00bd5be53ab45e76ad138f09e6062c",
+      "a1/transformer.py": "8e30f028dccf670caaee5bdc82cf0fb46262fc3fe243309d91d7f65dabc2fd80",
+      "a1confirm/__init__.py": "0ada11a6c06c460a5ac030aa3018bac7895ed04769f9658532018592354c0f97",
+      "a1confirm/__main__.py": "6c834c72cf858edc785c3ad2d71dd091b78eb56ba5a0c54e478451711503d239",
+      "a1confirm/study.py": "d2a9025e97d42de9f3531deba1924facfd8cf6c30c86364d53c52c3dec1c6630",
+      "a1opt/__init__.py": "2e107be41d1fbb23997258b446716969a8662dc24ce009390a9504a0bc7fcebe",
+      "a1opt/engine.py": "1959cb1189b33aad244dabbd233229bb5cd460c7de903fb40fb18571d872fab6",
+      "a1opt/models.py": "e2509f0354e468b7e288cf2a41f903b115ccbeb97ebb38e83ea6e2d470a5281e",
+      "a1opt/recipes.py": "70c847ae2b3c478a15af0b767d1fc6ad67fa362bfcb9321330d3c44a33ffd909",
+      "a1opt/storage.py": "e589164d9e61650674bb11dd2c60642b76623cdf83e827988af93a3647759bec",
+      "a1opt/study.py": "4b07a893bd6bdf3d9b2ce27f031e315fb0bf228a0c44c475d6b73591a50a6db0"
+    },
+    "sha256": "9ae49ca390bc424478bcce8dd5cb185a29c87e401156703bb4a0a1654fee9166",
+    "text_hash_policy": "UTF-8 source bytes with CRLF normalized to LF"
+  },
+  "environment": {
+    "python_major_minor": [
+      3,
+      13
+    ],
+    "device_type": "cuda",
+    "gpu": "NVIDIA A100-SXM4-40GB",
+    "cuda": "13.0",
+    "cudnn": 92700,
+    "versions": {
+      "torch": "2.11.0+cu130",
+      "torchvision": "0.26.0+cu130",
+      "numpy": "2.4.2",
+      "scikit-learn": "1.8.0"
+    }
+  }
+}

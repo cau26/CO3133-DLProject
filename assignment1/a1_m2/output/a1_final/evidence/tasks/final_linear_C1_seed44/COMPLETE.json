@@ -1,0 +1,58 @@
+{
+  "status": "COMPLETE",
+  "task_sha256": "85de8059bf39fc20d9eeadcf4f933fd11534a51264c60e05b7969b245b75fd41",
+  "binding_sha256": "1a4cd7abd63088c7d77ce0074a552bc4476729fdaa091d190bcf784e4bc4c97d",
+  "metrics": {
+    "task_id": "final_linear_C1_seed44",
+    "family": "linear",
+    "phase": "final",
+    "seed": 44,
+    "parameters": 7850,
+    "selection_rule": "max_macro_f1_then_min_ce_then_earliest_epoch",
+    "best_f1_epoch": 35,
+    "best_f1_metrics": {
+      "loss": 0.3786537334824781,
+      "accuracy": 0.8686666666666667,
+      "macro_f1": 0.8685032182883082,
+      "n_examples": 6000
+    },
+    "best_ce_epoch": 49,
+    "best_ce_metrics": {
+      "loss": 0.37671907976275476,
+      "accuracy": 0.8668333333333333,
+      "macro_f1": 0.8657142080319297,
+      "n_examples": 6000
+    },
+    "epochs_completed": 60,
+    "optimizer_updates": 25320,
+    "n_train": 54000,
+    "n_validation": 6000,
+    "fit_wall_seconds": 441.24539063499833,
+    "fit_timer_scope": "completed epochs: train + validation + in-memory checkpoint selection; excludes setup, transaction writes, finalization, discarded crash work",
+    "training_loop_seconds": 400.8163147090163,
+    "validation_seconds": 40.378859564993036,
+    "scope": "validation_only_exploratory_no_official_test",
+    "task_sha256": "85de8059bf39fc20d9eeadcf4f933fd11534a51264c60e05b7969b245b75fd41",
+    "binding_sha256": "1a4cd7abd63088c7d77ce0074a552bc4476729fdaa091d190bcf784e4bc4c97d",
+    "inference": {
+      "batch_size": 128,
+      "warmup_batches": 10,
+      "measured_batches": 50,
+      "batch_ms": 0.19658201999845915,
+      "per_image_ms_amortized": 0.001535797031237962,
+      "scope": "model forward only; input already on device; excludes DataLoader and transfers",
+      "interpretation": "batch-amortized model-forward milliseconds; not single-request service latency"
+    },
+    "finalization_seconds_before_metrics_write": 0.8107302799980971
+  },
+  "artifacts_sha256": {
+    "TASK.json": "66dd7022658b788c260d8e512f1ff5033f3b0e3796d887b824cec76ea0a16aca",
+    "history.csv": "23f5e3d32ad2b4c347082d89f471ed2de35c30ceb091e6d9982147a879432e06",
+    "predictions.csv": "5220bab1587fafad47405af601ef5c4c470be57fba3f03fb34316eceb0656745",
+    "metrics.json": "e79652f0d03d0a13e7d3389e32d023b5bc4b8ceb557cb0cb881a65ea3e251bce",
+    "best_f1.pt": "a9d4207f03716049e34d8c03ee98e05854ad9d8626473810d7e6fff3b2b6be45",
+    "best_ce.pt": "5be3c979ca8753133e0d1d4213683573762ea0e05d256fe6ce14e5084c955d29",
+    "COMMIT.json": "36a9f6bb1ee22430d71c7de3b36e17c5da6183926f5cb595da6d5079beb8580c",
+    "state-0060-fc58ef4b82774ef6ae25a6a1846d8608.pt": "fe2bcaa8f062a95a18522161364a2f9030bef235d4c1f4e27fe9e66c8e2f8d41"
+  }
+}
