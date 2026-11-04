@@ -1,0 +1,6 @@
+# Root publication metadata is also covered by byte hashes.
+/.gitattributes -text
+/README.md -text
+/AI_USAGE.md -text
+/UPLOAD_MANIFEST.json -text
+/.github/workflows/a1-final.yml -text
