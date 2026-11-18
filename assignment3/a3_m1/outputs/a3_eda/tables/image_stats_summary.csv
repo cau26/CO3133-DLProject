@@ -1,0 +1,2 @@
+total_records,valid_images,failed_images,width_min,width_median,width_p90,width_max,height_min,height_median,height_p90,height_max,rgb_count,non_rgb_count
+86768,86768,0,120,500.0,1039.0,2000,120,399.0,779.0,2960,86768,0

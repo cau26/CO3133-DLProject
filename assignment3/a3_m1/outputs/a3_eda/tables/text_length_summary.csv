@@ -1,0 +1,2 @@
+total_valid_pairs,word_count_min,word_count_p10,word_count_median,word_count_mean,word_count_p90,word_count_max,char_count_median,char_count_mean,html_entity_rate,class_in_text_rate,unique_clean_texts
+86768,0,4.0,7.0,7.495597455283054,12.0,155,47.0,49.78538170754195,0.14615987460815047,0.7207841600590079,60657

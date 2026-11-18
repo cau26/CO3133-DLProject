@@ -1,0 +1,9 @@
+{
+  "dataset": "UPMC Food-101",
+  "version": "1.0 (HuggingFace mirror kkim0451/UPMC-Food101)",
+  "source_url": "https://huggingface.co/datasets/kkim0451/UPMC-Food101",
+  "original_paper": "Wang et al. (2015), Recipe Recognition with Large Multimodal Food Dataset, ICMEW",
+  "license_note": "Academic / Research use; HuggingFace repo declares apache-2.0 for dataset packaging; underlying web recipe images/titles retain original web terms.",
+  "archive_file": "UPMC-Food-101.zip",
+  "archive_bytes": 8268462033
+}

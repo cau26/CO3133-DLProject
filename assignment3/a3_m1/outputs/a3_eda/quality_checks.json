@@ -1,0 +1,18 @@
+{
+  "automated_checks": {
+    "classes_at_least_5": true,
+    "valid_pairs_at_least_5000": true,
+    "all_101_classes_in_train": true,
+    "all_101_classes_in_val": true,
+    "all_101_classes_in_test": true,
+    "no_train_val_id_overlap": true,
+    "no_train_val_exact_image_overlap": true,
+    "no_train_val_near_duplicate_overlap": true
+  },
+  "missing_image_rate": 0.0,
+  "empty_text_rate": 0.0,
+  "html_entity_rate": 0.14615987460815047,
+  "non_rgb_image_count": 0,
+  "cross_split_trainval_vs_test_exact_overlap": 1018,
+  "cross_split_trainval_vs_test_near_overlap": 4395
+}
