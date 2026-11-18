@@ -274,7 +274,7 @@ Background False Positive ($\text{IoU} < 0.10$) & 1,031 & 2,840 & 1,713 \\
     \item \textbf{Limitations:} Single-seed evaluation (\texttt{seed=42}); uniform LR without warmup for full fine-tuning; fixed $320\times320$ resolution bottleneck in \texttt{ssdlite320}.
     \item \textbf{Conclusion:} Combining task-specific EDA, leak-free split grouping (\texttt{000863}/\texttt{008364}), and pretrained FPN features with a frozen ResNet-50 backbone yields \textbf{83.65\% Official Test mAP@0.5} on VOC 2007 while saving nearly two-thirds of training VRAM.
     \item \textbf{AI Usage Disclosure:} AI tools (Google Antigravity, ChatGPT, Claude) assisted with modularizing \texttt{a2/}, implementing the evaluator self-test and overlap audit, and formatting the report. All quantitative results come from executed Colab runs verified by Trần Gia Lâm (2352670) and Nguyễn Hữu Cầu (2352129).
-    \item \textbf{Reproducibility \& Artifacts:} Notebook \texttt{notebooks/A2\_M3\_Colab\_Run.ipynb}; Drive checkpoints (\texttt{CO3133\_A2\_M3\_Checkpoints}); video \texttt{[TODO: YouTube Link]}.
+    \item \textbf{Reproducibility \& Artifacts:} Notebook \texttt{notebooks/A2\_M3\_Colab\_Run.ipynb}; Drive checkpoints (\texttt{CO3133\_A2\_M3\_Checkpoints}); video \url{https://youtu.be/OF_lVbQw9zg}.
 \end{itemize}
 
 \clearpage

@@ -16,7 +16,7 @@
 **Supporting Deliverables:**
 - **Final PDF Report (LMS):** [`output/pdf/G-M10_A2_Report.pdf`](output/pdf/G-M10_A2_Report.pdf)
 - **Presentation Slides:** [`output/presentation/G-M10_A2_Slides.pdf`](output/presentation/G-M10_A2_Slides.pdf)
-- **YouTube Video:** `[TODO: Insert YouTube URL after recording]` (Title: `CO3133-Semester-261 - Group G-M10 - Assignment 2`)
+- **YouTube Video:** [https://youtu.be/OF_lVbQw9zg](https://youtu.be/OF_lVbQw9zg) (Title: `CO3133-Semester-261 - Group G-M10 - Assignment 2`)
 - **Checkpoints (Google Drive):** Backed up to Google Drive (`CO3133_A2_M3_Checkpoints`: `ssdlite320_best.pt`, `fasterrcnn_frozen_best.pt`, `fasterrcnn_finetune_best.pt`)
 - **Executed Colab Notebook:** [`notebooks/A2_M3_Colab_Run.ipynb`](notebooks/A2_M3_Colab_Run.ipynb)
 - **M1 Proposal & M2 Draft Archives:** [`../a2_m1/`](../a2_m1/) · [`../a2_m2/`](../a2_m2/)
