@@ -1,0 +1,95 @@
+{
+  "score_threshold_used": 0.3,
+  "total_non_difficult_gt": 2592,
+  "correct_detections": 1389,
+  "missed_objects": 1203,
+  "missed_small_objects": 493,
+  "duplicate_detections": 102,
+  "wrong_class_detections": 262,
+  "localization_errors": 454,
+  "background_false_positives": 216,
+  "top_class_confusions": [
+    {
+      "true_class": "cow",
+      "predicted_class": "horse",
+      "count": 20
+    },
+    {
+      "true_class": "dog",
+      "predicted_class": "cat",
+      "count": 14
+    },
+    {
+      "true_class": "cat",
+      "predicted_class": "dog",
+      "count": 13
+    },
+    {
+      "true_class": "horse",
+      "predicted_class": "dog",
+      "count": 12
+    },
+    {
+      "true_class": "bus",
+      "predicted_class": "train",
+      "count": 11
+    },
+    {
+      "true_class": "motorbike",
+      "predicted_class": "bicycle",
+      "count": 10
+    },
+    {
+      "true_class": "chair",
+      "predicted_class": "sofa",
+      "count": 7
+    },
+    {
+      "true_class": "bicycle",
+      "predicted_class": "motorbike",
+      "count": 7
+    }
+  ],
+  "example_image_ids": {
+    "correct": [
+      "000099",
+      "000101",
+      "000133",
+      "000142",
+      "000236",
+      "000242"
+    ],
+    "difficult_crowded_or_small_correct": [
+      "000083",
+      "000208",
+      "000222",
+      "000531",
+      "000628",
+      "000684"
+    ],
+    "missed_object": [
+      "000060",
+      "000083",
+      "000125",
+      "000218",
+      "000222",
+      "000320"
+    ],
+    "wrong_class": [
+      "000036",
+      "000064",
+      "000118",
+      "000120",
+      "000146",
+      "000198"
+    ],
+    "localization_or_duplicate": [
+      "000051",
+      "000060",
+      "000120",
+      "000125",
+      "000130",
+      "000156"
+    ]
+  }
+}

@@ -1,0 +1,571 @@
+{
+  "model": "fasterrcnn_frozen",
+  "architecture": "fasterrcnn_resnet50_fpn",
+  "init_weights": "FasterRCNN_ResNet50_FPN_Weights.COCO_V1 + fresh 21-class FastRCNNPredictor",
+  "freeze_backbone": true,
+  "evaluation_split": "validation",
+  "n_eval_images": 997,
+  "n_eval_non_difficult_objects": 2592,
+  "map50": 0.835780930727043,
+  "map50_small": 0.5009772232434659,
+  "map50_medium": 0.7436395992489162,
+  "map50_large": 0.8170585248628551,
+  "best_epoch": 11,
+  "best_train_loss": 0.1792149250806269,
+  "final_train_loss": 0.1765423410205058,
+  "checkpoint_rule": "highest validation VOC2007 11-point mAP@0.5; earlier epoch if tied",
+  "checkpoint": "best.pt",
+  "epochs_completed": 12,
+  "total_parameters": 41396536,
+  "trainable_parameters": 17941624,
+  "train_seconds": 2425.076661293,
+  "validation_seconds": 494.5135487089997,
+  "fit_wall_seconds": 2926.7718385430003,
+  "peak_gpu_memory_mb": 1266.16064453125,
+  "amp_used": true,
+  "inference": {
+    "batch_size": 1,
+    "warmup_images": 10,
+    "measured_images": 100,
+    "mean_latency_ms": 31.33898918000341,
+    "fps": 31.90913383505279,
+    "scope": "batch_size=1 model forward including internal resize/normalization and NMS postprocessing"
+  },
+  "per_class_ap": [
+    {
+      "class_id": 1,
+      "class_name": "aeroplane",
+      "ap50": 0.8950427126346377,
+      "npos": 69,
+      "num_detections": 186,
+      "tp": 68,
+      "fp": 113,
+      "recall": 0.9855072463768116,
+      "ap50_small": 0.854259775312407,
+      "ap50_medium": 0.973397129186603,
+      "ap50_large": 0.8777396384103702
+    },
+    {
+      "class_id": 2,
+      "class_name": "bicycle",
+      "ap50": 0.900534759358289,
+      "npos": 84,
+      "num_detections": 268,
+      "tp": 83,
+      "fp": 177,
+      "recall": 0.9880952380952381,
+      "ap50_small": 0.7798898071625345,
+      "ap50_medium": 0.9071146245059291,
+      "ap50_large": 0.9579797979797982
+    },
+    {
+      "class_id": 3,
+      "class_name": "bird",
+      "ap50": 0.8085238022788385,
+      "npos": 98,
+      "num_detections": 367,
+      "tp": 91,
+      "fp": 265,
+      "recall": 0.9285714285714286,
+      "ap50_small": 0.5264446412173684,
+      "ap50_medium": 0.7774834863412448,
+      "ap50_large": 0.8334875650665124
+    },
+    {
+      "class_id": 4,
+      "class_name": "boat",
+      "ap50": 0.8848181505467669,
+      "npos": 67,
+      "num_detections": 436,
+      "tp": 67,
+      "fp": 357,
+      "recall": 1.0,
+      "ap50_small": 0.5910609216672338,
+      "ap50_medium": 0.8954870829626157,
+      "ap50_large": 0.8159447687888055
+    },
+    {
+      "class_id": 5,
+      "class_name": "bottle",
+      "ap50": 0.7354975941536825,
+      "npos": 97,
+      "num_detections": 383,
+      "tp": 87,
+      "fp": 294,
+      "recall": 0.8969072164948454,
+      "ap50_small": 0.6465316143021254,
+      "ap50_medium": 0.6934189464534162,
+      "ap50_large": 0.49492443855436785
+    },
+    {
+      "class_id": 6,
+      "class_name": "bus",
+      "ap50": 0.8392837423736301,
+      "npos": 42,
+      "num_detections": 184,
+      "tp": 41,
+      "fp": 136,
+      "recall": 0.9761904761904762,
+      "ap50_small": 0.20300982800982798,
+      "ap50_medium": 0.7703640621673407,
+      "ap50_large": 0.9347401079518891
+    },
+    {
+      "class_id": 7,
+      "class_name": "car",
+      "ap50": 0.8918560044781287,
+      "npos": 262,
+      "num_detections": 717,
+      "tp": 254,
+      "fp": 395,
+      "recall": 0.9694656488549618,
+      "ap50_small": 0.8459124596455351,
+      "ap50_medium": 0.8567273920752916,
+      "ap50_large": 0.89173933966889
+    },
+    {
+      "class_id": 8,
+      "class_name": "cat",
+      "ap50": 0.8811868686868688,
+      "npos": 75,
+      "num_detections": 227,
+      "tp": 73,
+      "fp": 151,
+      "recall": 0.9733333333333334,
+      "ap50_small": 0.17965367965367973,
+      "ap50_medium": 0.7387904333109813,
+      "ap50_large": 0.8965517241379312
+    },
+    {
+      "class_id": 9,
+      "class_name": "chair",
+      "ap50": 0.7794270238703743,
+      "npos": 166,
+      "num_detections": 1181,
+      "tp": 158,
+      "fp": 953,
+      "recall": 0.9518072289156626,
+      "ap50_small": 0.2925582400655715,
+      "ap50_medium": 0.7988298088324189,
+      "ap50_large": 0.5919991344353466
+    },
+    {
+      "class_id": 10,
+      "class_name": "cow",
+      "ap50": 0.887242921013413,
+      "npos": 55,
+      "num_detections": 160,
+      "tp": 53,
+      "fp": 97,
+      "recall": 0.9636363636363636,
+      "ap50_small": 0.8590909090909091,
+      "ap50_medium": 0.8690005646527387,
+      "ap50_large": 0.856011091305209
+    },
+    {
+      "class_id": 11,
+      "class_name": "diningtable",
+      "ap50": 0.7833545329699988,
+      "npos": 42,
+      "num_detections": 368,
+      "tp": 40,
+      "fp": 310,
+      "recall": 0.9523809523809523,
+      "ap50_small": NaN,
+      "ap50_medium": 0.14618110933900405,
+      "ap50_large": 0.8764462809917356
+    },
+    {
+      "class_id": 12,
+      "class_name": "dog",
+      "ap50": 0.8516779037530025,
+      "npos": 97,
+      "num_detections": 352,
+      "tp": 93,
+      "fp": 255,
+      "recall": 0.9587628865979382,
+      "ap50_small": 0.09253246753246755,
+      "ap50_medium": 0.7393875064329609,
+      "ap50_large": 0.890572882317833
+    },
+    {
+      "class_id": 13,
+      "class_name": "horse",
+      "ap50": 0.9216920463550152,
+      "npos": 69,
+      "num_detections": 212,
+      "tp": 69,
+      "fp": 137,
+      "recall": 1.0,
+      "ap50_small": 0.3618181818181819,
+      "ap50_medium": 0.8115374101843172,
+      "ap50_large": 0.923091160047682
+    },
+    {
+      "class_id": 14,
+      "class_name": "motorbike",
+      "ap50": 0.8469979614252411,
+      "npos": 63,
+      "num_detections": 235,
+      "tp": 60,
+      "fp": 169,
+      "recall": 0.9523809523809523,
+      "ap50_small": 0.23076923076923084,
+      "ap50_medium": 0.7337465564738291,
+      "ap50_large": 0.8404067412088804
+    },
+    {
+      "class_id": 15,
+      "class_name": "person",
+      "ap50": 0.8802934577940905,
+      "npos": 942,
+      "num_detections": 2862,
+      "tp": 918,
+      "fp": 1830,
+      "recall": 0.9745222929936306,
+      "ap50_small": 0.6868428062393961,
+      "ap50_medium": 0.8628816242872888,
+      "ap50_large": 0.863275088817643
+    },
+    {
+      "class_id": 16,
+      "class_name": "pottedplant",
+      "ap50": 0.6645993978594844,
+      "npos": 140,
+      "num_detections": 780,
+      "tp": 121,
+      "fp": 636,
+      "recall": 0.8642857142857143,
+      "ap50_small": 0.4876447355186359,
+      "ap50_medium": 0.6061025876056262,
+      "ap50_large": 0.6008158508158509
+    },
+    {
+      "class_id": 17,
+      "class_name": "sheep",
+      "ap50": 0.7582268679829655,
+      "npos": 52,
+      "num_detections": 154,
+      "tp": 46,
+      "fp": 100,
+      "recall": 0.8846153846153846,
+      "ap50_small": 0.7558947545960533,
+      "ap50_medium": 0.6268939393939393,
+      "ap50_large": 0.6923909423909422
+    },
+    {
+      "class_id": 18,
+      "class_name": "sofa",
+      "ap50": 0.7644946376706471,
+      "npos": 47,
+      "num_detections": 250,
+      "tp": 45,
+      "fp": 184,
+      "recall": 0.9574468085106383,
+      "ap50_small": 0.017543859649122806,
+      "ap50_medium": 0.42635241995855816,
+      "ap50_large": 0.8244605188227742
+    },
+    {
+      "class_id": 19,
+      "class_name": "train",
+      "ap50": 0.9541775495088104,
+      "npos": 61,
+      "num_detections": 234,
+      "tp": 61,
+      "fp": 171,
+      "recall": 1.0,
+      "ap50_small": NaN,
+      "ap50_medium": 0.8702291789989065,
+      "ap50_large": 0.9731460950973148
+    },
+    {
+      "class_id": 20,
+      "class_name": "tvmonitor",
+      "ap50": 0.7866906798269723,
+      "npos": 64,
+      "num_detections": 251,
+      "tp": 59,
+      "fp": 190,
+      "recall": 0.921875,
+      "ap50_small": 0.6061321061321061,
+      "ap50_medium": 0.7688661218153134,
+      "ap50_large": 0.7054473304473302
+    }
+  ],
+  "error_taxonomy": {
+    "score_threshold_used": 0.3,
+    "total_non_difficult_gt": 2592,
+    "correct_detections": 2380,
+    "missed_objects": 212,
+    "missed_small_objects": 84,
+    "duplicate_detections": 180,
+    "wrong_class_detections": 213,
+    "localization_errors": 844,
+    "background_false_positives": 567,
+    "top_class_confusions": [
+      {
+        "true_class": "sofa",
+        "predicted_class": "chair",
+        "count": 29
+      },
+      {
+        "true_class": "cat",
+        "predicted_class": "dog",
+        "count": 14
+      },
+      {
+        "true_class": "dog",
+        "predicted_class": "person",
+        "count": 11
+      },
+      {
+        "true_class": "person",
+        "predicted_class": "chair",
+        "count": 11
+      },
+      {
+        "true_class": "dog",
+        "predicted_class": "cat",
+        "count": 7
+      },
+      {
+        "true_class": "chair",
+        "predicted_class": "sofa",
+        "count": 7
+      },
+      {
+        "true_class": "horse",
+        "predicted_class": "dog",
+        "count": 6
+      },
+      {
+        "true_class": "sheep",
+        "predicted_class": "dog",
+        "count": 6
+      }
+    ],
+    "example_image_ids": {
+      "correct": [
+        "000036",
+        "000099",
+        "000101",
+        "000107",
+        "000120",
+        "000142"
+      ],
+      "difficult_crowded_or_small_correct": [
+        "000083",
+        "000125",
+        "000194",
+        "000208",
+        "000222",
+        "000320"
+      ],
+      "missed_object": [
+        "000060",
+        "000222",
+        "000598",
+        "000657",
+        "000761",
+        "001464"
+      ],
+      "wrong_class": [
+        "000064",
+        "000194",
+        "000218",
+        "000235",
+        "000372",
+        "000381"
+      ],
+      "localization_or_duplicate": [
+        "000051",
+        "000083",
+        "000104",
+        "000118",
+        "000125",
+        "000130"
+      ]
+    }
+  },
+  "model_config": {
+    "architecture": "fasterrcnn_resnet50_fpn",
+    "init_weights": "FasterRCNN_ResNet50_FPN_Weights.COCO_V1 + fresh 21-class FastRCNNPredictor",
+    "freeze_backbone": true,
+    "min_size": 640,
+    "max_size": 1000,
+    "batch_size": 2,
+    "epochs": 12,
+    "optimizer": "SGD",
+    "learning_rate": 0.005,
+    "momentum": 0.9,
+    "weight_decay": 0.0005,
+    "lr_milestones": [
+      8,
+      11
+    ],
+    "lr_gamma": 0.1
+  },
+  "config": {
+    "group": "G-M10",
+    "members": [
+      "Trần Gia Lâm (2352670)",
+      "Nguyễn Hữu Cầu (2352129)"
+    ],
+    "seed": 42,
+    "dataset": "PASCAL VOC 2007",
+    "archive_name": "VOCtrainval_06-Nov-2007.tar",
+    "archive_url": "https://thor.robots.ox.ac.uk/pascal/VOC/voc2007/VOCtrainval_06-Nov-2007.tar",
+    "archive_md5": "c52e279531787c972589f7e41ab4ae64",
+    "test_archive_name": "VOCtest_06-Nov-2007.tar",
+    "test_archive_url": "https://pjreddie.com/media/files/VOCtest_06-Nov-2007.tar",
+    "test_archive_md5": "b6e924de25625d8de591ea690078ad9f",
+    "num_classes": 21,
+    "iou_threshold": 0.5,
+    "score_threshold": 0.05,
+    "nms_threshold": 0.5,
+    "max_detections_per_image": 100,
+    "pilot_batches": 200,
+    "num_workers": 2,
+    "cpu_threads": 4,
+    "use_amp": true,
+    "device": "cuda",
+    "models": {
+      "ssdlite320": {
+        "architecture": "ssdlite320_mobilenet_v3_large",
+        "init_weights": "MobileNet_V3_Large_Weights.IMAGENET1K_V1 backbone + fresh 21-class heads",
+        "freeze_backbone": false,
+        "min_size": 320,
+        "max_size": 320,
+        "batch_size": 8,
+        "epochs": 20,
+        "optimizer": "SGD",
+        "learning_rate": 0.01,
+        "momentum": 0.9,
+        "weight_decay": 0.0005,
+        "lr_milestones": [
+          12,
+          16
+        ],
+        "lr_gamma": 0.1
+      },
+      "fasterrcnn_frozen": {
+        "architecture": "fasterrcnn_resnet50_fpn",
+        "init_weights": "FasterRCNN_ResNet50_FPN_Weights.COCO_V1 + fresh 21-class FastRCNNPredictor",
+        "freeze_backbone": true,
+        "min_size": 640,
+        "max_size": 1000,
+        "batch_size": 2,
+        "epochs": 12,
+        "optimizer": "SGD",
+        "learning_rate": 0.005,
+        "momentum": 0.9,
+        "weight_decay": 0.0005,
+        "lr_milestones": [
+          8,
+          11
+        ],
+        "lr_gamma": 0.1
+      },
+      "fasterrcnn_finetune": {
+        "architecture": "fasterrcnn_resnet50_fpn",
+        "init_weights": "FasterRCNN_ResNet50_FPN_Weights.COCO_V1 + fresh 21-class FastRCNNPredictor",
+        "freeze_backbone": false,
+        "min_size": 640,
+        "max_size": 1000,
+        "batch_size": 2,
+        "epochs": 12,
+        "optimizer": "SGD",
+        "learning_rate": 0.005,
+        "momentum": 0.9,
+        "weight_decay": 0.0005,
+        "lr_milestones": [
+          8,
+          11
+        ],
+        "lr_gamma": 0.1
+      }
+    }
+  },
+  "data": {
+    "dataset": "PASCAL VOC 2007",
+    "release": "VOCtrainval_06-Nov-2007.tar",
+    "source": "https://www.robots.ox.ac.uk/~vgg/projects/pascal/VOC/voc2007/",
+    "license_note": "Publisher Database Rights statement and Flickr terms apply; not blanket MIT/CC-BY.",
+    "archive_md5": "c52e279531787c972589f7e41ab4ae64",
+    "official_trainval_images": 5011,
+    "train_images": 4014,
+    "val_images": 997,
+    "train_non_difficult_objects": 10016,
+    "train_difficult_objects_excluded": 2435,
+    "val_non_difficult_objects": 2592,
+    "val_difficult_objects_ignored": 619,
+    "num_foreground_classes": 20,
+    "num_classes_with_background": 21,
+    "classes": [
+      "aeroplane",
+      "bicycle",
+      "bird",
+      "boat",
+      "bottle",
+      "bus",
+      "car",
+      "cat",
+      "chair",
+      "cow",
+      "diningtable",
+      "dog",
+      "horse",
+      "motorbike",
+      "person",
+      "pottedplant",
+      "sheep",
+      "sofa",
+      "train",
+      "tvmonitor"
+    ],
+    "seed": 42,
+    "split_method": "Multi-Label Iterative Group Stratified Split + near-duplicate pair (000863/008364) grouped into train",
+    "split_sha256": "c60294fe4e914b27399ff065c9e246dcd3428440307c97cebf2febe139c2bd6c",
+    "leakage_checks": "0 image ID overlap; 3 exact-duplicate groups and 1 confirmed near-duplicate pair kept within single splits",
+    "test_set_evaluated": false
+  },
+  "environment": {
+    "recorded_at_utc": "2026-11-18T13:48:45.109401+00:00",
+    "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "cpu": "Intel(R) Xeon(R) CPU @ 2.20GHz",
+    "logical_cpu_count": 12,
+    "torch_threads": 4,
+    "device": "cuda",
+    "gpu": "NVIDIA L4",
+    "gpu_total_memory_gb": 22.03,
+    "cuda_version": "13.0",
+    "versions": {
+      "torch": "2.14.1+cu130",
+      "torchvision": "0.29.1+cu130",
+      "numpy": "2.4.6",
+      "pandas": "2.2.3",
+      "matplotlib": "3.10.0",
+      "Pillow": "11.3.0",
+      "scikit-learn": "1.6.1"
+    }
+  },
+  "source": {
+    "git_commit": null,
+    "working_tree_dirty": null,
+    "source_sha256": "ec1ffd3db1b5f01da4d4319c61527148e157e73e6023be295c1fc8febd806d3f",
+    "files_sha256": {
+      "run_a2.py": "63702538701e703eef5b1b87403c979c26aa358dd270a06d48cd237906adadb8",
+      "a2/__init__.py": "f0ba5f945c44171890725ae085d965899669faeabfd88b62e67863be3582387d",
+      "a2/common.py": "19a92f26e615160fd0ca84c3339b23074aaf4e70668495656527c04229e1a396",
+      "a2/data.py": "6fbfb5249bf9c8f192c30095a5dbe626b7cec5a9d354e1604403212d333a8214",
+      "a2/models.py": "9441411e87d04cae588dc45852c55434b5fef8835a46e99bf947bc1dd40ee46b",
+      "a2/report.py": "3f2d0cbc4c9ce3b8132d89505fb76869b0890404284990e7d93d0daa075d179e",
+      "a2/train.py": "adfc129b33f70eed7728990f4d5aec746c921efd94ef144f60a4046ec3752013",
+      "a2/voc_eval.py": "081e70543e3d562ffe4924053964099bd0fe5444f35e1fee9d58c9b1687aee0c"
+    }
+  },
+  "test_evaluated": false,
+  "human_review_status": "Pending: group must inspect code, rerun and verify before submission"
+}

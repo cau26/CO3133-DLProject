@@ -1,0 +1,319 @@
+{
+  "dataset": "PASCAL VOC 2007 Official Test",
+  "release": "VOCtest_06-Nov-2007.tar",
+  "archive_md5": "b6e924de25625d8de591ea690078ad9f",
+  "test_images": 4952,
+  "test_non_difficult_objects": 12032,
+  "test_difficult_objects_ignored": 2944,
+  "overlap_audit": {
+    "trainval_images": 5011,
+    "test_images": 4952,
+    "image_id_overlap_count": 0,
+    "image_id_overlap": [],
+    "exact_sha256_overlap_count": 0,
+    "exact_sha256_overlap": [],
+    "near_duplicate_dhash_le_4_count": 59,
+    "near_duplicate_dhash_le_4": [
+      {
+        "test_id": "000080",
+        "trainval_split": "train",
+        "trainval_id": "001436",
+        "dhash_distance": 2
+      },
+      {
+        "test_id": "000080",
+        "trainval_split": "train",
+        "trainval_id": "002765",
+        "dhash_distance": 1
+      },
+      {
+        "test_id": "000080",
+        "trainval_split": "train",
+        "trainval_id": "003183",
+        "dhash_distance": 0
+      },
+      {
+        "test_id": "000080",
+        "trainval_split": "train",
+        "trainval_id": "003430",
+        "dhash_distance": 2
+      },
+      {
+        "test_id": "000080",
+        "trainval_split": "train",
+        "trainval_id": "003525",
+        "dhash_distance": 4
+      },
+      {
+        "test_id": "000080",
+        "trainval_split": "train",
+        "trainval_id": "006440",
+        "dhash_distance": 4
+      },
+      {
+        "test_id": "000080",
+        "trainval_split": "train",
+        "trainval_id": "006794",
+        "dhash_distance": 2
+      },
+      {
+        "test_id": "000350",
+        "trainval_split": "train",
+        "trainval_id": "002765",
+        "dhash_distance": 4
+      },
+      {
+        "test_id": "000350",
+        "trainval_split": "train",
+        "trainval_id": "003183",
+        "dhash_distance": 3
+      },
+      {
+        "test_id": "001059",
+        "trainval_split": "train",
+        "trainval_id": "001436",
+        "dhash_distance": 2
+      },
+      {
+        "test_id": "001059",
+        "trainval_split": "train",
+        "trainval_id": "002765",
+        "dhash_distance": 1
+      },
+      {
+        "test_id": "001059",
+        "trainval_split": "train",
+        "trainval_id": "003183",
+        "dhash_distance": 0
+      },
+      {
+        "test_id": "001059",
+        "trainval_split": "train",
+        "trainval_id": "003430",
+        "dhash_distance": 2
+      },
+      {
+        "test_id": "001059",
+        "trainval_split": "train",
+        "trainval_id": "003525",
+        "dhash_distance": 4
+      },
+      {
+        "test_id": "001059",
+        "trainval_split": "train",
+        "trainval_id": "006440",
+        "dhash_distance": 4
+      },
+      {
+        "test_id": "001059",
+        "trainval_split": "train",
+        "trainval_id": "006794",
+        "dhash_distance": 2
+      },
+      {
+        "test_id": "001178",
+        "trainval_split": "train",
+        "trainval_id": "001436",
+        "dhash_distance": 4
+      },
+      {
+        "test_id": "001178",
+        "trainval_split": "train",
+        "trainval_id": "003183",
+        "dhash_distance": 4
+      },
+      {
+        "test_id": "001178",
+        "trainval_split": "train",
+        "trainval_id": "003430",
+        "dhash_distance": 4
+      },
+      {
+        "test_id": "001178",
+        "trainval_split": "train",
+        "trainval_id": "003525",
+        "dhash_distance": 4
+      },
+      {
+        "test_id": "001389",
+        "trainval_split": "train",
+        "trainval_id": "001436",
+        "dhash_distance": 4
+      },
+      {
+        "test_id": "001389",
+        "trainval_split": "train",
+        "trainval_id": "003183",
+        "dhash_distance": 4
+      },
+      {
+        "test_id": "001389",
+        "trainval_split": "train",
+        "trainval_id": "006794",
+        "dhash_distance": 4
+      },
+      {
+        "test_id": "001389",
+        "trainval_split": "val",
+        "trainval_id": "008883",
+        "dhash_distance": 4
+      },
+      {
+        "test_id": "002289",
+        "trainval_split": "train",
+        "trainval_id": "001436",
+        "dhash_distance": 3
+      },
+      {
+        "test_id": "002289",
+        "trainval_split": "train",
+        "trainval_id": "002765",
+        "dhash_distance": 4
+      },
+      {
+        "test_id": "002289",
+        "trainval_split": "train",
+        "trainval_id": "003183",
+        "dhash_distance": 3
+      },
+      {
+        "test_id": "002289",
+        "trainval_split": "train",
+        "trainval_id": "004223",
+        "dhash_distance": 4
+      },
+      {
+        "test_id": "002908",
+        "trainval_split": "train",
+        "trainval_id": "002765",
+        "dhash_distance": 4
+      },
+      {
+        "test_id": "002908",
+        "trainval_split": "train",
+        "trainval_id": "003183",
+        "dhash_distance": 3
+      },
+      {
+        "test_id": "002908",
+        "trainval_split": "train",
+        "trainval_id": "003430",
+        "dhash_distance": 3
+      },
+      {
+        "test_id": "002908",
+        "trainval_split": "train",
+        "trainval_id": "006440",
+        "dhash_distance": 3
+      },
+      {
+        "test_id": "003478",
+        "trainval_split": "train",
+        "trainval_id": "002251",
+        "dhash_distance": 4
+      },
+      {
+        "test_id": "004032",
+        "trainval_split": "train",
+        "trainval_id": "004196",
+        "dhash_distance": 3
+      },
+      {
+        "test_id": "004079",
+        "trainval_split": "train",
+        "trainval_id": "006794",
+        "dhash_distance": 4
+      },
+      {
+        "test_id": "006904",
+        "trainval_split": "train",
+        "trainval_id": "003183",
+        "dhash_distance": 4
+      },
+      {
+        "test_id": "006904",
+        "trainval_split": "train",
+        "trainval_id": "003430",
+        "dhash_distance": 4
+      },
+      {
+        "test_id": "007091",
+        "trainval_split": "train",
+        "trainval_id": "001436",
+        "dhash_distance": 2
+      },
+      {
+        "test_id": "007091",
+        "trainval_split": "train",
+        "trainval_id": "002765",
+        "dhash_distance": 1
+      },
+      {
+        "test_id": "007091",
+        "trainval_split": "train",
+        "trainval_id": "003183",
+        "dhash_distance": 0
+      },
+      {
+        "test_id": "007091",
+        "trainval_split": "train",
+        "trainval_id": "003430",
+        "dhash_distance": 2
+      },
+      {
+        "test_id": "007091",
+        "trainval_split": "train",
+        "trainval_id": "003525",
+        "dhash_distance": 4
+      },
+      {
+        "test_id": "007091",
+        "trainval_split": "train",
+        "trainval_id": "006440",
+        "dhash_distance": 4
+      },
+      {
+        "test_id": "007091",
+        "trainval_split": "train",
+        "trainval_id": "006794",
+        "dhash_distance": 2
+      },
+      {
+        "test_id": "007366",
+        "trainval_split": "train",
+        "trainval_id": "008730",
+        "dhash_distance": 4
+      },
+      {
+        "test_id": "008148",
+        "trainval_split": "train",
+        "trainval_id": "002765",
+        "dhash_distance": 4
+      },
+      {
+        "test_id": "008148",
+        "trainval_split": "train",
+        "trainval_id": "003183",
+        "dhash_distance": 3
+      },
+      {
+        "test_id": "008193",
+        "trainval_split": "train",
+        "trainval_id": "003183",
+        "dhash_distance": 4
+      },
+      {
+        "test_id": "008589",
+        "trainval_split": "train",
+        "trainval_id": "001436",
+        "dhash_distance": 3
+      },
+      {
+        "test_id": "008589",
+        "trainval_split": "train",
+        "trainval_id": "002765",
+        "dhash_distance": 2
+      }
+    ]
+  }
+}
