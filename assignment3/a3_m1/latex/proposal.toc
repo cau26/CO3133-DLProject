@@ -1,0 +1,12 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{Abstract}{2}{section*.1}%
+\contentsline {section}{\numberline {1}Team Responsibilities \& Proposal Status}{4}{section.1}%
+\contentsline {section}{\numberline {2}Dataset Specification \& Task Definition}{5}{section.2}%
+\contentsline {section}{\numberline {3}Preliminary Pair-Quality \& Multimodal EDA}{5}{section.3}%
+\contentsline {section}{\numberline {4}Split Plan \& Leakage-Prevention Unit}{8}{section.4}%
+\contentsline {section}{\numberline {5}Planned Models, Metrics \& Ablation Study}{10}{section.5}%
+\contentsline {subsection}{\numberline {5.1}\textbf {Evaluation Metrics (Handbook Section 29.3)}}{10}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}\textbf {Four Mandatory Models (Handbook Sections 29.1 \& 29.2)}}{10}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}\textbf {Ablation \& Modality Interaction Plan (Handbook Section 30)}}{11}{subsection.5.3}%
+\contentsline {section}{\numberline {6}Compute Estimate \& Subset Rules}{12}{section.6}%
+\contentsline {section}{\numberline {7}AI Usage Disclosure \& References}{13}{section.7}%
