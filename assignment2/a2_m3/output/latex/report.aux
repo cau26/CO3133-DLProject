@@ -1,0 +1,62 @@
+\relax 
+\providecommand\zref@newlabel[2]{}
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\providecommand \babel@aux [2]{\global \let \babel@toc \@gobbletwo }
+\@nameuse{bbl@beforestart}
+\def\@LN@column{1}
+\providecommand \oddpage@label [2]{}
+\babel@aux{english}{}
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {section}{Abstract}{2}{section*.1}\protected@file@percent }
+\def\@LN@column{1}
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Problem Formulation, Dataset \& EDA}{4}{section.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}\textbf  {Problem Statement and Task Definition}}{4}{subsection.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}\textbf  {Dataset Provenance, Finalized Split \& Overlap Audit}}{4}{subsection.1.2}\protected@file@percent }
+\def\@LN@column{1}
+\@writefile{lot}{\contentsline {table}{\numberline {1.1}{\ignorespaces Finalized PASCAL VOC 2007 Dataset Partitions and Difficult-Object Policy}}{5}{table.caption.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3}\textbf  {Task-Specific Exploratory Data Analysis (EDA)}}{5}{subsection.1.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1.1}{\ignorespaces Per-class instance distribution across the 20 PASCAL VOC 2007 foreground classes.}}{5}{figure.caption.4}\protected@file@percent }
+\def\@LN@column{1}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.2}{\ignorespaces Train vs. validation class prevalence.}}{6}{figure.caption.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1.3}{\ignorespaces Objects per image distribution.}}{6}{figure.caption.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1.4}{\ignorespaces Relative bounding-box area and aspect ratio distribution across 12,608 non-difficult boxes.}}{6}{figure.caption.6}\protected@file@percent }
+\def\@LN@column{1}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.5}{\ignorespaces Inspected training batch ($B=8$, image IDs \texttt  {000005}--\texttt  {000020}) after preprocessing and tensor conversion.}}{7}{figure.caption.7}\protected@file@percent }
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Methodology \& Controlled Experiment}{8}{section.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}\textbf  {End-to-End Pipeline and Model Configurations}}{8}{subsection.2.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces End-to-end PASCAL VOC 2007 object detection pipeline and controlled experiment design.}}{8}{figure.caption.8}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2.1}{\ignorespaces Model Architectures and Hyperparameter Protocol}}{8}{table.caption.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}\textbf  {Controlled Experiment Protocol and Evaluation Metrics}}{8}{subsection.2.2}\protected@file@percent }
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Experimental Results: Validation \& Official Test}{9}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}\textbf  {Compute Pilot (A100) and Validation Results (L4)}}{9}{subsection.3.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces M3 Validation Results at Selected Checkpoints (997 Validation Images, 2,592 Non-Difficult Boxes, NVIDIA L4)}}{9}{table.caption.10}\protected@file@percent }
+\def\@LN@column{1}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces \texttt  {ssdlite320} training loss and validation mAP@0.5 over 20 epochs (best: 50.70\% at epoch 17).}}{10}{figure.caption.11}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces \texttt  {fasterrcnn\_frozen} curves over 12 epochs (best: 83.58\% at epoch 11).}}{10}{figure.caption.12}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces \texttt  {fasterrcnn\_finetune} curves over 12 epochs (best: 75.51\% at epoch 12; note instability in epochs 1--8).}}{10}{figure.caption.13}\protected@file@percent }
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}\textbf  {Official VOC 2007 Test Set Evaluation (Single-Shot)}}{11}{subsection.3.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3.2}{\ignorespaces Validation vs. Official VOC 2007 Test Set Comparison (4,952 Test Images, 12,032 Non-Difficult Objects)}}{11}{table.caption.14}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Error Analysis \& Compute Trade-Offs}{11}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}\textbf  {Official Test Error Taxonomy ($\text  {score} \ge 0.30$)}}{11}{subsection.4.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces Official Test Set Error Taxonomy across 12,032 Non-Difficult Ground-Truth Boxes ($\hat  {s} \ge 0.30$)}}{11}{table.caption.15}\protected@file@percent }
+\def\@LN@column{1}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces \texttt  {ssdlite320} qualitative Official Test examples (green: GT, red: predictions $\ge 0.35$).}}{12}{figure.caption.16}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces \texttt  {fasterrcnn\_frozen} qualitative Official Test examples showing strong multi-object recall.}}{12}{figure.caption.17}\protected@file@percent }
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}\textbf  {Discussion of Controlled Study and Trade-Offs}}{13}{subsection.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Limitations, Conclusion \& AI Usage Disclosure}{13}{section.5}\protected@file@percent }
+\bibcite{everingham2010pascal}{{1}{}{{}}{{}}}
+\bibcite{ren2015faster}{{2}{}{{}}{{}}}
+\bibcite{lin2017fpn}{{3}{}{{}}{{}}}
+\bibcite{howard2019mobilenetv3}{{4}{}{{}}{{}}}
+\providecommand\NAT@force@numbers{}\NAT@force@numbers
+\def\@LN@column{1}
+\@writefile{toc}{\contentsline {section}{\numberline {A}Per-Class Official Test AP@0.5 (20 VOC Classes)}{14}{appendix.A}\protected@file@percent }
+\xdef \mintedoldcachechecksum{\detokenize{\minted@cachechecksum }}
+\gdef \@abspage@last{14}

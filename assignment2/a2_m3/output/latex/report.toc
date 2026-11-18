@@ -1,0 +1,17 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{Abstract}{2}{section*.1}%
+\contentsline {section}{\numberline {1}Problem Formulation, Dataset \& EDA}{4}{section.1}%
+\contentsline {subsection}{\numberline {1.1}\textbf {Problem Statement and Task Definition}}{4}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}\textbf {Dataset Provenance, Finalized Split \& Overlap Audit}}{4}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}\textbf {Task-Specific Exploratory Data Analysis (EDA)}}{5}{subsection.1.3}%
+\contentsline {section}{\numberline {2}Methodology \& Controlled Experiment}{8}{section.2}%
+\contentsline {subsection}{\numberline {2.1}\textbf {End-to-End Pipeline and Model Configurations}}{8}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}\textbf {Controlled Experiment Protocol and Evaluation Metrics}}{8}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Experimental Results: Validation \& Official Test}{9}{section.3}%
+\contentsline {subsection}{\numberline {3.1}\textbf {Compute Pilot (A100) and Validation Results (L4)}}{9}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}\textbf {Official VOC 2007 Test Set Evaluation (Single-Shot)}}{11}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Error Analysis \& Compute Trade-Offs}{11}{section.4}%
+\contentsline {subsection}{\numberline {4.1}\textbf {Official Test Error Taxonomy ($\text {score} \ge 0.30$)}}{11}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}\textbf {Discussion of Controlled Study and Trade-Offs}}{13}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Limitations, Conclusion \& AI Usage Disclosure}{13}{section.5}%
+\contentsline {section}{\numberline {A}Per-Class Official Test AP@0.5 (20 VOC Classes)}{14}{appendix.A}%
